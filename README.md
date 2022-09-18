@@ -34,3 +34,4 @@
 - Basic Calculator
 - Word Break
 - Jump Game
+- Course Schedule
