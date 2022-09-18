@@ -1,5 +1,5 @@
 ## Word Ladder  
-[Word Ladder I](https://leetcode.com/problems/word-ladder/submissions/ "BFS" )
+[Word Ladder I](https://leetcode.com/problems/word-ladder/submissions/ "BFS" )  
 Given 1. Begin word (might not be in the dictionary)
       2. dictionary
       3. end word (part of dictionary)
@@ -16,5 +16,5 @@ Q: how do we identify all connected words?
 
 => so we choose option B
 
-[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/ "BFS")
+[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/ "BFS")  
 Same as word ladder I, but need to print all the feasible paths as output
