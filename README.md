@@ -1,4 +1,4 @@
-# Leetcode
+### Leetcode
 - BFS/DFS
 - Top K
 - Modified Binary Search
@@ -12,7 +12,7 @@
 
 
 
-# BFS
+### BFS
 - Shortest path from A to B
 - Shortest path from A to B print all paths
 
@@ -20,3 +20,9 @@
 - [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")  
 - [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")  
 
+### Greedy
+
+### Problem Sets:
+- Buy Sell Stock
+- Basic Calculator
+- Word Break
