@@ -10,14 +10,20 @@ Solution Plan：
 2. BFS until we reach ending words
 3. output a path
 
-
 Q: how do we identify all connected words?
- a. try each pair: O(N^2)
- b. given a word (all lowercase English letters), replace with a diff letter and
+ a. O(N^2):
+    Try each pair
+ b. O(N*L*25):
+    Given a word (all lowercase English letters), replace with a diff letter and
     see if the new word in the dictionary
-    O(N*L*25)
- => constraint: wordList size 1~5,000 => N^2   => 25,000,000
-                word_length: 1~10     => 10*25 => 250
+
+ Evaluation per constraint:
+ * wordList size: max=5,000
+               -> N^2
+               -> 25,000,000  <<<<<
+ * word_length:  max=10
+               -> 10*25
+               -> 250         <<<<< this is way faster
 
 => so we choose option B
 
