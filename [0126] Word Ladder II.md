@@ -1,4 +1,9 @@
 ## Word Ladder
+- the best way to construct connected word graph
+- how to do BFS and find shortest distance
+- how to reverse construct parent graph so later we can reverse DFS and
+  construct all valid shortest paths
+  
 [Word Ladder I](https://leetcode.com/problems/word-ladder/submissions/ "BFS" )
 Given 1. Begin word (might not be in the dictionary)
       2. dictionary
