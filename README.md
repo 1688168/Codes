@@ -1,12 +1,17 @@
 # Leetcode
-* Segment tree
-* top K
-* Lower bound
+* BFS/DFS
+* Top K
+* Modified Binary Search
 * subarray
 * subsequence
-* trie
+* Trie
+* Greedy
+* Sliding Window
+* Segment tree
 * DP
 
 
-**`Sliding Windows`**  
-[2411.Smallest-Subarrays-With-Maximum-Bitwise-OR]( "subarrays")
+
+# BFS
+* shortest-distance from A-B one Path
+* shortest-distance all paths from A->B
