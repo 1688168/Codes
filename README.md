@@ -8,5 +8,5 @@
 * DP
 
 
-`**Sliding Windows**`
+**`Sliding Windows`**  
 [2411.Smallest-Subarrays-With-Maximum-Bitwise-OR]( "subarrays")
