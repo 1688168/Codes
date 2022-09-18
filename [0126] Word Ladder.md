@@ -1,4 +1,4 @@
-## Word Ladder
+## Word Ladder  
 [Word Ladder I](https://leetcode.com/problems/word-ladder/submissions/ "BFS" )
 Given 1. Begin word (might not be in the dictionary)
       2. dictionary
