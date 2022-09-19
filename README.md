@@ -1,16 +1,16 @@
 ### Leetcode
-- BFS/DFS
-- Top K
-- Modified Binary Search
-- subarray
-- subsequence
-- Trie
-- Greedy
-- Sliding Window
--Segment tree
--DP
 
 
+
+### Top K and Quick Select/Heap
+### Modified Binary Search
+### Heap
+### Trie
+### Sliding Window
+### Subarray
+### Subsequence
+### Segment Tree
+### DFS:
 
 ### BFS:  
 - Shortest path from A to B
@@ -20,6 +20,7 @@
 - [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")  
 - [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")  
 
+### DP:
 ### Greedy:  
 - 122
 - 135
