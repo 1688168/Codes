@@ -4,11 +4,13 @@ class Solution:
         """
         : feasibility
         : dp[N-1]
+        : dp[ii]: feasible to jump to location ii
+        : dp[ii] = if exists jj where dp[jj] is True and jj+nums[jj] >= ii
         """
         N = len(nums)
         dp = [False] * N
 
-        dp[0] = True
+        dp[0] = True # can you reach location 0? yes
 
         for ii in range(1, N):
             # dp[ii]=any([True if dp[jj] and jj+nums[jj] >= ii else False for jj in reversed(range(ii))])
