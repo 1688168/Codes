@@ -9,7 +9,7 @@
 ### Subsequence
 ### Segment Tree
 ### DFS:
-
+- all paths
 ### BFS:
 - Shortest path from A to B
 - Shortest path from A to B print all paths

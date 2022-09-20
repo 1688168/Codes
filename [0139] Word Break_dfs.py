@@ -1,4 +1,8 @@
 class Solution:
+    """
+    Time: O(N^3)
+    space: O(N)
+    """
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         """
         1. recursive:
