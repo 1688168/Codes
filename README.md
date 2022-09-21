@@ -21,6 +21,9 @@
 ### DP:
 ### Greedy:
 
+### some patterns:
+- sliding window maximum
+- prev/next max/min
 
 ### Problem Sets:
 - Buy Sell Stock

@@ -1,52 +1,32 @@
-# The variance of a string is defined as the largest difference between the 
-# number of occurrences of any 2 characters present in the string. Note the two 
-# characters may or may not be the same. 
-# 
-#  Given a string s consisting of lowercase English letters only, return the 
-# largest variance possible among all substrings of s. 
-# 
-#  A substring is a contiguous sequence of characters within a string. 
-# 
-#  
-#  Example 1: 
-# 
-#  
-# Input: s = "aababbb"
-# Output: 3
-# Explanation:
-# All possible variances along with their respective substrings are listed 
-# below:
-# - Variance 0 for substrings "a", "aa", "ab", "abab", "aababb", "ba", "b", 
-# "bb", and "bbb".
-# - Variance 1 for substrings "aab", "aba", "abb", "aabab", "ababb", "aababbb", 
-# and "bab".
-# - Variance 2 for substrings "aaba", "ababbb", "abbb", and "babb".
-# - Variance 3 for substring "babbb".
-# Since the largest possible variance is 3, we return it.
-#  
-# 
-#  Example 2: 
-# 
-#  
-# Input: s = "abcde"
-# Output: 0
-# Explanation:
-# No letter occurs more than once in s, so the variance of every substring is 0.
-# 
-#  
-# 
-#  
-#  Constraints: 
-# 
-#  
-#  1 <= s.length <= 10⁴ 
-#  s consists of lowercase English letters. 
-#  
-# 
-#  Related Topics Array Dynamic Programming 👍 438 👎 46
-
-
 """
+: => largest Variance among all substrings
+: Bruteforce:
+: 1. all substrings: O(N^2) where N=10^4
+: 2. calc variance for each subarray O(N)
+: ----------
+: # High level strategy:
+: * complexity analysis and strategy
+: ** only dealing with 26 chars
+: ** all pairs = C26, 2 = 26*25/(2*1)=325
+: ** length=10^4
+:
+: # Heuristics:
+: * count of char: "sum of subarray by replacing that char as 1 and others 0"
+: * count diff btn two char: set one char as 1, the other as -1, and others as zero
+: * max count diff => one -1, all others 1s
+: * max subarray sum => kadane's algorith
+: ----------
+: # when you see Subarray sum
+: a. presum
+: b. kadane (max subarray sum algorithm)
+: ----------
+1. get all pairs from 26 chars
+2. construct 1, -1, 0 representation
+3. left/right kadane's algorithm centering on -1 and capture local max
+4. update global max for all pairs
+5. output global max
+: ----------
+: ----------
 : 1. only lowercase English letters (we can construct all potential pairs: C(26,2))
 : 2. Largest variance possible: all substring, all variance
 : 3. bruteforce: all substring: T: N^2 + all variance of each substring -> find the local max -> global max
@@ -74,7 +54,7 @@ class Solution:
             # => max subarray sum anchoring on a -1 to maximize the variance
 
             # all given chars
-            ctr = Counter(s)
+            ctr = Counter(s) # O(N)
 
             mxv = 0
             # construct all potential pairs of the given chars
@@ -94,24 +74,27 @@ class Solution:
             dp = 0
 
             for x, y in pairs:  # traverse each pair
-                nums = [0] * len(s)
+                nums = [0] * len(s)  # make up the 1,0 -1 array
                 for ii in range(len(s)):
                     if s[ii] == x: nums[ii] = 1
                     if s[ii] == y: nums[ii] = -1
-
-                dp1[0] = nums[0]
+                # dp1 is subarray sum ending @ ii
+                dp1[0] = nums[0] # setup for Kadane's algorithm for max subarray sum
                 for ii in range(1, len(s)):
                     dp1[ii] = max(dp1[ii - 1] + nums[ii], nums[ii])
 
                 # pp(dp1)
                 lmv = float('-inf')
+
+                # dp is max subarray sum from right, reduced to single var
                 dp = nums[-1]
-                if nums[-1] == -1:
+                if nums[-1] == -1: # reversed kadane's algorithm
                     lmv = max(lmv, dp1[-1] + dp - nums[-1])
-                for ii in reversed(range(len(s) - 1)):
+
+                for ii in reversed(range(len(s) - 1)): #going reversed
                     dp = max(dp + nums[ii], nums[ii])
 
-                    if nums[ii] == -1:
+                    if nums[ii] == -1:#centering on -1 for max variance
                         lmv = max(lmv, dp1[ii] + dp - nums[ii])
 
                 mxv = max(lmv, mxv)
