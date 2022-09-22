@@ -21,6 +21,22 @@
 ### DP:
 ### Greedy:
 
+### sweep line or Intervals
+## idea:
+- break the intervals (st, ed) to (st, 1), (ed, -1)
+- add all (st, 1), (ed, -1) to an subArrayRanges
+- sort the array in increasing Order by time of (time, val)
+- accumulate val and check the max sum of val along the way.
+
+## Examples:
+- max meetings at any time
+- can one person attend all meetings? => is there any more than one meeting at the same time
+- min number of conf rooms required -> max concurrent meetings at any time
+- merge intervals
+- insert interval
+- remove interval
+
+
 ### some patterns:
 - sliding window maximum
 - prev/next max/min
