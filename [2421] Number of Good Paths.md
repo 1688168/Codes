@@ -31,3 +31,18 @@
  
  
 ### Solution 2:  Path in a Tree
+`Summary:`
+1. For each node in the Tree (converted to a graph), how many good path connected to this node? (add to global answer)
+2. add branch one by one and calc good path along the way
+
+`Ideas:`
+1. convert the tree to graph as we need to traverse all connected path
+2. when traversing the branch, skip when child == parent (similar to visited)
+3. for the returned count of the branch, purge those that is with val less than current (not qualifed by the good path)
+4. use the smaller branch to look up from big branch (look up optimization)
+
+`Implementation steps:`
+1. convert the tree to graph
+2. dfs starting from index=0
+3. for all children, remove all nodes with value < curr (not qualified for good path)
+
