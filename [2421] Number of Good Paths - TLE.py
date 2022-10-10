@@ -17,14 +17,17 @@ class Solution:
             val2cnt[vals[idx]]=1
 
             for child in g[idx]: # traversing each child of the node
-                if parent and child==parent: continue
+                if parent is not None and child==parent: continue
 
                 childVal2Cnt=dfs(child, idx)
 
                 # remove those that is not qualifed for good path (stating from index, all children should be with value less than val of idx)
+                childVal2Cnt2={}
                 for vv, ct in childVal2Cnt.items():
-                    if vv < vals[idx]:
-                        del childVal2Cnt[vv]
+                    if vv >= vals[idx]:
+                        childVal2Cnt2[vv]=ct
+
+                childVal2Cnt=childVal2Cnt2
 
 
                 # optimize lookup (use smaller one to look up bigger one to reduce number of lookup)
@@ -45,7 +48,7 @@ class Solution:
 
 
         dfs(0, None) # dfs from index=0 with parent=None
-        
+
 
 
         return ans+len(vals)
