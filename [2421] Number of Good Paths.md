@@ -1,4 +1,9 @@
 ### Solution 1:  Union-find
+`Summary:`
+1. add val one-by-one in increasing order into Disjoint Set.  
+2. for each root of the disjoint set, count the number of val
+3. cnt of good path is n(n-1)/2*1
+
 
 `Ideas:`
 1. Remove duplicates and sort Vals  
