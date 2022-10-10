@@ -1,4 +1,4 @@
-### Solution 1:  __Union-find__
+### Solution 1:  Union-find
 
 `Ideas:`
 1. Remove duplicates and sort Vals  
@@ -25,4 +25,4 @@
  
  
  
-### Solution 2:  __Path in a Tree__
+### Solution 2:  Path in a Tree
