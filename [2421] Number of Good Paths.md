@@ -32,8 +32,10 @@
  
 ### Solution 2:  Path in a Tree
 `Summary:`
-1. For each node in the Tree (converted to graph), how many good path connected to this node?
+1. For each node in the Tree (converted to a graph), how many good path connected to this node? (add to global answer)
 2. Starting index=0, DFS all children and calc good path.
+3. to ensure the traverse doesn't go backward, skip when child is parent
+4. 
 
 `Ideas:`
 1. convert the tree to graph as we need to traverse all connected path
