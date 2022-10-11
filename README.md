@@ -1,4 +1,11 @@
-### Leetcode
+# $${\color{orange}Question \space List}$$
+
+[Word Ladder](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.md "Read Me")
+- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")
+- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
+
+
+# $${\color{orange}Some \space Data \space Structures}$$
 
 ### Top K and Quick Select/Heap
 ### Modified Binary Search
@@ -13,10 +20,6 @@
 ### BFS:
 - Shortest path from A to B
 - Shortest path from A to B print all paths
-
-[Word Ladder](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.md "Read Me")
-- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
-- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")
 
 ### DP:
 ### Greedy:
@@ -38,8 +41,8 @@
 
 
 ### some patterns:
-- sliding window maximum
 - prev/next max/min
+- subsum
 
 ### Problem Sets:
 - Buy Sell Stock
