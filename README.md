@@ -5,7 +5,7 @@
 - [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
 
 
-# $${\color{orange}Some \space Data \space Structures}$$
+# $${\color{orange}Patterns, \space Data \space Structures}$$
 
 ### Top K and Quick Select/Heap
 ### Modified Binary Search
@@ -13,6 +13,7 @@
 ### Trie
 ### Sliding Window
 ### Subarray
+* [Count Subarray by Element](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.md "Read Me")
 ### Subsequence
 ### Segment Tree
 ### DFS:
