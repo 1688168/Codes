@@ -30,5 +30,5 @@ ex: arr[a x x x x ii x x x x x b]
          a could be -1 (dummy start)
          a could be N  (dummy end)
 ** number of subarrays btn [a,b] = (ii-a)*(b-ii)
-** precalculate [a, b] for each char in the string.
-** for each char in the string, accumulate (ii-a)(b-ii)
+** precalculate [a, b] for each char in the string. --- A
+** traverse A in prev step and accumulate (ii-a)(b-ii)
