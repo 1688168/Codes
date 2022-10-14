@@ -1,10 +1,3 @@
-# $${\color{orange}Question \space List}$$
-
-[Word Ladder](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.md "Read Me")
-- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")
-- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
-
-
 # $${\color{orange}Patterns, \space Data \space Structures}$$
 
 ### Top K and Quick Select/Heap
@@ -21,8 +14,13 @@
 ### BFS:
 - Shortest path from A to B
 - Shortest path from A to B print all paths
+- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")
+- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
 
 ### DP:
+`Max Subarray`
+- [Substring With Largest Variance](https://github.com/1688168/Leetcode/blob/main/%5B2272%5D%20Substring%20With%20Largest%20Variance.md "Read Me")
+
 ### Greedy:
 
 ### sweep line or Intervals
