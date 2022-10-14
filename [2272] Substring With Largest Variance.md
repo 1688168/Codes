@@ -13,8 +13,8 @@
 * All lower case chars -> can we try all lower case combinations?
                        -> 26*26*N = 256N
 
-### Ideas:
-* Variance of (a,b),
+### Ideas: (converting to 1, 0, -1 array and apply Max subarray sum - Kadane)
+* Variance of (a, b)
   => create subarray and set a=1, b=-1, and others as 0, then sum
   of such subarray is the variance.
 * Convert original string to 1, 0, -1 array.
