@@ -12,10 +12,11 @@
 ### DFS:
 - all paths
 ### BFS:
-- Shortest path from A to B
-- Shortest path from A to B print all paths
-- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")
-- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")
+`Shortest path from A to B`
+- [127 Word Ladder I](https://github.com/1688168/Leetcode/blob/main/%5B0126%5D%20Word%20Ladder.py "I")  
+
+`Shortest path from A to B print all paths`  
+- [126 Word Ladder II](https://github.com/1688168/Leetcode/blob/main/%5B0127%5D%20Word%20Ladder%20II.py "II")  
 
 ### DP:
 `Max Subarray`
