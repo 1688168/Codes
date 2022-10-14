@@ -11,6 +11,7 @@
 * All substring is O(N^2), given N=10^4 (> 10^3), we need to consider if we
   can do log(N) or better.
 * All lower case chars -> can we try all lower case combinations?
+                       -> 26*26*N = 256N
 
 ### Ideas:
 * Variance of (a,b),
