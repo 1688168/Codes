@@ -11,8 +11,8 @@ public:
             for (auto b: Set)
             {
                 if (a==b) continue;//skip same letters as var=0
-                //curSum0: curr max sum ending @ nums[ii]==a and containing no b
-                //curSum1: curr max sum ending @ nums[ii]==b
+                //curSum0: the max subarray sum ending at ii, and this subarray does NOT contain -1
+                //curSum1: the max subarray sum ending at ii, and this subarray does contain -1
                 int curSum0 = 0,  curSum1 = INT_MIN/2;
 
                 for (int i=0; i<n; i++)//running sum for each ii
