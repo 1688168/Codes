@@ -31,7 +31,6 @@ class Solution:
                 visited.add(x)
                 for child in g[x]:
                     if (child) in visited: continue
-                    visited.add(child)
                     ans=dfs(child, y)
                     if ans!= -1:
                         value_map[(child, y)]=ans
