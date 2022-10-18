@@ -1,3 +1,47 @@
+#####
+# 20221018
+#####
+from collections import defaultdict
+class Solution:
+    def mostVisitedPattern(self, username: List[str], timestamp: List[int], website: List[str]) -> List[str]:
+        """
+        * We want to calc score of pattern and return the pattern with highest score
+        *
+        """
+        # 0. need to sort per visit time for pattern
+        # 1. find all patterns - triple loop
+        # 2. count pattern score
+        # 3. output the top 1
+        N=len(username)
+
+        user2web=defaultdict(list)
+        for ii in range(N):
+            user2web[username[ii]].append((timestamp[ii], website[ii]))
+
+
+        pattern2user=defaultdict(set)
+        mxf=0
+        mxp=[]
+        for uu, vv in user2web.items():
+            vv.sort()
+
+            for ii in range(len(vv)):
+                for jj in range(ii+1, len(vv)):
+                    for kk in range(jj+1, len(vv)):
+                        pattern=(vv[ii][1], vv[jj][1], vv[kk][1])
+                        pattern2user[pattern].add(uu)
+                        if len(pattern2user[pattern]) >= mxf:
+                            #print(" a joined pattern: ", "".join(mxp), "".join(pattern))
+                            if len(pattern2user[pattern]) == mxf:
+                                if ":".join(mxp) > ":".join(pattern):
+                                    mxp=pattern
+                            else:
+                                mxp=pattern
+                                mxf=len(pattern2user[pattern])
+
+        return mxp
+
+
 """
 username
 website
@@ -52,5 +96,3 @@ class Solution:
         ans=max_pattern.split(":")
 
         return ans
-
-        
