@@ -24,6 +24,17 @@
 - 2272
 
 ### Greedy:
+### subarray:
+`Count Subarray by element`  
+- 828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String 
+- 907.Sum-of-Subarray-Minimums 
+- 1498.Number-of-Subsequences-That-Satisfy-the-Given-Sum-Condition 
+- 1856.Maximum-Subarray-Min-Product 
+- 2104.Sum-of-Subarray-Ranges 
+- 2262.Total-Appeal-of-A-String 
+- 2281.Sum-of-Total-Strength-of-Wizards
+- 2302.Count-Subarrays-With-Score-Less-Than-K 
+- 2444.Count-Subarrays-With-Fixed-Bounds 
 
 ### sweep line or Intervals [扫描线]
 - How many Airplanes on the sky at any moment?
