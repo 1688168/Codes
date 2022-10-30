@@ -3,6 +3,7 @@ class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         """
         top k -> quick select
+        S S S U U U L L L
         """
         #1 get freq count
         ctr=Counter(nums)
@@ -10,9 +11,7 @@ class Solution:
 
         def quick_select(st, ed, k):
             pivot=arr[st+(ed-st)//2][1]
-
             ii, jj, kk = st, st, ed
-
 
             """
             SSSSPPPLLL
