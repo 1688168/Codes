@@ -1,3 +1,31 @@
+###########
+# 20221031
+###########
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        N=len(nums)
+        dp1=[0]*N # not robbing the last
+        dp2=[0]*N # not robbing the first
+
+        for ii in range(N):
+            if ii == 0:
+                dp1[ii]=nums[ii]
+            elif ii == N-1:
+                dp1[ii]=dp1[ii-1]
+            else:
+                dp1[ii]=max((dp1[ii-2] if ii >= 2 else 0) + nums[ii], dp1[ii-1])
+
+        for ii in range(N):
+            if ii == 0:
+                dp2[ii]=0
+            else:
+                dp2[ii]=max((dp2[ii-2] if ii >= 2 else 0) + nums[ii], dp2[ii-1])
+
+
+        return max(dp1[-1], dp2[-1])
+
+        
+################################################
 class Solution:
     def rob(self, nums: List[int]) -> int:
         """
@@ -27,10 +55,3 @@ class Solution:
 
 
         return max(dp1, dp2)
-
-
-
-
-
-
-        
