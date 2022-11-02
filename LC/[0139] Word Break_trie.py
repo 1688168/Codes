@@ -1,3 +1,89 @@
+###########
+# 20221101
+###########
+from collections import deque
+class TrieNode:
+    def __init__(self):
+        self.children={}
+        self.is_word=False
+        self.count=0
+
+class Trie:
+    def __init__(self):
+        self.root=TrieNode()
+
+    def pt(self):
+        """
+        level order print
+        """
+        dq=deque([self.root])
+
+        lvl=0
+        while (sz:=len(dq)) > 0:
+            print(" ===== lvl ", lvl, " ===== ")
+            for _ in range(sz):
+                curr=dq.popleft()
+                print(" is_word: ", curr.is_word, " count: ", curr.count)
+                for child in curr.children:
+                    print(" ", child + " ,", end="")
+                    dq.append(curr.children[child])
+            print("")
+
+
+            lvl += 1
+
+    def add(self, word):
+        itr=self.root
+        for c in word:
+            if c not in itr.children:
+                itr.children[c]=TrieNode()
+            itr=itr.children[c]
+            itr.count += 1
+        itr.is_word=True
+
+    def is_word(self, word):
+        itr=self.root
+
+        for c in word:
+            if c not in itr.children:
+                return False
+            itr=itr.children[c]
+
+        return itr.is_word
+
+
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        """
+        * break s into words in wordDict
+        * word lookup -> Trie
+        1. build Trie for wordDict
+        2. try break s via Trie -> recursion dfs
+        3. use memo to avoid repeated search
+        """
+        ans=False
+        t=Trie()
+        for word in wordDict:
+            t.add(word)
+        #t.pt()
+
+        memo=set()
+
+        def dfs(s):
+            if len(s) ==0: return True
+            if s in memo: return False
+
+            itr=t
+            for ii in range(1, len(s)+1): #ii is length
+                if t.is_word(s[:ii]) and dfs(s[ii:]): return True
+
+            memo.add(s)
+            return False
+
+        return dfs(s)
+
+#############################################################
 from functools import lru_cache
 from collections import deque
 
