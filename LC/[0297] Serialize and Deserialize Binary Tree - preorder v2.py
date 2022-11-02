@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+
 from collections import deque
 class Codec:
 
@@ -12,13 +13,11 @@ class Codec:
 
         :type root: TreeNode
         :rtype: str
+        : preorder: left most node is the root
         """
-        res=""
-        if root is None: return '#'
-        res = str(root.val) + ',' + self.serialize(root.left) + ',' + self.serialize(root.right) + ','
-
-        return res[:-1]
-
+        if root is None:
+            return '#'
+        return str(root.val) + ',' + self.serialize(root.left) + ',' + self.serialize(root.right)
 
 
     def deserialize(self, data):
@@ -27,25 +26,24 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        arr=data.split(",")
+        arr=data.split(',')
+
         dq=deque(arr)
-        print("arr: ", arr)
+
         def dfs(dq):
+            if dq is None: return None
             curr = dq.popleft()
-            if curr == '#': return None
+            if curr =='#': return None
 
             node = TreeNode(int(curr))
-            left = dfs(dq)
-            right = dfs(dq)
-
+            left=dfs(dq)
+            right=dfs(dq)
             node.left=left
             node.right=right
 
             return node
 
         return dfs(dq)
-
-
 
 
 

@@ -1,4 +1,89 @@
 from collections import deque
+class TrieNode:
+    def __init__(self):
+        self.children={}
+        self.is_word=False
+        self.count=0
+
+class Trie:
+    def __init__(self):
+        self.root=TrieNode()
+
+    def pt(self): #print Trie
+        itr=self.root
+        dq=deque([itr])
+        lvl=0
+        while (sz:=len(dq)) > 0:
+            print(" ===== lvl: ", lvl, " =====")
+            for _ in range(sz):
+                curr=dq.popleft()
+                print(" is_word: ", curr.is_word, ", cnt: ", curr.count)
+                for kk, vv in curr.children.items():
+                    print(kk, ", ", end="")
+                    dq.append(vv)
+                print(" | ", end="")
+            print()
+            lvl+=1
+
+    def is_word(self, word):
+        itr=self.root
+
+        for c in word:
+            if c not in itr.children: return False
+            itr=itr.children[c]
+
+        return itr.is_word
+
+    def add(self, word):
+        itr=self.root
+
+        for c in word:
+            if c not in itr.children:
+                itr.children[c]=TrieNode()
+            itr=itr.children[c]
+
+        itr.is_word=True
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+        """
+        : given a string and a list of words (dictionary)
+        : output all space separated sentence that could be constructed from breaking the string per the dictionary
+        : word lookup from dict -> build trie
+        """
+        t=Trie()
+        for w in wordDict:
+            t.add(w)
+        #t.pt()
+
+        res=[]
+        N=len(s)
+        memo=set()
+        def dfs(st, path): # index into the string
+            if st >= N:
+                res.append(" ".join(path))
+                return True
+
+            if st in memo: return False
+
+            flag=False
+            for ii in range(st+1, N+1):
+                if t.is_word(s[st:ii]) and dfs(ii, path + [s[st:ii]]):
+                    flag=True
+
+            if not flag:
+                memo.add(st)
+
+            return flag
+
+        path=[]
+        dfs(0, path)
+
+        return res
+
+###########################################
+###########################################
+from collections import deque
 from functools import lru_cache
 class Node:
     def __init__(self):
@@ -80,5 +165,3 @@ class Solution:
         path=[]
         dfs(s, path)
         return res
-
-        
