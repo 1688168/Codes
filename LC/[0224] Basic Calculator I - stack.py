@@ -15,19 +15,15 @@ class Solution:
         Time: O(N)
         Space: O(N) the max stack
         """
-
-
         N=len(s)
 
         #define the state
         op='+'
         curr=0
-
         ii=0
 
         stack_num=[]
         stack_op=[]
-
 
         def calc(num):
             nonlocal curr
@@ -79,3 +75,57 @@ class Solution:
                 elif c in ('+', '-'):
                     op=c
         return curr
+
+
+###########
+# 20221104
+###########
+class Solution:
+    def calculate(self, s: str) -> int:
+        """
+        * to process parenthesis -> stack
+        """
+        stack=[]
+        N=len(s)
+        op='+'
+        num=0
+        res=0
+
+        def calc(a, b, op):
+            if op == '+': return a+b
+            if op == '-': return a-b
+        ii=0
+        while ii < N:
+            cc=s[ii]
+            if cc.isdigit():
+                #parse out num
+                jj=ii
+                while jj < N and s[jj].isdigit():
+                    jj+=1
+
+                num=int(s[ii:jj])
+                ii=jj
+                res=calc(res, num, op)
+                #print(" res: ", res, " jj: ", jj)
+            else: # operators or space
+
+                if s[ii]==' ':
+                    ii+=1
+                    continue # ignore space
+
+                if s[ii]=='(':
+                    stack.append((res, op))
+                    op='+'
+                    res=0
+                elif s[ii]==')':
+                    prev, pop = stack.pop()
+                    res=calc(prev, res, pop)
+                elif s[ii]=='+':
+                    op='+'
+                elif s[ii]=='-':
+                    op='-'
+                else:
+                    print(" unexpected s[ii]: ", s[ii])
+                ii+=1
+
+        return res
