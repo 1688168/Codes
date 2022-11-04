@@ -28,7 +28,7 @@ class MyCalendar:
             return False
 
 
-        # is idx.start < end
+        # is next idx.start < end
         if idx+1 < len(self.calendar) and self.calendar[idx+1][0] < end:
             return False
 
@@ -57,3 +57,4 @@ class MyCalendar:
 # Your MyCalendar object will be instantiated and called as such:
 # obj = MyCalendar()
 # param_1 = obj.book(start,end)
+#===============================

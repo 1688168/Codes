@@ -1,52 +1,50 @@
 from collections import Counter
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        """
-        top k -> quick select
-        S S S U U U L L L
-        """
-        #1 get freq count
-        ctr=Counter(nums)
-        arr=[(kk, vv) for kk, vv in ctr.items()]
+        n2f=Counter(nums)
 
-        def quick_select(st, ed, k):
-            pivot=arr[st+(ed-st)//2][1]
+        arr=[(ff, nn) for (nn, ff) in n2f.items()]
+
+        N=len(arr)
+
+        def qs(st, ed, k):
+            pivot=arr[st+(ed-st)//2][0]
             ii, jj, kk = st, st, ed
 
-            """
-            SSSSPPPLLL
-            """
             while jj <= kk:
-                if arr[jj][1] > pivot:
-                    arr[jj], arr[kk]=arr[kk],arr[jj]
-                    kk -= 1
-                elif arr[jj][1]== pivot:
-                    jj += 1
+                if arr[jj][0] > pivot:
+                    arr[jj], arr[kk]=arr[kk], arr[jj]
+                    kk-=1
+                elif arr[jj][0] == pivot:
+                    jj+=1
                 else:
-                    arr[ii], arr[jj]=arr[jj],arr[ii]
+                    arr[ii], arr[jj] = arr[jj], arr[ii]
                     ii+=1
                     jj+=1
 
             """
-                       4  5 6 7 8
-            S S S P P P   L L L L
-            st    ii  kk  jj    ed
+            : S S S P P P P L L L L
+                    i
+                            j
+                          k
+             st                   ed
             """
+
             if ed-kk >= k:
-                return quick_select(jj, ed, k)
+                return qs(jj, ed, k)
             elif ed-ii+1 >= k:
                 return pivot
             else:
-                return quick_select(st, ii-1, k-(ed-ii+1))
+                return qs(st, ii-1, k-(ed-ii+1))
 
 
-        N=len(arr)
-        ff = quick_select(0, N-1, k)
 
-        #kk is the kth largest freq
+        kth_freq=qs(0, N-1, k)
 
         res=[]
-        for (kk, vv) in arr:
-            if vv >= ff: res.append(kk)
+        for ff, nn in arr:
+            if ff >= kth_freq:
+                res.append(nn)
 
         return res[:k]
+            

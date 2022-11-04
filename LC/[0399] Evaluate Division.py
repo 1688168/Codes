@@ -47,3 +47,48 @@ class Solution:
             res.append(dfs(x,y))
 
         return res
+
+
+# =========
+# 20221104
+# =========
+from collections import defaultdict
+class Solution:
+    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
+        """
+        : build graph of linkage
+        : A->B->C
+        : DFS: if path existing btn A and k?
+        """
+        g=defaultdict(set)
+        e2val={}
+        for ii, (aa, bb) in enumerate(equations):
+            e2val[(aa, aa)]=1.0
+            e2val[(bb,bb)]=1.0
+            e2val[(aa, bb)]= values[ii]
+            e2val[(bb,aa)] = 1/values[ii]
+
+            g[aa].add(bb)
+            g[bb].add(aa)
+        
+
+        def dfs(aa, bb):
+            if (aa,bb) in e2val: return e2val[(aa, bb)]
+
+            visited.add((aa,bb))
+
+            for child in g[aa]:
+                if (child, bb) in visited: continue
+                ans=dfs(child, bb)
+                if ans != -1: return e2val[(aa,child)]*ans
+
+            return -1
+
+        res=[]
+        # process each query
+        for aa, bb in queries:
+            visited=set()
+            ans=dfs(aa, bb)
+            res.append(ans)
+
+        return res

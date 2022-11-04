@@ -1,3 +1,20 @@
+"""
+# BFS serialization:
+1. BFS -> deque
+   sanity check on input -> return "" if root is None
+# deserialize
+0. split the input string data
+1. create nodes into list
+2. link nodes per:
+   [a b c d #]
+    i
+      j
+    i.left=j
+    i.right=j+1
+
+    loop while jj < len(nodes)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
