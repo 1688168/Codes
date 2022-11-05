@@ -16,13 +16,9 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        res=""
+        # preorder traversal
         if root is None: return '#'
-        res = res + str(root.val)+"," + self.serialize(root.left)+"," + self.serialize(root.right) + ","
-
-
-        return res[:-1]
-
+        return str(root.val)+ ',' + self.serialize(root.left)+ ',' + self.serialize(root.right)
 
 
 
@@ -49,7 +45,7 @@ class Codec:
 
             nodes[curr].left = left
             nodes[curr].right = right
-        
+
             return nodes[curr]
 
 

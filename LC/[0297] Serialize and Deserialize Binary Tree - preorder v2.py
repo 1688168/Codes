@@ -15,9 +15,9 @@ class Codec:
         :rtype: str
         : preorder: left most node is the root
         """
-        if root is None:
-            return '#'
-        return str(root.val) + ',' + self.serialize(root.left) + ',' + self.serialize(root.right)
+        # preorder traversal
+        if root is None: return '#'
+        return str(root.val)+ ',' + self.serialize(root.left)+ ',' + self.serialize(root.right)
 
 
     def deserialize(self, data):
@@ -34,12 +34,9 @@ class Codec:
             if dq is None: return None
             curr = dq.popleft()
             if curr =='#': return None
-
             node = TreeNode(int(curr))
-            left=dfs(dq)
-            right=dfs(dq)
-            node.left=left
-            node.right=right
+            node.left=dfs(dq)
+            node.right=dfs(dq)
 
             return node
 
