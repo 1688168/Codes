@@ -1,3 +1,27 @@
+############
+# 20221108
+############
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        nset=set(nums)
+
+        mxl=0
+        for nn in nums:
+            if nn-1 in nset: continue
+
+            npp=nn
+            cnt=0
+            while npp in nset:
+                cnt +=1
+                npp+=1
+            mxl=max(mxl, cnt)
+
+
+        return mxl
+
+
+
+#################################################
 """
 : find consequence sequence from an unordered array in O(N)
 : * comparison based sort won't work => bucket sort. (out of memory)

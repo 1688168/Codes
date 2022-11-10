@@ -5,8 +5,6 @@ class Solution:
         if nums[0] <= nums[-1]:
             return nums[0]
 
-
-
         while ll <= rr:
             mm=ll+(rr-ll)//2
 
@@ -17,4 +15,3 @@ class Solution:
                 rr=mm-1
 
         return nums[ans]
-            
