@@ -33,7 +33,7 @@ class Solution:
             if left >=right:
                 path=(lp if lp is not None else [])+[rt.val]
             else:
-                path=[curr.val]+(rp if rp is not None else [])
+                path=[rt.val]+(rp if rp is not None else [])
             return (1+max(left, right), path)
 
         dfs(root)
