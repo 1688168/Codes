@@ -21,7 +21,7 @@ class LFUCache:
         val = self.f2kv[ofreq].pop(key)
         self.f2kv[nfreq][key]=val
         self.k2f[key]=nfreq
-        if self.min_freq==ofreq and (not self.f2kv[ofreq]):
+        if self.min_freq==ofreq and (len(self.f2kv[ofreq])==0):
             self.min_freq=nfreq
 
         return val

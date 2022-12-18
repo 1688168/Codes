@@ -1,38 +1,32 @@
 class Solution:
-    def threeSumClosest(self, nums: List[int],
-                        target: int) -> int:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
         """
-        1. sort the input array
-        2. traverse the sorted array to fix the 1st int
-        3. try all combination of two sum to capture whoever is closest to target
-        4.
+        : fix ii, shrink jj, kk range to find the min diff
+        : ii, jj, kk
+        : N*N=> O(N^2)
         """
-        # take the dimentions
-        N=len(nums)
         nums.sort()
-
-        diff=float('inf')
+        N=len(nums)
+        mnd=float('inf')
         mns=float('inf')
-        for ii in range(N):#anchor first element
-            ll=ii+1
-            rr=N-1
+
+        for ii in range(N):
+            ll, rr = ii+1, N-1
             while ll < rr:
-                _3sum=nums[ii]+nums[ll]+nums[rr]
+                a3sum=nums[ii]+nums[ll]+nums[rr]
+                diff = abs(a3sum-target)
+                if diff == 0:
+                    return a3sum
 
-                if _3sum-target==0:
-                    return target
-                if abs(_3sum-target) < diff:
-                    diff=abs(_3sum-target)
-                    mns=_3sum
+                if diff < mnd:
+                    mnd=diff
+                    mns=a3sum
 
-                if _3sum > target:
+                if a3sum > target:
                     rr-=1
                 else:
                     ll+=1
+
+
+
         return mns
-
-
-
-
-
-        
