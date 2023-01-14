@@ -1,3 +1,38 @@
+
+################
+# 20230114
+################
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        """
+        : nums - ints
+        : Time - O(N)
+        : preprod - array of product for all numbers before current index
+        : postprod - array of product for all numbers after current index
+        : answer[ii]=preprod[ii]*postprod[ii]
+        : Space - O(2n) -> o(N)
+        : Time - O(N)
+        """
+        N=len(nums)
+        preprod=[1]*N
+        postprod=[1]*N
+        ans=[]
+
+        for ii in range(1, N):
+            """
+            1 = 1*n0
+            2 = n1*1
+
+            
+            """
+            preprod[ii]=preprod[ii-1]*nums[ii-1]
+            postprod[N-ii-1]=postprod[N-ii]*nums[N-ii]
+        
+        for ii in range(N):
+            ans.append(preprod[ii]*postprod[ii])
+        
+        return ans
+
 ################
 # 20221104
 ################
