@@ -1,3 +1,34 @@
+#######
+# 20230122
+#######
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort() # sort in place increasing order
+        N=len(nums)
+        res=[]
+        ii=0
+        while ii < N-2:
+            ll, rr = ii+1, N-1
+            a=nums[ii]
+            while ll < rr:
+                b, c = nums[ll], nums[rr]
+                if a+b+c > 0:
+                    rr -=1
+                elif a+b+c < 0:
+                    ll+=1
+                else:
+                    res.append((a, b, c))
+                    ll+=1
+                    while ll < N-1 and ll > 0 and nums[ll]==nums[ll-1]:
+                        ll+=1
+            ii+=1
+            while ii >0 and ii < N-2 and nums[ii]==nums[ii-1]:
+                ii+=1
+
+
+        return res
+
+#####################################################
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         """
