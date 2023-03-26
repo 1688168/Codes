@@ -1,3 +1,6 @@
 
 *.xml
 *.iml
+*.exe
+.idea/*
+LC/.idea/*
