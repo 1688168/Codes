@@ -6,4 +6,4 @@ class Solution:
                 _sum += nn
         
         return _sum
-        
+          
