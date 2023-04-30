@@ -5,7 +5,7 @@ Sol: using Single Sorted List (55.42%)
 from sortedcontainers import SortedList
 class Solution:
     def getSubarrayBeauty(self, nums: List[int], k: int, x: int) -> List[int]:
-        sl = SortedList(nums[:k])
+        sl = SortedList(nums[:k]) # <<<< notice this way to initialize SortedList
         res=[]
         
         res.append(min(sl[x-1], 0))
@@ -16,6 +16,26 @@ class Solution:
         
         
         return res
+    
+"""
+Sol: using Single Sorted List (40.85%)
+"""
+
+from sortedcontainers import SortedList
+class Solution:
+    def getSubarrayBeauty(self, nums: List[int], k: int, x: int) -> List[int]:
+        sl=SortedList()
+        res=[]
+        for ii, vv in enumerate(nums):
+            sl.add(vv)
+            #print(" sl: ", sl)
+            if len(sl) >= k:
+                res.append(min(0, sl[x-1]))
+                sl.discard(nums[ii-k+1])
+            #print(" res: ", res)
+
+        return res
+
     
 """
 sol: use bucket sort - 2 (72.8%)
