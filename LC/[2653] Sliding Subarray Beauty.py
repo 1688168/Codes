@@ -1,5 +1,5 @@
 """
-Sol: using Single Sorted List
+Sol: using Single Sorted List (55.42%)
 """
 
 from sortedcontainers import SortedList
@@ -16,9 +16,44 @@ class Solution:
         
         
         return res
+    
+"""
+sol: use bucket sort - 2 (72.8%)
+"""
+
+class Solution:
+    def getSubarrayBeauty(self, nums: List[int], k: int, x: int) -> List[int]:
+        """
+        nums[i] between (-50, 50) -> bucket sort
+        """
+        res=[]
+        buckets=[0 for _ in range(102)]
+        
+        def xth():
+            count=0
+            for ii in range(50):  # get out once we get in postive territory <<< 
+                count += buckets[ii]
+                if count >= x:
+                    return min(0,ii-50)
+            
+            return 0                                
+        
+        for ii in range(k):
+            buckets[nums[ii]+50] += 1
+        
+        res.append(xth())
+        buckets[nums[ii-k+1]+50] -= 1
+        
+        for ii in range(k, len(nums)):
+            buckets[nums[ii]+50] += 1
+            res.append(xth())
+            buckets[nums[ii-k+1]+50] -= 1                            
+        
+        return res
+        
 
 """
-sol: use bucket sort
+sol: use bucket sort - 1 (25.91%)
 """
 class Solution:
     def getSubarrayBeauty(self, nums: List[int], k: int, x: int) -> List[int]:
