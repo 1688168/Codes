@@ -1,3 +1,51 @@
+"""
+20230430 redo, T: 55.66
+"""
+from heapq import *
+class MedianFinder:
+
+    def __init__(self):
+        self.mxh=[]
+        self.mnh=[]                
+
+    def rebalance(self, mxh, mnh):
+        lx, ls = len(mxh), len(mnh)
+        if lx <=(ls+1): 
+            if len(self.mnh) > 0  and len(self.mxh) > 0 and (-self.mxh[0]) > self.mnh[0]:
+                topx = -self.mxh[0]
+                topn = self.mnh[0]
+
+                heappop(self.mxh)
+                heappop(self.mnh)
+                heappush(self.mxh, -topn)
+                heappush(self.mnh, topx)
+        else:
+            heappush(self.mnh, -self.mxh[0])
+            heappop(self.mxh)
+
+    def addNum(self, num: int) -> None:
+        if len(self.mxh) <= len(self.mnh):
+            heappush(self.mxh, -num)
+        else:
+            heappush(self.mnh, num)
+        self.rebalance(self.mxh, self.mnh)
+
+
+    def findMedian(self) -> float:
+        if (len(self.mxh)+len(self.mnh))%2 == 0:
+            return (-self.mxh[0]+self.mnh[0])/2
+        else:
+            return -self.mxh[0]
+        
+
+
+# Your MedianFinder object will be instantiated and called as such:
+# obj = MedianFinder()
+# obj.addNum(num)
+# param_2 = obj.findMedian()
+
+
+###################
 class MedianFinder:
 
     def __init__(self):
