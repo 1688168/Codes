@@ -1,3 +1,111 @@
+############################
+# 20230513: 53.15%
+############################
+class TrieNode:
+    def __init__(self):
+        self.children={}
+        self.is_word=False
+        self.count=0
+
+class Trie:
+    def __init__(self):
+        self.root=TrieNode()
+    
+    def is_word(self, w):
+        itr = self.root
+        for c in w:
+            if c not in itr.children: return False
+            itr=itr.children[c]
+
+        return itr.is_word
+    
+    def add(self, w):
+        itr=self.root
+        
+        for c in w:
+            if c not in itr.children:
+                itr.children[c]=TrieNode()
+            
+            itr=itr.children[c]
+            itr.count += 1
+        
+        itr.is_word = True
+    
+    
+    def remove(self, w):
+        itr = self.root
+
+        for c in w:
+            if c not in itr.children: return
+            itr = itr.children[c]
+            itr.count -= 1
+
+class Solution:
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+        """
+        1. DFS on each word: 12X12=144
+           Time: each w is 10 chars
+                   there are 3X10^4 words
+            : 10X3X10^4=3X10^5
+            : find the starting point from the grid
+            : 144*3^10^4*10*4
+        2. Build Trie on word list
+           DFS each cell on the board: 144 DFS, stop if the visited char is not on Trie
+           Trie Depth: 10
+           144*10
+        """
+        # build trie
+        T=Trie()
+        for w in words:
+            T.add(w)
+
+        # DFS each cell
+
+        M = len(board)
+        N = len(board[0])
+
+        res=[]
+
+        def isInScope(rr, cc):
+            if rr < 0 or cc < 0: return False
+            if rr >= M or cc >= N: return False
+            return True
+
+        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+
+        def dfs(rr, cc, visited, tn, ww):
+            if not isInScope(rr, cc): return
+
+            curr = board[rr][cc]
+            if (rr, cc) in visited: return
+            if curr not in tn.children: return
+            if tn.children[curr].count <=0: return
+    
+            visited.add((rr,cc))
+
+            tn = tn.children[curr]
+            if tn.is_word:
+                res.append(ww+curr)
+                tn.is_word=False
+                T.remove(ww+curr)
+ 
+            
+            for dr, dc in dirs:
+                nr, nc = rr+dr, cc+dc
+                dfs(nr, nc, visited, tn, ww+curr)
+
+            visited.remove((rr, cc))
+
+        for ii in range(M):
+            for jj in range(N):
+                visited=set()
+                ww=""
+                dfs(ii, jj, visited, T.root, ww)
+        
+        return res
+        
+############################
+############################
 from collections import deque
 
 class TrieNode:
@@ -112,3 +220,7 @@ class Solution:
 
 
         return list(res)
+
+
+
+
