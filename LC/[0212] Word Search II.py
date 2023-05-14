@@ -106,6 +106,7 @@ class Solution:
         
 ############################
 ############################
+
 from collections import deque
 
 class TrieNode:
@@ -159,9 +160,7 @@ class Trie:
     def remove(self, word):
         itr=self.root
         for c in word:
-            if c not in itr.children:
-                print(" why remove invalid word? ", word)
-            else:
+            if c in itr.children:
                 itr=itr.children[c]
                 itr.count -=1
 
@@ -220,7 +219,5 @@ class Solution:
 
 
         return list(res)
-
-
 
 
