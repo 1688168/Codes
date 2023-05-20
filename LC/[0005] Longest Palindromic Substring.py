@@ -1,3 +1,49 @@
+###############
+# 20230520
+###############
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        
+        if s is None: return None
+
+        N=len(s)
+        mxp=s[0]
+        mxl=0
+        for ii in range(N):
+            loc_len = 1
+            jj, kk = ii -1, ii + 1
+            
+            # odd case
+            while jj >=0 and kk < N and s[jj] == s[kk]:
+                loc_len = kk-jj+1
+                if loc_len > mxl:
+                    mxp=s[jj: kk+1]
+                mxl=max(mxl, loc_len)
+                jj -= 1
+                kk += 1
+
+            
+            # even case
+            jj=ii-1
+            kk=ii
+            while jj >= 0 and kk < N and s[jj] == s[kk]:
+                loc_len = kk-jj+1
+                if loc_len > mxl:
+                    mxp=s[jj: kk+1]
+                mxl=max(mxl, loc_len)
+                jj -= 1
+                kk += 1
+            
+        return mxp
+
+            
+
+
+
+
+
+
+#################################
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         mxl=0
