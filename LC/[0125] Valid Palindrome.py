@@ -1,3 +1,20 @@
+#####
+# 20220520
+#####
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        t=[]
+        for c in s:
+            if (c:=c.lower()).isalnum(): t.append(c)
+        
+        #print(t)
+        
+        return t==t[::-1]
+        
+
+
+#############################
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         ns=[]
