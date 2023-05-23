@@ -1,3 +1,48 @@
+###########
+# 20230522
+###########
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        m=len(matrix)
+        n=len(matrix[0])
+
+        ll, rr = 0, n-1
+        tt, bb = 0, m-1
+        res=[]
+
+        while ll <= rr and bb >= tt:          
+            # top left to right
+            for ii in range(rr-ll+1):              
+                res.append(matrix[tt][ll+ii])
+            tt += 1
+
+            if tt > bb: break
+            # top right to bottom
+            for ii in range(bb-tt+1):               
+                res.append(matrix[tt+ii][rr])
+            rr -= 1
+
+            if rr < ll: break
+
+            # bottom right to left
+            for ii in range(rr-ll+1):
+                res.append(matrix[bb][rr-ii])
+            bb -= 1
+
+            if bb< tt: break
+
+            # bottom left to top
+            for ii in range(bb-tt+1):
+                res.append(matrix[bb-ii][ll])
+            ll += 1
+            if ll > rr: break
+        
+        return res
+
+
+
+
+################################
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         M=len(matrix)
