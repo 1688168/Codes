@@ -1,3 +1,35 @@
+###########
+# 20230522
+###########
+class Solution:
+    def setZeroes(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        m=len(matrix)
+        n=len(matrix[0])
+        cols=set()
+        rows=set()
+
+
+        for ii in range(m):
+            for jj in range(n):
+                if matrix[ii][jj]==0:
+                    rows.add(ii)
+                    cols.add(jj)
+
+        for jj in range(m):
+            for ii in cols:
+                matrix[jj][ii]=0
+        
+        for ii in rows:
+            for jj in range(n):
+                matrix[ii][jj]=0
+            
+
+
+
+###################################
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
