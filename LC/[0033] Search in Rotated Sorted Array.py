@@ -1,3 +1,38 @@
+
+###########
+# 20230528
+###########
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        ans, ll, rr = -1, 0, len(nums)-1
+
+        while ll <= rr:
+            mm=ll+(rr-ll)//2
+
+            curr = nums[mm]
+            if curr >= nums[0]: # on the left side
+                if curr < target:
+                    ll=mm+1
+                elif curr > target and target >= nums[0]:
+                    rr=mm-1
+                elif curr > target and target < nums[0]:
+                    ll=mm+1
+                elif curr == target:
+                    return mm
+
+            else: # on the right side
+                if curr > target:
+                    rr = mm-1
+                elif curr < target and target < nums[0]:
+                    ll = mm+1
+                elif curr < target and target >= nums[0]:
+                    rr = mm - 1
+                elif curr == target:
+                    return mm
+
+        return ans
+
+
 ##############
 # 20230122
 ##############
