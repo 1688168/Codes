@@ -1,3 +1,34 @@
+############
+## 20230528
+############
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        res=[]
+
+        def twoSum(curr, nums, target, res):
+            ll, rr = 0, len(nums)-1
+            while ll < rr:
+                if nums[ll]+nums[rr] == target:
+                    res.append((curr, nums[ll], nums[rr]))
+                    ll+=1
+                    while ll < rr and nums[ll]==nums[ll-1]:
+                        ll+=1                                                    
+                else:
+                    if nums[ll]+nums[rr] > target:
+                        rr-=1
+                    else:
+                        ll+=1
+           
+        for ii, nn in enumerate(nums[:-2]):
+            if ii > 0 and nn==nums[ii-1]: continue
+            ntarget=0-nn
+            twoSum(nn, nums[ii+1:], ntarget, res)
+
+
+        return res
+
+
 #######
 # 20230122
 #######
