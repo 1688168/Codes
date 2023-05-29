@@ -1,3 +1,25 @@
+############
+# 20230529
+############
+
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        res=[]
+        for ii in range(n+1):
+            num=ii
+            cnt=0
+            while num > 0:
+                cnt+= 1
+                num &= (num-1)
+                print(num)
+            res.append(cnt)
+        return res
+
+
+
+#########################
+
+
 class Solution:
     def countBits(self, n: int) -> List[int]:
         """
