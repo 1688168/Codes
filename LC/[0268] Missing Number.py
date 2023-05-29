@@ -1,5 +1,13 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
+        return len(nums)*(len(nums)+1)//2 - sum(nums)
+
+#######################
+
+
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
         N=len(nums)
         for ii in range(N):
             curr=nums[ii]
@@ -14,7 +22,7 @@ class Solution:
 
         return N
 
-
+######################
 # Sol 2 bit manipulation
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
