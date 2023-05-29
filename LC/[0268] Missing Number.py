@@ -1,5 +1,20 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
+        a=0
+        for ii in range(len(nums)+1):
+            a ^= ii
+        
+        b=0
+        for n in nums:
+            b ^= n
+        
+        return a^b
+
+#############        
+
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
         return len(nums)*(len(nums)+1)//2 - sum(nums)
 
 #######################
