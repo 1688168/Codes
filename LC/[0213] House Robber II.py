@@ -1,4 +1,30 @@
 ###########
+# 20230531
+###########
+# this is just another thought process, but complexity is the same
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        N=len(nums)
+        dp1=[0]*N # rob first
+        dp2=[0]*N # rob last
+
+        for ii in range(N):             
+            if ii == 0:
+                dp1[ii] = nums[ii]
+                dp2[ii]= 0
+            elif ii == N-1:
+                dp1[ii]= dp1[ii-1] 
+                dp2[ii]= nums[ii] + (dp2[ii-2] if ii >= 2 else 0)  # we are robbing the last
+            else:
+                dp1[ii]=max(dp1[ii-1], (dp1[ii-2]+nums[ii]) if ii-2 >=0 else nums[ii])
+                dp2[ii]=max(dp2[ii-1], (dp2[ii-2]+nums[ii]) if ii-2 >=0 else nums[ii])
+        
+        return max(dp1[-1], dp2[-1])
+
+
+
+
+###########
 # 20221105
 ###########
 class Solution:
