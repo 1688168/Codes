@@ -1,4 +1,21 @@
+################
+# 20230601
+################
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        dp=0 # max reachable index
 
+        for ii, nn in enumerate(nums):
+            if dp >= ii:
+                dp=max(dp, ii+nums[ii])
+
+        
+        return dp >= len(nums)-1
+
+
+
+
+#################################
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         """
