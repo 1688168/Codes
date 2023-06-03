@@ -1,3 +1,34 @@
+##############
+# 20230603
+##############
+
+from functools import lru_cache
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+
+        N = len(coins)
+
+        @lru_cache(None)
+        def dfs(st, amt):
+            if amt == 0: return 0
+            if st >= N: return -1
+            if amt < 0: return -1
+
+            loc_cnt = float('inf')
+            for ii in range(st, N):
+                cnt = dfs(ii, amt - coins[ii])
+                if cnt != -1:
+                    loc_cnt = min(loc_cnt, 1+cnt)
+            
+            return loc_cnt if loc_cnt != float('inf') else -1
+        
+
+        return dfs(0, amount)
+        
+
+#####################
+
+
 from functools import lru_cache
 
 class Solution:
