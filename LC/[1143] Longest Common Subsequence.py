@@ -1,3 +1,26 @@
+###########
+# 20230604
+###########
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        
+        m=len(text1)
+        n=len(text2)
+
+        dp=[[0]*(n+1) for _ in range(m+1)]
+
+        for ii in range(m-1, -1, -1):
+            for jj in range(n-1, -1, -1):
+                if text1[ii]== text2[jj]:
+                    dp[ii][jj] = 1+dp[ii+1][jj+1]
+                else:
+                    dp[ii][jj] = max(dp[ii+1][jj], dp[ii][jj+1])
+        
+
+        return dp[0][0]
+
+
+#######################
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         N1=len(text1)
