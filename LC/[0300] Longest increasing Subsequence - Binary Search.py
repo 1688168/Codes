@@ -2,7 +2,6 @@ import bisect
 from functools import lru_cache
 class Solution:
 
-
 def lengthOfLIS_binary(self, nums):
     res = []
     for x in nums:
