@@ -1,3 +1,26 @@
+##########
+# 20230604
+##########
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        N = len(nums)
+        dp=[1] * N # where dp[ii] indiciate LIS ending @ ii
+
+        LIS = 1
+        for ii in range(1, N):
+            for jj in range(ii-1, -1, -1):
+                if nums[ii] > nums[jj]:
+                    dp[ii]=max(dp[ii], 1+dp[jj])
+                        
+            LIS=max(LIS, dp[ii])
+        print(dp)
+        return LIS
+            
+            
+            
+            
+
+#######################
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         """
