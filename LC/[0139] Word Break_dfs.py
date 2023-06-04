@@ -1,3 +1,26 @@
+###########
+# 20230604
+###########
+
+
+from functools import lru_cache
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+
+        wordSet=set(wordDict)
+        @lru_cache(None)
+        def dfs(s):
+            if s is None or len(s)==0 : return True
+            for ii in range(1, len(s)+1):
+                if s[:ii] in wordSet and dfs(s[ii:]): return True
+            return False
+
+        return dfs(s)
+
+
+
+###################
 class Solution:
     """
     Time: O(N^3)
@@ -25,3 +48,8 @@ class Solution:
             return False
 
         return dfs(s)
+
+
+############
+
+
