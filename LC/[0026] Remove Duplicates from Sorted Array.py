@@ -1,5 +1,26 @@
 
 ##############
+# 20230610
+##############
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        N = len(nums)
+        if N==1: return N
+
+        ll = 1
+        for ii in range(1, N):
+            if nums[ii]==nums[ll-1]:
+                continue
+            
+            nums[ll]=nums[ii]
+            ll+=1
+        
+        return ll
+        
+
+
+##############
 # 20230605
 ##############
 
