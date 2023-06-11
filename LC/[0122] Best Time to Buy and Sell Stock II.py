@@ -1,4 +1,23 @@
 ###########
+# 20230611
+###########
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        totalProfit=0
+        prevLow=float('inf')
+
+        for p in prices:
+            if p > prevLow:
+                totalProfit += p-prevLow
+                prevLow = p
+            else:
+                prevLow=min(p, prevLow)
+
+
+        return totalProfit
+
+
+###########
 # 20221106
 ###########
 class Solution:
