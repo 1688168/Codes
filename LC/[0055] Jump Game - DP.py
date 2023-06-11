@@ -1,21 +1,3 @@
-################
-# 20230601
-################
-class Solution:
-    def canJump(self, nums: List[int]) -> bool:
-        dp=0 # max reachable index
-
-        for ii, nn in enumerate(nums):
-            if dp >= ii:
-                dp=max(dp, ii+nums[ii])
-
-        
-        return dp >= len(nums)-1
-
-
-
-
-#################################
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         """
@@ -30,7 +12,6 @@ class Solution:
         dp[0] = True # can you reach location 0? yes
 
         for ii in range(1, N):
-            # dp[ii]=any([True if dp[jj] and jj+nums[jj] >= ii else False for jj in reversed(range(ii))])
             for jj in reversed(range(ii)):
                 if dp[jj] and jj + nums[jj] >= ii:
                     dp[ii] = True
