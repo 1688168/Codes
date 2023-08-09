@@ -1,0 +1,9 @@
+# Patterns:
+# Min/Max value in sliding window
+* use deque keep adding new elements from the right
+  window end.  Keep popping the deque until the new 
+  element is smaller than the right most member in 
+  the deque.  
+* the deque is always persisted in decreasing order
+* max value is the first element in the deque
+* reverse the logic for min member in the sliding window
