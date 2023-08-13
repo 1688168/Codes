@@ -1,3 +1,44 @@
+
+###########
+# 20230813
+###########
+
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        """
+        1. trying to find an optimized solution
+        2. current states doesn't depend on future state and future state doesn't not change current local state
+        3. current state is optimized 
+        """
+        
+
+        N=len(nums)
+
+        if N==0: return 0
+        if N==1: return nums[0]
+
+        dp1=[0]*N # robbing the first, since we fixed first one, the 2nd one and the last are both fixed
+        dp1[0]=nums[0]
+        dp1[1]=dp1[0]
+        dp2=[0]*N # not robbing the first
+  
+
+        for ii in range(1, N):
+            if ii > 1 and ii < N-1:
+                dp1[ii] = max(nums[ii] + dp1[ii-2] , dp1[ii-1])  
+            if ii == N-1:
+                dp1[ii]=dp1[ii-1]          
+
+ 
+            dp2[ii] = max(nums[ii] + (dp2[ii-2] if ii >= 2 else 0), dp2[ii-1])
+        
+
+        return max(dp1[-1], dp2[-1])
+
+
+        
+
+
 ###########
 # 20230531
 ###########
