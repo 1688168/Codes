@@ -1,15 +1,25 @@
-# Array:
-** put all same element in the array together **
-- if all elements are from 26 lowercase letters
--> declare [[]*26]
--> traverse the string append location of each char into array under ord of that chars
--> now we know each element's prev/next location
+`Two Pointers`
 
-** Element contribution to subarray in order to calc an aggregated result **
-- Given an array, definition of an attribute for a subarrays, and calc max, min, aggregation of all subarrays on this attribute.
-- sum of unique char cnt for all subarrays (how do you find unique char's prev/next?)
-- define variance of subarray (max-min char cnt in each subarray) -> calc sum of all subarray variance.
-- define power of subarray
+```
+> template:
+1. Givn an integer array.
+2. Define qualification of a subarray
+3. Calculate total number of qualifed subarrays in the original array
 
+> key steps:
+a. expand the window until it is disqualified (how to check the qualification?)
+b. calculate/accumulate the required statistics
+c. move (slide) the window
 
-** Range: (max-min) in subarrays -> return sum of all subarray ranges
+> Time: O(N)
+```
+
+[2762]
+
+`Max/Min of a sliding window`
+-> max value in sliding window
+
+1. use deque <span style="color:red">(recording the index of the element, not the value)</span>
+2. each time expand the window, pop the deque until the new window element is smaller than the last element in deque
+3. each time shrinking the window,
+4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
