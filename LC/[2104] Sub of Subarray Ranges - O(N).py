@@ -1,3 +1,77 @@
+############
+# 20230820
+############
+
+class Solution:
+    def subArrayRanges(self, nums: List[int]) -> int:
+        """
+        sum(A-B) = sum(a)-sum(b)
+        """
+
+        N=len(nums)
+        prev_smaller=[-1]*N
+        next_smaller=[N]*N
+        prev_greater=[-1]*N
+        next_greater=[N]*N
+
+        # precalc next smaller
+        stk=[]
+        for ii in range(N):
+            while len(stk) > 0 and nums[ii] < nums[stk[-1]]:
+                next_smaller[stk[-1]]=ii
+                stk.pop()
+            stk.append(ii)
+        
+        # precalc prev smaller
+        stk=[]
+        for ii in reversed(range(N)):
+            while len(stk) > 0 and nums[ii] <= nums[stk[-1]]:
+                prev_smaller[stk[-1]]=ii
+                stk.pop()
+            stk.append(ii)
+
+
+        # precalc next greater
+        stk=[]
+        for ii in range(N):
+            while len(stk) > 0 and nums[ii] > nums[stk[-1]]:
+                next_greater[stk[-1]]=ii
+                stk.pop()
+            stk.append(ii)
+        
+        # precalc prev greater
+        stk=[]
+        for ii in reversed(range(N)):
+            while len(stk) > 0 and nums[ii] >= nums[stk[-1]]:
+                prev_greater[stk[-1]]=ii
+                stk.pop()
+            stk.append(ii)
+        
+        res=0
+        # calc result
+        mx_sum=0
+        mn_sum=0
+
+        """
+        0 1 2 3 4 5
+            ^
+        """
+
+        for ii, vv in enumerate(nums):
+            ll=ii-prev_greater[ii]
+            rr=next_greater[ii]-ii
+            mx_sum += vv*ll*rr
+
+            ll=ii-prev_smaller[ii]
+            rr=next_smaller[ii]-ii
+            mn_sum += vv*ll*rr
+
+        return mx_sum-mn_sum
+
+
+
+
+#######################################################################
 """
 : Objectives: sum(subarray_max-subarray_min)
               = sum(subarray_max)-sum(subarray_min)
