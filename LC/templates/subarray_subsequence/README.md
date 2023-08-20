@@ -61,7 +61,7 @@ Ideas:
 
 [1856]
 
-[2104] M : 'sum of subarray range'  
+[2104] M : sum of subarray range  
 -> Define something as range: max-min of subarray  
 -> Calc sum of all ranges
 
@@ -74,12 +74,14 @@ Observation 2:
 -> Similar to Min/Max of Sliding Window  
 -> Monotonic stack
 
-Strategy:  
-> sum(max of all subarrays)  
+Strategy:
+
+> sum(max of all subarrays)
+
 - precalc pre-larger and next-larger
 - for each element as Max, we can find the valid window that the element is max
-- (A): num of subarray of the "valid window" is left-length*right-length
-- (B): sum of subarray with that element as max: A * element_value
+- (A): num of subarray of the "valid window" is left-length\*right-length
+- (B): sum of subarray with that element as max: A \* element_value
 - accumulate "B" for all elements -> we have sum(max of all subarrays)
 - do the similar thing for min
 
@@ -88,6 +90,24 @@ Strategy:
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
 [0496]
 [0503]
+
+# Count Subarray by Element
+
+```
+- Pattern: looking for some metrics of all sub-arrays
+- All sub-arrays is O(N^2)
+- We should pre-calc info for each element and bring down the time complexity
+```
+
+[2681] H : Power-of-Heroes
+
+- sum of all (sub-sequence-max)^2\*subsequence-min
+- Whenever grouping by subsequence, we can sort as the original order no longer matter
+- Whenever we are looking for Nlog(N) time, we can sort
+- All combination: O(N^2)  
+  -> In order to meet nO(logn), we need to calc something for a set of group to reduce time-complexity
+
+
 
 # DP
 
