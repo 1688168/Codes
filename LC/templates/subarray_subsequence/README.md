@@ -59,7 +59,7 @@ Ideas:
 > Monotonic Stack: sum of subarray min
 > -> for each element as min, how many subarray this min can be?
 
-[1856]
+[1856] M
 
 [2104] M : sum of subarray range  
 -> Define something as range: max-min of subarray  
