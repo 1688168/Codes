@@ -1,4 +1,4 @@
-`Two Pointers`
+# Two Pointers
 
 ```
 > template:
@@ -14,9 +14,10 @@ c. move (slide) the window
 > Time: O(N)
 ```
 
-[2762] M \* -
+[2762] M
 
-`Max/Min of a sliding window`
+# Max/Min of a sliding window
+
 -> max value in sliding window
 
 1. use deque <span style="color:red">(recording the index of the element, not the value)</span>
@@ -24,7 +25,7 @@ c. move (slide) the window
 3. each time shrinking the window,
 4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
 
-`Binary Index Tree (BIT)`
+# Binary Index Tree (BIT)
 
 ```
 * asking for range sum from an array
@@ -39,31 +40,61 @@ c. move (slide) the window
 
 ![Alt text](image.png)
 
-[0307] M \* -
+[0307] M
 
-`Count Subarray by Element`
-
-```
+# Count Subarray by Element
 
 ```
+Given an integer array
+-> Define something for a subarray
+-> Calc something for all subarrays
 
-[0907] H - Monotonic Stack: sum of subarray min
--> for each element as min, how many subarray this min can be?
+Ideas:
+-> finding all subarrays and calc something -> O(N)
+-> for each element as min/max -> find the max subarray that holds true
+```
+
+[0907] H :
+
+> Monotonic Stack: sum of subarray min
+> -> for each element as min, how many subarray this min can be?
+
 [1856]
-[2104] M \* : 'sum of subarray range'
--> 'Sum of subarray(max-min)
--> 'sum of subarray max'-'sum of subarray min'
 
-`Monotonic Stack`
+[2104] M : 'sum of subarray range'  
+-> Define something as range: max-min of subarray  
+-> Calc sum of all ranges
+
+Observation 1:  
+-> sum((max-min) of all subarrays)  
+-> sum(max of all subarrays)-sum(min of all subarrays)
+
+Observation 2:  
+-> Min/Max of subarry  
+-> Similar to Min/Max of Sliding Window  
+-> Monotonic stack
+
+Strategy:  
+> sum(max of all subarrays)  
+- precalc pre-larger and next-larger
+- for each element as Max, we can find the valid window that the element is max
+- (A): num of subarray of the "valid window" is left-length*right-length
+- (B): sum of subarray with that element as max: A * element_value
+- accumulate "B" for all elements -> we have sum(max of all subarrays)
+- do the similar thing for min
+
+# Monotonic Stack
+
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
 [0496]
 [0503]
 
-`DP`
+# DP
+
 Time-Series
-[0198] M - House Robber
-[0123] Best Time to Buy and Sell Stock III
-[0213] House Robber II
+[0198] M : House Robber
+[0123] : Best Time to Buy and Sell Stock III
+[0213] : House Robber II
 [0487]
 [1186]
 [1289]
