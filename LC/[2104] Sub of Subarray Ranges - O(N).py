@@ -1,7 +1,7 @@
 ############
 # 20230820
 ############
-# smart way to calc prev_smaller, prev_greater
+# smart way to calc prev_smaller, prev_greaterafse
 
 class Solution:
     def subArrayRanges(self, nums: List[int]) -> int:

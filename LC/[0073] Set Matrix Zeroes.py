@@ -1,30 +1,42 @@
 ###########
-# 20230522
+# 20230822
 ###########
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        m=len(matrix)
-        n=len(matrix[0])
-        cols=set()
-        rows=set()
+        R = len(matrix)
+        C = len(matrix[0])
 
-
-        for ii in range(m):
-            for jj in range(n):
-                if matrix[ii][jj]==0:
-                    rows.add(ii)
-                    cols.add(jj)
-
-        for jj in range(m):
-            for ii in cols:
-                matrix[jj][ii]=0
+        is_c0_0=False
         
-        for ii in rows:
-            for jj in range(n):
-                matrix[ii][jj]=0
+        # traverse all rows
+        for ii in range(R):
+            # if any of the first column is zero, flag is_c0_0 as True
+            if matrix[ii][0]==0: is_c0_0=True
+            
+            # check all other columns
+            for jj in range(1, C):
+                if matrix[ii][jj]==0:
+                    matrix[0][jj]=0
+                    matrix[ii][0]=0
+            
+
+        # mark all cells
+        for ii in range(1, R):
+            for jj in range(1, C):
+                if matrix[0][jj]==0 or matrix[ii][0]==0:
+                    matrix[ii][jj]=0
+        
+        if matrix[0][0]==0:
+            for ii in range(C):
+                matrix[0][ii]=0
+
+        if is_c0_0:
+            for ii in range(R):
+                matrix[ii][0]=0
+
             
 
 
