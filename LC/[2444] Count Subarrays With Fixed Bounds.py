@@ -1,3 +1,24 @@
+# 20230823
+class Solution:
+    def countSubarrays(self, nums: List[int], minK: int, maxK: int) -> int:
+        # for each element as the right end of the sub-array, how many subarrays satisfy the fixed bound?
+        ans=0
+        boundary=minKi=maxKi=-1
+        for ii, vv in enumerate(nums):
+            if vv > maxK or vv < minK: 
+                boundary=ii
+                continue
+
+            if vv == minK: minKi=ii
+            if vv == maxK: maxKi=ii
+
+            ans += max(0, min(minKi, maxKi)-boundary)
+
+        
+        return ans
+
+
+#####################
 class Solution:
     def countSubarrays(self, nums: List[int], minK: int, maxK: int) -> int:
         """
