@@ -98,6 +98,7 @@ Strategy:
 - All sub-arrays is O(N^2)
 - We should pre-calc info for each element and bring down the time complexity
 ```
+
 [1498]
 [2302]
 [2681] H : Power-of-Heroes
@@ -108,8 +109,6 @@ Strategy:
 - All combination: O(N^2)  
   -> In order to meet nO(logn), we need to calc something for a set of group to reduce time-complexity
 
-
-
 # DP
 
 Time-Series
@@ -119,3 +118,28 @@ Time-Series
 [0487]
 [1186]
 [1289]
+
+# Design
+
+[0146]
+[0155]
+[0355]
+[0380]
+[0381]
+[0432]
+[0460]
+[0535]
+[0588]
+[0622]
+[0631]
+[0642]
+[0895]
+[1146]
+[1172]
+[1268]
+[1352]
+[1381]
+[1622]
+[1670]
+[2166]
+[2296]
