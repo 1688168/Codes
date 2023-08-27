@@ -98,7 +98,8 @@ Strategy:
 - All sub-arrays is O(N^2)
 - We should pre-calc info for each element and bring down the time complexity
 ```
-
+[1498]
+[2302]
 [2681] H : Power-of-Heroes
 
 - sum of all (sub-sequence-max)^2\*subsequence-min
