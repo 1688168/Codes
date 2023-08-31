@@ -1,3 +1,7 @@
+# Binary Search
+
+[2439]
+
 # Two Pointers
 
 ```
