@@ -1,12 +1,12 @@
 # Binary Search
 
-[0235]
-[0236]
-[1123]
-[1644]
-[1676]
+[0235] BST
+[0236] BT
+[1123] LCA on lowest leaves (same as 1676)
+[1644] LCA on P, q that might not existing
+[1676] LCA on a set (same as 1123)
 
-[1650]
+[1650] LCA with pointer to parent
 [1740]
 [2096]
 [2439]
