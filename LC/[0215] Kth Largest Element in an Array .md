@@ -8,4 +8,4 @@
 
    => the binary search result is in the array
 
-4. Quick Select
+4. Quick Select: avg O(N), worst O(N^2)
