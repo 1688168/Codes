@@ -22,6 +22,7 @@
 [1740]
 [2096]
 [2439]
+[2519]
 
 # Two Pointers
 
@@ -70,6 +71,7 @@ c. move (slide) the window
 # Count Subarray by Element
 
 # Sliding Window
+
 [1151]
 532.K-diff-Pairs-in-an-Array (H-)
 611.Valid-Triangle-Number (M+)
@@ -302,4 +304,10 @@ Time-Series
 
 # Heap
 
+[2519] - <215>: binary search, sortedcontainers
+
 # Graph
+
+# Quick Select
+
+[215]
