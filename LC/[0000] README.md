@@ -266,6 +266,8 @@ Time-Series
 
 # Stack
 
+[0032]
+
 503
 255*
 496
@@ -301,7 +303,6 @@ Time-Series
 1190
 225
 155
-32
 
 # Heap
 
@@ -314,6 +315,7 @@ Time-Series
 [215]
 
 # Top K elements
+
 1. sort: NlogN
 2. Heap/PQ: Nlogk
 3. Binary Search: Nlog C

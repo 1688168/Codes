@@ -1,38 +1,34 @@
 from collections import OrderedDict
+
+
 class LRUCache:
 
     def __init__(self, capacity: int):
-        self.cache=OrderedDict()
-        self.capacity=capacity
-
+        self.capacity = capacity
+        self.cache = OrderedDict()
 
     def get(self, key: int) -> int:
         if key not in self.cache:
             return -1
-
+        val = self.cache[key]
         self.cache.move_to_end(key)
-        return self.cache[key]
-
+        return val
 
     def put(self, key: int, value: int) -> None:
-        if self.capacity==0: return
+        if self.capacity == 0:
+            return None
 
-        if key in self.cache:
-            self.cache.move_to_end(key)
-            self.cache[key]=value
-        else:
-            if len(self.cache) >= self.capacity:
-                try:
-                    self.cache.popitem(last=False)
-                except Exception as e:
-                    print("poping failed")
-                    throw
-            self.cache[key]=value
+        if self.get(key) != -1:
+            self.cache[key] = value
+            return
 
+        if len(self.cache) >= self.capacity:
+            try:
+                self.cache.popitem(last=False)
+            except Exception as e:
+                raise
 
-
-
-
+        self.cache[key] = value
 
 
 # Your LRUCache object will be instantiated and called as such:
