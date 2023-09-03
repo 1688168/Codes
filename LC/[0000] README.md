@@ -311,11 +311,15 @@ Time-Series
 # Graph
 
 # Quick Select
+[0215] Kth-Largest-Element-in-an-Array (M)
+[0324] Wiggle-Sort-II (H)
+[0347] Top-K-Frequent-Elements (M+)
+[0973] K-Closest-Points-to-Origin (M)
 
-[215]
+
+
 
 # Top K elements
-
 1. sort: NlogN
 2. Heap/PQ: Nlogk
 3. Binary Search: Nlog C
