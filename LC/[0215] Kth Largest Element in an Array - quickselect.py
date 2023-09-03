@@ -1,4 +1,6 @@
 from collections import Counter
+
+
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """
@@ -7,18 +9,19 @@ class Solution:
         """
 
         def quick_select(st, ed, k):
-            pivot=nums[st+(ed-st)//2]
+            pivot = nums[st+(ed-st)//2]
 
             ii, jj, kk = st, st, ed
+            while jj <= kk:
                 if nums[jj] > pivot:
                     nums[jj], nums[kk] = nums[kk], nums[jj]
                     kk -= 1
-                elif nums[jj]==pivot:
-                    jj +=1
+                elif nums[jj] == pivot:
+                    jj += 1
                 else:
                     nums[ii], nums[jj] = nums[jj], nums[ii]
-                    ii+=1
-                    jj+=1
+                    ii += 1
+                    jj += 1
 
             """
             S S S S P P P P P L L L L
@@ -31,7 +34,5 @@ class Solution:
             else:
                 return quick_select(st, ii-1, k-(ed-ii+1))
 
-
-
-        N=len(nums)
+        N = len(nums)
         return quick_select(0, N-1, k)

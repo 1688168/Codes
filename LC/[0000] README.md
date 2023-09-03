@@ -40,6 +40,7 @@ c. move (slide) the window
 > Time: O(N)
 ```
 
+[0075] (sort color)(dutch national flag)
 [2762] M
 
 # Max/Min of a sliding window
@@ -312,6 +313,10 @@ Time-Series
 
 [215]
 
-
 # Top K elements
+1. sort: NlogN
+2. Heap/PQ: Nlogk
+3. Binary Search: Nlog C
+4. Quick select: AVG O(N)
+
 [215]
