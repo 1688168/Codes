@@ -1,3 +1,5 @@
+# $${\color{orange}Patterns, \space Data \space Structures}$$
+
 # Path in a Tree
 
 2538
@@ -183,7 +185,6 @@ Strategy:
 
 - [1944] [Video](https://www.youtube.com/watch?v=oV-HvcHogyk)
 - [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
-
 
 # Design
 
