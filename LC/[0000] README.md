@@ -179,9 +179,8 @@ Strategy:
 
 # DP
 
-[2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5DJumpGameVIII.py) - https://www.youtube.com/watch?v=II7tWDuY7yE
+[2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5DJumpGameVIII.py) - https://www.youtube.com/watch?v=II7tWDuY7yE - (DP), (Monotonic Stack)
 
-- DP + monotonic stack
 - [1944] https://www.youtube.com/watch?v=oV-HvcHogyk
 - [2282] https://www.youtube.com/watch?v=AgC28b_0ekM
 
