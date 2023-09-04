@@ -1,4 +1,4 @@
-# $${\color{orange} Question List}$$
+# $${\color{orange} Question \space List}$$
 
 [[2268] - M - Minimum Number of Keypresses](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20MinimumNumberOfKeypresses.py)
 
