@@ -179,10 +179,10 @@ Strategy:
 
 # DP
 
-[2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20JumpGameVIII.py) - https://www.youtube.com/watch?v=II7tWDuY7yE - (DP), (Monotonic Stack)
+[2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20JumpGameVIII.py) - [Video](https://www.youtube.com/watch?v=II7tWDuY7yE) - (DP), (Monotonic Stack)
 
-- [1944] https://www.youtube.com/watch?v=oV-HvcHogyk
-- [2282] https://www.youtube.com/watch?v=AgC28b_0ekM
+- [1944] [Video](https://www.youtube.com/watch?v=oV-HvcHogyk)
+- [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
 
   264.Ugly-Number-II (H-)
   313.Super-Ugly-Number (H-)
