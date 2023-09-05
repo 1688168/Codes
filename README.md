@@ -1,6 +1,6 @@
 # $${\color{orange} Question \space List}$$
 
-[[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py) [[Python - DFS]]() [[CPP]]() - [[Video-UnionFind 1]](https://www.youtube.com/watch?v=VDZkBXPR4fE) [[Video-UnionFind 2]](https://www.youtube.com/watch?v=x_c-OSW-8Iw&t=0s) [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s)- [`BFS`] [`Union Find`]
+[[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py) [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py) [[CPP]]() - [[Video-UnionFind 1]](https://www.youtube.com/watch?v=VDZkBXPR4fE) [[Video-UnionFind 2]](https://www.youtube.com/watch?v=x_c-OSW-8Iw&t=0s) [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s)- [`BFS`] [`Union Find`]
 
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
 
