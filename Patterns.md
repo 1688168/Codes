@@ -30,8 +30,6 @@
 -> updateDelta``
 ```
 
-![Alt text](image.png)
-
 [0307] M
 
 # [`Count Subarray by Element`]
