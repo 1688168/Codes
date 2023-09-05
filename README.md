@@ -1,6 +1,6 @@
 # $${\color{orange} Question \space List}$$
 
-[[0990] - <span style="color:yellow">M</span>](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python]]() [[CPP]]() - [[Video-UnionFind]](https://www.youtube.com/watch?v=VDZkBXPR4fE) [[Video-UnionFind]](https://www.youtube.com/watch?v=x_c-OSW-8Iw&t=0s) [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s)- [[`Patterns`]]
+[[0990] - <span style="color:yellow">M</span>](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python]]() [[CPP]]() - [[Video-UnionFind]](https://www.youtube.com/watch?v=VDZkBXPR4fE) [[Video-UnionFind]](https://www.youtube.com/watch?v=x_c-OSW-8Iw&t=0s) [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s)- [`BFS`] [`Union Find`]
 
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
 
@@ -17,4 +17,4 @@
 
 ---
 
-[[] - <span style="color:red">H</span>]() - [[Python]]() [[CPP]]() - [[Video]]() - [[`Patterns`]]
+[[] - <span style="color:red">H</span>]() - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
