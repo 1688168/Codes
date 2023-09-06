@@ -15,6 +15,7 @@
 
 - [990]
 
+[[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/) - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
 ---
 
-[[] - <span style="color:red">H</span>]() - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
+[[] - <span style="color:red">H</span> - ]() - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
