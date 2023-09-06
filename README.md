@@ -13,10 +13,9 @@
 
 [[2307] - <span style="color:red">H</span> - Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) - [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2307%5D%20Check%20For%20Contraditions%20In%20Equations.py) - [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) [`BFS/DFS`][`Union Find`]
 
-- [990]
-
-
+[[2563] - <span style="color:yellow">M</span> - Count the Number of Fair Pairs
+](https://leetcode.com/problems/count-the-number-of-fair-pairs/) - [[Python]]() [[CPP]]() - [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) - [`Binary Search`]
 
 ---
 
-[[] - <span style="color:red">H</span>]() - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
+[[] - <span style="color:red">H</span> - desc]() - [[Python]]() [[CPP]]() - [[Video]]() - [`Patterns`]
