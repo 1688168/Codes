@@ -1,7 +1,7 @@
 # $${\color{orange} Question \space List}$$
 
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0155%5D%20Min-Stack.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/155.Min-Stack) -
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
