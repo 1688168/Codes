@@ -1,5 +1,11 @@
 # $${\color{orange} Question \space List}$$
 
+[[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/155.Min-Stack) -
+[[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
+[`Stack`]
+
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
 [[CPP]]() -
@@ -22,7 +28,6 @@
 [[Video]](https://www.youtube.com/watch?v=HGCm9PkFd58&list=PPSV&t=918) -
 [`Count Subarray By Element`]
 
-
 [[2297] - <span style="color:yellow">M</span> - Jump Game VIII](https://leetcode.com/problems/jump-game-viii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20Jump%20Game%20VIII.py) -
 [[Video]](https://www.youtube.com/watch?v=II7tWDuY7yE) -
@@ -36,7 +41,6 @@
 [[CPP]] -
 [[Video]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2302%5D%20Count%20Subarrays%20With%20Score%20Less%20Thank%20K.py) -
 [`Count Subarray By Element`]
-
 
 [[2307] - <span style="color:red">H</span> - Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2307%5D%20Check%20For%20Contraditions%20In%20Equations.py) -
