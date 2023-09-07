@@ -47,7 +47,7 @@
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
 
-[[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City]() - 
+[[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.cpp) -
 [[Video]](https://www.youtube.com/watch?v=rn0yE0gC8Vw) -
