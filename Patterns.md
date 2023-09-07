@@ -1,8 +1,12 @@
-# $${\color{orange}Patterns, \space Data \space Structures}$$
+ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 
 # [`BFS`]
 
 # [`Binary Search`]
+```
+- Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
+- Count some condition, use binary search to find the range for counting
+```
 
 [0235] BST
 [0236] BT
@@ -15,9 +19,11 @@
 [2096]
 [2439]
 [2519]
-[2528]
-[2702]
-
+[2528] Maximize the Minimum Powered City
+```
+- 
+```
+[2702]7[p
 # [`Binary Index Tree (BIT)`]
 
 ```
