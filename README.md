@@ -17,8 +17,8 @@
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
-[[Python]]()
-[[CPP]]() -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)
+[[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.cpp) -
 [[Video]](https://www.youtube.com/watch?v=HGCm9PkFd58&list=PPSV&t=918) -
 [`Count Subarray By Element`]
 
