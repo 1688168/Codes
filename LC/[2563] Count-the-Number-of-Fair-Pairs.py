@@ -15,8 +15,7 @@ class Solution:
             vv+nums[ii] <= upper
             nums[ii] <= upper - vv
             """
-            # start = bisect_left(nums[:ii+1], lower-vv)
-            # end = bisect_right(nums[:ii+1], upper-vv)
+
             start = bisect_left(nums, lower-vv)
             end = bisect_right(nums, upper-vv)
             cnt += (end-start)
@@ -27,7 +26,8 @@ class Solution:
         return cnt//2
 
 
-# this python is TLE
+# this python is TLE but same logic CPP is actually faster.
+#  >>>>> list slicing is a copy, very slow <<<<<
 
 
 class Solution:
@@ -38,13 +38,7 @@ class Solution:
             if ii == 0:
                 continue
             # find the range that as i that nums[i]+nums[j] in (lower, upper)
-            """
-            vv+nums[ii]>= lower
-            nums[ii]>= lower-vv
 
-            vv+nums[ii] <= upper
-            nums[ii] <= upper - vv
-            """
             start = bisect_left(nums[:ii+1], lower-vv)
             end = bisect_right(nums[:ii+1], upper-vv)
             cnt += (end-start)
