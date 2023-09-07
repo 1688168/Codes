@@ -37,7 +37,8 @@
 [[2563] -
 <span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.py)
-[[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.cpp) -
+[[CPP v1]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.cpp)
+[[CPP v2]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs-v2.cpp) -
 [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) -
 [[`Binary Search`]](https://github.com/1688168/Leetcode/blob/main/templates/Binary-Search.md)
 
