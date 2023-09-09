@@ -166,3 +166,38 @@ class Solution:
         return res
 
 # leetcode submit region end(Prohibit modification and deletion)
+
+
+
+  
+        """
+        nums[a]: prev_smaller of nums[ii]
+        nums[b]: next smaller of nums[ii]
+        a x x x x ii x x x x x b
+          1 2 3 4
+          left = (nums[a+1]*1+nums[a+2]*2 + ... + nums[a+4]*4) * (b-ii)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 A
+          self = nums[ii]*(ii-a)*(b-ii)
+          right = (nums[ii+1]*3 + nums[i+2]*2 + ... + nums[ii+k]*1) * (ii-a)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 B
+
+          ttl[ii] = (left+self+right) * nums[ii]
+          
+          ----- consider left -----
+          presum2= sum(nums[ii]* ii)
+          let presum2[ii] = nums[1]*1 + nums[2]*2 + ... nums[ii]* ii
+          presum2[ii-1]-presum2[a] = nums[a+1]*(a+1)+nums[a+2]*(a+2)+ ... + nums[a+k]*(a+k)
+          = A + (presum[ii-1]-presum[a])*a
+
+
+          => left = presum2[ii-1]-presum2[a]- ((presum[a:ii]) * a) * (b-ii)
+
+          ----- consider right -----
+          presum2[b-1] - presum2[ii]
+          = nums[ii+1]*(ii+1) + nums[ii+2]*(ii+2) + ... + nums[ii+k]*(ii+k)
+          = presum[i+1:b-1]*b - B
+
+          right = ((presum[b-1] - presum[ii])*b - (presum2[b-1]-presum2[ii])) *  (ii-a)
+        """
