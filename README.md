@@ -32,12 +32,12 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.cpp) -
 [[Video]](https://www.youtube.com/watch?v=HGCm9PkFd58&list=PPSV&t=918) -
-[`Count Subarray By Element`]
+[`Count Subarray By Element`][`Monotonic Stack`]
 
 [[2297] - <span style="color:yellow">M</span> - Jump Game VIII](https://leetcode.com/problems/jump-game-viii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20Jump%20Game%20VIII.py) -
 [[Video]](https://www.youtube.com/watch?v=II7tWDuY7yE) -
-[[`DP`]](https://github.com/1688168/Leetcode/template/DP.md) [`Monotonic Stack`]
+[`DP`] [`Monotonic Stack`]
 
 - [1944] [[Video]](https://www.youtube.com/watch?v=oV-HvcHogyk)
 - [2282] [[Video]](https://www.youtube.com/watch?v=AgC28b_0ekM)
@@ -57,7 +57,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.cpp) -
 [[Video]](https://www.youtube.com/watch?v=rn0yE0gC8Vw) -
-[[`Binary Search`]](https://github.com/1688168/Leetcode/blob/main/templates/Binary-Search.md)
+[`Binary Search`]
 
 [[2563] -
 <span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
@@ -65,7 +65,7 @@
 [[CPP v1]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.cpp)
 [[CPP v2]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs-v2.cpp) -
 [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) -
-[[`Binary Search`]](https://github.com/1688168/Leetcode/blob/main/templates/Binary-Search.md)
+[`Binary Search`]
 
 ---
 

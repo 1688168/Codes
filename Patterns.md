@@ -51,6 +51,8 @@
 [1498]
 [2281] H: Sum of Total Strength of Wizards
 - Strength: min(in subarray) * sum(subarray) 
+
+
 [2302] H: Count Subarrays With Score Less Than K
 - Score: subarray_sum*subarray_length < K
 [2681] H : Power-of-Heroes
