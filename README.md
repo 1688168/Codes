@@ -34,6 +34,8 @@
 [[Video]](https://www.youtube.com/watch?v=HGCm9PkFd58&list=PPSV&t=918) -
 [`Count Subarray By Element`][`Monotonic Stack`]
 
+- [907] [`Aggregate Subarray by element`]
+
 [[2297] - <span style="color:yellow">M</span> - Jump Game VIII](https://leetcode.com/problems/jump-game-viii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20Jump%20Game%20VIII.py) -
 [[Video]](https://www.youtube.com/watch?v=II7tWDuY7yE) -
