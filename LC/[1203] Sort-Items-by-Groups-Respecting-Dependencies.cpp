@@ -2,14 +2,14 @@ class Solution {
 public:
     vector<int> sortItems(int n, int m, vector<int>& group, vector<vector<int>>& beforeItems) 
     {
-        unordered_map<int, unordered_set<int>>groupItems;
-        int nextGroupId = m;
+        unordered_map<int, unordered_set<int>>groupItems; //members of a group
+        int nextGroupId = m; //assign an unique group id to un-groupped nodes
 
         for (int i=0; i<n; i++)
         {
             if (group[i]==-1)
             {
-                group[i] = nextGroupId;
+                group[i] = nextGroupId; //put ungroupped nodes to an new unique group
                 nextGroupId += 1;
             }
             groupItems[group[i]].insert(i);
@@ -18,10 +18,10 @@ public:
         // build graph inside each group
         unordered_map<int, unordered_set<int>>next;
         unordered_map<int, int>inDegree;
-        for (int i=0; i<n; i++)        
+        for (int i=0; i<n; i++)   //for each node     
             for (int j: beforeItems[i])
             {
-                if (group[i]!=group[j]) continue;
+                if (group[i]!=group[j]) continue; //sort same group, ignore diff group
                 if (next[j].find(i)==next[j].end())                
                 {
                     next[j].insert(i);
