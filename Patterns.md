@@ -1,8 +1,9 @@
- n# $${\color{orange}Patterns, \space Data \space Structures}$$
+n# $${\color{orange}Patterns, \space Data \space Structures}$$
 
 # [`BFS`]
 
 # [`Binary Search`]
+
 ```
 - Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
 - Count some condition, use binary search to find the range for counting
@@ -22,9 +23,11 @@
 [2528] Maximize the Minimum Powered City
 
 ```
-- 
+-
 ```
+
 [2702]
+
 # [`Binary Index Tree (BIT)`]
 
 ```
@@ -46,15 +49,21 @@
 - Pattern: looking for some metrics of all sub-arrays
 - All sub-arrays is O(N^2)
 - We should pre-calc info for each element and bring down the time complexity
+
+>> example matrics:
+- min*sub-arr-sum (H)
+
 ```
 
-[1498]
+[1498]  
 [2281] H: Sum of Total Strength of Wizards
-- Strength: min(in subarray) * sum(subarray) 
 
+- Strength: min(in subarray) \* sum(subarray)
 
 [2302] H: Count Subarrays With Score Less Than K
-- Score: subarray_sum*subarray_length < K
+
+- Score: subarray_sum\*subarray_length < K
+
 [2681] H : Power-of-Heroes
 
 - sum of all (sub-sequence-max)^2\*subsequence-min
