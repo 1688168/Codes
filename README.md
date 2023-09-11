@@ -14,9 +14,9 @@
 [`Topology Sort`]
 
 [[381] - <span style="color:red">H</span> - Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) - 
-[[Python]]()
-[[CPP]]() -
-[[Video]]() -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0381%5D%20Insert-Delete-GetRandom-O(1)-Duplicates-allowed.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/381.Insert-Delete-GetRandom-O1-Duplicates-allowed/381.Insert-Delete-GetRandom-O1-Duplicates-allowed.cpp) -
+[[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
 
