@@ -13,6 +13,13 @@
 [[Video]](https://www.youtube.com/watch?v=5fntVoXeW_A) -
 [`Topology Sort`]
 
+[[381] - <span style="color:red">H</span> - Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Design`]
+
+
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
 [[CPP]]() -
