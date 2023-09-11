@@ -6,6 +6,13 @@
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
 
+[[0207] - <span style="color:yellow">M</span> - Course Schedule](https://leetcode.com/problems/course-schedule/description/) - 
+[[Python-BFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0207%5D%20Course-Schedule-BFS.py)
+[[Python-DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0207%5D%20Course-Schedule-DFS.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/207.Course-Schedule) -
+[[Video]](https://www.youtube.com/watch?v=5fntVoXeW_A) -
+[`Topology Sort`]
+
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
 [[CPP]]() -
@@ -19,6 +26,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/BFS/1203.Sort-Items-by-Groups-Respecting-Dependencies/1203.Sort-Items-by-Groups-Respecting-Dependencies.cpp) -
 [[Video]](https://www.youtube.com/watch?v=NP9ia_QU0l8&list=PPSV&t=1041) -
 [`Topology Sort`]
+
+[[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=W6b-Tp7KzfM&t=14s) -
+[`Patterns`]
 
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
