@@ -1,3 +1,45 @@
+##############
+# 20230912
+##############
+##############
+# 20230912
+##############
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        M=len(board)
+        N=len(board[0])
+        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        def dfs(st, ii, jj, path):
+            #print(" st: ", st, " path: ", path, " wlen: ", len(word))
+            if st >= len(word): return True
+            if ii < 0 or ii >= M or jj < 0 or jj >= N: return False
+     
+            if (ii, jj) in visited: return False
+            if board[ii][jj] != word[st]: return False
+
+            visited.add((ii, jj))   
+            path.append(board[ii][jj])
+            #print("path: ", path)
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                if dfs(st+1, nx, ny, path): return True
+            path.pop()
+            visited.remove((ii, jj))
+            return False
+
+
+        for ii in range(M):
+            for jj in range(N):            
+                visited=set()
+                path=[]
+                #print("ii: ", ii, " jj: ", jj)
+                if dfs(0, ii, jj, path): return True
+        return False
+
+
+#####################################
+# 20230521
+#############
 from collections import Counter
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
@@ -45,3 +87,4 @@ class Solution:
                         return True
         
         return False
+    
