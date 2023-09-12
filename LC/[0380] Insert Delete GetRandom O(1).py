@@ -1,3 +1,47 @@
+###########
+# 20230912
+###########
+
+import random
+from collections import defaultdict
+class RandomizedSet:
+
+    def __init__(self):
+        self.vals=[]
+        self.val2local=defaultdict(set)
+        
+
+    def insert(self, val: int) -> bool:
+        if val in self.val2local: return False
+        self.vals.append(val)
+        self.val2local[val]=len(self.vals)-1
+        return True
+        
+
+    def remove(self, val: int) -> bool:
+        if val not in self.val2local: return False
+        val_idx = self.val2local[val]
+        self.val2local[self.vals[-1]]=val_idx
+        self.vals[val_idx]=self.vals[-1]
+        del self.val2local[val]
+        self.vals.pop()
+        return True
+        
+
+    def getRandom(self) -> int:
+        idx = random.randrange(0, len(self.vals))
+        return self.vals[idx]
+
+
+# Your RandomizedSet object will be instantiated and called as such:
+# obj = RandomizedSet()
+# param_1 = obj.insert(val)
+# param_2 = obj.remove(val)
+# param_3 = obj.getRandom()
+
+
+
+#################################
 from random import random
 class RandomizedSet:
 
