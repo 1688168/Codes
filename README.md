@@ -6,7 +6,17 @@
 [[Video]](https://www.youtube.com/watch?v=7nTdJGqZQXE) -
 [`DFS`]
 
+[[0139] - <span style="color:red">H</span> - Word Break](https://leetcode.com/problems/word-break/description/) - tch?v=eYT-hKQ1au4&t=10s) -
+[`Trie`][
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
+[[Video]](https://www.youtube.com/wa](https://github.com/wisdompeak/LeetCode/tree/master/Trie/212.Word-Search-II)
 
+[[0140] - <span style="color:red">H</span> - Word Break II](https://leetcode.com/problems/word-break-ii/description/) - 
+[[Python]]()
+[[CPP]](https://githubhttps://github.com/1688168/Leetcode/blob/main/LC/%5B0140%5D%20Word%20Break%20II.py.com/wisdompeak/LeetCode/tree/master/Trie/140.Word-Break-II) -
+[[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
+[`Trie`]
 
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0155%5D%20Min-Stack.py)
@@ -27,6 +37,12 @@
 [[Video]](https://www.youtube.com/watch?v=DPO52m5XIOA&t=2s) -
 [`Topology Sort`]
 
+
+[[0212] - <span style="color:red">H</span> - Word Search II](https://leetcode.com/problems/word-search-ii/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0212%5D%20Word%20Search%20II.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/212.Word-Search-II) -
+[[Video]](https://www.youtube.com/watch?v=nGGF_jQH0GQ) -
+[`Trie`]
 
 
 [[0380] - <span style="color:yellow">M</span> - https://leetcode.com/problems/insert-delete-getrandom-o1](Insert Delete GetRandom O(1)) - 
