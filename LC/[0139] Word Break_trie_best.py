@@ -1,3 +1,77 @@
+##########
+# 20230915
+##########
+from functools import lru_cache
+
+class TrieNode:
+    def __init__(self):
+        self.children={}
+        self.count=0
+        self.is_word=False
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def is_word(self, w):
+        if w is None or len(w)==0: return False
+
+        itr = self.root
+        for c in w:
+            if c not in itr.children or itr.count==0: return False
+            itr = itr.children[c]
+        
+        return itr.is_word
+    
+    def add(self, w):
+        if w is None or len(w)==0: return 
+        itr=self.root
+        for c in w:
+            if c not in itr.children: itr.children[c]=TrieNode()
+            itr=itr.children[c]
+            itr.count += 1
+        itr.is_word=True 
+
+    def remove(self, w):
+        if w is None or len(w)==0: return
+        itr = self.root
+        
+        for c in w: 
+            if c not in itr.children: raise Exception(f"removing not existing word: {w}")
+            itr.count -= 1
+            itr = itr.children[c]
+        
+        itr.is_word=False
+         
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        """
+        1. build trie for dict words
+        2. can we find dfs that is a word for s[:ii] and dfs(ii+1)
+        """
+        N=len(s)
+        trie = Trie()
+        for w in wordDict: trie.add(w)
+        
+        @lru_cache(None)
+        def dfs(st):
+            if st >= N: return True
+            
+            itr=trie.root
+            for ii in range(st, N):
+                if (c:=s[ii]) in itr.children:
+                    itr=itr.children[c]
+                    if itr.is_word and dfs(ii+1): return True
+                else:
+                    break
+            return False
+
+        return dfs(0)
+
+
+
+########################
 from collections import deque
 class TrieNode:
     def __init__(self):
