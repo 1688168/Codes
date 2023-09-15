@@ -8,7 +8,7 @@ class Solution:
                = dp[jj] and s[jj:ii+1] in word_set
         """
         N=len(s)
-        dp=[False]*(N+1)
+        dp=[False]*(N+1) # length of s 0~N
         dp[0]=True
         word_set=set(wordDict)
         for ii in range(1, N+1): # for each length

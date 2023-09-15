@@ -193,6 +193,22 @@ Strategy:
 [0207]  
 [1591] Strange Printer
 
+
+# [`Trie`]
+[0139]  
+```
+- DFS by set lookup
+> Space: O(N*k): N words with duplicated prefix
+-- Time: 
+
+- DFS by Trie word search
+> Space: o(N*j): N words but compressed
+- DP: O(N)
+```
+[0140]  
+[0212]    
+
+
 # [`Two Pointers`]
 
 ```
