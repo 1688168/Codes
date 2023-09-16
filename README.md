@@ -37,13 +37,11 @@
 [[Video]](https://www.youtube.com/watch?v=DPO52m5XIOA&t=2s) -
 [`Topology Sort`]
 
-
 [[0212] - <span style="color:red">H</span> - Word Search II](https://leetcode.com/problems/word-search-ii/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0212%5D%20Word%20Search%20II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/212.Word-Search-II) -
 [[Video]](https://www.youtube.com/watch?v=nGGF_jQH0GQ) -
 [`Trie`]
-
 
 [[0380] - <span style="color:yellow">M</span> - https://leetcode.com/problems/insert-delete-getrandom-o1](Insert Delete GetRandom O(1)) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
@@ -51,13 +49,11 @@
 [[Video]](https://www.youtube.com/watch?v=jE6VIeQxzLU) -
 [`Design`]
 
-
 [[0381] - <span style="color:red">H</span> - Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0381%5D%20Insert-Delete-GetRandom-O(1)-Duplicates-allowed.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/381.Insert-Delete-GetRandom-O1-Duplicates-allowed/381.Insert-Delete-GetRandom-O1-Duplicates-allowed.cpp) -
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
-
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
@@ -127,6 +123,12 @@
 [[CPP v2]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs-v2.cpp) -
 [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) -
 [`Binary Search`]
+
+[[2638] - <span style="color:red">H</span> - Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/description) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2638.Count-the-Number-of-K-Free-Subsets) -
+[[Video]](https://www.youtube.com/watch?v=qw0OVFVg5ng) -
+[`Patterns`]
 
 ---
 
