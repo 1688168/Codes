@@ -98,6 +98,10 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 [2296]
 
 # [`DFS`]
+- [2597]: can you try 2638 by DFS?
+```
+- Counting: for each element, you can either take or no-take based on some condition.  when reaching the end, we return 1
+```
 
 # [`DP`](https://github.com/1688168/Leetcode/template/DP.md)
 

@@ -125,7 +125,7 @@
 [`Binary Search`]
 
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2597%5D%20The-Number-of-Beautiful-Subsets.py)
 [[CPP-DFS]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets.cpp) -
 [[CPP-DP]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets_v2.cpp) -
 [[Video]](https://www.youtube.com/watch?v=abLCTjjhhEk) -
