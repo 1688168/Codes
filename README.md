@@ -124,11 +124,20 @@
 [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) -
 [`Binary Search`]
 
-[[2638] - <span style="color:red">H</span> - Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/description) - 
+[[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
+[[Python]]()
+[[CPP-DFS]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets.cpp) -
+[[CPP-DP]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets_v2.cpp) -
+[[Video]](https://www.youtube.com/watch?v=abLCTjjhhEk) -
+[`DP`]
+
+[[2638] - <span style="color:Yellow">M</span> - Count the Number of K-Free Subsets](https://leetcode.com/problems/count-the-number-of-k-free-subsets/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2638%5D%20Count-the-Number-of-K-Free-Subsets.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2638.Count-the-Number-of-K-Free-Subsets) -
 [[Video]](https://www.youtube.com/watch?v=qw0OVFVg5ng) -
-[`Patterns`]
+[`DP`]
+
+- [2597]
 
 ---
 
