@@ -75,9 +75,15 @@
 [[Video]](https://www.youtube.com/watch?v=W6b-Tp7KzfM&t=14s) -
 [`Topology Sort`]
 
+[[1650] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1650%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20III.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1650.Lowest-Common-Ancestor-of-a-Binary-Tree-III) -
+[[Video]]() -
+[`LCA`]
+
 [[2222] - <span style="color:yellow">M</span> - Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/description) - 
-[[Python]]()
-[[CPP]]() -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2222%5D%20Number%20of%20Ways%20to%20Select%20Buildings%20-%20TLE.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2222.Number-of-Ways-to-Select-Buildings) -
 [[Video]](https://www.youtube.com/watch?v=PI6Dwkdw5hQ&t=53s) -
 [`DP`]
 
@@ -160,6 +166,12 @@
 - [2597]
 
 ---
+
+[[] - <span style="color:yellow">M</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 [[] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()

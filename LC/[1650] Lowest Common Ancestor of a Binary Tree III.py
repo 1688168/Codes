@@ -1,3 +1,45 @@
+#################
+# 20230917
+#################
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+        self.parent = None
+"""
+
+
+class Solution:
+    def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
+        pdepth, qdepth = 0, 0
+        pi, qi = p, q
+        while pi is not None:
+            pdepth += 1
+            pi = pi.parent
+
+        while qi is not None:
+            qdepth += 1
+            qi = qi.parent
+
+        while pdepth > qdepth:
+            p = p.parent
+            pdepth -= 1
+
+        while qdepth > pdepth:
+            q = q.parent
+            qdepth -= 1
+
+        while p != q:
+            p = p.parent
+            q = q.parent
+
+        return p
+
+
+#######################################
 """
 # Definition for a Node.
 class Node:
