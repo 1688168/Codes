@@ -69,6 +69,12 @@
 [[Video]](https://www.youtube.com/watch?v=NP9ia_QU0l8&list=PPSV&t=1041) -
 [`Topology Sort`]
 
+[[1492] - <span style="color:yellow">M</span> - The Kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1591.Strange-Printer-II) -
