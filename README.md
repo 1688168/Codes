@@ -140,6 +140,16 @@
 [[Video]](https://www.youtube.com/watch?v=rn0yE0gC8Vw) -
 [`Binary Search`]
 
+
+[[2534] - <span style="color:red">H</span> - Time Take to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
+
+
+
 [[2563] -
 <span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.py)
