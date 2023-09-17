@@ -1,6 +1,45 @@
 ############
 # 20230917
 ############
+
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        """
+        - x x x x x
+        - define a sliding window with size k
+        - maintain a set to carry distinct numbers
+        - if size of set same as k -> all elements are distinct
+        - calculate subarray sum by prepare prefix sum 
+        """
+        N = len(nums)
+
+        val2cnt = {}
+        ans = 0
+        ttl = 0
+        for ii, vv in enumerate(nums):
+            val2cnt[vv] = val2cnt.get(vv, 0) + 1
+
+            if ii < k:
+                ttl += vv
+                if len(val2cnt) == k:
+                    ans = ttl
+                continue
+
+            pv = nums[ii-k]
+            ttl = ttl+vv-pv
+
+            val2cnt[pv] -= 1
+            if val2cnt[pv] == 0:
+                del val2cnt[pv]
+
+            if len(val2cnt) == k:
+                ans = max(ans, ttl)
+        return ans
+
+
+############
+# 20230917
+############
 class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
         """
