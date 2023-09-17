@@ -1,3 +1,71 @@
+from collections import deque
+
+
+class Solution:
+    def timeTaken(self, arrival: List[int], state: List[int]) -> List[int]:
+        entering_pool = deque()
+        existing_pool = deque()
+        N = len(arrival)
+        ans = [-1]*N
+        prev_state = 1
+        ct = 0
+        ii = 0
+
+        def entering():
+            nonlocal prev_state
+            curr = entering_pool.popleft()
+            ans[curr] = ct
+            prev_state = 0
+
+        def existing():
+            nonlocal prev_state
+            curr = existing_pool.popleft()
+            ans[curr] = ct
+            prev_state = 1
+
+        while ii < N or entering_pool or existing_pool:
+
+            # get those at the door to the queue
+            while ii < N and arrival[ii] <= ct:
+                if state[ii] == 0:
+                    entering_pool.append(ii)
+                else:
+                    existing_pool.append(ii)
+                ii += 1
+
+            if prev_state == 0:  # previously entering
+                if entering_pool:
+                    entering()
+                    ct += 1
+                    continue
+
+                if existing_pool:
+                    existing()
+                    ct += 1
+                    continue
+
+                prev_state = 1
+
+            else:  # previously existing
+                # exit first
+                if existing_pool:
+                    existing()
+                    ct += 1
+                    continue
+                if entering_pool:
+                    entering()
+                    ct += 1
+                    continue
+
+                prev_state = 1
+
+            ct += 1
+        return ans
+
+
+################
+
+
 class Solution:
     def timeTaken(self, arrival: List[int], state: List[int]) -> List[int]:
         enter_pool, exit_pool = deque(), deque()
