@@ -122,6 +122,12 @@
 [[Video]](https://www.youtube.com/watch?v=kl9iE2tQh_A) -
 [`Two Pointers`][`Sliding Window`]
 
+[[2486] - <span style="color:yellow">M</span> - Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=ThfI3wACirs) -
+[`Patterns`]
+
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.cpp) -
