@@ -75,6 +75,12 @@
 [[Video]](https://www.youtube.com/watch?v=W6b-Tp7KzfM&t=14s) -
 [`Topology Sort`]
 
+[[2222] - <span style="color:yellow">M</span> - Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=PI6Dwkdw5hQ&t=53s) -
+[`DP`]
+
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
 
@@ -109,6 +115,12 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2307%5D%20Check%20For%20Contraditions%20In%20Equations.py) -
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
+
+[[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2461.Maximum-Sum-of-Distinct-Subarrays-With-Length-K) -
+[[Video]](https://www.youtube.com/watch?v=kl9iE2tQh_A) -
+[`Two Pointers`][`Sliding Window`]
 
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
