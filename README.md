@@ -18,6 +18,8 @@
 [[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
 [`Trie`]
 
+- [472]  Word Concatenate
+
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0155%5D%20Min-Stack.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/155.Min-Stack) -
