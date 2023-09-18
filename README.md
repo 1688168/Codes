@@ -51,11 +51,18 @@
 [[Video]](https://www.youtube.com/watch?v=jE6VIeQxzLU) -
 [`Design`]
 
+
 [[0381] - <span style="color:red">H</span> - Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0381%5D%20Insert-Delete-GetRandom-O(1)-Duplicates-allowed.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/381.Insert-Delete-GetRandom-O1-Duplicates-allowed/381.Insert-Delete-GetRandom-O1-Duplicates-allowed.cpp) -
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
+
+[[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/472.Concatenated-Words) -
+[[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
+[`Trie`]
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
