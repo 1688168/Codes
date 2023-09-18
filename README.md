@@ -89,6 +89,15 @@
 [[Video]]() -
 [`LCA`]
 
+[[2104] - <span style="color:yellow">M</span> - Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2104%5D%20Sub%20of%20Subarray%20Ranges%20-%20O(N).py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2104.Sum-of-Subarray-Ranges) -
+[[Video]](https://www.youtube.com/watch?v=xba0NzSbuas) -
+[`Monotonic Stack`]
+
+- [907]  
+- [1856]  
+
 [[2222] - <span style="color:yellow">M</span> - Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2222%5D%20Number%20of%20Ways%20to%20Select%20Buildings%20-%20TLE.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2222.Number-of-Ways-to-Select-Buildings) -
