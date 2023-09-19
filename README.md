@@ -1,5 +1,12 @@
 # $${\color{orange} Question \space List}$$
 
+
+[[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
+[[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
+[[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
+[`DP`]
+
 [[0079] - <span style="color:yellow">M</span> - Word Search](https://leetcode.com/problems/word-search/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0079%5D%20Word%20Search.py)
 [[CPP]]() -
