@@ -18,7 +18,7 @@ class Solution:
         N = len(chars)
         mxv = -math.inf
         for ii in range(N):  # try all combinations
-            for jj in range(N):  # try (a, b) and avoid (b, a)
+            for jj in range(N):
                 a = chars[ii]
                 b = chars[jj]
                 if a == b:
