@@ -1,11 +1,10 @@
 # $${\color{orange} Question \space List}$$
 
-
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
-[`DP`]
+[`DP`][`Kadane`]
 
 [[0079] - <span style="color:yellow">M</span> - Word Search](https://leetcode.com/problems/word-search/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0079%5D%20Word%20Search.py)
@@ -25,7 +24,7 @@
 [[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
 [`Trie`]
 
-- [472]  Word Concatenate
+- [472] Word Concatenate
 
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0155%5D%20Min-Stack.py)
@@ -57,7 +56,6 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/380.Insert-Delete-GetRandom-O-1/380.Insert%20Delete%20GetRandom%20O(1).cpp) -
 [[Video]](https://www.youtube.com/watch?v=jE6VIeQxzLU) -
 [`Design`]
-
 
 [[0381] - <span style="color:red">H</span> - Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0381%5D%20Insert-Delete-GetRandom-O(1)-Duplicates-allowed.py)
@@ -109,8 +107,8 @@
 [[Video]](https://www.youtube.com/watch?v=xba0NzSbuas) -
 [`Monotonic Stack`]
 
-- [907]  
-- [1856]  
+- [907]
+- [1856]
 
 [[2222] - <span style="color:yellow">M</span> - Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2222%5D%20Number%20of%20Ways%20to%20Select%20Buildings%20-%20TLE.py)
@@ -124,7 +122,7 @@
 [[2272] - <span style="color:red">H</span> - Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2272%5D%20Substring%20With%20Largest%20Variance%20-%20dp1.py) -
 [[Video]](https://www.youtube.com/watch?v=P6KnO-Dw0Fo&t=13s)
-[`Max Subarray`]
+[`Max Subarray`][`Modified Kadane`]
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
