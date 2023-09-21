@@ -71,6 +71,14 @@
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
+[[642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/642.Design-Search-Autocomplete-System) -
+[[Video]](https://www.bilibili.com/video/BV1VT41137Cc/) -
+[`Trie`]
+
+- [1268]  
+
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
 [[CPP]]() -
@@ -84,6 +92,14 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/BFS/1203.Sort-Items-by-Groups-Respecting-Dependencies/1203.Sort-Items-by-Groups-Respecting-Dependencies.cpp) -
 [[Video]](https://www.youtube.com/watch?v=NP9ia_QU0l8&list=PPSV&t=1041) -
 [`Topology Sort`]
+
+[[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/1268.Search-Suggestions-System) -
+[[Video]](https://www.youtube.com/watch?v=GTPgTxTuung&t=1201s) -
+[`Trie`]
+
+- [642]  
 
 [[1492] - <span style="color:yellow">M</span> - The Kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description/) - 
 [[Python]]()
