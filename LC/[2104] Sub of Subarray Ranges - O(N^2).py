@@ -18,3 +18,22 @@ class Solution:
                 ans += (mx-mn)
 
         return ans
+
+
+######################
+# this is TLE: O(N^3)
+######################
+class Solution:
+    def subArrayRanges(self, nums: List[int]) -> int:
+        N=len(nums)
+        ttl_range=0
+        for ii in range(N):
+            for jj in range(ii+1, N):
+                ttl_range += (max(nums[ii:jj+1]) - min(nums[ii:jj+1]))
+                # mx=max(nums[ii:jj])
+                # mn=min(nums[ii:jj])
+                # ttl_range += (mx-mn)
+                # print(" ii: ", ii, " jj: ", jj, " mx: ", mx, "mn: ", mn, " ttl: ", ttl_range)
+        
+        return ttl_range
+        

@@ -75,7 +75,13 @@
 [[Video]](https://www.bilibili.com/video/BV1VT41137Cc/) -
 [`Trie`]
 
-- [1268]  
+- [1268]
+
+[[828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
+[[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
+[`Count Subarray by Element`]
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
@@ -97,7 +103,7 @@
 [[Video]](https://www.youtube.com/watch?v=GTPgTxTuung&t=1201s) -
 [`Trie`]
 
-- [642]  
+- [642]
 
 [[1492] - <span style="color:yellow">M</span> - The Kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description/) - 
 [[Python]]()
@@ -131,6 +137,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2222.Number-of-Ways-to-Select-Buildings) -
 [[Video]](https://www.youtube.com/watch?v=PI6Dwkdw5hQ&t=53s) -
 [`DP`]
+
+[[2262] - <span style="color:red">H</span> - Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2262.Total-Appeal-of-A-String) -
+[[Video]](https://www.youtube.com/watch?v=yItx_wB0Epg) -
+[`Count Subarray by Element`]
 
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
