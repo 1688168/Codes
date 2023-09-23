@@ -1,7 +1,38 @@
 """
-# 20221018
+# 20230923
 """
 from collections import defaultdict
+
+
+class Solution:
+    def uniqueLetterString(self, s: str) -> int:
+        """
+        c x x c x x x x c
+              i
+        a                b
+        c will contribute (i-a)(b-i)
+        """
+
+        N = len(s)
+        c2idx = defaultdict(list)
+        for ii, vv in enumerate(s):
+            c2idx[vv].append(ii)
+
+        ttl = 0
+        for cc, vv in c2idx.items():
+            vv = [-1]+vv+[N]
+            for jj in range(1, len(vv)-1):
+                a = vv[jj]-vv[jj-1]
+                b = vv[jj+1]-vv[jj]
+                ttl += a*b
+        return ttl
+
+
+"""
+# 20221018
+"""
+
+
 class Solution:
     def uniqueLetterString(self, s: str) -> int:
         """
@@ -22,9 +53,9 @@ class Solution:
         + A1's contribution to final answer is 4
         + A2's contribution: left_cnt*right_cnt
         """
-        N=len(s)
+        N = len(s)
         # find location of all chars
-        char2locs=defaultdict(list)
+        char2locs = defaultdict(list)
         # prefix -1 for convience
         for c in s:
             char2locs[c].append(-1)
@@ -35,8 +66,7 @@ class Solution:
             char2locs[c].append(N)
 
         # calc contribution of each char
-        res=0
-
+        res = 0
 
         for c, locs in char2locs.items():
             for ii in range(1, len(locs)-1):
