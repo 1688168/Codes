@@ -3,6 +3,24 @@ from collections import defaultdict
 
 class Solution:
     def appealSum(self, s: str) -> int:
+        char2prevPos = {}
+        N = len(s)
+        ttl = 0
+        for ii, cc in enumerate(s):
+            a = ii-char2prevPos.get(cc, -1)
+            b = N-ii
+            ttl += a*b
+            char2prevPos[cc] = ii
+
+        return ttl
+
+
+########################
+########################
+
+
+class Solution:
+    def appealSum(self, s: str) -> int:
         char2idx = defaultdict(list)
         for ii, cc in enumerate(s):
             char2idx[cc].append(ii)
