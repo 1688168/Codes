@@ -80,7 +80,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0588%5D%20Design%20In-Memory%20File%20System.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/588.Design-In-Memory-File-System) -
 [[Video]](https://www.bilibili.com/video/BV1GR4y1u74J/?vd_source=c1f78303f3760ca1601e9654954004a6) -
-[`Design`]
+[`Design`][`Trie`]
 
 [[0642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0642%5D%20Design%20Search%20Autocomplete%20System%20-%20ylee.py)
