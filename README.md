@@ -75,15 +75,22 @@
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
-[[642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
-[[Python]]()
+[[0588] - <span style="color:red">H</span> - Design In-Memory File System
+](https://leetcode.com/problems/design-in-memory-file-system/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0588%5D%20Design%20In-Memory%20File%20System.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/588.Design-In-Memory-File-System) -
+[[Video]](https://www.bilibili.com/video/BV1GR4y1u74J/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Design`]
+
+[[0642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0642%5D%20Design%20Search%20Autocomplete%20System%20-%20ylee.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/642.Design-Search-Autocomplete-System) -
 [[Video]](https://www.bilibili.com/video/BV1VT41137Cc/) -
 [`Trie`][`Design`]
 
 - [1268]
 
-[[828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
+[[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
