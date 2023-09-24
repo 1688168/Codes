@@ -24,6 +24,12 @@
 [[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
 [`Trie`]
 
+[[146] - <span style="color:yellow">M</span> - LRU Cache](https://leetcode.com/problems/lru-cache/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0146%5D%20LRU%20Cache.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/146.LRU-Cache) -
+[[Video]](https://www.youtube.com/watch?v=jX_k2FIhRI0&t=23s) -
+[`Design`][`OrderedDict`]
+
 - [472] Concatenated Words
 
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
@@ -68,7 +74,6 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/472.Concatenated-Words) -
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
-
 
 [[642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]]()
