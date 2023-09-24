@@ -6,7 +6,7 @@ class TrieNode:
 class AutocompleteSystem:
     def __init__(self, sentences: List[str], times: List[int]):
         self.root = TrieNode()
-        for sentence, count in zip(sentences, times):
+        for sentence, count in zip(sentences, times): #whenever we have paired list -> Zip
             self.add_to_trie(sentence, count)
             
         self.curr_sentence = []
