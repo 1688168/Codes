@@ -69,11 +69,12 @@
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
+
 [[642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/642.Design-Search-Autocomplete-System) -
 [[Video]](https://www.bilibili.com/video/BV1VT41137Cc/) -
-[`Trie`]
+[`Trie`][`Design`]
 
 - [1268]
 
