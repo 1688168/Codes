@@ -2,7 +2,7 @@ class TrieNode
 {
     public:
     TrieNode* next[128];
-    set<pair<int,string>>top;
+    set<pair<int,string>>top; //use OrderedDictionary in Python
     TrieNode()
     {
         for (int i=0; i<128; i++)
