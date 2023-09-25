@@ -18,8 +18,6 @@
 [[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
 [`Monotonic Stack`][`Count Subarray by Element`]
 
-
-
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) - tch?v=eYT-hKQ1au4&t=10s) -
 [`Trie`][
 [[Python]]()
@@ -77,13 +75,11 @@
 [[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
 [`Quick Select`]
 
-
 [[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/347.Top-K-Frequent-Elements) -
 [[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
-
 
 [[0380] - <span style="color:yellow">M</span> - https://leetcode.com/problems/insert-delete-getrandom-o1](Insert Delete GetRandom O(1)) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
@@ -102,6 +98,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/472.Concatenated-Words) -
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
+
+[[0500] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 [[0588] - <span style="color:red">H</span> - Design In-Memory File System
 ](https://leetcode.com/problems/design-in-memory-file-system/description/) - 
@@ -124,14 +126,11 @@
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
 
-
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/973.K-Closest-Points-to-Origin) -
 [[Video]](https://www.youtube.com/watch?v=xi4QVECpmxQ) -
 [`Quick`]
-
-
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
@@ -140,6 +139,12 @@
 [[Video-UnionFind 2]](https://www.youtube.com/watch?v=x_c-OSW-8Iw&t=0s)
 [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s) -
 [`BFS`] [`Union Find`]
+
+[[1000] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 [[1203] - <span style="color:red">H</span> - Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1591%5D%20Strange-Printer-II.py)
@@ -161,6 +166,12 @@
 [[Video]]() -
 [`Patterns`]
 
+[[1500] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1591.Strange-Printer-II) -
@@ -172,6 +183,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1650.Lowest-Common-Ancestor-of-a-Binary-Tree-III) -
 [[Video]]() -
 [`LCA`]
+
+[[2000] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 [[2104] - <span style="color:yellow">M</span> - Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2104%5D%20Sub%20of%20Subarray%20Ranges%20-%20O(N).py)
@@ -230,13 +247,11 @@
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
 
-
 [[2334] - <span style="color:red">H</span> - Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
 [[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
 [`Monotonic Stack`]
-
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]]()
@@ -254,6 +269,12 @@
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=ThfI3wACirs) -
+[`Patterns`]
+
+[[2500] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
 [`Patterns`]
 
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
@@ -300,6 +321,12 @@
 [`Monotonic Stack`]
 
 - [0084]
+
+[[3000] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 ---
 
