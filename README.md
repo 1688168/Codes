@@ -71,6 +71,19 @@
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
 
+[[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/324.Wiggle-Sort-II) -
+[[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
+[`Quick Select`]
+
+
+[[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/347.Top-K-Frequent-Elements) -
+[[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
+[`Quick Select`]
+
 
 [[0380] - <span style="color:yellow">M</span> - https://leetcode.com/problems/insert-delete-getrandom-o1](Insert Delete GetRandom O(1)) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
@@ -110,6 +123,15 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
+
+
+[[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/973.K-Closest-Points-to-Origin) -
+[[Video]](https://www.youtube.com/watch?v=xi4QVECpmxQ) -
+[`Quick`]
+
+
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
