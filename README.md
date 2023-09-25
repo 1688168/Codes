@@ -12,6 +12,14 @@
 [[Video]](https://www.youtube.com/watch?v=7nTdJGqZQXE) -
 [`DFS`]
 
+[[0084] - <span style="color:red">H</span> - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/084.Largest-Rectangle-in-Histogram) -
+[[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
+[`Monotonic Stack`][`Count Subarray by Element`]
+
+
+
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) - tch?v=eYT-hKQ1au4&t=10s) -
 [`Trie`][
 [[Python]]()
