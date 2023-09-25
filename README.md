@@ -201,6 +201,14 @@
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
 
+
+[[2334] - <span style="color:red">H</span> - Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
+[[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
+[`Monotonic Stack`]
+
+
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]]()
 [[CPP]]() -
