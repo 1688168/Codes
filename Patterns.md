@@ -54,6 +54,15 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 - min*sub-arr-sum (H)
 
 ```
+```
+### when calculating the metrics
+- Monotonic stack to help find prev-smaller/greater, next-smaller/greater
+- consider each ii as max/min (going both direciton) or ending 
+- use presum to find subarray sum
+- use Kadane to findout max subarray sum
+
+
+```
 
 [1498]  
 [2281] H: Sum of Total Strength of Wizards
@@ -126,10 +135,15 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
 
 # [`Monotonic Stack`]
-
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
-[0496]
-[0503]
+[0084]  Use monotonic stack to calculate largest rectangle
+[0496]  
+[0503]  
+[2334]  
+[2866]  Use monotonic stack to calculate Peak shape area
+
+
+
 
 # [`Quick Select`]
 
