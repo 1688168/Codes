@@ -283,6 +283,13 @@
 [[Video]]() -
 [`Patterns`]
 
+[[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
+[[CPP]]() -
+[[Video-Binary Search]](https://www.youtube.com/watch?v=ufz9g5LLG7Q&t=1s) -
+[[Video-heap]](https://www.youtube.com/watch?v=apV4T4GULag)
+[`TopK`][`Binary Search`][`Heap`][`Quick Select`]
+
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.cpp) -
