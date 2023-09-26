@@ -1,4 +1,71 @@
+###############
+# 20230926
+###############
+
 from collections import deque
+
+
+class Solution:
+    def timeTaken(self, arrival: List[int], state: List[int]) -> List[int]:
+        """
+        * n: (0, n-1) - number of person
+        * 1 door
+        * arrival[ii] - arrival time of person ii
+        * state[ii] - (0-enter, 1-exit) person ii is enter or exit
+        * prev_state
+        * return answer[ii]: 
+        """
+        entering_pool = deque()
+        exiting_pool = deque()
+        N = len(arrival)
+        ct = 0  # current time
+        ii = 0
+        prev_state = 1
+        ans = [-1]*N
+
+        def enter():
+            nonlocal prev_state
+            if len(entering_pool) > 0:
+                idx = entering_pool.popleft()
+                ans[idx] = ct
+                prev_state = 0
+            else:
+                if len(exiting_pool) > 0:
+                    exit()
+                else:
+                    prev_state = 1
+
+        def exit():
+            nonlocal prev_state
+            if len(exiting_pool) > 0:
+                idx = exiting_pool.popleft()
+                ans[idx] = ct
+                prev_state = 1
+            else:
+                if len(entering_pool) > 0:
+                    enter()
+
+        # need crossing time for each person, queue need to be empty @ the end
+        while ii < N or entering_pool or exiting_pool:
+            # enqueue all those @ door
+            while ii < N and arrival[ii] <= ct:
+                if state[ii] == 0:
+                    entering_pool.append(ii)
+                if state[ii] == 1:
+                    exiting_pool.append(ii)
+                ii += 1
+
+            if prev_state == 0:
+                enter()
+            elif prev_state == 1:
+                exit()
+
+            ct += 1
+
+        return ans
+
+
+############################################
 
 
 class Solution:
