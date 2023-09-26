@@ -13,7 +13,7 @@
 [`DFS`]
 
 [[0084] - <span style="color:red">H</span> - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0084%5D%20Largest%20Rectangle%20in%20Histogram%20-%20one%20pass.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/084.Largest-Rectangle-in-Histogram) -
 [[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
 [`Monotonic Stack`][`Count Subarray by Element`]
@@ -248,7 +248,7 @@
 [`BFS/DFS`][`Union Find`]
 
 [[2334] - <span style="color:red">H</span> - Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2334%5D%20Subarray%20With%20Elements%20Greater%20Than%20Varying%20Threshold.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
 [[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
 [`Monotonic Stack`]
