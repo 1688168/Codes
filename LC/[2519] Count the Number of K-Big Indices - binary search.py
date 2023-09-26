@@ -19,4 +19,5 @@ class Solution:
         left = helper(nums)
         right = helper(nums[::-1])[::-1]
 
-        return sum([int(left[ii] and right[ii]) for ii in range(len(nums))])
+        # return sum([int(left[ii] and right[ii]) for ii in range(len(nums))])
+        return sum(a & b for a, b in zip(left, right))

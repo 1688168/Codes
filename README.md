@@ -288,7 +288,7 @@
 [[CPP]]() -
 [[Video-Binary Search]](https://www.youtube.com/watch?v=ufz9g5LLG7Q&t=1s) -
 [[Video-heap]](https://www.youtube.com/watch?v=apV4T4GULag)
-[`TopK`][`Binary Search`][`Heap`][`Quick Select`]
+[`Binary Search`][`Heap`]
 
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
