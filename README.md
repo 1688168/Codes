@@ -146,6 +146,12 @@
 [[Video]]() -
 [`Patterns`]
 
+[[1151] - <span style="color:yellow">M</span> - Minimum Swaps to Group All 1s Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1151%5D%20Minimum%20Swaps%20to%20Group%20Al%201s%20Together.py)
+[[CPP]]() -
+[[Video]]() -
+[`Sliding Window`]
+
 [[1203] - <span style="color:red">H</span> - Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1591%5D%20Strange-Printer-II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/BFS/1203.Sort-Items-by-Groups-Respecting-Dependencies/1203.Sort-Items-by-Groups-Respecting-Dependencies.cpp) -

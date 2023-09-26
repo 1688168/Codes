@@ -54,10 +54,11 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 - min*sub-arr-sum (H)
 
 ```
+
 ```
 ### when calculating the metrics
 - Monotonic stack to help find prev-smaller/greater, next-smaller/greater
-- consider each ii as max/min (going both direciton) or ending 
+- consider each ii as max/min (going both direciton) or ending
 - use presum to find subarray sum
 - use Kadane to findout max subarray sum
 
@@ -107,7 +108,9 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 [2296]
 
 # [`DFS`]
+
 - [2597]: can you try 2638 by DFS?
+
 ```
 - Counting: for each element, you can either take or no-take based on some condition.  when reaching the end, we return 1
 ```
@@ -135,15 +138,13 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
 
 # [`Monotonic Stack`]
+
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
-[0084]  Use monotonic stack to calculate largest rectangle
+[0084] Use monotonic stack to calculate largest rectangle
 [0496]  
 [0503]  
 [2334]  
-[2866]  Use monotonic stack to calculate Peak shape area
-
-
-
+[2866] Use monotonic stack to calculate Peak shape area
 
 # [`Quick Select`]
 
@@ -157,13 +158,11 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 [1151]
 
 ```
-Given an integer array
--> Define something for a subarray
--> Calc something for all subarrays
+> grouping all something together
+> -> when all something are together, there is a window
 
-Ideas:
--> finding all subarrays and calc something -> O(N)
--> for each element as min/max -> find the max subarray that holds true
+> counting something
+> -> if something is zeros and ones, sum(nums) is the number of ones
 ```
 
 [0907] H :
@@ -211,21 +210,22 @@ Strategy:
 [0207]  
 [1591] Strange Printer
 
-
 # [`Trie`]
-[0139]  
+
+[0139]
+
 ```
 - DFS by set lookup
 > Space: O(N*k): N words with duplicated prefix
--- Time: 
+-- Time:
 
 - DFS by Trie word search
 > Space: o(N*j): N words but compressed
 - DP: O(N)
 ```
-[0140]  
-[0212]    
 
+[0140]  
+[0212]
 
 # [`Two Pointers`]
 
@@ -243,7 +243,8 @@ c. move (slide) the window
 > Time: O(N)
 ```
 
-[0075] (sort color)(dutch national flag)
+[0075] (sort color)(dutch national flag)  
+[1151]  
 [2762] M
 
 # [`Union Find`]
