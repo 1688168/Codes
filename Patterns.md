@@ -142,7 +142,9 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 > Find missing num, duplicated num
 
 ```
-# if not indexing from 0, insert a dummy starting element
+# some trics
+* if not indexing from 0, insert a dummy starting element
+
 # condition of swap
 while ii != nums[ii] and nums[ii] < N and nums[ii] != nums[nums[ii]]:
 a. element not matching it's own index
