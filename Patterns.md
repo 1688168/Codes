@@ -137,6 +137,19 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 3. each time shrinking the window,
 4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
 
+# [`Indexing Sort`]  
+> array with N~ elements, with element values from 1~N~.
+> Find missing num, duplicated num
+
+```
+# if not indexing from 0, insert a dummy starting element
+# condition of swap
+while ii != nums[ii] and nums[ii] < N and nums[ii] != nums[nums[ii]]:
+a. element not matching it's own index
+b. element value is not out-of-bound so we can swap
+c. element value is not equal to the destination value or no point of swapping
+```
+
 # [`Monotonic Stack`]
 
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
