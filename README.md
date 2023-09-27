@@ -68,6 +68,13 @@
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
 
+
+[[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/287.Find-the-Duplicate-Number) -
+[[Video]](https://www.youtube.com/watch?v=86co28GuZ5U&t=1700s) -
+[`Indexing Sort`][`Binary Search`]
+
 [[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/324.Wiggle-Sort-II) -
