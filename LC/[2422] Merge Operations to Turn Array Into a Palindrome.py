@@ -1,6 +1,34 @@
-"""
-https://youtu.be/rz3YGaJII44
-"""
+##############
+# 20220926
+##############
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        cnt = 0
+        N = len(nums)
+        ll, rr = 0, N-1
+
+        while ll <= rr:
+            if nums[ll] == nums[rr]:
+                ll += 1
+                rr -= 1
+                continue
+
+            if nums[ll] > nums[rr]:
+                nums[rr-1] += nums[rr]
+                rr -= 1
+                cnt += 1
+                continue
+
+            if nums[ll] < nums[rr]:
+                nums[ll+1] += nums[ll]
+                cnt += 1
+                ll += 1
+                continue
+
+        return cnt
+
+
+############################
 
 
 class Solution:
