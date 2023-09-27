@@ -81,7 +81,7 @@
 [[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
 
-[[0380] - <span style="color:yellow">M</span> - https://leetcode.com/problems/insert-delete-getrandom-o1](Insert Delete GetRandom O(1)) - 
+[[0380] - <span style="color:yellow">M</span> - Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/380.Insert-Delete-GetRandom-O-1/380.Insert%20Delete%20GetRandom%20O(1).cpp) -
 [[Video]](https://www.youtube.com/watch?v=jE6VIeQxzLU) -
