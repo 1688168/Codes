@@ -18,11 +18,10 @@
 [[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
 [`Monotonic Stack`][`Count Subarray by Element`]
 
-[[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) - tch?v=eYT-hKQ1au4&t=10s) -
-[`Trie`][
-[[Python]]()
+[[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0139%5D%20Word%20Break_trie.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
-[[Video]](https://www.youtube.com/wa](https://github.com/wisdompeak/LeetCode/tree/master/Trie/212.Word-Search-II)
+[[Video]](https://www.youtube.com/watch?v=eYT-hKQ1au4&t=12s)
 
 [[0140] - <span style="color:red">H</span> - Word Break II](https://leetcode.com/problems/word-break-ii/description/) - 
 [[Python]]()
