@@ -265,6 +265,12 @@
 [[Video]](https://www.youtube.com/watch?v=CKZPdiXiQf0) -
 [`Patterns`]
 
+[[2422] - <span style="color:yellow">M</span> - Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2422%5D%20Merge%20Operations%20to%20Turn%20Array%20Into%20a%20Palindrome.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2422.Merge-Operations-to-Turn-Array-Into-a-Palindrome) -
+[[Video]](https://www.youtube.com/watch?v=rz3YGaJII44) -
+[`Two Pointers`]
+
 [[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2461.Maximum-Sum-of-Distinct-Subarrays-With-Length-K) -
