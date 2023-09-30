@@ -75,10 +75,10 @@
 [`Quick Select`]
 
 [[0240] - <span style="color:yellow">M</span> - Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0240%5D%20Searh%20a%202D%20Matrix%20II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/240.Search-a-2D-Matrix-II) -
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
-[`Patterns`]
+[`Matrix`]
 
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
@@ -88,6 +88,12 @@
 
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
+
+[[0300] - <span style="color:yellow">M</span> - Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0300%5D%20Longest%20increasing%20Subsequence%20-%20Binary%20Search.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/300.Longest-Increasing-Subsequence) -
+[[Video]](https://www.youtube.com/watch?v=Q6KyDl_xiIg) -
+[`sub-sequence`][`DP`][`classic`]
 
 [[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
@@ -102,7 +108,7 @@
 [`Quick Select`]
 
 [[378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0378%5D%20Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
 [[Video]](https://www.youtube.com/watch?v=JJUv4DDLSB4&t=4s) -
 [`Find K0th Element`][`Top K`][`Binary Search`]
