@@ -100,7 +100,11 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
 [[Video]](https://www.youtube.com/watch?v=JJUv4DDLSB4&t=4s) -
-[`Find K0th Element`][`Top K`]
+[`Find K0th Element`][`Top K`][`Binary Search`]
+
+- [0240] Search a 2D Matrix II (how to traverse matrix with sorted row/col)
+- [0373] (similar question)
+- [2040]
 
 [[0380] - <span style="color:yellow">M</span> - Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
