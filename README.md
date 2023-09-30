@@ -304,6 +304,7 @@
 [[2355] - <span style="color:red">H</span> - Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2355%5D%20Maximum%20Number%20of%20Books%20You%20can%20Take.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2355.Maximum-Number-of-Books-You-Can-Take) -
+[[Video]](https://www.bilibili.com/video/BV1PG411n7FS/) -
 [[Video]](https://www.youtube.com/watch?v=kDtbcGIp11g) -
 [`DP`]
 
