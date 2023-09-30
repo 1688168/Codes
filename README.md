@@ -6,6 +6,12 @@
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
 [`DP`][`Kadane`]
 
+[[0075] - <span style="color:yellow">M</span> - Sort Colors](https://leetcode.com/problems/sort-colors/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/075.Sort-Colors) -
+[[Video]]() -
+[``]
+
 [[0079] - <span style="color:yellow">M</span> - Word Search](https://leetcode.com/problems/word-search/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0079%5D%20Word%20Search.py)
 [[CPP]]() -
@@ -68,7 +74,6 @@
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
 
-
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/287.Find-the-Duplicate-Number) -
@@ -77,7 +82,7 @@
 
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
-- 
+-
 
 [[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
