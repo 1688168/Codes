@@ -10,7 +10,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/075.Sort-Colors) -
 [[Video]]() -
-[``]
+[`Two Pointers`]
 
 [[0079] - <span style="color:yellow">M</span> - Word Search](https://leetcode.com/problems/word-search/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0079%5D%20Word%20Search.py)
