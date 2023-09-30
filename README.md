@@ -74,6 +74,12 @@
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
 
+[[0240] - <span style="color:yellow">M</span> - Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/240.Search-a-2D-Matrix-II) -
+[[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
+[`Patterns`]
+
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/287.Find-the-Duplicate-Number) -
@@ -82,7 +88,6 @@
 
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
--
 
 [[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
