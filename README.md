@@ -96,6 +96,12 @@
 [[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
 
+[[378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
+[[Video]](https://www.youtube.com/watch?v=JJUv4DDLSB4&t=4s) -
+[`Find K0th Element`][`Top K`]
+
 [[0380] - <span style="color:yellow">M</span> - Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0380%5D%20Insert%20Delete%20GetRandom%20O(1).py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/380.Insert-Delete-GetRandom-O-1/380.Insert%20Delete%20GetRandom%20O(1).cpp) -
