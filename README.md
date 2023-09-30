@@ -176,11 +176,17 @@
 [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s) -
 [`BFS`] [`Union Find`]
 
-[[1000] - <span style="color:red">H</span> - desc]() - 
+[[1000] - <span style="color:red">H</span> - desc](https://leetcode.com/problems/longest-common-subsequence/description) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
+[[Video]](https://www.youtube.com/watch?v=Ua0GhsJSlWM) -
+[`DP`]
 
 [[1151] - <span style="color:yellow">M</span> - Minimum Swaps to Group All 1s Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1151%5D%20Minimum%20Swaps%20to%20Group%20Al%201s%20Together.py)
@@ -294,6 +300,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
 [[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
 [`Monotonic Stack`]
+
+[[2355] - <span style="color:red">H</span> - Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2355%5D%20Maximum%20Number%20of%20Books%20You%20can%20Take.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2355.Maximum-Number-of-Books-You-Can-Take) -
+[[Video]](https://www.youtube.com/watch?v=kDtbcGIp11g) -
+[`DP`]
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]]()
