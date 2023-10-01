@@ -137,7 +137,8 @@ n# $${\color{orange}Patterns, \space Data \space Structures}$$
 3. each time shrinking the window,
 4. the max is the first element in the deque <span style="color:red"> use the index to retrieve value from original array<span>
 
-# [`Indexing Sort`]  
+# [`Indexing Sort`]
+
 > array with N~ elements, with element values from 1~N~.
 > Find missing num, duplicated num
 
@@ -210,6 +211,12 @@ Strategy:
 - (B): sum of subarray with that element as max: A \* element_value
 - accumulate "B" for all elements -> we have sum(max of all subarrays)
 - do the similar thing for min
+
+# [`Subset, Subarray, Subsequence`]
+
+- Subsequence -> DP (Longest increasing subsequence, Longest Common Subsequence)
+- Subarray -> Monotonic Stack, presum, presum2
+- Subset -> you can group and sort
 
 # [`Top K elements`]
 
