@@ -6,6 +6,12 @@
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
 [`DP`][`Kadane`]
 
+[[0056] - <span style="color:yellow">M</span> - Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0056%5D%20Merge%20Intervals.py)
+[[CPP]]() -
+[[Video]]() -
+[`Interval`]
+
 [[0075] - <span style="color:yellow">M</span> - Sort Colors](https://leetcode.com/problems/sort-colors/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/075.Sort-Colors) -
@@ -48,6 +54,12 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/155.Min-Stack) -
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
+
+[[0200] - <span style="color:yellow">M</span> - Number of Islands](https://leetcode.com/problems/number-of-islands/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0200%5D%20Number%20of%20Islands.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/200.Number-of-Islands) -
+[[Video]](https://www.youtube.com/watch?v=prmHWUETpXw) -
+[`DFS`]
 
 [[0207] - <span style="color:yellow">M</span> - Course Schedule](https://leetcode.com/problems/course-schedule/description/) - 
 [[Python-BFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0207%5D%20Course-Schedule-BFS.py)

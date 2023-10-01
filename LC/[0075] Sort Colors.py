@@ -11,7 +11,7 @@ class Solution:
                 nums[ii], nums[ll] = nums[ll], nums[ii]
                 ii += 1
                 ll += 1
-            elif nums[ii] == 1:  # White
+            elif nums[ii] == 1:  # White0056
                 ii += 1
             else:  # Blue
                 nums[ii], nums[rr] = nums[rr], nums[ii]
