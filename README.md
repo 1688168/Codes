@@ -302,7 +302,7 @@
 [`Monotonic Stack`]
 
 [[2340] - <span style="color:yellow">M</span> - Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2340%5D%20Minimum%20Adjacent%20Swaps%20to%20Make%20a%20Valid%20Array.py)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=3OkqTXpREBg) -
 [`Patterns`]
