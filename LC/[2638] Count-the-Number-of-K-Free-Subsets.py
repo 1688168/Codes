@@ -1,5 +1,54 @@
-from collections import defaultdict
+#################
+# 20231001
+#################
+
 from pprint import pprint as pp
+from collections import defaultdict
+
+
+class Solution:
+    def countTheNumOfKFreeSubsets(self, nums: List[int], k: int) -> int:
+        """
+        -> number of k-free subsets  
+        g[n%k]
+        within group -> sort, DP rob a house problem
+        inter group -> multiplication  
+        """
+        N = len(nums)
+        g = defaultdict(list)
+        for n in nums:
+            g[n % k].append(n)
+
+        def helper(arr):
+            if arr is None or len(arr) == 0:
+                return 1
+            tke = 0
+            ntk = 1
+            for ii, vv in enumerate(arr):
+                if ii == 0:
+                    tke = 1
+                    ntk = 1
+                    continue
+
+                tmp_tke = tke
+                tmp_ntk = ntk
+                if arr[ii-1]+k == arr[ii]:
+                    tke = tmp_ntk
+                    ntk = tmp_tke+tmp_ntk
+                else:
+                    tke = tmp_tke+tmp_ntk
+                    ntk = tmp_tke+tmp_ntk
+            return tke+ntk
+
+        ans = 1
+        for gg, nn in g.items():  # for each group
+            nn.sort()
+            cnt = helper(nn)
+            ans *= cnt
+        return ans
+
+
+########################################
 
 
 class Solution:
