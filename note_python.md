@@ -19,3 +19,9 @@ df_new = df_old.astype(object).where(df_old.notna(), None)
 df_data.replace('N/A', np.nan, inplace=True) # replace 'N/A' with np.nan
 df = df.replace({np.nan: None}) # replace non with python  None
 ```
+
+> How to limit split num
+
+```
+_id, rest = log.split(" ", maxsplit=1)
+```

@@ -162,6 +162,12 @@
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
 
+[[0937] - <span style="color:yellow">M</span> - Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0937%5D%20Reorder%20Data%20in%20Log%20Files.py)
+[[CPP]]() -
+[[Video]]() -
+[`Sorting`]
+
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/973.K-Closest-Points-to-Origin) -
@@ -345,7 +351,7 @@
 [`Two Pointers`][`Sliding Window`]
 
 [[2486] - <span style="color:yellow">M</span> - Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2486%5D%20Append-Characters-to-String-to-Make-Subsequence.py)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=ThfI3wACirs) -
 [`Patterns`]
