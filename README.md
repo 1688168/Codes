@@ -295,6 +295,18 @@
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
 
+[[2323] - <span style="color:yellow">M</span> - Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=GJ-RFWROrv0&t=1s) -
+[`Patterns`]
+
+[[2330] - <span style="color:yellow">M</span> - Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2330%5D%20Valid%20Palindrome%20IV.py)
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=TT-HGOjqF1E) -
+[`Palindrome`]
+
 [[2334] - <span style="color:red">H</span> - Subarray With Elements Greater Than Varying Threshold](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2334%5D%20Subarray%20With%20Elements%20Greater%20Than%20Varying%20Threshold.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
@@ -363,8 +375,7 @@
 [[Video]]() -
 [`Simulation`]
 
-[[2563] -
-<span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
+[[2563] -<span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.py)
 [[CPP v1]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.cpp)
 [[CPP v2]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs-v2.cpp) -
