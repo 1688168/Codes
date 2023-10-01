@@ -186,7 +186,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
 [[Video]](https://www.youtube.com/watch?v=Ua0GhsJSlWM) -
-[`DP`]
+[`DP`][`classic`]
 
 [[1151] - <span style="color:yellow">M</span> - Minimum Swaps to Group All 1s Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1151%5D%20Minimum%20Swaps%20to%20Group%20Al%201s%20Together.py)
