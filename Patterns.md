@@ -270,3 +270,26 @@ c. move (slide) the window
 [2762] M
 
 # [`Union Find`]
+
+# Series
+
+# [`Buy Sell Stock`]
+
+# [`Calculator`]
+
+# [`Jump Game`]
+
+- [55]
+- [45]
+- [1306]
+- [1345]
+- [1340]
+- [1696]
+- [1871]
+- [2297]
+
+# [`Word Search`]
+
+# [`Word Break`]
+
+# [`Word Ladder`]
