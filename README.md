@@ -6,6 +6,12 @@
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
 [`DP`][`Kadane`]
 
+[[0055] - <span style="color:yellow">M</span> - Jump Game](https://leetcode.com/problems/jump-game/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0055%5D%20Jump%20Game%20-%20DP.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/055.Jump-Game) -
+[[Video]](https://www.youtube.com/watch?v=J04GagAZ5io) -
+[`DP`][`Jump Game`]
+
 [[0056] - <span style="color:yellow">M</span> - Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0056%5D%20Merge%20Intervals.py)
 [[CPP]]() -
