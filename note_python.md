@@ -25,3 +25,8 @@ df = df.replace({np.nan: None}) # replace non with python  None
 ```
 _id, rest = log.split(" ", maxsplit=1)
 ```
+
+> Pandas how to rename
+```
+df.rename(columns={'old_name':'new_name'}, inplace=True)
+```
