@@ -1,4 +1,4 @@
-n# $${\color{orange}Patterns, \space Data \space Structures}$$
+$${\color{orange}Patterns, \space Data \space Structures}$$
 
 # [`BFS`]
 

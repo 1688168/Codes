@@ -1,4 +1,4 @@
-# $${\color{orange} Question \space List}$$
+$${\color{orange} Question \space List}$$
 
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)

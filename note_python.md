@@ -1,4 +1,4 @@
-# $${\color{orange} Python Notes}$$
+$${\color{orange} Python Notes}$$
 
 > How to print python dictionary
 
