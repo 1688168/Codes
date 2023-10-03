@@ -1,13 +1,21 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
-# [`BFS`]
-
 # [`Binary Search`]
 
 ```
 - Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
 - Count some condition, use binary search to find the range for counting
 ```
+- [240]
+- [373] - (719, 1918, 2040)
+- [378] - (240)
+- [668]
+- [2040]
+- 
+
+# [`BFS`]
+
+
 
 [0235] BST
 [0236] BT
