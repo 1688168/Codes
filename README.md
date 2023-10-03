@@ -200,6 +200,8 @@ $${\color{orange} Question \space List}$$
 [[Video-BFS]](https://www.youtube.com/watch?v=K2oLZTE53kk&t=0s) -
 [`BFS`] [`Union Find`]
 
+- [2307]
+
 [[1000] - <span style="color:red">H</span> - desc](https://leetcode.com/problems/longest-common-subsequence/description) - 
 [[Python]]()
 [[CPP]]() -
@@ -318,6 +320,8 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2307%5D%20Check%20For%20Contraditions%20In%20Equations.py) -
 [[Video]](https://www.youtube.com/watch?v=csuQPHC4WTk) -
 [`BFS/DFS`][`Union Find`]
+
+- [990] - BFS/Union Find
 
 [[2323] - <span style="color:yellow">M</span> - Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
