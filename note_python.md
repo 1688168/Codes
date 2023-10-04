@@ -27,6 +27,13 @@ _id, rest = log.split(" ", maxsplit=1)
 ```
 
 > Pandas how to rename
+
 ```
 df.rename(columns={'old_name':'new_name'}, inplace=True)
+```
+
+> Pandas how to apply for new column
+
+```
+df['new_col']=df.apply(func, axis=1)
 ```
