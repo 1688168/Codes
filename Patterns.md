@@ -1,5 +1,7 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
+# [`BFS`]
+
 # [`Binary Search`]
 
 ```
@@ -163,10 +165,18 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Monotonic Stack`]
 
+```
+- for each index, require increasing pattern before or after the anchor
+- the increasing or decreasing pattern could be subarray or subsequence
+- frequently relating to pre-smaller, prev-greater
+-
+```
+
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
 [0084] Use monotonic stack to calculate largest rectangle
 [0496]  
 [0503]  
+[2297] - Jump Game VIII:
 [2334]  
 [2866] Use monotonic stack to calculate Peak shape area
 
@@ -294,7 +304,7 @@ c. move (slide) the window
 - [1340]
 - [1696]
 - [1871]
-- [2297] - Jump Game VIII - (DP + Monotonic Stack) (1944, 2282, 2355)
+- [2297] - Jump Game VIII - (DP + Monotonic Stack) (1944, 2282, )
 
 # [`Word Search`]
 
