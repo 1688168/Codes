@@ -230,9 +230,9 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1235.Maximum-Profit-in-Job-Scheduling) -
 [[Video]](https://www.youtube.com/watch?v=0C7re8lam7M) -
-[`DP`]
+[`DP`][`Greedy`]
 
-
+  - From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals).  Greedy strategy  
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
