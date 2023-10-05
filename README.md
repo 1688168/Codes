@@ -226,6 +226,14 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=NP9ia_QU0l8&list=PPSV&t=1041) -
 [`Topology Sort`]
 
+[[1235] - <span style="color:red">H</span> - Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1235.Maximum-Profit-in-Job-Scheduling) -
+[[Video]](https://www.youtube.com/watch?v=0C7re8lam7M) -
+[`DP`]
+
+
+
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/1268.Search-Suggestions-System) -
