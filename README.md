@@ -232,7 +232,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=0C7re8lam7M) -
 [`DP`][`Greedy`]
 
-  - From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals).  Greedy strategy  
+  - [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals).  Greedy strategy  
+  - [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)  
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
