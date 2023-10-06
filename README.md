@@ -147,6 +147,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
+[[435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
+[[Video]](https://www.youtube.com/watch?v=x6wREca18nw) -
+[`interval`]
+
+
 [[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/472.Concatenated-Words) -
