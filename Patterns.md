@@ -170,8 +170,8 @@ c. element value is not equal to the destination value or no point of swapping
    - when you do not need to select anything in the range.
    - count something on a specific moment  
 2. Sort
-   - Sort by starting point
-   - Sort by ending point
+   - Sort by starting point => The minimum number of intervals to cover the whole range
+   - Sort by ending point => The Maximum number of intervals that are non-overlapping
 
 - If we can use Greedy, it typically is more efficient than DP
 
