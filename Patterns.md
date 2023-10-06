@@ -162,6 +162,17 @@ a. element not matching it's own index
 b. element value is not out-of-bound so we can swap
 c. element value is not equal to the destination value or no point of swapping
 ```
+# [`Intervals`]
+ 
+### Two Directions:
+1. Greedy
+2. Sweeping Line 
+   - when you do not need to select anything in the range.
+   - count something on a specific moment  
+
+### Consider:
+- Sort by starting point or ending point? 
+
 
 # [`Monotonic Stack`]
 
@@ -235,6 +246,10 @@ Strategy:
 - Subsequence -> DP (Longest increasing subsequence, Longest Common Subsequence)
 - Subarray -> Monotonic Stack, presum, presum2
 - Subset -> you can group and sort
+
+# [`Sweep Line`]
+- When we use Sweep Line, we only consider sets of starting points and ending points, we do NOT know which starting point matching with which ending point.
+
 
 # [`Top K elements`]
 
