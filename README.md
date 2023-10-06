@@ -232,8 +232,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=0C7re8lam7M) -
 [`DP`][`Greedy`]
 
-  - [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals).  Greedy strategy  
-  - [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)  
+- [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals). Greedy strategy
+- [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
@@ -287,6 +287,11 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2222.Number-of-Ways-to-Select-Buildings) -
 [[Video]](https://www.youtube.com/watch?v=PI6Dwkdw5hQ&t=53s) -
 [`DP`]
+
+- Number of Ways to Select something.
+- Number of Ways to climb stairs.
+- Number of Ways to achieve some score
+- Number of Ways to make some amount from coins
 
 [[2262] - <span style="color:red">H</span> - Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/description/) - 
 [[Python]]()
