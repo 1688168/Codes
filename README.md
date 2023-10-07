@@ -387,7 +387,9 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2355.Maximum-Number-of-Books-You-Can-Take) -
 [[Video]](https://www.bilibili.com/video/BV1PG411n7FS/) -
 [[Video]](https://www.youtube.com/watch?v=kDtbcGIp11g) -
-[`DP`]
+[`DP`][`Monotonic Stack`][`Monotonic Stack Various`]
+
+- [Failed]
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
