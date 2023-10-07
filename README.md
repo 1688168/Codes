@@ -426,6 +426,10 @@ $${\color{orange} Question \space List}$$
 [[Video-heap]](https://www.youtube.com/watch?v=apV4T4GULag)
 [`Binary Search`][`Heap`]
 
+- when we need to consider both left and right, we can first focus on left as right is just the reverse of it
+- To find the rank of each element -> binary search (bisect into an new array)
+- To find how many elements before current index that is greater or lesser -> use heap maintaining top k
+
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.cpp) -

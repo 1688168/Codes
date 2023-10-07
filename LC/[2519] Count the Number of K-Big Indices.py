@@ -14,7 +14,7 @@ class Solution:
         x x x x x
 
         max_heap[ii] maintain the bottom k elements upto ii
-        max_heap[-1] the largest bottom k element upto ii
+        max_heap[0                                            ] the largest bottom k element upto ii
         if max_heap[-1] <= current => count += 1
 
         * heap insert: logN
