@@ -1,8 +1,72 @@
+################
+# 220231007
+################
+from collections import deque
+
+
+class Solution:
+    def timeTaken(self, arrival: List[int], state: List[int]) -> List[int]:
+        """
+        - when we need to queue up -> priority_queue (deque)
+        """
+        entering_pool = collections.deque()
+        exiting_pool = collections.deque()
+        t = 0  # current time
+        ii = 0  # the iith persion
+
+        N = len(arrival)
+        ans = [0] * N
+
+        prev = 1  # default to exiting
+
+        def process_exiting(curr_t, ii):
+            nonlocal prev
+            if exiting_pool:
+                ans[exiting_pool.popleft()] = curr_t
+                prev = 1
+            else:
+                if entering_pool:
+                    process_entering(curr_t, ii)
+
+        def process_entering(curr_t, ii):
+            nonlocal prev
+            if entering_pool:
+                ans[entering_pool.popleft()] = curr_t
+                prev = 0
+            else:
+                if exiting_pool:
+                    process_exiting(curr_t, ii)
+                else:
+                    prev = 1
+
+        while ii < N or entering_pool or exiting_pool:
+            # get qualified persons enque
+            while ii < N and arrival[ii] <= t:
+                if state[ii] == 0:
+                    entering_pool.append(ii)
+                else:
+                    exiting_pool.append(ii)
+                ii += 1
+
+            curr_t = t
+            curr_ii = ii
+            t += 1
+
+            if prev == 1:
+                # processing exit first
+                process_exiting(curr_t, curr_ii)
+                continue
+
+            if prev == 0:
+                process_entering(curr_t, curr_ii)
+                continue
+
+        return ans
+
+
 ###############
 # 20230926
 ###############
-
-from collections import deque
 
 
 class Solution:
