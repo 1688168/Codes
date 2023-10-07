@@ -275,6 +275,13 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`LCA`]
 
+[[1676] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree IV
+](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1676%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20IV.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1676.Lowest-Common-Ancestor-of-a-Binary-Tree-IV) -
+[[Video]](https://www.bilibili.com/video/BV1xS4y1M7s8/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Tree`][`LCA`]
+
 [[1942] - <span style="color:yellow">M</span> - The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1492%5D%20The-kth-factor-of-n.py)
 [[CPP]]() -
