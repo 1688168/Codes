@@ -16,8 +16,6 @@ Monotoic Stack
 - use bisect, insert
 ```
 
-# [`BFS`]
-
 # [`Binary Search`]
 
 ```
@@ -30,28 +28,6 @@ Monotoic Stack
 - [378] - (240)
 - [668]
 - [2040]
--
-
-# [`BFS`]
-
-[0235] BST
-[0236] BT
-[1123] LCA on lowest leaves (same as 1676)
-[1644] LCA on P, q that might not existing
-[1650] LCA with pointer to parent
-[1676] LCA on a set (same as 1123)
-
-[1740]
-[2096]
-[2439]
-[2519]
-[2528] Maximize the Minimum Powered City
-
-```
--
-```
-
-[2702]
 
 # [`Binary Index Tree (BIT)`]
 
@@ -67,6 +43,23 @@ Monotoic Stack
 ```
 
 [0307] M
+
+# [`BFS`]
+
+[0235] BST  
+[0236] BT  
+[1123] LCA on lowest leaves (same as 1676)  
+[1644] LCA on P, q that might not existing  
+[1650] LCA with pointer to parent  
+[1676] LCA on a set (same as 1123)
+
+[1740]  
+[2096]  
+[2439]  
+[2519]  
+[2528] Maximize the Minimum Powered City
+
+[2702]
 
 # [`Count Subarray by Element`]
 
