@@ -153,8 +153,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=x6wREca18nw) -
 [`interval`][`classic`]
 
-- Sort by Starting Point or Ending Point?  
-  
+- Sort by Starting Point or Ending Point?
 
 [[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
 [[Python]]()
@@ -275,6 +274,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1650.Lowest-Common-Ancestor-of-a-Binary-Tree-III) -
 [[Video]]() -
 [`LCA`]
+
+[[1942] - <span style="color:yellow">M</span> - The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1492%5D%20The-kth-factor-of-n.py)
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 
 [[2000] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
