@@ -383,7 +383,7 @@ $${\color{orange} Question \space List}$$
 [`DP`]
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=CKZPdiXiQf0) -
 [`Patterns`]
