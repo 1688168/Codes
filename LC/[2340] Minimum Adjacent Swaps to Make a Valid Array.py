@@ -1,3 +1,34 @@
+#############
+# 20231007
+#############
+class Solution:
+    def minimumSwaps(self, nums: List[int]) -> int:
+        N = len(nums)
+        mxn = -math.inf
+        mxi = -1
+        if N == 1:
+            return 0
+        for ii, vv in enumerate(nums):
+            mxn = max(vv, mxn)
+            if mxn == vv:
+                mxi = ii
+        cnt = 0
+        for ii in range(mxi, N-1):
+            nums[ii], nums[ii+1] = nums[ii+1], nums[ii]
+            cnt += 1
+
+        mnn = math.inf
+        mni = 0
+        for ii, vv in enumerate(nums):
+            if vv < mnn:
+                mnn = vv
+                mni = ii
+
+        return cnt+mni
+
+###############################
+
+
 class Solution:
     def minimumSwaps(self, nums: List[int]) -> int:
         mx = max(nums)
