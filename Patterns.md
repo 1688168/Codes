@@ -1,5 +1,21 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
+# [`Idioms`]
+
+> How to Find Prev/Next Smaller/Greater
+
+```
+Monotoic Stack
+```
+
+> How to find how many elements before current that is smaller/greater than current?
+
+```
+- [2519]
+- use Heap top K
+- use bisect, insert
+```
+
 # [`BFS`]
 
 # [`Binary Search`]
@@ -8,16 +24,15 @@ $${\color{orange}Patterns, \space Data \space Structures}$$
 - Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
 - Count some condition, use binary search to find the range for counting
 ```
+
 - [240]
 - [373] - (719, 1918, 2040)
 - [378] - (240)
 - [668]
 - [2040]
-- 
+-
 
 # [`BFS`]
-
-
 
 [0235] BST
 [0236] BT
@@ -162,13 +177,16 @@ a. element not matching it's own index
 b. element value is not out-of-bound so we can swap
 c. element value is not equal to the destination value or no point of swapping
 ```
+
 # [`Intervals`]
- 
+
 ## Two Directions:
+
 ### Greedy:
-1. Sweep Line 
+
+1. Sweep Line
    - when you do not need to select anything in the range.
-   - count something on a specific moment  
+   - count something on a specific moment
 2. Sort
    - Sort by starting point => The minimum number of intervals to cover the whole range
    - Sort by ending point => The Maximum number of intervals that are non-overlapping
@@ -176,9 +194,6 @@ c. element value is not equal to the destination value or no point of swapping
 - If we can use Greedy, it typically is more efficient than DP
 
 ### DP:
-
-
-
 
 # [`Monotonic Stack`]
 
@@ -254,8 +269,8 @@ Strategy:
 - Subset -> you can group and sort
 
 # [`Sweep Line`]
-- When we use Sweep Line, we only consider sets of starting points and ending points, we do NOT know which starting point matching with which ending point.
 
+- When we use Sweep Line, we only consider sets of starting points and ending points, we do NOT know which starting point matching with which ending point.
 
 # [`Top K elements`]
 
