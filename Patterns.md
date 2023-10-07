@@ -133,7 +133,19 @@ Monotoic Stack
 - Counting: for each element, you can either take or no-take based on some condition.  when reaching the end, we return 1
 ```
 
-# [`DP`](https://github.com/1688168/Leetcode/template/DP.md)
+# [`DP`]
+
+> Type I: Single Array Find Max/Min of something with a sub-array
+
+```
+- dp[ii] = dp[jj]+something: how do find jj?
+- monotonic stack (Prev/Next Smaller/Greater)
+- topK strategy (Binary Search insert, Heap)
+- BruteForce (O(N^2))
+```
+
+- [2355]
+-
 
 [2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20JumpGameVIII.py) - [Video](https://www.youtube.com/watch?v=II7tWDuY7yE) - (DP), (Monotonic Stack)
 
