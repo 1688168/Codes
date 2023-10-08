@@ -1,4 +1,26 @@
+#############
+# 20231008
+#############
 from collections import Counter
+
+
+class Solution:
+    def minimumKeypresses(self, s: str) -> int:
+        char2Cnt = collections.Counter(s)
+        sorted_usage = [(cc, ff) for (cc, ff) in char2Cnt.items()]
+        sorted_usage.sort(key=lambda x: -x[1])
+
+        N = len(sorted_usage)
+        multiplier = 0
+        cnt = 0
+        for ii in range(N):
+            if ii % 9 == 0:
+                multiplier += 1
+            cnt += sorted_usage[ii][1]*multiplier
+
+        return cnt
+
+############################
 
 
 class Solution:

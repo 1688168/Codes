@@ -341,7 +341,8 @@ $${\color{orange} Question \space List}$$
 [`Count Subarray by Element`]
 
 [[2268] - <span style="color:yellow">M</span> - Minimum Number of Keypresses](https://leetcode.com/problems/minimum-number-of-keypresses/) - 
-[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py)
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2268%5D%20Minimum%20Number%20Of%20Keypresses.py) -
+[`Sort`]
 
 [[2272] - <span style="color:red">H</span> - Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2272%5D%20Substring%20With%20Largest%20Variance%20-%20dp1.py) -
@@ -516,3 +517,9 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+```
+#############
+#
+#############
+```
