@@ -67,7 +67,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
 
-[[0198] - <span style="color:yellow">M</span> - House Robber](https://leetcode.com/problems/house-robber/) - 
+[[0198] - <span style="color:green">E</span> - House Robber](https://leetcode.com/problems/house-robber/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0198%5D%20House%20Robber.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/198.House-Robber) -
 [[Video]](https://www.youtube.com/watch?v=IcEX9Oi_tao) -
@@ -97,6 +97,13 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/212.Word-Search-II) -
 [[Video]](https://www.youtube.com/watch?v=nGGF_jQH0GQ) -
 [`Trie`]
+
+[[0213] - <span style="color:yellow">M</span> - House Robber II
+](https://leetcode.com/problems/house-robber-ii/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0213%5D%20House%20Robber%20II.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/213.House-Robber-II) -
+[[Video]](https://www.youtube.com/watch?v=5NsRK9TDCRo) -
+[`DP`]
 
 [[0215] - <span style="color:yellow">M</span> - Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0215%5D%20Kth%20Largest%20Element%20in%20an%20Array%20-%20quickselect.py)
