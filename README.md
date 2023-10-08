@@ -300,6 +300,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Sliding Window`]
 
+[[1186] - <span style="color:yellow">M</span> - Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1186.Maximum-Subarray-Sum-with-One-Deletion) -
+[[Video]](https://www.youtube.com/watch?v=NUjks0ZZBrg) -
+[`DP`]
+
 [[1203] - <span style="color:red">H</span> - Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1591%5D%20Strange-Printer-II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/BFS/1203.Sort-Items-by-Groups-Respecting-Dependencies/1203.Sort-Items-by-Groups-Respecting-Dependencies.cpp) -
