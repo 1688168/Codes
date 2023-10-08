@@ -242,6 +242,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=Ua0GhsJSlWM) -
 [`DP`][`classic`]
 
+- [Failed]: Amazon
+
 [[1151] - <span style="color:yellow">M</span> - Minimum Swaps to Group All 1s Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1151%5D%20Minimum%20Swaps%20to%20Group%20Al%201s%20Together.py)
 [[CPP]]() -
@@ -335,6 +337,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=PI6Dwkdw5hQ&t=53s) -
 [`DP`]
 
+- [Failed]: Amazon
 - Number of Ways to Select something.
 - Number of Ways to climb stairs.
 - Number of Ways to achieve some score
@@ -416,7 +419,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=kDtbcGIp11g) -
 [`DP`][`Monotonic Stack`][`Monotonic Stack Various`]
 
-- [Failed]
+- [Failed]: Amazon
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
@@ -455,7 +458,7 @@ $${\color{orange} Question \space List}$$
 [[Video-heap]](https://www.youtube.com/watch?v=apV4T4GULag)
 [`Binary Search`][`Heap`]
 
-- [`Failed`]
+- [`Failed`]: Amazon
 - when we need to consider both left and right, we can first focus on left as right is just the reverse of it
 - To find the rank of each element -> binary search (bisect into an new array)
 - To find how many elements before current index that is greater or lesser -> use heap maintaining top k
@@ -494,7 +497,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=qw0OVFVg5ng) -
 [`DP`]
 
-- [Failed]
+- [Failed]: Amazon
 - [2597]
 
 [[2866] - <span style="color:yellow">M</span> - Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/description/) - 
