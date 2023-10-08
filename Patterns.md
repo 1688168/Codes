@@ -177,6 +177,7 @@ class Solution:
 ```
 dp[ii][jj]:   iith round, state jj
 dp[ii][jj] = dp[ii-1][jj]+something
+- Today's state can be derived from Yesterday's states
 ```
 
 - [123]
@@ -196,7 +197,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type II (Basic enhanced): Time Series 2
 
-- [300]
+```
+- today's state can be derived from one of the JJ where jj < ii
+```
+
+- [300]: Longest Increasing Subsequence
 - [368]
 - [1105]
 
