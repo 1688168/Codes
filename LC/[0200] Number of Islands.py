@@ -1,4 +1,33 @@
 ##########
+# 20231008
+##########
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        cnt = 0
+        M = len(grid)
+        N = len(grid[0])
+        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+        def dfs(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return
+            vv = grid[ii][jj]
+            if vv == '2' or vv == "0":
+                return
+            grid[ii][jj] = '2'
+            for di, dj in dirs:
+                ni, nj = ii+di, jj+dj
+                dfs(ni, nj)
+
+        for ii in range(M):
+            for jj in range(N):
+                if grid[ii][jj] == '1':
+                    cnt += 1
+                    dfs(ii, jj)
+        return cnt
+
+
+##########
 # 20230916
 ##########
 class Solution:
