@@ -163,6 +163,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
 
+[[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
+[[Video]](https://www.youtube.com/watch?v=j7U3olaBxMg) -
+[`DP`]
+
 [[378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0378%5D%20Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
