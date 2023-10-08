@@ -124,11 +124,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
 [`Matrix`]
 
-[[02761] - <span style="color:yellow">M</span> - Paint Fence](https://leetcode.com/problems/paint-fence/description/) - 
+[[0256] - <span style="color:yellow">M</span> - Paint Fence](https://leetcode.com/problems/paint-fence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/276.Paint-Fence) -
 [[Video]](https://www.youtube.com/results?search_query=wisdompeak+leetcode+276) -
 [`DP`]
+
+- N houses, cost of black is a, cost of white is b. cannot paint 3 houses with same color consequtively. what's the min cost to paint all houses?
 
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
