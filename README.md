@@ -107,6 +107,12 @@ $${\color{orange} Question \space List}$$
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
 
+[[0297] - <span style="color:red">H</span> - Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0297%5D%20Serialize%20and%20Deserialize%20Binary%20Tree%20-%20BFS.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/297.Serialize-and-Deserialize-Binary-Tree) -
+[[Video]](https://www.youtube.com/watch?v=6tUBiOYbYgY&t=8s) -
+[`Tree Serialization`]
+
 [[0300] - <span style="color:yellow">M</span> - Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0300%5D%20Longest%20increasing%20Subsequence%20-%20Binary%20Search.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/300.Longest-Increasing-Subsequence) -
@@ -147,7 +153,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
-[[435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
+[[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
 [[Video]](https://www.youtube.com/watch?v=x6wREca18nw) -
@@ -181,6 +187,14 @@ $${\color{orange} Question \space List}$$
 [`Trie`][`Design`]
 
 - [1268]
+
+[[0652] - <span style="color:yellow">M</span> - Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/652.Find-Duplicate-Subtrees) -
+[[Video]](https://www.youtube.com/watch?v=YupKiFqtnsA) -
+[`Tree`][`Tree Serialize`]
+
+- [1948]
 
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
