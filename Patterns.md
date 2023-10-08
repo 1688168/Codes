@@ -173,15 +173,19 @@ class Solution:
 # [`DP`]
 
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
+```
+dp[ii][jj]:   iith round, state jj
+dp[ii][jj] = dp[ii-1][jj]+something
+```
 
 - [123]
-- [198]
+- [198]: House Robber
 - [213]
 - [256]
 - [309]
 - [376]
 
-### To-do or Not-to-do
+> To-do or Not-to-do
 
 - [487]
 - [1186]

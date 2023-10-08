@@ -67,6 +67,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
 
+[[0198] - <span style="color:yellow">M</span> - House Robber](https://leetcode.com/problems/house-robber/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0198%5D%20House%20Robber.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/198.House-Robber) -
+[[Video]](https://www.youtube.com/watch?v=IcEX9Oi_tao) -
+[`DP`][`Classic`][`DP - Type I Basic`]
+
 [[0200] - <span style="color:yellow">M</span> - Number of Islands](https://leetcode.com/problems/number-of-islands/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0200%5D%20Number%20of%20Islands.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/200.Number-of-Islands) -
