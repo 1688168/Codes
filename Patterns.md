@@ -16,6 +16,12 @@ Monotoic Stack
 - use bisect, insert
 ```
 
+> How to get all subsets/combination
+
+```
+
+```
+
 # [`Binary Search`]
 
 ```
