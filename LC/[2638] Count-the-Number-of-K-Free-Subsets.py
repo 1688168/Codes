@@ -1,9 +1,49 @@
 #################
-# 20231001
+# 20231008
 #################
-
 from pprint import pprint as pp
 from collections import defaultdict
+
+
+class Solution:
+    def countTheNumOfKFreeSubsets(self, nums: List[int], k: int) -> int:
+        cnt = 1
+        g = defaultdict(list)
+        for n in nums:
+            g[n % k].append(n)
+
+        def helper(vs):
+            if vs is None or len(vs) == 0:
+                return 1
+            N = len(vs)
+            tke = 0
+            ntk = 0
+            for ii in range(N):
+                tke_tmp = tke
+                ntk_tmp = ntk
+
+                if ii == 0:
+                    tke = 1
+                    ntk = 1
+                else:
+                    if vs[ii-1]+k == vs[ii]:
+                        tke = ntk_tmp
+                    else:
+                        tke = tke_tmp+ntk_tmp
+                    ntk = ntk_tmp+tke_tmp
+
+            return tke+ntk
+
+        for gid, vs in g.items():
+            vs.sort()
+            cnt *= helper(vs)
+
+        return cnt
+
+
+#################
+# 20231001
+#################
 
 
 class Solution:
