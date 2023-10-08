@@ -494,6 +494,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=qw0OVFVg5ng) -
 [`DP`]
 
+- [Failed]
 - [2597]
 
 [[2866] - <span style="color:yellow">M</span> - Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/description/) - 
