@@ -18,11 +18,16 @@ Monotoic Stack
 
 > How to get all subsets/combination
 
-```
-
-```
+- [0078]
 
 > Subsets
+
+> How to group numbers with some distance k
+
+```
+- group[n%k].add(n)
+- sort
+```
 
 - You can Sort as order doesn't matter in subset
 - You can group and aggregate [2638] and aggregate by group
