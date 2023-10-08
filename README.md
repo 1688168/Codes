@@ -376,7 +376,7 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=GJ-RFWROrv0&t=1s) -
-[`Patterns`]
+[`Greedy`]
 
 [[2330] - <span style="color:yellow">M</span> - Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2330%5D%20Valid%20Palindrome%20IV.py)
