@@ -211,6 +211,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
+[[0487] - <span style="color:yellow">M</span> - Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/487.Max-Consecutive-Ones-II) -
+[[Video]](https://www.youtube.com/watch?v=D2ZSacsq_fw) -
+[`DP`]
+
 [[0500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -

@@ -173,6 +173,7 @@ class Solution:
 # [`DP`]
 
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
+
 ```
 dp[ii][jj]:   iith round, state jj
 dp[ii][jj] = dp[ii-1][jj]+something
@@ -186,7 +187,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [376]
 - [1289]
 
-> To-do or Not-to-do
+> To-do or Not-to-do (State Design)
+
+- you can exercise one strategy (buy/sell stock) => states=(tke, ntk)
 
 - [487]
 - [1186]
