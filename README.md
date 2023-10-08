@@ -42,6 +42,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
 [`Monotonic Stack`][`Count Subarray by Element`]
 
+[[0123] - <span style="color:red">H</span> - Best Time to Buy and Sell Stock III
+](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/123.Best-Time-to-Buy-and-Sell-Stock-III) -
+[[Video]](https://www.youtube.com/watch?v=gsL3T9bI1RQ) -
+[`DP`]
+
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0139%5D%20Word%20Break_trie.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
