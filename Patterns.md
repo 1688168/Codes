@@ -163,10 +163,6 @@ class Solution:
 - Counting: for each element, you can either take or no-take based on some condition.  when reaching the end, we return 1
 ```
 
-# [`DP`]
-
-> Type I: Single Array Find Max/Min of something with a sub-array
-
 ```
 - dp[ii] = dp[jj]+something: how do find jj?
 - monotonic stack (Prev/Next Smaller/Greater)
@@ -174,10 +170,88 @@ class Solution:
 - BruteForce (O(N^2))
 ```
 
-- [2355]
--
+# [`DP`]
 
-[2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20JumpGameVIII.py) - [Video](https://www.youtube.com/watch?v=II7tWDuY7yE) - (DP), (Monotonic Stack)
+> Type I (Basic): Single Array Find Max/Min of something with a sub-array
+
+- [123]
+- [198]
+- [213]
+- [256]
+- [309]
+- [376]
+
+### To-do or Not-to-do
+
+- [487]
+- [1186]
+
+> Type II (Basic enhanced): Time Series 2
+
+- [300]
+- [368]
+- [1105]
+
+> Type III: Two sequences
+
+- [72]
+- [97]
+- [115]
+- [727]
+- [1092]
+- [1143]: Longest Common Subsequences
+
+> LCS/SCS Variation
+
+- [583]
+- [712]
+- [1035]
+- [1216]
+- [1312]
+
+> Type IV: Type I Intervals
+
+- [410]
+- [813]
+- [1278]
+- [1335]
+
+> Type V: Type II Intervals
+
+- [312]
+- [375]
+- [516]
+- [1246]
+
+> Type VI: backpack
+
+- [474]
+- [494]
+- [879]
+- [956]
+- [1049]
+
+> Compress state
+
+- [691]
+- [1125]
+- [1349]
+
+> Homework
+
+- [903] Type I
+- [983] Type II
+- [546] Type III
+- [518] Backpack
+- [943] state compression
+- [887] Give up
+
+> DP MISC
+
+- [1000]: combining Type I and Type II intervals
+- [2355]
+
+- [2297 - M - Jump Game VIII](https://github.com/1688168/Leetcode/blob/main/LC/%5B2297%5D%20JumpGameVIII.py) - [Video](https://www.youtube.com/watch?v=II7tWDuY7yE) - (DP), (Monotonic Stack)
 
 - [1944] [Video](https://www.youtube.com/watch?v=oV-HvcHogyk)
 - [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
