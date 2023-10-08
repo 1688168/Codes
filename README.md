@@ -246,6 +246,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
 
+[[0931] - <span style="color:yellow">M</span> - Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/931.Minimum-Falling-Path-Sum) -
+[[Video]](https://www.youtube.com/watch?v=XmPNR9QinmE) -
+[`DP`]
+
 [[0937] - <span style="color:yellow">M</span> - Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0937%5D%20Reorder%20Data%20in%20Log%20Files.py)
 [[CPP]]() -
@@ -310,6 +316,12 @@ $${\color{orange} Question \space List}$$
 [`Trie`]
 
 - [642]
+
+[[1289] - <span style="color:red">H</span> - Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1289.Minimum-Falling-Path-Sum-II) -
+[[Video]](https://www.youtube.com/watch?v=euD2WFdUp6U) -
+[`DP`]
 
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
