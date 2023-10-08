@@ -22,6 +22,11 @@ Monotoic Stack
 
 ```
 
+> Subsets
+
+- You can Sort as order doesn't matter in subset
+- You can group and aggregate [2638] and aggregate by group
+
 # [`Binary Search`]
 
 ```
