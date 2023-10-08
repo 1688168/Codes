@@ -124,6 +124,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
 [`Matrix`]
 
+[[02761] - <span style="color:yellow">M</span> - Paint Fence](https://leetcode.com/problems/paint-fence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/276.Paint-Fence) -
+[[Video]](https://www.youtube.com/results?search_query=wisdompeak+leetcode+276) -
+[`DP`]
+
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/287.Find-the-Duplicate-Number) -
