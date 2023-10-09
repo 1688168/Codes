@@ -76,20 +76,20 @@ class Solution:
 
 # [`BFS`]
 
-[0235] BST  
-[0236] BT  
-[1123] LCA on lowest leaves (same as 1676)  
-[1644] LCA on P, q that might not existing  
-[1650] LCA with pointer to parent  
-[1676] LCA on a set (same as 1123)
+- [0235] BST
+- [0236] BT
+- [1123] LCA on lowest leaves (same as 1676)
+- [1644] LCA on P, q that might not existing
+- [1650] LCA with pointer to parent
+- [1676] LCA on a set (same as 1123)
 
-[1740]  
-[2096]  
-[2439]  
-[2519]  
-[2528] Maximize the Minimum Powered City
+- [1740]
+- [2096]
+- [2439]
+- [2519]
+- [2528] Maximize the Minimum Powered City
 
-[2702]
+- [2702]
 
 # [`Count Subarray by Element`]
 
@@ -113,16 +113,16 @@ class Solution:
 
 ```
 
-[1498]  
-[2281] H: Sum of Total Strength of Wizards
+- [1498]
+- [2281] H: Sum of Total Strength of Wizards
 
 - Strength: min(in subarray) \* sum(subarray)
 
-[2302] H: Count Subarrays With Score Less Than K
+- [2302] H: Count Subarrays With Score Less Than K
 
 - Score: subarray_sum\*subarray_length < K
 
-[2681] H : Power-of-Heroes
+- [2681] H : Power-of-Heroes
 
 - sum of all (sub-sequence-max)^2\*subsequence-min
 - Whenever grouping by subsequence, we can sort as the original order no longer matter
@@ -132,28 +132,28 @@ class Solution:
 
 # [`Design`]
 
-[0146]
-[0155]
-[0355]
-[0380]
-[0381]
-[0432]
-[0460]
-[0535]
-[0588]
-[0622]
-[0631]
-[0642]
-[0895]
-[1146]
-[1172]
-[1268]
-[1352]
-[1381]
-[1622]
-[1670]
-[2166]
-[2296]
+- [0146]
+- [0155]
+- [0355]
+- [0380]
+- [0381]
+- [0432]
+- [0460]
+- [0535]
+- [0588]
+- [0622]
+- [0631]
+- [0642]
+- [0895]
+- [1146]
+- [1172]
+- [1268]
+- [1352]
+- [1381]
+- [1622]
+- [1670]
+- [2166]
+- [2296]
 
 # [`DFS`]
 
@@ -358,16 +358,16 @@ c. element value is not equal to the destination value or no point of swapping
 > -> if something is zeros and ones, sum(nums) is the number of ones
 ```
 
-[0907] H :
+- [0907] H :
 
 > Monotonic Stack: sum of subarray min
 > -> for each element as min, how many subarray this min can be?
 
-[1856] M
+- [1856] M
 
-[2104] M : sum of subarray range  
--> Define something as range: max-min of subarray  
--> Calc sum of all ranges
+- [2104] M : sum of subarray range  
+  -> Define something as range: max-min of subarray  
+  -> Calc sum of all ranges
 
 Observation 1:  
 -> sum((max-min) of all subarrays)  
@@ -406,16 +406,16 @@ Strategy:
 3. Binary Search: Nlog C
 4. Quick select: AVG O(N)
 
-[215]
+- [215]
 
 # [`Topology Sort`]
 
-[0207]  
-[1591] Strange Printer
+- [0207]
+- [1591] Strange Printer
 
 # [`Trie`]
 
-[0139]
+- [0139]
 
 ```
 - DFS by set lookup
@@ -427,8 +427,8 @@ Strategy:
 - DP: O(N)
 ```
 
-[0140]  
-[0212]
+- [0140]
+- [0212]
 
 # [`Two Pointers`]
 
@@ -446,9 +446,9 @@ c. move (slide) the window
 > Time: O(N)
 ```
 
-[0075] (sort color)(dutch national flag)  
-[1151]  
-[2762] M
+- [0075] (sort color)(dutch national flag)
+- [1151]
+- [2762] M
 
 # [`Union Find`]
 
