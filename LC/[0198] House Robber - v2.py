@@ -1,3 +1,8 @@
+####################
+##### 20231008 #####
+####################
+
+
 class Solution:
     def rob(self, nums: List[int]) -> int:
         """
@@ -14,7 +19,7 @@ class Solution:
             if ii == 0:
                 rob = nums[ii]
                 no_rob = 0
-                dp = nums[ii]
+
                 continue
             rob_tmp = rob
             no_rob_tmp = no_rob
