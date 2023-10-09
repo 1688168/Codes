@@ -2,8 +2,8 @@
 * Variance: max(char_freq)-min(char_freq)
 => find max(Variance) of all substring
 
-```diff
-+ constrains
+### Constrains
+```
 + 1 <= s.length <= 10^4
 + s consists of lowercase English letters.
 ```

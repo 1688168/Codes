@@ -440,6 +440,9 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=P6KnO-Dw0Fo&t=13s)
 [`Max Subarray`][`Modified Kadane`]
 
+- When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
+- max subarray sum -> Kadane 
+
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)

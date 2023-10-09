@@ -21,6 +21,10 @@ Monotoic Stack
 - [0078]
 
 > Subsets
+> Subarrayies
+- Max subarray sum -> Kadane
+- When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
+
 
 > How to group numbers with some distance k
 
@@ -179,7 +183,7 @@ dp[ii][jj]:   iith round, state jj
 dp[ii][jj] = dp[ii-1][jj]+something
 - Today's state can be derived from Yesterday's states
 ```
-
+- Kadane
 - [123]
 - [198]: House Robber
 - [213]
