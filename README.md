@@ -130,13 +130,25 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
 [`Matrix`]
 
-[[0256] - <span style="color:yellow">M</span> - Paint Fence](https://leetcode.com/problems/paint-fence/description/) - 
+[[0256] - <span style="color:yellow">M</span> - Paint House](https://leetcode.com/problems/paint-fence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/276.Paint-Fence) -
-[[Video]](https://www.youtube.com/results?search_query=wisdompeak+leetcode+276) -
+[[Video]]() -
 [`DP`]
 
 - N houses, cost of black is a, cost of white is b. cannot paint 3 houses with same color consequtively. what's the min cost to paint all houses?
+
+[[0265] - <span style="color:red">H</span> - Paint House II](https://leetcode.com/problems/paint-house-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/265.Paint-House-II) -
+[[Video]](https://www.bilibili.com/video/BV1sS4y1V7ZT/) -
+[`DP`]
+
+[[0276] - <span style="color:yellow">M</span> - Paint Fence](https://leetcode.com/problems/paint-fence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/276.Paint-Fence) -
+[[Video]](https://www.youtube.com/watch?v=XL1icaNQCa4&t=5s) -
+[`DP`]
 
 [[0287] - <span style="color:yellow">M</span> - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) - 
 [[Python]]()
