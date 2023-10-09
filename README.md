@@ -60,7 +60,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
 [`Trie`]
 
-[[146] - <span style="color:yellow">M</span> - LRU Cache](https://leetcode.com/problems/lru-cache/) - 
+[[0146] - <span style="color:yellow">M</span> - LRU Cache](https://leetcode.com/problems/lru-cache/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0146%5D%20LRU%20Cache.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/146.LRU-Cache) -
 [[Video]](https://www.youtube.com/watch?v=jX_k2FIhRI0&t=23s) -
@@ -117,6 +117,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/215.Kth-Largest-Element-in-an-Array) -
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
+
+[[0224] - <span style="color:red">H</span> - Basic Calculator](https://leetcode.com/problems/basic-calculator/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0224%5D%20Basic%20Calculator.md)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/224.Basic-Calculator) -
+[[Video]](https://www.youtube.com/watch?v=t8wIrdWSDsE) -
+[`Expression Parsing`][`Basic Calculator`]
 
 [[0240] - <span style="color:yellow">M</span> - Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0240%5D%20Searh%20a%202D%20Matrix%20II.py)
