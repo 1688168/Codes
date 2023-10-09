@@ -145,7 +145,7 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0297%5D%20Serialize%20and%20Deserialize%20Binary%20Tree%20-%20BFS.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/297.Serialize-and-Deserialize-Binary-Tree) -
 [[Video]](https://www.youtube.com/watch?v=6tUBiOYbYgY&t=8s) -
-[`Tree Serialization`]
+[`Tree Serialization`][`classic`]
 
 [[0300] - <span style="color:yellow">M</span> - Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0300%5D%20Longest%20increasing%20Subsequence%20-%20Binary%20Search.py)
