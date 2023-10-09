@@ -440,6 +440,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=P6KnO-Dw0Fo&t=13s)
 [`Max Subarray`][`Modified Kadane`]
 
+- If we need to try all combination, consider only 1 combination and repeat same thing for all others
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
 - max subarray sum -> Kadane 
 
