@@ -24,6 +24,16 @@ class Solution:
 
         """
         Modified Kadane (Max subarray sum): subarray must include both 1 and -1
+
+        dp[ii][jj]: iith round jj=0: containing -1, jj=1 not containing -1
+
+        round    state
+        ii       has_-1    not_has_-1
+
+        dp0[ii]: the maximum subarray sum ending at ii and this subarray does NOT contain -1
+        dp1[ii]: the maximum subarray sum ending at i and this subarray does contain -1
+
+
         """
 
         # pp(pairs)

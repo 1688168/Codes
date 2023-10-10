@@ -449,6 +449,7 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.cpp) -
 [[Video]](https://www.youtube.com/watch?v=HGCm9PkFd58&list=PPSV&t=918) -
+[[Video - deprecated]](https://www.youtube.com/watch?v=tMIBXRhp9hs) -
 [`Count Subarray By Element`][`Monotonic Stack`]
 
 - [907] [`Aggregate Subarray by element`]
