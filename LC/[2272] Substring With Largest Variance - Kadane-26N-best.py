@@ -26,6 +26,8 @@ class Solution:
 
         N = len(chars)
         mxv = -math.inf
+
+        # here we only process the 1, -1s and skip zeros
         for a, a_idx in char2idx.items():  # try all combinations
             for b, b_idx in char2idx.items():
                 if a == b:
@@ -40,6 +42,13 @@ class Solution:
                 sum_has_b = -math.inf//2
                 ii, jj = 0, 0
                 while ii < len(a_idx) or jj < len(b_idx):
+                    """
+                    - we are processing two array of indexs.(from left to right).  
+                    - ii, jj whoever is smaller and not out-of-bound should be 
+                    processed first (from left to right)
+                    """
+
+                    # we need to process the one in the front first
                     if jj >= len(b_idx) or (ii < len(a_idx) and a_idx[ii] < b_idx[jj]):
                         ii += 1
                         sum_no_b += 1
