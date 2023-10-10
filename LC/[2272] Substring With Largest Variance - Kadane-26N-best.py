@@ -35,7 +35,14 @@ class Solution:
                 sum_has_b = -math.inf//2
                 ii, jj = 0, 0
                 while ii < len(a_idx) or jj < len(b_idx):
+                    """
+                    a_idx = [1, 3, 5]
+                    b_idx = [2, 4, 6, 8]
+                    """
+
                     if jj >= len(b_idx) or (ii < len(a_idx) and a_idx[ii] < b_idx[jj]):
+                        # if b_idx is exhausted or the subarray is ending with a_idx[ii] (are are not @ b yet)
+                        # whoever is smaller is the current ending index
                         ii += 1
                         sum_no_b += 1
                         sum_has_b += 1

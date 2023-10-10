@@ -31,6 +31,10 @@ class Solution:
             for ii in range(len(s)):
                 if s[ii] == x: nums[ii] = 1
                 if s[ii] == y: nums[ii] = -1
+            """
+            max var @ ii = dp[ii] = max_sub_array_sum from left ending @ ii 
+                                  + max_sub_array_sum from right ending @ ii
+            """
             # dp1 is subarray sum ending @ ii
             dp1[0] = nums[0] # setup for Kadane's algorithm for max subarray sum
             for ii in range(1, len(s)):
