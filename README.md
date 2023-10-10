@@ -441,8 +441,8 @@ $${\color{orange} Question \space List}$$
 [`Max Subarray`][`Modified Kadane`]
 
 - If we need to try all combination, consider only 1 combination and repeat same thing for all others
-- When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
-- max subarray sum -> Kadane 
+- max subarray sum -> Kadane
+- Modified Kadane: [1, 0, 0, -1, 1, 1, 1, 1, 1], the requirement is max subarray sum that must contain 1 and -1 (the original Kadane might return subarray only contains 1)
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
