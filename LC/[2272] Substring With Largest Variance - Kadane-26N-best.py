@@ -11,6 +11,11 @@
 from collections import Counter, defaultdict
 
 
+"""
+The Optimization: since only 1, -1 will affect the total sum, we should skip zeros
+"""
+
+
 class Solution:
     def largestVariance(self, s: str) -> int:
         char2cnt = Counter(list(s))
@@ -21,6 +26,8 @@ class Solution:
 
         N = len(chars)
         mxv = -math.inf
+
+        # here we only process the 1, -1s and skip zeros
         for a, a_idx in char2idx.items():  # try all combinations
             for b, b_idx in char2idx.items():
                 if a == b:
@@ -36,10 +43,12 @@ class Solution:
                 ii, jj = 0, 0
                 while ii < len(a_idx) or jj < len(b_idx):
                     """
-                    a_idx = [1, 3, 5]
-                    b_idx = [2, 4, 6, 8]
+                    - we are processing two array of indexs.(from left to right).  
+                    - ii, jj whoever is smaller and not out-of-bound should be 
+                    processed first (from left to right)
                     """
 
+                    # we need to process the one in the front first
                     if jj >= len(b_idx) or (ii < len(a_idx) and a_idx[ii] < b_idx[jj]):
                         # if b_idx is exhausted or the subarray is ending with a_idx[ii] (are are not @ b yet)
                         # whoever is smaller is the current ending index

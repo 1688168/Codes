@@ -26,8 +26,8 @@ class Solution:
                     continue
 
                 # print(" a: ", a, " b: ", b)
-                sum_no_b = 0
-                sum_has_b = -math.inf//2
+                sum_no_b = 0  # when we have nothing, and not having -1
+                sum_has_b = -math.inf//2  # when we have nothing and need to have -1 -> invalid
                 for idx, cc in enumerate(list(s)):
                     # print(" cc: ", cc)
                     if cc == a:  # cc is current value
