@@ -11,6 +11,11 @@
 from collections import Counter, defaultdict
 
 
+"""
+The Optimization: since only 1, -1 will affect the total sum, we should skip zeros
+"""
+
+
 class Solution:
     def largestVariance(self, s: str) -> int:
         char2cnt = Counter(list(s))
