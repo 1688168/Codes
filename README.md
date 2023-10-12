@@ -231,7 +231,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
-- word break
+- word break (139, 140)
 
 [[0487] - <span style="color:yellow">M</span> - Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/) - 
 [[Python]]()
