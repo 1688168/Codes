@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def largestVariance(self, s: str) -> int:
         """
@@ -14,35 +16,39 @@ class Solution:
         : * pre-collect indexes of all chars
         """
 
-
         # find all chars
-        charset=set(list(s))
-        N=len(s)
+        charset = set(list(s))
+        N = len(s)
 
         # collect char index lookup
         # char2idx = defaultdict(list)
         # for ii, c in enumerate(s):
         #     char2idx[c].append(ii)
 
-
         # try all pairs of existing chars
-        ans=0
-        for a in charset: #for each pair, we only visit their indexes
+        ans = 0
+        for a in charset:  # for each pair, we only visit their indexes
             for b in charset:
-                if a==b: continue # ignore if a==b
+                if a == b:
+                    continue  # ignore if a==b
 
-                dp1=0             # max subarray sum ending with idx ii and contains no -1
-                dp2=float('-inf')/2 # max subarray sum ending with idx ii and contains -1
+                """
+                Note: since we need to find the diff of two frequency, we need to ensure the max subarray sum contains
+                      both (a,b)=(1, -1), so the DP function is not same as regular Kadane
+                """
+
+                dp1 = 0  # max subarray sum ending with idx ii and contains no -1
+                # max subarray sum ending with idx ii and contains -1
+                dp2 = float('-inf')/2
 
                 for ii in range(N):
-                    if s[ii]==a:
+                    if s[ii] == a:
                         dp1 += 1
                         dp2 += 1
-                    elif s[ii]==b:
-                        dp2=max(dp1-1, dp2-1)
-                        dp1=0
+                    elif s[ii] == b:
+                        dp2 = max(dp1-1, dp2-1)
+                        dp1 = 0
 
-                    ans=max(ans, dp2)
+                    ans = max(ans, dp2)
 
         return ans
-        
