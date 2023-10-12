@@ -38,7 +38,7 @@ class Solution:
                 """
                 This is modifed Kadane, we need to ensure both a and b are present to update max 
                 """
-                sum_no_b = 0
+                sum_no_b = 0  # special kadane (must contain b(-1) in the subarray sum)
                 sum_has_b = -math.inf//2
                 ii, jj = 0, 0
                 while ii < len(a_idx) or jj < len(b_idx):
