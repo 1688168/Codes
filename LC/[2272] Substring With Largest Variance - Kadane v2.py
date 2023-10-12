@@ -10,35 +10,52 @@ class Solution:
         """
 
         # find all chars
-        charset=set(list(s))
-        N=len(s)
+        charset = set(list(s))
+        N = len(s)
         # try all pairs of existing chars
-        res=0
+        res = 0
         for a in charset:
             for b in charset:
-                if a==b: continue # ignore if a==b
+                if a == b:
+                    continue  # ignore if a==b
 
                 # we need both a, and one b in the subarray.
                 # for each b we found, we do left Kadane and right Kadane
                 arr = [0]*N
                 for ii in range(N):
-                    if s[ii]==a:
-                        arr[ii]=1
-                    elif s[ii]==b:
-                        arr[ii]=-1
+                    if s[ii] == a:
+                        arr[ii] = 1
+                    elif s[ii] == b:
+                        arr[ii] = -1
 
-                dp0=[0]*N
+                dp0 = [0]*N
+
+                """
+                1 1 1 1 -1 1 1 1
+                ^^^^^^^^^^
+                left
+                         i
+                         ^^^^^^^^^
+                         right
+
+                so max subarray sum centering @ i is
+                Kadane(left) + kadane(right) - nums[ii]
+            
+                This is talking about maximum subarray sum ending @ ii (Kadane).
+                
+                """
 
                 for ii in range(N):
-                    dp0[ii]= arr[ii] if ii==0 else max(dp0[ii-1]+arr[ii], arr[ii])
+                    dp0[ii] = arr[ii] if ii == 0 else max(
+                        dp0[ii-1]+arr[ii], arr[ii])
 
-                lmx=float('-inf')
+                lmx = float('-inf')
                 for ii in reversed(range(N)):
-                    dp1=arr[ii] if ii == N-1 else max(arr[ii], dp1+arr[ii])
+                    dp1 = arr[ii] if ii == N-1 else max(arr[ii], dp1+arr[ii])
 
-                    if arr[ii]==-1:
-                        lmx=max(lmx, dp1+dp0[ii]-arr[ii])
+                    # we can only update result when we have b (-1) --- since a is postive (1)
+                    if arr[ii] == -1:
+                        lmx = max(lmx, dp1+dp0[ii]-arr[ii])
 
-                res=max(res, lmx)
+                res = max(res, lmx)
         return res
-        

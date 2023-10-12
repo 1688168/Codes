@@ -24,6 +24,18 @@ class Solution:
                 if a == b:
                     mxv = max(mxv, 0)
                     continue
+                """
+                Note: since we need to find the diff of two frequency, we need to ensure the max subarray sum contains
+                      both (a,b)=(1, -1), so the DP function is not same as regular Kadane
+                """
+                """
+                round (ii)     state(jj=(0, 1))                
+                1              contains b(-1)           not contain b (-1)
+                2
+                3
+                4
+                return max(contains b)
+                """
 
                 # print(" a: ", a, " b: ", b)
                 sum_no_b = 0  # when we have nothing, and not having -1
