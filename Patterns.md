@@ -417,7 +417,16 @@ Strategy:
 2. Heap/PQ: Nlogk
 3. Binary Search: Nlog C
 4. Quick select: AVG O(N)
+```
+### When we see top K
+1. sort
+2. heap
+3. quick-sort
+4. Binary Search with count
 
+### When we see pair
+1. sorted matrix strategy
+```
 - [215]
 
 # [`Topology Sort`]
