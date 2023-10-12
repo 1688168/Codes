@@ -50,6 +50,9 @@ class Solution:
         return sorted(logs, key=get_key)
 ```
 
+
+> When you see topK question for pairs (multiplication table, etc) -> Sorted Matrix Binary Search
+
 # [`Binary Search`]
 
 ```
