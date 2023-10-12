@@ -231,6 +231,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=dsnTJscs4BA) -
 [`Trie`]
 
+- word break
+
 [[0487] - <span style="color:yellow">M</span> - Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/487.Max-Consecutive-Ones-II) -
@@ -442,7 +444,7 @@ $${\color{orange} Question \space List}$$
 
 - If we need to try all combinations, consider only 1 combination and repeat same thing for all others
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
-- max subarray sum -> Kadane 
+- max subarray sum -> Kadane
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
