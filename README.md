@@ -55,6 +55,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=bGN7c34qzCg&t=23s) -
 [`BFS`][`DFS`]
 
+- beware of the local_visited concept, we cannot add visited until all nodes same level are processed complete
+
 [[0127] - <span style="color:red">H</span> - Word Ladder](https://leetcode.com/problems/word-ladder/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0127%5D%20Word%20Ladder.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/127.Word-Ladder) -

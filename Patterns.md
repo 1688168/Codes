@@ -82,6 +82,7 @@ class Solution:
 
 # [`BFS`]
 
+- beware of the local_visited concept, we cannot add visited until all nodes same level are processed complete
 - [0235] BST
 - [0236] BT
 - [1123] LCA on lowest leaves (same as 1676)
