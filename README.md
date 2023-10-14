@@ -53,7 +53,7 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/126.Word-Ladder-II) -
 [[Video]](https://www.youtube.com/watch?v=bGN7c34qzCg&t=23s) -
-[`BFS`]
+[`BFS`][`DFS`]
 
 [[0127] - <span style="color:red">H</span> - Word Ladder](https://leetcode.com/problems/word-ladder/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0127%5D%20Word%20Ladder.py)

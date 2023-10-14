@@ -50,7 +50,6 @@ class Solution:
         return sorted(logs, key=get_key)
 ```
 
-
 > When you see topK question for pairs (multiplication table, etc) -> Sorted Matrix Binary Search
 
 # [`Binary Search`]
@@ -417,6 +416,7 @@ Strategy:
 2. Heap/PQ: Nlogk
 3. Binary Search: Nlog C
 4. Quick select: AVG O(N)
+
 ```
 ### When we see top K
 1. sort
@@ -427,6 +427,7 @@ Strategy:
 ### When we see pair
 1. sorted matrix strategy
 ```
+
 - [215]
 
 # [`Topology Sort`]
@@ -497,3 +498,8 @@ c. move (slide) the window
 # [`Word Break`]
 
 # [`Word Ladder`]
+
+- [126]: Word Ladder II
+  - From BeginWord to EndWord all, output all valid path
+- [127]: Word Ladder I
+  - Is existing from BeginWord to EndWord
