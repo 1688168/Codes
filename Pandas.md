@@ -33,3 +33,6 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 ### > unique values:
 
 - nunique (Series or dataframe)
+
+
+> Group by
