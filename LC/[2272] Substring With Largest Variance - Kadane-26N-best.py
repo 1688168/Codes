@@ -1,65 +1,63 @@
-"""
-# diff of count of two char:
-- assume the two chars are (a, b)
-- the count of diff of the two char is equivalent to let a=1, b=-1 (others 0) and perform subarray sum
-- Max subarray sum -> Kadane's algorithm
-- if a==b: sum=0 (equal count of 1 and -1)
-
-# any two chars in the sub-array -> have to try all combination
-"""
-
-from collections import Counter, defaultdict
-
-
-"""
-The Optimization: since only 1, -1 will affect the total sum, we should skip zeros
-"""
-
 
 class Solution:
     def largestVariance(self, s: str) -> int:
-        char2cnt = Counter(list(s))
-        chars = list(char2cnt.keys())
-        char2idx = defaultdict(list)
-        for ii, cc in enumerate(list(s)):
-            char2idx[cc].append(ii)
+        """
+        variance: largest diff btn occurance of two chars
+        diff of two chars -> (a,b)=(-1, 1) => sum is the diff
+        the sub-array sum must contain both (a, b) => modified kadane
 
-        N = len(chars)
+        kadane dp[ii] = max(nums[ii], nums[ii]+dp[ii-1])
+        => largest variance of all substrings
+
+                i
+        x x x x x x x x x
+
+        modified kadane is O(N) * 26 * 26 
+
+        1. get all pairs
+        2. get all locations of each char
+
+        """
+        char2Idx = collections.defaultdict(list)
+        for ii, cc in enumerate(s):
+            char2Idx[cc].append(ii)
+
+        # we now knows all chars and it's idx
+
+        # try all pairs
         mxv = -math.inf
-
-        # here we only process the 1, -1s and skip zeros
-        for a, a_idx in char2idx.items():  # try all combinations
-            for b, b_idx in char2idx.items():
+        for a, a_idx in char2Idx.items():
+            for b, b_idx in char2Idx.items():
                 if a == b:
                     mxv = max(mxv, 0)
                     continue
 
-                # print(" a: ", a, " b: ", b)
-                """
-                This is modifed Kadane, we need to ensure both a and b are present to update max 
-                """
-                sum_no_b = 0  # special kadane (must contain b(-1) in the subarray sum)
-                sum_has_b = -math.inf//2
+                Na = len(a_idx)
+                Nb = len(b_idx)
                 ii, jj = 0, 0
-                while ii < len(a_idx) or jj < len(b_idx):
-                    """
-                    - we are processing two array of indexs.(from left to right).  
-                    - ii, jj whoever is smaller and not out-of-bound should be 
-                    processed first (from left to right)
-                    """
 
-                    # we need to process the one in the front first
-                    if jj >= len(b_idx) or (ii < len(a_idx) and a_idx[ii] < b_idx[jj]):
-                        # if b_idx is exhausted or the subarray is ending with a_idx[ii] (are are not @ b yet)
-                        # whoever is smaller is the current ending index
-                        ii += 1
+                """
+                ii=[0, 3, 9, 12]
+                jj=[1, 2, 5, 15]
+                """
+
+                sum_no_b = 0
+                sum_has_b = -math.inf//2
+
+                while ii < Na or jj < Nb:
+
+                    if jj >= Nb or (ii < Na and a_idx[ii] < b_idx[jj]):
+
                         sum_no_b += 1
                         sum_has_b += 1
+                        ii += 1
 
-                    elif ii >= len(a_idx) or (jj < len(b_idx) and b_idx[jj] < a_idx[ii]):
-                        jj += 1
-                        sum_has_b = max(sum_no_b - 1, sum_has_b-1)
+                    elif ii >= Na or (jj < Nb and b_idx[jj] < a_idx[ii]):
+
+                        sum_has_b = max(sum_no_b-1, sum_has_b-1)
+                        # sum_has_b = max(sum_has_b-1, sum_no_b-1) #I actually do not understand why this line is diff than prev line
                         sum_no_b = 0
+                        jj += 1
 
                     mxv = max(mxv, sum_has_b)
 
