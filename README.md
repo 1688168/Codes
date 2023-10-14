@@ -49,6 +49,18 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=gsL3T9bI1RQ) -
 [`DP`]
 
+[[0126] - <span style="color:red">H</span> - desc]() - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/126.Word-Ladder-II) -
+[[Video]](https://www.youtube.com/watch?v=bGN7c34qzCg&t=23s) -
+[`BFS`]
+
+[[0127] - <span style="color:red">H</span> - Word Ladder](https://leetcode.com/problems/word-ladder/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0127%5D%20Word%20Ladder.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/127.Word-Ladder) -
+[[Video]]() -
+[`Patterns`]
+
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0139%5D%20Word%20Break_trie.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
@@ -280,8 +292,8 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/719.Find-K-th-Smallest-Pair-Distance) -
 [[Video]](https://www.youtube.com/watch?v=rKVivKCchFc&t=334) -
 [`TopK`][`Binary Search`][`Two Dimentional TopK`]
-- How to apply binary search with paired distance
 
+- How to apply binary search with paired distance
 
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
