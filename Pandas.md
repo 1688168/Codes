@@ -34,5 +34,8 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
 - nunique (Series or dataframe)
 
-
 > Group by
+
+```
+df=df.groupby('a_column', as_index=False)['the_column_to_aggregate'].sum()
+```
