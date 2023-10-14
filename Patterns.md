@@ -52,6 +52,11 @@ class Solution:
 
 > When you see topK question for pairs (multiplication table, etc) -> Sorted Matrix Binary Search
 
+> DFS VS BFS
+
+- [126]: if we use BFS to carry the path, we will have to hold paths in queue for all nodes in same level. We only hold 1 path for DFS until we reach the end or fail. so from memory perspective, DFS is surpior
+- BFS: shortest distance
+
 # [`Binary Search`]
 
 ```
