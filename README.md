@@ -203,6 +203,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
 [`Quick Select`]
 
+[[0332] - <span style="color:red">H</span> - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/332.Reconstruct-Itinerary) -
+[[Video]](https://www.youtube.com/watch?v=5yM3H0UgXTo) -
+[`DFS`]
+
 [[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/347.Top-K-Frequent-Elements) -
