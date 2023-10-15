@@ -444,6 +444,14 @@ $${\color{orange} Question \space List}$$
 - [907]
 - [1856]
 
+[[2193] - <span style="color:red">H</span> - Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2193.Minimum-Number-of-Moves-to-Make-Palindrome) -
+[[Video]](https://www.youtube.com/watch?v=IUB4G_hp8ug&t=2449s) -
+[`Greedy`][`Reverse Pair`]
+
+- [0493]: reverse pairs for solution 2
+
 [[2222] - <span style="color:yellow">M</span> - Number of Ways to Select Buildings](https://leetcode.com/problems/number-of-ways-to-select-buildings/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2222%5D%20Number%20of%20Ways%20to%20Select%20Buildings%20-%20TLE.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2222.Number-of-Ways-to-Select-Buildings) -

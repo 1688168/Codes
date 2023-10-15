@@ -499,6 +499,8 @@ c. move (slide) the window
 - [1871]
 - [2297] - Jump Game VIII - (DP + Monotonic Stack) (1944, 2282, )
 
+# [`Concatenated Word`]
+
 # [`Word Search`]
 
 # [`Word Break`]
