@@ -1,7 +1,47 @@
 ############
+# 20231015
+############
+class Solution:
+    def subArrayRanges(self, nums: List[int]) -> int:
+        N = len(nums)
+        prev_smaller_equal = [-1]*N
+        next_smaller = [N]*N
+        prev_greater_equal = [-1]*N
+        next_greater = [N]*N
+
+        stk = []
+        for ii, vv in enumerate(nums):
+            while stk and nums[stk[-1]] > vv:
+                next_smaller[stk[-1]] = ii
+                stk.pop()
+
+            if stk:
+                prev_smaller_equal[ii] = stk[-1]
+            stk.append(ii)
+
+        stk = []
+        for ii, vv in enumerate(nums):
+            while stk and nums[stk[-1]] < vv:
+                next_greater[stk[-1]] = ii
+                stk.pop()
+
+            if stk:
+                prev_greater_equal[ii] = stk[-1]
+            stk.append(ii)
+
+        ttl = 0
+        for ii, vv in enumerate(nums):
+            (a, b) = prev_smaller_equal[ii], next_smaller[ii]
+            (c, d) = prev_greater_equal[ii], next_greater[ii]
+            ttl += ((ii-c)*(d-ii)-(ii-a)*(b-ii))*nums[ii]
+
+        return ttl
+
+############
 # 20230923
 ############
 # smart way to calc prev_smaller, prev_greaterafse
+
 
 class Solution:
     def subArrayRanges(self, nums: List[int]) -> int:
