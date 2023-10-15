@@ -303,6 +303,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
 
+[[0843] - <span style="color:red">H</span> - Guess the Word](https://leetcode.com/problems/guess-the-word/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/843.Guess-the-Word) -
+[[Video]](https://www.youtube.com/watch?v=8_86eMEoKeE) -
+[`Patterns`]
+
 [[0931] - <span style="color:yellow">M</span> - Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/931.Minimum-Falling-Path-Sum) -
