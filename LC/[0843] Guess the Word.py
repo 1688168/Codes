@@ -5,6 +5,12 @@
 # class Master:
 #     def guess(self, word: str) -> int:
 
+"""
+Time: O(N) * 100 (words)
+space: O(1) (26*6 is a constance)
+"""
+
+
 class Solution:
     def findSecretWord(self, words: List[str], master: 'Master') -> None:
         candidates = words[:]
