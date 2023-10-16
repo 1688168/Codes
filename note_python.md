@@ -37,3 +37,8 @@ df.rename(columns={'old_name':'new_name'}, inplace=True)
 ```
 df['new_col']=df.apply(func, axis=1)
 ```
+
+> get current directory
+```
+curr_path = os.path.dirname(os.path.abspath(__file__))
+```
