@@ -657,7 +657,9 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=i21wV5GFyZo&t=464s) -
 [`Count Subarray by Element`]
 
-- subarray can also be sorted, check [1498]
+- group means subset, we can sort
+- Whenever we do something btn min/max for subsequence/subset, sort the original
+- [1498]
 
 [[2866] - <span style="color:yellow">M</span> - Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/description/) - 
 [[Python]]()
