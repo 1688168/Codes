@@ -415,6 +415,14 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[1498] - <span style="color:yellow">M</span> - Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1498%5D%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/1498.Number-of-Subsequences-That-Satisfy-the-Given-Sum-Condition) -
+[[Video]](https://www.youtube.com/watch?v=HxYeGqtBJhI) -
+[`Two Pointer`][`Count Subarray by Element`]
+
+- subsequence but we can sort
+
 [[1500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
