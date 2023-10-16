@@ -106,7 +106,14 @@ class Solution:
 # [`Count Subarray by Element`]
 
 ```
-- Pattern: looking for some metrics of all sub-arrays
+- When dealing with subsequence and order doesn't matter (only care about max/min-1498), we can sort
+- consider adding dummy at beginning/ending of the array
+- you can loop by the array or loop by all letters (the diff btn num vs string)
+- or when dealing with string, you might want to loop lower-case chars instead by index of string
+```
+
+```
+- Pattern: looking for some metrics of all sub-arrays, sub-sequences
 - All sub-arrays is O(N^2)
 - We should pre-calc info for each element and bring down the time complexity
 
@@ -122,25 +129,22 @@ class Solution:
 - use presum to find subarray sum
 - use Kadane to findout max subarray sum
 
-
 ```
 
-- [1498]
+- [828] H: count distinct chars in subarray (duplicates are ignored)
+- [1498] M:
+  - Sub-Sequence: Sortable -> only care about max/min, order doesn't matter
+- [2262] H: count unique chars in subarray (duplicates counted as 1)
 - [2281] H: Sum of Total Strength of Wizards
-
-- Strength: min(in subarray) \* sum(subarray)
-
+  - Strength: min(in subarray) \* sum(subarray)
 - [2302] H: Count Subarrays With Score Less Than K
-
-- Score: subarray_sum\*subarray_length < K
-
+  - Score: subarray_sum\*subarray_length < K
 - [2681] H : Power-of-Heroes
-
-- sum of all (sub-sequence-max)^2\*subsequence-min
-- Whenever grouping by subsequence, we can sort as the original order no longer matter
-- Whenever we are looking for Nlog(N) time, we can sort
-- All combination: O(N^2)  
-  -> In order to meet nO(logn), we need to calc something for a set of group to reduce time-complexity
+  - sum of all (sub-sequence-max)^2\*subsequence-min
+  - Whenever grouping by subsequence, we can sort as the original order no longer matter
+  - Whenever we are looking for Nlog(N) time, we can sort
+  - All combination: O(N^2)  
+    -> In order to meet nO(logn), we need to calc something for a set of group to reduce time-complexity
 
 # [`Design`]
 
