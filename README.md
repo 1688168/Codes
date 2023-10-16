@@ -651,6 +651,12 @@ $${\color{orange} Question \space List}$$
 - [Failed]: Amazon
 - [2597]
 
+[[2681] - <span style="color:red">H</span> - Power of Heroes](https://leetcode.com/problems/power-of-heroes/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2681%5D%20Power-of-Heroes.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/2681.Power-of-Heroes) -
+[[Video]](https://www.youtube.com/watch?v=i21wV5GFyZo&t=464s) -
+[`Count Subarray by Element`]
+
 [[2866] - <span style="color:yellow">M</span> - Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2866.Beautiful-Towers-II) -
