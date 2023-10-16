@@ -42,3 +42,10 @@ df['new_col']=df.apply(func, axis=1)
 ```
 curr_path = os.path.dirname(os.path.abspath(__file__))
 ```
+
+> How to skip test case
+```
+@unittest.skip("some comments)
+def test_something(self):
+    pass
+```
