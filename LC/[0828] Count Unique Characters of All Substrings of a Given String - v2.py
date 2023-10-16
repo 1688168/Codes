@@ -19,9 +19,9 @@ class Solution:
             c2idx[vv].append(ii)
 
         ttl = 0
-        for cc, vv in c2idx.items():
-            vv = [-1]+vv+[N]
-            for jj in range(1, len(vv)-1):
+        for cc, vv in c2idx.items():  # looping by char instead by the string
+            vv = [-1]+vv+[N]  # insert dummy in beginning and ending
+            for jj in range(1, len(vv)-1):  # starting from 1 as prev is dummy
                 a = vv[jj]-vv[jj-1]
                 b = vv[jj+1]-vv[jj]
                 ttl += a*b

@@ -309,6 +309,10 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=NngeskF1wsw) -
 [`Count Subarray by Element`]
 
+- [2262] VS [828]: unique char VS distinct char in subarray
+- unique: ignore chars with duplicates
+- distinct: duplicate chars count as 1
+
 [[0843] - <span style="color:red">H</span> - Guess the Word](https://leetcode.com/problems/guess-the-word/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/843.Guess-the-Word) -
