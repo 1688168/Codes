@@ -8,19 +8,18 @@
 x y z w p o o o
 
 
+min*max^2 * num_of_subsets
+
 ii
-0: when x is the max           
-   x*x^2   # min is x as well
+0: when x is the max
+   acc=0           
+ + x*x^2   # min is x as well
 
 1: when y is the max
-   x*x^2   # prev
-   x*y^2   # min is x 
+   x*y^2 * 2^0   # min is x 
  + y*y^2   # min is y  
 
 2: when z is the max
-   x*x^2   # prev
-   x*y^2   # prev
-   y*y^2   # prev
 
    x*z^2 * 2   # min is x
    y*z^2 * 1   # min is y
