@@ -657,6 +657,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=i21wV5GFyZo&t=464s) -
 [`Count Subarray by Element`]
 
+- subarray can also be sorted, check [1498]
+
 [[2866] - <span style="color:yellow">M</span> - Beautiful Towers II](https://leetcode.com/problems/beautiful-towers-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2866.Beautiful-Towers-II) -
