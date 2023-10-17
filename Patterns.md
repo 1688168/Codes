@@ -1,6 +1,7 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
 # [`Idioms`]
+> For interval problems starting from Sort the intervals by beginning or ending 
 > How to detect cycle in graph
 ### **BFS**
 - Topology Sort
