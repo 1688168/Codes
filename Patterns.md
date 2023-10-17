@@ -1,6 +1,12 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
 # [`Idioms`]
+> How to detect cycle in graph
+### **BFS**
+- Topology Sort
+### **DFS**
+- [207]
+- visited1 and visited2 where visited2 is the current search path that is visited
 
 > How to Find Prev/Next Smaller/Greater
 
@@ -443,6 +449,7 @@ Strategy:
 - [215]
 
 # [`Topology Sort`]
+
 
 - [0207]
 - [1591] Strange Printer

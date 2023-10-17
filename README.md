@@ -105,7 +105,7 @@ $${\color{orange} Question \space List}$$
 [[Python-DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0207%5D%20Course-Schedule-DFS.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/207.Course-Schedule) -
 [[Video]](https://www.youtube.com/watch?v=5fntVoXeW_A) -
-[`Topology Sort`]
+[`Topology Sort`][`Classics`]
 
 [[0210] - <span style="color:yellow"></span> - Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) - 
 [[Python]](course-schedule-ii/description)
