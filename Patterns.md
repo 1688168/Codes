@@ -57,6 +57,8 @@ class Solution:
 - [126]: if we use BFS to carry the path, we will have to hold paths in queue for all nodes in same level. We only hold 1 path for DFS until we reach the end or fail. so from memory perspective, DFS is surpior
 - BFS: shortest distance
 
+> when you see anything that is represented in lower case english letters, think of can we try all 26 letters on same calc
+
 # [`Binary Search`]
 
 ```

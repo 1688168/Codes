@@ -456,6 +456,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=VH1UevGQ4KQ) -
 [`Topology Sort`]
 
+- when you see anything that is represented in lower case english letters, think of can we try all 26 letters on same calc
+
 [[1942] - <span style="color:yellow">M</span> - The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1492%5D%20The-kth-factor-of-n.py)
 [[CPP]]() -
