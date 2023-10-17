@@ -6,7 +6,7 @@ $${\color{orange}Patterns, \space Data \space Structures}$$
 ### **BFS**
 - Topology Sort
 ### **DFS**
-- [207]
+- [207]: see sample code on DFS/BFS
 - visited=1 and visited=2 where visited=2 is the current search path that is visited
 - On current search path, mark visited=2, but on backtrack, mark visited=1
 
