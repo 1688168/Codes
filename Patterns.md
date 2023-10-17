@@ -6,8 +6,8 @@ $${\color{orange}Patterns, \space Data \space Structures}$$
 - Topology Sort
 ### **DFS**
 - [207]
-- visited1 and visited2 where visited2 is the current search path that is visited
-- On current search path, mark visited2, but on backtrack, mark visited1
+- visited=1 and visited=2 where visited=2 is the current search path that is visited
+- On current search path, mark visited=2, but on backtrack, mark visited=1
 
 > How to Find Prev/Next Smaller/Greater
 
