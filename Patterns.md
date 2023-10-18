@@ -1,11 +1,22 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
+> Sort string list in reversed order
+
+```
+tickets.sort(reverse=True)
+```
+
 # [`Idioms`]
-> For interval problems starting from Sort the intervals by beginning or ending 
+
+> For interval problems starting from Sort the intervals by beginning or ending
 > How to detect cycle in graph
+
 ### **BFS**
+
 - Topology Sort
+
 ### **DFS**
+
 - [207]: see sample code on DFS/BFS
 - visited=1 and visited=2 where visited=2 is the current search path that is visited
 - On current search path, mark visited=2, but on backtrack, mark visited=1
@@ -451,7 +462,6 @@ Strategy:
 - [215]
 
 # [`Topology Sort`]
-
 
 - [0207]
 - [1591] Strange Printer
