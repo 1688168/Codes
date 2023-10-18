@@ -429,6 +429,8 @@ $${\color{orange} Question \space List}$$
   a. ii is min, find max (two pointers) -> O(N)
   b. ii is max. min is all from the right
 - why [2681] choose ii as max but [1498] choose ii as min?
+- Please try solve this with ii being the max and min.
+  
 
 [[1500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
