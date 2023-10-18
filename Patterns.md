@@ -158,6 +158,8 @@ class Solution:
   - when dealing with max-min relationship
   a. ii is min, find max (two pointers) -> O(N)
   b. ii is max. min is all from the right
+  - Try ii be the min or max to solve
+
 - [2262] H: count unique chars in subarray (duplicates counted as 1)
 - [2281] H: Sum of Total Strength of Wizards
   - Strength: min(in subarray) \* sum(subarray)
@@ -515,7 +517,7 @@ c. move (slide) the window
 # [`Buy Sell Stock`]
 
 # [`Calculator`]
-
+# [`Course Schedule`]
 # [`Jump Game`]
 
 - [55]
