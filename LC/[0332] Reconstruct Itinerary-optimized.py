@@ -21,26 +21,25 @@ class Solution:
         for a, b in tickets:  # build the graph
             g[a].append(b)
 
-        def dfs(start):
+        def dfs(start, paths):
             result = [start]
-            paths = []
 
-            # this will dfs all child in  lexical order (since we pop from the end of list)
+            # this will dfs all child in  lexical order
             while len(g[start]) > 0:  # we will get path1 first, and get path2 (if lucky, path1 only)
                 # to avoid repeat visiting same edge, remove the edge after visiting
                 # we are getting the smallest lexical node from the end, here it shows why we sort in reversed order
                 nxt = g[start].pop()
-                # we will only get two paths, since this is guaranteed as Eulerian Path
-                paths.append(dfs(nxt))
+                dfs(nxt, paths)
 
             # paths=[path1, path2]
             # after reverse, we are in lexical order
-            # paths=[path1, path2], so we need to output path2 first (reversed)
-            for p in reversed(paths):
-                for n in p:
-                    result.append(n)
+            # after we have path1, path2 from the above while loop, adding B
+            paths.append(start)
+            # paths=[path1, path2, B]
 
-            return result
+            return
 
         # dfs
-        return dfs("JFK")
+        paths = []
+        dfs("JFK", paths)
+        return paths[::-1]
