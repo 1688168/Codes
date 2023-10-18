@@ -424,6 +424,7 @@ $${\color{orange} Question \space List}$$
 [`Two Pointer`][`Count Subarray by Element`]
 
 - subsequence but we can sort
+- if we need to constanly recalc pow -> precalc into dictionary
 - when dealing with min-max pair:
   a. ii is min, find max (two pointers) -> O(N)
   b. ii is max. min is all from the right
