@@ -464,11 +464,17 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
-[[2000] - <span style="color:red">H</span> - desc]() - 
+[[2000] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[2102] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
+[[Video]](https://www.youtube.com/watch?v=a0wE2YP6R2s&t=8s) -
+[`Heap`]
 
 [[2104] - <span style="color:yellow">M</span> - Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2104%5D%20Sub%20of%20Subarray%20Ranges%20-%20O(N).py)
