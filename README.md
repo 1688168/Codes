@@ -572,6 +572,10 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.bilibili.com/video/BV1xP411V78b/) -
 [`Tree`]
 
+- Tree is about recurson (98%)
+- DFS's best friend is memo
+
+
 [[2323] - <span style="color:yellow">M</span> - Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
 [[CPP]]() -
