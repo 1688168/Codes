@@ -430,6 +430,10 @@ $${\color{orange} Question \space List}$$
   b. ii is max. min is all from the right
 - why [2681] choose ii as max but [1498] choose ii as min?
 - Please try solve this with ii being the max and min.
+- Before coding, consider 
+  a. ii is max VS ii is min
+  b. ii from left-to-right VS ii from right-to-left
+=> some options is just easier than others
   
 
 [[1500] - <span style="color:red">H</span> - desc]() - 
