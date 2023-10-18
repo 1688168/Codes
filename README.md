@@ -549,6 +549,12 @@ $${\color{orange} Question \space List}$$
 
 - [990] - BFS/Union Find
 
+[[2313] - <span style="color:red">H</span> - Minimum Flips in Binary Tree to Get Result](https://leetcode.com/problems/minimum-flips-in-binary-tree-to-get-result/description) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/2313.Minimum-Flips-in-Binary-Tree-to-Get-Result) -
+[[Video]](https://www.bilibili.com/video/BV1xP411V78b/) -
+[`Tree`]
+
 [[2323] - <span style="color:yellow">M</span> - Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
 [[CPP]]() -
@@ -572,6 +578,17 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=3OkqTXpREBg) -
 [`Patterns`]
+
+[[2345] - <span style="color:yellow">M</span> - Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2345.Finding-the-Number-of-Visible-Mountains) -
+[[Video]](https://www.youtube.com/watch?v=q0AobXjO7Fo) -
+[`Intervals`]
+
+- [56]
+- [57]
+- [495]
+- [763]
 
 [[2355] - <span style="color:red">H</span> - Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2355%5D%20Maximum%20Number%20of%20Books%20You%20can%20Take.py)
