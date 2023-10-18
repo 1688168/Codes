@@ -424,6 +424,10 @@ $${\color{orange} Question \space List}$$
 [`Two Pointer`][`Count Subarray by Element`]
 
 - subsequence but we can sort
+- when dealing with min-max pair:
+  a. ii is min, find max (two pointers) -> O(N)
+  b. ii is max. min is all from the right
+- why [2681] choose ii as max but [1498] choose ii as min?
 
 [[1500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()

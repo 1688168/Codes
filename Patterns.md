@@ -155,6 +155,9 @@ class Solution:
 - [828] H: count distinct chars in subarray (duplicates are ignored)
 - [1498] M:
   - Sub-Sequence: Sortable -> only care about max/min, order doesn't matter
+  - when dealing with max-min relationship
+  a. ii is min, find max (two pointers) -> O(N)
+  b. ii is max. min is all from the right
 - [2262] H: count unique chars in subarray (duplicates counted as 1)
 - [2281] H: Sum of Total Strength of Wizards
   - Strength: min(in subarray) \* sum(subarray)
@@ -164,8 +167,8 @@ class Solution:
   - sum of all (sub-sequence-max)^2\*subsequence-min
   - Whenever grouping by subsequence, we can sort as the original order no longer matter
   - Whenever we are looking for Nlog(N) time, we can sort
-  - All combination: O(N^2)  
-    -> In order to meet nO(logn), we need to calc something for a set of group to reduce time-complexity
+  - max/min of group (subset) -> sort
+  - 
 
 # [`Design`]
 
