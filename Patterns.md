@@ -1,5 +1,7 @@
 $${\color{orange}Patterns, \space Data \space Structures}$$
 
+> When buildung graph, if output has requirements on order (lexical order, etc), we have to use defaultdict(list) instead of defaultdict(set)
+
 > Sort string list in reversed order
 
 ```
@@ -154,10 +156,11 @@ class Solution:
 
 - [828] H: count distinct chars in subarray (duplicates are ignored)
 - [1498] M:
+
   - Sub-Sequence: Sortable -> only care about max/min, order doesn't matter
   - when dealing with max-min relationship
-  a. ii is min, find max (two pointers) -> O(N)
-  b. ii is max. min is all from the right
+    a. ii is min, find max (two pointers) -> O(N)
+    b. ii is max. min is all from the right
   - Try ii be the min or max to solve
 
 - [2262] H: count unique chars in subarray (duplicates counted as 1)
@@ -170,7 +173,7 @@ class Solution:
   - Whenever grouping by subsequence, we can sort as the original order no longer matter
   - Whenever we are looking for Nlog(N) time, we can sort
   - max/min of group (subset) -> sort
-  - 
+  -
 
 # [`Design`]
 
@@ -517,7 +520,9 @@ c. move (slide) the window
 # [`Buy Sell Stock`]
 
 # [`Calculator`]
+
 # [`Course Schedule`]
+
 # [`Jump Game`]
 
 - [55]
