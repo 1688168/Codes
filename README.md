@@ -14,7 +14,7 @@ $${\color{orange} Question \space List}$$
 
 [[0056] - <span style="color:yellow">M</span> - Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0056%5D%20Merge%20Intervals.py)
-[[CPP]]() -
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/056.Merge-Intervals) -
 [[Video]]() -
 [`Interval`]
 
@@ -430,11 +430,10 @@ $${\color{orange} Question \space List}$$
   b. ii is max. min is all from the right
 - why [2681] choose ii as max but [1498] choose ii as min?
 - Please try solve this with ii being the max and min.
-- Before coding, consider 
+- Before coding, consider
   a. ii is max VS ii is min
   b. ii from left-to-right VS ii from right-to-left
-=> some options is just easier than others
-  
+  => some options is just easier than others
 
 [[1500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
@@ -574,7 +573,6 @@ $${\color{orange} Question \space List}$$
 
 - Tree is about recurson (98%)
 - DFS's best friend is memo
-
 
 [[2323] - <span style="color:yellow">M</span> - Find Minimum Time to Finish All Jobs II](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs-ii/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2323%5D%20Find%20Minimum%20Time%20to%20Finish%20All%20Jobs%20II.py)
