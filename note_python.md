@@ -39,13 +39,32 @@ df['new_col']=df.apply(func, axis=1)
 ```
 
 > get current directory
+
 ```
 curr_path = os.path.dirname(os.path.abspath(__file__))
 ```
 
 > How to skip test case
+
 ```
 @unittest.skip("some comments)
 def test_something(self):
     pass
+```
+
+> Named Tuple
+
+```
+- namedtuple(typename, field_names)
+ex:
+- Declaring namedtuple
+  Student = namedtuple('Student', ['name', 'age', 'DOB'])
+
+- Instanciating
+  S = Student('Nandini', '19', '2541997')
+
+- Accessing
+  print(S.name)
+
+
 ```
