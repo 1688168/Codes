@@ -385,6 +385,17 @@ c. element value is not equal to the destination value or no point of swapping
 - [2334]
 - [2866] Use monotonic stack to calculate Peak shape area
 
+# [`Parenthesis`]
+
+```
+- Stack
+- Greedy
+```
+
+- [32]
+- [301]
+- [021]
+
 # [`Parse Expression`]
 
 - [224] basic Calculator

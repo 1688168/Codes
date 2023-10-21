@@ -1,5 +1,11 @@
 $${\color{orange} Question \space List}$$
 
+[[0032] - <span style="color:red">H</span> - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/032.Longest-Valid-Parentheses) -
+[[Video]](https://www.youtube.com/watch?v=677VaZhd4dg) -
+[`parenthesis`]
+
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
@@ -191,6 +197,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=Q6KyDl_xiIg) -
 [`sub-sequence`][`DP`][`classic`]
 
+[[0301] - <span style="color:red">H</span> - Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/301.Remove-Invalid-Parentheses) -
+[[Video]](https://www.youtube.com/watch?v=NWAseBzZj-c) -
+[`Parenthesis`]
+
 [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/309.Best-Time-to-Buy-and-Sell-Stock-with-Cooldown) -
@@ -321,6 +333,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=8_86eMEoKeE) -
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
 [`Patterns`]
+
+[[0921] - <span style="color:yellow">M</span> - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/921.Minimum-Add-to-Make-Parentheses-Valid) -
+[[Video]](https://www.youtube.com/watch?v=Sv5Xb-kfDok) -
+[`Parenthesis`]
 
 [[0931] - <span style="color:yellow">M</span> - Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) - 
 [[Python]]()
