@@ -263,6 +263,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
+[[0402] - <span style="color:yellow">M</span> - Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -
+[[Video]](https://www.youtube.com/watch?v=qaYimfZwbk8) -
+[`Stack`]
+
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
