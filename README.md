@@ -429,6 +429,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=euD2WFdUp6U) -
 [`DP`]
 
+[[1360] - <span style="color:green">E</span> - Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
 [[CPP]]() -
@@ -747,13 +753,19 @@ $${\color{orange} Question \space List}$$
 
 ---
 
+[[] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[] - <span style="color:yellow">M</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
 
-[[] - <span style="color:red">H</span> - desc]() - 
+[[] - <span style="color:green">E</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
