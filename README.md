@@ -1,7 +1,7 @@
 $${\color{orange} Question \space List}$$
 
 [[0032] - <span style="color:red">H</span> - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0032%5D%20Longest%20Valid%20Parentheses.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/032.Longest-Valid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=677VaZhd4dg) -
 [`parenthesis`]
@@ -338,7 +338,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/921.Minimum-Add-to-Make-Parentheses-Valid) -
 [[Video]](https://www.youtube.com/watch?v=Sv5Xb-kfDok) -
-[`Parenthesis`]
+[`Parenthesis`][`Greedy`]
 
 [[0931] - <span style="color:yellow">M</span> - Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) - 
 [[Python]]()
