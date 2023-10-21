@@ -395,6 +395,11 @@ c. element value is not equal to the destination value or no point of swapping
 - [32]
 - [301]
 - [021]
+- [1249]
+- [1541]
+- [1963]
+- [678]
+- [2116]
 
 # [`Parse Expression`]
 
