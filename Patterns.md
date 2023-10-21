@@ -219,6 +219,15 @@ class Solution:
 - BruteForce (O(N^2))
 ```
 
+# [`DFS-Search in an Array`]
+
+- [301]
+- [473]
+- [491]
+- [698]
+- [996]
+- [1307]
+
 # [`DP`]
 
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
