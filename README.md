@@ -1,5 +1,11 @@
 $${\color{orange} Question \space List}$$
 
+[[0004] - <span style="color:green">E</span> - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/004.Median-of-Two-Sorted-Arrays) -
+[[Video]](https://www.youtube.com/watch?v=5hNWtR2EcrU) -
+[`Patterns`]
+
 [[0022] - <span style="color:yellow">M</span> - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0022%5D%20Generate%20Parentheses.py)
 [[CPP]]() -
@@ -263,6 +269,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
+[[0394] - <span style="color:yellow">M</span> - Decode String](https://leetcode.com/problems/decode-string/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-M-EoXtufLY) -
+[`Patterns`]
+
 [[0402] - <span style="color:yellow">M</span> - Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -
@@ -329,6 +341,12 @@ $${\color{orange} Question \space List}$$
 
 - How to apply binary search with paired distance
 
+[[0759] - <span style="color:red">H</span> - Employee Free Time](https://leetcode.com/problems/employee-free-time/description) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/759.Employee-Free-Time) -
+[[Video]](https://www.bilibili.com/video/BV1QU4y1L7CF/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Sweep Line`]
+
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
@@ -344,6 +362,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/843.Guess-the-Word) -
 [[Video]](https://www.youtube.com/watch?v=8_86eMEoKeE) -
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
+[`Patterns`]
+
+[[0875] - <span style="color:yellow">M</span> - Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=yfWVWbi9pts) -
 [`Patterns`]
 
 [[0921] - <span style="color:yellow">M</span> - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/) - 
