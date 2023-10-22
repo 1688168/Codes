@@ -365,10 +365,10 @@ $${\color{orange} Question \space List}$$
 [`Patterns`]
 
 [[0875] - <span style="color:yellow">M</span> - Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0875%5D%20Koko%20Eating%20Bananas.py)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=yfWVWbi9pts) -
-[`Patterns`]
+[`Binary Search`]
 
 [[0921] - <span style="color:yellow">M</span> - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/) - 
 [[Python]]()
