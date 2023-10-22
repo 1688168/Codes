@@ -361,6 +361,10 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Intervals`]
 
+1. 50%: Sweep line
+2. 40%: Greedy
+3. 10%: DP
+
 ## Two Directions:
 
 ### Greedy:
