@@ -600,6 +600,12 @@ $${\color{orange} Question \space List}$$
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
 - max subarray sum -> Kadane
 
+[[2277] - <span style="color:green">E</span> - Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/2277.Closest-Node-to-Path-in-Tree) -
+[[Video]](https://www.bilibili.com/video/BV1nG4y1k7rp/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Patterns`]
+
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)
