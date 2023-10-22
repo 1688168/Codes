@@ -1,37 +1,29 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        stk_str=[]
-        stk_n=[]
+        ii = 0
+        stk_n = []
+        stk_s = []
+        text = ""
         N = len(s)
-        text=""
-        ii=0
         while ii < N:
-            if s[ii].isdigit():
-                n=0
+            c = s[ii]
+            if c.isdigit():
+                n = 0
                 while ii < N and s[ii].isdigit():
-                    n = n*10 + int(s[ii])
-                    ii+=1
-            
+                    n = 10*n + int(s[ii])
+                    ii += 1
+                # after num always follows "["
                 stk_n.append(n)
-                stk_str.append(text)
-                text=""
-            
-            elif s[ii]=="]":
-                n=stk_n.pop()
-                ss=stk_str.pop()
-               
-                text = ss+n*text
-
-                ii+=1
-            elif s[ii]=="[":
-                ii+=1
+                stk_s.append(text)
+                text = ""
+            elif c == "]":
+                n = stk_n.pop()
+                ss = stk_s.pop()
+                text = ss + n*text
+                ii += 1
+            elif c == "[":
+                ii += 1
             else:
-                text += s[ii]
-                ii+=1
-
-
+                text += c
+                ii += 1
         return text
-
-                 
-
-        
