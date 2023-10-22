@@ -18,6 +18,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=677VaZhd4dg) -
 [`parenthesis`]
 
+[[0033] - <span style="color:yellow">M</span> - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Binary Search`]
+
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
@@ -546,7 +552,7 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
-[[2102] - <span style="color:red">H</span> - desc]() - 
+[[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
 [[Video]](https://www.youtube.com/watch?v=a0wE2YP6R2s&t=8s) -
@@ -580,6 +586,12 @@ $${\color{orange} Question \space List}$$
 - Number of Ways to climb stairs.
 - Number of Ways to achieve some score
 - Number of Ways to make some amount from coins
+
+[[2254] - <span style="color:green">E</span> - Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Design`]
 
 [[2262] - <span style="color:red">H</span> - Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/description/) - 
 [[Python]]()
@@ -690,6 +702,12 @@ $${\color{orange} Question \space List}$$
 
 - [Failed]: Amazon
 
+[[2371] - <span style="color:green">E</span> - Minimize Maximum Value in a Grid](https://leetcode.com/problems/minimize-maximum-value-in-a-grid/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2371.Minimize-Maximum-Value-in-a-Grid) -
+[[Video]](https://www.youtube.com/watch?v=MrUMyt0pRoU) -
+[`Patterns`]
+
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
 [[CPP]]() -
@@ -701,6 +719,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2422.Merge-Operations-to-Turn-Array-Into-a-Palindrome) -
 [[Video]](https://www.youtube.com/watch?v=rz3YGaJII44) -
 [`Two Pointers`]
+
+[[2459] - <span style="color:green">E</span> - Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2459.Sort-Array-by-Moving-Items-to-Empty-Space) -
+[[Video]]() -
+[`Patterns`]
 
 [[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
