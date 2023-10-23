@@ -19,8 +19,8 @@ $${\color{orange} Question \space List}$$
 [`parenthesis`]
 
 [[0033] - <span style="color:yellow">M</span> - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description) - 
-[[Python]]()
-[[CPP]]() -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0033%5D%20Search%20in%20Rotated%20Sorted%20Array.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/033.Search-in-Rotated-Sorted-Array) -
 [[Video]]() -
 [`Binary Search`]
 
