@@ -706,7 +706,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2371.Minimize-Maximum-Value-in-a-Grid) -
 [[Video]](https://www.youtube.com/watch?v=MrUMyt0pRoU) -
-[`Patterns`]
+[`Greedy`]
 
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
