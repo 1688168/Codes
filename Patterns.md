@@ -568,7 +568,8 @@ c. move (slide) the window
 # [`Word Search`]
 
 # [`Word Break`]
-
+- [139]
+- [140]
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
 
 - [126]: Word Ladder II
