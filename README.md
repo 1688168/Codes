@@ -6,6 +6,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=5hNWtR2EcrU) -
 [`Patterns`]
 
+[[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Recursion`]
+
 [[0022] - <span style="color:yellow">M</span> - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0022%5D%20Generate%20Parentheses.py)
 [[CPP]]() -
@@ -456,6 +462,12 @@ $${\color{orange} Question \space List}$$
 
 - [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals). Greedy strategy
 - [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)
+
+[[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=X8k48xek8g8) -
+[`Patterns`]
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
