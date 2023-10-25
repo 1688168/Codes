@@ -6,6 +6,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=5hNWtR2EcrU) -
 [`Patterns`]
 
+[[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Recursion`]
+
 [[0022] - <span style="color:yellow">M</span> - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0022%5D%20Generate%20Parentheses.py)
 [[CPP]]() -
@@ -432,6 +438,14 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[1020] - <span style="color:yellow">M</span> - Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DFS`]
+
+- [1254]
+
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
@@ -466,6 +480,14 @@ $${\color{orange} Question \space List}$$
 
 - [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals). Greedy strategy
 - [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)
+
+[[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=X8k48xek8g8) -
+[`Patterns`]
+
+- [1020]
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
@@ -753,6 +775,17 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[2510] - <span style="color:yellow">M</span> - Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=z4lBve9ASy4) -
+[[Video - Recursion + Cache]](https://www.youtube.com/watch?v=r1U5rbA3F0A)
+[`DFS`]
+
+- How to use @cache
+- print(check.cache_info())
+- check.cache_clear()
 
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
