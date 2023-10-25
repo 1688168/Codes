@@ -434,6 +434,8 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`DFS`]
 
+- [1254]
+
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
@@ -474,6 +476,8 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=X8k48xek8g8) -
 [`Patterns`]
+
+- [1020]
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 
 [[Python]]()
