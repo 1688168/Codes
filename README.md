@@ -766,6 +766,13 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[2510] - <span style="color:yellow">M</span> - Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=z4lBve9ASy4) -
+[[Video - Recursion + Cache]](https://www.youtube.com/watch?v=r1U5rbA3F0A)
+[`DFS`]
+
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
 [[CPP]]() -
