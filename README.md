@@ -24,6 +24,16 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Binary Search`]
 
+[0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
+[`Monotonic Stack`]
+
+- Method I: two pass
+- Method II. monotonic stack
+- [0084]
+
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
