@@ -773,6 +773,10 @@ $${\color{orange} Question \space List}$$
 [[Video - Recursion + Cache]](https://www.youtube.com/watch?v=r1U5rbA3F0A)
 [`DFS`]
 
+- How to use @cache
+- print(check.cache_info())
+- check.cache_clear()
+
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
 [[CPP]]() -
