@@ -30,7 +30,7 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Binary Search`]
 
-[0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) - 
+[0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) -
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
@@ -415,6 +415,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Sorting`]
+
+[[0946] - <span style="color:yellow">M</span> - Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/946.Validate-Stack-Sequences) -
+[[Video]](https://www.youtube.com/watch?v=zeCItXGLw0w) -
+[`Patterns`]
 
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
