@@ -761,8 +761,8 @@ $${\color{orange} Question \space List}$$
 [[2459] - <span style="color:green">E</span> - Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2459.Sort-Array-by-Moving-Items-to-Empty-Space) -
-[[Video]]() -
-[`Patterns`]
+[[Video]](https://www.youtube.com/watch?v=ScegBD0kXsE) -
+[`Union Find`][`Index Sort`]
 
 [[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
