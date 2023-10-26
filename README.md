@@ -39,6 +39,7 @@ $${\color{orange} Question \space List}$$
 - Method I: two pass
 - Method II. monotonic stack
 - [0084]
+- [2334]
 
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
@@ -713,6 +714,10 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/2334.Subarray-With-Elements-Greater-Than-Varying-Threshold) -
 [[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
 [`Monotonic Stack`]
+
+- [42] 
+- [84]
+
 
 [[2340] - <span style="color:yellow">M</span> - Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2340%5D%20Minimum%20Adjacent%20Swaps%20to%20Make%20a%20Valid%20Array.py)
