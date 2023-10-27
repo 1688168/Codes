@@ -715,9 +715,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=RLXKMvqNhdw) -
 [`Monotonic Stack`]
 
-- [42] 
+- [42]
 - [84]
-
 
 [[2340] - <span style="color:yellow">M</span> - Minimum Adjacent Swaps to Make a Valid Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2340%5D%20Minimum%20Adjacent%20Swaps%20to%20Make%20a%20Valid%20Array.py)
@@ -767,7 +766,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2459.Sort-Array-by-Moving-Items-to-Empty-Space) -
 [[Video]](https://www.youtube.com/watch?v=ScegBD0kXsE) -
-[`Union Find`][`Index Sort`]
+[`Union Find`][`Index Sort`][`Greedy`]
 
 [[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
