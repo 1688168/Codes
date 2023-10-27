@@ -1,3 +1,43 @@
+class Solution:
+    def sortArray(self, nums: List[int]) -> int:
+        """
+        - for each ii in (0, 1, 2, ...)
+        - if nums[ii]==ii: continue (already in the expected place)
+        - the 1st in place index is zero: cnt=something (now nums[0]=0)
+        - when ii= 1, 2, ... the index sort will swap with other non-zero index (remember nums[0]=0 already in place)
+        - observation (only genius will see this.)  if it takes k swap to have nums[1]=1 (or any non-zero index be in place), the total required swaps (to have zero involved) is k+2
+        """
+
+        N = len(nums)
+
+        def index_sort(nums):
+
+            cnt = 0
+            ii = 0
+            while ii < N:
+                if nums[ii] == ii:  # if you are alredy in the right place, just skip
+                    ii += 1
+                    continue
+
+                if ii != 0:
+                    cnt += 2  # you can only swap with zero
+                while ii < N and (nums[ii]) != ii and nums[ii] < N and nums[ii] != nums[nums[ii]]:
+                    jj = nums[ii]
+                    nums[ii], nums[jj] = nums[jj], nums[ii]
+                    cnt += 1  # regular count
+                ii += 1
+
+            return cnt
+
+        """
+        since [1, 2, 3, 4, 0] and [0, 1, 2, 3, 4] 
+        this is considered as a circle
+        when dealing with -- circle --, we should try min of [1,2,3,4,0] and [0, 1, 2, 3, 4]
+        """
+
+        return min(index_sort(nums[:]), index_sort([nums[-1]]+nums[:-1]))
+
+
 #####################
 # This is not working
 #####################
