@@ -34,10 +34,11 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
-[`Monotonic Stack`]
+[`Monotonic Stack`][`Tow pointers`]
 
 - Method I: two pass
-- Method II. monotonic stack
+- Method II: monotonic stack
+- Method III: two pointers
 - [0084]
 - [2334]
 
