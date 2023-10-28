@@ -799,7 +799,7 @@ $${\color{orange} Question \space List}$$
 - How to use @cache
 - print(check.cache_info())
 - check.cache_clear()
-- DFS by iteration
+- BFS by iteration: how to use memo in BFS? if visited, do not add it's children into the queue
 - DFS by recursion
 
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
