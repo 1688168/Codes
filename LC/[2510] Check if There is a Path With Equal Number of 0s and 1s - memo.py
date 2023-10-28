@@ -1,3 +1,46 @@
+#############
+# 20231028
+#############
+class Solution:
+    def isThereAPath(self, grid: List[List[int]]) -> bool:
+        """
+        - DFS with memo
+        - right and down only
+        """
+        ans = False
+        M = len(grid)
+        N = len(grid[0])
+        memo = set()
+
+        def dfs(ii, jj, cnt):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return False
+
+            inc = (1 if grid[ii][jj] == 1 else -1)
+            cnt += inc
+
+            if (ii, jj, cnt) in memo:
+                return False  # notice where we check the memo, we are checking after cnt is updated
+            if ii == M-1 and jj == N-1:
+                if cnt == 0:
+                    return True
+                else:
+                    memo.add((ii, jj, cnt))
+                    return False
+
+            if dfs(ii+1, jj, cnt) or dfs(ii, jj+1, cnt):
+                return True
+
+            memo.add((ii, jj, cnt))
+            return False
+
+        ans = dfs(0, 0, 0)
+
+        return ans
+
+################################
+
+
 class Solution:
     def isThereAPath(self, grid: List[List[int]]) -> bool:
         M = len(grid)
