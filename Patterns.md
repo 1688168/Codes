@@ -361,9 +361,18 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Intervals`]
 
-1. 50%: Sweep line
-2. 40%: Greedy
-3. 10%: DP
+> 1. 50%: Sweep line
+> 2. 40%: Greedy
+> 3. 10%: DP
+>
+> - typically need to sort
+> - the initial (cs, ce)=(-math.inf, -math.inf) or intervals[0]?
+
+- [56]
+- [57]
+- [495]
+- [763]
+- [2345] (Google)
 
 ## Two Directions:
 
@@ -390,6 +399,7 @@ c. element value is not equal to the destination value or no point of swapping
 ```
 
 => PrevSmaller, NextSmaller, PrevGreater, NextGreater
+
 - [42]
 - [0084] Use monotonic stack to calculate largest rectangle
 - [0496]
@@ -399,8 +409,8 @@ c. element value is not equal to the destination value or no point of swapping
 - [2866] Use monotonic stack to calculate Peak shape area
 
 > [42][84][2334]
-- Histogram: consider each bar as the highest number in the array (prev_smaller_equal, next_smaller)
 
+- Histogram: consider each bar as the highest number in the array (prev_smaller_equal, next_smaller)
 
 # [`Parenthesis`]
 
@@ -572,9 +582,11 @@ c. move (slide) the window
 # [`Word Search`]
 
 # [`Word Break`]
+
 - [139]
 - [140]
 - [472]
+
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
 
 - [126]: Word Ladder II
