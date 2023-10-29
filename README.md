@@ -582,6 +582,7 @@ $${\color{orange} Question \space List}$$
 
 - when you see anything that is represented in lower case english letters, think of can we try all 26 letters on same calc
 - if you need to detect cycle -> topology sort (or review DFS detect cycle, cf. [207])
+- we cannot rely on parent's color count as we might reach this child from diff depth. so each node's color count should be the max of all reachable path, not just from previous level
 
 ```
   mxf=-N # since we could return -1, be careful on the initial value of the return var
