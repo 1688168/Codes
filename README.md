@@ -84,6 +84,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=mesaogfSjD4&t=109) -
 [`Monotonic Stack`][`Count Subarray by Element`]
 
+- Monotonic stack one pass
+
 [[0123] - <span style="color:red">H</span> - Best Time to Buy and Sell Stock III
 ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0123%5D%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.py)
@@ -392,7 +394,7 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/843.Guess-the-Word) -
 [[Video]](https://www.youtube.com/watch?v=8_86eMEoKeE) -
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
-[`Patterns`]
+[`Design`][`Others`]
 
 [[0875] - <span style="color:yellow">M</span> - Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0875%5D%20Koko%20Eating%20Bananas.py)
@@ -604,6 +606,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=xba0NzSbuas) -
 [`Monotonic Stack`]
 
+- monotonic one pass solution
 - [907]
 - [1856]
 
@@ -730,8 +733,6 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2345.Finding-the-Number-of-Visible-Mountains) -
 [[Video]](https://www.youtube.com/watch?v=q0AobXjO7Fo) -
 [`Intervals`]
-
-
 
 [[2355] - <span style="color:red">H</span> - Maximum Number of Books You Can Take](https://leetcode.com/problems/maximum-number-of-books-you-can-take/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2355%5D%20Maximum%20Number%20of%20Books%20You%20can%20Take.py)
