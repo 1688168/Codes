@@ -581,6 +581,12 @@ $${\color{orange} Question \space List}$$
 [`Topology Sort`]
 
 - when you see anything that is represented in lower case english letters, think of can we try all 26 letters on same calc
+- if you need to detect cycle -> topology sort (or review DFS detect cycle, cf. [207])
+
+```
+  mxf=-N # since we could return -1, be careful on the initial value of the return var
+  for a_color in colors_set: # for each color
+```
 
 [[1942] - <span style="color:yellow">M</span> - The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1492%5D%20The-kth-factor-of-n.py)
