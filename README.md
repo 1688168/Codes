@@ -385,6 +385,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.bilibili.com/video/BV1QU4y1L7CF/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Sweep Line`]
 
+[[0763] - <span style="color:yellow">M</span> - Partition Labels](https://leetcode.com/problems/partition-labels/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Intervals`]
+
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
