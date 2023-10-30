@@ -188,6 +188,18 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
 [`Matrix`]
 
+[[0252] - <span style="color:green">E</span> - Meeting Rooms](https://leetcode.com/problems/meeting-rooms/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Intervals`]
+
+[[0253] - <span style="color:yellow">M</span> - Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Intervals`]
+
 [[0256] - <span style="color:yellow">M</span> - Paint House](https://leetcode.com/problems/paint-fence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/276.Paint-Fence) -
