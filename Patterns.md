@@ -373,6 +373,12 @@ c. element value is not equal to the destination value or no point of swapping
 - [495]
 - [763]
 - [2345] (Google)
+- [252] Meeting-Rooms (M)
+- [253] Meeting-Rooms-II (M+)
+- [370] Range-Addition (H-)
+- [759] Employee-Free-Time (M+)
+- [798] Smallest-Rotation-with-Highest-Score (H)
+- [995] Minimum-Number-of-K-Consecutive-Bit-Flips (H-)
 
 ## Two Directions:
 
