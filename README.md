@@ -330,6 +330,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=D2ZSacsq_fw) -
 [`DP`]
 
+[[0495] - <span style="color:green">E</span> - Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Intervals`]
+
 [[0500] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
