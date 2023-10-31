@@ -327,6 +327,14 @@ $${\color{orange} Question \space List}$$
 
 - Sort by Starting Point or Ending Point?
 
+[[0460] - <span style="color:red">H</span> - LFU Cache](https://leetcode.com/problems/lfu-cache/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0460%5D%20LFU%20Cache.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/460.LFU-Cache) -
+[[Video]](https://www.youtube.com/watch?v=EpLALCho36w) -
+[`Design`]
+
+- File system is Trie
+
 [[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/472.Concatenated-Words) -
