@@ -80,4 +80,5 @@ res = requests.post(url, data=json.dumps({'key1': val1, 'key2': val2}), verify=F
 ```
 - self.cache.move_to_end(key)
 - self.cache.popitem(last=False)
+- self.cache.pop(key)
 ```
