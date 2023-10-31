@@ -70,6 +70,14 @@ ex:
 ```
 
 > How to make python HTTP post call with parameter
+
 ```
 res = requests.post(url, data=json.dumps({'key1': val1, 'key2': val2}), verify=False)
+```
+
+> OrderedDict
+
+```
+- self.cache.move_to_end(key)
+- self.cache.popitem(last=False)
 ```
