@@ -331,9 +331,13 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0460%5D%20LFU%20Cache.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/460.LFU-Cache) -
 [[Video]](https://www.youtube.com/watch?v=EpLALCho36w) -
-[`Design`]
+[`Design`][`OrderedDict`]
 
 - File system is Trie
+- removing kv from OrderedDict:
+  ```
+  val=self.freq2kv[old_freq].pop(key)
+  ```
 
 [[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
 [[Python]]()
@@ -668,6 +672,18 @@ $${\color{orange} Question \space List}$$
 - Number of Ways to climb stairs.
 - Number of Ways to achieve some score
 - Number of Ways to make some amount from coins
+
+[[2233] - <span style="color:yellow">M</span> - Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2233.Maximum-Product-After-K-Increments) -
+[[Video]](https://www.youtube.com/watch?v=bObPjr_LfC0) -
+[`Math`][`Binary Search`][`Smear Top Elements`][`Greedy`]
+
+[[2234] - <span style="color:red">H</span> - Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2234.Maximum-Total-Beauty-of-the-Gardens) -
+[[Video]](https://www.youtube.com/watch?v=7rn5XlYBM2M) -
+[`Math`][`Binary Search`][`Smear Top Elements`][`Greedy`]
 
 [[2254] - <span style="color:green">E</span> - Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/description) - 
 [[Python]]()

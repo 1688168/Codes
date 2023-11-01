@@ -1,8 +1,68 @@
 ##########
+# 20231031
+##########
+from collections import defaultdict, OrderedDict
+from pprint import pprint as pp
+
+
+class LFUCache:
+
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.key2freq = {}
+        self.freq2kv = collections.defaultdict(collections.OrderedDict)
+        self.min_freq = 0
+
+    def get(self, key: int) -> int:
+        if key not in self.key2freq:
+            return -1
+
+        old_freq = self.key2freq[key]
+        val = self.freq2kv[old_freq].pop(key)
+
+        # update freq
+        new_freq = old_freq+1
+        self.key2freq[key] = new_freq
+
+        # add to new freq2kv
+        self.freq2kv[new_freq][key] = val
+
+        # check if min_freq is empty
+        if len(self.freq2kv[self.min_freq]) == 0:
+            self.min_freq = new_freq
+
+        return val
+
+    def put(self, key: int, value: int) -> None:
+        if self.capacity == 0:
+            return
+
+        # existing
+        if self.get(key) != -1:  # here we updated freq by get
+            # update the value then we are done
+            freq = self.key2freq[key]
+            self.freq2kv[freq][key] = value
+            return
+
+        # --- new key to cache
+        # exceeding capacity, purge LFU
+        if len(self.key2freq) >= self.capacity:
+            k, v = self.freq2kv[self.min_freq].popitem(last=False)
+            del self.key2freq[k]
+
+        # after capacity is ensured, insert new key
+        self.key2freq[key] = 1
+        self.freq2kv[1][key] = value
+        self.min_freq = 1
+
+
+# Your LFUCache object will be instantiated and called as such:
+# obj = LFUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
+##########
 # 20231030
 ##########
-from pprint import pprint as pp
-from collections import defaultdict, OrderedDict
 
 
 class LFUCache:
