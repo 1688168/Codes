@@ -673,6 +673,12 @@ $${\color{orange} Question \space List}$$
 - Number of Ways to achieve some score
 - Number of Ways to make some amount from coins
 
+[[2227] - <span style="color:red">H</span> - Encrypt and Decrypt Strings](https://leetcode.com/problems/encrypt-and-decrypt-strings/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/2227.Encrypt-and-Decrypt-Strings) -
+[[Video]](https://www.youtube.com/watch?v=MumntKkHA2c) -
+[`Design`]
+
 [[2233] - <span style="color:yellow">M</span> - Maximum Product After K Increments](https://leetcode.com/problems/maximum-product-after-k-increments/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2233.Maximum-Product-After-K-Increments) -
