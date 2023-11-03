@@ -45,12 +45,13 @@ class Solution:
               we agreed 0~ii are incomplete, we cannot fill them >= target, cuz  eventually those will be applied with partial, 
               if we make them reach target, then the calculation will be wrong unless we apply full (the correct factor)
             """
-            if presum[ii]+newFlowers >= (ii+1)*(target-1):  # per above, we cannot have idx <= ii greater or equal to target
+            # here at most we can reach target-1
+            # per above, we cannot have idx <= ii greater or equal to target
+            if presum[ii]+newFlowers >= (ii+1)*(target-1):
                 # from ii+1~N-1 inclusive is N-1 - (ii-1)+1=N-ii-1+1+1=N-1-ii
                 ret = max(ret, (target-1)*partial + (N-1-ii)*full)
-
             else:  # binary search a p to make 0~p (inclusive) equal
-                # be carefull on the range of diff we do binary search
+                # be careful on the range of diff we do binary search
                 # from 0~ii find a p that we can make equal
                 idx = bisect.bisect_right(diff[:ii+1], newFlowers)
                 idx -= 1  # move forward one step (study bisect_right)
@@ -62,5 +63,5 @@ class Solution:
             newFlowers -= (target-flowers[ii])
 
         if newFlowers >= 0:  # we can fill all > target
-            ret = max(ret, N*full)
+            ret = max(ret, N*full)  # consider this extra case.
         return ret+ret0
