@@ -19,7 +19,7 @@ class Solution:
         # we cannot use set since we need to maintain order
         g = collections.defaultdict(list)
         for a, b in tickets:  # build the graph
-            g[a].append(b)
+            g[a].append(b)  # this is appended in reversed order.
 
         def dfs(start):
             result = [start]
@@ -43,4 +43,4 @@ class Solution:
             return result
 
         # dfs
-        return dfs("JFK")
+        return dfs("JFK")  # start from "JFK" per requirement
