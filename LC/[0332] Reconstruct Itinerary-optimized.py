@@ -34,7 +34,7 @@ class Solution:
             # paths=[path1, path2]
             # after reverse, we are in lexical order
             # after we have path1, path2 from the above while loop, adding B
-            paths.append(start)
+            paths.append(start) #start was added in the end
             # paths=[path1, path2, B]
 
             return
