@@ -19,10 +19,10 @@ class Solution:
         # we cannot use set since we need to maintain order
         g = collections.defaultdict(list)
         for a, b in tickets:  # build the graph
+            # list in reversed lexical order per prior sort with reverse=True
             g[a].append(b)
 
         def dfs(start, paths):
-            result = [start]
 
             # this will dfs all child in  lexical order
             while len(g[start]) > 0:  # we will get path1 first, and get path2 (if lucky, path1 only)
