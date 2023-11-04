@@ -1,4 +1,99 @@
 ##########
+# 20231104
+##########
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_file = None
+        self.content = ""
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def add(self, path):
+        if path is None or len(path) == 0:
+            return
+
+        paths = path[1:].split("/")
+
+        itr = self.root
+        for p in paths:
+            if p not in itr.children:
+                itr.children[p] = TrieNode()
+            itr = itr.children[p]
+
+
+class FileSystem:
+
+    def __init__(self):
+        self.fs = Trie()
+
+    def ls(self, path: str) -> List[str]:
+        if path is None or len(path) == 0:
+            return []
+        itr = self.fs.root
+        paths = path[1:].split("/")
+        for p in paths:
+            if p in itr.children:
+                itr = itr.children[p]
+
+        if itr.is_file:
+            return [p]
+        else:
+            return sorted([ps for ps in itr.children.keys()])
+
+    def mkdir(self, path: str) -> None:
+        if path is None or len(path) == 0:
+            return
+        self.fs.add(path)
+
+    def addContentToFile(self, filePath: str, content: str) -> None:
+        print(" filePath: ", filePath)
+        if filePath is None or len(filePath) == 0:
+            return
+        paths = filePath[1:].split("/")
+        itr = self.fs.root
+        for p in paths:
+            if p in itr.children:
+                itr = itr.children[p]
+            else:
+                # print(f" what is the fucking path: {p}")
+                itr.children[p] = TrieNode()
+                itr = itr.children[p]
+                # raise Exception("Invalid file path")
+
+                itr.is_file = True
+        itr.content += content
+
+    def readContentFromFile(self, filePath: str) -> str:
+
+        if filePath is None or len(filePath) == 0:
+            return ""
+
+        paths = filePath[1:].split("/")
+        itr = self.fs.root
+        for p in paths:
+            if p in itr.children:
+                itr = itr.children[p]
+            else:
+                # print(f" what is the fucking path: {p}")
+                raise Exception("Invalid path query")
+
+        if itr.is_file:
+            return itr.content
+        else:
+            raise Exception("Invalid file path query")
+
+
+# Your FileSystem object will be instantiated and called as such:
+# obj = FileSystem()
+# param_1 = obj.ls(path)
+# obj.mkdir(path)
+# obj.addContentToFile(filePath,content)
+# param_4 = obj.readContentFromFile(filePath)
+##########
 # 20230924
 ##########
 class TrieNode:
