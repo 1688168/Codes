@@ -1,6 +1,14 @@
 class Solution:
     def visibleMountains(self, peaks: List[List[int]]) -> int:
         """
+        1. sort by start: ascending
+                   end: decending
+
+        2. initial (st, ed)=(-math.inf, -math.inf)
+        3. for each pari, determining who is dominating interval
+           - if same as prev -> skip
+           - we only need to consider when ne > ce (dominating interval is changing)
+           -- if (ns, ne) is last or (ns, ne) != next in line => cnt++
 
         """
         intervals = [(x-y, x+y) for x, y in peaks]  # convert to intervals
