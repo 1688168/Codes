@@ -33,9 +33,10 @@ class Solution:
                 # we will only get two paths, since this is guaranteed as Eulerian Path
                 paths.append(dfs(nxt))
 
-            # paths=[path1, path2]
+            # paths=[path1, path2] - Path1 is dead-end, path2 is circle (we could only have path1)
             # after reverse, we are in lexical order
             # paths=[path1, path2], so we need to output path2 first (reversed)
+            # we need to finish the circle first befure go the deadend
             for p in reversed(paths):
                 for n in p:
                     result.append(n)
