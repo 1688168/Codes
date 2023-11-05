@@ -13,24 +13,24 @@ class Solution:
             g[b].add(a)
 
         res = []
-        # DFS to determine the path
-        def get_path_dfs(a, b, path, visited):
-            if a==b:
-                return True, path
-            visited.add(a)
+        # BFS to determine the path
 
-            for child in g[a]:
-                if child not in visited:
-                    found, p = get_path_dfs(child, b, path+[child], visited)
-                    if found: return True, p
-            
-            return False, []
+        def get_path_bfs(st, ed):
+            dq = collections.deque([(st, [st])])
+            visited = set()
+            while (sz := len(dq)) > 0:
+                for _ in range(sz):
+                    curr, path = dq.popleft()
+                    if curr == ed:
+                        return path
+                    visited.add(curr)
+                    for child in g[curr]:
+                        if child not in visited:
+                            dq.append((child, path+[child]))
+            return []
 
         for a, b, n in query:
-            path=[a]
-            visited=set()
-            path_set = set(get_path_dfs(a, b, path, visited)[1])
-            print(" path set: ", path_set)
+            path_set = set(get_path_bfs(a, b))
             found = False
             dq = collections.deque([n])
             visited = set()

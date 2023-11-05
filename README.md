@@ -726,6 +726,8 @@ $${\color{orange} Question \space List}$$
 
 - pre-process distance table matrix
 - dist(start, end)= 1 + dist(j, end) where j is start's child
+- Tree has no cycle.
+- find path from A-B in graph (BFS/DFS)
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
