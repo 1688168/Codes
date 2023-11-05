@@ -721,6 +721,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/2277.Closest-Node-to-Path-in-Tree) -
 [[Video]](https://www.bilibili.com/video/BV1nG4y1k7rp/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[[Video-2]](https://www.youtube.com/watch?v=TIcP6vP7nOk)
 [`Patterns`]
 
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
