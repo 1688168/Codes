@@ -19,9 +19,9 @@ class Solution:
             stk.append(ii)
 
         ll, rr = 0, N-1
-        while ll < N and next_smaller[ll] == N:
+        while ll < N and next_smaller[ll] == N: #no one on your right is smaller than you
             ll += 1
-        while rr >= 0 and prev_greater[rr] == -1:
+        while rr >= 0 and prev_greater[rr] == -1: # no one on your left is greater than you
             rr -= 1
 
         return 0 if rr <= ll else rr-ll+1
