@@ -368,10 +368,10 @@ $${\color{orange} Question \space List}$$
 [`Patterns`]
 
 [[0581] - <span style="color:yellow">M</span> - Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description) - 
-[[Python]]()
-[[CPP]]() -
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0581%5D%20Shortest%20Unsorted%20Continuous%20Subarray.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Greedy/581.shortest-unsorted-continuous-subarray/581.shortest-unsorted-continuous-subarray.cpp) -
 [[Video]]() -
-[`Patterns`]
+[`Greedy`][`Monotonic stack`]
 
 [[0588] - <span style="color:red">H</span> - Design In-Memory File System
 ](https://leetcode.com/problems/design-in-memory-file-system/description/) - 
