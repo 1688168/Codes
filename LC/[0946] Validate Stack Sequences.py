@@ -1,3 +1,28 @@
+##############
+# 20231105
+##############
+class Solution:
+    def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
+        M = len(pushed)
+        N = len(popped)
+
+        stk = []
+        jj = 0
+        for ii, pop in enumerate(popped):
+            if stk and stk[-1] == pop:
+                stk.pop()
+                continue
+            while jj < M and pushed[jj] != pop:
+                stk.append(pushed[jj])
+                jj += 1
+
+            jj += 1
+
+        return len(stk) == 0
+
+##############################
+
+
 class Solution:
     def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         """
