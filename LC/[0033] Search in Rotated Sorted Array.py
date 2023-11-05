@@ -1,4 +1,39 @@
 ###########
+# 20231105
+###########
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+
+        ans = -1
+        N = len(nums)
+        ll, rr = 0, N-1
+        while ll <= rr:
+            mm = ll+(rr-ll)//2
+
+            if nums[mm] == target:
+                return mm
+
+            if nums[mm] < nums[0]:  # mm is on the right
+                if target < nums[mm]:  # target is also on the right sec and less than nums[mm]
+                    rr = mm-1
+                else:  # target could be on the left or right
+                    if target < nums[0]:  # target on the right and greater than nums[mm]
+                        ll = mm+1
+                    else:
+                        rr = mm-1
+
+            else:  # mm is on the left
+                if target < nums[mm]:  # target could be on left or right
+                    if target < nums[0]:  # target on the right
+                        ll = mm+1
+                    else:
+                        rr = mm-1
+                else:  # target on the left and less than nums[mm]
+                    ll = mm+1
+        return ans
+
+
+###########
 # 20231023
 ###########
 """
