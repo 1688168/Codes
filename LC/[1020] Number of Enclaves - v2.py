@@ -1,3 +1,40 @@
+###########
+# 20231105
+###########
+
+class Solution:
+    def numEnclaves(self, grid: List[List[int]]) -> int:
+        """
+        dfs all nodes from the border and set to zero
+        add all 1s form all rows, all cols
+        """
+
+        M = len(grid)
+        N = len(grid[0])
+
+        def dfs(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return
+            if grid[ii][jj] == 0:
+                return
+
+            grid[ii][jj] = 0
+
+            dfs(ii+1, jj)
+            dfs(ii-1, jj)
+            dfs(ii, jj+1)
+            dfs(ii, jj-1)
+
+        for ii in range(M):
+            for jj in range(N):
+                if ii == 0 or jj == 0 or ii == M-1 or jj == N-1:  # only dfs border cells
+                    if grid[ii][jj] == 0:
+                        continue
+                    dfs(ii, jj)
+
+        return sum([sum(grid[ii]) for ii in range(M)])
+
+
 """
 # Strategy:
 1. visit edge cells and dfs all 1 cells and reset all to zero
