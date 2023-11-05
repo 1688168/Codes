@@ -724,6 +724,9 @@ $${\color{orange} Question \space List}$$
 [[Video-2]](https://www.youtube.com/watch?v=TIcP6vP7nOk)
 [`Patterns`]
 
+- pre-process distance table matrix
+- dist(start, end)= 1 + dist(j, end) where j is start's child
+
 [[2281] - <span style="color:red">H</span> - Sum of Total Strength of Wizards
 ](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2281%5D%20Sum-of-Total-Strength-of-Wizards.py)
