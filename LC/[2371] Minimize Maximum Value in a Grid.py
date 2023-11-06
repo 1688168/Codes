@@ -1,3 +1,29 @@
+#########
+# 20231105
+#########
+class Solution:
+    def minScore(self, grid: List[List[int]]) -> List[List[int]]:
+        """
+        (vv, (ii, jj))
+        """
+        M = len(grid)
+        N = len(grid[0])
+        grid_list = [(grid[ii][jj], ii, jj)
+                     for jj in range(N) for ii in range(M)]
+
+        grid_list.sort()
+
+        row = [0]*M
+        col = [0]*N
+        for vv, ii, jj in grid_list:
+            grid[ii][jj] = max(row[ii], col[jj])+1
+            row[ii] = grid[ii][jj]
+            col[jj] = grid[ii][jj]
+
+        return grid
+
+
+##########################
 """
 1. start to update from the min cell (that's why we sort for all cells)
 2. on each update, we update the max of min_rows, min_cols
