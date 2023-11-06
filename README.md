@@ -1,10 +1,12 @@
 $${\color{orange} Question \space List}$$
 
-[[0004] - <span style="color:green">E</span> - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description) - 
+[[0004] - <span style="color:red">H</span> - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/004.Median-of-Two-Sorted-Arrays) -
 [[Video]](https://www.youtube.com/watch?v=5hNWtR2EcrU) -
-[`Patterns`]
+[`Binary Search`]
+
+- Binary search on two sorted array
 
 [[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
 [[Python]]()
