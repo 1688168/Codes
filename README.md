@@ -7,6 +7,8 @@ $${\color{orange} Question \space List}$$
 [`Binary Search`]
 
 - Binary search on two sorted array
+- Find Kth element on two sorted array
+- Find Kth element on N sorted array?
 
 [[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
 [[Python]]()
