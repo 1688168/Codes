@@ -23,6 +23,7 @@ class Solution:
 
         # length is odd or even
         if ((M+N) % 2) == 1:
+            # kk is length, not idx
             return find_kth_smallest(nums1, 0, M, nums2, 0, N, (M+N+1)//2)
         else:
             return (find_kth_smallest(nums1, 0, M, nums2, 0, N,
