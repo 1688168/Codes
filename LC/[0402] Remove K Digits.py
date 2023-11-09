@@ -1,3 +1,50 @@
+###################
+# 20231108
+###################
+class Solution:
+    def removeKdigits(self, num: str, k: int) -> str:
+        """
+        - 12745
+        to remove a digit to minimize the remaining num.
+        7 is the one to be select
+        after removing 7
+        1245 is in monotonic increasing order
+        -> try to make a number in monotonic increasing order will give us the smallest number after removing k
+        """
+        # maintain a stack from original num that is in monotonic increasing order after removing k digits
+
+        stk = []
+        N = len(num)
+        nums = list(map(int, list(num)))
+        cnt = 0
+        for ii, vv in enumerate(map(int, list(num))):
+            while stk and vv < stk[-1] and cnt < k:
+                stk.pop()
+                cnt += 1
+
+            stk.append(vv)
+
+        while stk and cnt < k:  # if we still have remaining k after making the num monotonic increasing, removing from tail
+            stk.pop()
+            cnt += 1
+
+        # converting the list of num back to string of num (removing 0s in the front)
+        nn = 0
+        for ii, vv in enumerate(stk):
+            nn = nn*10+vv
+        res = ""
+
+        while nn:
+            res += str(nn % 10)
+            nn //= 10
+
+        if res == "":
+            return "0"
+        return res[::-1]
+
+################################################
+
+
 class Solution:
     """
     - if the digit stream is in increasing order, we will just remove the trailing numbers
