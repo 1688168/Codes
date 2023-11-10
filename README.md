@@ -384,6 +384,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.bilibili.com/video/BV1GR4y1u74J/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Design`][`Trie`]
 
+[[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/632.Smallest-Range-Covering-Elements-from-K-Lists) -
+[[Video]](https://www.youtube.com/watch?v=ejVD92bJe34) -
+[`heap`]
+
+
 [[0642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0642%5D%20Design%20Search%20Autocomplete%20System%20-%20ylee.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/642.Design-Search-Autocomplete-System) -
