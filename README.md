@@ -579,6 +579,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[1372] - <span style="color:yellow">M</span> - Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=XOa2yhUd3fw) -
+[`binary Tree`]
+
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
 [[CPP]]() -
