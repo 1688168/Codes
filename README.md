@@ -14,7 +14,10 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0005%5D%20Longest%20Palindromic%20Substring.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/005.Longest-Palindromic-Substring) -
 [[Video]](https://www.youtube.com/watch?v=Co5-YaJwq64) -
-[`Palindrome`]
+[`Palindrome`][`Manacher`]
+
+- [1960]
+- Manacher （马拉车） - O(N)
 
 [[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
 [[Python]]()
