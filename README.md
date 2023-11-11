@@ -10,6 +10,12 @@ $${\color{orange} Question \space List}$$
 - Find Kth element on two sorted array
 - Find Kth element on N sorted array?
 
+[[0005] - <span style="color:yellow">M</span> - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0005%5D%20Longest%20Palindromic%20Substring.py)
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/005.Longest-Palindromic-Substring) -
+[[Video]](https://www.youtube.com/watch?v=Co5-YaJwq64) -
+[`Palindrome`]
+
 [[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
 [[Python]]()
 [[CPP]]() -
