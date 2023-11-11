@@ -381,6 +381,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[0560] - <span style="color:yellow">M</span> - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[0581] - <span style="color:yellow">M</span> - Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0581%5D%20Shortest%20Unsorted%20Continuous%20Subarray.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Greedy/581.shortest-unsorted-continuous-subarray/581.shortest-unsorted-continuous-subarray.cpp) -
