@@ -18,6 +18,7 @@ $${\color{orange} Question \space List}$$
 
 - [1960]
 - Manacher （马拉车） - O(N)
+- KMP (string manipulation)
 
 [[0013] - <span style="color:green">E</span> - Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) - 
 [[Python]]()
