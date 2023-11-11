@@ -390,6 +390,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=ejVD92bJe34) -
 [`heap`]
 
+- max with custom key
 
 [[0642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0642%5D%20Design%20Search%20Autocomplete%20System%20-%20ylee.py)
