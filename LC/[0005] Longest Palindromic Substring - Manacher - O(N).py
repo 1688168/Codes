@@ -3,7 +3,12 @@ class Solution:
         """
         # Manacher O(N) solution
         1. transform to odd string
-        2. calculate p[i]: where p[ii] is the extended radius of the longest palindromic substring centered @ ii
+        2a. calculate p[i]: where p[ii] is the extended radius of the longest palindromic substring centered @ ii
+           - case A: ii not covered by max_right
+           - case B: ii is covered by max_right. (jj=max_center - (ii-max_center))
+        2b. update max_center, max_right
+        3. findout which p[ii] has the largest radius
+        4 project back to the original s for the output
         """
         t = "#"
         # per this conversion, S is guaranteed to be a "odd" len string
