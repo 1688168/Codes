@@ -1,3 +1,47 @@
+##############
+# 20231112
+##############
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        """
+        median:
+        odd:
+            len//2 (index)
+        even:
+            (len//2+len//2+1)/2
+        """
+        M = len(nums1)
+        N = len(nums2)
+
+        def get_kth_element(nums1, s1, M, nums2, s2, N, kk):
+            if M > N:
+                return get_kth_element(nums2, s2, N, nums1, s1, M, kk)
+            if M == 0:
+                return nums2[s2+kk-1]
+
+            if kk == 1:
+                return min(nums1[s1], nums2[s2])
+            k1 = min(M, kk//2)
+            k2 = kk-k1
+
+            if nums1[s1+k1-1] < nums2[s2+k2-1]:
+                return get_kth_element(nums1, s1+k1, M-k1, nums2, s2, N, kk-k1)
+            else:
+                return get_kth_element(nums1, s1, M, nums2, s2+k2, N-k2, kk-k2)
+
+        if (M+N) % 2 == 1:  # odd case
+            # kth element (last element is not index)
+            return get_kth_element(nums1, 0,  M, nums2, 0, N, (M+N)//2+1)
+        else:  # even case
+            # kth element (last element is not index)
+            kth = get_kth_element(nums1, 0, M, nums2, 0, N, (M+N)//2)
+            # kth element (last element is not index)
+            kthPlusOne = get_kth_element(nums1, 0, M, nums2, 0, N, (M+N)//2+1)
+            return (kth+kthPlusOne)/2
+
+########################
+
+
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         M = len(nums1)

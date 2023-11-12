@@ -1,6 +1,12 @@
 ############
 # 20230616
 ############
+"""
+Pass I:
+1. record prev max and next max
+2. for each ii, water = min(prev_max, next_max)-curr_height
+Pass II:
+"""
 
 class Solution:
     def trap(self, height: List[int]) -> int:

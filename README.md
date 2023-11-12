@@ -53,6 +53,8 @@ $${\color{orange} Question \space List}$$
 - Method I: two pass
 - Method II: monotonic stack
 - Method III: two pointers
+- How to get left-max/right-max
+- One pass monotonic stack
 - [0084]
 - [2334]
 
