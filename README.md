@@ -653,6 +653,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=W6b-Tp7KzfM&t=14s) -
 [`Topology Sort`]
 
+[[1642] - <span style="color:yellow">M</span> - Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1642.Furthest-Building-You-Can-Reach) -
+[[Video]]() -
+[`PriorityQueue`]
+
 [[1650] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1650%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20III.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1650.Lowest-Common-Ancestor-of-a-Binary-Tree-III) -
