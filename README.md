@@ -100,6 +100,12 @@ $${\color{orange} Question \space List}$$
 
 - Monotonic stack one pass
 
+[[0121] - <span style="color:green">E</span> - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Best Time Buy/Sell Stock`]
+
 [[0123] - <span style="color:red">H</span> - Best Time to Buy and Sell Stock III
 ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0123%5D%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.py)
@@ -157,6 +163,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/200.Number-of-Islands) -
 [[Video]](https://www.youtube.com/watch?v=prmHWUETpXw) -
 [`DFS`]
+
+[[0206] - <span style="color:green">E</span> - Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`LinkedList`]
 
 [[0207] - <span style="color:yellow">M</span> - Course Schedule](https://leetcode.com/problems/course-schedule/description/) - 
 [[Python-BFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0207%5D%20Course-Schedule-BFS.py)
