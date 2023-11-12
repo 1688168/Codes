@@ -1,3 +1,29 @@
+##############
+# 20231112
+##############
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        """
+        > one pass monotonic stack
+        """
+        N = len(height)
+        stk = []
+        ans = 0
+        for ii, hh in enumerate(height):
+            while stk and hh > height[stk[-1]]:
+                curr_ii = stk.pop()
+                next_ii = ii
+                curr_v = height[curr_ii]
+                if stk:
+                    dist = (ii-stk[-1]-1)
+                    h = min(hh, height[stk[-1]])-curr_v
+                    ans += (dist*h)
+            stk.append(ii)
+
+        return ans
+
+
+###############################
 class Solution:
     def trap(self, height: List[int]) -> int:
         """
