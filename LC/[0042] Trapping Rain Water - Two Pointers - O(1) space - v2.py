@@ -1,3 +1,31 @@
+##############
+# 20231112
+##############
+# same idea as two passes but without storage  - O(1) space
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        """
+        > Two Pointers        
+        """
+        N = len(height)
+        ll, rr = 0, N-1
+        mxl, mxr = 0, 0
+        ans = 0
+        while ll <= rr:
+            mxl = max(mxl, height[ll])
+            mxr = max(mxr, height[rr])
+            if mxl < mxr:
+                ans += (mxl-height[ll])
+                ll += 1
+            else:
+                ans += (mxr-height[rr])
+                rr -= 1
+        return ans
+
+######################
+
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         """
