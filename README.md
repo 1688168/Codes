@@ -548,6 +548,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=NP9ia_QU0l8&list=PPSV&t=1041) -
 [`Topology Sort`]
 
+[[1207] - <span style="color:green">E</span> - Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Hash`]
+
 [[1235] - <span style="color:red">H</span> - Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1235.Maximum-Profit-in-Job-Scheduling) -
