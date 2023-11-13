@@ -101,6 +101,7 @@ $${\color{orange} Question \space List}$$
 [`Monotonic Stack`][`Count Subarray by Element`]
 
 - Monotonic stack one pass
+- The best way to find prev_smaller (NOT prev_smaller_equal)
 
 [[0121] - <span style="color:green">E</span> - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description) - 
 [[Python]]()
