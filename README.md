@@ -396,6 +396,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[0543] - <span style="color:green">E</span> - Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) - 
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0543%5D%20Diameter%20of%20Binary%20Tree.py)
+[[CPP]]() -
+[[Video]]() -
+[`Tree`]
+
 [[0560] - <span style="color:yellow">M</span> - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description) - 
 [[Python]]()
 [[CPP]]() -
@@ -577,6 +583,12 @@ $${\color{orange} Question \space List}$$
 
 - [435] From all the overlapping intervals, we pick the 1st interval (sorted by end-time)(least overlapping with future intervals). Greedy strategy
 - [1235] for Max Profit, we cannot simply pick the first one (least overlapping) as we are trying to max(profit)
+
+[[1245] - <span style="color:yellow">M</span> - Tree Diameter](https://leetcode.com/problems/tree-diameter/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1245.Tree-Diameter) -
+[[Video]]() -
+[`Patterns`]
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
