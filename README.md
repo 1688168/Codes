@@ -41,14 +41,15 @@ $${\color{orange} Question \space List}$$
 [[0033] - <span style="color:yellow">M</span> - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0033%5D%20Search%20in%20Rotated%20Sorted%20Array.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/033.Search-in-Rotated-Sorted-Array) -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=e-UALGfQpOk) -
 [`Binary Search`]
 
-[0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) -
-[[Python]]()
-[[CPP]]() -
-[[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
-[`Monotonic Stack`][`Tow pointers`]
+- [81]
+  [0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) -
+  [[Python]]()
+  [[CPP]]() -
+  [[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
+  [`Monotonic Stack`][`Tow pointers`]
 
 - Method I: two pass
 - Method II: monotonic stack
@@ -93,6 +94,14 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=7nTdJGqZQXE) -
 [`DFS`]
+
+[[0081] - <span style="color:yellow">M</span> - desc]() - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/081.Search-in-Rotated-Sorted-Array-II) -
+[[Video]](https://www.youtube.com/watch?v=e-UALGfQpOk) -
+[`Binary Search`]
+
+- [0033]
 
 [[0084] - <span style="color:red">H</span> - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0084%5D%20Largest%20Rectangle%20in%20Histogram%20-%20one%20pass.py)
