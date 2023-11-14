@@ -102,6 +102,7 @@ $${\color{orange} Question \space List}$$
 [`Binary Search`]
 
 - [0033]
+- search rotated array
 
 [[0084] - <span style="color:red">H</span> - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0084%5D%20Largest%20Rectangle%20in%20Histogram%20-%20one%20pass.py)
@@ -462,6 +463,8 @@ $${\color{orange} Question \space List}$$
 [`TopK`][`Binary Search`][`Two Dimentional TopK`]
 
 - How to apply binary search with paired distance
+- If we decided NlogN as time complexity -> sort if you can.
+- Can you do this in Quick-select?
 
 [[0759] - <span style="color:red">H</span> - Employee Free Time](https://leetcode.com/problems/employee-free-time/description) - 
 [[Python]]()
