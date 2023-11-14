@@ -86,12 +86,15 @@ class Solution:
 - Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
 - Count some condition, use binary search to find the range for counting
 ```
-
+- [0004]
 - [240]
 - [373] - (719, 1918, 2040)
 - [378] - (240)
 - [668]
 - [2040]
+
+# [`Binary Search by Value`]
+= [719]
 
 # [`Binary Index Tree (BIT)`]
 

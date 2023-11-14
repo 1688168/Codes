@@ -7,7 +7,7 @@
 ### When we see pair
 1. sorted matrix strategy
    
-### High level coding structure
+### High level coding structure: 32NlogN
 ```
 1. sort the array: O(nlogn)
 2. define the distance range from the sorted array: O(N)
