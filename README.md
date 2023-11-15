@@ -449,7 +449,7 @@ $${\color{orange} Question \space List}$$
 - [1268]
 
 [[0652] - <span style="color:yellow">M</span> - Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) - 
-[[Python]]()
+[[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0668%5D%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/652.Find-Duplicate-Subtrees) -
 [[Video]](https://www.youtube.com/watch?v=YupKiFqtnsA) -
 [`Tree`][`Tree Serialize`]
