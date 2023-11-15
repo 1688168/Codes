@@ -87,12 +87,16 @@ class Solution:
 - Count some condition, use binary search to find the range for counting
 ```
 
-- [0004]
+- [0004]: Binary search for median in two sorted Array
 
 > rotate sorted array
 
-- [0033]
-- [0081]
+- [0033]: Binary Search on sorted-rotated array with unique numbers
+- [0081]: Binary Search on sorted-rotated array with duplicate numbers
+- [0373]:
+- [0378]:
+- [0668]: kth-smallest value in sorted matrix. Binary Search on two dimentional table (multiplication table)
+- [0719]: Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
 
 >
 
@@ -521,7 +525,6 @@ Strategy:
 
 > The kth smallest element of an unsorted array
 > The medium of two sorted array
-
 
 ```
 ### When we see pair
