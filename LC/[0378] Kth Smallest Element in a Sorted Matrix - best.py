@@ -1,26 +1,26 @@
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
-        M = N = len(matrix)
-        ll, rr = int(-1e9), int(1e9)
+        M = len(matrix)
+        N = len(matrix[0])
+        ll, rr, ans = matrix[0][0], matrix[-1][-1], -1
 
-        ans = -1
-
-        def cnt_smaller_or_equal(mm):
-            ii, jj = M-1, 0
+        def count(mm):
+            jj = 0
+            ii = M-1
             cnt = 0
             while ii >= 0 and jj < N:
-                nn = matrix[ii][jj]
-                if nn <= mm:
+                vv = matrix[ii][jj]
+                if vv > mm:
+                    ii -= 1
+                else:
                     cnt += (ii+1)
                     jj += 1
-                else:
-                    ii -= 1
-            # print(" mm: ", mm, " cnt: ", cnt)
+
             return cnt
 
         while ll <= rr:
             mm = ll+(rr-ll)//2
-            if cnt_smaller_or_equal(mm) < k:
+            if count(mm) < k:
                 ll = mm+1
             else:
                 ans = mm
