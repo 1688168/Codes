@@ -512,20 +512,18 @@ Strategy:
 
 - When we use Sweep Line, we only consider sets of starting points and ending points, we do NOT know which starting point matching with which ending point.
 
-# [`Top K elements`]
+# [`TopK elements`]
 
 1. sort: NlogN
 2. Heap/PQ: Nlogk
 3. Binary Search: Nlog C
 4. Quick select: AVG O(N)
 
-```
-### When we see top K
-1. sort
-2. heap
-3. quick-sort
-4. Binary Search with count
+> The kth smallest element of an unsorted array
+> The medium of two sorted array
 
+
+```
 ### When we see pair
 1. sorted matrix strategy
 ```
