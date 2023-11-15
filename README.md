@@ -462,6 +462,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=oL7JXNpiKJs) -
 [`Binary Search`][`Sorted Matrix`]
 
+- Sorted matrix
+
 [[0719] - <span style="color:red">H</span> - Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/719.Find-K-th-Smallest-Pair-Distance) -

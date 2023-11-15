@@ -94,7 +94,7 @@ class Solution:
 - [0033]: Binary Search on sorted-rotated array with unique numbers
 - [0081]: Binary Search on sorted-rotated array with duplicate numbers
 - [0373]:
-- [0378]:
+- [0378]: kth-smallest value in sorted matrix
 - [0668]: kth-smallest value in sorted matrix. Binary Search on two dimentional table (multiplication table)
 - [0719]: Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
 
