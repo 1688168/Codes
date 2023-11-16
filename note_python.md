@@ -82,3 +82,12 @@ res = requests.post(url, data=json.dumps({'key1': val1, 'key2': val2}), verify=F
 - self.cache.popitem(last=False)
 - self.cache.pop(key)
 ```
+
+> convert string to date
+```
+datetime.datetime.strptime(as_of_date, '%Y-%m-%d')
+```
+> convert date to string
+```
+datetime.datetime.today().strftime('%Y%m%d')
+```
