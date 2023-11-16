@@ -6,14 +6,14 @@ class Solution:
 
         def helper(st, nums):
             if st == N:
-                res.append(nums[:])
+                res.append(nums)
                 return
             # if st > N: return None
 
             for ii in range(st, N):
                 nums[st], nums[ii] = nums[ii], nums[st]
-                helper(st+1, nums)
-                nums[st], nums[ii] = nums[ii], nums[st]
+                helper(st+1, nums[:])
+                # nums[st], nums[ii] = nums[ii], nums[st]
 
         helper(0, nums)
         return res
