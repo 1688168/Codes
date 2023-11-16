@@ -726,6 +726,12 @@ $${\color{orange} Question \space List}$$
   for a_color in colors_set: # for each color
 ```
 
+[[1918] - <span style="color:yellow">M</span> - Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/1918.Kth-Smallest-Subarray-Sum) -
+[[Video]](https://www.bilibili.com/video/BV1Vb4y1h7fW/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Binary Search`]
+
 [[1942] - <span style="color:yellow">M</span> - The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1492%5D%20The-kth-factor-of-n.py)
 [[CPP]]() -
