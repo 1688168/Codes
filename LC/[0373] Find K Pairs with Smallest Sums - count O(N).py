@@ -10,17 +10,17 @@ class Solution:
 
         def count(mm):
             cnt = 0
-            for n in nums1:
-                if n >= mm:
-                    break
-                idx = bisect.bisect_right(nums2, mm-n)
-                cnt += idx
-            print(" count: ", cnt)
+            jj = N-1
+            for ii in range(M):
+                while jj >= 0 and nums1[ii]+nums2[jj] > mm:
+                    jj -= 1
+                cnt += (jj+1)
+
             return cnt
 
         while ll <= rr:
             mm = ll+(rr-ll)//2
-            print(" ll: ", ll, " rr: ", rr, " mm: ", mm)
+
             if count(mm) < k:
                 ll = mm+1
             else:
@@ -28,19 +28,15 @@ class Solution:
                 rr = mm-1
 
         # ans is the kth smallest sum
-        print("ans: ", ans)
+        # print("ans: ", ans)
         res = []
         for a in nums1:
-            if a >= ans:
-                break
             for b in nums2:
-                if a+b > ans:
-                    break
                 if a+b <= ans:
                     res.append([a, b])
-                    if len(res) >= k:
-                        break
-            if len(res) >= k:
-                break
-        res.sort()
-        return res
+                else:
+                    break
+
+        res.sort(key=lambda x: (x[0]+x[1]))
+
+        return res[:k]
