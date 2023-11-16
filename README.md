@@ -59,6 +59,18 @@ $${\color{orange} Question \space List}$$
 - [0084]
 - [2334]
 
+[[0046] - <span style="color:yellow">M</span> - Permutations](https://leetcode.com/problems/permutations/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Math/046.Permutations) -
+[[Video]](https://www.youtube.com/watch?v=DAy4l04jFX0) -
+[`Permutation`]
+
+[[0047] - <span style="color:yellow">M</span> - Permutations II](https://leetcode.com/problems/permutations-ii/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Math/047.Permutations-II) -
+[[Video]](https://www.youtube.com/watch?v=K6vqgAEyfng) -
+[`Permutation`]
+
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
