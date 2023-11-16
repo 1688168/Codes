@@ -113,6 +113,12 @@ $${\color{orange} Question \space List}$$
 - Monotonic stack one pass
 - The best way to find prev_smaller (NOT prev_smaller_equal)
 
+[[0090] - <span style="color:yellow">M</span> - Subsets II](https://leetcode.com/problems/subsets-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/090.Subsets-II) -
+[[Video]](https://www.youtube.com/watch?v=Vn2v6ajA7U0) -
+[`Subsets`]
+
 [[0121] - <span style="color:green">E</span> - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description) - 
 [[Python]]()
 [[CPP]]() -
