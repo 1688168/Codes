@@ -11,7 +11,7 @@ class Solution:
 
             used = set()
             for ii in range(st, N):
-                if nums[ii] in used:
+                if nums[ii] in used:  # we pick a num to be in the starting position.  if this number was used before, we just skip to avoid duplicate
                     continue
                 used.add(nums[ii])
                 nums[st], nums[ii] = nums[ii], nums[st]
