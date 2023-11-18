@@ -1,3 +1,51 @@
+##############
+# 20231118
+##############
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        """
+        1. skip if left_count is <=0
+        2. remove remainings 
+        3. re-construct the paren string
+        """
+        N = len(s)
+        left_cnt = 0
+        res = ""
+        for ii, cc in enumerate(s):
+            if cc.isalpha():
+                res += cc
+            else:
+                if cc == "(":
+                    res += cc
+                    left_cnt += 1
+                elif cc == ")":
+                    if left_cnt > 0:
+                        left_cnt -= 1
+                        res += cc
+                else:
+                    raise Exception(f"Unexpected char {cc}")
+
+        # do we still have unmatched left_paren
+        res_reversed = ""
+        ii = len(res)-1
+
+        # if left_cnt==0: return res
+
+        while left_cnt > 0:
+            left_cnt -= 1
+            while ii >= 0 and (cc := res[ii]) != "(":
+                res_reversed += cc
+                ii -= 1
+            ii -= 1
+
+        while ii >= 0:
+            res_reversed += res[ii]
+            ii -= 1
+
+        return res_reversed[::-1]
+
+
+####################################
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         """
