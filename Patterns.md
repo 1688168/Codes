@@ -437,16 +437,17 @@ c. element value is not equal to the destination value or no point of swapping
 
 - Histogram: consider each bar as the highest number in the array (prev_smaller_equal, next_smaller)
 
-# [`Parenthesis`]
+# [`Parentheses`]
 
 ```
 - Stack
 - Greedy
 ```
 
-- [0032]: longest valid parenthesis substring
+- [0022]: generate parentheses
+- [0032]: longest valid parentheses substring
 - [0301]: all valid strings by removing minimum # of Parentheses
-- [0921]: num of minimum remove to make valid parenthesis
+- [0921]: num of minimum remove to make valid parentheses
 - [1249]: any valid strings by removing minimum num of paren
 
 - [021]

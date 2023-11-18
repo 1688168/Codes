@@ -36,7 +36,7 @@ $${\color{orange} Question \space List}$$
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0032%5D%20Longest%20Valid%20Parentheses.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/032.Longest-Valid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=677VaZhd4dg) -
-[`parenthesis`]
+[`parentheses`]
 
 - when you see pairing -> stack
 
@@ -310,7 +310,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/301.Remove-Invalid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=NWAseBzZj-c) -
-[`Parenthesis`][`Search in an array`]
+[`Parentheses`][`Search in an array`]
 
 - review search in an array
 - DFS: pruning/eliminate duplication/memo
@@ -542,7 +542,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/921.Minimum-Add-to-Make-Parentheses-Valid) -
 [[Video]](https://www.youtube.com/watch?v=Sv5Xb-kfDok) -
-[`Parenthesis`][`Greedy`]
+[`Parentheses`][`Greedy`]
 
 [[0931] - <span style="color:yellow">M</span> - Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) - 
 [[Python]]()
@@ -643,7 +643,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1249.Minimum-Remove-to-Make-Valid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=U1nwBAIQ-oc) -
-[`stack`][`Greedy`][`parenthesis`]
+[`stack`][`Greedy`][`parentheses`]
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
