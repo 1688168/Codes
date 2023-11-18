@@ -313,6 +313,7 @@ $${\color{orange} Question \space List}$$
 [`Parenthesis`][`Search in an array`]
 
 - review search in an array
+- DFS: pruning/eliminate duplication/memo
 
 [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
