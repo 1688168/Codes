@@ -349,7 +349,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=j7U3olaBxMg) -
 [`DP`]
 
-[[378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
+[[0378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0378%5D%20Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
 [[Video]](https://www.youtube.com/watch?v=JJUv4DDLSB4&t=4s) -
@@ -632,6 +632,12 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1245.Tree-Diameter) -
 [[Video]]() -
+[`Patterns`]
+
+[[1249] - <span style="color:yellow">M</span> - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1249.Minimum-Remove-to-Make-Valid-Parentheses) -
+[[Video]](https://www.youtube.com/watch?v=U1nwBAIQ-oc) -
 [`Patterns`]
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
