@@ -444,10 +444,12 @@ c. element value is not equal to the destination value or no point of swapping
 - Greedy
 ```
 
-- [32]
-- [301]
+- [0032]: longest valid parenthesis substring
+- [0301]: all valid strings by removing minimum # of Parentheses
+- [0921]: num of minimum remove to make valid parenthesis
+- [1249]: any valid strings by removing minimum num of paren
+
 - [021]
-- [1249]
 - [1541]
 - [1963]
 - [678]
