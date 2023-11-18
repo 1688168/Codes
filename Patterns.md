@@ -587,7 +587,12 @@ c. move (slide) the window
 
 # [`Buy Sell Stock`]
 
-# [`Calculator`]
+# [`basic Calculator`]
+
+- [0224] basic calculator I: num+paren
+- [0227] basic calculator II: +-\*/ (no paren)
+- [0772] basic calculator III: +-\*/ with paren
+- [0770] basic calculator IV: +-\*/ with paren, with e
 
 # [`Course Schedule`]
 

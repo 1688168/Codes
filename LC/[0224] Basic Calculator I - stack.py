@@ -1,4 +1,58 @@
 ############
+# 20231118
+############
+class Solution:
+    def calculate(self, s: str) -> int:
+        N = len(s)
+        stk_n = []
+        stk_op = []
+        res = 0
+        ii = 0
+        op = "+"
+
+        def calc(aa, op, bb):
+            if op == "+":
+                return aa+bb
+            elif op == "-":
+                return aa-bb
+            else:
+                msg = f"unexpected op {op}"
+                raise Exception(msg)
+            return 0
+
+        while ii < N:
+            cc = s[ii]
+            if cc.isdigit():
+                jj = ii
+                while jj < N and s[jj].isdigit():
+                    jj += 1
+                nn = int(s[ii:jj])
+                ii = jj
+                res = calc(res, op, nn)
+                continue
+            else:
+                if cc == " ":
+                    pass
+                elif cc == "(":
+                    stk_n.append(res)
+                    res = 0
+                    stk_op.append(op)
+                    op = "+"
+                elif cc == ")":
+                    prev = stk_n.pop()
+                    op = stk_op.pop()
+                    res = calc(prev, op, res)
+                elif cc in ("+", "-"):
+                    op = cc
+                else:
+                    msg = f"unexpected char = {cc}"
+                    raise Exception(msg)
+                ii += 1
+
+        return res
+
+
+############
 # 20231112
 ############
 class Solution:
