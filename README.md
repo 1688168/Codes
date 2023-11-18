@@ -38,6 +38,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=677VaZhd4dg) -
 [`parenthesis`]
 
+- when you see pairing -> stack
+
 [[0033] - <span style="color:yellow">M</span> - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0033%5D%20Search%20in%20Rotated%20Sorted%20Array.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/033.Search-in-Rotated-Sorted-Array) -
