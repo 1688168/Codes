@@ -638,11 +638,15 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1249.Minimum-Remove-to-Make-Valid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=U1nwBAIQ-oc) -
-[`stack`]
+[`stack`][`Greedy`]
 
+- [0032]
 - [0301]: all valid strings by removing minimum # of Parentheses
 - [0921]: num of minimum remove
 - [1249]: any valid strings by removing minimum num of paren
+  > parentheses
+  1. stack
+  2. greedy
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
