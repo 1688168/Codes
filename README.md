@@ -310,7 +310,9 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/301.Remove-Invalid-Parentheses) -
 [[Video]](https://www.youtube.com/watch?v=NWAseBzZj-c) -
-[`Parenthesis`]
+[`Parenthesis`][`Search in an array`]
+
+- review search in an array
 
 [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
