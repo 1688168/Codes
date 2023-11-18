@@ -20,23 +20,23 @@ class Solution:
 
         """
         # states
-        N=len(s)
-        ii=0
-        op='+'
-        committed=0
-        pending=0
+        N = len(s)
+        ii = 0
+        op = '+'
+        committed = 0
+        pending = 0
 
         def calc(num):
             nonlocal pending
-            if op=='+':
+            if op == '+':
                 pending += num
-            elif op=='-':
+            elif op == '-':
                 pending -= num
-            elif op=='*':
+            elif op == '*':
                 pending *= num
-            elif op=='/':
-                sign=1 if pending*num >= 0 else -1
-                #print("pending: ", pending, " num: ", num)
+            elif op == '/':
+                sign = 1 if pending*num >= 0 else -1
+                # print("pending: ", pending, " num: ", num)
                 pending = abs(pending)//abs(num) * sign
             else:
                 raise Exception(f"""Invalid operator {op}""")
@@ -44,30 +44,27 @@ class Solution:
 
         while ii < N:
 
-            c=s[ii]
-            if c==' ':
-                ii+=1
+            c = s[ii]
+            if c == ' ':
+                ii += 1
                 continue
 
-            if c.isdigit(): #got a number
+            if c.isdigit():  # got a number
                 # parse out the num,
-                jj=ii
-                while jj<N and s[jj].isdigit():
-                    jj+=1
+                jj = ii
+                while jj < N and s[jj].isdigit():
+                    jj += 1
 
-                num=int(s[ii:jj])
+                num = int(s[ii:jj])
                 calc(num)
-                ii=jj
+                ii = jj
 
-            else: # got operators
-                ii+=1
-                op=c
+            else:  # got operators
+                ii += 1
+                op = c
 
                 if c in ('+', '-'):
                     committed += pending
-                    pending=0
-
+                    pending = 0
 
         return committed+pending
-
-        
