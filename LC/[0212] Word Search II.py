@@ -1,8 +1,96 @@
 ############################
+# 20231119: 76.36%
+############################
+from collections import deque
+
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.count = 0
+        self.is_word = False
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def add(self, w):
+        if w is None or len(w) == 0:
+            return
+        itr = self.root
+        for c in w:
+            if c not in itr.children:
+                itr.children[c] = TrieNode()
+            itr = itr.children[c]
+            itr.count += 1
+        itr.is_word = True
+
+    def remove(self, w):
+        if w is None or len(w) == 0:
+            return
+        itr = self.root
+
+        for c in w:
+            if c not in itr.children:
+                return
+            itr = itr.children[c]
+            itr.count -= 1
+
+        itr.is_word = False
+
+
+class Solution:
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+        """
+        1. build trie
+        2. traverse the grid and dfs on the trie
+        """
+        t = Trie()
+        for w in words:
+            t.add(w)
+
+        M = len(board)
+        N = len(board[0])
+        res = []
+
+        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+        def dfs(ii, jj, itr, path):
+
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return False
+            if (ii, jj) in visited:
+                return False
+
+            cc = board[ii][jj]
+            if cc not in itr.children:
+                return False
+            itr = itr.children[cc]
+
+            if itr.count <= 0:
+                return False
+
+            if itr.is_word:
+                res.append(path+cc)
+                t.remove(path+cc)
+
+            visited.add((ii, jj))
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                dfs(nx, ny, itr, path+cc)
+            visited.remove((ii, jj))
+
+        for ii in range(M):
+            for jj in range(N):
+                visited = set()
+                itr = t.root
+                path = ""
+                dfs(ii, jj, itr, path)
+        return res
+############################
 # 20230915: 74.54%
 ############################
-
-from collections import deque
 
 
 class TrieNode:

@@ -618,9 +618,9 @@ c. move (slide) the window
 
 # [`Word Break`]
 
-- [139]
-- [140]
-- [472]
+- [139]: Word Break I: given a word, can it be composed by a given dictionary
+- [140] Word Break II: set/Trie is your friend
+- [472] Concatenated Words
 
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
 
