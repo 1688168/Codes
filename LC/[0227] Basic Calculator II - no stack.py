@@ -1,3 +1,61 @@
+#############
+# 20231119
+#############
+class Solution:
+    def calculate(self, s: str) -> int:
+        N = len(s)
+        committed = 0
+        pending = 0
+        op = "+"
+
+        def calc(pending, nn, op):
+            if op == "+":
+                pending += nn
+            elif op == "-":
+                pending -= nn
+            elif op == "*":
+                pending *= nn
+            elif op == "/":
+                sign = (1 if pending*nn > 0 else -1)
+                pending = abs(pending)//abs(nn) * sign
+            else:
+                msg = f"unexpected op=[{op}]"
+                raise Exception(msg)
+
+            return pending
+
+        ii = 0
+        while ii < N:
+            cc = s[ii]
+            if cc.isdigit():
+                jj = ii
+                while jj < N and s[jj].isdigit():
+                    jj += 1
+
+                nn = int(s[ii:jj])
+                ii = jj
+                pending = calc(pending, nn, op)
+
+                continue
+            else:
+                if cc == " ":
+                    pass
+                elif cc in ("+", "-"):
+                    op = cc
+                    committed += pending
+                    pending = 0
+                elif cc in ("*", "/"):
+                    op = cc
+                else:
+                    msg = f"unexpected char=[{cc}]"
+                    raise Exception(msg)
+
+            ii += 1
+
+        return committed+pending
+
+
+########################
 class Solution:
     def calculate(self, s: str) -> int:
         """
