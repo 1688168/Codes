@@ -348,6 +348,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=TsOzIxkzh1E&t=998s) -
 [`Binary Search`][`TopK`]
 
+- the initial value of ans is special
+
 [[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -

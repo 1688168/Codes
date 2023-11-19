@@ -104,7 +104,6 @@ class Solution:
 - [240]
 - [373] - (719, 1918, 2040)
 - [378] - (240)
-- [668]
 - [2040]
 
 > Binary Search - Two dimentional

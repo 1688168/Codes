@@ -8,6 +8,20 @@ class Solution:
         ll, rr, ans = nums1[0]+nums2[0], nums1[-1] + \
             nums2[-1], nums1[-1]+nums2[-1]
 
+        # another way of doing count
+        # def count(mm):
+        #     ii=0
+        #     jj=N-1
+        #     cnt=0
+        #     while ii < M:
+        #         while jj >=0:
+        #             if nums1[ii]+nums2[jj]<=mm:
+        #                 cnt+= (jj+1)
+        #                 break
+        #             jj-=1
+        #         ii+=1
+        #     return cnt
+
         def count(mm):
             cnt = 0
             ii = 0
