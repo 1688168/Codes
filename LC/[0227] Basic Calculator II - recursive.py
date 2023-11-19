@@ -1,3 +1,49 @@
+#################
+# 20231118
+#################
+class Solution:
+    def calculate(self, s: str) -> int:
+        N = len(s)
+
+        def dfs(ii, ttl, prev, op):
+            if ii == N:
+                return ttl
+
+            cc = s[ii]
+            if cc.isdigit():  # get num
+                jj = ii
+                while jj < N and s[jj].isdigit():
+                    jj += 1
+                nn = int(s[ii:jj])
+                ii = jj
+
+                # we need to merge number here
+                if op == "+":
+                    ttl += nn
+                    return dfs(ii, ttl, nn, op)
+                elif op == "-":
+                    ttl -= nn
+                    return dfs(ii, ttl, -nn, op)
+                elif op == "*":
+                    ttl = ttl-prev + (pp := prev*nn)
+                    return dfs(ii, ttl, pp, op)
+                elif op == "/":
+                    ttl = ttl-prev + (pp := abs(prev)//nn *
+                                      (1 if prev > 0 else -1))
+                    return dfs(ii, ttl, pp, op)
+                else:
+                    msg = f"Unexpected expression: nn=[{nn}], op=[{op}]"
+                    raise Exception(msg)
+            else:  # space or op
+                if cc == " ":
+                    return dfs(ii+1, ttl, prev, op)
+                else:
+                    return dfs(ii+1, ttl, prev, cc)
+
+        return dfs(0, 0, 0, "+")
+
+
+#################################
 class Solution:
     def calculate(self, s: str) -> int:
 
