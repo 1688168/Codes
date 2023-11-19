@@ -1,7 +1,49 @@
 ##############
-# 20230912
+# 20231118
 ##############
 from collections import Counter
+
+
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        M = len(board)
+        N = len(board[0])
+
+        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+        def dfs(ii, jj, st, path):
+            if st == len(word):
+                return True
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return False
+            if word[st] != board[ii][jj]:
+                return False
+            if (ii, jj) in visited:
+                return False
+            visited.add((ii, jj))
+
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                if dfs(nx, ny, st+1, path+[word[st]]):
+                    return True
+            visited.remove((ii, jj))
+            return False
+
+        for ii in range(M):
+            for jj in range(N):
+                cc = board[ii][jj]
+                if cc == word[0]:
+                    path = []
+                    visited = set()
+                    if dfs(ii, jj, 0, path):
+                        return True
+
+        return False
+
+
+##############
+# 20230912
+##############
 
 
 class Solution:
