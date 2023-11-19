@@ -624,7 +624,8 @@ c. move (slide) the window
 
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
 
-- [126]: Word Ladder II
-  - From BeginWord to EndWord all, output all valid path
-- [127]: Word Ladder I
-  - Is existing from BeginWord to EndWord
+- [126]: Word Ladder II: From BeginWord to EndWord all, output all valid path
+  - BFS to find the shortest distance
+  - DFS with backtrack to find all valid path that is with shortest distance (word searh with defined length)
+- [127]: Word Ladder I: Is existing from BeginWord to EndWord
+  - BFS find the shortest distance
