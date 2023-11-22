@@ -523,8 +523,9 @@ Strategy:
 
 1. sort: NlogN
 2. Heap/PQ: Nlogk
-3. Binary Search: Nlog C
+3. Binary Search: 32N
 4. Quick select: AVG O(N)
+5. bucket_sort (for top k freq)
 
 > The kth smallest element of an unsorted array
 > The medium of two sorted array
@@ -534,7 +535,7 @@ Strategy:
 1. sorted matrix strategy
 ```
 
-- [215]
+- [215]: be careful top k largest VS top K smallest
 
 # [`Topology Sort`]
 

@@ -321,7 +321,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=jNy8yM0NBdw) -
 [`DP`]
 
-[[0324] - <span style="color:yellow">M</span> - 324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
+[[0324] - <span style="color:yellow">M</span> Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/324.Wiggle-Sort-II) -
 [[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
