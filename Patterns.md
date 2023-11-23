@@ -614,6 +614,7 @@ c. move (slide) the window
 # [`Word Search`]
 
 - [0079]: given a word and a grid, return true/false if the word is in the grid
+  - backtrack -> no memo
 - [0212]
 -
 
