@@ -1,7 +1,99 @@
 ############################
-# 20231119: 76.36%
+# 20231123: 75.15%
 ############################
 from collections import deque
+
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.count = 0
+        self.is_word = False
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def add(self, w):
+        if w is None or len(w) == 0:
+            return
+
+        itr = self.root
+        for c in w:
+            if c not in itr.children:
+                itr.children[c] = TrieNode()
+            itr = itr.children[c]
+            itr.count += 1
+
+        itr.is_word = True
+
+    def remove(self, w):
+        if w is None or len(w) == 0:
+            return
+        itr = self.root
+        for c in w:
+            if c not in itr.children:
+                break
+            itr = itr.children[c]
+            itr.count -= 1
+        itr.is_word = False
+
+
+class Solution:
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+        """
+        1. define Trie
+        2. add the list of words to trie
+        3. dfs on the Trie
+        """
+        M = len(board)
+        N = len(board[0])
+        t = Trie()
+        for word in words:
+            t.add(word)
+
+        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+        def dfs(itr, path, ii, jj):
+            if itr is None:
+                return
+            if (ii, jj) in visited:
+                return
+            if itr.count == 0:
+                return
+            if itr.is_word:
+                res.append(path)
+                t.remove(path)
+
+            visited.add((ii, jj))
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                if nx < 0 or nx >= M or ny < 0 or ny >= N:
+                    continue
+                # print(" nx: ", nx, " ny: ", ny, " m: ", M, " n: ", N)
+                if board[nx][ny] in itr.children:
+                    dfs(itr.children[board[nx][ny]],
+                        path+board[nx][ny], nx, ny)
+
+            visited.remove((ii, jj))
+
+        res = []
+        path = ""
+        visited = set()
+
+        for ii in range(M):
+            for jj in range(N):
+                itr = t.root
+                if board[ii][jj] in itr.children:
+                    dfs(itr.children[board[ii][jj]],
+                        path+board[ii][jj], ii, jj)
+        return res
+
+
+############################
+# 20231119: 76.36%
+############################
 
 
 class TrieNode:
