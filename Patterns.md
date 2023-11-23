@@ -613,7 +613,7 @@ c. move (slide) the window
 
 # [`Word Search`]
 
-- [0079]
+- [0079]: given a word and a grid, return true/false if the word is in the grid
 - [0212]
 -
 
