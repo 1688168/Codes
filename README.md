@@ -542,6 +542,12 @@ $${\color{orange} Question \space List}$$
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
 [`Design`][`Others`]
 
+[[0871] - <span style="color:red">H</span> - Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/871.Minimum-Number-of-Refueling-Stops) -
+[[Video]](https://www.youtube.com/watch?v=ntMfHvpFryI) -
+[``]
+
 [[0875] - <span style="color:yellow">M</span> - Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0875%5D%20Koko%20Eating%20Bananas.py)
 [[CPP]]() -
