@@ -612,7 +612,10 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/1044.Longest-Duplicate-Substring) -
 [[Video]](https://www.youtube.com/watch?v=N7EE0VamNqc) -
-[`Patterns`]
+[`rolling hash`][`Binary Search`][`二哈哈希`]
+
+- DP: dp[i][j]= (s[i]==s[j])? dp[i-1][j-1]+1
+  ans = max(dp[i][j], i=0,...n, j=0,...,n)
 
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
