@@ -815,6 +815,8 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Three-pass`]
 
+- when you see the result is asking for the relation btn left and rigth -> do left and right and 3rd pass output result
+
 [[2193] - <span style="color:red">H</span> - Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2193.Minimum-Number-of-Moves-to-Make-Palindrome) -
