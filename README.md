@@ -809,6 +809,12 @@ $${\color{orange} Question \space List}$$
 - [907]
 - [1856]
 
+[[2163] - <span style="color:red">H</span> - Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2163.Minimum-Difference-in-Sums-After-Removal-of-Elements) -
+[[Video]]() -
+[`Three-pass`]
+
 [[2193] - <span style="color:red">H</span> - Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2193.Minimum-Number-of-Moves-to-Make-Palindrome) -
