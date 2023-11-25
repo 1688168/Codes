@@ -1,10 +1,8 @@
-
-
 typedef uint64_t ULL;
 class Solution {
     unordered_map<int,int>len2start;
 public:
-    string longestDupSubstring(string S)
+    string longestDupSubstring(string S) 
     {
         int left = 1, right = S.size()-1;
         while (left<right)
@@ -18,7 +16,7 @@ public:
         if (found(S, left))
             return S.substr(len2start[left],left);
         else
-            return "";
+            return "";        
     }
 
     bool found(string&S, int len)
@@ -28,25 +26,25 @@ public:
         ULL hash = 0;
 
         ULL pow_base_len = 1;
-        for (int i=0; i<len; i++)
-            pow_base_len = pow_base_len * base;
-
+        for (int i=0; i<len; i++)        
+            pow_base_len = pow_base_len * base;                    
+            
         for (int i=0; i<S.size(); i++)
         {
-            hash = hash * base + (S[i]-'a');
-
-            if (i>=len)
-                hash = (hash - pow_base_len*(S[i-len]-'a') ) ;
+            hash = hash * base + (S[i]-'a');                                     
+            
+            if (i>=len)            
+                hash = (hash - pow_base_len*(S[i-len]-'a') ) ;               
 
             if (i>=len-1)
-            {
+            {                
                 if (Set.find(hash)!=Set.end())
                 {
                     len2start[len] = i-len+1;
                     return true;
-                }
+                }                
                 Set.insert(hash);
-            }
+            }          
         }
         return false;
     }
