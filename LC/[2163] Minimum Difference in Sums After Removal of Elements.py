@@ -18,6 +18,58 @@ class Solution:
 
         ttl = 0
         # processing left
+        for ii in range(3*N):  # from 0 to 2N-1
+            out = 0
+            if len(mxq) < N:
+                heappush(mxq, -nums[ii])
+            else:
+                out = -1 * heappushpop(mxq, -nums[ii])
+
+            ttl = ttl + nums[ii]-out
+            mns.append(ttl)
+
+        # print(" mns: ", mns)
+        # processing right
+        ttl = 0
+        for ii in reversed(range(3*N)):  # for the right 2N; => 1, 2
+            out = 0
+            if len(mnq) < N:
+                heappush(mnq, nums[ii])
+            else:
+                out = heappushpop(mnq, nums[ii])
+            ttl = ttl + nums[ii]-out
+
+            mxs.append(ttl)
+
+        mxs.reverse()  # N~2N-1
+        # print(" mxs: ", mxs)
+        ans = math.inf
+        for ii in range(N-1, 2*N):
+            ans = min(ans, mns[ii]-mxs[ii+1])
+
+        return ans
+
+
+#######################################
+
+
+class Solution:
+    def minimumDifference(self, nums: List[int]) -> int:
+        """
+        1. right min with size N
+        2. left max with size N
+        3. output min diff with ii as the partition
+        """
+        N = len(nums)//3
+
+        mxq = []
+        mxs = []
+
+        mnq = []
+        mns = []
+
+        ttl = 0
+        # processing left
         for ii in range(2*N):  # from 0 to 2N-1
             if ii < N-1:
                 ttl += nums[ii]
