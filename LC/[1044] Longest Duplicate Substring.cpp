@@ -31,8 +31,8 @@ public:
 
         for (int i=0; i<S.size(); i++)
         {
-            hash = (hash * base + (S[i]-'a')) % mod;
-            if (i>=len)
+            hash = (hash * base + (S[i]-'a')) % mod; //adding new char
+            if (i>=len) //rempove the exiting char in the beginning
                 hash = (hash - pow_base_len*(S[i-len]-'a') ) % mod;
 
             if (i>=len-1)
