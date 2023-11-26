@@ -17,10 +17,9 @@ class Codec:
         :rtype: str
         """
         # preorder traversal
-        if root is None: return '#'
-        return str(root.val)+ ',' + self.serialize(root.left)+ ',' + self.serialize(root.right)
-
-
+        if root is None:
+            return '#'
+        return str(root.val) + ',' + self.serialize(root.left) + ',' + self.serialize(root.right)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -28,16 +27,17 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        arr=data.split(",")
-        N=len(arr)
+        arr = data.split(",")
+        N = len(arr)
 
         def getNum(node):
-            if node is None: return 1
+            if node is None:
+                return 1  # here we return 1 cuz None also take space in the nodes array
             return 1+getNum(node.left)+getNum(node.right)
 
-
         def dfs(nodes, curr):
-            if nodes[curr] is None: return None
+            if nodes[curr] is None:
+                return None
 
             left = dfs(nodes, curr+1)
             left_sz = getNum(left)
@@ -48,23 +48,14 @@ class Codec:
 
             return nodes[curr]
 
-
-
-        nodes=[]
+        nodes = []
         for ii in range(N):
-            if arr[ii]=='#':
+            if arr[ii] == '#':
                 nodes.append(None)
             else:
                 nodes.append(TreeNode(int(arr[ii])))
 
         return dfs(nodes, 0)
-
-
-
-
-
-
-
 
 
 # Your Codec object will be instantiated and called as such:
