@@ -1,34 +1,26 @@
-from collections import deque
-
-
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        """
+        1. naive: O(NK)
+        2. sorted_list: O(nlogk)
+        3. monotone queue: o(N)
+        """
+        dq = collections.deque()
 
-        mxq = deque()
-        N = len(nums)
         res = []
+        for ii, nn in enumerate(nums):
+            # dq maintain the largest in the front and maintained the sequence
+            while dq and nums[dq[-1]] <= nn:
+                dq.pop()
 
-        """
-        1, 2, 3,   4, 5; k=3
-           ^ 
-                   ^
-           ii-k+1  ii
-        the window is (ii-k+1, ii)            
-        """
+            dq.append(ii)
 
-        for ii in range(N):
+            # remove those that is expired
+            while dq and dq[0] <= ii-k:
+                dq.popleft()
 
-            while len(mxq) > 0 and nums[ii] >= nums[mxq[-1]]:
-                mxq.pop()
-
-            mxq.append(ii)
-
-            if (ii-k+1) >= 0:  # we have the window of size k
-                res.append(nums[mxq[0]])
-                if len(mxq) > 0 and mxq[0] <= (ii-k+1):
-                    mxq.popleft()
+            # output the max if in scope
+            if ii >= k-1 and dq:
+                res.append(nums[dq[0]])
 
         return res
-
-
-# leetcode submit region end(Prohibit modification and deletion)
