@@ -265,6 +265,7 @@ $${\color{orange} Question \space List}$$
 - [1425]
 - [1438]
 - O(1) time output max value in sliding window
+- find max in sliding window
 
 [[0240] - <span style="color:yellow">M</span> - Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0240%5D%20Searh%20a%202D%20Matrix%20II.py)
