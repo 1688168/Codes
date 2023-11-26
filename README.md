@@ -259,7 +259,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Deque/239.Sliding-Window-Maximum) -
 [[Video]](https://www.youtube.com/watch?v=b1rqOQ5p6EA) -
-[`deque`][`sorted list`][`bisect`]
+[`deque`][`sorted list`][`bisect`][`SortedList`]
 
 - [862]
 - [1425]
@@ -320,11 +320,11 @@ $${\color{orange} Question \space List}$$
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
 
-[[0295] - <span style="color:red">H</span> - desc]() - 
+[[0295] - <span style="color:red">H</span> - Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) - 
 [[Python]]()
-[[CPP]]() -
-[[Video]]() -
-[`Patterns`]
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/295.Find-Median-from-Data-Stream) -
+[[Video]](https://www.youtube.com/watch?v=dy8AdRodlkQ) -
+[`heap`][`SortedList`]
 
 [[0297] - <span style="color:red">H</span> - Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0297%5D%20Serialize%20and%20Deserialize%20Binary%20Tree%20-%20BFS.py)
