@@ -162,6 +162,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[0135] - <span style="color:red">H</span> - Candy](https://leetcode.com/problems/candy/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Greedy/135.Candy/Readme.md) -
+[[Video]](https://www.youtube.com/watch?v=QzPWc0ilEek&t=3s) -
+[`Patterns`]
+
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0139%5D%20Word%20Break_trie.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
