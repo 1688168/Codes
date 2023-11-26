@@ -181,6 +181,18 @@ $${\color{orange} Question \space List}$$
 
 - [472] Concatenated Words
 
+[[0153] - <span style="color:yellow">M</span> - Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=JxoTDj-7tmo&t=909s) -
+[`Binary Search`]
+
+[[0154] - <span style="color:red">H</span> - Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/154.Find-Minimum-in-Rotated-Sorted-Array-II) -
+[[Video]](https://www.youtube.com/watch?v=JxoTDj-7tmo&t=909s) -
+[`Binary Search`]
+
 [[0155] - <span style="color:green">E</span> - Min Stack](https://leetcode.com/problems/min-stack/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0155%5D%20Min-Stack.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/155.Min-Stack) -
