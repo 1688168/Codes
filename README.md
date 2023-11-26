@@ -320,6 +320,12 @@ $${\color{orange} Question \space List}$$
 - Indexing Sort: O(N)
 - Binary Search: Nlog(N)
 
+[[0295] - <span style="color:red">H</span> - desc]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[0297] - <span style="color:red">H</span> - Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0297%5D%20Serialize%20and%20Deserialize%20Binary%20Tree%20-%20BFS.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/297.Serialize-and-Deserialize-Binary-Tree) -

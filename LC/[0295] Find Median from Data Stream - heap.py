@@ -1,17 +1,59 @@
-"""
-20230430 redo, T: 55.66
-"""
+################
+# 20231126: 67.49%
+################
 from heapq import *
+from heapq import heappush, heappop, heappushpop
+
+
 class MedianFinder:
 
     def __init__(self):
-        self.mxh=[]
-        self.mnh=[]                
+        self.mxq = []  # 0~mid
+        self.mnq = []  # mid~max
+
+    def addNum(self, num: int) -> None:
+
+        if self.mxq and num > self.mxq[0]*-1:
+            heappush(self.mnq, num)
+        else:
+            heappush(self.mxq, -num)
+
+        while self.mxq and len(self.mxq) - len(self.mnq) > 1:
+            heappush(self.mnq, -heappop(self.mxq))
+
+        while self.mnq and len(self.mnq) - len(self.mxq) > 1:
+            heappush(self.mxq, -heappop(self.mnq))
+
+    def findMedian(self) -> float:
+        if self.mxq and len(self.mxq) == len(self.mnq):
+            return (self.mxq[0]*-1 + self.mnq[0])/2
+        else:
+            if len(self.mxq) > len(self.mnq):
+                return -1*self.mxq[0]
+            else:
+                return self.mnq[0]
+
+# Your MedianFinder object will be instantiated and called as such:
+# obj = MedianFinder()
+# obj.addNum(num)
+# param_2 = obj.findMedian()
+
+
+#############
+20230430 redo, T: 55.66
+#############
+
+
+class MedianFinder:
+
+    def __init__(self):
+        self.mxh = []
+        self.mnh = []
 
     def rebalance(self, mxh, mnh):
         lx, ls = len(mxh), len(mnh)
-        if lx <=(ls+1): 
-            if len(self.mnh) > 0  and len(self.mxh) > 0 and (-self.mxh[0]) > self.mnh[0]:
+        if lx <= (ls+1):
+            if len(self.mnh) > 0 and len(self.mxh) > 0 and (-self.mxh[0]) > self.mnh[0]:
                 topx = -self.mxh[0]
                 topn = self.mnh[0]
 
@@ -30,13 +72,11 @@ class MedianFinder:
             heappush(self.mnh, num)
         self.rebalance(self.mxh, self.mnh)
 
-
     def findMedian(self) -> float:
-        if (len(self.mxh)+len(self.mnh))%2 == 0:
+        if (len(self.mxh)+len(self.mnh)) % 2 == 0:
             return (-self.mxh[0]+self.mnh[0])/2
         else:
             return -self.mxh[0]
-        
 
 
 # Your MedianFinder object will be instantiated and called as such:
@@ -55,9 +95,8 @@ class MedianFinder:
         : anything greater than mnq[0], push to mnq and rebalance
 
         """
-        self.mnq=[]
-        self.mxq=[]
-
+        self.mnq = []
+        self.mxq = []
 
     def addNum(self, num: int) -> None:
         def rebalance():
