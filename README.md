@@ -259,7 +259,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Deque/239.Sliding-Window-Maximum) -
 [[Video]](https://www.youtube.com/watch?v=b1rqOQ5p6EA) -
-[`deque`]
+[`deque`][`sorted list`][`bisect`]
 
 - [862]
 - [1425]
@@ -829,7 +829,7 @@ $${\color{orange} Question \space List}$$
 
 - PBDS (平板电视)
 - real-time sorting VS random access cannot co-exist
-- Python sortedList
+- Python sortedList (sorted_list, sorted list, SortedList)
 
 [[2104] - <span style="color:yellow">M</span> - Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2104%5D%20Sub%20of%20Subarray%20Ranges%20-%20O(N).py)
