@@ -94,8 +94,8 @@ datetime.datetime.today().strftime('%Y%m%d')
 
 > regular expression, pattern matchin
 ```
-pattern = r"*swap*"
-match = re.search(pattern, security_type.lower())
+pattern = r".*swap.*"
+match = re.search(pattern, security_type.lower(), flag=re.IGNORECASE)
 if match:
   print("matched)
 else:
