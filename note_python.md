@@ -91,3 +91,13 @@ datetime.datetime.strptime(as_of_date, '%Y-%m-%d')
 ```
 datetime.datetime.today().strftime('%Y%m%d')
 ```
+
+> regular expression, pattern matchin
+```
+pattern = r"*swap*"
+match = re.search(pattern, security_type.lower())
+if match:
+  print("matched)
+else:
+  print("unmatched")
+```
