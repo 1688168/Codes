@@ -509,6 +509,8 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`SQL`]
 
+- sql mod
+
 
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
