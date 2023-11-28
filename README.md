@@ -503,6 +503,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.bilibili.com/video/BV1GR4y1u74J/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Design`][`Trie`]
 
+[[0620] - <span style="color:green">E</span> - Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`SQL`]
+
+
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/632.Smallest-Range-Covering-Elements-from-K-Lists) -
