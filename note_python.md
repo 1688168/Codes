@@ -101,3 +101,9 @@ if match:
 else:
   print("unmatched")
 ```
+
+> jupyter notebook setup
+```
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+```
