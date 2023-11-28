@@ -611,6 +611,11 @@ c. move (slide) the window
 
 - [0472]
 
+# [`Optimization`]
+  1. Binary Searcy by Value (with count)
+  2. Dynamic programming
+  3. Greedy
+
 # [`Word Search`]
 
 - [0079]: given a word and a grid, return true/false if the word is in the grid
