@@ -107,3 +107,14 @@ else:
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 ```
+
+> json in sql server
+```
+create table schema.table_name
+(
+  AsOfDate datetime2 default getdate(),
+  Report nvarchar(max) constraint [constraintName] check (isjson(Report)=1)
+  ...
+  constraint PK_Name PRIMARY KEY CLUSTERED (f1, f2)
+)
+```
