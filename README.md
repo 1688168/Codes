@@ -724,7 +724,8 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`SQL`]
 
-- join with between, sql between
+- join with between, SQL between
+- SQL round
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
