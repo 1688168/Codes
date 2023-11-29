@@ -5,7 +5,10 @@ def average_selling_price(prices: pd.DataFrame, units_sold: pd.DataFrame) -> pd.
     units_sold.sort_values('purchase_date', inplace=True)
 
     # merges on matching `by` values, then latest `right_on` <= `left_on`
-    soldWithPrices = pd.merge_asof(units_sold, prices, by='product_id', left_on='purchase_date', right_on='start_date')
+    soldWithPrices = pd.merge_asof(units_sold, prices, 
+                                   by='product_id', 
+                                   left_on='purchase_date', 
+                                   right_on='start_date')
 
     ## In theory you should do this, but doesn't seem necessary to pass all test cases
     # badprice = soldWithPrices['end_date'] < soldWithPrices['purchase_date']

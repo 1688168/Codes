@@ -726,6 +726,8 @@ $${\color{orange} Question \space List}$$
 
 - join with between, SQL between
 - SQL round
+- Pandas sort_values
+- pandas merge_asof
 
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
