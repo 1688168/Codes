@@ -718,6 +718,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=U1nwBAIQ-oc) -
 [`stack`][`Greedy`][`parentheses`]
 
+[[1251] - <span style="color:green">E</span> - Average Selling Price](https://leetcode.com/problems/average-selling-price/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`SQL`]
+
 [[1254] - <span style="color:yellow">M</span> - Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/description/) - 
 [[Python]]()
 [[CPP]]() -
