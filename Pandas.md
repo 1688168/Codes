@@ -44,3 +44,37 @@ df=df.groupby('a_column', as_index=False)['the_column_to_aggregate'].sum()
 
 - df1 left join df2
 - on is default looking 'backward'
+
+> apply, map, applymap
+`map on series`
+```
+# create a new column that maps values on another column from string to num
+train['sex_num'] = train.Sex.map({'female':0, 'male':1})
+```
+`apply on Series`
+```
+# ex 1:
+train['name_length'] = train.name.apply(len)
+
+# ex 2:
+def my_function(my_list, position):
+    return my_list[position]
+- train.name.str.split(',').apply(my_function, position=0)
+```
+
+`apply on dataframe`
+
+```
+# get max on each column (axis=0)
+df.apply(max, axis=0)
+
+# (apply on each row) which column (name) has the max value
+
+df.apply(np.argmax, axis=1) 
+```
+
+`applymap`
+```
+# convert all values to flow
+df.applymap(float)
+```
