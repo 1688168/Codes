@@ -78,3 +78,13 @@ df.apply(np.argmax, axis=1)
 # convert all values to flow
 df.applymap(float)
 ```
+
+> read excel
+```
+df=pd.read_excel(os.path.join(input_filename), index_col=0)
+```
+
+> drop duplicate
+```
+df=df.drop_duplicates(subset=['SubportfolioID'], keep='first)
+```
