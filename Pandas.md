@@ -39,3 +39,8 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 ```
 df=df.groupby('a_column', as_index=False)['the_column_to_aggregate'].sum()
 ```
+
+> merge_asof(df1, df2, by='category', on='col1', direction='forward', allow_exact_matches=False, tolerance=pd.Timedelta('1s))
+
+- df1 left join df2
+- on is default looking 'backward'

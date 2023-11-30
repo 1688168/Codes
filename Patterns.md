@@ -347,8 +347,17 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
 
 # [`Greedy`]
-  1. Guess a solution (might or might not be the optimized solution)
-  2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
+
+1. Guess a solution (might or might not be the optimized solution)
+2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
+
+- [0055]
+- [0135]
+- [0402]
+- [0435]
+- [0995]
+- [1840]
+- [1846]
 
 # [`Heap`]
 
@@ -614,9 +623,10 @@ c. move (slide) the window
 - [0472]
 
 # [`Optimization`]
-  1. Binary Searcy by Value (with count)
-  2. Dynamic programming
-  3. Greedy
+
+1. Binary Searcy by Value (with count)
+2. Dynamic programming
+3. Greedy
 
 # [`Word Search`]
 
