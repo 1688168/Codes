@@ -347,6 +347,15 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
 
 # [`Greedy`]
+> classics
+- Huffman
+- Dijkstra (shortest distance)
+- Prim (MST)
+- Kruskal
+
+> Characteristics
+- always choose the local optimal solution and reach the global optimal solution
+- current sub-optimal solution cannot become global optimal solution with future decisions
 
 1. Guess a solution (might or might not be the optimized solution)
 2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem

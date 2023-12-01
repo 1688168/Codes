@@ -824,6 +824,14 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.bilibili.com/video/BV1xS4y1M7s8/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Tree`][`LCA`]
 
+[[1705] - <span style="color:green">E</span> - Project Employees I](https://leetcode.com/problems/project-employees-i/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`SQL`]
+
+- pandas: group by
+
 [[1857] - <span style="color:red">H</span> - Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1857%5D%20Largest%20Color%20Value%20in%20a%20Directed%20Graph.md)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1857.Largest-Color-Value-in-a-Directed-Graph) -
