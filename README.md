@@ -870,8 +870,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=Ct-seYTr1dM&t=237s) -
 [`Binary Search`][`Binary Search by Value`]
 
-- when processing pair from two arrays. fix one and binary_search (bisect) the other. This only requires 2nd array sorted. we do not need first array sorted. what a waste?
--
+- when processing pair from two arrays. fix one and binary_search (bisect) the other. This only requires 2nd array sorted. we do not need first array sorted. what a waste? (NlogN)
+- O(N) - two pointers solution (cf readme link)
 
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
