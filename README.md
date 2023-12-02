@@ -511,7 +511,6 @@ $${\color{orange} Question \space List}$$
 
 - sql mod
 
-
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/632.Smallest-Range-Covering-Elements-from-K-Lists) -
@@ -864,6 +863,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[2040] - <span style="color:red">H</span> - Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/2040.Kth-Smallest-Product-of-Two-Sorted-Arrays) -
+[[Video]](https://www.youtube.com/watch?v=Ct-seYTr1dM&t=237s) -
+[`Binary Search`]
 
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
