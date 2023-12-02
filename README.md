@@ -870,6 +870,8 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=Ct-seYTr1dM&t=237s) -
 [`Binary Search`][`Binary Search by Value`]
 
+- when processing pair from two arrays. fix one and binary_search (bisect) the other
+
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
