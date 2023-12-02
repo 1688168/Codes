@@ -868,7 +868,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/2040.Kth-Smallest-Product-of-Two-Sorted-Arrays) -
 [[Video]](https://www.youtube.com/watch?v=Ct-seYTr1dM&t=237s) -
-[`Binary Search`]
+[`Binary Search`][`Binary Search by Value`]
 
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
