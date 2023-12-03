@@ -1,3 +1,12 @@
+##############
+# 20231202
+##############
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        return sorted(nums)[-k]
+
+
+#########################
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """

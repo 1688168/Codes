@@ -92,24 +92,23 @@ class Solution:
 > rotate sorted array
 
 - [0033]: Binary Search on sorted-rotated array with unique numbers
+- [0153]
+- [0154]
+- [0240]
 - [0081]: Binary Search on sorted-rotated array with duplicate numbers
 - [0373]: kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
+- [0373] - (719, 1918, 2040)
 - [0378]: kth-smallest value in sorted matrix
 - [0668]: kth-smallest value in sorted matrix. Binary Search on two dimentional table (multiplication table)
 - [0719]: Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
-- [1918] kth smallest subarray sum
-
->
-
-- [240]
-- [373] - (719, 1918, 2040)
-- [378] - (240)
+- [1918]: kth smallest subarray sum
 - [2040]
+
 
 > Binary Search - Two dimentional
 > Binary Search by Value
 
-- [719]
+
 
 # [`Binary Index Tree (BIT)`]
 
@@ -347,13 +346,16 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [2282] [Video](https://www.youtube.com/watch?v=AgC28b_0ekM)
 
 # [`Greedy`]
+
 > classics
+
 - Huffman
 - Dijkstra (shortest distance)
 - Prim (MST)
 - Kruskal
 
 > Characteristics
+
 - always choose the local optimal solution and reach the global optimal solution
 - current sub-optimal solution cannot become global optimal solution with future decisions
 
