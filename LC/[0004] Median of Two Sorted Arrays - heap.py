@@ -1,4 +1,55 @@
+####################################
+# 20231203
+####################################
 from heapq import heappush, heappop, heappushpop
+
+
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        """
+        median -> kth smallest
+
+        """
+        l1 = len(nums1)
+        l2 = len(nums2)
+
+        def find_kth_smallest(nums1, nums2, k):  # kth, k is length
+            l1 = len(nums1)
+            l2 = len(nums2)
+            if l1 > l2:
+                return find_kth_smallest(nums2, nums1, k)
+
+            if l1 == 0:
+                return nums2[k-1]
+
+            mnq = []
+            ii, jj, cnt = 1, 1, 0
+            heappush(mnq, (nums1[0], 1))
+            heappush(mnq, (nums2[0], 2))
+
+            while mnq and cnt < k:
+                curr_v, curr_i = heappop(mnq)
+                if ii < l1 and curr_i == 1:
+                    heappush(mnq, (nums1[ii], 1))
+                    ii += 1
+                elif jj < l2:
+                    heappush(mnq, (nums2[jj], 2))
+                    jj += 1
+                cnt += 1
+
+            return curr_v
+
+        if (l1+l2) % 2 == 1:
+            return find_kth_smallest(nums1, nums2, (l1+l2)//2+1)
+        else:
+            kth_smallest = find_kth_smallest(nums1, nums2, (l1+l2)//2)
+            kth_plus_one_smallest = find_kth_smallest(
+                nums1, nums2, (l1+l2)//2+1)
+            return (kth_smallest+kth_plus_one_smallest)/2
+
+
+####################################
+####################################
 
 
 class Solution:
