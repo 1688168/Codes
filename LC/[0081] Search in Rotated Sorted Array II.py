@@ -15,7 +15,7 @@ class Solution:
             # this is genius
             #  ---------------------------------------------
             if (nums[mm] >= nums[0]) == (target >= nums[0]):  # mm and target are in the same side
-                #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            #  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                 if nums[mm] < target:
                     ll = mm+1
                 else:

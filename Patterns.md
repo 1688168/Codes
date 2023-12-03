@@ -88,14 +88,11 @@ class Solution:
 ```
 
 - [0004]: Binary search for median in two sorted Array
-
-> rotate sorted array
-
-- [0033]: Binary Search on sorted-rotated array with unique numbers
+- [0033]: rotated array: Binary Search on sorted-rotated array with unique numbers
 - [0153]
 - [0154]: Binary Search on sorted-rotated array with duplicate numbers
 - [0240]: 2D binary search element
-- [0081]:
+- [0081]: rotated array with duplicate
 - [0373]: kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
 - [0373] - (719, 1918, 2040)
 - [0378]: kth-smallest value in sorted matrix
