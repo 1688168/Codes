@@ -93,13 +93,13 @@ class Solution:
 - [0154]: find min in sorted-rotated array with duplicate numbers
 - [0240]: 2D binary search element
 - [0081]: rotated array with duplicate
-- [0373]: kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
+- [0373]: <span style="color:red">**pair-sum:**</span> kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
 - [0373] - (719, 1918, 2040)
 - [0378]: kth-smallest value in sorted matrix
 - [0668]: kth-smallest value in sorted matrix. Binary Search on two dimentional table (multiplication table)
-- [0719]: Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
+- [0719]: <span style="color:red">**pair-diff:**</span> Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
 - [1918]: kth smallest subarray sum
-- [2040]
+- [2040]: <span style="color:red">**pair-product:**</span> kth smallest product of two sorted array
 
 > Binary Search - Two dimentional
 > Binary Search by Value
