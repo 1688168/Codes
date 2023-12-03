@@ -89,8 +89,8 @@ class Solution:
 
 - [0004]: Binary search for median in two sorted Array
 - [0033]: rotated array: Binary Search on sorted-rotated array with unique numbers
-- [0153]
-- [0154]: Binary Search on sorted-rotated array with duplicate numbers
+- [0153]: find min in rotated array without duplicate
+- [0154]: find min in sorted-rotated array with duplicate numbers
 - [0240]: 2D binary search element
 - [0081]: rotated array with duplicate
 - [0373]: kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
@@ -476,6 +476,8 @@ c. element value is not equal to the destination value or no point of swapping
 - [224] basic Calculator
 
 # [`Quick Select`]
+
+> when you search for number, we can use quick-select. otherwise, try binary search
 
 - [0215] Kth-Largest-Element-in-an-Array (M)
 - [0324] Wiggle-Sort-II (H)
