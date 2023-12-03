@@ -1,6 +1,27 @@
 ############
+# 20231203
+############
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        ins, ine = newInterval
+
+        res = []
+        for ns, ne in intervals:
+            if ine < ns:
+                res.append((ins, ine))
+                ins, ine = ns, ne
+            elif ins <= ne and ns <= ine:
+                ins, ine = min(ns, ins), max(ne, ine)
+            else:
+                res.append((ns, ne))
+
+        res.append((ins, ine))
+        return res
+############
 # 20231030
 ############
+
+
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         ins, ine = newInterval
