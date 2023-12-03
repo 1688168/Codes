@@ -93,9 +93,9 @@ class Solution:
 
 - [0033]: Binary Search on sorted-rotated array with unique numbers
 - [0153]
-- [0154]
-- [0240]
-- [0081]: Binary Search on sorted-rotated array with duplicate numbers
+- [0154]: Binary Search on sorted-rotated array with duplicate numbers
+- [0240]: 2D binary search element
+- [0081]:
 - [0373]: kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
 - [0373] - (719, 1918, 2040)
 - [0378]: kth-smallest value in sorted matrix
@@ -104,11 +104,8 @@ class Solution:
 - [1918]: kth smallest subarray sum
 - [2040]
 
-
 > Binary Search - Two dimentional
 > Binary Search by Value
-
-
 
 # [`Binary Index Tree (BIT)`]
 
