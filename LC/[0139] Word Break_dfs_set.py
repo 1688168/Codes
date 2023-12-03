@@ -1,7 +1,29 @@
 ###########
-# 20231028
+# 20231203
 ###########
 from functools import lru_cache
+
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        word_set = set(wordDict)
+
+        @cache
+        def dfs(s):
+            if (N := len(s)) == 0:
+                return True
+
+            for ii in range(1, N+1):
+                if s[:ii] in word_set and dfs(s[ii:]):
+                    return True
+            return False
+
+        return dfs(s)
+
+
+###########
+# 20231028
+###########
 
 
 class Solution:

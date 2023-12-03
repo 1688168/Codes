@@ -633,10 +633,6 @@ c. move (slide) the window
 - [1871]
 - [2297] - Jump Game VIII - (DP + Monotonic Stack) (1944, 2282, )
 
-# [`Concatenated Word`]
-
-- [0472]
-
 # [`Optimization`]
 
 1. Binary Searcy by Value (with count)
@@ -655,6 +651,9 @@ c. move (slide) the window
 - [139]: Word Break I: given a word, can it be composed by a given dictionary
 - [140] Word Break II: set/Trie is your friend
 - [472] Concatenated Words
+
+# [`Concatenated Word`]
+- [0472]
 
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
 
