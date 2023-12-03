@@ -109,8 +109,8 @@ class Solution:
 - [1918]: kth smallest subarray sum
 - [2040]: <span style="color:red">**pair-product:**</span> kth smallest product of two sorted array
 
-  > Binary Search - Two dimentional
-  > Binary Search by Value
+> Binary Search - Two dimentional
+> Binary Search by Value
 
 # [`Binary Index Tree (BIT)`]
 
