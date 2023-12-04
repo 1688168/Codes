@@ -118,3 +118,11 @@ grouped_medium = df.groupby('artist')['medium']
 # transform will call the function for each groupped dataframe
 df.loc[:, 'medium'] = grouped_medium.transform(fill_values) #call transform on groupped dataframe.
 ```
+
+> groupby aggregation
+```
+grouped_acq_year = df.groupby('artist')['acquisitionYear']
+min_acquisition_year = grouped_acq_year.agg(np.min)
+or
+min_acquisition_year = grouped_acq_year.min()
+```
