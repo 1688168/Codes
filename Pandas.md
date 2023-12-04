@@ -88,3 +88,33 @@ df=pd.read_excel(os.path.join(input_filename), index_col=0)
 ```
 df=df.drop_duplicates(subset=['SubportfolioID'], keep='first)
 ```
+
+> copy dataframe
+```
+df2 = df.copy()
+```
+
+
+> read pickle
+```
+df = pd.read_pickle(os.path.join('..', 'file.pickle'))
+```
+
+> groupby, transform
+```
+def transform_df(source_df): # original dataframe
+    group_dfs=[]
+    # group and process each groupped dataframe
+    for name, group_df in source_df.groupby('artist'):
+        filled_df = group_df.copy()
+        filled_df.loc[:, 'medium'] = fill_values(group_df['medium])
+        group_dfs.append(filled_df)
+    new_df = pd.concat(group_dfs)
+    return new_df
+
+###### using built-in transform
+grouped_medium = df.groupby('artist')['medium']
+
+# transform will call the function for each groupped dataframe
+df.loc[:, 'medium'] = grouped_medium.transform(fill_values) #call transform on groupped dataframe.
+```
