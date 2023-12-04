@@ -126,3 +126,8 @@ min_acquisition_year = grouped_acq_year.agg(np.min)
 or
 min_acquisition_year = grouped_acq_year.min()
 ```
+
+> assign
+```
+df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
+```
