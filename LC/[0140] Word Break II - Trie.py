@@ -1,8 +1,68 @@
 #############
+# 20231203
+#############
+from collections import deque
+from functools import lru_cache
+
+
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def add(self, w):
+        if w is None or len(w) == 0:
+            return
+        itr = self.root
+
+        for c in w:
+            if c not in itr.children:
+                itr.children[c] = TrieNode()
+            itr = itr.children[c]
+
+        itr.is_word = True
+
+    def is_word(self, w):
+        if w is None or len(w) == 0:
+            return False
+
+        itr = self.root
+        for c in w:
+            if c not in itr.children:
+                return False
+            itr = itr.children[c]
+
+        return itr.is_word
+
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+        t = Trie()
+        for w in wordDict:
+            t.add(w)
+
+        def dfs(s, path):
+            if s is None or len(s) == 0:
+                res.append(" ".join(path))
+                return
+
+            for sz in range(1, len(s)+1):
+                if t.is_word(s[:sz]):
+                    dfs(s[sz:], path+[s[:sz]])
+
+        res = []
+        path = []
+        dfs(s, path)
+        return res
+
+#############
 # 20230915
 #############
-from functools import lru_cache
-from collections import deque
 
 
 class TrieNode:
