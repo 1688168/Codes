@@ -107,7 +107,7 @@ train['sex_num'] = train.Sex.map({'female':0, 'male':1})
 > drop duplicates
 
 ```
-df=df.drop_duplicates(keep='first)
+df=df.drop_duplicates(keep='first')
 ```
 
 ### > unique values:
