@@ -151,7 +151,7 @@ df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
 
 # <span style="color:green">====================</span>
 
-# <span style="color:blue"> Group by</span>
+# <span style="color:blue"> Groupby</span>
 
 # <span style="color:green">====================</span>
 
@@ -237,4 +237,32 @@ groupby.apply(custom_function)
 
 ```
 sectors.get_group("Energy")
+```
+
+# <span style="color:green">====================</span>
+
+# <span style="color:blue"> Multiindex</span>
+
+# <span style="color:green">====================</span>
+
+> create multiindex
+
+```
+scoring.set_index(['playerID','year'])
+```
+
+> multiindex basic operations
+
+```
+scoring.groupby(level=1)['goals'].max()
+scoring.groupby(level='year')['goals'].max()
+```
+
+> multiindex object, multiindex slicing
+
+```
+idx = pd.IndexSlice
+scoring.sort_index() #sort before slicing
+scoring.loc[idx['aaltoan01', 1997:2000], :]
+scoring.loc[idx[:, 1997:2000], :]
 ```
