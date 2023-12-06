@@ -280,4 +280,8 @@ mi.index.nlevels
 ```
 # this is returning max index of each group by year (remember this is grouping on multiindex)
 mi.groupby(level="year")['G'].idxmax().head()
+
+# how to find the whole row from dataframe that is with max value per some kind of groupping?
+# retrieving the whole record by idx returned from idxmax
+mi.loc[mi.groupby(level="year")['G'].idxmax()].head()
 ```
