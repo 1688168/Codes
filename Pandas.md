@@ -266,3 +266,18 @@ scoring.sort_index() #sort before slicing
 scoring.loc[idx['aaltoan01', 1997:2000], :]
 scoring.loc[idx[:, 1997:2000], :]
 ```
+
+> multiindex number of level
+
+```
+len(mi.index.levels)
+or
+mi.index.nlevels
+```
+
+> find index of max value in each group, groupby multiindex
+
+```
+# this is returning max index of each group by year (remember this is grouping on multiindex)
+mi.groupby(level="year")['G'].idxmax().head()
+```
