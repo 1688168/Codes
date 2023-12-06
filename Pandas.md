@@ -36,6 +36,12 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
 # <span style="color:green">====================</span>
 
+> write to pickle
+
+```
+team_splits.to_pickle(os.path.join("..", "some_file_name"))
+```
+
 > read pickle
 
 ```
@@ -251,6 +257,13 @@ sectors.get_group("Energy")
 scoring.set_index(['playerID','year'])
 ```
 
+> create multiindex from array
+
+```
+midx = pd.MultiIndex.from_arrays([months, metrics])
+team_splits.columns = midx
+```
+
 > multiindex basic operations
 
 ```
@@ -258,19 +271,29 @@ scoring.groupby(level=1)['goals'].max()
 scoring.groupby(level='year')['goals'].max()
 ```
 
-> multiindex object, multiindex slicing
+> multiindex object, multiindex slicing, multiindex sorting
 
 ```
 idx = pd.IndexSlice
 scoring.sort_index() #sort before slicing
 scoring.loc[idx['aaltoan01', 1997:2000], :]
 scoring.loc[idx[:, 1997:2000], :]
+
+# another sorting example
+mi = mi.sort_index(level='year')
 ```
 
 > is multiindex sorted
 
 ```
 mi.index.is_lexsorted()
+```
+
+> swap index level
+
+```
+swapped = mi.swaplevel()
+
 ```
 
 > multiindex number of level
@@ -290,4 +313,51 @@ mi.groupby(level="year")['G'].idxmax().head()
 # how to find the whole row from dataframe that is with max value per some kind of groupping?
 # retrieving the whole record by idx returned from idxmax
 mi.loc[mi.groupby(level="year")['G'].idxmax()].head()
+```
+
+> get locations from index slicing
+
+```
+# this is getting an list of index locations per a given multiindx slicing
+loc = mi.index.get_loc((idx['aaltoan01':'adamscr01'], 1007:2000))
+sliced = mi.iloc[locs, :]
+```
+
+> get many locs from multiindex; slicing multiindex and use it to retrive rows from original dataframe
+
+```
+import numpy as np
+def get_many_locs(df, slices):
+    arr = np.empty(0, dtype="int")
+    for s in slices:
+        locs = df.index.get_locs((s))
+        arr = np.concatenate((arr, locs))
+    return arr
+
+
+locs = get_many_locs(mi, (idx['aaltoan01':'adamscr01', 1997:2000],
+                          idx['aaltoan01':'adamscr01', 2004:206]))
+
+sliced = mi.iloc[locs, :]
+```
+
+> stack/undstack multiindex
+
+```
+# transpose one level of multiIndex from columns to row (from wide to long dataframe)
+team_splits = team_splits.stack(level=0)
+
+# swaplevel, reorder level
+team_splits = team_splits.swaplevel(1, 2)
+
+team_splits = team_splits.reorder_level([2,0,1])
+
+# transpose a row index to column
+team_splits.unstack(level=['year', 'month'])
+```
+
+> change multiIndex name
+
+```
+team_splits.index.levels[2].name="month"
 ```
