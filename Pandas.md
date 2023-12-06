@@ -267,6 +267,12 @@ scoring.loc[idx['aaltoan01', 1997:2000], :]
 scoring.loc[idx[:, 1997:2000], :]
 ```
 
+> is multiindex sorted
+
+```
+mi.index.is_lexsorted()
+```
+
 > multiindex number of level
 
 ```
