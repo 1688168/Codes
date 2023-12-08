@@ -46,6 +46,7 @@ team_splits.to_pickle(os.path.join("..", "some_file_name"))
 
 ```
 df = pd.read_pickle(os.path.join('..', 'file.pickle'))
+df.to_pickle(os.path.join("..", "filename.pickle"))
 ```
 
 > read excel
@@ -155,6 +156,13 @@ df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
 
 # <span style="color:green">====================</span>
 
+> Stack/Unstack
+
+```
+team_splits = team_splits.stack(level=0) #long format
+team_splits.unstack(level=["year", "month"]).head() # wide format
+```
+
 # <span style="color:green">====================</span>
 
 # <span style="color:blue"> Groupby</span>
@@ -260,6 +268,7 @@ scoring.set_index(['playerID','year'])
 > create multiindex from array
 
 ```
+months = team_splits.columns.map(lambda x: x[:3])
 midx = pd.MultiIndex.from_arrays([months, metrics])
 team_splits.columns = midx
 ```
