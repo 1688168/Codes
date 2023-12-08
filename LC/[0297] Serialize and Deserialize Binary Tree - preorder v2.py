@@ -8,9 +8,6 @@
 #         self.left = None
 #         self.right = None
 
-from collections import deque
-
-
 class Codec:
 
     def serialize(self, root):
