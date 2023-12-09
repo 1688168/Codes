@@ -837,6 +837,12 @@ $${\color{orange} Question \space List}$$
 
 - pandas: group by
 
+[[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1840.Maximum-Building-Height) -
+[[Video]](https://www.youtube.com/watch?v=m9-ZkjuZmbU) -
+[`Greedy`]
+
 [[1857] - <span style="color:red">H</span> - Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1857%5D%20Largest%20Color%20Value%20in%20a%20Directed%20Graph.md)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1857.Largest-Color-Value-in-a-Directed-Graph) -
