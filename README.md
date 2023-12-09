@@ -655,6 +655,12 @@ $${\color{orange} Question \space List}$$
 
 - [1254]
 
+[[1028] - <span style="color:red">H</span> - Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1028.Recover-a-Tree-From-Preorder-Traversal) -
+[[Video]](https://www.youtube.com/watch?v=IKyFotRqM2w) -
+[`Tree`]
+
 [[1044] - <span style="color:red">H</span> - Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/1044.Longest-Duplicate-Substring) -
