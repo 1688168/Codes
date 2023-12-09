@@ -142,6 +142,11 @@ df2 = df.copy()
 
 ```
 df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
+master = master.assign(birthDate = pd.to_datetime({'year': master.birthYear,
+                                                   'month': master.birthMon,
+                                                   'day': master.birthDay}))
+
+master.master.drop(columns=['birthYear', 'birthMon', 'birthDay'])
 ```
 
 # <span style="color:green">====================</span>
@@ -149,6 +154,54 @@ df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
 # <span style="color:blue"> Timestamp</span>
 
 # <span style="color:green">====================</span>
+
+> declare timestamp
+
+```
+ts = pd.Timestamp("1997-03-04 14:21:54")
+
+# get year from ts
+ts.year
+
+# get day_name from ts
+ts.day_name()
+
+# with timezone
+tsz = tsz.tz_localize('America/Toronto')
+Timestamp('1975-03-04 00:00:00-0500', tz='America/Toronto')
+
+# convert datetime to string
+string = master.birthDate.dt.strftime('%Y-%d-%m')
+
+# from string to date - here convert a series of date_string to date-series
+try:
+    dates = pd.to_datetime(strings, format="%Yxx%mxx%d)
+except Exception as e:
+    print(e)
+```
+
+> Timedelta
+
+```
+td = pd.Timedelta('3 days 02:13:10')
+
+# timedelta components
+diff.components
+- diff = diff + '5H' - '10M'
+- diff.round('10D')
+- diff.round('1H')
+```
+
+> Period
+
+```
+p = pd.Period('1999-03', 'M')
+p.start_time
+p.end_time
+p.start_time < ts < p.end_time
+
+birth_dates.resample('1M') # resample period, resize period
+```
 
 # <span style="color:green">====================</span>
 
