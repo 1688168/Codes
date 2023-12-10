@@ -380,8 +380,17 @@ $${\color{orange} Question \space List}$$
 [[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/347.Top-K-Frequent-Elements) -
-[[Video]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
+[[video1]](https://www.bilibili.com/video/BV12K411w7J8/?vd_source=c1f78303f3760ca1601e9654954004a6)
+[[Video2]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
+
+[[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
+[[Video]](https://www.youtube.com/watch?v=b9gMT2sqeJI) -
+[`Intervals`][`Segment Tree`]
+
+- [1109]
 
 [[0373] - <span style="color:yellow">M</span> - Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) - 
 [[Python]]()
