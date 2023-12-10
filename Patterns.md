@@ -492,6 +492,10 @@ c. element value is not equal to the destination value or no point of swapping
 - [0347] Top-K-Frequent-Elements (M+)
 - [0973] K-Closest-Points-to-Origin (M)
 
+# [`Segment Tree`]
+
+- [0370]
+
 # [`Sliding Window`]`
 
 [1151]
@@ -653,6 +657,7 @@ c. move (slide) the window
 - [472] Concatenated Words
 
 # [`Concatenated Word`]
+
 - [0472]
 
 # [[`Word Ladder`]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.md)
