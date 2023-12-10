@@ -637,7 +637,7 @@ $${\color{orange} Question \space List}$$
 [[0946] - <span style="color:yellow">M</span> - Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/946.Validate-Stack-Sequences) -
-[[Video]](https://www.youtube.com/watch?v=zeCItXGLw0w) -
+[[video]](https://www.youtube.com/watch?v=zeCItXGLw0w) -
 [`Stack`]
 
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
@@ -645,6 +645,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/973.K-Closest-Points-to-Origin) -
 [[Video]](https://www.youtube.com/watch?v=xi4QVECpmxQ) -
 [`Quick`]
+
+[[0986] - <span style="color:yellow">M</span> - Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=yqSvsHA08w4) -
+[`Intervals`]
 
 [[0990] - <span style="color:yellow">M</span> - Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) - [[Python - UnionFind]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20Union%20Find.py)
 [[Python - DFS]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0990%5D%20Satisfiability%20of%20Equality%20Equations%20-%20DFS.py)
