@@ -410,11 +410,12 @@ c. element value is not equal to the destination value or no point of swapping
 > - typically need to sort
 > - the initial (cs, ce)=(-math.inf, -math.inf) or intervals[0]?
 
-- [0056]
-- [0057]
-- [0252] Meeting-Rooms (M)
-- [0253] Meeting-Rooms-II (M+)
-- [0370] Range-Addition (H-)
+- [0056] merge interval
+- [0057] insert inverval
+- [0986] intersect of interval from two sorted list of intervals
+- [0252] Meeting-Rooms: can attent all meetings?
+- [0253] Meeting-Rooms-II: min meeting room required
+- [0370] Range-Addition: sweep line
 - [0495]
 - [0759] Employee-Free-Time (M+)
 - [0763]
