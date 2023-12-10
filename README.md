@@ -284,9 +284,9 @@ $${\color{orange} Question \space List}$$
 
 [[0252] - <span style="color:green">E</span> - Meeting Rooms](https://leetcode.com/problems/meeting-rooms/description/) - 
 [[Python]]()
-[[CPP]]() -
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/252.Meeting-Roomsb) -
 [[Video]]() -
-[`Intervals`]
+[`Intervals`][`Sweep Line`]
 
 [[0253] - <span style="color:yellow">M</span> - Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) - 
 [[Python]]()
@@ -355,6 +355,12 @@ $${\color{orange} Question \space List}$$
 
 - review search in an array
 - DFS: pruning/eliminate duplication/memo
+
+[[0307] - <span style="color:yellow">M</span> - Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/307.Range-Sum-Query-Mutable) -
+[[Video]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
+[`Segment Tree`]
 
 [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
@@ -683,7 +689,7 @@ $${\color{orange} Question \space List}$$
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/1109.Corporate-Flight-Bookings) -
 [[Video]](https://www.youtube.com/watch?v=bfzEK_mkmBk) -
-[`Sweep Line`][`Range Addition`]
+[`Sweep Line`][`Range Addition`][`Diff Array`]
 
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
