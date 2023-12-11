@@ -118,3 +118,6 @@ create table schema.table_name
   constraint PK_Name PRIMARY KEY CLUSTERED (f1, f2)
 )
 ```
+
+> Dataframe style, Dataframe to HTML, Dataframe to PDF
+* https://github.com/liannewriting/YouTube-videos-public/blob/main/generate-reports-with-python-sp500/generate_reports_with_python.ipynb
