@@ -514,4 +514,21 @@ team_splits.index.levels[2].name="month"
 - df.style.format.({'SumSales': '${0:,0f}'}, #thousand seperator
                     'PercSales':{:.0%}, # percent
                     'numSales':'{:0>3d}') #padding zero
+
+# highlight max/min
+df.style.highlight_max(subset=['col_list'], color="red")
+df.style.highlight_between(left=5000, right=10000, subset=['col'])
+df.style.highlight_quantiles(q_left=0.25, q_right=0.75, subset=['col'])
+
+# applymap for cell color
+def add_color(x):
+    if x < 50:
+        color='red'
+    elif x < 100:
+        color='yellow'
+    else:
+        color='blue'
+    return f'background:{color}'
+
+df.style.applymap(add_color, subset=['col_list']) 
 ```
