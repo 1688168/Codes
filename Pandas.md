@@ -504,3 +504,14 @@ team_splits.unstack(level=['year', 'month'])
 ```
 team_splits.index.levels[2].name="month"
 ```
+# <span style="color:green">====================</span>
+
+# <span style="color:blue"> formatting, styling</span>
+
+# <span style="color:green">====================</span>
+```
+# percentage, dollar sign, padding
+- df.style.format.({'SumSales': '${0:,0f}'}, #thousand seperator
+                    'PercSales':{:.0%}, # percent
+                    'numSales':'{:0>3d}') #padding zero
+```
