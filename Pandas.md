@@ -32,6 +32,20 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
 # <span style="color:green">====================</span>
 
+# <span style="color:blue"> Series </span>
+
+# <span style="color:green">====================</span>
+
+> Create Series
+
+```
+# create series from dataframe column.
+# here master.index is userId (series value) and master.birthDate become the index as date
+birth_dates = pd.Series(master.index, index=master.birthDate)
+```
+
+# <span style="color:green">====================</span>
+
 # <span style="color:blue"> Input/Output</span>
 
 # <span style="color:green">====================</span>
@@ -61,10 +75,58 @@ df=pd.read_excel(os.path.join(input_filename), index_col=0)
 
 # <span style="color:green">====================</span>
 
+> find unique count
+
+```
+teams.nunique(y)
+```
+
+> set index
+
+```
+scoring.reset_index(drop=True, inplace=True)
+```
+
+> count
+
+```
+master["pos"].value_counts()
+```
+
+> find null count
+
+```
+master["playerID"].pope(pd.isnull).value_count()
+or
+isnull(master["playerID"]).value_counts()
+master = master.filter(regex="(playerID|pos|^birth)|(Namd$)")
+```
+
 > drop columns
 
 ```
+columns_to_keep=["c1", "c2", ...]
+master.filter(columns_to_keep).head()
 
+```
+
+> dataframe memory size
+
+```
+def mem_mib(df):
+    print("{0:.2f} MiB").format(df.memory_usage().sum()/(1024*1024))
+```
+
+> drop rows
+
+```
+master = master.dropna(subset=["playerID"], how="all")
+```
+
+> categorical
+
+```
+pd.Categorical(master["pos"])
 ```
 
 # <span style="color:green">====================</span>
@@ -172,12 +234,17 @@ Timestamp('1975-03-04 00:00:00-0500', tz='America/Toronto')
 
 # convert datetime to string
 string = master.birthDate.dt.strftime('%Y-%d-%m')
+parsed = pd.to_datetime(string, format="%Yx%mxx%d", errors='coerce')
+parsed = pd.to_datetime(string, format="%Yx%mxx%d", errors='ignore')
 
 # from string to date - here convert a series of date_string to date-series
 try:
     dates = pd.to_datetime(strings, format="%Yxx%mxx%d)
 except Exception as e:
     print(e)
+
+
+
 ```
 
 > Timedelta
@@ -201,6 +268,20 @@ p.end_time
 p.start_time < ts < p.end_time
 
 birth_dates.resample('1M') # resample period, resize period
+```
+
+> add date to the whole series
+
+```
+birth_date.shift(1, freq="D")
+```
+
+> Business date
+
+```
+from pandas.tseries.offsets import BDay
+p=birth_dates.index[2]
+print(p.to_timestamp()+BDay(7))
 ```
 
 # <span style="color:green">====================</span>
