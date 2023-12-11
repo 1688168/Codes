@@ -80,6 +80,13 @@ class Solution:
 
 > when you see anything that is represented in lower case english letters, think of can we try all 26 letters on same calc
 
+# [`Arrangement with Stride`]
+
+1. simulation (PQ) - if the question is asking print out the actual arrangement
+2. greedy
+
+- [0621]
+
 # [`Binary Search`]
 
 ```
