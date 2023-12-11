@@ -526,6 +526,12 @@ $${\color{orange} Question \space List}$$
 
 - sql mod
 
+[[0621] - <span style="color:yellow">M</span> - Task Scheduler](https://leetcode.com/problems/task-scheduler/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/621.Task-Scheduler) -
+[[Video]](https://www.youtube.com/watch?v=3DZE7cfgYyg) -
+[`Intervals`][`Sweep Line`]
+
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/632.Smallest-Range-Covering-Elements-from-K-Lists) -
