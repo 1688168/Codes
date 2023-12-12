@@ -5,3 +5,4 @@
 - used to calc range sum with update
 - http://www.cnblogs.com/grandyang/p/4985506.html
 - Use less than O(N) time to find subarray sum
+- Template: https://github.com/wisdompeak/LeetCode/blob/master/Template/Binary_Index_Tree/BIT.cpp

@@ -245,8 +245,7 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=nGGF_jQH0GQ) -
 [`Trie`]
 
-[[0213] - <span style="color:yellow">M</span> - House Robber II
-](https://leetcode.com/problems/house-robber-ii/) - 
+[[0213] - <span style="color:yellow">M</span> - House Robber II](https://leetcode.com/problems/house-robber-ii/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0213%5D%20House%20Robber%20II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/213.House-Robber-II) -
 [[Video]](https://www.youtube.com/watch?v=5NsRK9TDCRo) -
@@ -361,15 +360,16 @@ $${\color{orange} Question \space List}$$
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/307.Range-Sum-Query-Mutable) -
 [[video-Binary Index Tree]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
 [[Video-segment tree]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
-
 [`Segment Tree`][`classic`][`Binary Index Tree`]
 
 - Segment Tree Intro/Classic
-  [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
+- Binary Index Tree [[template]](https://github.com/wisdompeak/LeetCode/blob/master/Template/Binary_Index_Tree/BIT.cpp)
+
+[[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
-  [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/309.Best-Time-to-Buy-and-Sell-Stock-with-Cooldown) -
-  [[Video]](https://www.youtube.com/watch?v=jNy8yM0NBdw) -
-  [`DP`]
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/309.Best-Time-to-Buy-and-Sell-Stock-with-Cooldown) -
+[[Video]](https://www.youtube.com/watch?v=jNy8yM0NBdw) -
+[`DP`]
 
 [[0324] - <span style="color:yellow">M</span> Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
