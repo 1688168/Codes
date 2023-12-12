@@ -364,6 +364,9 @@ $${\color{orange} Question \space List}$$
 
 - Segment Tree Intro/Classic
 - Binary Index Tree [[template]](https://github.com/wisdompeak/LeetCode/blob/master/Template/Binary_Index_Tree/BIT.cpp)
+- [[python solution]](https://yunrui-li.medium.com/leetcode-binary-index-tree-59fc04d8d20d)
+- [303]
+- [315]
 
 [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
 [[Python]]()
@@ -1261,8 +1264,9 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
-# [[`Usefult Sites`]]
+# [`Usefult Links`]
 
 - [[GrandYang - Official]](https://grandyang.com/)
 - [[GrandYang - YouTube]](https://www.youtube.com/@grandyang8/featured)
 - [[GrandYang - Github]](https://github.com/grandyang/leetcode)
+- [[yunrui-li]](https://yunrui-li.medium.com/)
