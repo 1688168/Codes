@@ -87,6 +87,10 @@ class Solution:
 
 - [0621]
 
+# [`Binary Index Tree`]
+
+- https://www.cnblogs.com/grandyang/p/4985506.html
+
 # [`Binary Search`]
 
 ```

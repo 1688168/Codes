@@ -359,10 +359,10 @@ $${\color{orange} Question \space List}$$
 [[0307] - <span style="color:yellow">M</span> - Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/307.Range-Sum-Query-Mutable) -
-[[video1]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
+[[video-Binary Index Tree]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
 [[Video-segment tree]](https://www.youtube.com/watch?v=hdkB8q77XSE) -
 
-[`Segment Tree`][`classic`]
+[`Segment Tree`][`classic`][`Binary Index Tree`]
 
 - Segment Tree Intro/Classic
   [[0309] - <span style="color:yellow">M</span> - Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) - 
@@ -1260,3 +1260,9 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+# [[`Usefult Sites`]]
+
+- [[GrandYang - Official]](https://grandyang.com/)
+- [[GrandYang - YouTube]](https://www.youtube.com/@grandyang8/featured)
+- [[GrandYang - Github]](https://github.com/grandyang/leetcode)
