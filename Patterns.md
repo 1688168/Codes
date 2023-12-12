@@ -503,6 +503,12 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Segment Tree`]
 
+```
+- find range sum
+- `binary index tree` is subset of `segment tree`
+- less coding for `binary index tree`, otherwise, `segment tree` can cover
+```
+
 - [0307] Basic
 - [0370]
 
