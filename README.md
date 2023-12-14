@@ -1267,6 +1267,7 @@ $${\color{orange} Question \space List}$$
 # [`Usefult Links`]
 
 - [[Wisdompeak-Github]](https://github.com/wisdompeak/LeetCode/tree/master)
+- [[Wisdompeak-Excel]](https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/edit#gid=0)
 - [[GrandYang - Official]](https://grandyang.com/)
 - [[GrandYang - YouTube]](https://www.youtube.com/@grandyang8/featured)
 - [[GrandYang - Github]](https://github.com/grandyang/leetcode)
