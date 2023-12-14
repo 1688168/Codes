@@ -127,3 +127,15 @@ create table schema.table_name
 colors = ['cyan', 'magenta', 'yellow', 'black']
 cyan, magenta, *other = colors
 ```
+
+> http request
+```
+res=requests.get(url, verify=False, params={'key1': val1, 'key2': val2})
+if res.status_code !=200:
+  print("handle failed status")
+
+res = requests.post(url, json={})
+if res.status_code !=200:
+  print("handle failed status")
+
+```
