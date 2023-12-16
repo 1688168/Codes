@@ -1,26 +1,20 @@
-############
-# 20231112
-############
 class Solution:
     def trap(self, height: List[int]) -> int:
-        """
-        I.
-          - record prev_max, next_max in one pass
-        II.
-          - calc watter accumulation
-        """
+        h = height
         N = len(height)
         prev_max = [0]*N
         next_max = [0]*N
+        prev_max[0] = h[0]
+        next_max[-1] = h[-1]
         for ii in range(1, N):
-            prev_max[ii] = max(prev_max[ii-1], height[ii-1])
-            next_max[N-1-ii] = max(next_max[N-1-ii+1], height[N-1-ii+1])
+            prev_max[ii] = max(prev_max[ii-1], h[ii])
+            next_max[N-1-ii] = max(next_max[N-1-ii+1], h[N-1-ii])
 
-        ans = 0
-        for ii, hh in enumerate(height):
-            ans += (max(min(prev_max[ii], next_max[ii])-hh, 0))
+        acc = 0
+        for ii in range(N):
+            acc += max(min(prev_max[ii], next_max[ii])-h[ii], 0)
 
-        return ans
+        return acc
 
 
 ############
