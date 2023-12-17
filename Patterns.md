@@ -375,7 +375,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 1. Guess a solution (might or might not be the optimized solution)
 2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
 
-- [0042]
+- [0042]: trapping rain water
+- [0045]: Jump Game II: min steps to reaach the end
 - [0055]: Jump Game: can you reach the end
 - [0134]
 - [0135]
