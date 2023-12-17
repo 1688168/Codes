@@ -633,7 +633,7 @@ $${\color{orange} Question \space List}$$
 
 [[0881] - <span style="color:yellow">M</span> - Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) - 
 [[Python]]()
-[[CPP]]() -
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/881.Boats-to-Save-People) -
 [[Video]](https://www.youtube.com/watch?v=yX5zRzTbeJc) -
 [`Greedy`]
 
