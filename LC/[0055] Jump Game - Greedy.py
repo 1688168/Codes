@@ -1,4 +1,18 @@
 #############
+# 20231216
+#############
+        N=len(nums)
+
+        max_reachable=nums[0] # 2
+        # 2 3 1 1 4
+        for ii, nn in enumerate(nums):
+            #print("ii: ", ii, " max_reachable: ", max_reachable)
+            if ii > max_reachable: return False # ii=2
+            if max_reachable >= N-1: return True
+            max_reachable=max(max_reachable, ii+nn) #4
+        return True
+
+#############
 # 20231130
 #############
 class Solution:
