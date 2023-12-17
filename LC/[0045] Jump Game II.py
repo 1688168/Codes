@@ -8,6 +8,7 @@ class Solution:
         => min jumps
         => from the range we can reach from current spot, select the one we can jump the farest.
         => Greedy: on each jump, we jump to the spot where we can reach the max_reachable
+        => shortest distance => BFS => how many level we reach the end?
         """
         N = len(nums)
         ll, rr = 0, 0
