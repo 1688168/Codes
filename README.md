@@ -162,6 +162,12 @@ $${\color{orange} Question \space List}$$
 [[Video]]() -
 [`Patterns`]
 
+[[0134] - <span style="color:yellow">M</span> - Gas Station](https://leetcode.com/problems/gas-station/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=lJwbPZGo05A) -
+[`Greedy`]
+
 [[0135] - <span style="color:red">H</span> - Candy](https://leetcode.com/problems/candy/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Greedy/135.Candy/Readme.md) -
