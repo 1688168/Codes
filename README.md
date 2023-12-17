@@ -46,12 +46,13 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=e-UALGfQpOk) -
 [`Binary Search`]
 
-- [81]
-  [0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) -
-  [[Python]]()
-  [[CPP]]() -
-  [[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
-  [`Monotonic Stack`][`Tow pointers`]
+- [0081]
+
+[0042] - <span style="color:red">H</span> - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=LArMcFpCK-M&list=PPSV&t=1142) -
+[`Monotonic Stack`][`Tow pointers`]
 
 - Method I: two pass
 - Method II: monotonic stack
@@ -60,6 +61,12 @@ $${\color{orange} Question \space List}$$
 - One pass monotonic stack
 - [0084]
 - [2334]
+
+[[0045] - <span style="color:yellow">M</span> - Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/045.Jump-Game-II) -
+[[Video]](https://www.youtube.com/watch?v=Ua_Vqtdd61E) -
+[`Greedy`]
 
 [[0046] - <span style="color:yellow">M</span> - Permutations](https://leetcode.com/problems/permutations/description/) - 
 [[Python]]()
