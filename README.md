@@ -709,6 +709,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=IKyFotRqM2w) -
 [`Tree`]
 
+[[1029] - <span style="color:yellow">M</span> - Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=d-B_gk_gJtQ) -
+[`Greedy`]
+
 [[1044] - <span style="color:red">H</span> - Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/1044.Longest-Duplicate-Substring) -
