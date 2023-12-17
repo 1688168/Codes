@@ -631,6 +631,12 @@ $${\color{orange} Question \space List}$$
 [[Video]](https://www.youtube.com/watch?v=yfWVWbi9pts) -
 [`Binary Search`]
 
+[[0881] - <span style="color:yellow">M</span> - Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=yX5zRzTbeJc) -
+[`Greedy`]
+
 [[0921] - <span style="color:yellow">M</span> - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/921.Minimum-Add-to-Make-Parentheses-Valid) -
