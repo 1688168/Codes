@@ -504,11 +504,13 @@ team_splits.unstack(level=['year', 'month'])
 ```
 team_splits.index.levels[2].name="month"
 ```
+
 # <span style="color:green">====================</span>
 
 # <span style="color:blue"> formatting, styling</span>
 
 # <span style="color:green">====================</span>
+
 ```
 # percentage, dollar sign, padding
 - df.style.format.({'SumSales': '${0:,0f}'}, #thousand seperator
@@ -530,5 +532,26 @@ def add_color(x):
         color='blue'
     return f'background:{color}'
 
-df.style.applymap(add_color, subset=['col_list']) 
+df.style.applymap(add_color, subset=['col_list'])
+```
+
+# <span style="color:green">====================</span>
+
+# <span style="color:blue"> read from URL </span>
+
+# <span style="color:green">====================</span>
+
+```
+# post request
+service='https://some_server'
+endpoint="/some_end_point"
+url=service+endpoint
+json={'portfolioID': 100, 'AsOfDate:'mm/dd/yyyy'}
+resp=request.post(url, json=json, verify=False)
+hm=pd.DataFrame(resp.json(['data']))
+
+# get request
+args={}
+resp = requests.get(url, params=args, verify=False)
+data=pd.read_json(json.dumps(resp.json()['data']['report_data']), orient='records')
 ```
