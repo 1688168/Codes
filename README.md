@@ -136,6 +136,12 @@ $${\color{orange} Question \space List}$$
 - Monotonic stack one pass
 - The best way to find prev_smaller (NOT prev_smaller_equal)
 
+[[0088] - <span style="color:green">E</span> - Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`K-way merge`]
+
 [[0090] - <span style="color:yellow">M</span> - Subsets II](https://leetcode.com/problems/subsets-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/090.Subsets-II) -
