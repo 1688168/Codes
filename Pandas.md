@@ -75,6 +75,24 @@ df=pd.read_excel(os.path.join(input_filename), index_col=0)
 
 # <span style="color:green">====================</span>
 
+> which columns has null values
+
+```
+df.isnull().any()
+```
+
+> which rows has null values
+
+```
+df[df.isnull().any(axis=1)]
+
+# Are there any rows with only null values?
+df.isnull().all(axis=1).any()
+
+# Are there any columns with no null values at all?
+df.notnull().all()
+```
+
 > find unique count
 
 ```
@@ -108,6 +126,15 @@ master = master.filter(regex="(playerID|pos|^birth)|(Namd$)")
 columns_to_keep=["c1", "c2", ...]
 master.filter(columns_to_keep).head()
 
+# Create a series containing indices for every 6th row
+every_6th_row = pd.Series(range(5, len(df), 6))
+
+# Are all these rows NOT null?
+df['MIN_TEMP_GROUND'][every_6th_row].notnull().all()
+
+# Are all other rows null?
+# Q: Can you rewrite this line to use df.loc?
+df['MIN_TEMP_GROUND'].drop(every_6th_row).isnull().all()
 ```
 
 > dataframe memory size
@@ -127,6 +154,7 @@ master = master.dropna(subset=["playerID"], how="all")
 
 ```
 pd.Categorical(master["pos"])
+chicago["Department"] = chicago["Department"].astype("category")
 ```
 
 # <span style="color:green">====================</span>
