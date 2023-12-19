@@ -593,6 +593,12 @@ $${\color{orange} Question \space List}$$
 
 - Sorted matrix
 
+[[0703] - <span style="color:green">E</span> - Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`TopK`]
+
 [[0719] - <span style="color:red">H</span> - Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/719.Find-K-th-Smallest-Pair-Distance) -
