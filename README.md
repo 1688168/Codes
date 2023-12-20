@@ -1,4 +1,4 @@
-$${\color{orange} Question \space List}$$
+# <p style="text-align: center"> <span style="color:Orange"> Question List</span> </p>
 
 [[0004] - <span style="color:red">H</span> - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description) - 
 [[Python]]()
@@ -620,6 +620,12 @@ $${\color{orange} Question \space List}$$
 [[CPP]]() -
 [[Video]]() -
 [`Intervals`]
+
+[[0767] - <span style="color:yellow">M</span> - Reorganize String](https://leetcode.com/problems/reorganize-string/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/767.Reorganize-String) -
+[[Video]](https://www.youtube.com/watch?v=7wLb-9J1otU&t=17s) -
+[`TopK`]
 
 [[0772] - <span style="color:red">H</span> - Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/description/) - 
 [[Python]]()
