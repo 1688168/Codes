@@ -4,7 +4,7 @@
 
 - raw string
 
-```
+```python
 def valid*emails(users: pd.DataFrame) -> pd.DataFrame:
     # Note how we use a raw string (putting an `r` in front) to avoid having to escape the backslash
     # Also note that we escaped the `@` character, as it has a special meaning in some regex flavors
@@ -15,14 +15,14 @@ def valid*emails(users: pd.DataFrame) -> pd.DataFrame:
 
 - regular expression for string pattern matching
 
-```
+```python
 def find_patients(patients: pd.DataFrame) -> pd.DataFrame:
     return patients[patients["conditions"].str.contains(r"\bDIAB1", regex=True)]
 ```
 
 [177] Nth Highest Salary
 
-```
+```python
 def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
     df = employee[["salary"]].drop_duplicates()  #remove duplicate
     if len(df) < N:
@@ -38,7 +38,7 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
 > Create Series
 
-```
+```python
 # create series from dataframe column.
 # here master.index is userId (series value) and master.birthDate become the index as date
 birth_dates = pd.Series(master.index, index=master.birthDate)
@@ -52,20 +52,20 @@ birth_dates = pd.Series(master.index, index=master.birthDate)
 
 > write to pickle
 
-```
+```python
 team_splits.to_pickle(os.path.join("..", "some_file_name"))
 ```
 
 > read pickle
 
-```
+```python
 df = pd.read_pickle(os.path.join('..', 'file.pickle'))
 df.to_pickle(os.path.join("..", "filename.pickle"))
 ```
 
 > read excel
 
-```
+```python
 df=pd.read_excel(os.path.join(input_filename), index_col=0)
 ```
 
@@ -77,13 +77,13 @@ df=pd.read_excel(os.path.join(input_filename), index_col=0)
 
 > which columns has null values
 
-```
+```python
 df.isnull().any()
 ```
 
 > which rows has null values
 
-```
+```python
 df[df.isnull().any(axis=1)]
 
 # Are there any rows with only null values?
@@ -95,25 +95,25 @@ df.notnull().all()
 
 > find unique count
 
-```
+```python
 teams.nunique(y)
 ```
 
 > set index
 
-```
+```python
 scoring.reset_index(drop=True, inplace=True)
 ```
 
 > count
 
-```
+```python
 master["pos"].value_counts()
 ```
 
 > find null count
 
-```
+```python
 master["playerID"].pope(pd.isnull).value_count()
 or
 isnull(master["playerID"]).value_counts()
@@ -122,7 +122,7 @@ master = master.filter(regex="(playerID|pos|^birth)|(Namd$)")
 
 > drop columns
 
-```
+```python
 columns_to_keep=["c1", "c2", ...]
 master.filter(columns_to_keep).head()
 
@@ -139,22 +139,40 @@ df['MIN_TEMP_GROUND'].drop(every_6th_row).isnull().all()
 
 > dataframe memory size
 
-```
+```python
 def mem_mib(df):
     print("{0:.2f} MiB").format(df.memory_usage().sum()/(1024*1024))
 ```
 
 > drop rows
 
-```
+```python
 master = master.dropna(subset=["playerID"], how="all")
 ```
 
 > categorical
 
-```
+```python
 pd.Categorical(master["pos"])
 chicago["Department"] = chicago["Department"].astype("category")
+```
+
+# <span style="color:green">====================</span>
+
+# <span style="color:blue"> filtering Data</span>
+
+# <span style="color:green">====================</span>
+
+```python
+# filter by string containing
+water_workers = chicago["Position Title"].str.lower().str.contains("water")
+chicago[water_workers]
+
+starts_with_civil = chicago["Position Title"].str.lower().str.startswith("civil")
+chicago.loc[starts_with_civil]
+
+ends_with_iv = chicago["Position Title"].str.lower().str.endswith("iv")
+chicago[ends_with_iv]
 ```
 
 # <span style="color:green">====================</span>
@@ -165,7 +183,7 @@ chicago["Department"] = chicago["Department"].astype("category")
 
 `apply on Series`: operate on each cell of a series
 
-```
+```python
 # ex 1:
 train['name_length'] = train.name.apply(len)
 
@@ -177,7 +195,7 @@ def my_function(my_list, position):
 
 `apply on dataframe`: operate on columns
 
-```
+```python
 # get max on each column (axis=0)
 df.apply(max, axis=0)
 
@@ -188,7 +206,7 @@ df.apply(np.argmax, axis=1)
 
 `applymap`: Operate on each cell
 
-```
+```python
 # convert all values to flow
 df.applymap(float)
 ```
@@ -196,14 +214,14 @@ df.applymap(float)
 > apply, map, applymap
 > `map on series`: convert a series value to another value
 
-```
+```python
 # create a new column that maps values on another column from string to num
 train['sex_num'] = train.Sex.map({'female':0, 'male':1})
 ```
 
 > drop duplicates
 
-```
+```python
 df=df.drop_duplicates(keep='first')
 ```
 
@@ -218,25 +236,42 @@ df=df.drop_duplicates(keep='first')
 
 > drop duplicate
 
-```
+```python
 df=df.drop_duplicates(subset=['SubportfolioID'], keep='first)
 ```
 
 > copy dataframe
 
-```
+```python
 df2 = df.copy()
 ```
 
 > assign
 
-```
+```python
 df_all = df_all.assign(column_name=lambda x: (x['col1']/x[`col2`]))
 master = master.assign(birthDate = pd.to_datetime({'year': master.birthYear,
                                                    'month': master.birthMon,
                                                    'day': master.birthDay}))
 
 master.master.drop(columns=['birthYear', 'birthMon', 'birthDay'])
+```
+
+```python
+# We can use fillna() to fill in missing data based on the data that is present
+df['MIN_TEMP_GROUND'].fillna(method='bfill', inplace=True)
+
+# Now that we have no more nulls in MIN_TEMP_GROUND
+# what are the dates where missing values occur?
+df.loc[df.isnull().any(axis=1), 'YYYYMMDD'].drop_duplicates() # remove rows with null values
+
+# Shortest solution: Just drop everything
+nulls_dropped = df.dropna() #what are the rows being removed by dropna
+nulls_dropped.info()
+# Another idea: just drop rows that have less than 7 columns filled
+# This leaves us with only two rows that contain null values
+drop_thresh = df.dropna(thresh=7)
+drop_thresh[drop_thresh.isnull().any(axis=1)]
 ```
 
 # <span style="color:green">====================</span>
@@ -247,7 +282,7 @@ master.master.drop(columns=['birthYear', 'birthMon', 'birthDay'])
 
 > declare timestamp
 
-```
+```python
 ts = pd.Timestamp("1997-03-04 14:21:54")
 
 # get year from ts
@@ -277,7 +312,7 @@ except Exception as e:
 
 > Timedelta
 
-```
+```python
 td = pd.Timedelta('3 days 02:13:10')
 
 # timedelta components
@@ -289,7 +324,7 @@ diff.components
 
 > Period
 
-```
+```python
 p = pd.Period('1999-03', 'M')
 p.start_time
 p.end_time
@@ -300,13 +335,13 @@ birth_dates.resample('1M') # resample period, resize period
 
 > add date to the whole series
 
-```
+```python
 birth_date.shift(1, freq="D")
 ```
 
 > Business date
 
-```
+```python
 from pandas.tseries.offsets import BDay
 p=birth_dates.index[2]
 print(p.to_timestamp()+BDay(7))
@@ -320,7 +355,7 @@ print(p.to_timestamp()+BDay(7))
 
 > Stack/Unstack
 
-```
+```python
 team_splits = team_splits.stack(level=0) #long format
 team_splits.unstack(level=["year", "month"]).head() # wide format
 ```
@@ -335,7 +370,7 @@ team_splits.unstack(level=["year", "month"]).head() # wide format
 
 > Transform groups
 
-```
+```python
 def transform_df(source_df): # original dataframe
     group_dfs=[]
     # group and process each groupped dataframe
@@ -359,13 +394,13 @@ df.loc[:, 'medium'] = grouped_medium.transform(fill_values) #call transform on g
 
 > filtering grouyp
 
-```
+```python
 grouped_titles = df.groupby('titles')
 condition = lambda x: len(x.index) > 1 # x should be the dataframe of a group
 filtered_df = grouped_titles.filter(condition) # remove groups that has only 1 row
 ```
 
-```
+```python
 grouped_titles = df.groupby('title')
 # size of each group, count of each group
 title_counts = grouped_titles.size().size().sort_values(ascending=False)
@@ -373,7 +408,7 @@ title_counts = grouped_titles.size().size().sort_values(ascending=False)
 
 > groupby aggregation
 
-```
+```python
 grouped_acq_year = df.groupby('artist')['acquisitionYear']
 min_acquisition_year = grouped_acq_year.agg(np.min)
 or
@@ -383,13 +418,13 @@ min_acquisition_year = grouped_acq_year.min()
 
 > apply diff aggregation on diff column
 
-```
+```python
 sector.agg("col1":"sum", "col2":"avg")
 ```
 
 > Group by
 
-```
+```python
 df=df.groupby('a_column', as_index=False)['the_column_to_aggregate'].sum()
 g=athletes.groupby('nationality')[['gold','silver','bronze']]
 g.sum()
@@ -404,14 +439,14 @@ atheletes.groupby(['sport', 'nationality'])['gold'].sum()
 
 > custom function on group
 
-```
+```python
 # here custom_function takes a dataframe of a group (or series if only 1 column selected)
 groupby.apply(custom_function)
 ```
 
 > get dataframe of a group
 
-```
+```python
 sectors.get_group("Energy")
 ```
 
@@ -423,13 +458,13 @@ sectors.get_group("Energy")
 
 > create multiindex
 
-```
+```python
 scoring.set_index(['playerID','year'])
 ```
 
 > create multiindex from array
 
-```
+```python
 months = team_splits.columns.map(lambda x: x[:3])
 midx = pd.MultiIndex.from_arrays([months, metrics])
 team_splits.columns = midx
@@ -437,14 +472,14 @@ team_splits.columns = midx
 
 > multiindex basic operations
 
-```
+```python
 scoring.groupby(level=1)['goals'].max()
 scoring.groupby(level='year')['goals'].max()
 ```
 
 > multiindex object, multiindex slicing, multiindex sorting
 
-```
+```python
 idx = pd.IndexSlice
 scoring.sort_index() #sort before slicing
 scoring.loc[idx['aaltoan01', 1997:2000], :]
@@ -456,20 +491,20 @@ mi = mi.sort_index(level='year')
 
 > is multiindex sorted
 
-```
+```python
 mi.index.is_lexsorted()
 ```
 
 > swap index level
 
-```
+```python
 swapped = mi.swaplevel()
 
 ```
 
 > multiindex number of level
 
-```
+```python
 len(mi.index.levels)
 or
 mi.index.nlevels
@@ -477,7 +512,7 @@ mi.index.nlevels
 
 > find index of max value in each group, groupby multiindex
 
-```
+```python
 # this is returning max index of each group by year (remember this is grouping on multiindex)
 mi.groupby(level="year")['G'].idxmax().head()
 
@@ -488,7 +523,7 @@ mi.loc[mi.groupby(level="year")['G'].idxmax()].head()
 
 > get locations from index slicing
 
-```
+```python
 # this is getting an list of index locations per a given multiindx slicing
 loc = mi.index.get_loc((idx['aaltoan01':'adamscr01'], 1007:2000))
 sliced = mi.iloc[locs, :]
@@ -496,7 +531,7 @@ sliced = mi.iloc[locs, :]
 
 > get many locs from multiindex; slicing multiindex and use it to retrive rows from original dataframe
 
-```
+```python
 import numpy as np
 def get_many_locs(df, slices):
     arr = np.empty(0, dtype="int")
@@ -514,7 +549,7 @@ sliced = mi.iloc[locs, :]
 
 > stack/undstack multiindex
 
-```
+```python
 # transpose one level of multiIndex from columns to row (from wide to long dataframe)
 team_splits = team_splits.stack(level=0)
 
@@ -529,7 +564,7 @@ team_splits.unstack(level=['year', 'month'])
 
 > change multiIndex name
 
-```
+```python
 team_splits.index.levels[2].name="month"
 ```
 
@@ -539,7 +574,7 @@ team_splits.index.levels[2].name="month"
 
 # <span style="color:green">====================</span>
 
-```
+```python
 # percentage, dollar sign, padding
 - df.style.format.({'SumSales': '${0:,0f}'}, #thousand seperator
                     'PercSales':{:.0%}, # percent
@@ -569,7 +604,7 @@ df.style.applymap(add_color, subset=['col_list'])
 
 # <span style="color:green">====================</span>
 
-```
+```python
 # post request
 service='https://some_server'
 endpoint="/some_end_point"
