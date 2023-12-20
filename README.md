@@ -625,7 +625,11 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/767.Reorganize-String) -
 [[Video]](https://www.youtube.com/watch?v=7wLb-9J1otU&t=17s) -
-[`TopK`]
+[`TopK`][`Greedy`]
+
+- [0358]: k=2
+- [1054]
+- [1953][1935]
 
 [[0772] - <span style="color:red">H</span> - Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/description/) - 
 [[Python]]()
