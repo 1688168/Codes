@@ -555,10 +555,10 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/621.Task-Scheduler) -
 [[Video]](https://www.youtube.com/watch?v=3DZE7cfgYyg) -
-[`Intervals`][`Sweep Line`][`Arrangement with Stride`]
+[`Intervals`][`Sweep Line`][`Arrangement with Stride`][`Greedy`]
 
 - Simulation (using heap)
-- O(N) solution:
+- O(N) solution for arrangement with stride:
 
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
