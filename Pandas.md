@@ -67,6 +67,10 @@ df.to_pickle(os.path.join("..", "filename.pickle"))
 
 ```python
 df=pd.read_excel(os.path.join(input_filename), index_col=0)
+
+# read a column and make it a series
+pokemon = pd.read_csv("pokemon.csv", usecols=["Name"]).squeeze("columns")
+pokemon
 ```
 
 # <span style="color:green">====================</span>
@@ -175,6 +179,72 @@ ends_with_iv = chicago["Position Title"].str.lower().str.endswith("iv")
 chicago[ends_with_iv]
 ```
 
+> where
+
+```python
+# for those rows that is not true, filled with nan
+heights.where(heights.between(pmin, pmax), inplace=True)
+
+# convert nan to None before returning to http request
+df = pd.DataFrame(d)
+dumps(df.where(pd.notnull(df), None))) # this might not work for numerical values
+
+# convert nan to None before returning to http request by introducing simplejson
+import simplejson
+
+response = df.to_dict('records')
+simplejson.dumps(response, ignore_nan=True,default=datetime.datetime.isoformat)
+
+```
+
+> converting NaN to null
+
+```python
+df = pd.DataFrame({
+  'words': ['on', 'off'],
+  'lists': [
+    [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
+    [[np.nan], [np.nan], [np.nan]],
+  'dicts': [
+    {'S': {'val': 'A'}},
+    {'S': {'val': np.nan}},
+  ]
+})
+
+"""
+If you convert it to a list of dicts, Pandas retains the native nan values:
+"""
+
+json.dumps(df.to_dict(orient='record'))
+
+> [{
+    "words": "on",
+    "lists": [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
+    "dicts": {"S": {"val": "A"}}
+  },
+  {
+    "words": "off",
+    "lists": [[NaN], [NaN], [NaN]],
+    "dicts": {"S": {"val": NaN}}
+  }]
+
+"""
+But if you have Pandas convert it straight to a JSON string, it'll sort that out for you:
+"""
+df.to_json(orient='records')
+
+> [{
+    "words": "on",
+    "lists": [[1,1,1],[2,2,2],[3,3,3]],
+    "dicts": {"S":{"val":"A"}}
+  },
+  {
+    "words": "off",
+    "lists": [[null],[null],[null]],
+    "dicts": {"S":{"val":null}}
+  }]
+```
+
 # <span style="color:green">====================</span>
 
 # <span style="color:blue"> Manipulating Data</span>
@@ -272,6 +342,23 @@ nulls_dropped.info()
 # This leaves us with only two rows that contain null values
 drop_thresh = df.dropna(thresh=7)
 drop_thresh[drop_thresh.isnull().any(axis=1)]
+```
+
+> String manipulation
+
+```python
+# The most common first word in our job positions/titles
+chicago["Position Title"].str.split(" ").str.get(0).value_counts() #get element from list
+# Finding the most common first name among the employees
+
+chicago["Name"].str.title().str.split(", ").str.get(1).str.strip().str.split(" ").str.get(0).value_counts()
+
+
+# split a string and make each element as a column
+chicago[["Last Name", "First Name"]] = chicago["Name"].str.split(",", expand=True)
+
+# create multiple columns in one shot
+chicago[["Primary Title", "Secondary Title"]] = chicago["Position Title"].str.split(" ", expand=True, n=1)
 ```
 
 # <span style="color:green">====================</span>
@@ -392,7 +479,7 @@ grouped_medium = df.groupby('artist')['medium']
 df.loc[:, 'medium'] = grouped_medium.transform(fill_values) #call transform on groupped dataframe.
 ```
 
-> filtering grouyp
+> filtering groupby
 
 ```python
 grouped_titles = df.groupby('titles')
@@ -617,4 +704,8 @@ hm=pd.DataFrame(resp.json(['data']))
 args={}
 resp = requests.get(url, params=args, verify=False)
 data=pd.read_json(json.dumps(resp.json()['data']['report_data']), orient='records')
+```
+
+```
+
 ```
