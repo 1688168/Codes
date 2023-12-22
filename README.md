@@ -625,7 +625,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/767.Reorganize-String) -
 [[Video]](https://www.youtube.com/watch?v=7wLb-9J1otU&t=17s) -
-[`TopK`][`Greedy`]
+[`TopK`][`Greedy`][`arrangement with stride`]
 
 - [0358]: k=2
 - [1054]
@@ -960,6 +960,12 @@
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[1953] - <span style="color:yellow">M</span> - Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Arrangement with Stride`]
 
 [[2000] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
