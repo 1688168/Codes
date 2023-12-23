@@ -360,6 +360,22 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 # [`Greedy`]
 
+```md
+# Greedy-arrangment
+
+Given: A A B C C D D D ..
+
+- given a list of task (each task represented by a char)
+  given a string with duplicate chars
+- Given a K such that each char (task) need to have the gap/idle in order to process same task again
+
+- if gap=1 -> special handling O(N) calc
+- if we do not present the path, we can do O(N), just calc
+- Can you finish all? (when len(mxq) < k and mxq[0][0] < 1)
+- Min cycle required to complete if allowing idle? (when len(tmp)==0 + k else + N)
+- max cycle we can do until we cannot honor the rule? (1953)
+```
+
 > classics
 
 - Huffman
