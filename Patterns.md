@@ -380,10 +380,14 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0055]: Jump Game: can you reach the end
 - [0134]
 - [0135]
-- [0358]
+- [0358] (arrangement)
+  - k is flexible
+  - if cannot complete, return "" => how do you identify failure condition
+  - how do you identify last round?
 - [0402]
 - [0435]
-- [0621] (arrangement)
+- [0621] (arrangement): if cannot honor gap, fill with idle
+  - How do you identify last round?
 - [0767] (arrangement)
 - [0871]
 - [0881]
