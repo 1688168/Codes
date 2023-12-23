@@ -21,6 +21,10 @@ class Solution:
         - we do not need to output the actual task arrangement, just need to output count
         - Greedy: can we finish the max_freq?
         """
+
+        
+
+
         N = len(milestones)
 
         # find the max freq

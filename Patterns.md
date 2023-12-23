@@ -391,6 +391,12 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1840]
 - [1846]
 - [1953] (arrangement)
+  ```md
+  We can only apply this strategy when
+
+  1. k=1
+  2. do not need to output the path
+  ```
 
 # [`Heap`]
 
