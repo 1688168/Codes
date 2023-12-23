@@ -415,6 +415,12 @@
 [[Video2]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
 
+[[0358] - <span style="color:red">H</span> - Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/358.Rearrange-String-k-Distance-Apart) -
+[[Video]](https://www.bilibili.com/video/BV1wo4y1D7zv/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`Arrangement with Stride`][`Greedy`]
+
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
