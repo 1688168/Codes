@@ -409,6 +409,7 @@ Given: A A B C C D D D ..
 - [0881]
 - [0995]
 - [1029]
+- [1054] (arrangement)
 - [1840]
 - [1846]
 - [1953] (arrangement)

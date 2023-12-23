@@ -760,6 +760,12 @@
 - DP: dp[i][j]= (s[i]==s[j])? dp[i-1][j-1]+1
   ans = max(dp[i][j], i=0,...n, j=0,...,n)
 
+[[1054] - <span style="color:yellow">M</span> - Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1054.Distant-Barcodes) -
+[[Video]](https://www.youtube.com/watch?v=_rehsshRKYg) -
+[`Greedy`][`arrangement with Stride`]
+
 [[1109] - <span style="color:yellow">M</span> - Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/1109.Corporate-Flight-Bookings) -
