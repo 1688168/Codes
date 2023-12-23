@@ -557,6 +557,7 @@
 [[Video]](https://www.youtube.com/watch?v=3DZE7cfgYyg) -
 [`Intervals`][`Sweep Line`][`Arrangement with Stride`][`Greedy`]
 
+- [0358]
 - Simulation (using heap)
 - O(N) solution for arrangement with stride:
 

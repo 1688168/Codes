@@ -380,6 +380,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0055]: Jump Game: can you reach the end
 - [0134]
 - [0135]
+- [0358]
 - [0402]
 - [0435]
 - [0621] (arrangement)
@@ -391,6 +392,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1840]
 - [1846]
 - [1953] (arrangement)
+
   ```md
   We can only apply this strategy when
 
