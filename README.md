@@ -965,7 +965,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1953.Maximum-Number-of-Weeks-for-Which-You-Can-Work) -
 [[Video]](https://www.youtube.com/watch?v=0ut2kGnSXLU) -
-[`Arrangement with Stride`]
+[`Arrangement with Stride`][`Greedy`]
 
 [[2000] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
