@@ -32,6 +32,17 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
 # <span style="color:green">====================</span>
 
+# <span style="color:blue"> Description info </span>
+
+# <span style="color:green">====================</span>
+
+```python
+# columns types
+bigmac.dtypes
+```
+
+# <span style="color:green">====================</span>
+
 # <span style="color:blue"> Series </span>
 
 # <span style="color:green">====================</span>
@@ -71,6 +82,11 @@ df=pd.read_excel(os.path.join(input_filename), index_col=0)
 # read a column and make it a series
 pokemon = pd.read_csv("pokemon.csv", usecols=["Name"]).squeeze("columns")
 pokemon
+
+# specify date column, specify date column format
+bigmac = pd.read_csv("bigmac.csv", parse_dates=["Date"], date_format="%Y-%m-%d")
+bigmac.head()
+
 ```
 
 # <span style="color:green">====================</span>
@@ -78,6 +94,16 @@ pokemon
 # <span style="color:blue"> prepare data/clean data</span>
 
 # <span style="color:green">====================</span>
+
+> remove duplicates
+
+```python
+# list duplicated rows
+athletes[athletes.duplicated()]
+
+# remove duplicated
+athletes.drop_duplicates(inplace=True)
+```
 
 > which columns has null values
 
@@ -106,6 +132,7 @@ teams.nunique(y)
 > set index
 
 ```python
+athletes.set_index('id', drop=True, inplace=True)
 scoring.reset_index(drop=True, inplace=True)
 ```
 
@@ -251,7 +278,15 @@ df.to_json(orient='records')
 
 # <span style="color:green">====================</span>
 
-`apply on Series`: operate on each cell of a series
+> rename
+
+```python
+athletes.rename(
+    columns={"nationality": "country", "sport": "discipline"},
+    inplace=True)
+```
+
+> `apply on Series`: operate on each cell of a series
 
 ```python
 # ex 1:
@@ -263,7 +298,7 @@ def my_function(my_list, position):
 - train.name.str.split(',').apply(my_function, position=0)
 ```
 
-`apply on dataframe`: operate on columns
+> `apply on dataframe`: operate on columns
 
 ```python
 # get max on each column (axis=0)
@@ -274,7 +309,7 @@ df.apply(max, axis=0)
 df.apply(np.argmax, axis=1)
 ```
 
-`applymap`: Operate on each cell
+> `applymap`: Operate on each cell
 
 ```python
 # convert all values to flow
@@ -555,6 +590,13 @@ scoring.set_index(['playerID','year'])
 months = team_splits.columns.map(lambda x: x[:3])
 midx = pd.MultiIndex.from_arrays([months, metrics])
 team_splits.columns = midx
+
+
+bigmac.set_index(keys=["Date", "Country"])
+bigmac.set_index(keys=["Country", "Date"]).sort_index()
+bigmac.nunique()
+
+bigmac = bigmac.set_index(keys=["Date", "Country"])
 ```
 
 > multiindex basic operations
