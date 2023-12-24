@@ -360,41 +360,56 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 # [`Greedy`]
 
-```md
-# Greedy-arrangment
+> Greedy classics
 
-Given: A A B C C D D D ..
+- Huffman
+- Dijkstra (shortest distance) - min steps to reach goal
+- Prim (MST)
+- Kruskal
+
+> Greedy: min steps to reach goal
+
+```yaml
+- Can you reach the goal?
+- min refuel to reach the goal?
+```
+
+- [0134]: can you reach the end?
+  - failure condition
+  - greedy, find the first positive start (since unique solution, we cannot end at postive -> ending @ zero)
+
+> Greedy-distribution given constrains
+
+> Greedy-arrangment
 
 - given a list of task (each task represented by a char)
   given a string with duplicate chars
 - Given a K such that each char (task) need to have the gap/idle in order to process same task again
-
+  """
+  ex: Given: A A B C C D D D ..
+  """
 - if gap=1 -> special handling O(N) calc
 - if we do not present the path, we can do O(N), just calc
 - Can you finish all? (when len(mxq) < k and mxq[0][0] < 1)
 - Min cycle required to complete if allowing idle? (when len(tmp)==0 + k else + N)
 - max cycle we can do until we cannot honor the rule? (1953)
-```
 
-> classics
+> Greedy mental model
 
-- Huffman
-- Dijkstra (shortest distance)
-- Prim (MST)
-- Kruskal
-
-> Characteristics
-
+```yaml
 - always choose the local optimal solution and reach the global optimal solution
 - current sub-optimal solution cannot become global optimal solution with future decisions
 
 1. Guess a solution (might or might not be the optimized solution)
 2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
 
+```
+
 - [0042]: trapping rain water
 - [0045]: Jump Game II: min steps to reaach the end
 - [0055]: Jump Game: can you reach the end
-- [0134]
+- [0134]:
+  - Gas station - condition of no solution - sum(gas)-sum(cost) < 0
 - [0135]
 - [0358] (arrangement) - not allowing idle
   - VS [0621]: allow idle
