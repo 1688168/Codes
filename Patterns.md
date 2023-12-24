@@ -396,23 +396,41 @@ Given: A A B C C D D D ..
 - [0055]: Jump Game: can you reach the end
 - [0134]
 - [0135]
-- [0358] (arrangement)
+- [0358] (arrangement) - not allowing idle
+  - VS [0621]: allow idle
   - k is flexible
   - if cannot complete, return "" => how do you identify failure condition
   - how do you identify last round?
 - [0402]
 - [0435]
 - [0621] (arrangement): if cannot honor gap, fill with idle
+  - VS [0358]: not allowing idle
+  - k is flexible
+  - if cannot complete, allow idle
   - How do you identify last round?
-- [0767] (arrangement)
+- [0767] (arrangement): chars
+  - VS [1054]
+  - VS [1953] do not need to output path, only calc
+  - need to output
+  - k=1 -> special odd/even solution
+  - return "" if not possible -> how do you check if not possible?
 - [0871]
 - [0881]
 - [0995]
 - [1029]
-- [1054] (arrangement)
+- [1054] (arrangement): ints
+  - VS [0767]
+  - k=1 -> spacial odd/even solution
+  - guarantee has answer
 - [1840]
 - [1846]
 - [1953] (arrangement)
+
+  - VS [0621]: k is flexible
+  - k=1
+  - how far you can go without breaking rules?
+  - when do we start to break?
+  -
 
   ```md
   We can only apply this strategy when
