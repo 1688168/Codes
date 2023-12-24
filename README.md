@@ -475,7 +475,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -
 [[Video]](https://www.youtube.com/watch?v=qaYimfZwbk8) -
-[`Stack`]
+[`Stack`][`monotonic stack`][`classic`]
 
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)

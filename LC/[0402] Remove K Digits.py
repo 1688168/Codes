@@ -15,7 +15,7 @@ class Solution:
 
         stk = []
         N = len(num)
-        nums = list(map(int, list(num)))
+        nums = list(map(int, list(num)))  # convert to int list
         cnt = 0
         for ii, vv in enumerate(map(int, list(num))):
             while stk and vv < stk[-1] and cnt < k:
