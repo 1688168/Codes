@@ -419,7 +419,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/358.Rearrange-String-k-Distance-Apart) -
 [[Video]](https://www.bilibili.com/video/BV1wo4y1D7zv/?vd_source=c1f78303f3760ca1601e9654954004a6) -
-[`Arrangement with Stride`][`Greedy`]
+[`Arrangement with Stride`][`Greedy`][`classic`]
 
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
@@ -765,6 +765,9 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1054.Distant-Barcodes) -
 [[Video]](https://www.youtube.com/watch?v=_rehsshRKYg) -
 [`Greedy`][`arrangement with Stride`]
+
+- [0358]
+- [0767]
 
 [[1109] - <span style="color:yellow">M</span> - Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/) - 
 [[Python]]()
