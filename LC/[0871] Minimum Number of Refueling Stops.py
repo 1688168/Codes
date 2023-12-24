@@ -1,4 +1,35 @@
+##############
+# 20231224
+##############
 from heapq import heappush, heappop, heappushpop
+from heapq import heappush, heappop, heappushpop, heapify
+
+
+class Solution:
+    def minRefuelStops(self, target: int, startFuel: int, stations: List[List[int]]) -> int:
+        stations.append([target, 0])
+        stations = [[0, 0]]+stations
+        cnt = 0
+        """
+        Greedy: each time we need refueling, refueling the earlier max gas station
+        """
+        curr_fuel = startFuel
+        mxh = []
+
+        for ii, gg in stations:
+
+            while mxh and curr_fuel < ii:
+                g, idx = heappop(mxh)
+                curr_fuel += (-g)
+                cnt += 1
+            heappush(mxh, [-1*gg, ii])
+            if curr_fuel < ii:
+                return -1
+
+        # print("curr_fuel: ", curr_fuel, " cnt: ", cnt)
+        return cnt if curr_fuel >= target else -1
+
+#####################
 
 
 class Solution:
