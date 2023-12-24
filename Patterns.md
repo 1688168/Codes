@@ -380,6 +380,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Greedy-distribution given constrains
 
+- [0135]:
+  - two passes, the 2nd pass does not break first pass
+
 > Greedy-arrangment
 
 - given a list of task (each task represented by a char)
