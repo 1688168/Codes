@@ -4,7 +4,7 @@ $${\color{orange}Patterns, \space Data \space Structures}$$
 
 > Sort string list in reversed order
 
-```
+```yaml
 tickets.sort(reverse=True)
 ```
 
@@ -25,13 +25,13 @@ tickets.sort(reverse=True)
 
 > How to Find Prev/Next Smaller/Greater
 
-```
+```yaml
 Monotoic Stack
 ```
 
 > How to find how many elements before current that is smaller/greater than current?
 
-```
+```yaml
 - [2519]
 - use Heap top K
 - use bisect, insert
@@ -49,7 +49,7 @@ Monotoic Stack
 
 > How to group numbers with some distance k
 
-```
+```yaml
 - group[n%k].add(n)
 - sort
 ```
@@ -59,7 +59,7 @@ Monotoic Stack
 
 > How to define sort key
 
-```
+```yaml
 [937]
 class Solution:
     def reorderLogFiles(self, logs: List[str]) -> List[str]:
@@ -93,7 +93,7 @@ class Solution:
 
 # [`Binary Search`]
 
-```
+```yaml
 - Find Min/Max of some condition.  Guess the Min/Max see if we can satisfy the condition
 - Count some condition, use binary search to find the range for counting
 ```
@@ -125,7 +125,7 @@ class Solution:
 
 # [`Binary Index Tree (BIT)`]
 
-```
+```yaml
 * asking for range sum from an array
 * "Binary index tree" can always solve "Segment Tree" problems
 * The reason we are still larning "Segment Tree" is the required coding is less than "Binary index tree"
@@ -158,14 +158,14 @@ class Solution:
 
 # [`Count Subarray by Element`]
 
-```
+```yaml
 - When dealing with subsequence and order doesn't matter (only care about max/min-1498), we can sort
 - consider adding dummy at beginning/ending of the array
 - you can loop by the array or loop by all letters (the diff btn num vs string)
 - or when dealing with string, you might want to loop lower-case chars instead by index of string
 ```
 
-```
+```yaml
 - Pattern: looking for some metrics of all sub-arrays, sub-sequences
 - All sub-arrays is O(N^2)
 - We should pre-calc info for each element and bring down the time complexity
@@ -175,13 +175,12 @@ class Solution:
 
 ```
 
-```
+```yaml
 ### when calculating the metrics
 - Monotonic stack to help find prev-smaller/greater, next-smaller/greater
 - consider each ii as max/min (going both direciton) or ending
 - use presum to find subarray sum
 - use Kadane to findout max subarray sum
-
 ```
 
 - [828] H: count distinct chars in subarray (duplicates are ignored)
@@ -232,17 +231,17 @@ class Solution:
 
 # [`DFS`]
 
-```
+```yaml
 - memo (lru_cache) is the best friend of DFS
 ```
 
 - [2597]: can you try 2638 by DFS?
 
-```
+```yaml
 - Counting: for each element, you can either take or no-take based on some condition.  when reaching the end, we return 1
 ```
 
-```
+```yaml
 - dp[ii] = dp[jj]+something: how do find jj?
 - monotonic stack (Prev/Next Smaller/Greater)
 - topK strategy (Binary Search insert, Heap)
@@ -262,7 +261,7 @@ class Solution:
 
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
 
-```
+```yaml
 dp[ii][jj]:   iith round, state jj
 dp[ii][jj] = dp[ii-1][jj]+something
 - Today's state can be derived from Yesterday's states
@@ -482,7 +481,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 > array with N~ elements, with element values from 1~N~.
 > Find missing num, duplicated num
 
-```
+```yaml
 # some trics
 * if not indexing from 0, insert a dummy starting element
 
@@ -534,7 +533,7 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Monotonic Stack`]
 
-```
+```yaml
 - for each index, require increasing pattern before or after the anchor
 - the increasing or decreasing pattern could be subarray or subsequence
 - frequently relating to pre-smaller, prev-greater
@@ -557,7 +556,7 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Parentheses`]
 
-```
+```yaml
 - Stack
 - Greedy
 ```
@@ -589,7 +588,7 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Segment Tree`]
 
-```
+```yaml
 - find range sum
 - `binary index tree` is subset of `segment tree`
 - less coding for `binary index tree`, otherwise, `segment tree` can cover
@@ -602,7 +601,7 @@ c. element value is not equal to the destination value or no point of swapping
 
 [1151]
 
-```
+```yaml
 > grouping all something together
 > -> when all something are together, there is a window
 
@@ -662,7 +661,7 @@ Strategy:
 > The kth smallest element of an unsorted array
 > The medium of two sorted array
 
-```
+```yaml
 ### When we see pair
 1. sorted matrix strategy
 ```
@@ -678,7 +677,7 @@ Strategy:
 
 - [0139]
 
-```
+```yaml
 - DFS by set lookup
 > Space: O(N*k): N words with duplicated prefix
 -- Time:
@@ -693,7 +692,7 @@ Strategy:
 
 # [`Two Pointers`]
 
-```
+```yaml
 > template:
 1. Givn an integer array.
 2. Define qualification of a subarray
