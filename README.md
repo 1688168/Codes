@@ -475,7 +475,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -
 [[Video]](https://www.youtube.com/watch?v=qaYimfZwbk8) -
-[`Stack`][`monotonic stack`][`classic`]
+[`Stack`][`monotonic stack`][`classic`][`form smallest sequence`]
 
 - How to make a list of number monotonically increasing
 

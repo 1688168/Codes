@@ -360,6 +360,17 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 # [`Greedy`]
 
+> Greedy mental model
+
+```yaml
+- always choose the local optimal solution and reach the global optimal solution
+- current sub-optimal solution cannot become global optimal solution with future decisions
+
+1. Guess a solution (might or might not be the optimized solution)
+2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
+
+```
+
 > Greedy classics
 
 - Huffman
@@ -367,7 +378,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - Prim (MST)
 - Kruskal
 
-> Greedy: min steps to reach goal
+> Greedy: min steps/stops to reach goal
 
 ```yaml
 - Can you reach the goal?
@@ -375,8 +386,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```
 
 - [0134]: can you reach the end?
+
   - failure condition
   - greedy, find the first positive start (since unique solution, we cannot end at postive -> ending @ zero)
+
+- [0871]: min refueling stops
 
 > Greedy-distribution given constrains
 
@@ -384,6 +398,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - two passes, the 2nd pass does not break first pass
 
 > Greedy-arrangment
+
+```yaml
 
 - given a list of task (each task represented by a char)
   given a string with duplicate chars
@@ -396,16 +412,6 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - Can you finish all? (when len(mxq) < k and mxq[0][0] < 1)
 - Min cycle required to complete if allowing idle? (when len(tmp)==0 + k else + N)
 - max cycle we can do until we cannot honor the rule? (1953)
-
-> Greedy mental model
-
-```yaml
-- always choose the local optimal solution and reach the global optimal solution
-- current sub-optimal solution cannot become global optimal solution with future decisions
-
-1. Guess a solution (might or might not be the optimized solution)
-2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
-
 ```
 
 - [0042]: trapping rain water
@@ -415,12 +421,13 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - Gas station - condition of no solution - sum(gas)-sum(cost) < 0
 - [0135]
 - [0358] (arrangement) - not allowing idle
+
   - VS [0621]: allow idle
   - k is flexible
   - if cannot complete, return "" => how do you identify failure condition
   - how do you identify last round?
-- [0402]
-- [0435]
+
+- [0435] interval, remove the one ending the longest when overlapping
 - [0621] (arrangement): if cannot honor gap, fill with idle
   - VS [0358]: not allowing idle
   - k is flexible
@@ -432,7 +439,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - need to output
   - k=1 -> special odd/even solution
   - return "" if not possible -> how do you check if not possible?
-- [0871]
+- [0871] min refueling top
 - [0881]
 - [0995]
 - [1029]
@@ -450,7 +457,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - when do we start to break?
   -
 
-  ```md
+  ```yaml
   We can only apply this strategy when
 
   1. k=1
@@ -497,6 +504,7 @@ c. element value is not equal to the destination value or no point of swapping
 
 - [0056] merge interval
 - [0057] insert inverval
+- [0435] min remove so no overlap
 - [0986] intersect of interval from two sorted list of intervals
 - [0621]
 - [0252] Meeting-Rooms: can attent all meetings?
