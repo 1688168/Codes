@@ -263,6 +263,7 @@ class Solution:
 
 - O(N): one loop
 - Space O(1) passible: dp[ii] only depends on dp[ii-1]
+- when using space O(1) strategy, be careful setup tmp variable to avoid states interfering each other
 
 ```yaml
 dp[ii][jj]:   iith round, state jj
