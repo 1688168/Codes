@@ -1,6 +1,29 @@
 ####################
+##### 20231225 #####
+####################
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        N = len(nums)
+        dp = [0]*N
+        """
+        dp[ii]: max profit if we rob upto ii
+        """
+        for ii in range(N):
+            if ii == 0:
+                dp[ii] = nums[ii]
+                continue
+            if ii == 1:
+                dp[ii] = max(nums[ii], dp[ii-1])
+                continue
+
+            dp[ii] = max(nums[ii]+dp[ii-2], dp[ii-1])
+
+        return dp[-1]
+
+####################
 ##### 20231008 #####
 ####################
+
 
 class Solution:
     def rob(self, nums: List[int]) -> int:
