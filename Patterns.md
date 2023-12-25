@@ -257,9 +257,12 @@ class Solution:
 - [996]
 - [1307]
 
-# [`DP`]
+# [`DP`][`Dynamic Programming`]
 
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
+
+- O(N): one loop
+- Space O(1) passible: dp[ii] only depends on dp[ii-1]
 
 ```yaml
 dp[ii][jj]:   iith round, state jj
@@ -267,13 +270,16 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - Today's state can be derived from Yesterday's states
 ```
 
-- Kadane
-- [123]
-- [198]: House Robber
-- [213]
-- [256]
-- [309]
-- [376]
+- [0053]: Kadane
+- [0123]
+- [0198]: House Robber
+- [0213]
+- [0256]
+- [0276]
+- [0309]
+- [0376]
+- [0487]
+- [1186]
 - [1289]
 
 > To-do or Not-to-do (State Design)
@@ -285,13 +291,17 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type II (Basic enhanced): Time Series 2
 
+- O(N^2): two loops, ii, and jj < ii
+
 ```
 - today's state can be derived from one of the JJ where jj < ii
 ```
 
-- [300]: Longest Increasing Subsequence
-- [368]
-- [1105]
+- [0300]: Longest Increasing Subsequence
+  - Best NlogN
+  - [0673]
+- [368]: Largest Divisible subset
+- [1105]: Filling Bookcase Shelves
 
 > Type III: Two sequences
 
@@ -394,6 +404,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 > Greedy-distribution given constrains
 
 - [0135]:
+- [1840]
   - two passes, the 2nd pass does not break first pass
 
 > Greedy-arrangment

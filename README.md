@@ -84,7 +84,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
-[`DP`][`Kadane`]
+[`DP`][`Kadane`][`classic`]
 
 [[0055] - <span style="color:yellow">M</span> - Jump Game](https://leetcode.com/problems/jump-game/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0055%5D%20Jump%20Game%20-%20DP.py)
