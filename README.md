@@ -727,6 +727,12 @@
 
 - [2307]
 
+[[0995] - <span style="color:red">H</span> - Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/995.Minimum-Number-of-K-Consecutive-Bit-Flips) -
+[[Video]](https://www.youtube.com/watch?v=c5o-x_kD8d8) -
+[`sweep line`][`range addition`]
+
 [[1000] - <span style="color:red">H</span> - desc](https://leetcode.com/problems/longest-common-subsequence/description) - 
 [[Python]]()
 [[CPP]]() -
