@@ -440,7 +440,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - return "" if not possible -> how do you check if not possible?
 - [0871] min refueling top
 - [0881]
-- [0995]
+- [0995]: if already in place, just skip to avoid redo
 - [1029]
 - [1054] (arrangement): ints
   - VS [0767]
