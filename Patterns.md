@@ -278,7 +278,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0198]: House Robber I               -> max profit robing a row of house
 - [0213]: House Robber II              -> max profit robing a ring of house
 - [0256]: Paint House                  -> min cost painting a row of house
-- [0276]: Paint Fence
+- [0276]: Paint Fence                  -> number of ways to achive something
+  - Climbing stairs
 - [0309]
 - [0376]
 - [0487]
