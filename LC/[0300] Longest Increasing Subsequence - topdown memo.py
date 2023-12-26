@@ -1,4 +1,3 @@
-# Time limit exceeded
 from functools import lru_cache
 
 
@@ -19,6 +18,6 @@ class Solution:
             dp[st][prev] = max(tke, ntk)
             return dp[st][prev]
 
-        dp = [[-1]*len(nums) for _ in range(len(nums)+1)]
+        dp = [[-1]*len(nums) for _ in range(len(nums))]
 
         return hp()
