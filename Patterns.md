@@ -272,11 +272,12 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```
 
 ```yaml
-- [0053]: Kadane                       -> max subarray sum
-- [0123]: Best Time Buy Sell Stock III -> max profit
-- [0198]: House Robber I               -> max profit
-- [0213]: House Robber II              -> max profit
-- [0256]: Paint House
+- [0053]: Kadane                       -> max subarray sum a list of number
+- [0123]:
+    Best Time Buy Sell Stock III       -> max profit buy/sell stock twice in timeseries
+- [0198]: House Robber I               -> max profit robing a row of house
+- [0213]: House Robber II              -> max profit robing a ring of house
+- [0256]: Paint House                  -> min cost painting a row of house
 - [0276]: Paint Fence
 - [0309]
 - [0376]

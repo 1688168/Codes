@@ -1,3 +1,35 @@
+#################
+# 20231225
+#################
+class Solution:
+    def minCost(self, costs: List[List[int]]) -> int:
+        """
+        list of house
+        current house depends on prev house
+
+        dp_0: red
+        dp_1: green
+        dp_2: blue
+        0 1 2 ... N-1
+        """
+        dp_0 = costs[0][0]
+        dp_1 = costs[0][1]
+        dp_2 = costs[0][2]
+        N = len(costs)
+        for ii in range(1, N):
+            dp_0_tmp = dp_0
+            dp_1_tmp = dp_1
+            dp_2_tmp = dp_2
+
+            dp_0 = min(dp_1_tmp, dp_2_tmp) + costs[ii][0]
+            dp_1 = min(dp_0_tmp, dp_2_tmp) + costs[ii][1]
+            dp_2 = min(dp_0_tmp, dp_1_tmp) + costs[ii][2]
+
+        return min(dp_0, dp_1, dp_2)
+
+
+#########################################
+
 class Solution:
     def minCost(self, costs: List[List[int]]) -> int:
         """

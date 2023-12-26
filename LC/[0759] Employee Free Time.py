@@ -1,3 +1,43 @@
+###############
+# 20231226
+###############
+
+"""
+# Definition for an Interval.
+class Interval:
+    def __init__(self, start: int = None, end: int = None):
+        self.start = start
+        self.end = end
+"""
+
+
+class Solution:
+    def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
+        sweep_line = []
+        for sch in schedule:
+            for interval in sch:
+                sweep_line.append((interval.start, 1))
+                sweep_line.append((interval.end, -1))
+
+        sweep_line.sort(key=lambda x: (x[0], -x[1]))
+
+        st = -1
+        cnt = 0
+        res = []
+        for tt, inc in sweep_line:
+            cnt += inc
+
+            if cnt == 0 and inc == -1:
+                st = tt
+
+            if cnt == 1 and inc == 1 and st != -1:
+                res.append(Interval(st, tt))
+                st = -1
+
+        return res
+
+
+####################
 """
 # Definition for an Interval.
 class Interval:
