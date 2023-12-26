@@ -1,6 +1,42 @@
 ##############
+# 20231226
+##############
+class Solution:
+    def decodeString(self, s: str) -> str:
+        def helper(s):
+            text = ""
+            N = len(s)
+            ii = 0
+            nn = 0
+            while ii < N:
+                cc = s[ii]
+                if cc.isdigit():
+                    jj = ii
+                    while jj < N and s[jj].isdigit():
+                        jj += 1
+                    nn = int(s[ii:jj])
+                    ii = jj
+                    continue
+                else:
+                    if cc == "[":
+                        ss, jj = helper(s[ii+1:])
+                        text = text + nn*ss
+                        ii += (jj+1)
+
+                    elif cc == "]":
+                        ii += 1
+                        break
+                    else:
+                        text += cc
+                        ii += 1
+            return text, ii
+
+        text, jj = helper(s)
+        return text
+##############
 # 20231106
 ##############
+
 
 class Solution:
     def decodeString(self, s: str) -> str:

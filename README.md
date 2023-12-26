@@ -471,6 +471,8 @@
 [[Video]](https://www.youtube.com/watch?v=-M-EoXtufLY) -
 [`stack`]
 
+- review basic calculators
+
 [[0402] - <span style="color:yellow">M</span> - Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -

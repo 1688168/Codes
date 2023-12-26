@@ -589,9 +589,10 @@ c. element value is not equal to the destination value or no point of swapping
 - [678]
 - [2116]
 
-# [`Parse Expression`]
+# [`Parse Expression`][`String Parsing`]
 
-- [224] basic Calculator
+- [0394]
+- [0224] basic Calculator
 
 # [`Quick Select`]
 
