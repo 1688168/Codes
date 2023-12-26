@@ -1,3 +1,29 @@
+###############
+# 20231225
+###############
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        bought1 = -prices[0]
+        sold1 = 0
+        bought2 = -prices[0]
+        sold2 = 0
+
+        for ii, pp in enumerate(prices):
+            bought1_tmp = bought1
+            sold1_tmp = sold1
+            bought2_tmp = bought2
+            sold2_tmp = sold2
+
+            bought1 = max(bought1_tmp, -pp)
+            sold1 = max(sold1_tmp, bought1_tmp+pp)
+            bought2 = max(bought2_tmp, sold1_tmp-pp)
+            sold2 = max(sold2_tmp, bought2_tmp+pp)
+
+        return max(sold1, sold2)
+
+
+##############################
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
@@ -11,16 +37,16 @@ class Solution:
         return max(sold1[n-1], sold2[n-2]), if youc an sell on last day, just sell it to capture any profit
         """
 
-        hold1=float('-inf')
-        sold1=0
-        hold2=float('-inf')
-        sold2=0
+        hold1 = float('-inf')
+        sold1 = 0
+        hold2 = float('-inf')
+        sold2 = 0
 
         for p in prices:
-            hold1_tmp=hold1
-            sold1_tmp=sold1
-            hold2_tmp=hold2
-            sold2_tmp=sold2
+            hold1_tmp = hold1
+            sold1_tmp = sold1
+            hold2_tmp = hold2
+            sold2_tmp = sold2
 
             hold1 = max(-p, hold1_tmp)
             sold1 = max(p+hold1_tmp, sold1_tmp)
@@ -28,4 +54,3 @@ class Solution:
             sold2 = max(p+hold2_tmp, sold2_tmp)
 
         return max(sold1, sold2)
-        

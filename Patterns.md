@@ -271,10 +271,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - Today's state can be derived from Yesterday's states
 ```
 
-- [0053]: Kadane
-- [0123]: Best Time Buy Sell Stock III
-- [0198]: House Robber I
-- [0213]: House Robber II
+```yaml
+- [0053]: Kadane                       -> max subarray sum
+- [0123]: Best Time Buy Sell Stock III -> max profit
+- [0198]: House Robber I               -> max profit
+- [0213]: House Robber II              -> max profit
 - [0256]: Paint House
 - [0276]: Paint Fence
 - [0309]
@@ -282,6 +283,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0487]
 - [1186]
 - [1289]
+```
 
 > To-do or Not-to-do (State Design)
 
