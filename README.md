@@ -326,6 +326,12 @@
 [[Video]](https://www.bilibili.com/video/BV1sS4y1V7ZT/) -
 [`DP`]
 
+[[0266] - <span style="color:green">E</span> - Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Palindrome`]
+
 [[0273] - <span style="color:red">H</span> - Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0273%5D%20Integer%20to%20English%20Words.py)
 [[CPP]]() -
