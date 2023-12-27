@@ -300,6 +300,12 @@
 [[Video]](https://www.youtube.com/watch?v=-IzCjqVsjZw) -
 [`Matrix`]
 
+[[0242] - <span style="color:green">E</span> - Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Anagram`]
+
 [[0252] - <span style="color:green">E</span> - Meeting Rooms](https://leetcode.com/problems/meeting-rooms/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/252.Meeting-Roomsb) -
