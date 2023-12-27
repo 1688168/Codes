@@ -1262,13 +1262,15 @@
 [[CPP]]() -
 [[Video - Iteration]](https://www.youtube.com/watch?v=z4lBve9ASy4) -
 [[Video - Recursion + Cache]](https://www.youtube.com/watch?v=r1U5rbA3F0A)
-[`DFS`]
+[`DFS`][`BFS`]
 
 - How to use @cache
 - print(check.cache_info())
 - check.cache_clear()
 - BFS by iteration: how to use memo in BFS? if visited, do not add it's children into the queue
 - DFS by recursion
+- How memo/cache can prune the search path in BFS
+- How memo can reduce duplicate search
 
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
