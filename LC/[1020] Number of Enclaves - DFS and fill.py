@@ -1,6 +1,38 @@
 ###########
+# 20231227
+###########
+class Solution:
+    def numEnclaves(self, grid: List[List[int]]) -> int:
+        """
+        1. dfs all edge=1s and mark zero
+        2. sum all remaining 1s
+        """
+        M = len(grid)
+        N = len(grid[0])
+        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+        def dfs(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return
+            if grid[ii][jj] != 1:
+                return  # we want to zero out all 1s connecting to edge
+            grid[ii][jj] = 0
+
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                dfs(nx, ny)
+
+        for ii in range(M):
+            for jj in range(N):
+                if not (ii == 0 or ii == M-1 or jj == 0 or jj == N-1):
+                    continue  # only DFS edge cells
+                dfs(ii, jj)
+
+        return sum([sum(grid[ii]) for ii in range(M)])
+###########
 # 20231105
 ###########
+
 
 class Solution:
     def numEnclaves(self, grid: List[List[int]]) -> int:
