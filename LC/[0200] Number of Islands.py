@@ -1,6 +1,42 @@
 ##########
+# 20231008-template
+##########
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        M = len(grid)
+        N = len(grid[0])
+
+        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+        def mark_ones(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return
+            if (ii, jj) in visited:
+                return
+            if grid[ii][jj] == '0':
+                return
+            visited.add((ii, jj))
+
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                mark_ones(nx, ny)
+            return
+
+        visited = set()
+        cnt = 0
+        for ii in range(M):
+            for jj in range(N):
+                if (ii, jj) not in visited and grid[ii][jj] == '1':
+                    mark_ones(ii, jj)
+                    cnt += 1
+
+        return cnt
+
+##########
 # 20231008
 ##########
+
+
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         cnt = 0

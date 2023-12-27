@@ -235,6 +235,21 @@ class Solution:
 - memo (lru_cache) is the best friend of DFS
 ```
 
+```yaml
+# The Island counts
+- [0200]
+  - count islands surround by water/sea -> marking (1)<land> as visited and count
+  - islands can reach edge
+- [1020]
+  - Count enclosed "Cells"
+  sol1. fill all edge 1s as zero. count number of 1s
+  sol2. accumulate DFS counts
+
+- [1254]
+  - Islands cannot reach edge
+  - count islands where must be surrounded by water (edge doesn't count) -> all 4 directions cannot reach water or edge
+```
+
 - [2597]: can you try 2638 by DFS?
 
 ```yaml

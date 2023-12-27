@@ -237,7 +237,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0200%5D%20Number%20of%20Islands.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/200.Number-of-Islands) -
 [[Video]](https://www.youtube.com/watch?v=prmHWUETpXw) -
-[`DFS`]
+[`DFS`][`classic`]
 
 [[0206] - <span style="color:green">E</span> - Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - 
 [[Python]]()
@@ -867,8 +867,11 @@
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=X8k48xek8g8) -
-[`Patterns`]
+[`DFS`]
 
+> Islands
+
+- [0200]
 - [1020]
 
 [[1268] - <span style="color:yellow">M</span> - Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/description/) - 

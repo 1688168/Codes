@@ -1,6 +1,53 @@
 ##########
+# 20231227
+##########
+class Solution:
+    def numEnclaves(self, grid: List[List[int]]) -> int:
+        M = len(grid)
+        N = len(grid[0])
+        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+        def is_reaching_edge(ii, jj):
+            """
+            dfs this area and return (is_reaching_edge, cnt_of_visited)
+            """
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return True, 0  # yes, you can walk off the edge
+            if grid[ii][jj] == 0:
+                return False, 0  # not reaching edge
+            if (ii, jj) in visited:
+                return False, 0  # already visited, do not double count
+            visited.add((ii, jj))
+
+            is_reaching_edge_from_here = False
+            ttl = 0
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                reached_edge, nn = is_reaching_edge(nx, ny)
+                ttl += nn
+                if reached_edge:
+                    is_reaching_edge_from_here = True  # is there any direction reaching the edge?
+
+            return is_reaching_edge_from_here, 1+ttl
+
+        visited = set()
+
+        ttl = 0
+        reached_edge = False
+        for ii in range(M):
+            for jj in range(N):
+                if (ii, jj) in visited or grid[ii][jj] == 0:
+                    continue  # we only want to try grid[ii][jj]==1
+                reached_edge, cnt = is_reaching_edge(ii, jj)
+                if not reached_edge:
+                    ttl += cnt
+
+        return ttl
+##########
 # 20231105
 ##########
+
+
 class Solution:
     def numEnclaves(self, grid: List[List[int]]) -> int:
         """

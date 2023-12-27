@@ -13,7 +13,7 @@ class Solution:
         dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         cnt = 0
 
-        def is_reaching_sea(ii, jj):
+        def is_reaching_edge(ii, jj):
             if ii < 0 or ii >= M or jj < 0 or jj >= N:
                 return True
 
@@ -21,20 +21,20 @@ class Solution:
             if grid[ii][jj] == 1:
                 return False
 
-            is_reaching_sea_from_here = False
+            is_reaching_edge_from_here = False
             for dx, dy in dirs:
                 nx, ny = ii+dx, jj+dy
                 if (nx, ny) in visited:
                     continue
-                if is_reaching_sea(nx, ny):
-                    is_reaching_sea_from_here = True
-            return is_reaching_sea_from_here
+                if is_reaching_edge(nx, ny):
+                    is_reaching_edge_from_here = True
+            return is_reaching_edge_from_here
         visited = set()
         for ii in range(M):
             for jj in range(N):
                 if (ii, jj) in visited or grid[ii][jj] != 0:
                     continue
-                if not is_reaching_sea(ii, jj):
+                if not is_reaching_edge(ii, jj):
                     cnt += 1
         return cnt
 
