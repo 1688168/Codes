@@ -23,8 +23,8 @@ class Solution:
             ttl = 0
             for dx, dy in dirs:
                 nx, ny = ii+dx, jj+dy
-                reached_edge, nn = is_reaching_edge(nx, ny)
-                ttl += nn
+                reached_edge, cnt = is_reaching_edge(nx, ny)
+                ttl += cnt
                 if reached_edge:
                     is_reaching_edge_from_here = True  # is there any direction reaching the edge?
 
