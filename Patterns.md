@@ -317,11 +317,13 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - today's state can be derived from one of the JJ where jj < ii
 ```
 
-- [0300]: Longest Increasing Subsequence
+```yaml
+- [0300]: Longest Increasing Subsequence -> subsequence (order matters)
   - Best NlogN
-  - [0673]
-- [368]: Largest Divisible subset
+  - [0673] -> subsequence count
+- [368]: Largest Divisible subset        -> subset (order doesn't matter)
 - [1105]: Filling Bookcase Shelves
+```
 
 > Type III: Two sequences
 

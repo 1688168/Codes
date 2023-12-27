@@ -433,6 +433,12 @@
 [[Video]](https://www.bilibili.com/video/BV1wo4y1D7zv/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Arrangement with Stride`][`Greedy`][`classic`]
 
+[[0368] - <span style="color:yellow">M</span> - Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/368.Largest-Divisible-Subset) -
+[[Video]](https://www.youtube.com/watch?v=hrwP6I5v1XY) -
+[`DP`]
+
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
@@ -798,6 +804,12 @@
 
 - [0358]
 - [0767]
+
+[[1105] - <span style="color:yellow">M</span> - Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1105.Filling-Bookcase-Shelves) -
+[[Video]](https://www.youtube.com/watch?v=H5p6bUdk-e4) -
+[`DP`]
 
 [[1109] - <span style="color:yellow">M</span> - Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/) - 
 [[Python]]()
