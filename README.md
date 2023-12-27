@@ -439,6 +439,8 @@
 [[Video]](https://www.youtube.com/watch?v=hrwP6I5v1XY) -
 [`DP`]
 
+- avoid recording the whole path. try recording prev and trace back
+
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
