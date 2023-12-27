@@ -604,6 +604,14 @@
 
 - Sorted matrix
 
+[[0673] - <span style="color:yellow">M</span> - Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/673.Number-of-Longest-Increasing-Subsequence) -
+[[Video]](https://www.youtube.com/watch?v=ESUKmxtA5sY&t=2s) -
+[`DP`]
+
+- [0300]: longest increasing subsequence
+
 [[0703] - <span style="color:green">E</span> - Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/) - 
 [[Python]]()
 [[CPP]]() -
