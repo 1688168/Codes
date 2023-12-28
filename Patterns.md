@@ -277,7 +277,9 @@ class Solution:
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
 
 - O(N): one loop
-- Space O(1) passible: dp[ii] only depends on dp[ii-1]
+- Space O(1) passible: dp[ii]
+- only depends on dp[ii-1]
+- prev state (dp[ii-1]), could be two consequted elements (276-paint fence)
 - when using space O(1) strategy, be careful setup tmp variable to avoid states interfering each other
 
 ```yaml
@@ -288,13 +290,28 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 ```yaml
 - [0053]: Kadane                       -> max subarray sum a list of number
+                                       * two states: dlp[ii-1] > nums[ii] or not
+                                       * prev state = dp[ii-1] (max subarray sum ending @ ii-1)
+                                       * condition, dp[ii-1]+nums[ii] > nums[ii] ?
 - [0123]:
     Best Time Buy Sell Stock III       -> max profit buy/sell stock twice in timeseries
+                                       * 4 states bought1, sold1, bought2, sold2
+                                       * current 4 states depends on prev 4 states
+
 - [0198]: House Robber I               -> max profit robing a row of house
+                                       * 2 states, rob, no rob
 - [0213]: House Robber II              -> max profit robing a ring of house
+                                       * two states (rob, no_rob)
+                                       * two scenarios
+                                         1. rob first + no_rob_second + no_rob_last)
+                                         2. no_rob_first
+                                       * return the max(scenario1, scenario2)
 - [0256]: Paint House                  -> min cost painting a row of house
+                                       * two states: cannnot be same color as prev house
+                                       * k-1 choice of colors
 - [0276]: Paint Fence                  -> number of ways to achive something
-  - Climbing stairs
+                                       * states is two elements in a row (same, diff)
+
 - [0309]
 - [0376]
 - [0487]
@@ -311,9 +328,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type II (Basic enhanced): Time Series 2
 
+```yaml
 - O(N^2): two loops, ii, and jj < ii
-
-```
 - today's state can be derived from one of the JJ where jj < ii
 ```
 
@@ -321,8 +337,14 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0300]: Longest Increasing Subsequence -> subsequence (order matters)
   - Best NlogN
   - [0673] -> subsequence count
+  - prev state @ jj where nums[jj] < nums[ii]
 - [368]: Largest Divisible subset        -> subset (order doesn't matter)
+  - nums[ii]%nums[jj]==0
 - [1105]: Filling Bookcase Shelves       -> minimize the max of all the subarrays
+  - prev state (prev level of book-shelf) is prev, book for first book @ current_level.
+  - try jj < ii until we exceed max width
+  - ii-1 is the jj
+  - find the min(ttl_height) for each prev jj
 ```
 
 > Type III: Two sequences
