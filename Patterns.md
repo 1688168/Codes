@@ -350,6 +350,16 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type III: Two sequences
 
+```yaml
+- Longest Common Subsequences
+- Shortest Common Supersequence
+- Edit Distance
+
+-> dp[ii][jj]: s[1:iii], t[1:jj]
+   dp[ii][jj] = from dp[ii-1][jj], dp[ii][jj-1], dp[ii-1][jj-1]
+-> return dp[-1][-1]
+```
+
 - [72]
 - [97]
 - [115]
