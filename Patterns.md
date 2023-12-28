@@ -360,11 +360,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 -> return dp[-1][-1]
 ```
 
-- [72]
-- [97]
-- [115]
-- [727]
-- [1092]
+- [72]: Edit Distance
+- [97]: Interleaving String
+- [115]: Distinct Subsequences
+- [727]: Minimum Window Subsequence
+- [1092]: Shortest Common Supersequences
 - [1143]: Longest Common Subsequences
 
 > LCS/SCS Variation
