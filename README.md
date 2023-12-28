@@ -207,6 +207,16 @@
 [[Video]](https://www.youtube.com/watch?v=jX_k2FIhRI0&t=23s) -
 [`Design`][`OrderedDict`]
 
+```python
+# OrderedDict
+# front is the most recent used
+# last is the least recent used
+cache = OrderedDict()
+* od.move_to_end()
+* cache.popitem(last=False) # pop the last
+
+```
+
 - [472] Concatenated Words
 
 [[0153] - <span style="color:yellow">M</span> - Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) - 
@@ -836,7 +846,7 @@
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
-[[Video]](https://www.youtube.com/watch?v=Ua0GhsJSlWM) -
+[[Video]](https://www.youtube.com/watch?v=CEnb7Ho7TYc) -
 [`DP`][`classic`]
 
 - [Failed]: Amazon
