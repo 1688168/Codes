@@ -322,7 +322,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - Best NlogN
   - [0673] -> subsequence count
 - [368]: Largest Divisible subset        -> subset (order doesn't matter)
-- [1105]: Filling Bookcase Shelves
+- [1105]: Filling Bookcase Shelves       -> minimize the max of all the subarrays
 ```
 
 > Type III: Two sequences
