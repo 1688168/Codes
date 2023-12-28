@@ -365,15 +365,17 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [115]: Distinct Subsequences
 - [727]: Minimum Window Subsequence
 - [1092]: Shortest Common Supersequences
+  - How to trace back the optimal solution (display path)
 - [1143]: Longest Common Subsequences
+  - [583]
 
-> LCS/SCS Variation
+> > LCS/SCS Variation
 
-- [583]
-- [712]
-- [1035]
-- [1216]
-- [1312]
+- [583]: Delete Operation for two strings
+- [712]: Minimum ASCII Delete Sum for Two Strings
+- [1035]: Uncrossed Lines (LCS)
+- [1216]: Valid Palindrome III
+- [1312]: Minimum Insertion Steps to Make a String Palindrome
 
 > Type IV: Type I Intervals
 
