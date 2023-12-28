@@ -736,6 +736,7 @@
 [`Stack`]
 
 - How to validate a stack sequence? -> use stack to validate stack sequence
+
 ```yaml
 1. keep adding element to stk from pushed until stk[-1]==popped[jj]
 2. keep popping until stk is empty or jj >= len(popped)
@@ -1272,6 +1273,15 @@
 [`Union Find`][`Index Sort`][`Greedy`]
 
 - how to think when dealing with circle
+
+```yaml
+* sort array
+* nums of size n
+* nums[ii] in (0, n-1)
+* N=10^5 -> nlogn
+-> index sort
+* min operations -> DP, Greedy, Binary
+```
 
 [[2461] - <span style="color:yellow">M</span> - Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2461%5D%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K.py)
