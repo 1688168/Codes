@@ -427,6 +427,12 @@
 [[Video2]](https://www.youtube.com/watch?v=6hjV-IdrOd0) -
 [`Quick Select`]
 
+[[0348] - <span style="color:yellow">M</span> - Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/348.Design-Tic-Tac-Toe) -
+[[Video]]() -
+[`Design`]
+
 [[0358] - <span style="color:red">H</span> - Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/358.Rearrange-String-k-Distance-Apart) -
