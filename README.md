@@ -582,6 +582,12 @@ cache = OrderedDict()
 [[Video]]() -
 [`Greedy`][`Monotonic stack`]
 
+[[0583] - <span style="color:yellow">M</span> - Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/583.Delete-Operation-for-Two-Strings) -
+[[Video]](https://www.youtube.com/watch?v=O1K_T4ZqstM&t=8s) -
+[`DP`]
+
 [[0588] - <span style="color:red">H</span> - Design In-Memory File System
 ](https://leetcode.com/problems/design-in-memory-file-system/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0588%5D%20Design%20In-Memory%20File%20System.py)
