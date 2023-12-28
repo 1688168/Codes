@@ -736,6 +736,11 @@
 [`Stack`]
 
 - How to validate a stack sequence? -> use stack to validate stack sequence
+```yaml
+1. keep adding element to stk from pushed until stk[-1]==popped[jj]
+2. keep popping until stk is empty or jj >= len(popped)
+3. return not stk
+```
 
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
