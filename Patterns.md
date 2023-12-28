@@ -696,6 +696,17 @@ Strategy:
 - accumulate "B" for all elements -> we have sum(max of all subarrays)
 - do the similar thing for min
 
+# [`Stack`]
+
+```yaml
+* Validate stack
+* Validate Parentheses
+* validate a sequence of something
+* simulating a text cursor moving back and forth, append, delete
+```
+
+- [0946]
+
 # [`Subset, Subarray, Subsequence`]
 
 - Subsequence -> DP (Longest increasing subsequence, Longest Common Subsequence)
