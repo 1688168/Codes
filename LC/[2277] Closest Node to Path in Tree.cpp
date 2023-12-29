@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 
+/* 
+=> If we are being queried repeatedly on a dataset, can we precalc all the possible answers? 
+
+*/
+
 class Solution {
     vector<int>next[1005]; //this is for graph
     //the matrix is to record distance btn any two nodes
@@ -19,6 +24,7 @@ public:
         for (int i=0; i<n; i++) //calc distance and populate the matrix
             dfs(i,i,0);
                 
+        //process queries
         vector<int>rets;
         for (auto& q: query) //start to process the queries
         {
@@ -59,7 +65,7 @@ public:
         {
             if (j!=root && matrix[root][j]==0) //avoid visited and circle, should have put root in visited
             {
-                matrix[root][j] = dist+1;
+                matrix[root][j] = dist+1; //since this is guaranteed as tree, no circle. there is only one path to reach this node
                 dfs(root, j, dist+1);                
             }            
         }
