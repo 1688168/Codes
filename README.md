@@ -80,6 +80,12 @@
 [[Video]](https://www.youtube.com/watch?v=K6vqgAEyfng) -
 [`Permutation`]
 
+[[0049] - <span style="color:yellow">M</span> - Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[0053] - <span style="color:yellow">M</span> - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.py)
 [[CPP]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0053%5D%20Maximum%20Subarray.cpp) -
