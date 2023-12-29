@@ -745,6 +745,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=yX5zRzTbeJc) -
 [`Greedy`]
 
+[[0895] - <span style="color:red">H</span> - Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/895.Maximum-Frequency-Stack) -
+[[Video]](https://www.youtube.com/watch?v=2cf4BI8HF74) -
+[`Design`][`Stack`]
+
 [[0921] - <span style="color:yellow">M</span> - Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/921.Minimum-Add-to-Make-Parentheses-Valid) -
