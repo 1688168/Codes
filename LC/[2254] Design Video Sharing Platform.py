@@ -1,3 +1,88 @@
+##################
+# 20231229
+##################
+
+class Video:
+    def __init__(self, nvid, content):
+        self.vid = nvid
+        self.like = 0
+        self.dislike = 0
+        self.views = 0
+        self.content = content
+
+
+class VideoSharingPlatform:
+    """
+    - upload
+    - delete
+    - video: string of digits. video[ii]=content @ minute ii
+    - like/dislike
+    - number of views, likes, dislikes
+    - videoID (smallest), can be reused after delete
+    """
+
+    def __init__(self):
+        self.deleted_vid = []  # min heap
+        self.curr_id = -1
+        self.videos = {}  # id2video
+
+    def get_new_id(self):
+        if self.deleted_vid:
+            return heappop(self.deleted_vid)
+        self.curr_id += 1
+        return self.curr_id
+
+    def upload(self, video: str) -> int:
+        nvid = self.get_new_id()
+        new_video = Video(nvid, video)
+        self.videos[nvid] = new_video
+        return nvid
+
+    def remove(self, videoId: int) -> None:
+        if videoId not in self.videos:
+            return
+        heappush(self.deleted_vid, videoId)
+        del self.videos[videoId]
+
+    def watch(self, videoId: int, startMinute: int, endMinute: int) -> str:
+        if videoId not in self.videos:
+            return "-1"
+        N = len(self.videos[videoId].content)
+        self.videos[videoId].views += 1
+        return self.videos[videoId].content[min(startMinute, N):min(endMinute, N)+1]
+
+    def like(self, videoId: int) -> None:
+        if videoId not in self.videos:
+            return -1
+        self.videos[videoId].like += 1
+
+    def dislike(self, videoId: int) -> None:
+        if videoId not in self.videos:
+            return -1
+        self.videos[videoId].dislike += 1
+
+    def getLikesAndDislikes(self, videoId: int) -> List[int]:
+        if videoId not in self.videos:
+            return [-1]
+        return [self.videos[videoId].like, self.videos[videoId].dislike]
+
+    def getViews(self, videoId: int) -> int:
+        if videoId not in self.videos:
+            return -1
+        return self.videos[videoId].views
+
+
+# Your VideoSharingPlatform object will be instantiated and called as such:
+# obj = VideoSharingPlatform()
+# param_1 = obj.upload(video)
+# obj.remove(videoId)
+# param_3 = obj.watch(videoId,startMinute,endMinute)
+# obj.like(videoId)
+# obj.dislike(videoId)
+# param_6 = obj.getLikesAndDislikes(videoId)
+# param_7 = obj.getViews(videoId)
+
+##################
 video_rec = namedtuple('video_rec', ['video', 'like', 'dislike', 'cnt'])
 
 
