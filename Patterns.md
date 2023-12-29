@@ -367,7 +367,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1092]: Shortest Common Supersequences
   - How to trace back the optimal solution (display path)
 - [1143]: Longest Common Subsequences
-  - [583]
+  - [0583]: delete to make the same
+  - [0072]: ??
 
 > > LCS/SCS Variation
 
