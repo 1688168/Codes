@@ -1030,6 +1030,12 @@ cache = OrderedDict()
 [[Video]]() -
 [`LCA`]
 
+[[1670] - <span style="color:yellow">M</span> - Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Linked_List/1670.Design-Front-Middle-Back-Queue) -
+[[Video]](https://www.youtube.com/watch?v=HRe_Z9uQ-Oo) -
+[`Design`]
+
 [[1676] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree IV
 ](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1676%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20IV.py)
