@@ -513,6 +513,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
 
+[[0387] - <span style="color:green">E</span> - First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`MISC`]
+
 [[0394] - <span style="color:yellow">M</span> - Decode String](https://leetcode.com/problems/decode-string/description) - 
 [[Python]]()
 [[CPP]]() -
