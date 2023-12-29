@@ -853,7 +853,7 @@ cache = OrderedDict()
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1092.Shortest-Common-Supersequence) -
 [[Video]](https://www.youtube.com/watch?v=Uk9JRbylA0c) -
-[`DP`]
+[`DP`][`classic`]
 
 - DP returning path
 
