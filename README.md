@@ -849,6 +849,14 @@ cache = OrderedDict()
 - [0358]
 - [0767]
 
+[[1092] - <span style="color:red">H</span> - Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1092.Shortest-Common-Supersequence) -
+[[Video]](https://www.youtube.com/watch?v=Uk9JRbylA0c) -
+[`DP`]
+
+- DP returning path
+
 [[1105] - <span style="color:yellow">M</span> - Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1105.Filling-Bookcase-Shelves) -
