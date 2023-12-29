@@ -1191,6 +1191,7 @@ cache = OrderedDict()
 [[Video-2]](https://www.youtube.com/watch?v=TIcP6vP7nOk)
 [`Patterns`]
 
+- when you query a data structure, think of if any info that can be shared so we do not have to process from scratch on each query
 - pre-process distance table matrix
 - dist(start, end)= 1 + dist(j, end) where j is start's child
 - Tree has no cycle.
