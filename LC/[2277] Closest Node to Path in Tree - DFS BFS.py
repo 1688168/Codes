@@ -14,23 +14,25 @@ class Solution:
 
         res = []
         # DFS to determine the path
+
         def get_path_dfs(a, b, path, visited):
-            if a==b:
+            if a == b:
                 return True, path
             visited.add(a)
 
             for child in g[a]:
                 if child not in visited:
                     found, p = get_path_dfs(child, b, path+[child], visited)
-                    if found: return True, p
-            
+                    if found:
+                        return True, p
+
             return False, []
 
         for a, b, n in query:
-            path=[a]
-            visited=set()
+            path = [a]
+            visited = set()
             path_set = set(get_path_dfs(a, b, path, visited)[1])
-            print(" path set: ", path_set)
+            # print(" path set: ", path_set)
             found = False
             dq = collections.deque([n])
             visited = set()

@@ -16,6 +16,7 @@ class Solution:
         # BFS to determine the path
 
         def get_path_bfs(st, ed):
+            # here we carry the whole path.  can we try trace back to save space?
             dq = collections.deque([(st, [st])])
             visited = set()
             while (sz := len(dq)) > 0:
