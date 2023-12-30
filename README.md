@@ -454,6 +454,12 @@ cache = OrderedDict()
 - Given an Eulerian Path, construct the Eulerian path
 - graph with list (adjacency list) to maintain lexical order
 
+[[0341] - <span style="color:yellow">M</span> - Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/341.Flatten-Nested-List-Iterator) -
+[[Video]](https://www.youtube.com/watch?v=R2dohSHOWXQ) -
+[`Stack`]
+
 [[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/347.Top-K-Frequent-Elements) -
