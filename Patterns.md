@@ -399,11 +399,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 [[背包九讲] - video I](https://www.youtube.com/watch?v=nleY0-eexps)  
 [[背包九讲] - video II](https://www.youtube.com/watch?v=0Jp4p0uO7Dw)
 
-- [474]
-- [494]
-- [879]
-- [956]
-- [1049]
+- [0474]: Ones and Zeroes
+- [0494]: Target Sum
+- [0879]: Profitable Schemes
+- [0956]: Tallest Billboard
+- [1049]: Last Stone Weight II
 
 > Type I and Type II Interval DP
 
