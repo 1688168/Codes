@@ -458,7 +458,7 @@ cache = OrderedDict()
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/341.Flatten-Nested-List-Iterator) -
 [[Video]](https://www.youtube.com/watch?v=R2dohSHOWXQ) -
-[`Stack`]
+[`Stack`][`Generator`]
 
 [[0347] - <span style="color:yellow">M</span> - Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0347%5D%20Top%20K%20Frequent%20Elements%20-%20quick%20select.py)
