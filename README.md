@@ -843,6 +843,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=d-B_gk_gJtQ) -
 [`Greedy`]
 
+[[1035] - <span style="color:yellow">M</span> - Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1035.Uncrossed-Lines) -
+[[Video]](https://www.youtube.com/watch?v=x_djkQhnuTk) -
+[`DP`]
+
 [[1044] - <span style="color:red">H</span> - Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/1044.Longest-Duplicate-Substring) -
