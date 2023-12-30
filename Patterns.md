@@ -381,25 +381,33 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type IV: Type I Intervals
 
-- [410]
-- [813]
-- [1278]
-- [1335]
+- [0410]: Split Array Largest Sum
+- [0813]: Largest Sum of Averages
+- [1278]: Palindrome Partitioning III
+- [1335]: Minimum Difficulty of a Job Schedule
 
 > Type V: Type II Intervals
 
-- [312]
-- [375]
-- [516]
-- [1246]
+- [312]: Burst Balloons
+- [375]: Guess Number Higher or Lower II
+- [516]: Longest Palindromic Subsequence
+- [1246]: Palindrome Removal
 
 > Type VI: backpack
+
+[[背包九讲] - Article)](https://www.cnblogs.com/jbelial/articles/2116074.html)  
+[[背包九讲] - video I](https://www.youtube.com/watch?v=nleY0-eexps)  
+[[背包九讲] - video II](https://www.youtube.com/watch?v=0Jp4p0uO7Dw)
 
 - [474]
 - [494]
 - [879]
 - [956]
 - [1049]
+
+> Type I and Type II Interval DP
+
+- [1000]: Minimum Cost to Merge Stones (most difficult DP)
 
 > Compress state
 
