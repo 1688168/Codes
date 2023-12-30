@@ -26,6 +26,12 @@
 [[Video]]() -
 [`Recursion`]
 
+[[0020] - <span style="color:green">E</span> - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Stack`]
+
 [[0022] - <span style="color:yellow">M</span> - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0022%5D%20Generate%20Parentheses.py)
 [[CPP]]() -
