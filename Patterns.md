@@ -1,4 +1,10 @@
-$${\color{orange}Patterns, \space Data \space Structures}$$
+# <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
+
+> N VS Time complexity
+```yaml
+
+
+```
 
 > When buildung graph, if output has requirements on order (lexical order, etc), we have to use defaultdict(list) instead of defaultdict(set)
 
@@ -393,11 +399,23 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [516]: Longest Palindromic Subsequence
 - [1246]: Palindrome Removal
 
-> Type VI: backpack
+> Type VI: Knapsack
 
 [[背包九讲] - Article)](https://www.cnblogs.com/jbelial/articles/2116074.html)  
-[[背包九讲] - video I](https://www.youtube.com/watch?v=nleY0-eexps)  
+[[背包九讲] - video I](https://www.youtube.com/watch?v=nleY0-eexps)
 [[背包九讲] - video II](https://www.youtube.com/watch?v=0Jp4p0uO7Dw)
+
+```yaml
+1. 01 背包问题（选或不选）
+2. 完全背包问题 （同物可选无限次）
+3. 多重背包问题 （每个物品有不同限制）
+4. 混合背包问题
+5. 二维费用背包问题 （体积加重量限制）
+6. 分组背包问题 （每组物品只能选一件）
+7. 背包问题求方案数 （通常问max profit, min cost.  这里问方案数）
+8. 求背包方案 （print the path)
+9. 有依赖的背包问题 （each item has dependency/prerequisite）
+```
 
 - [0474]: Ones and Zeroes
 - [0494]: Target Sum
