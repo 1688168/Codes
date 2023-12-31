@@ -1,8 +1,8 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
 > N VS Time complexity
-```yaml
 
+```yaml
 
 ```
 
@@ -821,9 +821,19 @@ c. move (slide) the window
 - [1151]
 - [2762] M
 
-# [`Union Find`]
+# [`Union Find`][`并查集`]
 
-- [990]
+- [0547]\*
+- [0684]\*
+- [0990]
+- [0924]
+- [1202]
+- [0952]
+- [0947]
+- [0721]
+- [0685]
+
+-[128
 
 # Series
 

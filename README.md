@@ -614,6 +614,12 @@ cache = OrderedDict()
 [[Video]]() -
 [`Tree`]
 
+[[0547] - <span style="color:yellow">M</span> - Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Union_Find/547.Friend-Circles) -
+[[Video]](https://www.youtube.com/watch?v=ZK8Jz4WuJsQ) -
+[`Union Find`]
+
 [[0560] - <span style="color:yellow">M</span> - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description) - 
 [[Python]]()
 [[CPP]]() -
