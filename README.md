@@ -1447,6 +1447,12 @@ defaultdict(lambda: defaultdict(int))
 - How memo/cache can prune the search path in BFS
 - How memo can reduce duplicate search
 
+[[2518] - <span style="color:red">H</span> - Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/2518.Number-of-Great-Partitions) -
+[[Video]](https://www.youtube.com/watch?v=V7wdVxiPFCU) -
+[`DP`]
+
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2519%5D%20Count%20the%20Number%20of%20K-Big%20Indices%20-%20binary%20search.py)
 [[CPP]]() -

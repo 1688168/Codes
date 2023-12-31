@@ -417,6 +417,57 @@ dp[ii][jj] = dp[ii-1][jj]+something
 9. 有依赖的背包问题 （each item has dependency/prerequisite）
 ```
 
+```yaml
+# review of [0494: target sum] VS [2518: num of great partition]
+> classic knapsack
+* list of nums
+* constrain: ttl capacity
+* action: add or ignore
+=> max value
+capacity 0 1 2 ... capacity
+0
+n1
+n2
+.
+.
+
+
+> 494:
+* list of nums
+* constrain: expression value
+* actions: add to ttl or substrack to ttl
+=> count number of ways sum to target
+target sum 0 1 2 ...target_sum+offset
+0
+n1
+n2
+.
+.
+.
+
+
+
+> 2518:
+* list of nums
+* constrain: group
+* actions: add or ignore (ignore goes to group 2)
+=> number of ways both group sum > k
+* ttl ways count: power(2, k)
+* when ttl_sum < 2*k --> return 0 (unable to partition to two groups both sum greater than k)
+--> here we have ttl > 2k, ie. when group1_sum < k --> group2_sum will be > k
+* valid ways count: ttl_count - group1_invalid_count*2
+
+required_k  0, 1, 2,..., k-1 (we don't need k as we will use ttl to sustrace invalids)
+0
+n1
+n2
+.
+.
+.
+
+* when we have two symmetric groups. and know the ttl outcome space (ttl count), think of use ttl to substrack invalids to derive valid counts.
+```
+
 - [0474]: Ones and Zeroes
 - [0494]: Target Sum
   - [2518]
