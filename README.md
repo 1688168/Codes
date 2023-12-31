@@ -690,6 +690,12 @@ cache = OrderedDict()
 
 - [0300]: longest increasing subsequence
 
+```python
+# defaultdict of value=1 int
+idx2cnt = collections.defaultdict(lambda: 1)
+
+```
+
 [[0703] - <span style="color:green">E</span> - Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -1099,9 +1105,14 @@ cache = OrderedDict()
 - if you need to detect cycle -> topology sort (or review DFS detect cycle, cf. [207])
 - we cannot rely on parent's color count as we might reach this child from diff depth. so each node's color count should be the max of all reachable path, not just from previous level
 
-```
+```python
   mxf=-N # since we could return -1, be careful on the initial value of the return var
   for a_color in colors_set: # for each color
+```
+
+```python
+# defaultdict of defaultdict
+defaultdict(lambda: defaultdict(int))
 ```
 
 [[1918] - <span style="color:yellow">M</span> - Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/description/) - 
