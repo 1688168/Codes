@@ -588,6 +588,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=D2ZSacsq_fw) -
 [`DP`]
 
+[[0494] - <span style="color:yellow">M</span> - Target Sum](https://leetcode.com/problems/target-sum/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/494.Target-Sum) -
+[[Video]](https://www.youtube.com/watch?v=MTMxgyJt3VM) -
+[`DP`]
+
 [[0495] - <span style="color:green">E</span> - Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/) - 
 [[Python]]()
 [[CPP]]() -
