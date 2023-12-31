@@ -994,6 +994,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 - [642]
 
+[[1278] - <span style="color:red">H</span> - Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1278.Palindrome-Partitioning-III) -
+[[Video]](https://www.youtube.com/watch?v=0lhalhxmhmw) -
+[`DP`]
+
 [[1289] - <span style="color:red">H</span> - Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1289.Minimum-Falling-Path-Sum-II) -

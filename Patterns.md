@@ -361,21 +361,21 @@ dp[ii][jj] = dp[ii-1][jj]+something
 -> return dp[-1][-1]
 ```
 
-- [72]: Edit Distance
+- [72]: *Edit Distance
 - [97]: Interleaving String
 - [115]: Distinct Subsequences
 - [727]: Minimum Window Subsequence
-- [1092]: Shortest Common Supersequences
+- [1092]: *Shortest Common Supersequences
   - How to trace back the optimal solution (display path)
-- [1143]: Longest Common Subsequences
-  - [0583]: delete to make the same
-  - [0072]: edit s1 into s2
+- [1143]: *Longest Common Subsequences
+  - [0583]: *delete to make the same
+  - [0072]: *edit s1 into s2
 
 > > LCS/SCS Variation
 
 - [583]: Delete Operation for two strings
 - [712]: Minimum ASCII Delete Sum for Two Strings
-- [1035]: Uncrossed Lines (LCS)
+- [1035]: *Uncrossed Lines (LCS)
 - [1216]: Valid Palindrome III
 - [1312]: Minimum Insertion Steps to Make a String Palindrome
 
