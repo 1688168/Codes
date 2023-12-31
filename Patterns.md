@@ -417,47 +417,79 @@ dp[ii][jj] = dp[ii-1][jj]+something
 9. 有依赖的背包问题 （each item has dependency/prerequisite）
 ```
 
-```yaml
+````yaml
 # review of [0494: target sum] VS [2518: num of great partition]
 > classic knapsack
-* list of nums
-* constrain: ttl capacity
-* action: add or ignore
-=> max value
-capacity 0 1 2 ... capacity
-0
-n1
-n2
-.
-.
+```python
+'''
+* given list of items
+  - w[ii]= weight of item ii
+  - value[ii] = value of item ii
+  - capacity is the max allowed ttl weight
+=> max value we can carry
+'''
+def find_max_knapsack_profit(capacity, weights, values):
+    weights=[0]+weights
+    values = [0]+values
+    M=len(weights)
+    N=capacity+1
+    dp=[[0]*N for _ in range(M)]
 
+    for ii in range(1, M):
+        for w in range(1, N):
+            #not taking
+
+            ntk = dp[ii-1][w]
+
+            #taking
+            tke=0
+            if w-weights[ii]>=0:
+                tke= dp[ii-1][w-weights[ii]]+values[ii]
+
+            dp[ii][w]=max(ntk, tke)
+
+    return dp[-1][-1]
+
+
+````
+
+- list of nums
+- constrain: ttl capacity
+- action: add or ignore
+  => max value
+  capacity 0 1 2 ... capacity
+  0
+  n1
+  n2
+  .
+  .
 
 > 494:
-* list of nums
-* constrain: expression value
-* actions: add to ttl or substrack to ttl
-=> count number of ways sum to target
-target sum 0 1 2 ...target_sum+offset
-0
-n1
-n2
-.
-.
-.
 
-
+- list of nums
+- constrain: expression value
+- actions: add to ttl or substrack to ttl
+  => count number of ways sum to target
+  target sum 0 1 2 ...target_sum+offset
+  0
+  n1
+  n2
+  .
+  .
+  .
 
 > 2518:
-* list of nums
-* constrain: group
-* actions: add or ignore (ignore goes to group 2)
-=> number of ways both group sum > k
-* ttl ways count: power(2, k)
-* when ttl_sum < 2*k --> return 0 (unable to partition to two groups both sum greater than k)
---> here we have ttl > 2k, ie. when group1_sum < k --> group2_sum will be > k
-* valid ways count: ttl_count - group1_invalid_count*2
 
-required_k  0, 1, 2,..., k-1 (we don't need k as we will use ttl to sustrace invalids)
+- list of nums
+- constrain: group
+- actions: add or ignore (ignore goes to group 2)
+  => number of ways both group sum > k
+- ttl ways count: power(2, k)
+- when ttl_sum < 2\*k --> return 0 (unable to partition to two groups both sum greater than k)
+  --> here we have ttl > 2k, ie. when group1_sum < k --> group2_sum will be > k
+- valid ways count: ttl_count - group1_invalid_count\*2
+
+required_k 0, 1, 2,..., k-1 (we don't need k as we will use ttl to sustrace invalids)
 0
 n1
 n2
@@ -465,8 +497,9 @@ n2
 .
 .
 
-* when we have two symmetric groups. and know the ttl outcome space (ttl count), think of use ttl to substrack invalids to derive valid counts.
-```
+- when we have two symmetric groups. and know the ttl outcome space (ttl count), think of use ttl to substrack invalids to derive valid counts.
+
+````
 
 - [0474]: Ones and Zeroes
 - [0494]: Target Sum
@@ -515,7 +548,7 @@ n2
 1. Guess a solution (might or might not be the optimized solution)
 2. try to adjust the guessed solution (applying some kind of greedy strategy) and observe if a greedy strategy can solve the problem
 
-```
+````
 
 > Greedy classics
 
