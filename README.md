@@ -1018,6 +1018,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=XOa2yhUd3fw) -
 [`binary Tree`][`recursion`]
 
+[[1381] - <span style="color:yellow">M</span> - Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1381.Design-a-Stack-With-Increment-Operation) -
+[[Video]](https://www.youtube.com/watch?v=aWDCbFIsUfw) -
+[`Design`]
+
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
 [[CPP]]() -
