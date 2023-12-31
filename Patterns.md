@@ -823,6 +823,10 @@ c. move (slide) the window
 
 # [`Union Find`][`并查集`]
 
+```yaml
+* grouping connected nodes
+```
+
 - [0547]\*
 - [0684]\*
 - [0990]

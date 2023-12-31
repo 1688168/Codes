@@ -618,7 +618,7 @@ cache = OrderedDict()
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Union_Find/547.Friend-Circles) -
 [[Video]](https://www.youtube.com/watch?v=ZK8Jz4WuJsQ) -
-[`Union Find`]
+[`Union Find`][`classic`]
 
 [[0560] - <span style="color:yellow">M</span> - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description) - 
 [[Python]]()
