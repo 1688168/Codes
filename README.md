@@ -594,6 +594,8 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=MTMxgyJt3VM) -
 [`DP`]
 
+- [2518]
+
 [[0495] - <span style="color:green">E</span> - Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/) - 
 [[Python]]()
 [[CPP]]() -
