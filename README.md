@@ -1024,6 +1024,9 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=aWDCbFIsUfw) -
 [`Design`]
 
+- application of "range addition"
+- [1109]
+
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
 [[CPP]]() -
