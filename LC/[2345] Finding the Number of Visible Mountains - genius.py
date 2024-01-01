@@ -19,18 +19,20 @@ class Solution:
         intervals.sort(key=lambda x: (x[0], -x[1]))
         # be careful on make ending point in decending order
 
-        cs, ce = -math.inf, -math.inf
+        ins, ine = -math.inf, -math.inf
         cnt = 0
 
         N = len(intervals)
         for ii, (ns, ne) in enumerate(intervals):
+            # duplicates has no impact on count
             if ii > 0 and intervals[ii] == intervals[ii-1]:
                 continue  # skip duplicates, no update on dominating interval
-            if ne > ce:  # max ending is sorted in the front.
+            if ne > ine:  # max ending is sorted in the front. -> this is when we MIGHT need to update count
                 # new interval is not covered by current dominating interval
-                if ii == N-1 or intervals[ii] != intervals[ii+1]:  # genius
+                # Genius: when you are the last or not same as the next
+                if ii == N-1 or intervals[ii] != intervals[ii+1]:
                     cnt += 1  # increment count when you are not duplicating the next interval or you are the last interval
 
-                cs, ce = ns, ne  # updating dominating interval
+                ins, ine = ns, ne  # updating dominating interval
 
         return cnt
