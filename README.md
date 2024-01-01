@@ -1020,11 +1020,17 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=euD2WFdUp6U) -
 [`DP`]
 
+[[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
+[[Video]](https://www.youtube.com/watch?v=CnEPfZYoCd8) -
+[`Design`]
+
 [[1360] - <span style="color:green">E</span> - Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1360%5D%20Number%20of%20Days%20Between%20Two%20Date.py)
 [[CPP]]() -
 [[Video]]() -
-[`Patterns`]
+[`MISC`]
 
 [[1372] - <span style="color:yellow">M</span> - Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description) - 
 [[Python]]()
