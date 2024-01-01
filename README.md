@@ -1026,6 +1026,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=CnEPfZYoCd8) -
 [`Design`]
 
+- preprod, how to handle zero
+
 [[1360] - <span style="color:green">E</span> - Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1360%5D%20Number%20of%20Days%20Between%20Two%20Date.py)
 [[CPP]]() -
