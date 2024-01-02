@@ -453,6 +453,7 @@ cache = OrderedDict()
 
 - Given an Eulerian Path, construct the Eulerian path
 - graph with list (adjacency list) to maintain lexical order
+- how to reconstruct graph path with lexical order
 
 [[0341] - <span style="color:yellow">M</span> - Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) - 
 [[Python]]()
