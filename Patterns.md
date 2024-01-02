@@ -428,6 +428,26 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - capacity is the max allowed ttl weight
 => max value we can carry
 '''
+
+  """
+  Given:
+  a. capacity
+  b. list of items s.t.
+      b1. weights[ii]
+      b2. values[ii]
+  => max value one can carry
+
+  capacity   0   1   2   ...   Capacity
+  0
+  n1
+  n2
+  n3
+  .
+  .
+  .
+
+  dp[ii][jj]: the max value one can carry upto item ii and capacity jj
+  """
 def find_max_knapsack_profit(capacity, weights, values):
     weights=[0]+weights
     values = [0]+values
