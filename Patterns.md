@@ -117,6 +117,7 @@ class Solution:
 - [0719]: <span style="color:red">**pair-diff:**</span> Pairs of an array (so you can sort, since we need to make pairs), find kth smallest pair distance
 - [1918]: kth smallest subarray sum
 - [2040]: <span style="color:red">**pair-product:**</span> kth smallest product of two sorted array
+  - [1918]
 
 > Binary Search on Pairs
 
