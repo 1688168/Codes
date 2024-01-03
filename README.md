@@ -474,6 +474,12 @@ cache = OrderedDict()
 [[Video]]() -
 [`Design`]
 
+[[0355] - <span style="color:yellow">M</span> - Design Twitter](https://leetcode.com/problems/design-twitter/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/355.Design-Twitter) -
+[[Video]](https://www.youtube.com/watch?v=q6RILQAaFvc) -
+[`Design`]
+
 [[0358] - <span style="color:red">H</span> - Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/358.Rearrange-String-k-Distance-Apart) -
