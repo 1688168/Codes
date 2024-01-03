@@ -480,6 +480,10 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=q6RILQAaFvc) -
 [`Design`]
 
+- pull or push design
+- push: new follower won't get history post
+- pull, follower only keep top 10 records
+
 [[0358] - <span style="color:red">H</span> - Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/358.Rearrange-String-k-Distance-Apart) -
