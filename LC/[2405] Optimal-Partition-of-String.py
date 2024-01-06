@@ -1,6 +1,24 @@
 ##########
+# 20240106
+##########
+class Solution:
+    def partitionString(self, s: str) -> int:
+        visited = set()
+
+        cnt = 0
+        for ii, cc in enumerate(s):
+            if cc in visited:
+                cnt += 1
+                visited = set([cc])
+            else:
+                visited.add(cc)
+        return cnt+1
+
+##########
 # 20231007
 ##########
+
+
 class Solution:
     def partitionString(self, s: str) -> int:
         """

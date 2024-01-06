@@ -1540,6 +1540,24 @@ defaultdict(lambda: defaultdict(int))
 
 - [0084]
 
+[[] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`MISC`]
+
+[[] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make Array XOR Equal to K]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`BITwise Manipulation`]
+
+[[] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make X and Y Equal]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
 [[3000] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
