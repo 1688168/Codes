@@ -1570,7 +1570,19 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
-[[3000] - <span style="color:red">H</span> - desc]() - 
+[[] - <span style="color:red">H</span> - Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Sorting`]
+
+[[] - <span style="color:yellow">M</span> - Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`MISC`]
+
+[[] - <span style="color:yellow">M</span> - Maximum Size of a Set After Removals](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
@@ -1578,7 +1590,7 @@ defaultdict(lambda: defaultdict(int))
 
 ---
 
-[[] - <span style="color:red">H</span> - desc]() - 
+[[] - <span style="color:green">E</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
