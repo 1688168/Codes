@@ -1,4 +1,31 @@
 #############
+# 20240107
+#############
+class Solution:
+    def minSwaps(self, data: List[int]) -> int:
+        """
+        group all 1s together
+        1. count how many ones
+        2. sliding window with the lengh of ttl 1s and see how many zeros we need to fill
+        3. output global min zeros need fill
+        """
+        ones = sum(data)  # count of all ones
+        N = len(data)  # get size of the array
+
+        zero_cnt = 0  # num of swap required
+        mnz = math.inf
+        for ii, nn in enumerate(data):
+            if nn == 0:
+                zero_cnt += 1
+            if ii-ones >= 0 and data[ii-ones] == 0:
+                zero_cnt -= 1
+            if ii >= ones-1:
+                mnz = min(mnz, zero_cnt)
+
+        return mnz
+
+
+#############
 # 20230926
 #############
 class Solution:
