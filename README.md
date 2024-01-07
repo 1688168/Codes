@@ -1114,6 +1114,14 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=W6b-Tp7KzfM&t=14s) -
 [`Topology Sort`]
 
+[[1622] - <span style="color:red">H</span> - Fancy Sequence](https://leetcode.com/problems/fancy-sequence/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1622.Fancy-Sequence) -
+[[Video]](https://www.youtube.com/watch?v=JnEi4QPKhhk) -
+[`Design`]
+
+- 逆源 (inverse)
+
 [[1642] - <span style="color:yellow">M</span> - Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1642.Furthest-Building-You-Can-Reach) -
@@ -1590,7 +1598,7 @@ defaultdict(lambda: defaultdict(int))
 
 ---
 
-[[] - <span style="color:green">E</span> - desc]() - 
+[[] - <span style="color:red">H</span> - desc]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
