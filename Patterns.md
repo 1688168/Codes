@@ -216,7 +216,7 @@ class Solution:
 ```yaml
 - [0146]
 * [0155]
-* [0355]: Design Twitter  
+* [0355]: Design Twitter
   - push or pull model
 * [0380]
 * [0381]
@@ -850,6 +850,9 @@ Strategy:
 * Validate stack
 * Validate Parentheses
 * validate a sequence of something
+* match start, end on a single CPU
+* match parenthesis
+* match adjacent chars
 * simulating a text cursor moving back and forth, append, delete
 ```
 

@@ -1,6 +1,38 @@
 ##############
+# 20240106
+##############
+
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        stk = []
+        left_cnt = 0
+        res = ""
+
+        for ii, cc in enumerate(s):
+            if cc == ")":
+                if left_cnt > 0:
+                    left_cnt -= 1
+                    stk.append(cc)
+                continue
+            elif cc == "(":
+                left_cnt += 1
+            stk.append(cc)
+
+        while stk:
+            curr = stk.pop()
+            if left_cnt > 0 and curr == "(":
+                left_cnt -= 1
+                continue
+
+            res += curr
+
+        return res[::-1]
+
+##############
 # 20231118
 ##############
+
+
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         """

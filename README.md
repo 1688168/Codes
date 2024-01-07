@@ -683,6 +683,12 @@ cache = OrderedDict()
 - max with custom key for sorting
 - how to manage max value in a min_heap
 
+[[0636] - <span style="color:yellow">M</span> - Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/636.Exclusive-Time-of-Functions) -
+[[Video]](https://www.youtube.com/watch?v=Ka4cDRolnBE) -
+[`Stack`]
+
 [[0642] - <span style="color:red">H</span> - Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0642%5D%20Design%20Search%20Autocomplete%20System%20-%20ylee.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/642.Design-Search-Autocomplete-System) -
