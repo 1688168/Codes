@@ -913,6 +913,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - DP: dp[i][j]= (s[i]==s[j])? dp[i-1][j-1]+1
   ans = max(dp[i][j], i=0,...n, j=0,...,n)
 
+[[1049] - <span style="color:yellow">M</span> - Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DP`][`0/1 Hacksack`]
+
 [[1054] - <span style="color:yellow">M</span> - Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1054.Distant-Barcodes) -
