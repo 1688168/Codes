@@ -1,3 +1,19 @@
+"""
+# the challenge is how to handle zero?
+* The API only requires return the products of last K elements, we, therefore, 
+do not need to persist each element.
+* per above point, we only maintain the "pre-prod from last zero"
+# data structure
+* n: num of elements so far (API can only append) 
+* preprod: product from prev-zero till current (anything prior than last zero is
+irrelevant as we only care about "product of last k")
+* ------------0-----k------------n
+              ^
+              last-zero
+if range k is lass than (n-last_zero) 
+-> product_k = preprod[-1]//preprod[n-k-last_zero]
+"""
+
 class ProductOfNumbers:
 
     def __init__(self):

@@ -1,7 +1,7 @@
 class CustomStack:
 
     def __init__(self, maxSize: int):
-        self.nums = [0] * maxSize
+        self.nums = [] #[0] * maxSize
         self.mx = maxSize
         self.offset = [0] * maxSize
         self.cnt = 0
@@ -10,6 +10,10 @@ class CustomStack:
     def push(self, x: int) -> None:
         if self.cnt == self.mx:
             return
+        """
+        when push a new item, we will start fresh and add existing diff 
+        to offset
+        """
         if self.cnt > 0:
             self.offset[self.cnt-1] += self.diff
         self.diff = 0
