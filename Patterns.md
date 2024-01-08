@@ -529,6 +529,7 @@ n2
 - [0879]: Profitable Schemes
 - [0956]: Tallest Billboard
 - [1049]: Last Stone Weight II
+  * 穷举法 （exhaustive method)
 
 > Type I and Type II Interval DP
 

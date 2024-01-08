@@ -919,6 +919,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`DP`][`0/1 Hacksack`]
 
+- 穷举法 （exhaustive method)
+
 [[1054] - <span style="color:yellow">M</span> - Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1054.Distant-Barcodes) -
