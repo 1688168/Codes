@@ -216,7 +216,7 @@ class Solution:
 ```yaml
 - [0146]
 * [0155]
-* [0355]: Design Twitter
+- [0355]: Design Twitter
   - push or pull model
 * [0380]
 * [0381]
@@ -231,9 +231,9 @@ class Solution:
 * [1146]
 * [1172]
 * [1268]
-* [1352]
+- [1352]
 - [1381]
-* [1622]
+- [1622]: 逆源 (inverse)
 - [1670]
 - [2166]
 - [2296]
