@@ -231,9 +231,13 @@ class Solution:
 * [1146]
 * [1172]
 * [1268]
-- [1352]
-- [1381]
-- [1622]: 逆源 (inverse)
+- [1352]:
+  - product of last k (how to handle zero) 
+- [1381]:
+  - increment all (range addition)
+- [1622]: 
+  - 逆源 (inverse)
+  - API for addAll and multiplication
 - [1670]
 - [2166]
 - [2296]
