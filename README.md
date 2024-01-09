@@ -964,6 +964,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`Sliding Window`]
 
+[[] - <span style="color:red">H</span> - Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1172.Dinner-Plate-Stacks) -
+[[Video]](https://www.youtube.com/watch?v=5OzyykyZfIw&t=1203s) -
+[`Design`]
+
 [[1186] - <span style="color:yellow">M</span> - Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1186.Maximum-Subarray-Sum-with-One-Deletion) -
