@@ -23,6 +23,7 @@ class DinnerPlates:
             heappush(self.mxh, -idx)# update the candidate of right most non-emapty
     def pop(self) -> int:
         if len(self.dq)==0: return -1
+        if not self.mxh: return -1
         right_most_non_empty_idx=(-heappop(self.mxh))
         
         if len(self.dq[right_most_non_empty_idx])==0: return -1 #shouldn't happpen
