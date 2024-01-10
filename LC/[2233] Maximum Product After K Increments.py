@@ -43,6 +43,11 @@ class Solution:
             diff[ii]=nums[ii]*(ii+1)-presum[ii]
 
         idx=bisect_right(diff, k) #how far can we fill by k to make equal?
+        """
+         idx can never be zero.  consider the definition of diff, 
+         there is no elements before nums[0] and we do not need to invest 
+         anything from k to make anything prior than nums[0] equal to nums[0]
+        """
         idx-=1 #move to prev (the first smaller)
 
         ttl= presum[idx]+k
