@@ -569,7 +569,7 @@ n2
 > Greedy mental model
 
 ```yaml
-- no search, no DP, by heuristic performing a optimized strategy from ii=0~n-1
+- not search, not exhaustive method, not DP, only by heuristic performing a optimized strategy from ii=0~n-1
 - always choose the local optimal solution and reach the global optimal solution
 - current sub-optimal solution cannot become global optimal solution with future decisions
 
