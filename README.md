@@ -1293,6 +1293,8 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=bObPjr_LfC0) -
 [`Math`][`Binary Search`][`Smear Top Elements`][`Greedy`]
 
+- [0343]: understand the diff 2233 vs 0343
+
 [[2234] - <span style="color:red">H</span> - Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2234.Maximum-Total-Beauty-of-the-Gardens) -
