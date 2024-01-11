@@ -600,6 +600,10 @@ n2
 - [0871]: min refueling stops
 
 > Greedy-distribution given constrains
+```yaml
+- Give a list of array and some limited resource and constrains.  Distribute the resources without violating the constrains to optimize some objectives
+- Start from analyze the objective function see if we can come up with some greedy heuristic for the optimization
+```
 
 - [0135]:
 - [1840]
