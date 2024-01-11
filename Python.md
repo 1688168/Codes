@@ -139,3 +139,12 @@ if res.status_code !=200:
   print("handle failed status")
 
 ```
+
+> Git
+```git
+git blame -W -M3 -- filename //ignore white space
+git blame revision^ -W -M3 -- file.py //check one revision before this one
+git show revision_num
+git blame -L line_num,+2 fileName.py
+git blame --since=1.week filename.py
+```
