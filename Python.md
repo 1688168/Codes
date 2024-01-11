@@ -147,4 +147,7 @@ git blame revision^ -W -M3 -- file.py //check one revision before this one
 git show revision_num
 git blame -L line_num,+2 fileName.py
 git blame --since=1.week filename.py
+
+# how to remove indentation
+url?w=1
 ```
