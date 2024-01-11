@@ -39,14 +39,14 @@ class DinnerPlates:
         
     def pop(self) -> int:
 
-        if len(self.dq)==0: return -1
-        if not self.mxh: return -1 #we don't have right most non-empty
+        if len(self.dq)==0: return -1 # stacks are empty, nothing to pop
+        if not self.mxh: return -1 # some stacks but all empty.  we don't have right most non-empty
         right_most_non_empty_idx=(-heappop(self.mxh))
         
         if len(self.dq[right_most_non_empty_idx])==0: return -1 #shouldn't happpen
-        val=self.dq[right_most_non_empty_idx].pop()
+        val=self.dq[right_most_non_empty_idx].pop() # pop from right most non-empty stack
 
-        if len(self.dq[right_most_non_empty_idx]) > 0:
+        if len(self.dq[right_most_non_empty_idx]) > 0: # after popping still not empty, put it back 
             heappush(self.mxh, -right_most_non_empty_idx)
 
         # update left-most not full
@@ -75,17 +75,16 @@ class DinnerPlates:
 
         try:
             self.mnh.index(index)
-        except Exception as e: 
+        except Exception as e: # if it was not on not-full heap, now it is
             heappush(self.mnh, index) # update left most not full heap
         val=stk.pop() # get the value
         
-        if len(stk)==0:
+        # considering right-most non-empty, it could be empty now.
+        if len(stk)==0: # stack is empty now, we need to remove it from right most non-empty heap
             try:   
-                idx=self.mxh.index(-index)
-         
-                del self.mxh[idx]
-          
-                heapify(self.mxh)
+                idx=self.mxh.index(-index) # find hte index of the stack 
+                del self.mxh[idx]          # delete the element
+                heapify(self.mxh)          # heapify after remove
             except Exception as e:
                 print(" this shouldn't happen")
         # print(" ---- pop i: ", index)
