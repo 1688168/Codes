@@ -229,13 +229,13 @@ class Solution:
 * [0642]
 * [0895]
 * [1146]
-* [1172]
-* [1268]
+- [1172]
+- [1268]
 - [1352]:
-  - product of last k (how to handle zero) 
+  - product of last k (how to handle zero)
 - [1381]:
   - increment all (range addition)
-- [1622]: 
+- [1622]:
   - 逆源 (inverse)
   - API for addAll and multiplication
 - [1670]
@@ -588,8 +588,8 @@ n2
 > Greedy: min steps/stops to reach goal
 
 ```yaml
-- Can you reach the goal?
-- min refuel to reach the goal?
+- Can you reach the goal? (on each move, move to a spot that you can reach the furthest - a local optimal solution)
+- min refuel to reach the goal? (on each refuel, choose the refueling stop that provides the most fuel)
 ```
 
 - [0134]: can you reach the end?
@@ -600,16 +600,19 @@ n2
 - [0871]: min refueling stops
 
 > Greedy-distribution given constrains
+
 ```yaml
 - Give a list of array and some limited resource and constrains.  Distribute the resources without violating the constrains to optimize some objectives
 - Start from analyze the objective function see if we can come up with some greedy heuristic for the optimization
 ```
 
 - [0135]:
-- [1840]
+- [1840]:
   - two passes, the 2nd pass does not break first pass
+- [2233]:
+- [2234]:
 
-> Greedy-arrangment
+  > Greedy-arrangment
 
 ```yaml
 
