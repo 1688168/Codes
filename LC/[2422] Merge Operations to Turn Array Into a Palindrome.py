@@ -1,5 +1,33 @@
 ##############
-# 20220926
+# 20240113
+##############
+class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        """
+        nums:
+
+        """
+        N = len(nums)
+        ll, rr = 0, N-1
+        cnt = 0
+        while ll < rr:
+            if nums[ll] == nums[rr]:
+                ll += 1
+                rr -= 1
+                continue
+            if nums[ll] < nums[rr]:
+                nums[ll+1] += nums[ll]
+                ll += 1
+            else:
+                nums[rr-1] += nums[rr]
+                rr -= 1
+            cnt += 1
+
+        return cnt
+
+
+##############
+# 20230926
 ##############
 class Solution:
     def minimumOperations(self, nums: List[int]) -> int:
