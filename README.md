@@ -1447,7 +1447,7 @@ defaultdict(lambda: defaultdict(int))
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2422%5D%20Merge%20Operations%20to%20Turn%20Array%20Into%20a%20Palindrome.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2422.Merge-Operations-to-Turn-Array-Into-a-Palindrome) -
 [[Video]](https://www.youtube.com/watch?v=rz3YGaJII44) -
-[`Two Pointers`]
+[`Two Pointers`][`Greedy`]
 
 [[2459] - <span style="color:green">E</span> - Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/description/) - 
 [[Python]]()
