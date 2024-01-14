@@ -28,12 +28,16 @@ class Solution:
         leveraging a stack only keep prev j
         """
         N = len(books)
-        dp = [0]*N
+        dp = [0]*N  # dp[ii] is the max number you can take ending @ shelf ii
+        # dp[i]: max books can take ending with shelf i
+
+        # leverage stack to transform O(N^2) <looking for j> to O(N) <ignore those not relevant>
         stk = []
         for ii in range(N):
             # find prev J
+            # maintain the monotonic stack observes expectation (not just smaller)
             while len(stk) > 0 and books[ii]-(ii-stk[-1]) < books[stk[-1]]:
-                stk.pop()
+                stk.pop()  # pop those that is higher than the expectation
 
             """
             0 1 2 3 4 5
@@ -46,7 +50,15 @@ class Solution:
                 dp[ii] = dp[stk[-1]] + (books[ii]+books[ii]-L+1)*L//2
 
             else:
-                L = min(ii+1, books[ii])
+                """
+                //10 10 9
+                 7    8 9
+
+                // 10 10 10 10 10 3
+                            1  2  3
+                """
+
+                L = min(ii+1, books[ii])  # number of elements.
                 dp[ii] = (books[ii]+books[ii]-L+1)*L//2
 
             stk.append(ii)

@@ -1430,6 +1430,8 @@ defaultdict(lambda: defaultdict(int))
 [`DP`][`Monotonic Stack`][`Monotonic Stack Various`]
 
 - [Failed]: Amazon
+- whenever maintaining a monotonic sequence relationship -> how to use monotonic stack?
+- monotonic stack variation: smaller per some formula
 
 [[2371] - <span style="color:green">E</span> - Minimize Maximum Value in a Grid](https://leetcode.com/problems/minimize-maximum-value-in-a-grid/description/) - 
 [[Python]]()
