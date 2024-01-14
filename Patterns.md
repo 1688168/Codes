@@ -288,11 +288,6 @@ class Solution:
 
 # [`DP`][`Dynamic Programming`]
 
-```yaml
-> To be classified:
-- [2355]
-```
-
 > Type I (Basic): Single Array Find Max/Min of something with a sub-array
 
 - O(N): one loop
@@ -364,6 +359,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - try jj < ii until we exceed max width
   - ii-1 is the jj
   - find the min(ttl_height) for each prev jj
+
+- [2355]: O(N^2) but leverage monotonic stack to reduce to O(N)
+
 ```
 
 > Type III: Two sequences
