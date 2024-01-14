@@ -1578,37 +1578,61 @@ defaultdict(lambda: defaultdict(int))
 
 - [0084]
 
-[[] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
+[[2996] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`MISC`]
 
-[[] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make Array XOR Equal to K]() - 
+[[2997] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make Array XOR Equal to K]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`BITwise Manipulation`]
 
-[[] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make X and Y Equal]() - 
+[[2998] - <span style="color:yellow">M</span> - Minimum Number of Operations to Make X and Y Equal]() - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
 
-[[] - <span style="color:red">H</span> - Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/) - 
+[[3000] - <span style="color:red">H</span> - Maximum Area of Longest Diagonal Rectangle](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Sorting`]
 
-[[] - <span style="color:yellow">M</span> - Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/description/) - 
+[[3001] - <span style="color:yellow">M</span> - Minimum Moves to Capture The Queen](https://leetcode.com/problems/minimum-moves-to-capture-the-queen/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`MISC`]
 
-[[] - <span style="color:yellow">M</span> - Maximum Size of a Set After Removals](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/) - 
+[[3002] - <span style="color:yellow">M</span> - Maximum Size of a Set After Removals](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
+[[3005] - <span style="color:green">E</span> - Count Elements With Maximum Frequency](https://leetcode.com/problems/count-elements-with-maximum-frequency/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Analysis`]
+
+[[3006] - <span style="color:yellow">M</span> - Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
+[[3007] - <span style="color:yellow">M</span> - Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
+
+[[3008] - <span style="color:red">H</span> - Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
