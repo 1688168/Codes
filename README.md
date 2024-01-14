@@ -1443,6 +1443,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=CKZPdiXiQf0) -
 [`Patterns`]
 
+[[2408] - <span style="color:yellow">M</span> - Design SQL](https://leetcode.com/problems/design-sql/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Design`]
+
 [[2422] - <span style="color:yellow">M</span> - Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2422%5D%20Merge%20Operations%20to%20Turn%20Array%20Into%20a%20Palindrome.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Two_Pointers/2422.Merge-Operations-to-Turn-Array-Into-a-Palindrome) -
