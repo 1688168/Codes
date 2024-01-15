@@ -1,7 +1,32 @@
+
+#############
+# 20240115
+#############
+from collections import Counter
+
+
+class Solution:
+    def minimumKeypresses(self, s: str) -> int:
+        c2f = Counter(s)
+        ffcc = [(ff, cc) for cc, ff in c2f.items()]
+        ffcc.sort(reverse=True)
+
+        lvl = 0
+        c2n = {}
+        jj = 0
+        cnt = 0
+        for ff, cc in ffcc:
+            if jj % 9 == 0:
+                lvl += 1
+            jj += 1
+            cnt += (lvl*ff)
+
+        return cnt
+
+
 #############
 # 20231008
 #############
-from collections import Counter
 
 
 class Solution:

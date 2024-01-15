@@ -1,4 +1,38 @@
 #############
+# 20240114
+#############
+class Solution:
+    def minimumSwaps(self, nums: List[int]) -> int:
+        """
+        1. find index of max
+        2. move it
+        3. find min
+        4. just count
+        """
+        N = len(nums)
+        mx = max(nums)
+        mxi = N
+        for ii in reversed(range(N)):
+            if nums[ii] == mx:
+                mxi = ii
+                break
+        mn = min(nums)
+        mni = 0
+        for ii, nn in enumerate(nums):
+            if nn == mn:
+                mni = ii
+                break
+        """
+        0 1 2 3 4        
+        1 3 5 4 2
+        """
+        if mxi >= mni:
+            return N-mxi - 1 + mni
+        else:
+            return N-mxi - 1 + mni - 1
+
+
+#############
 # 20231007
 #############
 class Solution:

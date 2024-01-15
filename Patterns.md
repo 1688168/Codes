@@ -35,6 +35,23 @@ tickets.sort(reverse=True)
 Monotoic Stack
 ```
 
+```python
+# calc prev smaller
+prev_smaller=[-1]*N
+stk=[]
+
+nums.reverse()
+for ii, nn in enumerate(nums):
+    while stk and nn < nums[stk[-1]]:
+        prev_smaller[stk[-1]]=N-ii-1
+        stk.pop()
+    stk.append(ii)
+
+prev_smaller.reverse()
+nums.reverse()
+
+```
+
 > How to find how many elements before current that is smaller/greater than current?
 
 ```yaml
@@ -345,6 +362,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```yaml
 - O(N^2): two loops, ii, and jj < ii
 - today's state can be derived from one of the JJ where jj < ii
+- how to leverage stk to find jj?
+  - 2297, 2355: leverage monotonic stack to find dp[jj] and reduce time to o(N)
 ```
 
 ```yaml
@@ -359,8 +378,15 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - try jj < ii until we exceed max width
   - ii-1 is the jj
   - find the min(ttl_height) for each prev jj
-
+- [2297]:
+  - dp[ii]=min(dp[jj]+costs[ii])
+  - where jj is prev higher or lower
+  - if we traverse backward from ii looking for min dp[jj] -> O(N^2)
+  - leverage monotonic stack to maintian prev_higher, perv_lower
 - [2355]: O(N^2) but leverage monotonic stack to reduce to O(N)
+  - Max books you can take from a bookshelf
+  - find hte prev that is not as expected
+  - dp[ii] = dp[jj] + arithmatic_sum (jj is the prev smaller than expected)
 
 ```
 

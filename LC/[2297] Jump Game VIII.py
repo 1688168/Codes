@@ -4,8 +4,48 @@ monotonic stack
 [1944]
 [2282]
 """
+###############
+# 20240115
+###############
 
 
+class Solution:
+    def minCost(self, nums: List[int], costs: List[int]) -> int:
+        """
+        nums:
+        costs:
+        dp[ii]= min(dp[jj]) + cost[ii] where jj < ii
+        # jump higher 
+        * for all jj < ii that is smaller than ii ()
+        """
+        N = len(nums)
+
+        stk0 = []
+        stk1 = []
+        dp = [math.inf]*N
+        dp[0] = 0
+        for ii, nn in enumerate(nums):
+            # considering jump higher
+            # if next item is greater than current item, anything before current item that is smaller than or equal to current item is irrelevant
+            # so we pop anything in the stack that is smaller than or equal to current
+            # jump higher, k in between (jj, ii) is strictly smaller than jj (okay to be equal to ii)
+            while stk0 and nn >= nums[stk0[-1]]:
+                dp[ii] = min(dp[ii], dp[stk0.pop()]+costs[ii])
+
+            # considering jump lower
+            # if next item is smaller than current itme, anything before current item that is samller than current item is irrelevant.
+            # so we pop anything in the stack that is smaller than current item
+            # jump lower, k in between (jj, ii) is smaller than or equal to jj
+            while stk1 and nn < nums[stk1[-1]]:
+                dp[ii] = min(dp[ii], dp[stk1.pop()]+costs[ii])
+
+            stk0.append(ii)
+            stk1.append(ii)
+
+        return dp[-1]
+
+
+####################################
 class Solution:
     def minCost(self, nums: List[int], costs: List[int]) -> int:
         N = len(nums)
