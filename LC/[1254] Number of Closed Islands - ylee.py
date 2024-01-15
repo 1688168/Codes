@@ -1,6 +1,45 @@
 #############
+# 20240115
+#############
+class Solution:
+    def closedIsland(self, grid: List[List[int]]) -> int:
+        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        M = len(grid)
+        N = len(grid[0])
+        visited = set()
+
+        def is_touching_border(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N:
+                return True
+            if grid[ii][jj] == 1:
+                return False
+            if (ii, jj) in visited:
+                return False
+            visited.add((ii, jj))
+
+            is_touching_border_from_here = False
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                if is_touching_border(nx, ny):
+                    is_touching_border_from_here = True
+            return is_touching_border_from_here
+
+        cnt = 0
+
+        for ii in range(M):
+            for jj in range(N):
+                if grid[ii][jj] == 1 or (ii, jj) in visited:
+                    continue
+                if is_touching_border(ii, jj):
+                    continue
+                cnt += 1
+
+        return cnt
+
+#############
 # 20231227
 #############
+
 
 class Solution:
     def closedIsland(self, grid: List[List[int]]) -> int:
