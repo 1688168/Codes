@@ -1559,6 +1559,9 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=qw0OVFVg5ng) -
 [`DP`]
 
+- when you want to group or take subset with members has no diff=k -> group by mod k
+- when you group by mod k -> any members from two diff group the diff cannot be k
+- whether or not you can take a number into subset depends on the diff with prev num -> house robber problem
 - [Failed]: Amazon
 - [2597]
 
