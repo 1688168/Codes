@@ -1563,6 +1563,15 @@ defaultdict(lambda: defaultdict(int))
 - when you group by mod k -> any members from two diff group the diff cannot be k
 - whether or not you can take a number into subset depends on the diff with prev num -> house robber problem
 - [Failed]: Amazon
+
+```yaml
+1. [0078]: Array of unique numbers -> All Subsets
+2. [0090]: Array of duplicate numbers -> All Subsets without duplicate
+3. bruteforce solution
+4. House Robber
+5. group by mod
+```
+
 - [2597]
 
 [[2681] - <span style="color:red">H</span> - Power of Heroes](https://leetcode.com/problems/power-of-heroes/description/) - 
