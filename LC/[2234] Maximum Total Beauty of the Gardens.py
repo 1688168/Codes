@@ -22,7 +22,7 @@ class Solution:
         # remove completed so we can focus on those we need to fill
         ret0 = 0
         while len(flowers) > 0 and flowers[-1] >= target:
-            ret0 += full
+            ret0 += full 
             flowers.pop()
 
         if len(flowers) == 0:
@@ -32,14 +32,20 @@ class Solution:
 
         presum = [0]*N
         diff = [0]*N
+        
+        # calculate presum
         for ii in range(N):
             presum[ii] = (presum[ii-1] if ii > 0 else 0) + flowers[ii]
+        
+        # calculate diff array for bisect
         for ii in range(N):
             diff[ii] = (ii+1)*flowers[ii]-presum[ii]
+
+
         # try all the ii where all index > ii be filled to complete
         ret = 0
-        for ii in reversed(range(N)):
-            if newFlowers < 0:
+        for ii in reversed(range(N)): # we do not know how many full is the optimal so we have to try all of them
+            if newFlowers < 0: # might or might not need this
                 break
             """
               we agreed 0~ii are incomplete, we cannot fill them >= target, cuz  eventually those will be applied with partial, 

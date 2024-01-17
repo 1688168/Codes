@@ -37,7 +37,7 @@ class Solution:
 
         # find an index(ii) s.t. we can make nums[jj] all equal where jj in [0, ii]
         # diff[ii] is the value you need to have nums[jj]=nums[ii] for all jj <= ii
-        diff = [0]*N
+        diff = [0]*N #with diff, we can use bisect to find p s.t. we can make even upto p
         presum = nums[0]
         for ii in range(1, N):
             presum += nums[ii]
