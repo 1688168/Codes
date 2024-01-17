@@ -1570,6 +1570,7 @@ defaultdict(lambda: defaultdict(int))
 3. bruteforce solution
 4. House Robber
 5. group by mod
+6. 2597 a similar question
 ```
 
 - [2597]
