@@ -17,7 +17,7 @@ class Solution:
 
         diff[p] <= New_Flower
         """
-        flowers.sort()
+        flowers.sort() #nlogn here
 
         # remove completed so we can focus on those we need to fill
         ret0 = 0
@@ -59,6 +59,7 @@ class Solution:
             else:  # binary search a p to make 0~p (inclusive) equal
                 # be careful on the range of diff we do binary search
                 # from 0~ii find a p that we can make equal
+                # we might optimize this by two pointers due to monotonic decreasing, so this part can reducre to O(N), but we already have a sort in the beginning. so overall, still nlogn
                 idx = bisect.bisect_right(diff[:ii+1], newFlowers)
                 idx -= 1  # move forward one step (study bisect_right)
                 ttl = presum[idx]+newFlowers
