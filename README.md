@@ -1224,6 +1224,7 @@ defaultdict(lambda: defaultdict(int))
 [`Binary Search`][`Binary Search by Value`]
 
 - [1918]
+- binary serach kth product, sum, diff from two sorted list
 - when processing pair from two arrays. fix one and binary_search (bisect) the other. This only requires 2nd array sorted. we do not need first array sorted. what a waste? (NlogN)
 - O(N) - two pointers solution (cf readme link)
 
