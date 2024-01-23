@@ -1571,7 +1571,7 @@ defaultdict(lambda: defaultdict(int))
 ```yaml
 1. [0078]: Array of unique numbers -> All Subsets
 2. [0090]: Array of duplicate numbers -> All Subsets without duplicate
-3. bruteforce solution
+3. bruteforce solution (this might not even a correct strategy.)
 4. apply [0090] strategy TLE
 5. House Robber
 6. group by mod
