@@ -1,3 +1,11 @@
+"""
+DFS compose all k-free subsets interating by size
+adding element by ehecking if (n-k, n+k) already in current subset
+Time:
+- for each size m*m -> 1^2 + 2^2 + ...
+"""
+
+
 class Solution:
     def countTheNumOfKFreeSubsets(self, nums: List[int], k: int) -> int:
         """
