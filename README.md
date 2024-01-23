@@ -1563,6 +1563,9 @@ defaultdict(lambda: defaultdict(int))
 - when you want to group or take subset with members has no diff=k -> group by mod k
 - when you group by mod k -> any members from two diff group the diff cannot be k
 - whether or not you can take a number into subset depends on the diff with prev num -> house robber problem
+- what's the difference btn "(90): subset II" and "(198): House Robber"
+  - no duplicate meaning no difference picking any of the duplicate
+  - two elements cannot have some kind of relationship -> need to consider pick A or pick B -> when making decisions -> DP/Greedy 
 - [Failed]: Amazon
 
 ```yaml
@@ -1570,9 +1573,9 @@ defaultdict(lambda: defaultdict(int))
 2. [0090]: Array of duplicate numbers -> All Subsets without duplicate
 3. bruteforce solution
 4. apply [0090] strategy TLE
-4. House Robber
-5. group by mod
-6. 2597 a similar question
+5. House Robber
+6. group by mod
+7. 2597 a similar question
 ```
 
 - [2597]
