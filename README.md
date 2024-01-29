@@ -1549,7 +1549,7 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
-[`3 pass`][`Binary Search`][`Two Pointers`]
+[`3 pass`][`Binary Search`][`Two Pointers`][`Greedy`]
 
 
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
