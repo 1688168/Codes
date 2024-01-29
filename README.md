@@ -1545,6 +1545,13 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=MmegIOi5Rrw) -
 [`Binary Search`]
 
+[[2565] - <span style="color:red">H</span> - Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`3 pass`][`Binary Search`][`Two Pointers`]
+
+
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2597%5D%20The-Number-of-Beautiful-Subsets.py)
 [[CPP-DFS]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets.cpp) -

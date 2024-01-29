@@ -19,6 +19,9 @@ tickets.sort(reverse=True)
 > For interval problems starting from Sort the intervals by beginning or ending
 > How to detect cycle in graph
 
+### **3 passes**
+- [2565]
+
 ### **BFS**
 
 - Topology Sort
