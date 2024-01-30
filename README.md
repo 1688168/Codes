@@ -1440,6 +1440,14 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=MrUMyt0pRoU) -
 [`Greedy`]
 
+[[2386] - <span style="color:red">H</span> - Find the K-Sum of an Array](https://leetcode.com/problems/find-the-k-sum-of-an-array/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://youtu.be/pquoywwK0_w) -
+[`Priority Queue`]
+
+- the subsequence of kth sum
+
 [[2405] - <span style="color:yellow">M</span> - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2405%5D%20Optimal-Partition-of-String.py)
 [[CPP]]() -
@@ -1548,7 +1556,7 @@ defaultdict(lambda: defaultdict(int))
 [[2565] - <span style="color:red">H</span> - Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=vcjfoFhqzcI&t=405s) -
 [`3 pass`][`Binary Search`][`Two Pointers`][`Greedy`]
 
 
