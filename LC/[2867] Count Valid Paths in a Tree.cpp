@@ -66,35 +66,39 @@ public:
             next[a].push_back(b);
             next[b].push_back(a);
             if (!isPrime(a) && !isPrime(b)) //if connected nodes both are not prime -> union
-            {
+            {   //any two neighboring nodes are meant to be in same group (not seperated by any prime)
+                //by iterating through all edges, we can put all non-prime nodes into groups
                 if (FindFather(a)!=FindFather(b))
                     Union(a,b);
             }
         }
         
+        //Map will count how many nodes for each group
         unordered_map<int,int>Map;
         for (int i=1; i<=n; i++)
             Map[FindFather(i)]+=1; //how many groups?
             
         for (int p: primes)//for each prime number in the tree
         {
+            //for each prime node, we collect node count of each connected non-prime groups
             vector<LL>arr;
             for (int nxt: next[p])//for all connected nodes of a prime number
             {
                 if (!isPrime(nxt))
                     arr.push_back(Map[FindFather(nxt)]);
             }
+            //adding all connected non-prime group count is the ttl count
             LL total = accumulate(arr.begin(), arr.end(), 0LL);
             LL sum = 0;
             /*
-            two patterns
-            1. a path crosses a single prime
-            2. starting from a prime, going to a non-prime
+            two use cases:
+            I. a path crosses a single prime
+            II. starting from a prime, going to a non-prime
             - total here is the connected non-prime count to the prime
             */
             for (LL x: arr)                    
-                sum += x*(total-x);         
-            global += sum/2 + total;
+                sum += x*(total-x); //use case I
+            global += sum/2 + total; //total is use case II
         }
                 
         return global;
