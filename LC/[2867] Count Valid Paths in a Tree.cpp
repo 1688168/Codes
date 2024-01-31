@@ -1,7 +1,13 @@
+/*
+* Given a tree (N-nodes from 1,...N and list of edges)
+- count valid path num
+- A valid path contains only a single prime number in the trade nodes
+*/
+
 using LL = long long;
 class Solution {
-    int Father[100005];
-    vector<int> next[100005];    
+    int Father[100005]; //10^5 number of nodes
+    vector<int> next[100005]; //this is the graph 
     unordered_set<int>primes;
     LL global = 0;    
 public:    
@@ -49,17 +55,17 @@ public:
     
     long long countPaths(int n, vector<vector<int>>& edges) 
     {
-        primes = Eratosthenes(n);        
+        primes = Eratosthenes(n); //produce primes from 1~N      
         
-        for (int i=1; i<=n; i++)
+        for (int i=1; i<=n; i++) //initialize union find data structure
             Father[i] = i;
         
-        for (auto& edge: edges)
+        for (auto& edge: edges) //build graph of the tree
         {
             int a = edge[0], b = edge[1];
             next[a].push_back(b);
             next[b].push_back(a);
-            if (!isPrime(a) && !isPrime(b))
+            if (!isPrime(a) && !isPrime(b)) //if connected nodes both are not prime -> union
             {
                 if (FindFather(a)!=FindFather(b))
                     Union(a,b);
@@ -68,18 +74,24 @@ public:
         
         unordered_map<int,int>Map;
         for (int i=1; i<=n; i++)
-            Map[FindFather(i)]+=1;
+            Map[FindFather(i)]+=1; //how many groups?
             
-        for (int p: primes)
+        for (int p: primes)//for each prime number in the tree
         {
             vector<LL>arr;
-            for (int nxt: next[p])
+            for (int nxt: next[p])//for all connected nodes of a prime number
             {
                 if (!isPrime(nxt))
                     arr.push_back(Map[FindFather(nxt)]);
             }
             LL total = accumulate(arr.begin(), arr.end(), 0LL);
             LL sum = 0;
+            /*
+            two patterns
+            1. a path crosses a single prime
+            2. starting from a prime, going to a non-prime
+            - total here is the connected non-prime count to the prime
+            */
             for (LL x: arr)                    
                 sum += x*(total-x);         
             global += sum/2 + total;
