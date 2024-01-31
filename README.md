@@ -1613,6 +1613,14 @@ defaultdict(lambda: defaultdict(int))
 
 - [0084]
 
+
+[[2867] - <span style="color:red">H</span> - Count Valid Paths in a Tree
+](https://leetcode.com/problems/count-valid-paths-in-a-tree/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Union_Find/2867.Count-Valid-Paths-in-a-Tree) -
+[[Video]](https://www.youtube.com/watch?v=PQuyzhqdzPA&t=906s) -
+[`Union Find`][`Prime Number`]
+
 [[2996] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
 [[Python]]()
 [[CPP]]() -
