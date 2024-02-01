@@ -372,6 +372,13 @@ cache = OrderedDict()
 [[Video]]() -
 [`Palindrome`]
 
+[[0269] - <span style="color:red">H</span> - Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/269.Alien-Dictionary) -
+[[Video]](https://youtu.be/yfGJFDkyEmE) -
+[`topology sort`][`classic`]
+
+
 [[0273] - <span style="color:red">H</span> - Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0273%5D%20Integer%20to%20English%20Words.py)
 [[CPP]]() -
