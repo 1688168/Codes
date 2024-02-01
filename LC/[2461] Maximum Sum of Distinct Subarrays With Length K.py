@@ -1,4 +1,46 @@
 ############
+# 20240201
+############
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        """
+        => max subarray sum
+        1. all subarray and sum -> O(N^2)
+        - size=k
+        - all num distinct
+
+        2. contribution of each element
+        sliding window=k
+
+        """
+        n2cnt=collections.defaultdict(int)
+        mxs=0
+        N=len(nums)
+        for ii in range(k):
+            n2cnt[nums[ii]] +=1
+
+        curr_sum=sum(nums[:k])
+
+        if len(n2cnt)==k:
+            mxs=max(mxs, curr_sum)
+        for ii in range(k, N):
+            # remove the begining of the window
+            begin=ii-k
+            n2cnt[nums[begin]]-=1
+            if n2cnt[nums[begin]]==0:
+                del n2cnt[nums[begin]]
+            curr_sum -= nums[begin]
+            curr_sum += nums[ii]
+            # add the new element
+            n2cnt[nums[ii]]+=1
+
+            # update max    
+            if len(n2cnt)==k:
+                mxs=max(mxs, curr_sum)
+     
+        return mxs 
+
+############
 # 20230917
 ############
 
