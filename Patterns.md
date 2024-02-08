@@ -694,6 +694,8 @@ n2
   - VS [0767]
   - k=1 -> spacial odd/even solution
   - guarantee has answer
+- [1642]: 
+  - use option 1 by default and replace with option 2 when needed
 - [1840]
 - [1846]
 - [1953] (arrangement)
