@@ -1142,7 +1142,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[1642] - <span style="color:yellow">M</span> - Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1642.Furthest-Building-You-Can-Reach) -
-[[Video]]() -
+[[Video]](https://youtu.be/6hUFyVYyDWc) -
 [`PriorityQueue`]
 
 [[1650] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/) - 
