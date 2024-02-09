@@ -622,6 +622,7 @@ n2
 ```yaml
 - Can you reach the goal? (on each move, move to a spot that you can reach the furthest - a local optimal solution)
 - min refuel to reach the goal? (on each refuel, choose the refueling stop that provides the most fuel)
+- fixed resource with options, how far can you go?
 ```
 
 - [0134]: can you reach the end?
