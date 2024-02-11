@@ -1,3 +1,47 @@
+
+##########
+# 20240211
+##########
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        """
+        - for each not visited "1", DFS to mark connected "1" 
+        - increase count for each DFS
+
+        => return # of islands
+        """
+        
+        M=len(grid)
+        N=len(grid[0])
+        visited=set()
+        cnt=0
+
+        dirs=[(1,0), (-1, 0), (0, 1), (0, -1)]
+
+        def dfs(ii, jj):
+            if ii < 0 or ii >= M or jj < 0 or jj >= N: return 
+            if (ii, jj) in visited: return
+            if grid[ii][jj]=='0': return
+
+            visited.add((ii, jj))
+            
+            for dx, dy in dirs:
+                nx, ny = ii+dx, jj+dy
+                dfs(nx, ny)
+
+            return
+
+        for ii in range(M):
+            for jj in range(N):
+                curr=grid[ii][jj]
+                if curr == '0' or (ii, jj) in visited: continue
+                dfs(ii, jj)
+                cnt += 1
+        
+        return cnt
+
+
 ##########
 # 20231008-template
 ##########
