@@ -270,7 +270,7 @@ class Solution:
 ```
 
 ```yaml
-# The Island counts
+# The Island counts, The 3 Island count variation
 - [0200]
   - count islands surround by water/sea -> marking (1)<land> as visited and count
   - islands can reach edge
