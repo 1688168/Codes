@@ -26,6 +26,13 @@
 [[Video]]() -
 [`Recursion`]
 
+[[0014] - <span style="color:green">E</span> - Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Analysis`]
+
+
 [[0020] - <span style="color:green">E</span> - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) - 
 [[Python]]()
 [[CPP]]() -
