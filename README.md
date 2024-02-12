@@ -666,10 +666,16 @@ cache = OrderedDict()
 [[0620] - <span style="color:green">E</span> - Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
 [`SQL`]
 
 - sql mod
+
+[[0596] - <span style="color:green">E</span> - Big Countries](https://leetcode.com/problems/big-countries/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`SQL`][`Pandas]
+
 
 [[0621] - <span style="color:yellow">M</span> - Task Scheduler](https://leetcode.com/problems/task-scheduler/description/) - 
 [[Python]]()
