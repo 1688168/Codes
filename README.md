@@ -1490,7 +1490,7 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://youtu.be/jBqKwUZeXkE) -
-[`Patterns`]
+[`Binary Search`]
 
 [[2459] - <span style="color:green">E</span> - Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/description/) - 
 [[Python]]()
