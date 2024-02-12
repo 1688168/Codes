@@ -1489,7 +1489,7 @@ defaultdict(lambda: defaultdict(int))
 [[2439] - <span style="color:yellow">M</span> - Minimize Maximum of Array](https://leetcode.com/problems/minimize-maximum-of-array/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://youtu.be/jBqKwUZeXkE) -
 [`Patterns`]
 
 [[2459] - <span style="color:green">E</span> - Sort Array by Moving Items to Empty Space](https://leetcode.com/problems/sort-array-by-moving-items-to-empty-space/description/) - 
