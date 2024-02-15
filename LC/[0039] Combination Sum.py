@@ -1,3 +1,33 @@
+##################
+# 20240215
+##################
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        """
+        * candidates: distinct
+        * target:
+        # Bruteforce: all 
+
+        """
+        N=len(candidates)
+
+        def dfs(st, path, curr_ttl):
+            if curr_ttl==target:
+                res.append(path[:])
+                return
+            if curr_ttl > target: return
+
+            for ii in range(st, N):
+                dfs(ii, path+[candidates[ii]], curr_ttl+candidates[ii])
+
+        res=[]
+        path=[]
+    
+        dfs(0, path, 0)
+
+        return res
+
+
 ###########
 # 20230603
 ###########
