@@ -913,6 +913,8 @@ Strategy:
 - Subarray -> Monotonic Stack, presum, presum2
 - Subset -> you can group and sort
 
+- [0039]
+
 # [`Sweep Line`]
 
 - When we use Sweep Line, we only consider sets of starting points and ending points, we do NOT know which starting point matching with which ending point.
