@@ -1,3 +1,34 @@
+##############
+# 20240215
+##############
+class Solution:
+    def minimizeArrayValue(self, nums: List[int]) -> int:
+        """
+        ? what's the max value after some operations?
+        """
+        N=len(nums)
+        # define range of binary search
+        ll, rr, ans = nums[0], max(nums), -1
+
+        def is_feasible(mm):
+            extra=0
+            for ii in range(N):
+                extra += (mm-nums[ii])
+                if extra < 0: return False
+            return True
+
+        while ll <= rr:
+            mm=ll+(rr-ll)//2
+            
+            if is_feasible(mm):
+                ans=mm
+                rr=mm-1
+            else:
+                ll=mm+1
+        
+        return ans
+
+#################
 class Solution:
     def minimizeArrayValue(self, nums: List[int]) -> int:
         """

@@ -139,6 +139,7 @@ class Solution:
 - [2040]: <span style="color:red">**pair-product:**</span> kth smallest product of two sorted array
   - [1918]
 - [2439]: is feasible for a max num in an array
+  - What is the min-max value after some operations? -> guess the number and check feasible
 > Binary Search on Pairs
 
 - [0373]: <span style="color:red">**pair-sum:**</span> kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
