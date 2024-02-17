@@ -1,4 +1,25 @@
 ##############
+# 20240217
+##############
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stk=[]
+        left2right={
+            "{":"}",
+            "[":"]",
+            "(":")"
+        }
+        for cc in s:
+            if cc in ['{', '[', '(']:
+                stk.append(cc)
+            else:
+                if not stk or cc != left2right[stk[-1]]:
+                    return False
+                stk.pop()
+        return True if not stk else False
+        
+
+##############
 # 20231230
 ##############
 class Solution:
