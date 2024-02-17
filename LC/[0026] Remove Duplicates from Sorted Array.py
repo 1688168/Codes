@@ -2,6 +2,31 @@
 ##############
 # 20230610
 ##############
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        """
+        - in-place removal
+        - sorted array: 
+        - return k
+        
+           1 2 2 3 4
+        -> 1 2 3 4 2
+
+        """
+        ii, jj = 0, 0
+        N=len(nums)
+        for jj in range(N):
+            if ii==0 or nums[ii-1] != nums[jj]:
+                nums[ii]=nums[jj]
+                ii+=1
+        
+        return ii
+
+
+
+##############
+# 20230610
+##############
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
