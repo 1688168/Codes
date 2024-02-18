@@ -1,3 +1,34 @@
+###############
+# 20240218
+###############
+class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+        """
+        # bucket sort
+        - array of size N: -> max freq is N
+        """
+        N=len(words)
+        buckets=[[] for _ in range(N+1)]
+
+        w2f=collections.Counter(words)
+        for w, f in w2f.items():
+            buckets[f].append(w)
+        res=[]
+        done=False
+        for ii in reversed(range(N+1)):
+            b=buckets[ii]
+            b.sort()
+            for n in b:
+                res.append(n)
+                if len(res)==k: 
+                    done=True
+                    break
+            
+            if done: break
+        
+        return res
+
+##############
 from collections import Counter
 class Solution:
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
