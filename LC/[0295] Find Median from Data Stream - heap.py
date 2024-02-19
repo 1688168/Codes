@@ -1,4 +1,44 @@
 ################
+# 20240218
+################
+from heapq import heappush, heappop, heappushpop
+class MedianFinder:
+
+    def __init__(self):
+        self.mxh=[]
+        self.mnh=[]
+
+
+    def rebalance(self):
+        while len(self.mxh) > len(self.mnh)+1:
+            heappush(self.mnh, -heappop(self.mxh))
+        
+        while len(self.mnh) > len(self.mxh):
+            heappush(self.mxh, -heappop(self.mnh))
+
+
+    def addNum(self, num: int) -> None:
+        if not self.mxh or num < -self.mxh[0]:
+            heappush(self.mxh, -num)
+        else:
+            heappush(self.mnh, num)
+        
+        self.rebalance()
+
+    def findMedian(self) -> float:
+        if len(self.mxh) > len(self.mnh):
+            return -self.mxh[0]
+        
+        else:
+            return (-self.mxh[0]+self.mnh[0])/2
+        
+
+
+# Your MedianFinder object will be instantiated and called as such:
+# obj = MedianFinder()
+# obj.addNum(num)
+# param_2 = obj.findMedian()
+################
 # 20231126: 67.49%
 ################
 from heapq import *
