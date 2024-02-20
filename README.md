@@ -1086,6 +1086,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=euD2WFdUp6U) -
 [`DP`]
 
+[[1293] - <span style="color:red">H</span> - Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://youtu.be/2pLhH2eLaP8) -
+[`BFS`][`BFS Variation`]
+
+
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
