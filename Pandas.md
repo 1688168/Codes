@@ -751,3 +751,7 @@ data=pd.read_json(json.dumps(resp.json()['data']['report_data']), orient='record
 ```
 
 ```
+# Divide by zero
+```python
+a.div(b.replace(0, np.nan)).fillna(0)
+```
