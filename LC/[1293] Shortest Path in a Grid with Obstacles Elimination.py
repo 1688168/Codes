@@ -26,7 +26,7 @@ class Solution:
                     kk+=1
                 if x==M-1 and y==N-1: #arrived
                     return steps
-                visited.add((x, y, kk))
+                visited.add((x, y, z))
                 for dx, dy in dirs:
                     nx, ny = x+dx, y+dy
                     if nx < 0 or nx >=M or ny < 0 or ny >= N or (nx, ny, kk) in visited: continue
