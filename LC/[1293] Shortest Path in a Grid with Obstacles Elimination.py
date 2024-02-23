@@ -15,16 +15,18 @@ class Solution:
         
         M=len(grid)
         N=len(grid[0])
+        if M==1 and N==1: return 0
         dirs=[(0, 1), (0, -1), (1, 0), (-1, 0)]
         while (sz:=len(dq)) > 0: #take sz for each level
             for _ in range(sz):# for each level
                 x, y, z = dq.popleft() #all nodes on same level, level starts from 0
             
                 if x==M-1 and y==N-1: #arrived
-                    return steps+1
+                    return steps
                 if grid[x][y]==1:#if obstacle, consume one k
+                    if kk+1 > k: continue
                     kk+=1
-                if kk >= k: continue # if we used more than what we can, we cannot move forward
+               
                 visited.add((x, y, kk))
                 for dx, dy in dirs:
                     nx, ny = x+dx, y+dy
