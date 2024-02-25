@@ -111,6 +111,16 @@
 [[Video]](https://www.youtube.com/watch?v=laZ5jz8igU8) -
 [`DP`][`Kadane`][`classic`]
 
+- Kadane variation: 2272:
+  - max subarray sum that requires two elements
+  ```
+  * regular kadane
+  dp[i]=max(nums[i], dp[i-1]+nums[i])
+  * Kadane Variation
+  dp0[i]:
+  dp1[i]:
+  ```
+
 [[0055] - <span style="color:yellow">M</span> - Jump Game](https://leetcode.com/problems/jump-game/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0055%5D%20Jump%20Game%20-%20DP.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/055.Jump-Game) -
@@ -1365,6 +1375,7 @@ defaultdict(lambda: defaultdict(int))
 
 - diff of freq of two chars in a substring is equivalent to set a=1, b=-1 and all others 0 and sum
 - max subarray sum -> Kadane
+- variation of kadane: requiring two elements (subarray need to contain both a and b)
 - If we need to try all combinations, consider only 1 combination and repeat same thing for all others
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
 
