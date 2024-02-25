@@ -3,7 +3,16 @@
 > N VS Time complexity
 
 ```yaml
+N    o(N)
+1e6  O(N)
+1e5  Nlog(N)
+1e3  O(N^2)
 
+
+# when you see 1e4:
+1e4: O(kN)
+-> if given a string and all in lowercase
+-> highly likely the k is 26 lower chars
 ```
 
 > When buildung graph, if output has requirements on order (lexical order, etc), we have to use defaultdict(list) instead of defaultdict(set)

@@ -1363,9 +1363,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=P6KnO-Dw0Fo&t=13s)
 [`Max Subarray`][`Modified Kadane`]
 
+- diff of freq of two chars in a substring is equivalent to set a=1, b=-1 and all others 0 and sum
+- max subarray sum -> Kadane
 - If we need to try all combinations, consider only 1 combination and repeat same thing for all others
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
-- max subarray sum -> Kadane
+
+
 
 [[2277] - <span style="color:green">E</span> - Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/description/) - 
 [[Python]]()
