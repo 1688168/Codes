@@ -117,8 +117,21 @@
   * regular kadane
   dp[i]=max(nums[i], dp[i-1]+nums[i])
   * Kadane Variation
-  dp0[i]:
-  dp1[i]:
+  dp0[i]: the max subarray sum ending @ i and this subarray does NOT contain -1
+  dp1[i]: the max subarray sum ending @ i and this subarray DOES contains -1
+
+
+  for(int ii=0; ii<N; ++ii){
+    if(nums[ii]==1){
+      dp0[ii]=max(1, 1+dp0[ii-1]);
+      dp1[ii]=dp1[ii-1]+1;
+    }else{
+      dp0[ii]=0
+      dp1[ii]=-1+max(dp0[ii-1], dp1[ii-1])
+
+    }
+    ret=max(ret, dp1[ii ])
+  }
   ```
 
 [[0055] - <span style="color:yellow">M</span> - Jump Game](https://leetcode.com/problems/jump-game/description/) - 
