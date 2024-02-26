@@ -902,7 +902,9 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
-[`Tree`]
+[`Tree`][`DP`][`Greedy`]
+
+- Tree with DP
 
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
