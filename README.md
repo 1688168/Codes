@@ -38,7 +38,6 @@
 [[Video]]() -
 [`Analysis`]
 
-
 [[0020] - <span style="color:green">E</span> - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -112,7 +111,9 @@
 [`DP`][`Kadane`][`classic`]
 
 - Kadane variation: 2272:
+
   - max subarray sum that requires two elements
+
   ```
   * regular kadane
   dp[i]=max(nums[i], dp[i-1]+nums[i])
@@ -414,7 +415,6 @@ cache = OrderedDict()
 [[Video]](https://youtu.be/yfGJFDkyEmE) -
 [`topology sort`][`classic`]
 
-
 [[0273] - <span style="color:red">H</span> - Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0273%5D%20Integer%20to%20English%20Words.py)
 [[CPP]]() -
@@ -712,7 +712,6 @@ cache = OrderedDict()
 [[Video]]() -
 [`SQL`][`Pandas]
 
-
 [[0621] - <span style="color:yellow">M</span> - Task Scheduler](https://leetcode.com/problems/task-scheduler/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/621.Task-Scheduler) -
@@ -781,7 +780,6 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]]() -
 [[Video]]() -
 [`Quick Select`][`heap`][`bucket sort`]
-
 
 [[0703] - <span style="color:green">E</span> - Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/) - 
 [[Python]]()
@@ -899,6 +897,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 2. keep popping until stk is empty or jj >= len(popped)
 3. return not stk
 ```
+
+[[0968] - <span style="color:red">H</span> - Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Tree`]
 
 [[0973] - <span style="color:yellow">M</span> - K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0973%5D%20K%20Closest%20Points%20to%20Origin%20-%20quick%20select.py)
@@ -1114,7 +1118,6 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1293.Shortest-Path-in-a-Grid-with-Obstacles-Elimination) -
 [[Video]](https://youtu.be/2pLhH2eLaP8) -
 [`BFS`][`BFS Variation`]
-
 
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
@@ -1392,8 +1395,6 @@ defaultdict(lambda: defaultdict(int))
 - If we need to try all combinations, consider only 1 combination and repeat same thing for all others
 - When finding max something of all subarraies, we might only need to consider the whole array as any subarray won't qualify
 
-
-
 [[2277] - <span style="color:green">E</span> - Closest Node to Path in Tree](https://leetcode.com/problems/closest-node-to-path-in-tree/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/2277.Closest-Node-to-Path-in-Tree) -
@@ -1632,7 +1633,6 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=vcjfoFhqzcI&t=405s) -
 [`3 pass`][`Binary Search`][`Two Pointers`][`Greedy`]
 
-
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2597%5D%20The-Number-of-Beautiful-Subsets.py)
 [[CPP-DFS]](https://github.com/wisdompeak/LeetCode/blob/master/DFS/2597.The-Number-of-Beautiful-Subsets/2597.The-Number-of-Beautiful-Subsets.cpp) -
@@ -1653,7 +1653,7 @@ defaultdict(lambda: defaultdict(int))
 - whether or not you can take a number into subset depends on the diff with prev num -> house robber problem
 - what's the difference btn "(90): subset II" and "(198): House Robber"
   - no duplicate meaning no difference picking any of the duplicate
-  - two elements cannot have some kind of relationship -> need to consider pick A or pick B -> when making decisions -> DP/Greedy 
+  - two elements cannot have some kind of relationship -> need to consider pick A or pick B -> when making decisions -> DP/Greedy
 - [Failed]: Amazon
 
 ```yaml
@@ -1685,7 +1685,6 @@ defaultdict(lambda: defaultdict(int))
 [`Monotonic Stack`]
 
 - [0084]
-
 
 [[2867] - <span style="color:red">H</span> - Count Valid Paths in a Tree
 ](https://leetcode.com/problems/count-valid-paths-in-a-tree/description/) - 
