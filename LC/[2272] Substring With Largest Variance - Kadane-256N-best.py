@@ -1,3 +1,46 @@
+##############
+# 20240229
+##############
+from collections import Counter
+
+
+class Solution:
+    def largestVariance(self, s: str) -> int:
+        """
+        * lowercase english -> combination of chars: 26*26
+        * diff of count of two chars -> let a=1, b=-1, others=0
+        => Largest variance -> largest subarray sum -> modified Kadane (need both (a, b) in the subarray)
+        """
+
+        # get all in scope chars
+        chars = set([c for c in s])
+        # try all combination of chars
+        ans = -math.inf
+        for a in chars:
+            for b in chars:
+                if a == b:
+                    continue  # need two chars
+                # for each combination (a, b) -> mondified Kadane
+                dp0 = 0  # largest subarray sum ending @ ii containing b
+                dp1 = -math.inf//2  # largest subarray sum ending @ ii not containing b
+                for c in s:
+                    tmp0 = dp0
+                    tmp1 = dp1
+                    if c not in (a, b):
+                        continue
+                    if c == a:
+                        dp0 = tmp0+1
+                        dp1 = tmp1+1
+                    else:
+                        dp0 = max(tmp0-1, tmp1-1)
+                        dp1 = 0
+
+                    ans = max(ans, dp1)
+
+        return ans
+
+
+####################################
 """
 # diff of count of two char:
 - assume the two chars are (a, b)
@@ -7,7 +50,6 @@
 
 # any two chars in the sub-array -> have to try all combination
 """
-from collections import Counter
 
 
 class Solution:
