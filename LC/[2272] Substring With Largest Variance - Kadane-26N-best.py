@@ -1,3 +1,71 @@
+##########
+# 20240302
+##########
+class Solution:
+    def largestVariance(self, s: str) -> int:
+        """
+        => diff of two char frequency
+        -> let two chars be (a, b)
+        -> a, b = 1, -1, and others be 0
+        -> variance of (a, b) =. sum(subarray)
+        -> max subarray sum with both (a, b) -> modified kadane
+        -> all subarray and calc all paris -> 26*26*N^2
+        -> all pairs and modfied kadane
+        -> 26*26*N
+        """
+        # get all char and it's locations
+        # for each pair-> jumping from left to right on locations of the pair and apply modified_Kadane
+
+        # get char and location
+        
+        char2idx=collections.defaultdict(list)
+        
+        for ii, cc in enumerate(s): char2idx[cc].append(ii)
+        if len(char2idx) < 2: return 0
+        
+        mxv=-int(1e5)
+        # for each pari, apply modified Kadane
+        for aa, aii in char2idx.items():
+            for bb, bii in char2idx.items():
+                if aa==bb: continue
+
+                dp_no_b=0
+                dp_has_b=-int(1e4)
+                na, nb = len(aii), len(bii)
+                ii, jj, kk = 0, 0, 0
+                while ii < na or jj < nb:
+                    tmp_no_b = dp_no_b
+                    tmp_has_b = dp_has_b
+
+                    # hopping on a or b's locations only
+                    if ii < na and jj < nb:
+                        if aii[ii] <= bii[jj]:
+                            kk=aii[ii]
+                            ii+=1
+                        else:
+                            kk=bii[jj]
+                            jj+=1
+                    elif ii < na:
+                        kk=aii[ii]
+                        ii+=1
+                    elif jj < nb:
+                        kk=bii[jj]
+                        jj+=1
+                    else:
+                        break
+                    
+                    if s[kk]==aa:
+                        dp_has_b = tmp_has_b + 1
+                        dp_no_b = tmp_no_b + 1
+                    else:
+                        dp_has_b = max(tmp_has_b -1, tmp_no_b -1)
+                        dp_no_b = 0
+                    
+                    mxv=max(mxv, dp_has_b)
+            
+        return mxv
+
+###############
 
 class Solution:
     def largestVariance(self, s: str) -> int:

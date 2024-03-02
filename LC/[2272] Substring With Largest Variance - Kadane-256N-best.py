@@ -49,7 +49,6 @@ class Solution:
 # any two chars in the sub-array -> have to try all combination
 """
 
-
 class Solution:
     def largestVariance(self, s: str) -> int:
         char2cnt = Counter(list(s))
