@@ -1006,12 +1006,13 @@ c. move (slide) the window
 - [0721]
 - [0685]
 
--[128
+-[0128]
 
 # Series
 
 # [`Buy Sell Stock`]
-
+- [0121] I
+- [0122] II
 # [`basic Calculator`]
 
 - [0224] basic calculator I: num+paren
