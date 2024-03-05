@@ -1011,8 +1011,8 @@ c. move (slide) the window
 # Series
 
 # [`Buy Sell Stock`]
-- [0121] I
-- [0122] II
+- [0121] I: buy sell once
+- [0122] II: buy sell unlimited with 1 share  
 # [`basic Calculator`]
 
 - [0224] basic calculator I: num+paren

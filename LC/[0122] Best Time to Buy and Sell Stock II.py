@@ -1,4 +1,20 @@
 ###########
+# 20240305
+###########
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        """
+        prices[ii]:
+        """
+        N=len(prices)
+        acc=0
+        for ii, pp in enumerate(prices):
+            if ii==0:
+                acc=0
+            else:
+                acc += max(0, pp-prices[ii-1])
+        return acc
+###########
 # 20230611
 ###########
 class Solution:
