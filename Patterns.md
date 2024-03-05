@@ -1012,7 +1012,13 @@ c. move (slide) the window
 
 # [`Buy Sell Stock`]
 - [0121] I: buy sell once
-- [0122] II: buy sell unlimited with 1 share  
+  - max of current - prev_min
+  - find the global max diff
+- [0122] II: buy sell unlimited with 1 share
+  -  accumulate all postive diff
+- [-123] III: 
+  - 
+
 # [`basic Calculator`]
 
 - [0224] basic calculator I: num+paren
