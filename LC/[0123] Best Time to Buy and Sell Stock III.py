@@ -1,6 +1,21 @@
+"""
+# DP Type 1: current state is relating to only previous date state
+- template: 
+    Kadane: dp[ii]=max(nums[ii], dp[ii-1]+nums[ii])
+         -> one previous state
+  house robber: dp[ii] = dp_rob/dp_no_rob
+         -> two previous state
+  buy/sell stock III: bought1, sold1, bought2, sold2 
+         -> 4 previous state
+         
+- only need one state variable for DP type I
+- use tmp vars for state transition
+"""
+
 ###############
 # 20231225
 ###############
+
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
