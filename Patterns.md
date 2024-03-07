@@ -29,6 +29,7 @@ tickets.sort(reverse=True)
 > How to detect cycle in graph
 
 ### **3 passes**
+
 - [2565]
 
 ### **BFS**
@@ -148,8 +149,9 @@ class Solution:
 - [2040]: <span style="color:red">**pair-product:**</span> kth smallest product of two sorted array
   - [1918]
 - [2439]: is feasible for a max num in an array
+
   - What is the min-max value after some operations? -> guess the number and check feasible
-> Binary Search on Pairs
+    > Binary Search on Pairs
 
 - [0373]: <span style="color:red">**pair-sum:**</span> kth-smallest pair sum from two sorted array (<span style="color:red">**pair sum can be constructed as sorted matrix**</span>)
 - [0668]: <span style="color:red">**pair-product:**</span>kth-smallest value in sorted matrix. Binary Search on two dimentional table (multiplication table)
@@ -705,7 +707,7 @@ n2
   - VS [0767]
   - k=1 -> spacial odd/even solution
   - guarantee has answer
-- [1642]: 
+- [1642]:
   - use option 1 by default and replace with option 2 when needed
 - [1840]
 - [1846]
@@ -1011,13 +1013,14 @@ c. move (slide) the window
 # Series
 
 # [`Buy Sell Stock`]
+
 - [0121] I: buy sell once
   - max of current - prev_min
   - find the global max diff
 - [0122] II: buy sell unlimited with 1 share
-  -  accumulate all postive diff
-- [-123] III: buy sell twice
-  - 
+  - accumulate all postive diff
+- [0123] III: buy sell twice
+- [0188] IV: buy sell k times
 
 # [`basic Calculator`]
 
