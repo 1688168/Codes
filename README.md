@@ -836,7 +836,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 [[0815] - <span style="color:red">H</span> - Bus Routes](https://leetcode.com/problems/bus-routes/description/) - 
 [[Python]]()
-[[CPP]]() -
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/815.Bus-Routes) -
 [[Video]](https://www.youtube.com/watch?v=gSr3ii4ipsk) -
 [`Patterns`]
 
