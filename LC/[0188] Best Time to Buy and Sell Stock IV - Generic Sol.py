@@ -20,6 +20,7 @@ class Solution:
 
             for kk in range(1, K): # zero transactions will never change anything
                 dp[kk][0]=max(dp_tmp[kk][0], dp_tmp[kk-1][1]-pp)
+                # no change or bought current after sold prev
                 dp[kk][1]=max(dp_tmp[kk][1], dp_tmp[kk][0]+pp)
 
         mxp=0
