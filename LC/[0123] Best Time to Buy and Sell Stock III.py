@@ -15,8 +15,6 @@
 ###############
 # 20231225
 ###############
-
-
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         bought1 = -prices[0]
@@ -28,7 +26,7 @@ class Solution:
             bought1_tmp = bought1
             sold1_tmp = sold1
             bought2_tmp = bought2
-            sold2_tmp = sold2
+            sold2_tmp = sold2   
 
             bought1 = max(bought1_tmp, -pp)
             sold1 = max(sold1_tmp, bought1_tmp+pp)

@@ -1,3 +1,25 @@
+[Solution 1]:
+# Ideas:
+* Given a series of prices
+* Given a set of allowed transactions (status)
+* Optimize a formula (profit)
+
+-> each transaction defines a status
+-> current status comes from previous status -> Type I DP -> single var status
+-> future status cannot affect historic status
+=> DP
+
+# Strategy:
+- K transactions -> k status
+
+for each date
+  for each status
+    consider what the current status could be and capture the global optimized value
+  
+
+
+
+[Solution 2]:
 f(x): the maximum profit with the fixed transaction number x
 Xm: the max profit with Xm transactions
 f(k): when Xk < Xm
