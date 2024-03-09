@@ -20,6 +20,9 @@ for each date
 
 
 [Solution 2]:
+
+![188-1](../rcs/0188-1.png)
+![188-2](../rcs/0188-2.png)
 f(x): the maximum profit with the fixed transaction number x
 Xm: the max profit with Xm transactions
 f(k): when Xk < Xm
