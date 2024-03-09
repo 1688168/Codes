@@ -295,10 +295,11 @@ cache = OrderedDict()
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=lXRe__YD8JY&t=68s) -
-[`DO`]
+[`DP`][`Binary Search`]
 
 - [0122]: buy sell unlimited
 - [0714]: buy sell with fee
+- Alian Trick
 
 [[0198] - <span style="color:green">E</span> - House Robber](https://leetcode.com/problems/house-robber/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0198%5D%20House%20Robber.py)
