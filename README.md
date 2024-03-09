@@ -834,6 +834,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=Tm_hHBhQgII) -
 [`String Manipulation`][`calculator`]
 
+[[0815] - <span style="color:red">H</span> - Bus Routes](https://leetcode.com/problems/bus-routes/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=gSr3ii4ipsk) -
+[`Patterns`]
+
+
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/828.Count-Unique-Characters-of-All-Substrings-of-a-Given-String) -
