@@ -633,7 +633,9 @@ cache = OrderedDict()
 - File system is Trie
 - removing kv from OrderedDict:
   ```
+  # removing a key from OrderedDict
   * val=self.f2kv[freq].pop(key)
+  # removing the front/back element from OrderedDict
   * min_k, min_v=self.f2kv[self.min_freq].popitem(last=False)
   ```
 
