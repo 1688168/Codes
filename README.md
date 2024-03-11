@@ -633,7 +633,8 @@ cache = OrderedDict()
 - File system is Trie
 - removing kv from OrderedDict:
   ```
-  val=self.freq2kv[old_freq].pop(key)
+  * val=self.f2kv[freq].pop(key)
+  * min_k, min_v=self.f2kv[self.min_freq].popitem(last=False)
   ```
 
 [[0472] - <span style="color:red">H</span> - Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) - 
