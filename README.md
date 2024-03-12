@@ -968,6 +968,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 - [1254]
 
+[[1024] - <span style="color:yellow">M</span> - Video Stitching](https://leetcode.com/problems/video-stitching/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1024.Video-Stitching) -
+[[Video]](https://www.youtube.com/watch?v=ofzrZEQvHXY) -
+[`Greedy`]
+
+
 [[1028] - <span style="color:red">H</span> - Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Tree/1028.Recover-a-Tree-From-Preorder-Traversal) -
