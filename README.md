@@ -1141,6 +1141,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://youtu.be/2pLhH2eLaP8) -
 [`BFS`][`BFS Variation`]
 
+[[1326] - <span style="color:red">H</span> - Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/description/) - 
+[[Python]]()
+[[CPP]](Greedy/1326.Minimum-Number-of-Taps-to-Open-to-Water-a-Garden) -
+[[Video]](https://www.youtube.com/watch?v=WHafLkS9_-E) -
+[`Greedy`]
+
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
