@@ -1154,6 +1154,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=WHafLkS9_-E) -
 [`Greedy`]
 
+- this is intervals
 - [1024]
 
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 

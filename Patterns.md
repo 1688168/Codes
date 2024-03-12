@@ -769,7 +769,10 @@ c. element value is not equal to the destination value or no point of swapping
 ```
 
 # [`Intervals`]
-
+- when do you sort by beginning point
+- -> the min number of intervals to cover the whole range
+- when do you sort by ending point
+- -> the max number of non-overlapping intervals
 > 1. 50%: Sweep line
 > 2. 40%: Greedy
 > 3. 10%: DP
