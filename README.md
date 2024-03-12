@@ -1147,6 +1147,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=WHafLkS9_-E) -
 [`Greedy`]
 
+- [1024]
+
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
