@@ -793,6 +793,8 @@ c. element value is not equal to the destination value or no point of swapping
 - [0763]
 - [0798] Smallest-Rotation-with-Highest-Score (H)
 - [0995] Minimum-Number-of-K-Consecutive-Bit-Flips (H-)
+- [1024]
+- [1326]
 - [2345] (Google)
 
 ## Two Directions:

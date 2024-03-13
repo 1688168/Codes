@@ -1152,7 +1152,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]](Greedy/1326.Minimum-Number-of-Taps-to-Open-to-Water-a-Garden) -
 [[Video]](https://www.youtube.com/watch?v=WHafLkS9_-E) -
-[`Greedy`]
+[`Greedy`][`Interval`]
 
 - this is intervals
 - [1024]
