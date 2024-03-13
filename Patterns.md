@@ -793,8 +793,8 @@ c. element value is not equal to the destination value or no point of swapping
 - [0763]
 - [0798] Smallest-Rotation-with-Highest-Score (H)
 - [0995] Minimum-Number-of-K-Consecutive-Bit-Flips (H-)
-- [1024]
-- [1326]
+- [1024] min to cover range.  same as 1326
+- [1326] min to cover range. same as 1024
 - [2345] (Google)
 
 ## Two Directions:
