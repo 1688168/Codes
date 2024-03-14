@@ -242,7 +242,19 @@ class Solution:
   - Whenever we are looking for Nlog(N) time, we can sort
   - max/min of group (subset) -> sort
   -
+# [`Divide and Conquer`]
+```yaml
+A: [x x x x x x x] //break the original array into two (divide)
+B: [Y Y Y Y]
+C: [Z Z Z]
 
+1. recursively equally partition the original array
+2. process the subarray
+3. before returning to previous stack, sort
+4. leverage binary search per previous sort
+```
+
+- [0493]
 # [`Design`]
 
 ```yaml
