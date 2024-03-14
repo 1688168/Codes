@@ -654,6 +654,13 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=D2ZSacsq_fw) -
 [`DP`]
 
+[[0493] - <span style="color:red">H</span> - Reverse Pairs](https://leetcode.com/problems/reverse-pairs/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/493.Reverse-Pairs) -
+[[Video]](https://www.youtube.com/watch?v=97_B1X_jPXQ) -
+[`Divide Conquer`]
+
+
 [[0494] - <span style="color:yellow">M</span> - Target Sum](https://leetcode.com/problems/target-sum/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/494.Target-Sum) -
