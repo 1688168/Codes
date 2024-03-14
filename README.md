@@ -660,6 +660,7 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=97_B1X_jPXQ) -
 [`Divide Conquer`]
 
+- Python: Sorted List
 
 [[0494] - <span style="color:yellow">M</span> - Target Sum](https://leetcode.com/problems/target-sum/description/) - 
 [[Python]]()

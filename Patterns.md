@@ -252,6 +252,8 @@ C: [Z Z Z]
 2. process the subarray
 3. before returning to previous stack, sort
 4. leverage binary search per previous sort
+
+# Time: NlogN 
 ```
 
 - [0493]
