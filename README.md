@@ -659,8 +659,8 @@ cache = OrderedDict()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/493.Reverse-Pairs) -
 [[Video]](https://www.youtube.com/watch?v=97_B1X_jPXQ) -
 [`Divide Conquer`]
-
-- Python: Sorted List
+- divide and conquer - sol1
+- Python: Sorted List - sol2
 
 [[0494] - <span style="color:yellow">M</span> - Target Sum](https://leetcode.com/problems/target-sum/description/) - 
 [[Python]]()
