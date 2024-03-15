@@ -659,6 +659,7 @@ cache = OrderedDict()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/493.Reverse-Pairs) -
 [[Video]](https://www.youtube.com/watch?v=97_B1X_jPXQ) -
 [`Divide Conquer`]
+
 - divide and conquer - sol1
 - Python: Sorted List - sol2
 
@@ -851,7 +852,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=gSr3ii4ipsk) -
 [`BFS`]
 
-- BFS variation 
+- BFS variation
 
 [[0828] - <span style="color:red">H</span> - Count Unique Characters of All Substrings of a Given String](https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0828%5D%20Count%20Unique%20Characters%20of%20All%20Substrings%20of%20a%20Given%20String%20-%20v2.py)
@@ -981,7 +982,6 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1024.Video-Stitching) -
 [[Video]](https://www.youtube.com/watch?v=ofzrZEQvHXY) -
 [`Greedy`]
-
 
 [[1028] - <span style="color:red">H</span> - Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/description/) - 
 [[Python]]()
@@ -1249,6 +1249,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1642.Furthest-Building-You-Can-Reach) -
 [[Video]](https://youtu.be/6hUFyVYyDWc) -
 [`PriorityQueue`][`Greedy`]
+
+[[1649] - <span style="color:red">H</span> - Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/1649.Create-Sorted-Array-through-Instructions) -
+[[Video]](https://www.youtube.com/watch?v=B7vkfZcJNeY&t=40s) -
+[[Video-Segment Tree]](https://www.youtube.com/watch?v=rNdv9xlP8rk&t=54s)
+[`Divide Conquer`]
 
 [[1650] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1650%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20III.py)
