@@ -1255,7 +1255,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/1649.Create-Sorted-Array-through-Instructions) -
 [[Video]](https://www.youtube.com/watch?v=B7vkfZcJNeY&t=40s) -
 [[Video-Segment Tree]](https://www.youtube.com/watch?v=rNdv9xlP8rk&t=54s)
-[`Divide Conquer`][`BIT`][`Segment Tree`]
+[`Divide Conquer`][`BIT`][`Segment Tree`][`PBDS`]
 
 - [0315]
 
