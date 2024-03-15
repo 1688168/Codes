@@ -249,9 +249,9 @@ B: [Y Y Y Y]
 C: [Z Z Z]
 
 1. recursively equally partition the original array
-2. process the subarray
-3. before returning to previous stack, sort
-4. leverage binary search per previous sort
+2. solve the problem in each subarray
+3. before returning to previous stack, sort the subarray
+4. solve the problem with two solved-subarray (leverage binary search per previous sort)
 
 # Time: NlogN 
 ```
