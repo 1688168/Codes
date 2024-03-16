@@ -244,6 +244,17 @@ class Solution:
   -
 # [`Divide and Conquer`]
 ```yaml
+ # divide & conquer: what is the clue?
+  - accumulate some statistics (cost based on some cost function, count per some criteria)
+  - The statistics has to do with each element's relationship with other elements in the array
+  - when dealing with statistics with respect to relations - divide and conquery
+
+# Divide & Conquer framework:
+  - partition the original and merging two sorted list while accumulating the statistids
+  - binary search before merging two sorted list
+  - operating on two lists: original and sorted
+  - merge two sorted list
+
 A: [x x x x x x x] //break the original array into two (divide)
 B: [Y Y Y Y]
 C: [Z Z Z]
