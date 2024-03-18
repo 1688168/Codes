@@ -269,7 +269,9 @@ C: [Z Z Z]
 ```
 - [0315]: count right smaller than self
 - [0327]: count range sum in [lower, upper]
+  - Number of (ii, jj) pairs that satisfies some range sum criteria
 - [0493]: count pairs where 2bj > ai
+  - Number of (ii, jj) pairs that satisfies some relationship
 - [1649]: count total cost where cost = min(smaller, greater)
 # [`Design`]
 
