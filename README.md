@@ -505,6 +505,13 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
 [`Quick Select`]
 
+[[0327] - <span style="color:red">H</span> - Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/327.Count-of-Range-Sum) -
+[[Video]](https://www.youtube.com/watch?v=m9P1drvDjzY) -
+[`Divide and Conquer`]
+
+
 [[0332] - <span style="color:red">H</span> - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/332.Reconstruct-Itinerary) -
