@@ -245,6 +245,7 @@ class Solution:
 # [`Divide and Conquer`]
 ```yaml
  # divide & conquer: what is the clue?
+  - asking to calc something that is relating to how many is smaller than self before/after 
   - accumulate some statistics (cost based on some cost function, count per some criteria)
   - The statistics has to do with each element's relationship with other elements in the array
   - when dealing with statistics with respect to relations - divide and conquery
@@ -264,10 +265,12 @@ C: [Z Z Z]
 3. before returning to previous stack, sort the subarray
 4. solve the problem with two solved-subarray (leverage binary search per previous sort)
 
-# Time: NlogN 
+# Time: N*logN*logN
 ```
-
-- [0493]
+- [0315]: count right smaller than self
+- [0327]: count range sum in [lower, upper]
+- [0493]: count pairs where 2bj > ai
+- [1649]: count total cost where cost = min(smaller, greater)
 # [`Design`]
 
 ```yaml
