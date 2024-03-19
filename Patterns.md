@@ -1004,8 +1004,14 @@ Strategy:
 - [1591] Strange Printer
 
 # [`Trie`]
+```yaml
+- something relating to searching words
+- something relating to building dictionary
+
+```
 
 - [0139]
+- [0642]
 
 ```yaml
 - DFS by set lookup
