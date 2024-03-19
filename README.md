@@ -491,11 +491,26 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=jNy8yM0NBdw) -
 [`DP`]
 
+[[0315] - <span style="color:red">H</span> - Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/315.Count-of-Smaller-Numbers-After-Self) -
+[[Video]](https://www.youtube.com/watch?v=z-uLlQMvOVM&t=129s) -
+[`Divide and Conquer`]
+
+
+
 [[0324] - <span style="color:yellow">M</span> Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/324.Wiggle-Sort-II) -
 [[Video]](https://www.youtube.com/watch?v=48AAAx30zNY) -
 [`Quick Select`]
+
+[[0327] - <span style="color:red">H</span> - Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/327.Count-of-Range-Sum) -
+[[Video]](https://www.youtube.com/watch?v=m9P1drvDjzY) -
+[`Divide and Conquer`]
+
 
 [[0332] - <span style="color:red">H</span> - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) - 
 [[Python]]()

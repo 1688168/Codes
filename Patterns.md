@@ -242,8 +242,22 @@ class Solution:
   - Whenever we are looking for Nlog(N) time, we can sort
   - max/min of group (subset) -> sort
   -
+
 # [`Divide and Conquer`]
+
 ```yaml
+ # divide & conquer: what is the clue?
+  - asking to calc something that is relating to how many is smaller than self before/after
+  - accumulate some statistics (cost based on some cost function, count per some criteria)
+  - The statistics has to do with each element's relationship with other elements in the array
+  - when dealing with statistics with respect to relations - divide and conquery
+
+# Divide & Conquer framework:
+  - partition the original and merging two sorted list while accumulating the statistids
+  - binary search before merging two sorted list
+  - operating on two lists: original and sorted
+  - merge two sorted list
+
 A: [x x x x x x x] //break the original array into two (divide)
 B: [Y Y Y Y]
 C: [Z Z Z]
@@ -253,10 +267,29 @@ C: [Z Z Z]
 3. before returning to previous stack, sort the subarray
 4. solve the problem with two solved-subarray (leverage binary search per previous sort)
 
-# Time: NlogN 
+# Time: N*logN*logN
 ```
 
-- [0493]
+- [0315]: count right smaller than self
+  - Given an list, count right smaller than self
+  - > Reverse the list and count left smaller than self
+  - > return reverse of the result
+- [0327]: Given a list, count range sum in [lower, upper]
+  - convert the list to presum (also a list)
+  - sum[ii:jj] in [lower, upper]
+  - > lower <= presum[jj]-presum[ii-1] <= upper
+  - > presum[ii-1] >= presum[jj]- upper
+  - > presum[ii-1] <= presum[jj] - lower
+  - > traverse left and two binary search the right to count the range
+  - Number of (ii, jj) pairs that satisfies some range sum criteria
+- [0493]: count pairs where 2bj > ai
+  - This is almost the same as 315 but change the right smaller to 2Xright smaller
+  - Number of (ii, jj) pairs that satisfies some relationship
+- [1649]: count total cost where cost = min(smaller, greater)
+  - first find left smaller
+  - after we have the list of left smaller, right bigger=len-equal-smaller
+  - cost = min(left smaller, right bigger) and accumulate the total cost
+
 # [`Design`]
 
 ```yaml
@@ -343,14 +376,14 @@ C: [Z Z Z]
 - when using space O(1) strategy, be careful setup tmp variable to avoid states interfering each other
 
 ```
-- template: 
+- template:
     Kadane: dp[ii]=max(nums[ii], dp[ii-1]+nums[ii])
          -> one previous state
   house robber: dp[ii] = dp_rob/dp_no_rob
          -> two previous state
-  buy/sell stock III: bought1, sold1, bought2, sold2 
+  buy/sell stock III: bought1, sold1, bought2, sold2
          -> 4 previous state
-         
+
 - only need one state variable for DP type I
 - use tmp vars for state transition
 ```
@@ -783,16 +816,18 @@ c. element value is not equal to the destination value or no point of swapping
 ```
 
 # [`Intervals`]
+
 - when do you sort by beginning point
 - -> the min number of intervals to cover the whole range
 - when do you sort by ending point
 - -> the max number of non-overlapping intervals
-> 1. 50%: Sweep line
-> 2. 40%: Greedy
-> 3. 10%: DP
->
-> - typically need to sort
-> - the initial (cs, ce)=(-math.inf, -math.inf) or intervals[0]?
+
+  > 1. 50%: Sweep line
+  > 2. 40%: Greedy
+  > 3. 10%: DP
+  >
+  > - typically need to sort
+  > - the initial (cs, ce)=(-math.inf, -math.inf) or intervals[0]?
 
 - [0056] merge interval
 - [0057] insert inverval
@@ -807,7 +842,7 @@ c. element value is not equal to the destination value or no point of swapping
 - [0763]
 - [0798] Smallest-Rotation-with-Highest-Score (H)
 - [0995] Minimum-Number-of-K-Consecutive-Bit-Flips (H-)
-- [1024] min to cover range.  same as 1326
+- [1024] min to cover range. same as 1326
 - [1326] min to cover range. same as 1024
 - [2345] (Google)
 
@@ -988,8 +1023,14 @@ Strategy:
 - [1591] Strange Printer
 
 # [`Trie`]
+```yaml
+- something relating to searching words
+- something relating to building dictionary
+
+```
 
 - [0139]
+- [0642]
 
 ```yaml
 - DFS by set lookup

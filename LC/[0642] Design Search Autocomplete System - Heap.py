@@ -41,4 +41,4 @@ class AutocompleteSystem:
             if c not in node.children:
                 node.children[c] = TrieNode()
             node = node.children[c]
-            node.sentences[sentence] -= count
+            node.sentences[sentence] -= count # negative cnt for heap sort max
