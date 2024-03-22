@@ -780,6 +780,11 @@ cache = OrderedDict()
 [`Trie`][`Design`]
 
 - [1268]
+```yaml
+  - Given a dictionary for lookup -> Trie
+  - Sort by (freq, lexical order), but Trie at best is lexical order only -> need sorting @ end for final output
+  - preserve current iter and current user input and use DFS to find all in scope words 
+```
 
 [[0652] - <span style="color:yellow">M</span> - Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0668%5D%20Kth%20Smallest%20Number%20in%20Multiplication%20Table.py)
