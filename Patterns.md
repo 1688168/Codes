@@ -1030,7 +1030,11 @@ Strategy:
 ```
 
 - [0139]
-- [0642]
+- [0642]: 
+  - search char input one-by-one -> need to record current and reset when we receive '#'
+  - output need to sort per (freq, lexical order)
+- [1268]:
+  - search word is given, and output sort lexically only
 
 ```yaml
 - DFS by set lookup

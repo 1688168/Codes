@@ -1158,6 +1158,10 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 - [642]
 
+```yaml
+  - search suggestion sort lexically
+```
+
 [[1278] - <span style="color:red">H</span> - Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1278.Palindrome-Partitioning-III) -
