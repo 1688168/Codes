@@ -1154,7 +1154,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/1268.Search-Suggestions-System) -
 [[Video]](https://www.youtube.com/watch?v=GTPgTxTuung&t=1201s) -
-[`Trie`]
+[`Trie`][`binary search`]
 
 - [642]
 
