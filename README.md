@@ -1318,6 +1318,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - NP question
 - [2589]
 - template to iterate subset: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
+
+
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1840.Maximum-Building-Height) -
