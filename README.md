@@ -1312,8 +1312,9 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1723.Find-Minimum-Time-to-Finish-All-Jobs) -
 [[Video]](https://www.youtube.com/live/vT1nhRyFfNo?si=kUbb6la4d5FeNPYY) -
-[`DFS`][`DP`]
+[`DFS`][`DP`][`狀態壓縮 DP`]
 
+- time complexity: k*3^N (explained in other video)
 - NP question
 - [2589]
 - template to iterate subset: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
