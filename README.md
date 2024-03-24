@@ -1314,6 +1314,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/live/vT1nhRyFfNo?si=kUbb6la4d5FeNPYY) -
 [`DFS`][`DP`]
 
+- NP question
 - [2589]
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
