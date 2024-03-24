@@ -497,8 +497,6 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=z-uLlQMvOVM&t=129s) -
 [`Divide and Conquer`]
 
-
-
 [[0324] - <span style="color:yellow">M</span> Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/324.Wiggle-Sort-II) -
@@ -510,7 +508,6 @@ cache = OrderedDict()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/327.Count-of-Range-Sum) -
 [[Video]](https://www.youtube.com/watch?v=m9P1drvDjzY) -
 [`Divide and Conquer`]
-
 
 [[0332] - <span style="color:red">H</span> - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) - 
 [[Python]]()
@@ -780,10 +777,11 @@ cache = OrderedDict()
 [`Trie`][`Design`]
 
 - [1268]
+
 ```yaml
-  - Given a dictionary for lookup -> Trie
-  - Sort by (freq, lexical order), but Trie at best is lexical order only -> need sorting @ end for final output
-  - preserve current iter and current user input and use DFS to find all in scope words 
+- Given a dictionary for lookup -> Trie
+- Sort by (freq, lexical order), but Trie at best is lexical order only -> need sorting @ end for final output
+- preserve current iter and current user input and use DFS to find all in scope words
 ```
 
 [[0652] - <span style="color:yellow">M</span> - Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) - 
@@ -1159,7 +1157,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - [642]
 
 ```yaml
-  - search suggestion sort lexically
+- search suggestion sort lexically
 ```
 
 [[1278] - <span style="color:red">H</span> - Palindrome Partitioning III](https://leetcode.com/problems/palindrome-partitioning-iii/description/) - 
@@ -1309,6 +1307,14 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [`SQL`]
 
 - pandas: group by
+
+[[1723] - <span style="color:red">H</span> - Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1723.Find-Minimum-Time-to-Finish-All-Jobs) -
+[[Video]](https://www.youtube.com/live/vT1nhRyFfNo?si=kUbb6la4d5FeNPYY) -
+[`DFS`][`DP`]
+
+- [2589]
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
@@ -1711,6 +1717,14 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=vcjfoFhqzcI&t=405s) -
 [`3 pass`][`Binary Search`][`Two Pointers`][`Greedy`]
+
+[[2589] - <span style="color:red">H</span> - Minimum Time to Complete All Tasks](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2589.Minimum-Time-to-Complete-All-Tasks) -
+[[Video]](https://www.youtube.com/live/yVxdqo8x2qQ?si=6Jp6mLk1IgPMmQGM) -
+[`Greedy`]
+
+- [1723]
 
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2597%5D%20The-Number-of-Beautiful-Subsets.py)
