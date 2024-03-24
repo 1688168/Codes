@@ -1319,6 +1319,14 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - [2589]
 - template to iterate subset: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
 
+```python
+# how to traverse all subset of a bit
+subset=state
+while subset > 0:
+    # to something on the subset
+    subset=(subset-1)&state
+```
+
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()

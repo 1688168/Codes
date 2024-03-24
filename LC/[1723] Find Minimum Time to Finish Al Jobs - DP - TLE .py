@@ -18,12 +18,12 @@ class Solution:
         subset of (1,0): 10, 00
         subset of (0,1): 01, 00
         """
-        time=[0]*4096
-        dp=[[0]*4096 for _ in range(14)] # 12+1 rows for initial state, each worker has 4096 states (jobs finished)
+        time=[0]*4096 #time[ii] is the required time to complete state[ii]
+        dp=[[math.inf]*4096 for _ in range(14)] # 12+1 rows for initial state, each worker has 4096 states (jobs finished)
         
         N=len(jobs)
         # precalc time for each state
-        for state in range(1<<N):
+        for state in range(1<<N): #2^N (not including)
             ttl_time=0
             for ii in range(N):
                 if ((state>>ii) & 1)>0:
@@ -32,7 +32,7 @@ class Solution:
             time[state]=ttl_time
 
         # initialize dp[0][x]
-        for state in range(1<<N):
+        for state in range(1<<N): # for each state 
             dp[0][state]=math.inf
         
         # special initail state: zero worker, zero jobs
@@ -42,7 +42,7 @@ class Solution:
             for state in range(1<<N): # the inner two loop time is 3^N, (not 2^N*2^N)
                 # iterate subset template: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
                 # given a state, how to traverse the subset?
-                dp[ii][state]=math.inf
+                #dp[ii][state]=math.inf
                 subset=state
                 while subset > 0:
                     dp[ii][state] = min(dp[ii][state], max(dp[ii-1][state-subset], time[subset]))

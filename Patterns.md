@@ -1,5 +1,14 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
+> How to traverse all subset of a bit
+```python
+# how to traverse all subset of a bit
+subset=state
+while subset > 0:
+    # to something on the subset
+    subset=(subset-1)&state
+```
+
 > N VS Time complexity
 
 ```yaml
