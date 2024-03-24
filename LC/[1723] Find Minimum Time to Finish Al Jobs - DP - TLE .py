@@ -46,6 +46,7 @@ class Solution:
                 subset=state
                 while subset > 0:
                     dp[ii][state] = min(dp[ii][state], max(dp[ii-1][state-subset], time[subset]))
+                                                    #      ^^^ done w/o you ^^^ ^^^ your subset ^^^
                     subset=(subset-1)&state
 
         
