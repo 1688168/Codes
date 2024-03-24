@@ -35,6 +35,17 @@ state = 1 0
 subset of (1,0): 10, 00
 subset of (0,1): 01, 00
 
+> why is python TLE but CPP can AC? or why above strategy is not fast enough?
+* above solution tried all possible states, but in fact, some state you don't even need to consider as we are trying to find the min time required to complete all (prune)
+
+* state compression DP is not high performance solution as we solve and find optimal solution. but some state can be pruned in early stage.
+
+
+> Solution 2: binary search
+* low = 1
+* high = sum(jobs)
+* 
+
    
 
 
