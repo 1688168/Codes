@@ -8,22 +8,29 @@
 * Optimize total -> DP
 
 
-
 > the time complexity of this "State Compression" DP: 3^N (not 2^N*2^N)
 
-* NP question (expect small N) -> bruteforce
-* k<=12: max 12 workers
-* jobs <= 12: max 12 jobs
-* state=[010101010101]
-* eacher worker can take/no-take each job
-* each worker can work on: 2^12 states (each job take/no-take)
-dp[ii][state]
+> Analysis
+* Since we are bruteforcing this:
+  * We need to have all the state of each worker
+  * For each worker, s/he could have 2^N diff states where state=[1001011] 
+  * Here we use an interger to represent worker[ii] finishes job 0, 3, 5, 6
+  * We must compress the state into an integer or we will be easily run out of space
+* Given K workers
+        N jobs
+  each worker has 2^N states (each job take/non-take)
+* to represent all states:
+  k*2^N (int with state compression)
+  - without compression: 
+  -> K(workers)*N(jobs)*2(Y/N)
+                ^^^^^^^^^^^^^^
+                one state (compress as an int)
+* dp[ii][state]: min(max(states)) @ worker ii
 
 dp[ii][state]= min(max(dp[ii-1], time(subset))) # over all possible subset of state
 
 
-
-Time complexity analysis
+> Time complexity analysis
 state = 1 0
 subset of (1,0): 10, 00
 subset of (0,1): 01, 00
