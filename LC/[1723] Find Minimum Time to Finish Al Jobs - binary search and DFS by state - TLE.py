@@ -16,7 +16,7 @@ class Solution:
 
         def is_feasible(state, mm, kk):#finish the state, with threhold mm, with k workers
             if state==0: return True # all jobs are finished
-            if kk == k: return False # (0~k-1)
+            if kk == k: return False # we used more than k workers and still have not reach state zero
             if (state, kk) in memo: return False
 
             subset=state 
@@ -39,6 +39,7 @@ class Solution:
             mm=ll+(rr-ll)//2
 
             # can you finish all jobs (111111...) with threshold mm from zero workers
+            # starting from the worker finish all jobs
             if is_feasible((1<<N)-1, mm, 0): #can you finish a state given the threshold?
                 ans=mm
                 rr=mm-1
