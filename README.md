@@ -1312,12 +1312,33 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1723.Find-Minimum-Time-to-Finish-All-Jobs) -
 [[Video]](https://www.youtube.com/live/vT1nhRyFfNo?si=kUbb6la4d5FeNPYY) -
-[`DFS`][`DP`]
+[`DFS`][`DP`][`狀態壓縮 DP`]
 
+```yaml
+> DFS:
+1. memo
+2. sort the search order so it's easier to trigger threshold and being pruned early
+3. leveraging the fact that assigning a new job to any empty worker is the same, no need to try over and over again on same situation
+```
+
+- time complexity: k*3^N (explained in other video)
 - NP question
   - N=12 -> waiting for bruteforce solution
   - 
 - [2589]
+- template to iterate subset: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
+
+- review " DFS: search in array", "pruning"
+- Try to assign those that is easier to trigger threshold to avoid unnecessary probing/searching
+
+```python
+# how to traverse all subset of a bit
+subset=state
+while subset > 0:
+    # to something on the subset
+    subset=(subset-1)&state
+```
+
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
