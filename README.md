@@ -1315,6 +1315,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [`DFS`][`DP`]
 
 - NP question
+  - N=12 -> waiting for bruteforce solution
+  - 
 - [2589]
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
