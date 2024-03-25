@@ -1,3 +1,15 @@
+> problem statement
+- given jobs[ii]: the required time to complete job ii
+-              K: number of workers
+-> find min max time required amount all workers to finish all jobs
+- do you realize this is an NP problem (no better solution but bruteforce)
+* max(k) is 12
+* max(N) is 12 both are very small
+
+> what are the bruteforce methods?
+1. DP (feels like racksack problem)
+   
+
 > Deciding strategy
 1. max(N)=12
 2. max(K)=12
