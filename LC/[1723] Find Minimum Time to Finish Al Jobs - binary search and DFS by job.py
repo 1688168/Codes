@@ -4,9 +4,9 @@ class Solution:
         N=len(jobs)
         jobs.sort(reverse=True)#strategy of pruning --- pruning #1
         def is_feasible(workers, mm, kk):#kk is the index into jobs, mm is the threshold each worker can take
-            if kk==N: return True
+            if kk==N: return True # finished assigning all jobs
             flag=0
-            for ii in range(k):
+            for ii in range(k): # which worker we can assign the job to?
                 # pruning --- 2: reduce to 1/k
                 # assigning a job to any new empty worker is the same
                 if workers[ii]==0: #assigning a job to an empty worker
@@ -17,7 +17,7 @@ class Solution:
                 if workers[ii]+jobs[kk] > mm: continue
                 workers[ii] += jobs[kk]
                 if is_feasible(workers, mm, kk+1): return True
-                workers[ii]-=jobs[kk]
+                workers[ii]-=jobs[kk] # back track
             return False
     
 
@@ -29,7 +29,7 @@ class Solution:
             workers=[0]*k
             mm=ll+(rr-ll)//2
 
-            if is_feasible(workers, mm, 0):  
+            if is_feasible(workers, mm, 0):  # can you finish assining all jobs to all workers under the threshold?
                 ans=mm
                 rr=mm-1
             else:
