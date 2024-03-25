@@ -44,7 +44,5 @@ class Solution:
                 rr=mm-1
             else:
                 ll=mm+1
-
-        
         return ans
             
