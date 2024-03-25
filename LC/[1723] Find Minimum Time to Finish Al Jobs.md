@@ -44,8 +44,14 @@ subset of (0,1): 01, 00
 > Solution 2: binary search
 * low = 1
 * high = sum(jobs)
-* 
 
+
+> Solution 3: binary search and traditional DFS
+* better for pruning (easier than state compression)
+
+> state-compression VS BinarySearch+DFS
+* State-compression is iterating per worker (K times)
+* BinarySearch+DFS is iterating per job (N times)
    
 
 
