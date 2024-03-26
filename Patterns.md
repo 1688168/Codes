@@ -1,6 +1,7 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
 > How to traverse all subset of a bit
+
 ```python
 # how to traverse all subset of a bit
 subset=state
@@ -826,9 +827,13 @@ c. element value is not equal to the destination value or no point of swapping
 
 # [`Intervals`]
 
-- when do you sort by beginning point
+> when do you sort by beginning point
+
 - -> the min number of intervals to cover the whole range
-- when do you sort by ending point
+
+> when do you sort by ending point
+
+- -> relating to overlap
 - -> the max number of non-overlapping intervals
 
   > 1. 50%: Sweep line
@@ -1032,14 +1037,14 @@ Strategy:
 - [1591] Strange Printer
 
 # [`Trie`]
+
 ```yaml
 - something relating to searching words
 - something relating to building dictionary
-
 ```
 
 - [0139]
-- [0642]: 
+- [0642]:
   - search char input one-by-one -> need to record current and reset when we receive '#'
   - output need to sort per (freq, lexical order)
 - [1268]:
