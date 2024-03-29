@@ -1,4 +1,41 @@
 class Solution:
+    def findMinimumTime(self, tasks: List[List[int]]) -> int:
+        """
+        if we remove the condition that 1<=st, ed<=2000
+        """
+        # for merge overlapping interval -> sort by end
+        tasks.sort(key=lambda x: x[1])
+
+        # continue to merge intervals to a new array
+
+        # [st, ed, presum]
+        arr=[[-2, -1, 0]] # initialize with a dummy header
+
+        # merging each intervals with duration
+        for ii, (st, ed, du) in enumerate(tasks):
+            # binary search the insert point
+            idx = bisect.bisect_left(arr, [st, 0, 0])
+            idx-=1 # dummy header prevents out-of-bound
+            
+            overlap = arr[-1][2]-arr[idx][2]
+            if arr[idx][1] >= st: # has overlap with inserting interval 
+                overlap += abs(arr[idx][1]-st)+1
+            
+            diff = du - overlap
+            curr=ed
+            while diff > 0:
+                gap=abs(arr[-1][1]-curr)
+                if diff > gap:
+                    diff -= gap
+                    curr = arr[-1][0]-1
+                    arr.pop()
+                else:
+                    arr.append([curr-diff+1, ed, arr[-1][2]+ed-(curr-diff)])
+                    diff=0
+        return arr[-1][-1]
+        
+#############
+class Solution:
     # Nlog(N)
     def findMinimumTime(self, tasks: List[List[int]]) -> int:
         # Overlapping interval issue -> sort by end in ascending order
