@@ -43,6 +43,7 @@ class Solution:
                 res.append(points[p[ii][1]])
             else:
                 break
+        return res
 
 #############################
 class Solution:
