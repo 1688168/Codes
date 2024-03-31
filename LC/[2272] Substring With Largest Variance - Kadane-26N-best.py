@@ -1,3 +1,59 @@
+##########
+# 20240331
+##########
+
+class Solution:
+    def largestVariance(self, s: str) -> int:
+        char2idx = collections.defaultdict(list)
+        for ii, cc in enumerate(s):
+            char2idx[cc].append(ii)
+
+        # max subarray sum with both (a, b) -> modified Kadane (DP) -> N
+
+        mxv = 0
+        # for each pair (aa, bb), this determined an array where aa=1, bb=-1 others=0
+        for aa, aii in char2idx.items():  # T: 26
+            for bb, bii in char2idx.items():  # T: 26
+                if aa == bb:
+                    continue  # already default mxv=0
+                # here we will perform the modifed Kadane
+                dp_no_b = 0
+                dp_has_b = -math.inf
+                ii, jj, kk = 0, 0, 0  # this is index into aii, bii, not index into s
+
+                # traversing the array on aii and bii only (cuz all others are zero and not relevent)
+                while ii < len(aii) or jj < len(bii):
+                    tmp_no_b = dp_no_b
+                    tmp_has_b = dp_has_b
+
+                    if ii < len(aii) and jj < len(bii):
+                        if aii[ii] <= bii[jj]:
+                            kk = aii[ii]
+                            ii += 1
+                        else:
+                            kk = bii[jj]
+                            jj += 1
+                    elif ii < len(aii):
+                        kk = aii[ii]
+                        ii += 1
+                    elif jj < len(bii):
+                        kk = bii[jj]
+                        jj += 1
+
+                    else:
+                        break
+
+                    if s[kk] == aa:  # it's an a with value 1
+                        dp_no_b = tmp_no_b + 1
+                        dp_has_b = tmp_has_b + 1
+                    else:
+                        dp_no_b = 0
+                        dp_has_b = max(tmp_no_b, tmp_has_b)-1
+
+                    mxv = max(mxv, dp_has_b)
+
+        return mxv
+
 
 ##########
 # 20240331
