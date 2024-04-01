@@ -1321,10 +1321,10 @@ idx2cnt = collections.defaultdict(lambda: 1)
 3. leveraging the fact that assigning a new job to any empty worker is the same, no need to try over and over again on same situation
 ```
 
-- time complexity: k*3^N (explained in other video)
+- time complexity: k\*3^N (explained in other video)
 - NP question
   - N=12 -> waiting for bruteforce solution
-  - 
+  -
 - [2589]
 - template to iterate subset: https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp
 
@@ -1338,7 +1338,6 @@ while subset > 0:
     # to something on the subset
     subset=(subset-1)&state
 ```
-
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
@@ -1525,6 +1524,7 @@ defaultdict(lambda: defaultdict(int))
 [[Video - deprecated]](https://www.youtube.com/watch?v=tMIBXRhp9hs) -
 [`Count Subarray By Element`][`Monotonic Stack`]
 
+- presum: insert dummy header
 - [907] [`Aggregate Subarray by element`]
 
 [[2296] - <span style="color:red">H</span> - Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/description/) - 
