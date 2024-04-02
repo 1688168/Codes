@@ -1252,6 +1252,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`Patterns`]
 
+[[1578] - <span style="color:yellow">M</span> - Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters) -
+[[Video]](https://www.youtube.com/watch?v=n6fUMuVS-X8) -
+[`Greedy`]
+
 [[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1591.Strange-Printer-II) -
