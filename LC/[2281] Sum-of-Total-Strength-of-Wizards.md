@@ -6,23 +6,14 @@
 
 # Analysis
 
-0 1 2 3 4 5 6 7 8 9 0 1
-a i b
-x x a x x x x x x x x x
-1 1 1 1 1  
- 1 1 1 1  
- 1 1 1
-1 1
-1  
- 1 1 + 4
-1 1 1 +4
-1 1 1 1 + 4
+a x x x x ii x x x b
 
 nums[ii]: the weakest wizard strength
 x=ii-a
 y=b-ii
 nums[a]: pre_smaller_equal (vs nums[ii])
 nums[b]: next_smaller
+
 Let ret[ii] be the total strength of all subarraies where nums[ii] is the weakest wizard
 
 ret[ii] = (left*(b-ii) + mid*(x*y) + right*(ii-a))\* nums[ii]
@@ -38,7 +29,7 @@ presum2[ii]-presum2[a]=nums[a+1]_(a+1)+nums[a+2]_(a+2)+nums[a+3]_(a+2) + nums[a+
 
 ## => left = presum2[ii]-presum2[a] - presum[a+1:ii]\*a
 
-presum2[b]-presum2[ii] = nums[ii+1]_(ii+1)+nums[ii+2]_(ii+2)+nums[ii+3]*(ii+3)
+presum2[b-1]-presum2[ii] = nums[ii+1]_(ii+1)+nums[ii+2]_(ii+2)+nums[ii+3]*(ii+3)
 = nums[ii+1]*b+nums[ii+2]*b + nums[ii+3]*b - right
 
 ## => right = presum[ii+1: b]\*b - (presum2[b-1]-presum2[ii])
