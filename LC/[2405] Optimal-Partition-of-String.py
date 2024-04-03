@@ -15,7 +15,7 @@ class Solution:
 
         char_set = set()
         st = 0
-        cnt = 0
+        cnt = 1  # at leat one partition
         for ed, cc in enumerate(s):
             char_set.add(cc)
             if ed-st+1 > len(char_set):
@@ -23,7 +23,7 @@ class Solution:
                 cnt += 1
                 char_set = set([cc])
 
-        return cnt+1
+        return cnt
 
 ##########
 # 20240106
