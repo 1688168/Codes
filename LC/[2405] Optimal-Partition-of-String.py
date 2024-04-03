@@ -1,6 +1,35 @@
 ##########
+# 20240403
+##########
+class Solution:
+    def partitionString(self, s: str) -> int:
+        """
+        # N: 10^5
+        # Bruteforce: 
+        - all substring: N^2
+        # DP, binary search, greedy
+        - binary search <<< 32N
+        - greedy: partition with longest substring without repeating and return count. O(N)
+        -> min # of substring
+        """
+
+        char_set = set()
+        st = 0
+        cnt = 0
+        for ed, cc in enumerate(s):
+            char_set.add(cc)
+            if ed-st+1 > len(char_set):
+                st = ed
+                cnt += 1
+                char_set = set([cc])
+
+        return cnt+1
+
+##########
 # 20240106
 ##########
+
+
 class Solution:
     def partitionString(self, s: str) -> int:
         visited = set()
