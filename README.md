@@ -1079,6 +1079,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`Sliding Window`]
 
+- [idiom]: presum template
+
 [[1172] - <span style="color:red">H</span> - Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1172.Dinner-Plate-Stacks) -
