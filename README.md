@@ -1079,6 +1079,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`Sliding Window`]
 
+- [idiom]: presum template
+
 [[1172] - <span style="color:red">H</span> - Dinner Plate Stacks](https://leetcode.com/problems/dinner-plate-stacks/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1172.Dinner-Plate-Stacks) -
@@ -1251,6 +1253,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[1578] - <span style="color:yellow">M</span> - Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1578.Minimum-Deletion-Cost-to-Avoid-Repeating-Letters) -
+[[Video]](https://www.youtube.com/watch?v=n6fUMuVS-X8) -
+[`Greedy`]
 
 [[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
 [[Python]]()
@@ -1716,6 +1724,7 @@ defaultdict(lambda: defaultdict(int))
 - when we need to consider both left and right, we can first focus on left as right is just the reverse of it
 - To find the rank of each element -> binary search (bisect into an new array)
 - To find how many elements before current index that is greater or lesser -> use heap maintaining top k
+- how to maintain running top k
 
 [[2528] - <span style="color:red">H</span> - Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2528%5D%20Maximize-the-Minimum-Powered-City.py)

@@ -1,6 +1,35 @@
 #############
+# 20240405
+#############
+class Solution:
+    def minSwaps(self, data: List[int]) -> int:
+        """
+        - data[ii]: binary
+        -> min swaps 
+
+        """
+        # edge cases:
+        window_sz = sum(data)  # T: N
+        if window_sz <= 1:
+            return 0
+
+        data = [0]+data
+        N = len(data)
+        presum = [0]  # space: N
+        for ii, nn in enumerate(data[1:]):  # T: N
+            presum.append(nn+presum[ii])
+
+        ll, rr = 1, window_sz-1
+        min_zero = math.inf
+        for rr in range(window_sz, N):  # T: N
+            min_zero = min(min_zero, window_sz-presum[rr]+presum[ll-1])
+            ll += 1
+        return min_zero
+#############
 # 20240107
 #############
+
+
 class Solution:
     def minSwaps(self, data: List[int]) -> int:
         """
