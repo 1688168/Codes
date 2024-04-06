@@ -1,3 +1,63 @@
+############
+# 20240401
+############
+# Thought process
+> Bruteforce
+1. find all subarray: T=N^2
+2. find min and calc subarray sum (use presum): T=N
+=> N^3 (not scallable)
+
+> For each ii in nums as min and calc ttl strength
+0 1 2 3 4 5  6 7 8 9
+  1 2 3 4    3 2 1
+a x x x x ii x x x b
+    x x x ii x x
+      x x ii x
+        x ii
+
+
+let R=(b-ii) [4]
+    L=(ii-a) [5]
+
+    res[ii]=ttl strength with nums[ii] as min subarrays
+
+res[ii] = nums[ii] * [
+   R * (nums[a+1]*1 + nums[a+2]* 2 + nums[a+3]*3 + nums[a+4]* 4)   # --- left
++  nums[ii]*R*L   # --- center
++  L * (nums[ii+1]*3 + nums[i+2]*2 + nums[ii+3]*1)
+]
+
+nums[a]: prev_smaller_equal val of nums[ii]
+nums[b]: next_smaller val of nums[ii]
+
+Let presum2[ii] = nums[1] * 1 + nums[2] * 2 + ...
+
+presum2[ii-1] - presum2[a] =
+   nums[a+1]*(a+1) + nums[a+2]*(a+2) + nums[a+3]*(a+3) + nums[a+4]*(a+4)
+
+   = a* presum[a:ii] + "Left_what_we_want"
+
+Left_what_we_want = presum2[ii-1] - presum2[a] - a*presum[a:ii]
+
+
+presum2[b-1]-presum2[ii] =
+ nums[ii+1]*(ii+1)+nums[ii+2]*(ii+2)+nums[ii+3]*(ii+3)
+  = b * (nums[ii+1]+nums[ii+2]+nums[ii+3]) - Right_what_we_want
+
+  =>
+  right_what_we_want = b*presum[ii+1:b] - presum2[b-1]+presum2[ii]
+
+
+  ===>
+  res[ii]=R*left_what_we_want + nums[ii]*L*R
+         + L*right_what_we_want
+
+  # notice b=ii+4
+    nums[ii+1]*(b-3) = nums[ii+1]*(ii+4-3)
+                     = nums[ii+1]*3
+
+
+############
 # Required Skills:
 
 1. monotonic stack (prev_smaller_equal/next_smaller)
