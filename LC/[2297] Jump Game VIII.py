@@ -5,6 +5,48 @@ monotonic stack
 [2282]
 """
 ###############
+# 20240407
+###############
+
+
+class Solution:
+    def minCost(self, nums: List[int], costs: List[int]) -> int:
+        """
+        + nums[ii]:
+        + cost[ii]
+             xx  
+            xxx
+        x   xxxx
+        xx xxxxx
+        xxxxxxxx
+        xxxxxxxx
+        i   j
+
+        => min cost
+        dp[ii]: min cost to jump to ii
+        dp[ii]= min(dp[jj])+cost[ii]
+        N=pow(10, 5)
+        """
+        N = len(nums)
+        dp = [math.inf]*N
+        dp[0] = 0
+        stk_prev_greater = []  # anything in between can jump higher
+        stk_prev_smaller = []  # anything in between can jump lower
+        for ii, nn in enumerate(nums):
+            while stk_prev_greater and nn >= nums[stk_prev_greater[-1]]:
+                dp[ii] = min(dp[ii], dp[stk_prev_greater[-1]]+costs[ii])
+                stk_prev_greater.pop()
+
+            while stk_prev_smaller and nn < nums[stk_prev_smaller[-1]]:
+                dp[ii] = min(dp[ii], dp[stk_prev_smaller[-1]]+costs[ii])
+                stk_prev_smaller.pop()
+
+            stk_prev_greater.append(ii)
+            stk_prev_smaller.append(ii)
+
+        return dp[-1]
+
+###############
 # 20240115
 ###############
 
