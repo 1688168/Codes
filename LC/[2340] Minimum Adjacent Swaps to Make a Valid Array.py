@@ -1,4 +1,50 @@
 #############
+# 20240407
+#############
+class Solution:
+    def minimumSwaps(self, nums: List[int]) -> int:
+        """
+        * nums[ii]: 
+        + 
+        => min swaps to make nums valid
+        # Greedy Heuristic
+        - identify the min/max: O(N)
+        - who is closer to the end
+        1. move the closer one first
+        2. move the other one after
+
+        ----
+        1. identify the left most min
+        2. identify the right most max
+        3. is there crossing? if yes, -1
+
+        N=10^5
+        """
+        mx = max(nums)  # T:N
+        mn = min(nums)  # T:N
+
+        N = len(nums)
+        for ii in range(N):
+            if nums[ii] == mn:
+                lmin = ii
+                break
+        for ii in reversed(range(N)):
+            if nums[ii] == mx:
+                rmax = ii
+                break
+
+        is_crossing = False
+        if lmin > rmax:
+            is_crossing = True
+
+        moves = lmin + (N-rmax-1)
+        if is_crossing:
+            moves -= 1
+
+        return moves
+
+
+#############
 # 20240114
 #############
 class Solution:
