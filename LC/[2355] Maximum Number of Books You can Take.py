@@ -1,6 +1,107 @@
 """
 https://www.bilibili.com/video/BV1PG411n7FS/
 """
+#############
+# 20240406
+#############
+class Solution:
+    def maximumBooks(self, books: List[int]) -> int:
+        """
+        let dp[ii] be the max books you can take ending @ shelf[ii]
+        dp[ii] = dp[jj] + arithmatic_sum[jj+1:ii+1]
+        where jj is the (projected) prev smaller based on the strickly increasing rule
+        N: 10^5
+        T: O(N) <<< 
+        """
+        N=len(books)
+        dp=[0]*N
+
+        stk=[]
+        for ii, nn in enumerate(books):
+            # find previous smaller per rule (strickly smaller)
+            while stk and books[stk[-1]] >= nn-(ii-stk[-1]): #notice the equal sign
+                stk.pop()
+
+            if stk: #yes we have prev-smaller
+                """
+                0. 1 2 3 4 5
+                jj x x x x ii
+                """
+                L = ii-stk[-1]
+                a=nn-L+1
+                dp[ii]=dp[stk[-1]] + (a+nn)*L//2 
+            else: #we don't have prev smaller
+                """
+                ii: 1 2 3
+                nn:   1 2
+                """
+                L=min(ii+1, nn)
+                a=nn-L+1
+                dp[ii]=(a+nn)*L//2
+            stk.append(ii)
+        return max(dp)
+
+        
+
+        
+#############
+# 20240406
+#############
+class Solution:
+    def maximumBooks(self, books: List[int]) -> int:
+        """
+        books[ii]: # of books on iith shelf
+        * strictly fewer - monotonic
+        => max books
+
+        # Translation
+        - given single list nums
+        - find a subarray with max sum 
+          where given jj s.t. ll<=jj<=rr
+                nums[jj-1] < nums[jj] < nums[jj]
+                nums[jj] can be any number btn [0, nums[jj]] 
+
+        let dp[ii]: max books we can take when ending @ index=ii for nums
+            dp[ii] = dp[jj]+sum(arithmatic sequence[jj+1:ii+1])
+
+        => O(N^2): for each ii, we need to find jj s.t. nums[jj] is lower than expectation
+        -> N=10^5 --> N^2 won't work 
+        --> how do we reduce time-complexity?
+        -> what's the best way to find the jj?
+        -> what's the previous jj that is lower than expection?
+        -> leverate monotonic stack to maintain prev jj that is lower than expectation.        
+        """
+        N = len(books)
+        dp = [0]*N
+        stk = []
+
+        # for each nn, calc the max_book you can carry
+        for ii, nn in enumerate(books):
+            # remove those that is higher than expectation
+            """
+            7 8 9 10
+                   i
+                j    
+            """
+            # find the previous smaller with special condition (arithmatic decreasing)
+            while stk and books[stk[-1]] >= nn - (ii-stk[-1]):  # do you have enough to cover expectation?
+                stk.pop()
+
+            if stk:  # we have prev dp
+                # jj=stk[-1]
+                L = ii-stk[-1]
+
+                dp[ii] = dp[stk[-1]] + (nn + books[ii]-L+1)*L//2 #arithmatic sum 
+                # ^^^^^^^^^^^^^^^^^^^^^^^^^
+                # current + expected_bottom
+            else:
+                L = min(ii+1, nn) # might not be able to reach ii=0 due to nn is too small
+                dp[ii] = (nn+books[ii]-L+1)*L//2
+
+            stk.append(ii)
+
+        return max(dp)
+
 ###############
 # 20240114
 ###############
