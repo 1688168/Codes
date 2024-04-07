@@ -4,8 +4,6 @@ https://www.bilibili.com/video/BV1PG411n7FS/
 ###############
 # 20240114
 ###############
-
-
 class Solution:
     def maximumBooks(self, books: List[int]) -> int:
         """
