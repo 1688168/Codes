@@ -1,7 +1,64 @@
 ################
-# 220231007
+# 20240406
 ################
 from collections import deque
+
+
+class Solution:
+    def timeTaken(self, arrival: List[int], state: List[int]) -> List[int]:
+        """
+        - arrival[ii]: iith person arrival time
+        - state[ii]: 0-enter, 1-exit
+        * default is exit
+        * N=10^5
+        """
+        N = len(arrival)
+        ans = [0]*N
+        exit_q = deque()
+        enter_q = deque()
+        ii = 0
+        t = 0
+        prev_state = 1  # default to exit
+        while enter_q or exit_q or ii < N:
+            # get those in scope to the queue
+            while ii < N and arrival[ii] <= t:
+                if state[ii] == 0:
+                    enter_q.append(ii)
+                else:
+                    exit_q.append(ii)
+                ii += 1
+
+            # who gets pass the door
+
+            if prev_state == 0:
+                if enter_q:
+                    curr = enter_q.popleft()
+                    ans[curr] = t
+
+                else:
+                    prev_state = 1  # default to 1 regardless
+                    if exit_q:
+                        curr = exit_q.popleft()
+                        ans[curr] = t
+
+            else:  # perv was exiting
+                if exit_q:
+                    curr = exit_q.popleft()
+                    ans[curr] = t
+
+                else:
+                    if enter_q:
+                        prev_state = 0
+                        curr = enter_q.popleft()
+                        ans[curr] = t
+
+            t += 1
+        return ans
+
+
+################
+# 20231007
+################
 
 
 class Solution:
