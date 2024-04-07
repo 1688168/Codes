@@ -1,8 +1,28 @@
+#############
+# 20240407
+#############
+from collections import Counter
+
+
+class Solution:
+    def minimumKeypresses(self, s: str) -> int:
+        c2f = collections.Counter(s)
+        cf_lst = [(ff, cc) for cc, ff in c2f.items()]
+
+        cf_lst.sort(reverse=True)
+        lvl = 0
+
+        cnt = 0
+        for ii, (ff, cc) in enumerate(cf_lst):
+            if ii % 9 == 0:
+                lvl += 1
+            cnt += lvl*ff
+        return cnt
+
 
 #############
 # 20240115
 #############
-from collections import Counter
 
 
 class Solution:
