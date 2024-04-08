@@ -1,6 +1,31 @@
 ############
+# 20240407
+############
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        """
+        """
+        ins, ine = newInterval
+
+        res = []
+        for ns, ne in intervals:
+            if ine < ns:
+                res.append([ins, ine])
+                ins, ine = ns, ne
+            elif ins <= ne:  # has overlap
+                ins, ine = min(ns, ins), max(ne, ine)
+            else:  # newInterval is still behind
+                res.append((ns, ne))
+
+        res.append((ins, ine))
+
+        return res
+
+############
 # 20240313
 ############
+
+
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         """
@@ -8,36 +33,40 @@ class Solution:
         * Sorted
         """
         ins, ine = newInterval
-        N=len(intervals)
+        N = len(intervals)
 
-        res=[]
+        res = []
+
         def has_overlap(a, b):
             a0, a1 = a
             b0, b1 = b
-            if b0 > a1: return False
-            if a0 > b1: return False
+            if b0 > a1:
+                return False
+            if a0 > b1:
+                return False
             return True
 
-        for ns, ne in intervals: # for each interval
-            if has_overlap((ns, ne), (ins, ine)):# has overlapping with (ins, ine)?
+        for ns, ne in intervals:  # for each interval
+            if has_overlap((ns, ne), (ins, ine)):  # has overlapping with (ins, ine)?
                 ins = min(ns, ins)
                 ine = max(ne, ine)
-            else: # no overlap, who to submit?
+            else:  # no overlap, who to submit?
                 if ine < ns:
                     res.append((ins, ine))
                     ins, ine = ns, ne
                 else:
                     res.append((ns, ne))
-            
-        
+
         # consider the last one
         res.append((ins, ine))
 
         return res
-        
+
 ############
 # 20231203
 ############
+
+
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         ins, ine = newInterval
