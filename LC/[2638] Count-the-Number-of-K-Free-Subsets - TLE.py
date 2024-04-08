@@ -9,7 +9,7 @@ class Solution:
         - we know how to find all subsets from nums with duplicate number
         - how to avoid adding new member to subset with diff=k?
         a. group nums by mod k
-        b. count of subset = g1*g2*... (as each group is mod k, so inter-group will not have diff=k)
+        b. count of subset = g1*g2*... (as each group is mod k, so inter-group will NOT have diff=k)
         ** given a list, the current decision depends on some relationship with prev element -> house robber
         c. when adding new member to subset, just compare to prev one 
         """

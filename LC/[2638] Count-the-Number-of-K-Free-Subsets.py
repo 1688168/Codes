@@ -27,7 +27,7 @@ class Solution:
                     ntk = 1
                 else:
                     if vs[ii-1]+k == vs[ii]:
-                        tke = ntk_tmp
+                        tke = ntk_tmp #to take this one, we have to skip prev
                     else:
                         tke = tke_tmp+ntk_tmp
                     ntk = ntk_tmp+tke_tmp
