@@ -1783,6 +1783,7 @@ defaultdict(lambda: defaultdict(int))
   - no duplicate meaning no difference picking any of the duplicate
   - two elements cannot have some kind of relationship -> need to consider pick A or pick B -> when making decisions -> DP/Greedy
 - [Failed]: Amazon
+- count subset from an array with constrains
 
 ```yaml
 1. [0078]: Array of unique numbers -> All Subsets
