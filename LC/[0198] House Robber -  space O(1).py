@@ -1,4 +1,23 @@
 ####################
+# 20240409
+####################
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        """
+        """
+
+        tke = nums[0]  # max profit ending @ house ii
+        ntk = 0
+        for ii, nn in enumerate(nums[1:], 1):
+            tmp_tke = tke
+            tmp_ntk = ntk
+
+            tke = nums[ii]+tmp_ntk
+            ntk = max(tmp_tke, tmp_ntk)
+
+        return max(tke, ntk)
+
+####################
 ##### 20231008 #####
 ####################
 
