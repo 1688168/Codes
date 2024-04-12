@@ -439,6 +439,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 # Number of subsets from an array with some constrains
 - [0198]: max profit from an array s.t. you cannot rob two consequtive houses
 - [2222]: two kinds of buildings, need to select 3 buildings s.t. no two consequtive buildings are with same types
+  - jj is the num of buildings currently we are selecting (0, 1, 2, 3)
+  - current_building_type
+  - current_building_idx
 - [2638]: after grouping, no subset with pair of numbers with abs(diff)=k
 ```
 
