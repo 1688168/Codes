@@ -7,7 +7,7 @@
 * max(N) is 12 both are very small
 
 > what are the bruteforce methods?
-1. DP (feels like racksack problem)
+1. DP (feels like knapsack problem)
    
 
 > Deciding strategy

@@ -789,6 +789,7 @@ n2
   - guarantee has answer
 - [1642]:
   - use option 1 by default and replace with option 2 when needed
+- [1723]: This is a DP (assigning N tasks to K workders). place here for comparison
 - [1840]
 - [1846]
 - [1953] (arrangement)

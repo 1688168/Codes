@@ -24,7 +24,7 @@ class Solution:
 
         N = len(jobs)
         # precalc time for each state
-        for state in range(1 << N):  # 2^N (not including)
+        for state in range(1 << N):  # 0~2^N (not including)
             ttl_time = 0
             for ii in range(N):
                 if ((state >> ii) & 1) > 0:
