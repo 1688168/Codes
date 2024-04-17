@@ -7,7 +7,7 @@ class Solution:
         * state=[010101010101]
         * eacher worker can take/no-take each job
         * each worker can work on: 2^12 states (each job take/no-take)
-        dp[ii][state]
+        dp[ii][state]: the minimum possible maximum working time of any assignment if we use i workers and get jobs of state done
 
         dp[ii][state]= min(max(dp[ii-1], time(subset))) # over all possible subset of state
         """
