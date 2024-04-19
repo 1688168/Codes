@@ -25,8 +25,8 @@ class Solution:
         # precalc time for each state
         for state in range(1 << N):  # 0~2^N (not including)
             ttl_time = 0
-            for ii in range(N):
-                if ((state >> ii) & 1) > 0:
+            for ii in range(N):  # each state has N bits
+                if ((state >> ii) & 1) > 0:  # which bit we perform the work? accumulate the time
                     ttl_time += jobs[ii]
 
             time[state] = ttl_time
