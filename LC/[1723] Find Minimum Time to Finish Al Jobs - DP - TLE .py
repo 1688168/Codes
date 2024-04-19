@@ -13,7 +13,6 @@ class Solution:
         """
 
         """
-        Time complexity analysis
         state = 1 0
         subset of (1,0): 10, 00
         subset of (0,1): 01, 00
