@@ -1337,6 +1337,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 ```yaml
 > Similar Q:
+  - [1986]
+  - [2323]
   - [2589]
 ```
 
