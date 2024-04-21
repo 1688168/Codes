@@ -1342,6 +1342,41 @@ idx2cnt = collections.defaultdict(lambda: 1)
   - [2589]
 ```
 
+> [1723] VS [1986]
+```yaml
+[1723]
++ N tasks assign to k workers
++ tasks[ii]: the required time to complete task_ii
+=> min time of max worker_time to complete all tasks
++ required min time unknown 
+
+assuming N=4
+state: 1111 meaning to complete all 4 jobs
+       1011 meaning to complete 3 jobs (with 2nd job)
+
+dp[ii][state]: min time required for max_time a worker takes for all workers to finish all jobs in the state 
+
+# initial state
+* dp[0][0]=0
+* all others are math.inf
+
+* dp[ii][jj] = min(dp[ii][jj], max(dp[ii-1][state-subset], time[subset]))
+
+[1986]
+- N tasks assign to 1 worker with constrain session_time
+=> min number of session required to complete all tasks
++ number of sessions unknown 
+
+* state: 1111 meaning to complete all 4 jobs
+*        1011 meaning to complete 3 jobs (with 2nd job)
+* dp[state]: min number of sessions required to finish all jobs defined in the state
+
+# initial state: identify those state that could be finished in 1 session, all others are math.inf
+* dp[state] = min(dp[state], dp[subset]+dp[state-subset])
+
+```
+
+
 > [template to iterate subset:](https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp)
 
 ```python
