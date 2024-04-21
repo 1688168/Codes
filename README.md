@@ -1337,6 +1337,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 ```yaml
 > Similar Q:
+  - [1986]
+  - [2323]
   - [2589]
 ```
 
@@ -1396,6 +1398,12 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1953.Maximum-Number-of-Weeks-for-Which-You-Can-Work) -
 [[Video]](https://www.youtube.com/watch?v=0ut2kGnSXLU) -
 [`Arrangement with Stride`][`Greedy`]
+
+[[1986] - <span style="color:yellow">M</span> - Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1986.Minimum-Number-of-Work-Sessions-to-Finish-the-Tasks) -
+[[Video]](https://www.youtube.com/watch?v=AUCPtH9rEMY) -
+[`DP`]
 
 [[2000] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()

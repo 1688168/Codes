@@ -1,6 +1,64 @@
 #############
+# 20240420: refining the codes
+#############
+class Solution:
+    def minimumTimeRequired(self, jobs: List[int], k: int) -> int:
+        """
+        * N=12
+        * K=12
+
+          N 0 1 2 3 ...N
+        k
+        0
+        1
+        2
+        3
+
+        - encode tasks into binary representation in a int
+
+        - 111111111111
+        - iith bit indicate the iith task (12 tasks max)
+        - each worker try all combination of jobs taken, and through the DP process we find the optima solution
+
+        -> dp[ii][jj]: min time to complete all works represented as jj state with ii workers
+        """
+        N = len(jobs)
+        NN = (1 << N)
+        time = [0]*NN  # precalc time
+        # here dp is initialized as math.inf
+        dp = [[math.inf]*NN for _ in range(k+1)]
+
+        for state in range(NN):  # for each state
+            tt = 0
+            subset = state  # do not overwrite original state for indexing
+            for ii in range(N):  # for each bit in the state
+                # be careful on the following two ways of bit operation
+                if subset & 1:
+                    tt += jobs[ii]  # Method 2
+                subset >>= 1
+                # if (state >> ii) & 1: tt += jobs[ii] # method 1
+
+            time[state] = tt
+
+        # set initial state
+        dp[0][0] = 0  # zero workers to complete zero jobs -> time is zero
+
+        for ii in range(1, k+1):  # for num of workers 0, 1, ..., k (inclusive)
+            # each workder try all states and determine dp[ii][state]
+            for state in range(NN):
+                subset = state
+                while subset > 0:
+                    dp[ii][state] = min(dp[ii][state], max(
+                        dp[ii-1][state-subset], time[subset]))
+                    # how to iterate all subsets of a binary representation
+                    subset = state & (subset-1)
+
+        return dp[-1][-1]
+#############
 # 20240419: some modification to reduce space
 #############
+
+
 class Solution:
     def minimumTimeRequired(self, jobs: List[int], k: int) -> int:
         N = len(jobs)
