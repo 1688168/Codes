@@ -1343,6 +1343,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 ```
 
 > [1723] VS [1986]
+![State Compression](./rcs/state_compression.png "1723VS1986")
 ```yaml
 [1723]
 + N tasks assign to k workers
