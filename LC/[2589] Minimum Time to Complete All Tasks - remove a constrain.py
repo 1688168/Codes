@@ -17,6 +17,7 @@ class Solution:
             idx = bisect.bisect_left(arr, [st, 0, 0])
             idx-=1 # dummy header prevents out-of-bound
             
+            # in array, we only insert run-time.  remember the task is sorted already by end-time
             overlap = arr[-1][2]-arr[idx][2]
             if arr[idx][1] >= st: # has overlap with inserting interval 
                 overlap += abs(arr[idx][1]-st)+1
