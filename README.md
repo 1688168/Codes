@@ -1878,6 +1878,19 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=PQuyzhqdzPA&t=906s) -
 [`Union Find`][`Prime Number`]
 
+[[2877] - <span style="color:green">E</span> - Create a DataFrame from List](https://leetcode.com/problems/create-a-dataframe-from-list/description/?envType=study-plan-v2&envId=introduction-to-pandas&lang=pythondata) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`pandas`]
+
+[[2878] - <span style="color:green">E</span> - Get the Size of a DataFrame](https://leetcode.com/problems/get-the-size-of-a-dataframe/description/?envType=study-plan-v2&envId=introduction-to-pandas&lang=pythondata) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`pandas`]
+
+
 [[2996] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
 [[Python]]()
 [[CPP]]() -
