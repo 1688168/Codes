@@ -870,6 +870,7 @@ c. element value is not equal to the destination value or no point of swapping
 - [1024] min to cover range. same as 1326
 - [1326] min to cover range. same as 1024
 - [2345] (Google)
+- [2589] (start, end, duration), merge all overlapping intervals and return cnt
 
 ## Two Directions:
 
@@ -1176,14 +1177,15 @@ c. move (slide) the window
   - BFS find the shortest distance
 
 # [[`Complete All Tasks`]]()
-* [1723] 
-  -> Given N tasks, K workers => find min threshold time each worker can work to complete all tasks  
 
-* [1986] 
+- [1723]
+  -> Given N tasks, K workers => find min threshold time each worker can work to complete all tasks
+
+- [1986]
   -> Given N tasks, 1 worker, session_time => find min num of sesstions to complete all tasks  
-  --> Given N tasks, sessiton_time (threshold) => min num of workers you need to work concurrently to complete all tasks  
+  --> Given N tasks, sessiton_time (threshold) => min num of workers you need to work concurrently to complete all tasks
 
-* [2589]
+- [2589]
   -> Given a CPU and a list of tasks, where each task is (start, end, duration) and CPU can process unlimited tasks in parallel => find min uptime  
   -> Given a list of intervals (start, end, duration) where duration can be partitioned. => merge all durations and count num of non-overlapping durations (intervals) after merge  
    ** [2589] Strategy 1: range of (start, end) is given  

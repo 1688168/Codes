@@ -1342,20 +1342,20 @@ idx2cnt = collections.defaultdict(lambda: 1)
   - [2589]
 ```
 
-> [1723] VS [1986]
-![State Compression](./rcs/state_compression.png "1723VS1986")
+> [1723] VS [1986] > ![State Compression](./rcs/state_compression.png "1723VS1986")
+
 ```yaml
 [1723]
 + N tasks assign to k workers
 + tasks[ii]: the required time to complete task_ii
 => min time of max worker_time to complete all tasks
-+ required min time unknown 
++ required min time unknown
 
 assuming N=4
 state: 1111 meaning to complete all 4 jobs
        1011 meaning to complete 3 jobs (with 2nd job)
 
-dp[ii][state]: min time required for max_time a worker takes for all workers to finish all jobs in the state 
+dp[ii][state]: min time required for max_time a worker takes for all workers to finish all jobs in the state
 
 # initial state
 * dp[0][0]=0
@@ -1366,7 +1366,7 @@ dp[ii][state]: min time required for max_time a worker takes for all workers to 
 [1986]
 - N tasks assign to 1 worker with constrain session_time
 => min number of session required to complete all tasks
-+ number of sessions unknown 
++ number of sessions unknown
 
 * state: 1111 meaning to complete all 4 jobs
 *        1011 meaning to complete 3 jobs (with 2nd job)
@@ -1376,7 +1376,6 @@ dp[ii][state]: min time required for max_time a worker takes for all workers to 
 * dp[state] = min(dp[state], dp[subset]+dp[state-subset])
 
 ```
-
 
 > [template to iterate subset:](https://github.com/wisdompeak/LeetCode/blob/master/Template/Bit_manipulation/Iterate_Subsets.cpp)
 
@@ -1441,14 +1440,13 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=AUCPtH9rEMY) -
 [`DP`]
 
-
-
 ```yaml
 > 枚举集合子集
 - [0691]
 - [1494]
 - [1655]
 ```
+
 [[2000] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -1813,8 +1811,9 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/2589.Minimum-Time-to-Complete-All-Tasks) -
 [[Video]](https://www.youtube.com/live/yVxdqo8x2qQ?si=6Jp6mLk1IgPMmQGM) -
-[`Greedy`]
+[`Greedy`][`Interval`]
 
+- Merge overlapping intervals with constrain (start, end) of the duration
 - [1723]
 
 [[2597] - <span style="color:yellow">M</span> - The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/description/) - 
