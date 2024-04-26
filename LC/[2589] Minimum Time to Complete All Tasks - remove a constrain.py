@@ -1,3 +1,43 @@
+###############
+# 20240426
+###############
+from bisect import bisect_left
+class Solution:
+    def findMinimumTime(self, tasks: List[List[int]]) -> int:
+        N=len(tasks)
+
+        # interval questions always involves sorting
+        tasks.sort(key=lambda x: x[1]) #for overlapping question -> sort by end
+
+        arr=[(-1, 0, 0)] # (st, ed, presum)
+
+        for ii, (st, ed, du) in enumerate(tasks):
+            idx = bisect_left(arr, (st, 0, 0))
+            idx -= 1
+
+            overlap = arr[-1][-1]-arr[idx][-1]
+
+            if st <= arr[idx][1]:
+                overlap += arr[idx][1]-st+1
+            
+            diff = du-overlap
+
+            # fill the gap
+            curr = ed
+            while diff > 0:
+                if abs(curr-arr[-1][1]) >= diff:#big enough
+                    arr.append((curr-diff+1, ed, arr[-1][-1]+ed-(curr-diff)))
+                    diff=0
+                else: #not big enough
+                    """
+                    012345
+                    """
+                    diff -= abs(curr-arr[-1][1])
+                    curr=arr[-1][0]-1
+                    arr.pop()
+        print(arr)
+        return arr[-1][-1]
+##################
 class Solution:
     def findMinimumTime(self, tasks: List[List[int]]) -> int:
         """
