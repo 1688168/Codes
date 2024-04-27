@@ -814,6 +814,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 ```
 
+[[0691] - <span style="color:red">H</span> - Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/691.Stickers-to-Spell-Word) -
+[[Video]](https://youtu.be/QusReweeTqI) -
+[`State Compression`]
+
 [[0692] - <span style="color:yellow">M</span> - Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/description) - 
 [[Python]]()
 [[CPP]]() -
@@ -1888,7 +1894,6 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]]() -
 [[Video]]() -
 [`pandas`]
-
 
 [[2996] - <span style="color:green">E</span> - Smallest Missing Integer Greater Than Sequential Prefix Sum]() - 
 [[Python]]()
