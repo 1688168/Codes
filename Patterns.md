@@ -1184,7 +1184,7 @@ c. move (slide) the window
 - [1986]
   -> Given N tasks, 1 worker, session_time => find min num of sesstions to complete all tasks  
   --> Given N tasks, sessiton_time (threshold) => min num of workers you need to work concurrently to complete all tasks
-
+- [2323]
 - [2589]
   -> Given a CPU and a list of tasks, where each task is (start, end, duration) and CPU can process unlimited tasks in parallel => find min uptime  
   -> Given a list of intervals (start, end, duration) where duration can be partitioned. => merge all durations and count num of non-overlapping durations (intervals) after merge  
