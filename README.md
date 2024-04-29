@@ -819,6 +819,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/691.Stickers-to-Spell-Word) -
 [[Video]](https://youtu.be/QusReweeTqI) -
 [`State Compression`]
+- cf: word break
 
 [[0692] - <span style="color:yellow">M</span> - Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/description) - 
 [[Python]]()
