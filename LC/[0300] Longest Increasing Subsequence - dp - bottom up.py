@@ -1,3 +1,24 @@
+##############
+# 20240429
+##############
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        """
+        dp[ii]: longest increasing subsequence ending @ ii
+        dp[ii] = max(dp[jj]+1 if nums[ii]>nums[jj] else dp[ii])
+        """
+        N=len(nums)
+        dp=[1]*N
+
+        for ii, nn in enumerate(nums):
+            if ii==0: continue
+            for jj in range(ii-1, -1, -1):
+                if nums[jj] < nn:
+                    dp[ii]=max(dp[ii], dp[jj]+1)
+                    
+        return max(dp)
+        
+
 ##########
 # 20231226
 ##########
