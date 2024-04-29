@@ -6,3 +6,7 @@
 > Bruteforce - Search
 
 > State Compression
+
+
+> DFS idea
+![DFS](../rcs/691.png "691")
