@@ -6,9 +6,9 @@ class Solution:
 
         memo={} #given a target, return the min num of stickers required to spell-out
         def dfs(target, stkr):
-            #if target=="" or target is None: return 0 # no target to match, no sticker required 
+            if target=="" or target is None: return 0 # no target to match, no sticker required 
             if target in memo: return memo[target]
-            res=1 if stkr else 0#current sticker
+            res=1 if stkr else 0#current sticker is not Null
             # exhausting current sticker
             rests=""
             for cc in target: #check each cc in target see if current sticker has it
@@ -21,15 +21,12 @@ class Solution:
             # recursion
             if rests:
                 other=math.inf
-                for ii in range(len(stickers)):
-                    
-                    stkr=stkr_lst[ii]
+                for stkr in stkr_lst:
                     if rests[0] not in stkr: continue
                     other = min(other, dfs(rests, stkr.copy()))
+                memo[rests]=other
                 res+=other
-            
-            memo[target]=res
-
+      
             return res
 
 
@@ -37,7 +34,6 @@ class Solution:
 
         return res if res != math.inf else -1
         
-
 ##############
 from collections import Counter
 class Solution:
