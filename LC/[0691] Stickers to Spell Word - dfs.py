@@ -1,4 +1,45 @@
 from collections import Counter
+
+class Solution:
+    def minStickers(self, stickers: List[str], target: str) -> int:
+        stkr_lst = [Counter(sticker) for sticker in stickers]
+
+        memo={} #given a target, return the min num of stickers required to spell-out
+        def dfs(target, stkr):
+            #if target=="" or target is None: return 0 # no target to match, no sticker required 
+            if target in memo: return memo[target]
+            res=1 if stkr else 0#current sticker
+            # exhausting current sticker
+            rests=""
+            for cc in target: #check each cc in target see if current sticker has it
+                if cc not in stkr:
+                    rests+=cc
+                else:
+                    stkr[cc]-=1
+                    if stkr[cc]==0: del stkr[cc]
+            
+            # recursion
+            if rests:
+                other=math.inf
+                for ii in range(len(stickers)):
+                    
+                    stkr=stkr_lst[ii]
+                    if rests[0] not in stkr: continue
+                    other = min(other, dfs(rests, stkr.copy()))
+                res+=other
+            
+            memo[target]=res
+
+            return res
+
+
+        res = dfs(target, {})
+
+        return res if res != math.inf else -1
+        
+
+##############
+from collections import Counter
 class Solution:
     def minStickers(self, stickers: List[str], target: str) -> int:
         sticker_dict_lst=[]
