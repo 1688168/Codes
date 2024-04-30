@@ -461,7 +461,14 @@ cache = OrderedDict()
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0300%5D%20Longest%20increasing%20Subsequence%20-%20Binary%20Search.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/300.Longest-Increasing-Subsequence) -
 [[Video]](https://www.youtube.com/watch?v=Q6KyDl_xiIg) -
-[`sub-sequence`][`DP`][`classic`]
+[`sub-sequence`][`DP`][`classic`][`DP Type II`]
+
+- DP Bottom-up: O(N^2)
+- Binary Search: Nlog(N)
+- DP Top-Down(Cache): MLE
+- DP Top-Down:
+  - Using 2D-array is more efficient than using dictionary
+
 
 [[0301] - <span style="color:red">H</span> - Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/description/) - 
 [[Python]]()

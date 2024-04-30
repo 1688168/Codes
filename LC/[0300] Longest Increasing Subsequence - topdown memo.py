@@ -2,8 +2,6 @@
 # 20231226
 #############
 from functools import lru_cache
-
-
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         N = len(nums)
