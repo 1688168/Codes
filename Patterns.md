@@ -464,7 +464,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```yaml
 - [0300]: Longest Increasing Subsequence -> subsequence (order matters)
   - Best NlogN
-  - [0673] -> subsequence count
+  - [0673] -> subsequence count (relating to [0300])
   - prev state @ jj where nums[jj] < nums[ii]
 - [368]: Largest Divisible subset        -> subset (order doesn't matter)
   - nums[ii]%nums[jj]==0
