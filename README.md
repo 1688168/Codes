@@ -635,6 +635,12 @@ cache = OrderedDict()
 
 - How to make a list of number monotonically increasing
 
+[[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/432.All-O-one-Data-Structure) -
+[[Video]](https://www.youtube.com/watch?v=1TK2a26zU6I) -
+[`Design`][`LinkedList`]
+
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
