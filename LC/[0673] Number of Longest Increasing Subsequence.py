@@ -1,3 +1,37 @@
+##########
+# 20240501
+##########
+class Solution:
+    def findNumberOfLIS(self, nums: List[int]) -> int:
+        """
+        + nums
+
+        - dp[ii]: LIS ending @ ii
+        - dp2[ii]: num of LIS ending @ ii
+        """
+        N=len(nums)
+        idx2cnt=collections.defaultdict(lambda: 1) #record num of LIS ending @ ii
+        dp=[1]*N # dp[ii] is the LIS ending @ ii
+
+        LIS=0
+        for ii in range(N):
+            for jj in reversed(range(ii)):
+                if nums[jj] >= nums[ii]: continue # no new LIS
+                # here we could have LIS (new or duplicate)
+                if dp[jj]+1 > dp[ii]: # we have new LIS
+                    dp[ii]=dp[jj]+1
+                    idx2cnt[ii]=idx2cnt[jj]
+                elif dp[jj]+1==dp[ii]: # we have duplicate LIS
+                    idx2cnt[ii]+= idx2cnt[jj]
+                
+            LIS=max(LIS, dp[ii])
+        cnt=0
+        for ii in range(N):
+            if dp[ii]==LIS: cnt+= idx2cnt[ii]
+
+        return cnt
+
+##########
 class Solution:
     def findNumberOfLIS(self, nums: List[int]) -> int:
         N = len(nums)  # take measument
