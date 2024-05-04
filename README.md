@@ -641,6 +641,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=1TK2a26zU6I) -
 [`Design`][`LinkedList`]
 
+- O(1) key/value update
+- O(1) retrieving any key of min/max frequency
+- how to maintain frequency order to look back key
+- maintain min/max and order of frequency -> list 
+
+
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
