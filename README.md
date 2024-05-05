@@ -644,7 +644,8 @@ cache = OrderedDict()
 - O(1) key/value update
 - O(1) retrieving any key of min/max frequency
 - how to maintain frequency order to look back key
-- maintain min/max and order of frequency -> list 
+- maintain min/max and order of frequency -> list
+- maintain medium -> two heap 
 
 
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
@@ -1995,8 +1996,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
-# [`Usefult Links`]
 
+# [Some MD syntax]
+> to link image
+![Text for Hovering with relative path](./rcs/432.png)
+
+# [`Usefult Links`]
 - [[Wisdompeak-Github]](https://github.com/wisdompeak/LeetCode/tree/master)
 - [[Wisdompeak-Excel]](https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/edit#gid=0)
 - [[GrandYang - Official]](https://grandyang.com/)
@@ -2004,3 +2009,4 @@ defaultdict(lambda: defaultdict(int))
 - [[GrandYang - Github]](https://github.com/grandyang/leetcode)
 - [[yunrui-li]](https://yunrui-li.medium.com/)
 - [[OTTFF-B]](https://space.bilibili.com/97228279/favlist?fid=498134879&ftype=create)
+
