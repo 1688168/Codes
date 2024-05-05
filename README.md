@@ -567,6 +567,10 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=hrwP6I5v1XY) -
 [`DP`]
 
+* all pairs are divisible in a set -> we do not need to try all pairs, just sort and confirm nums[ii]%nums[jj]==0 for ii=jj+1
+* when dealing with subset on a single array and N^2 is the decided algorithm -> sorting the original array a lot of time has benefits
+* DP output the path -> record the prev for tracing back
+
 - avoid recording the whole path. try recording prev and trace back
 
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
