@@ -1,3 +1,37 @@
+########
+# 20240505
+########
+class Solution:
+    def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
+        N=len(nums)
+        nums.sort()
+        dp = [1] * N
+        prev = [-1] * N
+
+        for ii in range(N):
+            for jj in reversed(range(ii)):
+                if nums[ii]%nums[jj]==0:
+                    dp[ii]=max(dp[ii], dp[jj]+1)
+                    if dp[ii]==dp[jj]+1: # we have a larger subset
+                        prev[ii]=jj #record the path for trace back
+        
+
+        #figure out which ii has the max length
+        mxl=0
+        idx=-1
+        for ii in range(N):
+            if dp[ii] > mxl:
+                mxl=dp[ii]
+                idx=ii
+
+        res=[]
+        while idx != -1:
+            res.append(nums[idx])
+            idx=prev[idx]
+
+        return res
+        
+#####################
 class Solution:
     def largestDivisibleSubset(self, nums: List[int]) -> List[int]:
         N = len(nums)  # take measurement
