@@ -270,8 +270,9 @@ cache = OrderedDict()
 * cache.popitem(last=False) # pop the last
 
 ```
-
-- [472] Concatenated Words
+- [0432]
+- [0460]: LFU
+- [0472] Concatenated Words
 
 [[0153] - <span style="color:yellow">M</span> - Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) - 
 [[Python]]()
