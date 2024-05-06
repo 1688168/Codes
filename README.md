@@ -719,6 +719,14 @@ cache = OrderedDict()
 [[Video]]() -
 [`Patterns`]
 
+
+[[0535] - <span style="color:yellow">M</span> - Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/535.Encode-and-Decode-TinyURL) -
+[[Video]](https://www.youtube.com/watch?v=fxLsDMiUVKg) -
+[`Design`]
+
+
 [[0543] - <span style="color:green">E</span> - Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0543%5D%20Diameter%20of%20Binary%20Tree.py)
 [[CPP]]() -
