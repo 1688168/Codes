@@ -1193,3 +1193,8 @@ c. move (slide) the window
   -> Given a list of intervals (start, end, duration) where duration can be partitioned. => merge all durations and count num of non-overlapping durations (intervals) after merge  
    ** [2589] Strategy 1: range of (start, end) is given  
    ** [2589] Strategy 2: range of (start, end) is unknown
+
+
+['N^2 Algorithms']
+* DP type II - Basic
+* Search 
