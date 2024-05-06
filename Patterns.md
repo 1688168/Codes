@@ -309,7 +309,7 @@ C: [Z Z Z]
   - push or pull model
 - [0380]
 - [0381]
-* [0432]
+- [0432]
 * [0460]
 * [0535]
 * [0588]
@@ -459,6 +459,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - today's state can be derived from one of the JJ where jj < ii
 - how to leverage stk to find jj?
   - 2297, 2355: leverage monotonic stack to find dp[jj] and reduce time to o(N)
+
+- when dealing with single array, (particularly with subsets), consider sorting it
+- when you decided to have N^2 algorithm decided, maybe sorting it to begin with as NlogN is not dominating
 ```
 
 ```yaml

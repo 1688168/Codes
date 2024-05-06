@@ -568,6 +568,10 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=hrwP6I5v1XY) -
 [`DP`]
 
+* all pairs are divisible in a set -> we do not need to try all pairs, just sort and confirm nums[ii]%nums[jj]==0 for ii=jj+1
+* when dealing with subset on a single array and N^2 is the decided algorithm -> sorting the original array a lot of time has benefits
+* DP output the path -> record the prev for tracing back
+
 - avoid recording the whole path. try recording prev and trace back
 
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
@@ -642,6 +646,13 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=1TK2a26zU6I) -
 [`Design`][`LinkedList`]
 
+- O(1) key/value update
+- O(1) retrieving any key of min/max frequency
+- how to maintain frequency order to look back key
+- maintain min/max and order of frequency -> list
+- maintain medium -> two heap 
+
+
 [[0435] - <span style="color:yellow">M</span> - Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0435%5D%20Non-Overlapping%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/435.Non-overlapping-Intervals) -
@@ -708,6 +719,14 @@ cache = OrderedDict()
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+
+[[0535] - <span style="color:yellow">M</span> - Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/535.Encode-and-Decode-TinyURL) -
+[[Video]](https://www.youtube.com/watch?v=fxLsDMiUVKg) -
+[`Design`]
+
 
 [[0543] - <span style="color:green">E</span> - Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0543%5D%20Diameter%20of%20Binary%20Tree.py)
@@ -1990,8 +2009,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
-# [`Usefult Links`]
 
+# [Some MD syntax]
+> to link image
+![Text for Hovering with relative path](./rcs/432.png)
+
+# [`Usefult Links`]
 - [[Wisdompeak-Github]](https://github.com/wisdompeak/LeetCode/tree/master)
 - [[Wisdompeak-Excel]](https://docs.google.com/spreadsheets/d/1kBGyRsSdbGDu7DzjQcC-UkZjZERdrP8-_QyVGXHSrB8/edit#gid=0)
 - [[GrandYang - Official]](https://grandyang.com/)
@@ -1999,3 +2022,4 @@ defaultdict(lambda: defaultdict(int))
 - [[GrandYang - Github]](https://github.com/grandyang/leetcode)
 - [[yunrui-li]](https://yunrui-li.medium.com/)
 - [[OTTFF-B]](https://space.bilibili.com/97228279/favlist?fid=498134879&ftype=create)
+
