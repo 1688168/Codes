@@ -12,7 +12,7 @@ public:
         for(int ii=1; ii<N; ++ii){          //DP type II - Basic 
             int max_height=0;
             int total_width=0;
-            for(int jj=ii; jj >=1; --jj){ 
+            for(int jj=ii; jj >=1; --jj){ //try all possibility that can be on this shelf ending with books[ii]
                 max_height=max(max_height, books[jj][1]);
                 total_width += books[jj][0];
                 if(total_width > shelfWidth) break;
