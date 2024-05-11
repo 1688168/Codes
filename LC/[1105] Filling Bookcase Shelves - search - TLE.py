@@ -1,6 +1,31 @@
 class Solution:
     def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:
         """
+        # Bruteforcing by seaching
+        """
+        N=len(books)
+        def dfs(st=0, curr_max_height=0, curr_width=0, total_height=0):
+            if st >= N: return total_height+curr_max_height
+
+            tt, hh = books[st] # unpack (thickness, height) of current book
+
+            tke_curr=math.inf
+            if curr_width + tt <= shelfWidth: # can still fit in current shelf
+                tke_curr = dfs(st+1, max(curr_max_height, hh), curr_width + tt, total_height)
+
+            tke_next = dfs(st+1, hh, tt, total_height+curr_max_height)
+
+          
+            return min(tke_curr, tke_next)
+
+        
+        return dfs()
+        
+
+################
+class Solution:
+    def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:
+        """
         book[ii]=[thickness_i, height_i]
         => min height
         * binary search: guess the answer and count (topK)
