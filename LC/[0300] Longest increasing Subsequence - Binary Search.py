@@ -1,15 +1,13 @@
-import bisect
-from functools import lru_cache
+from bisect import bisect_left
 class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        arr=[]
 
-def lengthOfLIS_binary(self, nums):
-    res = []
-    for x in nums:
-        idx = bisect.bisect_left(res, x)
-        # print("idx: ", idx, " x: ", x, " len: ", length, " len(nums): ", len(nums))
+        for nn in nums:
+            idx=bisect_left(arr, nn)
+            if idx >= len(arr):
+                arr.append(nn)
+            else:
+                arr[idx]=nn
 
-        if idx == len(res):
-            res.append(x)
-        else:
-            res[idx] = x
-    return len(res)
+        return len(arr)
