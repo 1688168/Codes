@@ -5,6 +5,57 @@ monotonic stack
 [2282]
 """
 ###############
+# 20240512
+###############
+class Solution:
+    def minCost(self, nums: List[int], costs: List[int]) -> int:
+        """
+        # Analysis
+        + single list with cost associated with
+        + N=10^5
+        + ii < kk < jj
+        + constrain 1: nums[jj] is nums[ii] next greater_equal
+        + constrain 2: nums[jj] is nums[ii] next smaller
+
+        # strategy:
+        + Maintain monotonic stack
+        -- Constrain 1:
+        - maintain prev_greater (anything after is smaller or equal than current)
+        -- Constrain 2:
+        - matintain prev_smaller_equal (anything after is greater than current)
+
+        let dp[ii]: the min cost jumping to ii
+            dp[ii] = dp[jj]+cost[ii] where jj is prev_smaller_equal or prev_greater
+        """
+        N=len(nums) #take size
+        dp=[math.inf]*N # declare DP
+        dp[0]=0
+
+        # monotonic stack
+        stk_greater=[]
+        stk_smaller_equal=[]
+
+
+        for ii, nn in enumerate(nums): # try all elements
+            # constrain 1, jump higher use case:
+            while stk_greater and nums[stk_greater[-1]] <= nn: #those jj who can jump higher is smaller or equal
+                dp[ii]=min(dp[ii], dp[stk_greater[-1]]+costs[ii])
+                stk_greater.pop()
+            
+            stk_greater.append(ii)
+
+
+            while stk_smaller_equal and nums[stk_smaller_equal[-1]] > nn: #you can jump higher when equal or smaller
+                dp[ii]=min(dp[ii], dp[stk_smaller_equal[-1]]+costs[ii])
+                stk_smaller_equal.pop()
+            
+            stk_smaller_equal.append(ii)
+
+        
+        return dp[-1]
+        
+
+###############
 # 20240407
 ###############
 
