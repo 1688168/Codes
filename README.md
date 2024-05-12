@@ -574,6 +574,11 @@ cache = OrderedDict()
 
 - avoid recording the whole path. try recording prev and trace back
 
+```cpp
+//c++ max of vector elements
+int mx_sz = *(std::max_element(dp.begin(), dp.end()));
+```
+
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
