@@ -1655,7 +1655,7 @@ defaultdict(lambda: defaultdict(int))
 [[2302] - <span style="color:red">H</span> - Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2302%5D%20Count%20Subarrays%20With%20Score%20Less%20Thank%20K.py)
 [[CPP]] -
-[[Video]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2302%5D%20Count%20Subarrays%20With%20Score%20Less%20Thank%20K.py) -
+[[Video]](https://www.youtube.com/watch?v=EsbBTfXpnPY&t=55s) -
 [`Count Subarray By Element`]
 
 [[2307] - <span style="color:red">H</span> - Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) - 
