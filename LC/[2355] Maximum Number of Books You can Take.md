@@ -25,3 +25,7 @@ so far we are N^2, how to we further optimize given N=10^5?
 
 ![2355](../rcs/2355.png)
 Observing that we do not need dp[jj+1]...dp[ii-1] -> pop them from stack
+
+stk=[j0, j1, j2] VS books[ii]
+if books[kk] > books[ii]+1 -> use dp[ii]
+if books[kk] <= books[ii]+1 -> pop from stk
