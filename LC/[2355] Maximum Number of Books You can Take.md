@@ -24,3 +24,4 @@ so far we are N^2, how to we further optimize given N=10^5?
 => using stack
 
 ![2355](../rcs/2355.png)
+Observing that we do not need dp[jj+1]...dp[ii-1] -> pop them from stack
