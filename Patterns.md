@@ -504,8 +504,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - taking books from shelves in increasing order
   - constrain: strick increase order
   => max num of books you can take from the bookshelf
+** dp[ii] = dp[jj] + arithmatic_sum (jj is the prev smaller than expected)
 
-  
+
 
 
 
