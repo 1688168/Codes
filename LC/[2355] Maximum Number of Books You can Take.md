@@ -29,3 +29,4 @@ Observing that we do not need dp[jj+1]...dp[ii-1] -> pop them from stack
 stk=[j0, j1, j2] VS books[ii]
 if books[kk] > books[ii]+1 -> use dp[ii]
 if books[kk] <= books[ii]+1 -> pop from stk
+every element on stack/off stck only once => ttl time complexity O(N)
