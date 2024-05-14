@@ -24,3 +24,4 @@ so far we are N^2, how to we further optimize given N=10^5?
 => using stack
 
 ![2355](../rcs/2355.png)
+![2355](../rcs/2355-2.png)
