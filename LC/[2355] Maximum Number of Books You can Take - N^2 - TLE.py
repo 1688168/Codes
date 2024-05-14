@@ -41,6 +41,6 @@ class Solution:
                     b=books[ii]
                     dp[ii]=(a+b)*L//2
             
-        print(dp)
+
         return max(dp)
         
