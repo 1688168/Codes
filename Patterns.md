@@ -394,7 +394,7 @@ C: [Z Z Z]
   buy/sell stock III: bought1, sold1, bought2, sold2
          -> 4 previous state
 
-- only need one state variable for DP type I
+- only need one state variable for DP type I (consider space O(1))
 - use tmp vars for state transition
 ```
 
