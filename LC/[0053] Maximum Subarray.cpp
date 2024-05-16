@@ -1,3 +1,30 @@
+/*
+space O(N):
+*/
+class Solution {
+    /* Kadane's algorithm for max subarray sum 
+       dp[ii]: max subarray sum ending @ ii
+       dp[ii] = max(nums[ii], dp[ii-1]+nums[ii] if nums[ii]> nums[ii-1] else 0)
+    */
+public:
+    int maxSubArray(vector<int>& nums) {
+       
+        nums.insert(nums.begin(), 0);
+        int N=nums.size();
+        vector<int> dp(N, 0);
+
+        int mxs=INT_MIN;
+        for(int ii=1; ii<N; ++ii){
+           
+            dp[ii]= nums[ii] + (dp[ii-1] > 0? dp[ii-1]:0);
+            mxs=max(mxs, dp[ii]);
+        }
+        return mxs;
+        
+    }
+};
+
+
 //O(1) space
 //O(1) space
 #include <bits/stdc++.h>
