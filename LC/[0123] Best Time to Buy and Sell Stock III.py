@@ -1,3 +1,36 @@
+########
+# 20240519
+########
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        """
+        * single array, and current state is transitioned from prev state -> Type I dp
+        """
+        N=len(prices)
+
+        bought_1= -math.inf
+        sold_1 = -math.inf
+        bought_2= -math.inf
+        sold_2 = -math.inf
+        
+        for ii, pp in enumerate(prices):
+            bought_1_tmp = bought_1
+            sold_1_tmp = sold_1
+            bought_2_tmp = bought_2
+            sold_2_tmp = sold_2
+
+            if ii==0:
+                bought_1=-pp
+                continue
+            
+            bought_1 = max(bought_1_tmp, -pp)
+            sold_1 = max(bought_1_tmp+pp, sold_1_tmp)
+            bought_2 = max(bought_2_tmp, sold_1_tmp - pp)
+            sold_2 = max(sold_2, bought_2_tmp + pp)
+        
+        return  max(sold_1, sold_2, 0)
+    
+#################################################
 """
 # DP Type 1: current state is relating to only previous date state
 - template: 
