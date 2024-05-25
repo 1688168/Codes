@@ -7,11 +7,11 @@ public:
         if (nums.size()==0) return 0;
         for(int ii=1; ii < nums.size(); ++ii){
             int dir_prev = dir;
-            if(nums[ii] > nums[ii-1])
+            if(nums[ii] > nums[ii-1])//find out current slope
                 dir=1;
             else if (nums[ii] < nums[ii-1])
                 dir=-1;
-            else //inherite prev non-zero slope
+            else //inheriting prev non-zero slope
                 dir=dir_prev;
             
             if(dir != dir_prev)
