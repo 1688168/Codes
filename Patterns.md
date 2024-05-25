@@ -428,20 +428,20 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0276]: Paint Fence                  -> number of ways to achive something
                                        * states is two elements in a row (same, diff)
 
-```yaml
-> House Robber vS Paint Fence
-* House robber is strictly relating to previous selection (similar to no two consecutive color)
-* Paint Fence is relating to previous two posts. (no three consecutive color)
-
-```
-||House Robber|Paint Fence\
-
 - [0309]
 - [0376]
 - [0487]
 - [1186]
 - [1289]
 ```
+> House Robber vS Paint Fence  
+
+|                 | House Robber    | Paint  Fence   |
+| :-------------: | :-------------: | :------------: |
+| **DP hints**    | dependens on prev house (color) | depends on prev two houses|
+| **Objective**   | Max Profit  | Num of ways
+
+
 
 ```yaml
 # Number of subsets from an array with some constrains
