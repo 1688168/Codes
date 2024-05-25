@@ -13,7 +13,7 @@ class Solution:
 
             max_height = 0
             ttl_width = 0
-            for ii in reversed(range(1, ed+1)):  # for each level ending @ st
+            for ii in reversed(range(1, ed+1)):  # for each level ending @ ed
                 max_height = max(max_height, books[ii][1])
                 ttl_width += books[ii][0]
                 if ttl_width > shelfWidth:
