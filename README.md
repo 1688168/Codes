@@ -598,7 +598,7 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
-[[Video]](https://www.youtube.com/watch?v=j7U3olaBxMg) -
+[[Video-sol]](https://youtu.be/j7U3olaBxMg?t=27) -
 [`DP`]
 
 [[0378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
