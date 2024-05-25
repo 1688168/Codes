@@ -601,6 +601,8 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video-sol]](https://youtu.be/j7U3olaBxMg?t=27) -
 [`DP`]
 
+![376](./rcs/376.png)
+
 [[0378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0378%5D%20Kth%20Smallest%20Element%20in%20a%20Sorted%20Matrix.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/378.Kth-Smallest-Element-in-a-Sorted-Matrix) -
