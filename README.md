@@ -599,8 +599,9 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
 [[Video-sol]](https://youtu.be/j7U3olaBxMg?t=27) -
-[`DP`]
+[`DP`][`Greedy`]
 
+> Greedy Solution: find number of turning points
 ![376](./rcs/376.png)
 
 [[0378] - <span style="color:yellow">M</span> - Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) - 
