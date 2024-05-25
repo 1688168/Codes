@@ -1,4 +1,37 @@
 #################
+# 20240519
+#################
+class Solution:
+    def minCost(self, costs: List[List[int]]) -> int:
+        """
+        + costs[ii]: cost of painting house ii (3 colors)
+        + adjacent houses cannot be same color
+        => min cost painting all houses
+        """
+        N=len(costs)
+
+        cost1=0
+        cost2=0
+        cost3=0
+        for ii, (cc1, cc2, cc3) in enumerate(costs):
+            cost1_tmp = cost1
+            cost2_tmp = cost2
+            cost3_tmp = cost3
+            
+            if ii==0:
+                cost1=cc1
+                cost2=cc2
+                cost3=cc3
+                continue
+            
+            cost1 = min(cost2_tmp, cost3_tmp)+ cc1
+            cost2 = min(cost1_tmp, cost3_tmp)+ cc2
+            cost3 = min(cost1_tmp, cost2_tmp)+ cc3
+            
+
+        return min(cost1, cost2, cost3)
+        
+#################
 # 20231225
 #################
 class Solution:

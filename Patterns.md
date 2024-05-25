@@ -394,7 +394,7 @@ C: [Z Z Z]
   buy/sell stock III: bought1, sold1, bought2, sold2
          -> 4 previous state
 
-- only need one state variable for DP type I
+- only need one state variable for DP type I (consider space O(1))
 - use tmp vars for state transition
 ```
 
@@ -467,7 +467,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```yaml
 - [0300]: Longest Increasing Subsequence -> subsequence (order matters)
   - Best NlogN
-  - [0673] -> subsequence count (relating to [0300])
+  - [0673] -> LIS count (relating to [0300])
   - prev state @ jj where nums[jj] < nums[ii]
 - [368]: Largest Divisible subset        -> subset (order doesn't matter)
   - nums[ii]%nums[jj]==0
@@ -477,14 +477,39 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - ii-1 is the jj
   - find the min(ttl_height) for each prev jj
 - [2297]:
+  - Be able to recognize constrain 1 and 2 can be represented as prev_greater, prev_smaller by monotonic stackß
   - dp[ii]=min(dp[jj]+costs[ii])
   - where jj is prev higher or lower
   - if we traverse backward from ii looking for min dp[jj] -> O(N^2)
   - leverage monotonic stack to maintian prev_higher, perv_lower
 - [2355]: O(N^2) but leverage monotonic stack to reduce to O(N)
+  - VS 1105
   - Max books you can take from a bookshelf
   - find hte prev that is not as expected
   - dp[ii] = dp[jj] + arithmatic_sum (jj is the prev smaller than expected)
+
+```
+
+```yaml
+[1105 VS 2355] Bookshelves 
+* 1105:
+  - books[ii]=[thickness, height] of a book on ii
+  - placing books onto shelf 
+  - constrain on max thickness per shelf
+  => min total height of book shelf required
+
+  ** try all jj that can fit in current shelf and take the one that produce min height @ dp[ii]
+* 2355: 
+  - books[ii] is num of books on shelf ii
+  - taking books from shelves in increasing order
+  - constrain: strick increase order
+  => max num of books you can take from the bookshelf
+** dp[ii] = dp[jj] + arithmatic_sum (jj is the prev smaller than expected)
+
+
+
+
+
 
 ```
 

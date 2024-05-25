@@ -1,4 +1,37 @@
 ##########
+# 20240511
+##########
+
+class Solution:
+    def findNumberOfLIS(self, nums: List[int]) -> int:
+        """
+        1. this is an LIS extension -> asking the number
+        2. if we have dp[ii] built where dp[ii] is the LIS @ ii
+        3. and dp_cnt where dp_cnt[ii] is the count of LIS ending @ ii
+        4. find the global LIS and add all cnt with dp[ii]==global_lis
+        """
+        nums = [math.inf] + nums
+        N=len(nums)
+
+        dp = [1]*N
+        dp_cnt = [1]*N
+
+        for ii in range(1, N):
+            for jj in reversed(range(1, ii)):
+                if nums[jj] >= nums[ii]: continue
+                if dp[jj]+1 > dp[ii]:
+                    dp_cnt[ii] = dp_cnt[jj]
+                elif dp[jj]+1==dp[ii]:
+                    dp_cnt[ii] += dp_cnt[jj]
+                dp[ii] = max(dp[ii], dp[jj]+1)
+
+        LIS = max(dp)
+        cnt=0
+        for ii in range(1, N):
+            if dp[ii]==LIS: cnt += dp_cnt[ii]
+        
+        return cnt
+##########
 # 20240501
 ##########
 class Solution:

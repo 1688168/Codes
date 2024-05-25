@@ -1,4 +1,18 @@
 ####################
+##### 20240518 #####
+####################
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        nums=[0]+nums
+        N=len(nums)
+
+        dp=[0]*N
+
+        for ii in range(1, N):
+            dp[ii]=max(dp[ii-1], dp[ii-2]+nums[ii])
+        
+        return dp[-1]
+####################
 ##### 20231225 #####
 ####################
 class Solution:

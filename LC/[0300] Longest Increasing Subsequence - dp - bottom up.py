@@ -1,4 +1,27 @@
 ##############
+# 20240511
+##############
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        """
+        # Given nums
+        + LIS @ ii has to do with LIS @ jj where jj < ii and nums[jj] < nums[ii]
+        dp[ii]: LIS @ ii
+              = dp[jj]+1 if nums[jj]<nums[ii]
+        """
+        nums = [math.inf]+nums # insert dummay header since we need to ref to ii-1
+        N=len(nums)
+
+        dp=[1]*N
+
+        for ii in range(1, N):
+            for jj in reversed(range(1, ii)):
+                if nums[jj] >= nums[ii]: continue
+                dp[ii] = max(dp[ii], dp[jj]+1)
+        
+        return max(dp)
+        
+##############
 # 20240429
 ##############
 class Solution:

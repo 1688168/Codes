@@ -574,6 +574,11 @@ cache = OrderedDict()
 
 - avoid recording the whole path. try recording prev and trace back
 
+```cpp
+//c++ max of vector elements
+int mx_sz = *(std::max_element(dp.begin(), dp.end()));
+```
+
 [[0370] - <span style="color:yellow">M</span> - Range Addition](https://leetcode.com/problems/range-addition/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/370.Range-Addition) -
@@ -1650,7 +1655,7 @@ defaultdict(lambda: defaultdict(int))
 [[2302] - <span style="color:red">H</span> - Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2302%5D%20Count%20Subarrays%20With%20Score%20Less%20Thank%20K.py)
 [[CPP]] -
-[[Video]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2302%5D%20Count%20Subarrays%20With%20Score%20Less%20Thank%20K.py) -
+[[Video]](https://www.youtube.com/watch?v=EsbBTfXpnPY&t=55s) -
 [`Count Subarray By Element`]
 
 [[2307] - <span style="color:red">H</span> - Check for Contradictions in Equations](https://leetcode.com/problems/check-for-contradictions-in-equations/) - 

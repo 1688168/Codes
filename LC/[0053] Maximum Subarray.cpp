@@ -1,5 +1,59 @@
+/* 20240516 */
+/*
+space O(N):
+*/
+class Solution {
+    /* Kadane's algorithm for max subarray sum 
+       dp[ii]: max subarray sum ending @ ii
+       dp[ii] = max(nums[ii], dp[ii-1]+nums[ii] if nums[ii]> nums[ii-1] else 0)
+    */
+public:
+    int maxSubArray(vector<int>& nums) {
+       
+        nums.insert(nums.begin(), 0);
+        int N=nums.size();
+        vector<int> dp(N, 0);
+
+        int mxs=INT_MIN;
+        for(int ii=1; ii<N; ++ii){
+           
+            dp[ii]= nums[ii] + (dp[ii-1] > 0? dp[ii-1]:0);
+            mxs=max(mxs, dp[ii]);
+        }
+        return mxs;
+        
+    }
+};
+
+/* 20240516 */
 //O(1) space
 //O(1) space
+class Solution {
+    /* Kadane's algorithm for max subarray sum 
+       dp[ii]: max subarray sum ending @ ii
+       dp[ii] = max(nums[ii], dp[ii-1]+nums[ii] if nums[ii]> nums[ii-1] else 0)
+    */
+public:
+    int maxSubArray(vector<int>& nums) {
+       
+        nums.insert(nums.begin(), 0);
+        int N=nums.size();
+        int dp=INT_MIN;
+
+        int mxs=INT_MIN;
+        for(int ii=1; ii<N; ++ii){
+           
+            dp= nums[ii] + (dp > 0? dp:0);
+            mxs=max(mxs, dp);
+        }
+        return mxs;
+        
+    }
+};
+
+
+/*==============================*/
+
 #include <bits/stdc++.h>
 class Solution {
 public:
