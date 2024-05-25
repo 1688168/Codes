@@ -3,7 +3,7 @@ class Solution:
         N=len(prices)
 
         bought=-prices[0]
-        sold=0 #-math.inf
+        sold=0 #why this is zero instead of -math.inf?  think about ending state.
         cool_down=0 
 
         for ii, pp in enumerate(prices[1:], 1):
