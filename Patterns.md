@@ -429,6 +429,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
                                        * states is two elements in a row (same, diff)
 
 - [0309]
+* cool down is the same thing as house robber I -- cannot rob neighor
 - [0376]
 - [0487]
 - [1186]
