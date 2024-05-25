@@ -516,10 +516,6 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ** dp[ii] = dp[jj] + arithmatic_sum (jj is the prev smaller than expected)
 
 
-
-
-
-
 ```
 
 > Type III: Two sequences
