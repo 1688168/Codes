@@ -1,4 +1,26 @@
 #####
+# 20240525
+#####
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        N=len(s)
+
+        ll, rr = 0, N-1
+
+        while ll<=rr:
+            while ll < rr and not (s[ll].isalnum()): ll+=1
+            while rr > ll and not (s[rr].isalnum()): rr-=1
+
+            if s[ll].lower() != s[rr].lower(): return False
+
+            ll+=1
+            rr-=1
+        
+        return True
+
+        
+
+#####
 # 20230619
 #####
 
