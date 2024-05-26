@@ -1,3 +1,54 @@
+########
+# 20240526
+########
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        """
+        # I/O:
+        + nums[ii]: int
+        => all 3 diff nums sum to zero
+        #Analysis:
+        + N=3000 
+        -> N^2 is okay
+        -> if we can sort then sort
+        
+        > Bruteforce:
+        + all 3 pairs: N^3
+        + filter sum to zero: N
+
+        > 
+        """
+        N=len(nums)
+        nums.sort()
+
+        def two_sum(st, target):
+            ll, rr = st, N-1
+            res=[]
+            while ll < rr:
+                while ll < rr and ll > st and nums[ll]==nums[ll-1]: ll+=1
+                while ll < rr and rr < N-1 and nums[rr]==nums[rr+1]: rr-=1
+                if ll==rr: break
+                if nums[ll]+nums[rr]==target: 
+                    res.append((nums[ll], nums[rr]))
+                    ll+=1
+                    rr-=1
+                    continue
+                
+                if nums[ll]+nums[rr] > target: 
+                    rr-=1
+                else:
+                    ll+=1
+
+            return res
+        
+        res=[]
+        for ii, nn in enumerate(nums[:-1]):
+            if ii > 0 and nn==nums[ii-1]: continue # avoid duplicate triplet
+            twos = two_sum(ii+1, 0-nn)
+
+            for (b, c) in twos:
+                res.append((nn, b, c))
+        return res
 
 ########
 # 20230625

@@ -1,3 +1,48 @@
+/*
+* 20240526
+*/
+
+class Solution {
+
+    vector<vector<int>> two_sum(int st, int target, vector<int> & nums){
+        int ll=st, rr=nums.size()-1;
+        vector<vector<int>> res;
+        while(ll<rr){
+            int a=nums[ll], b=nums[rr];
+            if(a+b==target){       
+                res.push_back({a, b});
+                ++ll;
+                --rr;
+                while(ll>st && ll < rr && nums[ll]==nums[ll-1])++ll;
+            }else if(a+b > target){
+                --rr;
+            }else{
+                ++ll;
+            }
+        }
+        return res;
+    }
+
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int N=nums.size();
+        
+        vector<vector<int>> res;
+        for(int ii=0; ii<N-2; ++ii){
+            if(ii>0 && nums[ii]==nums[ii-1]) continue;
+            vector<vector<int>> twos = two_sum(ii+1, 0-nums[ii], nums);
+
+            for(int jj=0; jj<twos.size(); ++jj){
+                res.push_back({nums[ii], twos[jj][0], twos[jj][1]});
+            }
+        }
+
+        return res;        
+    }
+};
+
+/* --------------------------------------------------- */
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
