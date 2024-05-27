@@ -1,7 +1,7 @@
 class Solution:
     def wiggleMaxLength(self, nums: List[int]) -> int:
         N=len(nums)
-        dir=-2
+        dir=-2 #tricky initial value for dir for starting point
         cnt=1
         for ii in range(1, N):
             prev_dir=dir
