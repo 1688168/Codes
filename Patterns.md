@@ -431,8 +431,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0309]
 * cool down is the same thing as house robber I -- cannot rob neighor
 - [0376]
-- [0487]
-- [1186]
+- [0487] (todo-not todo)
+- [1186] (todo-not todo)
 - [1289]
 ```
 > House Robber vS Paint Fence  
