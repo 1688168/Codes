@@ -458,7 +458,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 - you can exercise one strategy (buy/sell stock) => states=(tke, ntk)
 
-- [487]
+- [0487]
 - [1186]
 
 > Type II (Basic enhanced): Time Series 2
