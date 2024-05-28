@@ -44,6 +44,13 @@
 [[Video]]() -
 [`Two Pointers`][`classic`]
 
+[[0019] - <span style="color:yellow">M</span> - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`LinkedList`][`Two Pointers`]
+
+
 [[0020] - <span style="color:green">E</span> - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) - 
 [[Python]]()
 [[CPP]]() -
