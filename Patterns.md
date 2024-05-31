@@ -425,6 +425,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0256]: Paint House                  -> min cost painting a row of house
                                        * two states: cannnot be same color as prev house
                                        * k-1 choice of colors
+
+- [0265]: Paint House II (not sure if this is diff type)
 - [0276]: Paint Fence                  -> number of ways to achive something
                                        * states is two elements in a row (same, diff)
 
