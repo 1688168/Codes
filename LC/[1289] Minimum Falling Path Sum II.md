@@ -1,3 +1,4 @@
+![1289](../rcs/1289.png)
 dp[i][j]: minimum sum of a falling path with non-zero shifts from 1st row to (i, j)
 dp[i][j]=dp[i-1][k]+grid[i][j]
 
