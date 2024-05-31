@@ -1235,6 +1235,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=euD2WFdUp6U) -
 [`DP`]
 
+- [0931]
+
 [[1293] - <span style="color:red">H</span> - Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1293.Shortest-Path-in-a-Grid-with-Obstacles-Elimination) -
