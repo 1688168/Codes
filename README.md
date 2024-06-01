@@ -419,6 +419,8 @@ cache = OrderedDict()
 [`DP`]
 
 - N houses, cost of black is a, cost of white is b. cannot paint 3 houses with same color consequtively. what's the min cost to paint all houses?
+- [0265]
+
 
 [[0265] - <span style="color:red">H</span> - Paint House II](https://leetcode.com/problems/paint-house-ii/description/) - 
 [[Python]]()
