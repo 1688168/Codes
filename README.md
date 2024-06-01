@@ -1287,6 +1287,14 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - application of "range addition"
 - [1109]
 
+[[1473] - <span style="color:yellow">M</span> - Paint House III](https://leetcode.com/problems/paint-house-iii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=OLUb7awzwig) -
+[`DP`]
+
+- [1959]
+
 [[1431] - <span style="color:green">E</span> - Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1431%5D%20Kids%20With%20The%20Greatest%20Number%20Of%20Candies.py)
 [[CPP]]() -
@@ -1502,6 +1510,13 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1953.Maximum-Number-of-Weeks-for-Which-You-Can-Work) -
 [[Video]](https://www.youtube.com/watch?v=0ut2kGnSXLU) -
 [`Arrangement with Stride`][`Greedy`]
+
+
+[[1959] - <span style="color:yellow">M</span> - Minimum Total Space WWasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/results?search_query=leetcode+1959+wisdompeak) -
+[`DP`]
 
 [[1986] - <span style="color:yellow">M</span> - Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/) - 
 [[Python]]()
