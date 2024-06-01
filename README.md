@@ -426,6 +426,8 @@ cache = OrderedDict()
 [[Video]](https://www.bilibili.com/video/BV1sS4y1V7ZT/) -
 [`DP`]
 
+- same as [1289]
+
 [[0266] - <span style="color:green">E</span> - Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/description/) - 
 [[Python]]()
 [[CPP]]() -
