@@ -1240,7 +1240,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [`DP`]
 
 - [0256]: paint house I
-- [0265]: Paint house II
+- [0265]: Paint house II -- review this python code see how to share a loop
 - [0931]
 
 [[1293] - <span style="color:red">H</span> - Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) - 
