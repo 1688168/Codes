@@ -1084,6 +1084,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=x_djkQhnuTk) -
 [`DP`]
 
+[[1043] - <span style="color:yellow">M</span> - Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=Zd00uagpi4U) -
+[`DP`]
+
 [[1044] - <span style="color:red">H</span> - Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/String/1044.Longest-Duplicate-Substring) -
