@@ -22,7 +22,7 @@ public:
 
         int mx=0;
         int sum=0;
-        for(int ii=0; ii<n; ++ii){//initialize when ii=0. (there is no ii-1)
+        for(int ii=0; ii<n; ++ii){//initialize when jj=0. (there is no jj-1)
             mx = max(mx, nums[ii]);
             sum+=nums[ii];
             dp[ii][0]=mx*(ii+1)-sum;
