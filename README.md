@@ -1292,6 +1292,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=OLUb7awzwig) -
 [`DP`]
+![1473](./rcs/1473.png)
 
 - [1959]
 
