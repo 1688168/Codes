@@ -1519,6 +1519,11 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/results?search_query=leetcode+1959+wisdompeak) -
 [`DP`]
 
+- Type II DP Basic
+- todo-not todo with with max k times
+- [1043]
+- [1105]
+
 [[1986] - <span style="color:yellow">M</span> - Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1986.Minimum-Number-of-Work-Sessions-to-Finish-the-Tasks) -
