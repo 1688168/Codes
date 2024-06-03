@@ -450,7 +450,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 | **Objective**   | Max Profit  | Num of ways
 
 > [1043] VS [1959]
-- [1043]: 
+- [1043]: same as [1105]
   - each ii is part of a group with earlier elements -> dp[ii]
   - searching jj back up to k -> type II DP
 - [1959]: each ii can be in one of the k states -> dp[ii][jj]: 

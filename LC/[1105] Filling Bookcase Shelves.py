@@ -1,4 +1,37 @@
 ################
+# 20240602
+################
+class Solution:
+    def minHeightShelves(self, books: List[List[int]], shelfWidth: int) -> int:
+        """
+        # I/O: 
+        + books[ii]: [thickness_i, height_i]
+        + shelfWidth: range you can go back
+        => min ttl height
+        # Analysis:
+        + N=1000
+        """
+        N=len(books)
+
+        # declare the dp
+        dp=[math.inf]*N # dp[ii]: min ttl height of bookshelf ending with iith book
+
+        # initialize DP
+        dp[0]=books[0][1]
+
+        for ii in range(1, N):
+            mx=0
+            cth=0
+            ch=0
+            for jj in reversed(range(ii+1)):
+                cth+=books[jj][0]
+                ch=books[jj][1]
+                mx=max(mx, ch)
+                if cth > shelfWidth: break #exceed shelf width
+                dp[ii] = min(dp[ii], (dp[jj-1] if jj-1 >= 0 else 0)+mx)
+
+        return dp[-1]
+################
 # 20240511
 ################
 class Solution:
