@@ -442,14 +442,19 @@ dp[ii][jj] = dp[ii-1][jj]+something
 * [2222]
 * [2638]
 ```
-> House Robber vS Paint Fence  
+> House Robber VS Paint Fence  
 
 |                 | House Robber    | Paint  Fence   |
 | :-------------: | :-------------: | :------------: |
 | **DP hints**    | dependens on prev house (color) | depends on prev two houses|
 | **Objective**   | Max Profit  | Num of ways
 
-
+> [1043] VS [1959]
+- [1043]: 
+  - each ii is part of a group with earlier elements -> dp[ii]
+  - searching jj back up to k -> type II DP
+- [1959]: each ii can be in one of the k states -> dp[ii][jj]: 
+  - current state @ ii only depends on prev state @ ii-1 -> type I DP
 
 ```yaml
 # Number of subsets from an array with some constrains
