@@ -1090,6 +1090,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=Zd00uagpi4U) -
 [`DP`]
 
+- same as [1105]
 - vs [1959]
 
 [[1044] - <span style="color:red">H</span> - Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/description/) - 
