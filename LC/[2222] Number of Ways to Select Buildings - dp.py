@@ -1,4 +1,46 @@
 ######################
+# 20240607 -- this without inserting dummy header
+######################
+class Solution:
+    def numberOfWays(self, s: str) -> int:
+        """
+        1. single series type II
+        dp[ii] -> subject to: 
+                a. how many is already selected (max 3)
+                b. what is the previous
+        dp[ii]: is number of ways, upto ii where
+        dp[ii][jj][kk]: up to iith building in the array, 
+                        where jjth building we are selecting
+                              current building is kk
+        """
+        #s = '#'+s
+        N = len(s)
+        dp = [[[0]*2 for _ in range(4)] for _ in range(N)]
+        # inspected zero buildings, selected zero buildings and current building is 1-> 1 way
+        dp[0][0][1] = 1
+        # inspected zero buildings, selected zero buildings and current building is 0 -> 1 way
+        dp[0][0][0] = 1
+
+        # initialize all usecases when ii=0
+        dp[0][1][1] = 1 if int(s[0])==1 else 0
+        dp[0][1][0] = 1 if int(s[0])==0 else 0
+
+
+        for ii in range(1, N):#since ii=0 is all initialized, start from 1
+            for jj in range(4):
+                for kk in range(2):
+                    # not select
+                    dp[ii][jj][kk] = dp[ii-1][jj][kk]
+                    # no previous to worry about or curr building is kk
+                    # jj=0 meaning building selected.  jj=1 meaning selecting the 1st building
+                    if jj > 0 and int(s[ii]) == kk:
+                        # prev need to be diff building
+                        dp[ii][jj][kk] += dp[ii][jj-1][1-kk]
+
+        return dp[-1][-1][0]+dp[-1][-1][1]
+
+
+######################
 # 20240409
 ######################
 class Solution:
