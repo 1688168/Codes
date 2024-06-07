@@ -1,3 +1,29 @@
+###########
+# 20240606
+###########
+class Solution:
+    def numberOfWays(self, s: str) -> int:
+        N=len(s)
+        def dfs(prev, st, cnt):
+            if cnt==3:
+                return 1
+            
+            if st >= N:
+                return 0
+            
+            ttl=0
+            for ii in range(st, N):
+                if prev is None:
+                    ttl += dfs(ii, ii+1, cnt+1)
+                else:
+                    if s[ii] != s[prev]:
+                        ttl += dfs(ii, ii+1, cnt+1)
+        
+            return ttl
+
+        return dfs(None, 0, 0)
+        
+
 ########
 # 20240605
 ########
