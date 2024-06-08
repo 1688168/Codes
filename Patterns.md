@@ -575,6 +575,27 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1246]: Palindrome Removal
 
 > Type VI: Knapsack
+```yaml
+* when you are givn a list of resource and a limitation on capacity for tke/ntk each element
+* Two Dimension DB (ii, capacity) = (idx of resource, capacity)
+```
+- [0474]: Ones and Zeroes
+- [0494]: Target Sum
+  - [2518]
+- [0879]: Profitable Schemes
+- [0956]: Tallest Billboard
+- [1049]: Last Stone Weight II
+  * 穷举法 （exhaustive method)
+
+> Type I and Type II Interval DP
+
+- [1000]: Minimum Cost to Merge Stones (most difficult DP)
+
+> Compress state
+
+- [0691]
+- [1125]
+- [1349]
 
 [[背包九讲] - Article)](https://www.cnblogs.com/jbelial/articles/2116074.html)  
 [[背包九讲] - video I](https://www.youtube.com/watch?v=nleY0-eexps)
@@ -659,7 +680,7 @@ def find_max_knapsack_profit(capacity, weights, values):
   .
   .
 
-> 494:
+> [0494]:
 
 - list of nums
 - constrain: expression value
@@ -673,7 +694,7 @@ def find_max_knapsack_profit(capacity, weights, values):
   .
   .
 
-> 2518:
+> [2518]:
 
 - list of nums
 - constrain: group
@@ -696,23 +717,7 @@ n2
 
 ````
 
-- [0474]: Ones and Zeroes
-- [0494]: Target Sum
-  - [2518]
-- [0879]: Profitable Schemes
-- [0956]: Tallest Billboard
-- [1049]: Last Stone Weight II
-  * 穷举法 （exhaustive method)
 
-> Type I and Type II Interval DP
-
-- [1000]: Minimum Cost to Merge Stones (most difficult DP)
-
-> Compress state
-
-- [691]
-- [1125]
-- [1349]
 
 > Homework
 
