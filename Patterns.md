@@ -439,7 +439,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1289]
 - [1473]
 - [1959]: type II, -> 1043, 1105
-* [2222]
+* [2222]: type I
 * [2638]
 ```
 > House Robber VS Paint Fence  
