@@ -34,7 +34,34 @@ class Solution:
                     dp[ii][jj+offset] += dp[ii-1][jj+offset-nums[ii]]
 
                 # if we are substracting new number
-                if 0 <= jj+offset+nums[ii] <= 2002:
+                if 0 <= jj+offset+nums[ii] <= 2001:
                     dp[ii][jj+offset] += dp[ii-1][jj+offset+nums[ii]]
 
         return dp[-1][target+offset]
+
+
+
+##################
+class Solution:
+    def findTargetSumWays(self, nums: List[int], target: int) -> int:
+        """
+        dp[ii][jj]: number of ways to reach target jj ending @ ii
+        """
+        N=len(nums)
+        offset=1000
+        dp=[[0] * (offset*2+1) for _ in range(N)]
+
+
+        # initialize dp
+        for jj in range(-offset, offset+1):
+            if jj==nums[0] or jj==-nums[0]:dp[0][jj+offset]=1
+
+
+        for ii in range(1, N):
+            for jj in range(-offset, offset+1):
+                if 0 <= jj + offset - nums[ii] <= offset*2: dp[ii][jj+offset] += dp[ii-1][jj-nums[ii]+offset]               
+                if 0 <= jj + offset + nums[ii] <= offset*2: dp[ii][jj+offset] += dp[ii-1][jj+nums[ii]+offset]
+
+        return dp[-1][target+offset]
+
+        
