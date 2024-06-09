@@ -710,6 +710,13 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 - word break (139, 140)
 - memo (lru_cache) is the best friend of DFS
 
+[[0474] - <span style="color:yellow">M</span> - Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=R-U_pY0OBKI) -
+[`Patterns`]
+
+
 [[0487] - <span style="color:yellow">M</span> - Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/487.Max-Consecutive-Ones-II) -
