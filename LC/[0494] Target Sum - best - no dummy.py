@@ -1,3 +1,27 @@
+##############
+# 20240614
+#############
+class Solution:
+    def findTargetSumWays(self, nums: List[int], target: int) -> int:
+        """
+        dp[ii][jj]: number of ways to reach target jj ending @ ii
+        """
+        N=len(nums)
+        offset=1000
+        dp=[[0] * (offset*2+1) for _ in range(N)]
+        dp[0][nums[0]+offset]+=1 ## +0 and -0 both counted for jj=0
+        dp[0][-nums[0]+offset]+=1
+
+
+        for ii in range(1, N): # the iith number
+            for jj in range(offset*2+1):# jj is target sum ending @ ii
+                if 0 <= jj - nums[ii] <= offset*2: dp[ii][jj] += dp[ii-1][jj-nums[ii]]               
+                if 0 <= jj + nums[ii] <= offset*2: dp[ii][jj] += dp[ii-1][jj+nums[ii]]
+              
+        return dp[-1][target+offset]
+
+
+##########################################
 class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
         """
