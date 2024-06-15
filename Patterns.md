@@ -578,6 +578,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 ```yaml
 * when you are givn a list of resource and a limitation on capacity for tke/ntk each element
 * Two Dimension DB (ii, capacity) = (idx of resource, capacity)
+> DP Type I/II VS Knapsack problem
+* DP Type I/II has no constrain on capacity. typically is trying to max/min profit/cost or count number of ways to reach target
+* Knapsack problem always has some restriction on capacity (the bag size) and asking to max/min the profit/cost given the capacity
 ```
 - [0474]: Ones and Zeroes
 - [0494]: Target Sum
