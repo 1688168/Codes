@@ -973,6 +973,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=yfWVWbi9pts) -
 [`Binary Search`]
 
+[[0879] - <span style="color:red">H</span> - Profitable Schemes](https://leetcode.com/problems/profitable-schemes/description/) - 
+[[Python]]()
+[[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/879.Profitable-Schemes) -
+[[Video]](https://www.youtube.com/watch?v=SGod9bCXYfw) -
+[`DP`][`Knapsack`]
+
+
 [[0881] - <span style="color:yellow">M</span> - Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/881.Boats-to-Save-People) -
