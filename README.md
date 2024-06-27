@@ -979,6 +979,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=SGod9bCXYfw) -
 [`DP`][`Knapsack`]
 
+- [2518]
 
 [[0881] - <span style="color:yellow">M</span> - Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) - 
 [[Python]]()
@@ -1882,6 +1883,7 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=V7wdVxiPFCU) -
 [`DP`]
 
+- [879]
 - whenever we partition something into two groups.   we have original total, group A, group B.  consider the situation that original total = sum(A) + sum(B)
 
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
