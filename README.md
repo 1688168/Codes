@@ -977,7 +977,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/879.Profitable-Schemes) -
 [[Video]](https://www.youtube.com/watch?v=SGod9bCXYfw) -
-[`DP`][`Knapsack`]
+[`DP`][`Knapsack`][`classics - Reverse DP thinking`]
 
 ```yaml
 > Two ways of DP transition function
