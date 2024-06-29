@@ -979,6 +979,11 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=SGod9bCXYfw) -
 [`DP`][`Knapsack`]
 
+```yaml
+> Two ways of DP transition function
+1. dp[ii] = ... f(dp[j]) where j < i
+2. dp[ii] => dp[jj]+= ... where jj > ii
+```
 - [2518]
 
 [[0881] - <span style="color:yellow">M</span> - Boats to Save People](https://leetcode.com/problems/boats-to-save-people/description/) - 
