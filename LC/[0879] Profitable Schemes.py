@@ -17,4 +17,11 @@ class Solution:
         N = len(profit)
         M = minProfit
 
-        dp=[[[0]*N for _ in range(M+1)] for _ in range(profit+1)]
+        dp=[[[0]*N for _ in range(n+1)] for _ in range(profit+1)]
+
+        """
+        let x as member @ ii
+            y as profit @ ii with x
+        dp[ii][jj][kk]  = dp[ii-1][jj][kk]
+                        + dp[ii][jj-x][kk-y]
+        """
