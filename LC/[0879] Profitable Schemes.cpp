@@ -10,12 +10,13 @@ public:
         group.insert(group.begin(), 0);
         profit.insert(profit.begin(), 0);
      
-        for(int ii=0; ii<m; ++ii){
-            for(int jj=0; jj<=n; ++jj){
-                for(int kk=0; kk<=minProfit; ++kk){
+        for(int ii=0; ii<m; ++ii){//iith scheme
+            for(int jj=0; jj<=n; ++jj){ //jj members
+                for(int kk=0; kk<=minProfit; ++kk){ //kk profit
                     // dp[ii+1][jj][kk] += dp[ii][jj][kk]; //skipping current
-                    dp[ii+1][jj][kk] =  (dp[ii+1][jj][kk]+dp[ii][jj][kk])%M; 
-                    if(jj+group[ii+1] <= n)
+                    dp[ii+1][jj][kk] =  (dp[ii+1][jj][kk]+dp[ii][jj][kk])%M; //by skipping, (current iteration ii has apready been populated by ii-1 iteration)
+
+                    if(jj+group[ii+1] <= n) //not exceeding max ppl
                         dp[ii+1][jj+group[ii+1]][min(minProfit,kk+profit[ii+1])] =
                          (dp[ii+1][jj+group[ii+1]][min(minProfit,kk+profit[ii+1])]+dp[ii][jj][kk])%M;
                     // dp[ii+1][jj][kk] %= M;
