@@ -14,8 +14,9 @@ public:
             for(int jj=0; jj<=n; ++jj){ //jj members
                 for(int kk=0; kk<=minProfit; ++kk){ //kk profit
                     // dp[ii+1][jj][kk] += dp[ii][jj][kk]; //skipping current
-                    dp[ii+1][jj][kk] =  (dp[ii+1][jj][kk]+dp[ii][jj][kk])%M; //by skipping, (current iteration ii has apready been populated by ii-1 iteration)
+                    dp[ii+1][jj][kk] =  (dp[ii+1][jj][kk]+dp[ii][jj][kk])%M; //by contributing next is skipping, (current iteration ii has apready been populated by ii-1 iteration)
 
+                    //by contributing to next that is participating
                     if(jj+group[ii+1] <= n) //not exceeding max ppl
                         dp[ii+1][jj+group[ii+1]][min(minProfit,kk+profit[ii+1])] =
                          (dp[ii+1][jj+group[ii+1]][min(minProfit,kk+profit[ii+1])]+dp[ii][jj][kk])%M;
