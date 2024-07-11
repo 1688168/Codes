@@ -6,5 +6,6 @@ try{
 
 }catch (Exception ex){
     System.outprintln("Error: " + ex.getMessage());
+    ex.printStackTrace();
 }
 ```
