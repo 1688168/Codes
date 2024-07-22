@@ -9,3 +9,15 @@ try{
     ex.printStackTrace();
 }
 ```
+
+> Array  
+```java
+//declare an array and initialize with value
+Product[] products = {door, fllorPanel}
+
+//copy an array and make it bigger
+var newArray = Arrays.copyOf(array, length+1);
+newArray[array.length] = product;
+
+
+```
