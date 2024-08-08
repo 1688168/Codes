@@ -21,3 +21,9 @@ newArray[array.length] = product;
 
 
 ```
+
+> User Inputs
+```java
+    Scanner scanner = new Scanner(System.in);
+    scanner.nextLine();//read user inputs until user hit enter
+```
