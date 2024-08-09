@@ -42,6 +42,16 @@ product.stream().filter(Product product -> product.getWeight() < 30)
 .forEach(System.out::println)
 ```
 
+```java
+//convert a list to map
+Map<String, Long> lightProducts = products
+.stream()
+.filter(product -> product.getWeight() < 30)
+.sorted(comparingInt(Product::getWeght))
+.collect(groupingBy(Product::getName, counting()))
+```
+
+
 > Min/max of array  
 ```java
 import java.util.Arrays;
