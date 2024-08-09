@@ -15,8 +15,6 @@ class Solution {
             }else{
                 swap(jj, kk--, nums);
             }
-
         }
-
     }
 }

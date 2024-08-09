@@ -1888,7 +1888,8 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=V7wdVxiPFCU) -
 [`DP`]
 
-- [879]
+- [0494]: target sum
+- [0879]
 - whenever we partition something into two groups.   we have original total, group A, group B.  consider the situation that original total = sum(A) + sum(B)
 
 [[2519] - <span style="color:red">H</span> - Count the Number of K-Big Indices](https://leetcode.com/problems/count-the-number-of-k-big-indices/description/) - 
