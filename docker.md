@@ -13,4 +13,11 @@
 
 > Terminologies:  
 * OCI: Open Container Initiative
-* 
+
+> Network:
+* docker network create
+* docker network ls
+* docker network rm [network]
+
+> Shell into a container:  
+* docker exec -it <containerId> sh
