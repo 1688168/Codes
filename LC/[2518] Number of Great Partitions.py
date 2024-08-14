@@ -19,8 +19,7 @@ class Solution:
 
         nums=[0]+nums # have (N+1) in size 
 
-        dp = [[0]*k for _ in range(N+1)] # N resources (0~N-1). sum to 0~(k-1)
-      
+        dp = [[0]*k for _ in range(N+1)] # N resources (0~N-1). sum to 0~(k-1)     
         dp[0][0]=1
         
         for ii in range(1, N+1): #from 1~N (after dummy insertion)
@@ -30,10 +29,9 @@ class Solution:
                     dp[ii][jj] = (dp[ii][jj] + dp[ii-1][jj-nums[ii]])%M
         
         ttl = pow(2, N)%M
-        invalid = sum(dp[N])%M
+        invalid = sum(dp[-1])%M
 
         return (ttl-invalid*2%M)%M
-
 
 ############
 class Solution:
