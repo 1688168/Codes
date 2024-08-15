@@ -1,25 +1,46 @@
 class Solution {
-    static int mod = (int) 1e9 + 7;
     public int countPartitions(int[] nums, int k) {
+        int N = nums.length;
+        int M = (int) (1e9 + 7);
+
+        //initial sanity check
         long sum = 0;
-        for (int i : nums) sum += i;
-        if (sum < k * 2) return 0;
-        int[] dp = new int[k]; //java declare array
-        dp[0] = 1;
-        for (int i : nums) {
-            for (int j = k - 1; i <= j; --j) dp[j] = (dp[j] + dp[j - i]) % mod;
+        for(var nn :nums) sum += nn; 
+
+        if(sum < 2*k) return 0;
+
+        //convert int array to Integer Array List
+        List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
+        //insert dummy in the beginning of nums
+        list.add(0, 0);
+
+        //two dimential arrayList
+        List<List<Integer>> dp = new ArrayList<>();   
+        for(int ii=0; ii<=N; ++ii) dp.add(new ArrayList<Integer>(Collections.nCopies(k, 0)));
+
+        //initialize DP: set dp[0][0]=1
+        dp.get(0).set(0, 1);
+
+        //start populate DP
+        for(int ii=1; ii<=N; ++ii){//for each project: 0 is dummy, 1~N (1~4)
+            for(int jj=0; jj<k; ++jj){ //for each invalid outcome space (sum(A)) (0~k-1)=(0~3)
+                //skip
+                dp.get(ii).set(jj, (dp.get(ii).get(jj) + dp.get(ii-1).get(jj))%M);
+             
+                //take
+                if(jj >= list.get(ii)) dp.get(ii).set(jj, 
+                (dp.get(ii).get(jj) + dp.get(ii-1).get(jj-list.get(ii)))%M);
+            }
         }
-        int less = 0;
-        for (int i = 0; i < k; ++i) less = (less + dp[i]) % mod;
-        return ((pow(nums.length) - (less << 1)) % mod + mod) % mod;
-    }
-    private int pow(int n) {
-        long res = 1, m = 2;
-        while (0 != n) {
-            if (1 == (n & 1)) res = res * m % mod;
-            n >>= 1;
-            m = m * m % mod;
-        }
-        return (int) res;
+
+        int invalid = 0;
+     
+        for(int kk=0; kk< k; ++kk) invalid = (invalid + dp.get(N).get(kk))%M;
+        System.out.println("Invalid: " + invalid);
+
+        int ttl=1;
+        for(int ii=0; ii < N; ++ii) ttl = (ttl*2)%M;
+
+        return (ttl-2*invalid+M)%M;
     }
 }
