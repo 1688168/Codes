@@ -1,5 +1,6 @@
 class Solution {
     int M = (int) (Math.pow(10, 9) + 7);
+    //this also okay: int M = (int) (1e9 + 7);
     public int profitableSchemes(int n, int minProfit, int[] group, int[] profit) {
         int N = group.length;
         int[][][] dp = new int[N+1][n+1][minProfit+1];
