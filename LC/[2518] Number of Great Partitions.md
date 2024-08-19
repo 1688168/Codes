@@ -24,3 +24,13 @@ dp[ii][jj]: number of ways sum to jj ending @ ii
 * Sum(A) >= K and Sum(B) >= K => sum(nums) >= 2k
 * sum(A) < K imply sum(B) >= K
 * sum(B) < K imply sum(A) >= k 
+
+> Two ways of modeling DP
+1. dp[ii] = dp[ii-1] ...
+2. what can dp[ii] contribute to?
+
+> Todo:
+1. python regular solution
+2. python reversed dolution
+3. Java regular solution
+4. target sum

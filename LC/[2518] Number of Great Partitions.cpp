@@ -1,36 +1,25 @@
 using LL = long long;
 class Solution {
-    LL dp[1005][1005];
+    LL dp[10005][1005];
     LL M = 1e9+7;
 public:
     int countPartitions(vector<int>& nums, int k) {
-        if(accumulate(nums.begin(), nums.end(), 0LL) < 2* k) return 0; 
-
-        int n = nums.size();
+        if(accumulate(nums.begin(), nums.end(), 0LL) < 2*k) return 0;
+        int n=nums.size();
         nums.insert(nums.begin(), 0);
-
         dp[0][0]=1;
-
-        for(int i=1; i<=n; ++i){
-            for(int s=0; s<k; ++s){
-                dp[i][s]+=dp[i-1][s];//skip
-                if(s>=nums[i]) dp[i][s] += dp[i-1][s-nums[i]];//take
-                dp[i][s] %= M;
-
+        for(int ii=1; ii<=n; ++ii){//each proj
+            for(int jj=0; jj<k; ++jj){//each group A sum value
+                dp[ii][jj] = (dp[ii][jj] + dp[ii-1][jj])%M;
+                if(jj >= nums[ii]) dp[ii][jj] =  (dp[ii][jj] + dp[ii-1][jj-nums[ii]])%M;
             }
         }
-
         LL invalid = 0;
-        for(int s=0; s<k; ++s){
-            invalid = (invalid + dp[n][s]) %M;
-        }
+        for(int jj=0; jj<k; ++jj ) invalid = (invalid + dp[n][jj])%M;
 
-        //LL total = (LL)pow(2, n)%M;
-        LL total=1;
-        for(int i=1; i<=n; ++i){
-            total = (total*2)%M;
-        }
-        return (total - invalid - invalid + M)%M;
+        LL total = 1;
+        for(int ii=0; ii<n; ++ii) total = (total*2)%M;
 
+        return (total - 2*invalid+M)%M;
     }
 };
