@@ -3,6 +3,10 @@
 2. number of ways to partition the list to two lists (A, B), s.t. sum(A) >= k and sum(B) >= k
 3. N=1000, k=1000
 
+> Ideas:
+* whenever you are given a list and each item is select/not select -> DP
+* the N is large and need mod -> DP
+
 > Bruteforce:
 * T= O(2^1000)
 
