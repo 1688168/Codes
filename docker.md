@@ -21,3 +21,26 @@
 
 > Shell into a container:  
 * docker exec -it <containerId> sh
+
+> Building a Custom Image  
+
+```sh
+* docker build -t <name> .
+# -t: short for --tag
+# .: build context from current directory
+
+* docker build -t <registry>/<name>:<tag> .
+
+# List docker images
+* docker images
+
+# remove an image
+* docker rmi <imageId>
+
+# deploy an image to Docker Hub
+* docker push <user name>/<image name>:<tag>
+
+# running a container
+* docker run -p <externalPort>:<internalPort>
+
+```
