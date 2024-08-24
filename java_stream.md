@@ -10,3 +10,10 @@ cities.stream()
     .map(p -> getName())
     .forEach(name -> System.out.println(name));
 ```
+
+> create stream from array
+```java
+Person[] people = {p01, p02, p03};
+Stream<Person> peopleStream = Arrays.stream(people);
+Stream<Person> peopleStream = Stream.of(people);
+```
