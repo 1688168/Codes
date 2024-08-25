@@ -38,7 +38,7 @@ try (Stream<String> lines = Files.lines(path);){//try with resource pattern
 Pattern pattern = Pattern.compile(" ");
 long count2 = pattern.splitAsStream(sentence).count();
 
-sentence.chars() //convert string to stream of char codes
+sentence.chars() //convert string to stream of char codes; string to chars
 .mapToObj(codePoint -> Character.toString(codePoint)) //convert char code to stream of strings
 .filter(letter -> !letter.equals(" "))
 .distinct()
@@ -194,6 +194,22 @@ Map.Entry<String, Long> stateWithMostcities =
  numberOfCitiesPerState.entrySet().stream() //Stream Map.Entry<String, Long>
  .max(Comparator.comparing(entry -> entry.getValue()))
  .orElseThrow();
+
+//-- or
+Map.Entry<String, Long> stateWithMostcities = 
+ numberOfCitiesPerState.entrySet().stream() //Stream Map.Entry<String, Long>
+ //.max(Comparator.comparing(Entry::getValue))
+ .max(Entry.comparingByValue()) //map entry comparator
+ .orElseThrow();
+
+
+//downstream collection with group by
+//count the population of a city
+int populationOfUtah = 
+citiesPerState.get("Utah").stream()
+.mapToInt(cityt -> city.getPopulation())
+//.sum()
+.collect(Collector.summingInt(city -> city.getPopulation()))
 
 ```
 
