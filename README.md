@@ -1030,6 +1030,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 3. return not stk
 ```
 
+[[0956] - <span style="color:red">H</span> - Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=mE27VU08BGU&t=14s) -
+[`DP`]
+
 [[0968] - <span style="color:red">H</span> - Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/) - 
 [[Python]]()
 [[CPP]]() -
