@@ -107,7 +107,58 @@ try(Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_1);){ //t
 }
 ```
 
+> the collect API
+```java
+//transform a list to another list
+List<Person> peopleFromNewYork =
+    people.stream()
+    .filter(p -> p.getCity().equals("New York"))
+    .collect(Collectors.toList());
 
+
+//transform a list to a set
+List<Person> peopleFromNewYork =
+    people.stream()
+    .filter(p -> p.getCity().equals("New York"))
+    .collect(Collectors.toSet());
+
+//transform a list to a custom collection
+List<Person> peopleFromNewYork =
+    people.stream()
+    .filter(p -> p.getCity().equals("New York"))
+    .collect(Collectors.toCollection(MyCollection::new));
+
+//concatenate a string list
+List<Person> peopleFromNewYork =
+    people.stream()
+    .filter(p -> p.getCity().equals("New York"))
+    .map(p -> p.getName())
+    .collect(Collectors.joining(", "));
+```
+
+```java
+Function<String, String> lineToName =
+    line -> line.split(";")[1];
+
+Path path = Path.of("data/acities.csv");
+Set<String> cities = null;
+
+try (Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_11);){ //try on resource
+    cities = lines.skip(2)//skip source and header
+    .map(lineToName)
+    .collect(Collectors.toSet());
+} catch (IOException e) {
+    e.printStackTrace();
+}
+
+cities.stream()
+.filter(city -> city.startWith("A"))
+.collect(Collectors.toList());
+
+Object[] array = cities.stream().toArray(); //convert a stream to Array of object
+String[] array = cities.stream().toArray(String[]::new); //convert a stream to Array of String
+
+```
 
 ```java
 //stream cookbook
