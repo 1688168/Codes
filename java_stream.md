@@ -84,6 +84,29 @@ statement +=
 
 ```
 
+```java
+Path path = Path.of("data/cities.csv");
+try(Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_1);){ //try with resource
+    Dboule max = lines.skip(2)// skip the first two lines
+    .mapToDouble(lineToDensity)
+    .max() //no need for comparator
+    .orElseThrow();
+} catch (IOException e) {
+    e.printStackTrace();
+}
+
+//--- original way not converting 
+Path path = Path.of("data/cities.csv");
+try(Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_1);){ //try with resource
+    Dboule max = lines.skip(2)// skip the first two lines
+    .map(line -> lineToDensity.apply(line))
+    .max(Comparator.naturalOrder())
+    .orElseThrow();
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
 
 
 ```java
