@@ -158,6 +158,43 @@ cities.stream()
 Object[] array = cities.stream().toArray(); //convert a stream to Array of object
 String[] array = cities.stream().toArray(String[]::new); //convert a stream to Array of String
 
+String joined = 
+cities.stream()
+.filter(name -> name.length(", ", "[", "]")==4)
+.collect(Collectors.joining())
+
+```
+
+> GroupBy
+```java
+Path path = Path.of("data/acities.csv");
+Set<String> cities = null;
+
+try (Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_11);){ //try on resource
+    cities = lines.skip(2)//skip source and header
+    .map(lineToName)
+    .collect(Collectors.toSet());
+} catch (IOException e) {
+    e.printStackTrace();
+}
+
+Map<String, List<City>> citiesPerState =
+cities.stream()
+.collect(Collectors.groupBy(city -> city.getState()));
+
+//count cities per state
+Map<String, Long> numberOfCitiesPerState = 
+cities.stream()
+.collect(
+    Collectors.groupingBy(city -> city.getState(), Collectors.counting())
+)
+
+> how to process a map
+Map.Entry<String, Long> stateWithMostcities = 
+ numberOfCitiesPerState.entrySet().stream() //Stream Map.Entry<String, Long>
+ .max(Comparator.comparing(entry -> entry.getValue()))
+ .orElseThrow();
+
 ```
 
 ```java
