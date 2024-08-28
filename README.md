@@ -1036,6 +1036,8 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=mE27VU08BGU&t=14s) -
 [`DP`]
 
+* [0805]
+
 [[0968] - <span style="color:red">H</span> - Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/) - 
 [[Python]]()
 [[CPP]]() -
