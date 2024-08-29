@@ -579,6 +579,11 @@ dp[ii][jj] = dp[ii-1][jj]+something
 * when you are givn a list of resource and a limitation on capacity for tke/ntk each element
 * Two Dimension DB (ii, capacity) = (idx of resource, capacity)
 > DP Type I/II VS Knapsack problem
+* DP for knapsack:
+  * ii: each item
+  * jjs: capacity of required resource
+  * kk: space of num of way, max profit, max len, 
+  * return: dp[N][-1+offset][-1]
 * DP Type I/II has no constrain on capacity. typically is trying to max/min profit/cost or count number of ways to reach target
 * Knapsack problem always has some restriction on capacity (the bag size) and asking to max/min the profit/cost given the capacity
 ```
