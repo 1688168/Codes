@@ -17,12 +17,14 @@ for(int ii=0; ii<N; ++ii){
 
 > A=B => A-B=0 => diff=0 (this reduces from two dimension to one dimension)  
 
-dp[diff]: max(left) @ diff
+> **dp[diff]: max(left) @ diff**  
 
 ```c++
     for(int ii=0; ii<N; ++ii){
         int ll = rod[ii];
-        dp[diff+ll] => dp_old[diff]+ll; //adding to left
-        dp[diff-ll] => dp_old[diff];//adding to right
+        for(int diff=-5000; diff<=5000; ++diff){
+            dp[diff+ll] => dp_old[diff]+ll; //adding to left
+            dp[diff-ll] => dp_old[diff];//adding to right
+        }
     }
 ``
