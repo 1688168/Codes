@@ -124,3 +124,133 @@ List<Product> products = productIds.stream()
 ```
 
 * [Google Guice Tutorial](https://github.com/mvpjava/google-guice-tutorials)
+
+> remove white spaces
+```java
+package strings;
+
+public class RemoveSpacesDemo {
+
+    public static void main(String[] args) {
+
+        System.out.println("hello   ".trim() + "     there".trim());
+
+        char space = '\u2002';
+        System.out.println("\\u2002 is whitespace: " + Character.isWhitespace(space));
+
+        System.out.println("hello\u2002".trim() + "\u2002there".trim());
+        //strip is unicode-aware evolution of trim()
+        //we should use strip whenever possible
+        //strip is added after java11
+        System.out.println("hello\u2002".strip() + "\u2002there".strip());
+
+    }
+}
+```
+
+> how to check empty string
+
+```java
+        System.out.println("isEmpty()");
+        System.out.println("".isEmpty());           // True
+
+        System.out.println("\r".isEmpty());         // False
+        System.out.println("\u2002".isEmpty());     // False
+        System.out.println(" ".isEmpty());          // False
+
+        System.out.println("isBlank()");
+        System.out.println("".isBlank());           // True
+        System.out.println("\r".isBlank());         // True
+        System.out.println("\u2002".isBlank());     // True
+        System.out.println(" ".isBlank());          // True
+
+        System.out.println("Careful!");
+        String evilString = "\u2002";
+        System.out.println(evilString.trim().isEmpty());        // False! But you might have expected true
+
+        System.out.println(evilString.strip().isBlank());       // redundant
+        System.out.println(evilString.isBlank());               // true
+```
+
+> [transforming string](https://github.com/andrejs-ps/Java17-Playbook/blob/main/m2strings/src/main/java/strings/TransformStringDemo.java)
+
+```java
+package strings;
+
+public class TransformStringDemo {
+
+    public static void main(String[] args) {
+
+        String lotteryWin = " 100 usd ";
+        String result  = lotteryWin
+                .replaceAll("[a-z]", "")
+                .strip();
+
+        String formattedResult = formatNumber(result);
+        System.out.println(formattedResult.toUpperCase());
+
+        String finalResult = lotteryWin
+                .replaceAll("[a-z]", "")
+                .strip()
+                .transform(TransformStringDemo::formatNumber)
+                .toUpperCase();
+
+        System.out.println(finalResult);
+
+
+        String finalResult2 = lotteryWin //only use transform for string
+                .transform(s -> s.replaceAll("[a-z]", ""))
+                .transform(String::strip)
+                .transform(TransformStringDemo::formatNumber)
+                .transform(String::toUpperCase);
+
+        System.out.println(finalResult2);
+
+    }
+
+    private static String formatNumber(String num) {
+        if(Integer.parseInt(num) < 100) {
+            return "Nice! You've won: " + num;
+        } else {
+            return "Great news! You've won: " + num;
+        }
+    }
+}
+```
+
+```java
+package strings;
+
+public class IterateOverCharactersDemo {
+
+    public static void main(String[] args) {
+
+        String str = "some string";
+
+        for(int i = 0, n = str.length() ; i < n ; i++) {
+            char c = str.charAt(i);
+            // do things with the char
+        }
+
+        for(char c : str.toCharArray()) {//converting string to char array
+            System.out.println(c);
+        }
+
+        System.out.println("Specific char to uppercase: ");
+        System.out.println(charToUpperCase(str, 's'));
+        System.out.println(charToUpperCase(str, 'g'));
+    }
+
+
+    // uppercase -> uPPercase
+    private static String charToUpperCase(String str, char charToUpper) {
+        var sb = new StringBuilder();
+        for(char c : str.toCharArray()) {
+            char charToAppend = c == charToUpper ? Character.toUpperCase(c) : c;
+            sb.append(charToAppend);
+        }
+        return sb.toString();
+    }
+
+}
+```
