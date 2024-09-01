@@ -254,3 +254,412 @@ public class IterateOverCharactersDemo {
 
 }
 ```
+
+> check string only contains digit
+```java
+package strings;
+
+public class ContainOnlyDigitDemo {
+
+    private static final String ONLY_DIGITS = "123456789";
+    private static final String NOT_ONLY_DIGITS = "123456789A";
+
+    public static void main(String[] args) {
+
+
+        System.out.println("Character.isDigit() solution:");
+
+
+        boolean onlyDigitsV11 = containsOnlyDigitsLoop(ONLY_DIGITS);
+        boolean onlyDigitsV12 = containsOnlyDigitsLoop(NOT_ONLY_DIGITS);
+
+        System.out.println("Contains only digits: " + onlyDigitsV11);
+        System.out.println("Contains only digits: " + onlyDigitsV12);
+
+        System.out.println();
+        System.out.println("Java 8, functional-style solution:");
+
+        boolean onlyDigitsV31 = containsOnlyDigitsFunctional(ONLY_DIGITS);
+        boolean onlyDigitsV32 = containsOnlyDigitsFunctional(NOT_ONLY_DIGITS);
+
+        System.out.println("Contains only digits: " + onlyDigitsV31);
+        System.out.println("Contains only digits: " + onlyDigitsV32);
+
+
+        System.out.println();
+        System.out.println("String.matches() solution:");
+
+
+        boolean onlyDigitsV21 = containsOnlyDigitsRegex(ONLY_DIGITS);
+        boolean onlyDigitsV22 = containsOnlyDigitsRegex(NOT_ONLY_DIGITS);
+
+
+        System.out.println("Contains only digits: " + onlyDigitsV21);
+        System.out.println("Contains only digits: " + onlyDigitsV22);
+
+
+    }
+
+    public static boolean containsOnlyDigitsLoop(String str) {
+            for (char c : str.toCharArray()) {
+                if(!Character.isDigit(c)) {
+                    return false;
+                }
+            }
+            return true;
+    }
+
+    public static boolean containsOnlyDigitsFunctional(String str) {
+
+            return str.chars().allMatch(Character::isDigit);
+    }
+
+    public static boolean containsOnlyDigitsRegex(String str) {
+
+            return str.matches("[0-9]+");
+    }
+}
+```
+
+> check string only contains digit  (functional solution)
+```java
+package strings;
+
+import java.util.function.IntPredicate;
+import java.util.function.Supplier;
+
+public class ContainsOnlySpecificCharDemo {
+
+    private static final String ONLY_DIGITS = "123";
+    private static final String NOT_ONLY_DIGITS = "123A";
+    private static final String ONLY_LETTERS = "ABC";
+    private static final String NOT_ONLY_LETTERS = "ABC1";
+
+
+    public static void main(String[] args) {
+
+        IntPredicate isDigit = Character::isDigit;
+        IntPredicate isLetter = Character::isLetter;
+        IntPredicate isLetterOrDigit = Character::isLetterOrDigit;
+
+        System.out.println(containsOnlyCharacter(ONLY_DIGITS, isDigit));
+
+    }
+
+
+    public static boolean containsOnlyCharacter(String str, IntPredicate predicate) {
+            return str.chars().allMatch(predicate);
+    }
+
+
+    public static boolean containsOnlyCharacter(String str, String regex) {
+        return str.matches(regex);
+    }
+
+
+}
+```
+> search replace
+
+```java
+package strings;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class FindAndReplaceDemo {
+
+    public static void main(String[] args) {
+        findMatches();
+        replace();
+    }
+
+    public static void findMatches() {
+        String str = "Java 17 Recipes!";
+
+        System.out.println(str.matches("Java 17 Recipes!"));    // exact match - true
+        System.out.println(str.matches("Java 17"));             // not exact match - false
+
+
+        System.out.println(str.matches("[Jj]ava.*"));               // true
+        System.out.println(str.matches("Java [0-9]+ Recipes!"));    // true
+
+
+    }
+
+    private static void replace() {
+        String str = "11 Recipes for Java11";
+        System.out.println(str.replace("11", "17"));    // replaces all, but takes a char sequence
+        System.out.println(str.replaceAll("11", "17")); // replaces all, but takes a regex
+        System.out.println(str.replaceFirst("11", "17"));
+    }
+
+}
+```
+
+>  stream of line
+```java
+package strings;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.stream.Stream;
+
+public class StreamLinesDemo {
+
+    public static void main(String[] args) {
+
+        String str = "To whom it may concern \n" +
+                "I wish you a good day \n" +
+                "Sincerely \n" +
+                "Me";
+
+        Stream<String> lines = str.lines();
+
+        // add line numbers
+        final AtomicInteger i = new AtomicInteger(1);
+        lines.forEach(line -> System.out.println(i.getAndIncrement() + " " + line)); //process line by line
+    }
+}
+```
+
+> Tokenization
+
+```java
+package strings;
+
+public class TokenizeDemo {
+
+    public static void main(String[] args) {
+
+        String str = "To whom it may concern \n" +
+                "I wish you a good day \n" +
+                "Sincerely \n" +
+                "Me";
+
+        String[] lines = str.split("\n");
+        var sb = new StringBuilder();
+        for(String line : lines) {
+            sb.append("-> ").append(line);
+        }
+        System.out.println(sb);
+
+        String text = "Tokyo, 37000000, New York, 20000000, Paris, 11000000";
+        String[] lines2 = text.split(",");
+
+        for(int i = 0 ; i < lines2.length ; i = i+2) {
+            System.out.println(lines2[i]);
+        }
+
+        for(String line : str.split("\n")) {
+            for(String token : line.split(",")) {
+
+            }
+        }
+    }
+}
+```
+
+> join string
+```java
+package strings;
+
+import java.util.Objects;
+import java.util.StringJoiner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class JoinStringsDemo {
+
+    public static void main(String[] args) {
+
+        String delimiter = ";";
+        String[] strings = {"11", "12", null, "13", "14", "15", "16", "17"};
+
+        System.out.println(joinOldWay(delimiter, strings));
+        System.out.println(joinSimplest(delimiter, strings));
+        System.out.println(joinWithJoiner(delimiter, strings));
+        System.out.println(joinWithStream(delimiter, strings));
+    }
+
+    public static String joinOldWay(String delimiter, String... args) {
+
+        StringBuilder result = new StringBuilder();
+
+        int i;
+        for (i = 0; i < args.length - 1; i++) {
+            result.append(args[i]).append(delimiter);
+        }
+
+        result.append(args[i]);
+        return result.toString();
+    }
+
+
+    public static String joinSimplest(String delimiter, String... args) {
+        return "[" + String.join(delimiter, args) + "]";
+    }
+
+    //to avoid duplication -- since java8
+    public static String joinWithJoiner(String delimiter, String... args) {
+        var joiner = new StringJoiner(delimiter, "{", "}");
+        for(String arg : args) {
+            joiner.add(arg);
+        }
+        return joiner.toString();
+    }
+
+    public static String joinWithStream(String delimiter, String... args) {
+        return Stream.of(args)
+                .filter(Objects::nonNull) //filter out null string
+                .filter(s -> !s.isEmpty())
+                .collect(Collectors.joining(delimiter));
+    }
+}
+```
+
+> StringBuilder  
+
+```java
+var builder = new StringBuilder("abc").reverse();//use stringBuilder to reverse a string
+//stringbuilder methods
+//delete()
+//insert()
+//replace()
+//reverse()
+...
+
+package strings;
+
+public class BuildStringsInLoop {
+
+    public static void main(String[] args) {
+        //use stringBudder if you need thread-safe
+        var builder = new StringBuffer("abc").reverse();    // thread-safe
+
+        System.out.println(builder);
+
+    }
+}
+```
+
+> multiline string/text block
+```java
+package strings;
+
+public class MultilineStringsDemo {
+
+    public static void main(String[] args) {
+
+        String str = """
+                To whom it may concern
+                I wish you a good day
+                Sincerely
+                Me""";
+
+
+        String textBlock =
+                """
+                        <html>
+                            <body>
+                                <tag>
+                                </tag>
+                            </body>
+                        </html>""";
+
+    }
+}
+````
+
+
+
+> random string
+
+```java
+package strings;
+
+import java.util.UUID;
+
+public class RandomString {
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 10; i++) {
+            String uuid = UUID.randomUUID().toString();
+            System.out.println(uuid.replace("-", "").substring(0, 10));
+        }
+
+    }
+}   
+```
+
+
+> Apache Commons
+```java
+//StringUtils
+package strings;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
+
+public class ApacheDemo {
+
+    public static void main(String[] args) {
+
+        System.out.println(StringUtils.stripAccents("éclair"));  // eclair
+
+        System.out.println(StringUtils.abbreviate("This is a long text", 10));
+
+        System.out.println(RandomStringUtils.randomAlphabetic(2, 10));
+
+    }
+}
+```
+
+
+```java
+package strings;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+
+public class ProgramDemo {
+
+    static String text = """
+            Tokyo,    37000000
+            New York, 20_000_000
+            Paris,    11.000.000
+            """;
+    public static void main(String[] args) {
+
+        List<String> populations = new ArrayList<>();
+        String[] lines = text.split("\n");
+        for(String line : lines) {
+            String population = line.split(",")[1];
+            String sanitized = population.replaceAll("[^\\d]","");
+            populations.add(sanitized);
+        }
+
+        System.out.println(populations);
+
+
+
+        List<String> populations2 = text.lines() //process multi-line text line by line
+                .map(line -> line.split(",")[1])
+                .map(population -> population.replaceAll("[^\\d]",""))
+                .toList();
+
+        System.out.println(populations2);
+
+        Function<String, String> extractSecondToken = line -> line.split(",")[1];
+        Function<String, String> sanitizeNumber = numberAsString -> numberAsString.replaceAll("[^\\d]","");
+
+        List<String> populations3 = text.lines()
+                .map(extractSecondToken.andThen(sanitizeNumber))
+                .toList();
+
+    }
+}
+```
