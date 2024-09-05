@@ -1140,7 +1140,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[1049] - <span style="color:yellow">M</span> - Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=oVEXfrdO_WE) -
 [`DP`][`0/1 Hacksack`]
 
 - 穷举法 （exhaustive method)
