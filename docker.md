@@ -9,7 +9,12 @@
 * docker image push nigelpoulton/gsd:ctr2023     //push to docker registry (dockerid/nameOfRepo:NameOfImage)
 * docker container run -d --name web -p 8080:8080
 
+> List of containers  
+* docker container ls -a
 
+> remove container
+* docker run --rm # so containers is removed when exit
+* docker system prune -a # remove stopped ocntainers, networks, images, build cache
 
 > Terminologies:  
 * OCI: Open Container Initiative
