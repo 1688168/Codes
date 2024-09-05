@@ -1143,6 +1143,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=oVEXfrdO_WE) -
 [`DP`][`0/1 Hacksack`]
 
+- [0494] - target sum
 - 穷举法 （exhaustive method)
 
 [[1054] - <span style="color:yellow">M</span> - Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/) - 
