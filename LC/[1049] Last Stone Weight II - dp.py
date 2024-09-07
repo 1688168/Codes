@@ -7,7 +7,7 @@ class Solution:
         dp = [False]*(ttl*2+2)
         offset = ttl
 
-        # we will loop from 1 later, so initialize stones[0]
+        # we will be looping from 1, so initialize stones[0]
         dp[stones[0]+offset] = 1
         dp[-stones[0]+offset] = 1
 
