@@ -1603,7 +1603,7 @@ defaultdict(lambda: defaultdict(int))
 [[2035] - <span style="color:red">H</span> - Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]](https://www.youtube.com/watch?v=BIBN-vYO4Gk) -
+[[Video]](https://www.youtube.com/watch?v=pl49uriKwjk) -
 [`DP`][`Knapsack`]
 
 - [1049]
