@@ -575,8 +575,31 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1246]: Palindrome Removal
 
 > Type VI: Knapsack
+```md
+# Knapsack basic pattern:
+* Given a list of resource with profit/cost
+* given a limitation on total cost (capacity)
+
+# Knapsack decision variations:
+* take/skip resource and accumulate profit
+* always take but with option to add/substract the profit
+
+# Knapsack asking:
+* max the profit that we can achieve
+* number of ways to achieve some kind of success criteria
+
+# Knapsack condensensed trics:
+* if state ii only depends on state (ii-1), we can reduce one DP dimension and do dp_old = dp in each iteration (reduce memory print by the cost of copy)  
+
+# Two ways of calculating DP:
+1. what can dp[ii] contribute to?
+---> the only option when dealing with 3D DP (3D comes from many 2D states) 
+2. where can dp[ii] coming from?
+---> typically need to insert dummy resource
+
+```
+
 ```yaml
-* when you are givn a list of resource and a limitation on capacity for tke/ntk each element
 * Two Dimension DB (ii, capacity) = (idx of resource, capacity)
 > DP Type I/II VS Knapsack problem
 * DP for knapsack:
