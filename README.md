@@ -1144,6 +1144,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [`DP`][`0/1 Hacksack`]
 
 - [0494] - target sum
+- [2035]
 - 穷举法 （exhaustive method)
 
 [[1054] - <span style="color:yellow">M</span> - Distant Barcodes](https://leetcode.com/problems/distant-barcodes/description/) - 
@@ -1599,6 +1600,14 @@ defaultdict(lambda: defaultdict(int))
 - when processing pair from two arrays. fix one and binary_search (bisect) the other. This only requires 2nd array sorted. we do not need first array sorted. what a waste? (NlogN)
 - O(N) - two pointers solution (cf readme link)
 
+[[2035] - <span style="color:red">H</span> - Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=BIBN-vYO4Gk) -
+[`DP`][`Knapsack`]
+
+- [1049]
+- 
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
