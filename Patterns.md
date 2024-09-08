@@ -599,6 +599,16 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 ```
 
+```md
+### 0/1 knapsack problems
+-> Subset sum
+-> Equal sum partition
+-> Count of subsets sum with a given sum
+-> Minimum subset sum difference
+-> Count the number of subset with a given difference
+-> Target sum
+```
+
 ```yaml
 * Two Dimension DB (ii, capacity) = (idx of resource, capacity)
 > DP Type I/II VS Knapsack problem
