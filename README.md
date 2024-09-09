@@ -1150,6 +1150,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 Todo:
 * video solution
+* use c++ set solution for Java/python
 * redo [0494] target sum
 * list of 0/1 knapsack
 
