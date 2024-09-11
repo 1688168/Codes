@@ -1,3 +1,27 @@
+# ----------------
+# 20240911
+# ----------------
+class Solution:
+    def lastStoneWeightII(self, stones: List[int]) -> int:
+        ss = set([0])
+        for s in stones:
+            ns=ss.copy()
+            ss=set()
+
+            for x in ns:
+                ss.add(x+s)
+                ss.add(x-s)
+
+
+        ans=math.inf
+
+        for x in ss:
+            if x >=0 and x < ans: ans=x
+        
+        return ans
+
+
+###################
 class Solution:
     def lastStoneWeightII(self, stones: List[int]) -> int:
         """
