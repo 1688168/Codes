@@ -1160,6 +1160,7 @@ Todo:
 ```
 
 - [0494] - target sum
+- [1755]
 - [2035]
 - 穷举法 （exhaustive method)
 - list of 0/1 kanpsack
@@ -1528,6 +1529,12 @@ while subset > 0:
     # to something on the subset
     subset=(subset-1)&state
 ```
+[[1755] - <span style="color:red">H</span> - Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=h0CpI4N813Q) -
+[``]
+
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
@@ -1624,7 +1631,7 @@ defaultdict(lambda: defaultdict(int))
 [`DP`][`Knapsack`]
 
 - [1049]
-- 
+- [1755]
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
