@@ -21,3 +21,4 @@ map[j]={y1, y2, ..., yj} //given num need from 2nd half, what are the potential 
 
 >> 1st half:traverse and binary serch 2nd half
 * O(2^n * log(2^n)) = o(2^n*n)
+> why 双向奔赴？
