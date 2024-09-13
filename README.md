@@ -1534,7 +1534,7 @@ while subset > 0:
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=h0CpI4N813Q) -
 [``]
-
+- is this the classic knapsack problem?
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
@@ -1631,7 +1631,7 @@ defaultdict(lambda: defaultdict(int))
 [`DP`][`Knapsack`]
 
 - [1049]
-- [1755]
+- [1755]: classic knapsack problem
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
