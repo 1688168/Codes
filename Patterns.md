@@ -583,7 +583,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 # Knapsack basic pattern:
 * Given a list of resource with profit/cost
 * given a limitation on total cost (capacity)
-* notice, resource profit need to be postive (cannot handle +/- resource)
+* classic knapsack problem assumes resources with postive profit so we can maximize it.  if resource could have negative contribution/profit -> cannot apply classic knapsack template
 
 # Knapsack decision variations:
 * take/skip resource and accumulate profit
