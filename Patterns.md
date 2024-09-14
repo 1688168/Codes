@@ -1,5 +1,9 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
+> Complexity/pattern analysis
+* N<=20
+  -> check every subset sum: 2^20
+
 > How to traverse all subset of a bit
 
 ```python
@@ -579,6 +583,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 # Knapsack basic pattern:
 * Given a list of resource with profit/cost
 * given a limitation on total cost (capacity)
+* notice, resource profit need to be postive (cannot handle +/- resource)
 
 # Knapsack decision variations:
 * take/skip resource and accumulate profit
