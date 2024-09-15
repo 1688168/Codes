@@ -14,25 +14,25 @@
 """
 class Solution:
     def minAbsDifference(self, nums: List[int], goal: int) -> int:
-        offset = 2^9*40
+        # max sum: 40*10^7 = 4*10^8
+        offset = 10^9 # max goal
         dp=[-math.inf]*(offset*2+5)
         total = sum(nums)
+        dp[offset]=0
         for ii, nn in enumerate(nums): #for each num by contribution method
-            dp_old=dp.copy()
-            dp=[-math.inf]*(offset*2+5)#reset dp for next round
+            
+            dp_new=[-math.inf]*(offset*2+5)#reset dp for next round
             for jj in range(-offset, offset+1, 1):
-                #if jj>goal: continue # we don't care about anything greater than goal
-                if ii==0 and jj>= nn: #first item, as long as capacity allows
-                    dp[jj+offset]=nn
-                    continue
-                if dp_old[jj+offset]==-math.inf: continue
+                if dp[jj+offset]==-math.inf: continue #cannot base on invalid base
+
                 #skip
-                dp[jj+offset] = max(dp[jj+offset], dp_old[jj+offset])
-                #take
-               
+                dp_new[jj+offset] = max(dp_new[jj+offset], dp[jj+offset])
+
+                #take   
                 if -offset <=jj+nn <=offset:
-                    dp[jj+nn+offset] = max(dp[jj+nn+offset], dp_old[jj+offset]+nn)
-     
+                    dp_new[jj+nn+offset] = max(dp_new[jj+nn+offset], dp[jj+offset]+nn)
+            dp=dp_new
+
         # # find the larget feasible sumA
         # for jj in range(goal, -offset-1, -1):
         #     if dp[jj+offset] != -math.inf:
@@ -40,7 +40,7 @@ class Solution:
         #      break
         
         sumA=dp[goal+offset]
-        if sumA==-math.inf: return abs(goal)
+
         # print("sumA: ", sumA, "goal+offset: ", goal+offset)
         # print("total: ", total)
         sumB=total-sumA
