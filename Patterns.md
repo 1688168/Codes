@@ -1,11 +1,9 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
-> Complexity/pattern analysis
-* N<=20
-  -> check every subset sum: 2^20
+
+
 
 > How to traverse all subset of a bit
-
 ```python
 # how to traverse all subset of a bit
 subset=state
