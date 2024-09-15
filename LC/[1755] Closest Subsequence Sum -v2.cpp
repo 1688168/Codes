@@ -31,8 +31,8 @@ public:
     // }
     vector<int> getSubSetSums(vector<int> & nums){
         /* merge sort:
-        sums = {a1, a2, ..., ak}
-               {a1+nums[ii], a2+nums[ii], ..., ak+nums[ii]}
+        sums[ii] = {a1, a2, ..., ak}
+        sums'[jj]  {a1+nums[ii], a2+nums[ii], ..., ak+nums[ii]}
         sums = {b1, b2, ..., b2k}
         
         */
