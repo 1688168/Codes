@@ -3,7 +3,7 @@ class Solution {
 public:
     int minAbsDifference(vector<int>& nums, int goal) {
         int m = nums.size()/2; //num in groupA
-        int n = nums.size()-m; //num in groupB
+        //int n = nums.size()-m; //num in groupB
 
         vector<int> nums1(nums.begin(), nums.begin()+m);//c++ initialize vector from subarry of another vector
         vector<int> nums2(nums.begin()+m, nums.end());
@@ -11,11 +11,12 @@ public:
         vector<int> b = getSubSetSums(nums2);
 
         bs(a, b, goal);
-        bs(b, a, goal);
+        //bs(b, a, goal); //<< this is not required
 
         return ret;
     }
 
+    //the most efficient way to get all subset sum given a list
     vector<int> getSubSetSums(vector<int>&nums){//c++ get all subset sum
         vector<int> sums;
         int m = nums.size();
@@ -35,6 +36,8 @@ public:
             auto iter = lower_bound(b.begin(), b.end(), goal-x); //binary search complement from groupB
             /*
             we are looking for sumA+sumB~goal
+            where sumA is sum of elements picked in groupA
+                  sumB is sum of elements picked in groupA
             min(diff)=sumA+SumB-goal
             */
             if (iter !=b.end()){//means we have a solution
