@@ -1534,7 +1534,13 @@ while subset > 0:
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=h0CpI4N813Q) -
 [``]
-- is this the classic knapsack problem?
+- is this the classic knapsack problem? NO.
+* classic knapsack problem need resource contribute only positive number
+
+Todo:
+1. C++: bitset, merge sort
+2. python
+3. Java
 
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
