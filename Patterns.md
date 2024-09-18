@@ -1,6 +1,22 @@
 # <p style="text-align: center"> <span style="color:Orange"> Patterns</span> </p>
 
+> How to find all subset sums given a list
 
+```cpp
+    vector<int> getSubSetSums(vector<int>&nums){//c++ get all subset sum
+        vector<int> sums;
+        int m = nums.size();
+        for(int state=0; state<(1<<m); ++state){ //from 0000->1111
+            int sum=0;
+            for(int ii=0; ii<32; ++ii){//collect a subset sum
+                if((state >>ii)&1) sum+=nums[ii]; 
+            }
+            sums.push_back(sum);
+        }
+        sort(sums.begin(), sums.end());
+        return sums;
+    }
+```
 
 
 > How to traverse all subset of a bit
