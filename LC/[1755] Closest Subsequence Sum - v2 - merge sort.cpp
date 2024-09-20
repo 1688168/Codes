@@ -38,6 +38,7 @@ public:
         sums'[jj]  {a1+nums[ii], a2+nums[ii], ..., ak+nums[ii]}
         sums = {b1, b2, ..., b2k}
         */
+       //the best way to get sorted subset sums given a list of nums.  If we do not need this sorted, just use bitset operations
         vector<int> sums({0});//notice this need to be initialized with zero
         for(int x: nums){ //for each new number
             int ii=0, jj=0;
