@@ -10,6 +10,14 @@
 > formatted string in typescript
 ```ts
 function logPlayer(name){
-    console.log('New Game Starting for player: $(name)')
+    console.log(`New Game Starting for player: ${name}`)
 }
+```
+
+> how to comment HTML
+<!-- stuff -->
+
+> DOM
+```yaml
+The document Object Model (DOM) connects web pages to JavaScript by representing the structure of a document in memory
 ```
