@@ -47,6 +47,6 @@ if(typeof messagesElement === 'string'){
 > default initialized parameters
 ```ts
 function sendGreeting(greeting: string = 'Good morning'): void {
-    
+    console.log(greting);
 }
 ```
