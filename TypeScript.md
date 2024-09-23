@@ -9,6 +9,7 @@
 
 > formatted string in typescript
 ```ts
+const varName: varType = varValue;
 function logPlayer(name){
     console.log(`New Game Starting for player: ${name}`)
 }
@@ -21,3 +22,6 @@ function logPlayer(name){
 ```yaml
 The document Object Model (DOM) connects web pages to JavaScript by representing the structure of a document in memory
 ```
+
+> union type
+* let nullableString: string | null;
