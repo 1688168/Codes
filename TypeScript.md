@@ -43,3 +43,10 @@ if(typeof messagesElement === 'string'){
     return messageElement; //this is a HTMLElement
 }
 ```
+
+> default initialized parameters
+```ts
+function sendGreeting(greeting: string = 'Good morning'): void {
+    
+}
+```
