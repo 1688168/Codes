@@ -25,3 +25,21 @@ The document Object Model (DOM) connects web pages to JavaScript by representing
 
 > union type
 * let nullableString: string | null;
+
+> type assertion (type casting)
+```
+let value: any = 5;
+let fixedString: string = (<number>value).toFixed(4); //cast the value to a "number" type and apply the method of number type
+
+let fixedString: string = (value as number).toFxied(4); //same as <number>
+```
+
+> type analysis
+```ts
+var messagesElement: HTMLElement | string;
+if(typeof messagesElement === 'string'){
+    return messagesElement; //this is a string
+}else{
+    return messageElement; //this is a HTMLElement
+}
+```
