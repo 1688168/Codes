@@ -1634,10 +1634,15 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=pl49uriKwjk) -
-[`DP`][`Knapsack`]
+[`DP`][`bruteforce`]
 
 - [1049]
 - [1755]: classic knapsack problem
+
+[`exhausted method`][`bruteforce`]  
+* when you need to bruteforce, can you partition the nums in half and bruteforce first half and sencond half, using first half to look up what you need from 2nd half.
+
+
 [[2102] - <span style="color:red">H</span> - Sequentially Ordinal Rank Tracker](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/2102.Sequentially-Ordinal-Rank-Tracker) -
