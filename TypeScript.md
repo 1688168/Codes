@@ -50,3 +50,26 @@ function sendGreeting(greeting: string = 'Good morning'): void {
     console.log(greting);
 }
 ```
+
+> static member  
+
+> constructors  
+```ts
+class Developer {
+    constructor(){ //constructor name is always constructor
+        console.log('Stuff');
+    }
+}
+
+class WebDeveloper extends Developer {
+    readonly favoriteEditor: string;
+    constructor(editor: string){
+        super();
+        this.favoriteEditor = editor;
+    }
+}
+//parameter property
+class Game {
+    constructor(public player: Player, public problemCount: number, public factor: number);
+}
+```
