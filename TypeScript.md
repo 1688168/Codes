@@ -73,3 +73,71 @@ class Game {
     constructor(public player: Player, public problemCount: number, public factor: number);
 }
 ```
+
+
+> Async, try/catch/finally pattern
+```ts
+async function example(){
+    let hero: Hero;
+    try{
+        hero = await getHero(email);
+        hero.order = await getOrders(hero);
+    } catch (error) {
+        showMessage(error);
+    }finally {
+        showProgressbar(false);
+    }
+
+    showHero(hero);
+}
+```
+
+> async/await example
+```ts
+async function renderHeroesAsync() {
+  showFetching();
+  showMessage();
+  try {
+    const heroes = await getHeroesViaAsyncAwait();
+    showHeroes(heroes);
+  } catch (error) {
+    handleErrors(error);
+  } finally {
+    wrapUp();
+  }
+}
+```
+
+> typescript array
+```ts
+const heros = [] as Hero[];
+```
+
+> promise.all
+```ts
+ const [orders, accountRep] = await Promise.all([
+    getOrdersAsync(hero.id),
+    getAccountRepAsync(hero.id)
+ ]);
+```
+
+> async using map
+```ts
+const getAllStatusAsyc = orders.map(
+    async (o: Order) => await getShippingStatusAsync(o.num);
+);
+```
+
+
+> how to print message on browser
+* showMessages(`the msg [${var}]`);
+
+
+> some async functions
+* setTimeout
+* setInterval
+
+
+> plugins to install
+* ESLint extension
+* prettier extension
