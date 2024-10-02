@@ -123,9 +123,11 @@ const heros = [] as Hero[];
 
 > async using map
 ```ts
-const getAllStatusAsyc = orders.map(
+const getAllStatusesAsyc = orders.map(
     async (o: Order) => await getShippingStatusAsync(o.num);
 );
+
+const shippingStatuses = await Promise.all(getAllStatusesAsync);
 ```
 
 
