@@ -153,7 +153,7 @@ const shippingStatuses = await Promise.all(getAllStatusesAsync);
 * console.table(data);
 * console.groupEnd();
 * console.assert(data.length === 15, {pieCount: data.length, reason: 'some msg'});
-
+* console.trace();
 ```
 
 > how to change json to string
@@ -169,4 +169,30 @@ data.forEach(element => {
         <td>View Details</td>
     </tr>
 })
+```
+
+> $0  
+* the selected element
+* $1 (previous selected)
+
+> add listener to DOM
+```js
+$0.addEventListener('click', logEvent);
+$1.addEventListener('mouseenter', logEvent)
+logo.addEventListener('click', (e) => console.log('clicked'));
+```
+
+> how to refer to html inner text.
+```js
+    $1.innerText = 'Menu'
+```
+
+> monitor a function, this prints when function is called with inputs
+```js
+    monitor(aJSFunction);
+```
+
+> debug a javascript function, debugging mode
+```js
+debug(functionName);//this opens debugger when the function is called
 ```
