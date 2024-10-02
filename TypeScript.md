@@ -143,3 +143,30 @@ const shippingStatuses = await Promise.all(getAllStatusesAsync);
 > plugins to install
 * ESLint extension
 * prettier extension
+
+> dev console
+```yaml
+* setting: Log XMLHttpRequests (turn on to show http request in console)
+
+* console.groupCollapsed('a Tag')
+* console.dir(data);
+* console.table(data);
+* console.groupEnd();
+* console.assert(data.length === 15, {pieCount: data.length, reason: 'some msg'});
+
+```
+
+> how to change json to string
+* let string = JSON.stringify(data);
+
+> how to create table
+```js
+data.forEach(element => {
+    <tr>
+        <td>${element.name}</td>
+        <td>${element.description}</td>
+        <td>${element.price}</td>
+        <td>View Details</td>
+    </tr>
+})
+```
