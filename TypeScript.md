@@ -196,3 +196,4 @@ logo.addEventListener('click', (e) => console.log('clicked'));
 ```js
 debug(functionName);//this opens debugger when the function is called
 ```
+
