@@ -201,3 +201,9 @@ debug(functionName);//this opens debugger when the function is called
 ```ts
 export {a, b, c as aliasName}
 ```
+
+> import
+```ts
+import {StaffMember as CoWorker} './person';
+import * as HR from './person'
+```
