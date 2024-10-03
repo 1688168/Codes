@@ -200,3 +200,13 @@ document.querySelector('h3').innerText="some text in the html h3 tag"
 debug(functionName);//this opens debugger when the function is called
 ```
 
+> export 
+```ts
+export {a, b, c as aliasName}
+```
+
+> import
+```ts
+import {StaffMember as CoWorker} './person';
+import * as HR from './person'
+```
