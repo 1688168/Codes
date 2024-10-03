@@ -184,7 +184,10 @@ logo.addEventListener('click', (e) => console.log('clicked'));
 
 > how to refer to html inner text.
 ```js
-    $1.innerText = 'Menu'
+$1.innerText = 'Menu'
+
+document.body.appendChild(document.createElement('h3'));
+document.querySelector('h3').innerText="some text in the html h3 tag"
 ```
 
 > monitor a function, this prints when function is called with inputs
