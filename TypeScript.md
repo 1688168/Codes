@@ -197,3 +197,7 @@ logo.addEventListener('click', (e) => console.log('clicked'));
 debug(functionName);//this opens debugger when the function is called
 ```
 
+> export 
+```ts
+export {a, b, c as aliasName}
+```
