@@ -210,3 +210,10 @@ export {a, b, c as aliasName}
 import {StaffMember as CoWorker} './person';
 import * as HR from './person'
 ```
+* node, document, DOM hierarchy
+![react](./rcs/react001.png)
+* How to walk the nodes
+![react](./rcs/react002.png)
+![react](./rcs/react003.png)
+![react](./rcs/react004.png)
+![react](./rcs/react005.png)
