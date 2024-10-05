@@ -229,3 +229,10 @@ import * as HR from './person'
 ```sh
 create-next-app globomantics
 ```
+
+> react avoid recreating function
+```
+//if we do not use useCallBack, each time the function called, we will recreate the function reference and that might trigger re-rendering to degrade the performance
+const setHouseWrapper = 
+    useCallback((house) => {setSelectedHouse(house)}, []);
+```
