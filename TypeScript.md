@@ -203,6 +203,10 @@ debug(functionName);//this opens debugger when the function is called
 > export 
 ```ts
 export {a, b, c as aliasName}
+export default doSomething;
+
+//we can rename default export to anything
+import do from "./module"
 ```
 
 > import
@@ -217,3 +221,11 @@ import * as HR from './person'
 ![react](./rcs/react003.png)
 ![react](./rcs/react004.png)
 ![react](./rcs/react005.png)
+
+> what is react
+* react component -> return JSX -> Babel -> javascript -> webpack
+
+> next commands
+```sh
+create-next-app globomantics
+```
