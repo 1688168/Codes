@@ -29,7 +29,7 @@ while subset > 0:
 ```
 
 > N VS Time complexity
-
+* [由数据范围反推算法复杂度以及算法内容](https://www.acwing.com/file_system/file/content/whole/index/content/3074/)
 ```yaml
 N    o(N)
 1e6  O(N)
@@ -41,6 +41,7 @@ N    o(N)
 1e4: O(kN)
 -> if given a string and all in lowercase
 -> highly likely the k is 26 lower chars
+
 ```
 
 > When buildung graph, if output has requirements on order (lexical order, etc), we have to use defaultdict(list) instead of defaultdict(set)
@@ -645,6 +646,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0879]: Profitable Schemes
 - [0956]: Tallest Billboard
 - [1049]: Last Stone Weight II
+- [1755]
+- [2035]
   * 穷举法 （exhaustive method)
 
 > Type I and Type II Interval DP
@@ -652,7 +655,6 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1000]: Minimum Cost to Merge Stones (most difficult DP)
 
 > Compress state
-
 - [0691]
 - [1125]
 - [1349]
