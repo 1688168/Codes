@@ -17,3 +17,12 @@
 11. cdk deploy STACK_NAME_1, STACK_NAME_2
 12. cdk deploy "*" #action be performed against all stacks in the app
 13. 
+
+
+
+> install CDK
+```sh
+* node --version
+* npm install -g aws-cdk
+* npm ls -g typescript
+```
