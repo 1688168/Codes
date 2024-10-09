@@ -39,4 +39,9 @@
 ///bin/typescript-cdk.ts //where the application start
 // here we create app and create instance of stack to app. stack file is under /lib
 ///lib
+
+* npm install @aws-cdk/aws-s3 --save
+* make sure all "CDK" package are with same version (@package.json) or they might be updated in diff time and cause issue unexpected
+* when installing new package, check all CDK package are using same package version
+* npm install@aws-cdk/aws-s3@1.62.0 (specify the version we are installing)
 ```
