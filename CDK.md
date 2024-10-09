@@ -26,3 +26,17 @@
 * npm install -g aws-cdk
 * npm ls -g typescript
 ```
+
+> AWS infrastructure with TypeScript: Getting Started
+```ts
+* cdk --version
+* npm install aws-cdk -g
+* cdk init app --language=typescript // creating new CDK application
+
+//cdk.json //defines where the entry point is (the /bin/typescript-cdk.ts)
+//package.json
+//tsconfig.json
+///bin/typescript-cdk.ts //where the application start
+// here we create app and create instance of stack to app. stack file is under /lib
+///lib
+```
