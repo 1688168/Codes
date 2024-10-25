@@ -523,6 +523,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=jNy8yM0NBdw) -
 [`DP`]
 
+[[0312] - <span style="color:red">H</span> - Burst Balloons](https://leetcode.com/problems/burst-balloons/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=BBdHB2jjNUA&t=29s) -
+[`DP`]
+
 [[0315] - <span style="color:red">H</span> - Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/315.Count-of-Smaller-Numbers-After-Self) -
