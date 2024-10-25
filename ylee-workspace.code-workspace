@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../AI"
+		},
+		{
+			"path": "../../../../Library/Mobile Documents/com~apple~CloudDocs/ylee/ylee_learning"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iosfwd": "cpp",
+			"vector": "cpp"
+		}
+	}
+}
