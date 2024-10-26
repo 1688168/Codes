@@ -754,4 +754,13 @@ data=pd.read_json(json.dumps(resp.json()['data']['report_data']), orient='record
 # Divide by zero
 ```python
 a.div(b.replace(0, np.nan)).fillna(0)
-```           3E4
+```           
+
+# apply return multiple columns
+```python
+def myFunc(row):
+    # do your things
+    return pd.Series([val1, val2], index=['colHeader1', 'colHeader2'])
+
+df_target[['colHeader1', 'colHeader2']] = df_target.apply(myFunc, axis=1)
+```
