@@ -1,8 +1,14 @@
 function maxCoins(nums: number[]): number {
     const n = nums.length;
-    const extendedNums = [1, ...nums, 1]; // Add 1 before and after nums array
+
+    //ts: how to insert to array
+    const extendedNums = [1, ...nums, 1]; // Add 1 before and after nums array, ts spreading. ts insert array
 
     // Initialize the DP table
+    //ts: how to initialize an array with defined size
+    //ts: how to generate an array
+    //ts: generate a list of undefined with size (n+2)
+    //ts: each undefined then is mapped to an array of size (n+2) and initialized with 0
     const dp: number[][] = Array.from({ length: n + 2 }, () => Array(n + 2).fill(0));
 
     // Fill the DP table
