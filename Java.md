@@ -74,6 +74,22 @@ public class Test {
 * Optional was primarily designed to be used as a return type for methods.
 * Optional can NOT be serialized.  -> cannot be used as return type that need to be seralized.
 
+```java
+//returning optional
+return Optional.of(product); //if we found the product
+return Optional.empty(); //if product is NOT found
+
+//if the function return type is NOT optional. converting it to become optional
+Optional<Product> optional = Optional.ofNullable(findProductById(23423));
+
+//how to process optional return 
+if(optional.isPresent()){
+    Product product = optional.get();
+}else{
+
+}
+```
+
 ```java  
 //consider an legacy function that could return null, we want to convert it to return Optional
 Optional<Product> optional2 = Optional.ofNullable(getProductById(12345)); //to convert getProductById which could return null to become return Optional
@@ -119,7 +135,7 @@ optional.ifPresentOrElse(
 Set<Long> productIds = Set.of(3132L, 23234L, 982342L);
 List<Product> products = productIds.stream()
 .map(OptionalExample02::findProductById) //stream of optional of product
-.flatMap(Optional::stream) //flat out the optional result
+.flatMap(Optional::stream) //flat out the optional result, (null is removed)
 .toList();//convert to list
 ```
 
