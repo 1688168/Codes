@@ -334,6 +334,13 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=prmHWUETpXw) -
 [`DFS`][`classic`]
 
+[[0202] - <span style="color:green">E</span> - Happy Number](https://leetcode.com/problems/happy-number/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Fast/Slow pointer`]
+
+
 [[0206] - <span style="color:green">E</span> - Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - 
 [[Python]]()
 [[CPP]]() -
@@ -677,6 +684,13 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [`Stack`][`monotonic stack`][`classic`][`form smallest sequence`]
 
 - How to make a list of number monotonically increasing
+  
+[[408] - <span style="color:green">E</span> - Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Two Pointers`]
+
 
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()
