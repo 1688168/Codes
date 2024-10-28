@@ -632,6 +632,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 
 - the initial value of ans is special
 
+[[0375] - <span style="color:yellow">M</span> - Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=VfJPDNG0nYM) -
+[`DP`][`Interval DP`]
+
 [[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
