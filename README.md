@@ -638,6 +638,13 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://www.youtube.com/watch?v=VfJPDNG0nYM) -
 [`DP`][`Interval DP`]
 
+```
+* why is this a type VI DP (interval)?  
+-> each time you pick a number, we partition the range into two parts (higher, lower)
+-> can you come up with a greedy algorithm?
+* DP is better than top-down-memo solution -> avoided stack
+```
+
 [[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
