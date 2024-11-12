@@ -588,9 +588,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > Type V: Type II Intervals
 
-- [312]: Burst Balloons
-- [375]: Guess Number Higher or Lower II
-- [516]: Longest Palindromic Subsequence
+- [0312]: Burst Balloons
+- [0375]: Guess Number Higher or Lower II
+- [0516]: Longest Palindromic Subsequence
 - [1246]: Palindrome Removal
 
 > Type VI: Knapsack
