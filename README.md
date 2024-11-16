@@ -793,6 +793,14 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [`Patterns`]
 
 
+[[0516] - <span style="color:red">H</span> - Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=HulnwZ3mnno) -
+[`DP`]
+
+* type V DP, interval DP
+
 [[0535] - <span style="color:yellow">M</span> - Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/535.Encode-and-Decode-TinyURL) -
