@@ -1,4 +1,11 @@
 # <p style="text-align: center"> <span style="color:Orange"> Interval DP</span> </p>
+
+<p>
+    * Interval DP is always trying to remove something.  On each removal, we create smaller partition.  
+    * Interval DP is always from full range and partition into smaller range.
+</p>
+
+
 # [`0312`]
 * given o o o o x o o o o o
 * burst x to collect x*(prev_border)*(next_border) coins
