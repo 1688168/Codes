@@ -1292,6 +1292,13 @@ Todo:
 [[Video]]() -
 [`Patterns`]
 
+
+[[1246] - <span style="color:red">H</span> - Palindrom Removal](https://leetcode.com/problems/palindrome-removal/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DP`]
+
 [[1249] - <span style="color:yellow">M</span> - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1249.Minimum-Remove-to-Make-Valid-Parentheses) -
