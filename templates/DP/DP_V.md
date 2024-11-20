@@ -59,6 +59,23 @@ o o o o o o o
 * trying to find optimal solution: hint for DP (max length)
 * what kind of DP?
 * longest increasing subsequence
+
+# [`1246`]
+[`Problem Statement`]  
+* Given a String, remove palindromic substring as one move
+* min removal required to remove the string
+[`Analysis`]  
+* N=20 (bruteforce, greedy, DP)
+* DP: 
+  * remove something
+  * subarray
+
+[`DP type V`]  
+* dp[ii][jj]: min removal required to remove substring [ii, jj]
+  
+* dp[ii][jj] = dp[ii+1][jj-1] if s[ii]=s[jj]
+  else
+             = 1+min(dp[ii][jj-1], dp[ii+1][jj])
    
 
 
