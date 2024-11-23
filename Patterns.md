@@ -587,11 +587,12 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1335]: Minimum Difficulty of a Job Schedule
 
 > Type V: Type II Intervals
-
+- [0131]
 - [0312]: Burst Balloons
 - [0375]: Guess Number Higher or Lower II
 - [0516]: Longest Palindromic Subsequence
 - [1246]: Palindrome Removal
+- [3018]
 
 > Type VI: Knapsack
 ```md

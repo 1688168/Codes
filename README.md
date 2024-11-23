@@ -2180,6 +2180,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
+[[3018] - <span style="color:red">H</span> - Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=6r6S6kaDd8o) -
+[`DP V`]
+
 ---
 
 [[] - <span style="color:red">H</span> - desc]() - 

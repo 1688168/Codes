@@ -1,3 +1,5 @@
+> why stream API is not part of collection API?
+
 > flatmap (merging sub-streams from original stream)
 ```java
 long count =
