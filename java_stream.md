@@ -1,3 +1,11 @@
+> Building a stream from data in memory
+1. from a collection
+2. from an array
+3. from a text file
+4. from a regex
+5. from a string
+
+
 > why stream API is not part of collection API?
 * map/filter/average in collection duplicates the data 
 * The collection Frameowrk is not the right place to implement map/filter/reduce
@@ -67,18 +75,22 @@ List<Person> people = List.of(p01, p02, p03);
 //java convert list to stream object
 Stream<Person> stream = people.stream();
 ```
-> java create stream from array.  Java create an array with initialized values
+> java create stream from array of objects.  Java create an array with initialized values
 ```java
-Person[] people = {p01, p02, p03};
-Stream<Person> peopleStream = Arrays.stream(people);
+Person[] people = {p01, p02, p03};//array of objects
+Stream<Person> peopleStream = Arrays.stream(people).forEach(p -> System.out.println(p));
+//or
+Arrays.stream(people).forEach(System.out::println);//method reference
+//or
 Stream<Person> peopleStream = Stream.of(people);
 ```
 
-> create stream from file
+> create stream from text file; stream from a file
 ```java
 import java.util.stream.Stream;
 
-Path path = Path.of("data/first-name.txt");
+Path path = Path.of("data/first-name.txt");//java path
+//java read a file line by line
 try (Stream<String> lines = Files.lines(path);){//try with resource pattern
     long count = lines.count();
     System.out.println("Count = " + count);
@@ -89,11 +101,11 @@ try (Stream<String> lines = Files.lines(path);){//try with resource pattern
 > stream - split of string
 ```java
 
-
 //use regex - no construction of array, no memory foot print
-Pattern pattern = Pattern.compile(" ");
-long count2 = pattern.splitAsStream(sentence).count();
+Pattern pattern = Pattern.compile(" "); //java regex example
+long count2 = pattern.splitAsStream(sentence).count();//no stroage in intermediate steps
 
+//java splitting String into chars
 sentence.chars() //convert string to stream of char codes; string to chars
 .mapToObj(codePoint -> Character.toString(codePoint)) //convert char code to stream of strings
 .filter(letter -> !letter.equals(" "))
@@ -103,7 +115,7 @@ sentence.chars() //convert string to stream of char codes; string to chars
 
 
 //bad way of doing it as we store intermediate array in memory
-String[] words = sentence.split(" ");
+String[] words = sentence.split(" ");//paying the price of storing the results
 Stream<String> wordsStream = Arrays.stream(words);
 
 long count = wordsStream.count();
