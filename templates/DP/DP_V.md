@@ -1,6 +1,15 @@
 # <p style="text-align: center"> <span style="color:Orange"> Interval DP</span> </p>
 
 <p>
+  * DP is about how to derive current state from previous state
+  * It will ask you about some optimal solution: max profit/min cost
+  * unknow state is derived from previous known state
+  * most likely the base case is developing from smaller interval to bigger interval. 
+  * but sometimes the know state is the bigger interval and we move from there to smaller interval (3018)
+  * You have to review carefully on what is known as starting state and moving bigger or smaller
+</p>
+
+<p>
     * Interval DP is always trying to remove something.  On each removal, we create smaller partition.  
     * Interval DP is always from full range and partition into smaller range.
 </p>
@@ -79,6 +88,6 @@ o o o o o o o
    
 
    # [`3018`]
-   
+
 
 
