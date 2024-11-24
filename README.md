@@ -242,6 +242,13 @@
 [[Video]]() -
 [`Patterns`]
 
+[[0131] - <span style="color:red">M</span> - Palindrome Partitioning
+](https://leetcode.com/problems/palindrome-partitioning/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=OqYHNDmG13g) -
+[`DFS`][`DP V`]
+
 [[0134] - <span style="color:yellow">M</span> - Gas Station](https://leetcode.com/problems/gas-station/description/) - 
 [[Python]]()
 [[CPP]]() -

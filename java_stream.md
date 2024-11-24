@@ -1,19 +1,73 @@
 > why stream API is not part of collection API?
+* map/filter/average in collection duplicates the data 
+* The collection Frameowrk is not the right place to implement map/filter/reduce
+* stream object does NOT duplicate any data
+* mapfilter/reduce
+  
+```java
+list.stream()
+.map()
+.filter()
+.average();
+```
+> two types of methods
+* intermediate method: convert a stream to another stream
+* terminal method: produce results
 
 > flatmap (merging sub-streams from original stream)
+> when you need to merge streams, combine streams into a big stream
 ```java
 long count =
 cities.stream()
-    .flatMap(city -> city.getPeople().,stream()) //converting from original stream and convert to a combined new stream
+    .flatMap(city -> city.getPeople().stream()) //converting from original stream and convert to a combined new stream
     .count();
 
 cities.stream()
-    .flatMap(city -> city.getPeople().,stream()) //converting from original stream and convert to a combined new stream
+    .flatMap(city -> city.getPeople().stream()) //converting from original stream and convert to a combined new stream
     .map(p -> getName())
-    .forEach(name -> System.out.println(name));
+    .forEach(name -> System.out.println(name));//print an attribute from a stream of object
+```
+> java declare a function object
+```java
+Function<City, Stream<Person>> flatMapper = city -> city.getPeople().stream();
+```
+> Java Variable arguments (spreading)
+```
+public int doSomething(int ...a){
+    for(int ii: a){
+        System.out.println(ii);
+    }
+}
 ```
 
-> create stream from array
+```java
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class MyClass {
+  
+  static void printMany(String ...elements) {//java variable arguments
+     Arrays.stream(elements).forEach(System.out::println);//java print all array elements via stream
+  }
+  
+  public static void main(String[] args) {
+    printMany("one", "two", "three");
+    printMany(new String[]{"one", "two", "three"});//java declare an String array with initial values
+    printMany(Stream.of("one", "two", "three").toArray(String[]::new));//java convert Stream of String to String array
+    printMany(Arrays.asList("foo", "bar", "baz").toArray(new String[3]));//java convert list of String to Array of String
+  }
+}
+```
+
+
+> java create an list with initialized values
+```java
+List<Person> people = List.of(p01, p02, p03);
+
+//java convert list to stream object
+Stream<Person> stream = people.stream();
+```
+> java create stream from array.  Java create an array with initialized values
 ```java
 Person[] people = {p01, p02, p03};
 Stream<Person> peopleStream = Arrays.stream(people);
