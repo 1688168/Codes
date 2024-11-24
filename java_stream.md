@@ -105,6 +105,7 @@ try (Stream<String> lines = Files.lines(path);){//try with resource pattern
 Pattern pattern = Pattern.compile(" "); //java regex example
 long count2 = pattern.splitAsStream(sentence).count();//no stroage in intermediate steps
 
+//java remove space in a string by stream pattern and remove duplicate chars and sort
 //java splitting String into chars
 sentence.chars() //convert string to stream of char codes; string to chars
 .mapToObj(codePoint -> Character.toString(codePoint)) //convert char code to stream of strings
@@ -122,12 +123,20 @@ long count = wordsStream.count();
 
 ```
 
-> stream filtering/selecting
+> Java stream filtering/selecting
 ```java
-IntStream.range(0, 30) //[0, 30)
+IntStream.range(0, 30) //[0, 30) - java create an int stream from 0~19
 .skip(10)//the element we are going to skip
 .limit(10)//take only first 10 elements (in this case (10~19))
 .forEach(index -> System.out.print(index + " "))
+
+// read a file line by line, print line 10 to line 20
+Path path = Path.of("data/first-names.txt");
+try(Stream<String> lines = Files.lines(path);){
+    lines.skip(20).limit(10).forEach(System.out::println);
+}catch (IOException e){
+    e.printStackTtrace();
+}
 
 ```
 
