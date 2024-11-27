@@ -144,13 +144,13 @@ try(Stream<String> lines = Files.lines(path);){
 ```java
 double average =
     people.stream()
-    .mapToInt(p->p.getAge()) //or .mapToInt(Person::getAge) (use method reference)
+    .mapToInt(p->p.getAge()) //or .mapToInt(Person::getAge) (use method reference).  here mapToInt convert stream to intStream
     .filter(age -> age > 20)
-    .average() //this return optional
-    .orElseThrow() //how to handle optional
+    .average() //this return optional.  this aggregation only available in number streams
+    .orElseThrow() //how to handle optional-or throw no such element exception
 ```
 
-> concatenating sting
+> java using stream concatenating stings
 ```java
 String statement = composeHeader();
 
