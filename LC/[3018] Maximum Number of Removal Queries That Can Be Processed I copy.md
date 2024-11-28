@@ -24,4 +24,12 @@ dfs(0, N-1) = (nums[ii] > query[kk]) + max(dfs(1, N-1), dfs(0, N-2))
 -> deriving status for smaller interval from bigger interval
 -> we can try taking kk (the 3rd dimension) into the DFS. but calc the time-complexity.  queries len is also 1K
 
-dp[ii][jj]: the maximum number of passed queries when we cut down to [ii:jj]
+=> dp[ii][jj]: the maximum number of passed queries when we cut down to [ii:jj]
+-> when we have full length (orighnal nums), we cut zero (cannot cut anything)
+-> the max num of passed queries will happen when we eliminate all nums (either remove @ beginning or we cut it by query)
+
+Algorithm:
+1. use DP from full-length and go down to len=1 see how many queries we can perform. 
+2. we cannot go to zero as we need prev/next on ii to leverage the DP
+3. all the numbers can either be cut by query or eliminate by initial replacement. so, max queries we can perform definitely will happen when we have no numbers left (worst case scenaro is we could peform zero queries and eliminate all numbers initially)
+4. so to determine the optimal answer, we will check if we can eliminate the last number and keep the max.
