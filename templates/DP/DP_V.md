@@ -2,6 +2,7 @@
 
 <p>
   * DP is about how to derive current state from previous state
+  * DP[ii]: the value of the DP typically is what the question is asking for (the optimal answer).  cf 3018.  dp[ii][jj]=max query performed.`
   * It will ask you about some optimal solution: max profit/min cost
   * unknow state is derived from previous known state
   * most likely the base case is developing from smaller interval to bigger interval. 
