@@ -89,6 +89,32 @@ o o o o o o o
    
 
    # [`3018`]
+   [`Problem Statement`]  
+   
+    Given:     
+     1. nums  
+     2. queries
+    
+    * you can replace the nums with it's subsequence one time @ the beginning  
+    => you can remove any elements of nums
+  
+    * you can eliminate nums[0] or nums[-1] if queries[ii] is >= beginning or ending or nums[ii]  
+
+    Asking => max query num you can perform
+
+[`why this is a DP V`]  
+1. N=1000
+2. we need to optimize something as result
+3. We are removing something and each time we remove something we change the interval size
+
+4. define DP 
+dp[ii][jj] = max queries you can perform
+
+5. since we know dp[0][-1]=0  --> we go from max interval and reducing to len=1
+6. at end of the date, we will have only one element left. as we cannot possible represent empty interval. so we check all the single char intervals and see if we can eliminate it
+7. return the max on those single char use cases.
+   
+
 
 
 
