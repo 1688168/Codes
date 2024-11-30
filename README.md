@@ -705,12 +705,17 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 
 - How to make a list of number monotonically increasing
   
-[[408] - <span style="color:green">E</span> - Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) - 
+[[0408] - <span style="color:green">E</span> - Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Two Pointers`]
 
+[[0410] - <span style="color:green">E</span> - Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=PBvgA3sV5Zs) -
+[`DP`][`DP IV`]
 
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()
