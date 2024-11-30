@@ -4,7 +4,7 @@ public:
     int maximumProcessableQueries(vector<int>& nums, vector<int>& queries) {
         int n = nums.size();
         dp[0][n-1] = 0;//initially, we performed zero query
-        for(int len=n-1; len>=1; --len){//from big interval and reducing
+        for(int len=n; len>=1; --len){//from big interval and reducing
             for(int ii=0; ii+len-1<n; ++ii){//ii as starting interval
                 int jj=ii+len-1; //jj as the ending of the interval
                 if(ii-1>=0){//current interval is from previous bigger interval. remember, we are going from bigger to smaller
