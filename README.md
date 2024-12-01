@@ -715,7 +715,7 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=PBvgA3sV5Zs) -
-[`DP`][`DP IV`]
+[`DP`][`DP IV`][`Binary Search`]
 
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()

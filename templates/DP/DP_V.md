@@ -1,4 +1,4 @@
-# <p style="text-align: center"> <span style="color:Orange"> Interval DP</span> </p>
+# <p style="text-align: center"> <span style="color:Orange">DP Interval II</span> </p>
 
 <p>
   * DP is about how to derive current state from previous state
