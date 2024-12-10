@@ -561,10 +561,10 @@ dp[ii][jj] = dp[ii-1][jj]+something
 -> return dp[-1][-1]
 ```
 
-- [72]: \*Edit Distance
-- [97]: Interleaving String
-- [115]: Distinct Subsequences
-- [727]: Minimum Window Subsequence
+- [0072]: \*Edit Distance
+- [0097]: Interleaving String
+- [0115]: Distinct Subsequences
+- [0727]: Minimum Window Subsequence
 - [1092]: \*Shortest Common Supersequences
   - How to trace back the optimal solution (display path)
 - [1143]: \*Longest Common Subsequences
@@ -573,8 +573,8 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 > > LCS/SCS Variation
 
-- [583]: Delete Operation for two strings
-- [712]: Minimum ASCII Delete Sum for Two Strings
+- [0583]: Delete Operation for two strings
+- [0712]: Minimum ASCII Delete Sum for Two Strings
 - [1035]: \*Uncrossed Lines (LCS)
 - [1216]: Valid Palindrome III
 - [1312]: Minimum Insertion Steps to Make a String Palindrome
@@ -587,11 +587,12 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1335]: Minimum Difficulty of a Job Schedule
 
 > Type V: Type II Intervals
-
-- [312]: Burst Balloons
-- [375]: Guess Number Higher or Lower II
-- [516]: Longest Palindromic Subsequence
+- [0131]
+- [0312]: Burst Balloons
+- [0375]: Guess Number Higher or Lower II
+- [0516]: Longest Palindromic Subsequence
 - [1246]: Palindrome Removal
+- [3018]
 
 > Type VI: Knapsack
 ```md

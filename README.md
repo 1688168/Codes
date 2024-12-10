@@ -242,6 +242,13 @@
 [[Video]]() -
 [`Patterns`]
 
+[[0131] - <span style="color:red">M</span> - Palindrome Partitioning
+](https://leetcode.com/problems/palindrome-partitioning/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=OqYHNDmG13g) -
+[`DFS`][`DP V`]
+
 [[0134] - <span style="color:yellow">M</span> - Gas Station](https://leetcode.com/problems/gas-station/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -632,6 +639,19 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 
 - the initial value of ans is special
 
+[[0375] - <span style="color:yellow">M</span> - Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=VfJPDNG0nYM) -
+[`DP`][`Interval DP`]
+
+```
+* why is this a type VI DP (interval)?  
+-> each time you pick a number, we partition the range into two parts (higher, lower)
+-> can you come up with a greedy algorithm?
+* DP is better than top-down-memo solution -> avoided stack
+```
+
 [[0376] - <span style="color:yellow">M</span> - Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/376.Wiggle-Subsequence) -
@@ -685,12 +705,17 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 
 - How to make a list of number monotonically increasing
   
-[[408] - <span style="color:green">E</span> - Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) - 
+[[0408] - <span style="color:green">E</span> - Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
 [`Two Pointers`]
 
+[[0410] - <span style="color:green">E</span> - Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=PBvgA3sV5Zs) -
+[`DP`][`DP IV`][`Binary Search`]
 
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()
@@ -779,6 +804,14 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]]() -
 [`Patterns`]
 
+
+[[0516] - <span style="color:red">H</span> - Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=HulnwZ3mnno) -
+[`DP`]
+
+* type V DP, interval DP
 
 [[0535] - <span style="color:yellow">M</span> - Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) - 
 [[Python]]()
@@ -1270,6 +1303,13 @@ Todo:
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1245.Tree-Diameter) -
 [[Video]]() -
 [`Patterns`]
+
+
+[[1246] - <span style="color:red">H</span> - Palindrom Removal](https://leetcode.com/problems/palindrome-removal/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DP`]
 
 [[1249] - <span style="color:yellow">M</span> - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) - 
 [[Python]]()
@@ -2151,6 +2191,12 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]]() -
 [[Video]]() -
 [`Patterns`]
+
+[[3018] - <span style="color:red">H</span> - Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=6r6S6kaDd8o) -
+[`DP V`]
 
 ---
 

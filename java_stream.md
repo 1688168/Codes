@@ -1,28 +1,96 @@
+> Building a stream from data in memory
+1. from a collection
+2. from an array
+3. from a text file
+4. from a regex
+5. from a string
+
+
+> why stream API is not part of collection API?
+* map/filter/average in collection duplicates the data 
+* The collection Frameowrk is not the right place to implement map/filter/reduce
+* stream object does NOT duplicate any data
+* mapfilter/reduce
+  
+```java
+list.stream()
+.map()
+.filter()
+.average();
+```
+> two types of methods
+* intermediate method: convert a stream to another stream
+* terminal method: produce results
+
 > flatmap (merging sub-streams from original stream)
+> when you need to merge streams, combine streams into a big stream
 ```java
 long count =
 cities.stream()
-    .flatMap(city -> city.getPeople().,stream()) //converting from original stream and convert to a combined new stream
+    .flatMap(city -> city.getPeople().stream()) //converting from original stream and convert to a combined new stream
     .count();
 
 cities.stream()
-    .flatMap(city -> city.getPeople().,stream()) //converting from original stream and convert to a combined new stream
+    .flatMap(city -> city.getPeople().stream()) //converting from original stream and convert to a combined new stream
     .map(p -> getName())
-    .forEach(name -> System.out.println(name));
+    .forEach(name -> System.out.println(name));//print an attribute from a stream of object
+```
+> java declare a function object
+```java
+Function<City, Stream<Person>> flatMapper = city -> city.getPeople().stream();
+```
+> Java Variable arguments (spreading)
+```
+public int doSomething(int ...a){
+    for(int ii: a){
+        System.out.println(ii);
+    }
+}
 ```
 
-> create stream from array
 ```java
-Person[] people = {p01, p02, p03};
-Stream<Person> peopleStream = Arrays.stream(people);
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class MyClass {
+  
+  static void printMany(String ...elements) {//java variable arguments
+     Arrays.stream(elements).forEach(System.out::println);//java print all array elements via stream
+  }
+  
+  public static void main(String[] args) {
+    printMany("one", "two", "three");
+    printMany(new String[]{"one", "two", "three"});//java declare an String array with initial values
+    printMany(Stream.of("one", "two", "three").toArray(String[]::new));//java convert Stream of String to String array
+    printMany(Arrays.asList("foo", "bar", "baz").toArray(new String[3]));//java convert list of String to Array of String
+  }
+}
+```
+
+
+> java create an list with initialized values
+```java
+List<Person> people = List.of(p01, p02, p03);
+
+//java convert list to stream object
+Stream<Person> stream = people.stream();
+```
+> java create stream from array of objects.  Java create an array with initialized values
+```java
+Person[] people = {p01, p02, p03};//array of objects
+Stream<Person> peopleStream = Arrays.stream(people).forEach(p -> System.out.println(p));
+//or
+Arrays.stream(people).forEach(System.out::println);//method reference
+//or
 Stream<Person> peopleStream = Stream.of(people);
 ```
 
-> create stream from file
+> create stream from text file; stream from a file
 ```java
 import java.util.stream.Stream;
 
-Path path = Path.of("data/first-name.txt");
+Path path = Path.of("data/first-name.txt");//java path
+//java read a file line by line
 try (Stream<String> lines = Files.lines(path);){//try with resource pattern
     long count = lines.count();
     System.out.println("Count = " + count);
@@ -33,11 +101,12 @@ try (Stream<String> lines = Files.lines(path);){//try with resource pattern
 > stream - split of string
 ```java
 
-
 //use regex - no construction of array, no memory foot print
-Pattern pattern = Pattern.compile(" ");
-long count2 = pattern.splitAsStream(sentence).count();
+Pattern pattern = Pattern.compile(" "); //java regex example
+long count2 = pattern.splitAsStream(sentence).count();//no stroage in intermediate steps
 
+//java remove space in a string by stream pattern and remove duplicate chars and sort
+//java splitting String into chars
 sentence.chars() //convert string to stream of char codes; string to chars
 .mapToObj(codePoint -> Character.toString(codePoint)) //convert char code to stream of strings
 .filter(letter -> !letter.equals(" "))
@@ -47,19 +116,27 @@ sentence.chars() //convert string to stream of char codes; string to chars
 
 
 //bad way of doing it as we store intermediate array in memory
-String[] words = sentence.split(" ");
+String[] words = sentence.split(" ");//paying the price of storing the results
 Stream<String> wordsStream = Arrays.stream(words);
 
 long count = wordsStream.count();
 
 ```
 
-> stream filtering/selecting
+> Java stream filtering/selecting
 ```java
-IntStream.range(0, 30) //[0, 30)
+IntStream.range(0, 30) //[0, 30) - java create an int stream from 0~19
 .skip(10)//the element we are going to skip
 .limit(10)//take only first 10 elements (in this case (10~19))
 .forEach(index -> System.out.print(index + " "))
+
+// read a file line by line, print line 10 to line 20
+Path path = Path.of("data/first-names.txt");
+try(Stream<String> lines = Files.lines(path);){
+    lines.skip(20).limit(10).forEach(System.out::println);
+}catch (IOException e){
+    e.printStackTtrace();
+}
 
 ```
 
@@ -67,13 +144,13 @@ IntStream.range(0, 30) //[0, 30)
 ```java
 double average =
     people.stream()
-    .mapToInt(p->p.getAge()) //or .mapToInt(Person::getAge) (use method reference)
+    .mapToInt(p->p.getAge()) //or .mapToInt(Person::getAge) (use method reference).  here mapToInt convert stream to intStream
     .filter(age -> age > 20)
-    .average() //this return optional
-    .orElseThrow() //how to handle optional
+    .average() //this return optional.  this aggregation only available in number streams
+    .orElseThrow() //how to handle optional-or throw no such element exception
 ```
 
-> concatenating sting
+> java using stream concatenating stings
 ```java
 String statement = composeHeader();
 
