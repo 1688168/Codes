@@ -236,3 +236,15 @@ create-next-app globomantics
 const setHouseWrapper = 
     useCallback((house) => {setSelectedHouse(house)}, []);
 ```
+
+> arrays  
+```ts
+//declare array
+let arr: Array<object> = [];
+int arr: object[] = [];
+let arr: Array<string> = new Array();
+let arr: Array<string> = Array();
+let arr: Array<Array<string>> = [];
+
+let arr: number[] = [];
+```
