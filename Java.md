@@ -66,6 +66,29 @@ public class Test {
     }
 }
 ```
+```java
+//optional return null if no value
+import java.util.Optional;
+
+public class Example {
+
+    public static void main(String[] args) {
+        Optional<String> optionalValue = Optional.of("Hello");
+
+        String result = optionalValue.orElse(null); 
+
+        System.out.println(result); // Output: Hello
+
+        Optional<String> emptyOptional = Optional.empty();
+
+        String result2 = emptyOptional.orElse(null); 
+
+        System.out.println(result2); // Output: null
+    }
+}
+```
+
+
 
 > Optional:  
 * as a safe alternative to Null
