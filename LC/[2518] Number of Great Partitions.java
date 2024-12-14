@@ -12,7 +12,7 @@ class Solution {
         //convert int array to Integer Array List
         List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
         //insert dummy in the beginning of nums
-        list.add(0, 0);
+        list.add(0, 0); //java insert dummy in the beginning of nums
 
         //two dimential arrayList
         List<List<Integer>> dp = new ArrayList<>();   
