@@ -3,16 +3,18 @@ public:
     int splitArray(vector<int>& nums, int k) {
         int ll = *std::max_element(nums.begin(), nums.end());
         int rr = INT_MAX;
-        while(ll<rr){
+        int ans=0;
+        while(ll<=rr){
             int mm = ll+(rr-ll)/2;
             if(isFeasible(nums, k, mm)){
-                rr = mm;
+                ans=mm;
+                rr = mm-1;
             }else{
                 ll= mm+1;
             }
 
         }
-        return ll;
+        return ans;
         
     }
 
