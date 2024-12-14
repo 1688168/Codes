@@ -1,3 +1,33 @@
+##########################
+# [20241212]
+##########################
+
+class Solution:
+    def splitArray(self, nums: List[int], k: int) -> int:
+        """
+        * dp[ii][jj]: min-maxSubarraySum
+        * for kk in (jj, ii+1)
+            sum
+            dp[ii][jj]: min(dp[ii][jj], dp[ii-1][jj-1], sum)
+        """
+
+        N=len(nums)
+        dp = [[math.inf]*(k+1) for _ in range(N+1)]
+        nums=[0]+nums
+        dp[0][0]=0
+
+        for ii in range(1, N+1): #for each ii
+            for jj in range(1, min(k, ii)+1): # for each partition num
+                ss=0
+                for kk in reversed(range(jj, ii+1)): # kk is the starting idx of last partition
+                    ss+=nums[kk]
+                    dp[ii][jj] = min(dp[ii][jj], max(dp[kk-1][jj-1], ss))
+        
+        return dp[-1][-1]
+        
+
+
+######################################################
 class Solution:
     def splitArray(self, nums: List[int], k: int) -> int:
         """
