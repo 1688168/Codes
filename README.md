@@ -996,6 +996,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=Tm_hHBhQgII) -
 [`String Manipulation`][`calculator`]
 
+[[0813] - <span style="color:red">H</span> - Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-3abblXaa1s) -
+[`DP`]
+
 [[0815] - <span style="color:red">H</span> - Bus Routes](https://leetcode.com/problems/bus-routes/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/815.Bus-Routes) -
