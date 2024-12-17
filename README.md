@@ -1000,6 +1000,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=-3abblXaa1s) -
+[[Vieo]](https://www.youtube.com/watch?v=38iDzpWhIDQ) -
 [`DP`]
 
 [[0815] - <span style="color:red">H</span> - Bus Routes](https://leetcode.com/problems/bus-routes/description/) - 
