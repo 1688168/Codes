@@ -38,7 +38,18 @@
 
 # [`0813`]  
 [`Problem Statements`] 
+* given nums and k
+* asking max avg subarry sum (from the k partitions)
+
 [`Analysis`]  
+* bruteforce (search by DFS/BFS): 100!*N
+* Greedy
+* DP    <----
+* N=100
+* K=100
 * dp[ii][kk]: the maximized sum of the average of k groups for A[:ii+1]
+* if asking need K partitions -> return dp[N][K]
+* if asking any partition in 1...k -> need to find max for all k
 * [xxxxx][jj xxx ii]
+   dp[ii-1][kk-1] + avg(nus[jj:ii+1])
 * dp[ii][jj] = max(dp[ii][jj], dp[jj-1][kk-1] + avg[jj:ii+1] for jj=1, 2, ..., ii)
