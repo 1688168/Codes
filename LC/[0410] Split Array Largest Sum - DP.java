@@ -8,6 +8,7 @@ class Solution {
                               .toArray(int[][]::new);
         dp[0][0]=0;
 
+        //java convert int array to List of Integers
         //java insert dummy to the beginning of an array
         List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
         list.add(0, 0);

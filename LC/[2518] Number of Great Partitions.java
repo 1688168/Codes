@@ -9,7 +9,7 @@ class Solution {
 
         if(sum < 2*k) return 0;
 
-        //convert int array to Integer Array List
+        //convert int array to Integer Array List.  Java convert array to list of Integer
         List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
         //insert dummy in the beginning of nums
         list.add(0, 0); //java insert dummy in the beginning of nums
