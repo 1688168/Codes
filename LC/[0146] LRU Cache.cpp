@@ -1,10 +1,13 @@
 class LRUCache {
+private:
+    list<int> List;//maintain oldest/newest key order
+    unordered_map<int, list<int>::iterator> key2iter; //k2list::iterator
+    unordered_map<int, int> key2val; //k2v
+    int cap;
 public:
+
     LRUCache(int capacity) {
-        list<int> List;//maintain oldest/newest key order
-        unordered_map<int, list<int>::iterator> key2iter; //k2list::iterator
-        unordered_map<int, int> key2val; //k2v
-        int cap;
+        cap = capacity;
     }
     
     int get(int key) {
@@ -25,6 +28,24 @@ public:
     }
     
     void put(int key, int value) {
+
+        //if key already existing, we can just leverage get to reorder and update
+        if(get(key) != -1){//key existing.  get already managed ordering
+            key2val[key] = value;
+            return;
+        }
+
+        //if capacity is full, purge the least used one
+        if(key2val.size() == cap){
+            int key2Del = *List.begin();
+            List.erase(List.begin());
+            key2iter.erase(key2Del);
+            key2val.erase(key2Del);
+        }
+
+        List.push_back(key);
+        key2val[key] = value;
+        key2iter[key] = --List.end();
         
     }
 };
