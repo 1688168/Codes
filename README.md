@@ -1362,7 +1362,9 @@ Todo:
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1278.Palindrome-Partitioning-III) -
 [[Video]](https://www.youtube.com/watch?v=0lhalhxmhmw) -
-[`DP`]
+[`DP`][`DP IV`][`DP V`]
+
+* involves two types of DP
 
 [[1289] - <span style="color:red">H</span> - Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/description/) - 
 [[Python]]()
