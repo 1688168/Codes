@@ -8,8 +8,8 @@ public:
 
         //count is another DP. -> DP type V
         auto count = vector<vector<int>>(n+1, vector<int>(n+1,0));
-        for (int i=1; i<=n; i++)
-            count[i][i] = 0;
+        // for (int i=1; i<=n; i++) //this is not required
+        //     count[i][i] = 0;
         for (int len=2; len <=n; len++)
             for (int i=1; i+len-1<=n; i++)
             {
