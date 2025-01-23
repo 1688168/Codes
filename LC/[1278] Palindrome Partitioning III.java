@@ -14,7 +14,7 @@ class Solution {
         int[][] dp = new int[N+1][k+1];
         for(int ii=0; ii<=N; ++ii){
             for(int jj=0; jj<=k; ++jj){
-                dp[ii][jj] = Integer.MAX_VALUE;
+                dp[ii][jj] = Integer.MAX_VALUE/2;
             }
         }
 
