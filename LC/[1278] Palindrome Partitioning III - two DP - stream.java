@@ -7,15 +7,15 @@ class Solution {
 
         //java stream initialize two dimentional array
         int[][] dp0 = IntStream.range(0, N+1) //[0, 1, 2, ..., N]
-            .mapToObj(i -> IntStream.range(0, N+1).map(j -> (i == j) ? 0 : j-i+1).toArray())
+            .mapToObj(i -> IntStream.range(0, N+1).map(j -> (i <= j) ? 0 : j-i+1).toArray())
             .toArray(int[][]::new);
 
 
-        for(int ii=0; ii<=N; ++ii){
-            for(int jj=0; jj<=N; ++jj){
-                System.out.println("ii: " + ii + " jj: " + jj + ": "+dp0[ii][jj]);
-            }
-        }
+        // for(int ii=0; ii<=N; ++ii){
+        //     for(int jj=0; jj<=N; ++jj){
+        //         System.out.println("ii: " + ii + " jj: " + jj + ": "+dp0[ii][jj]);
+        //     }
+        // }
 
         for(int ll=2; ll<=N; ++ll){//for each len
             for(int ii=1; ii+ll-1<=N; ++ii){//for each starting idx of this len
