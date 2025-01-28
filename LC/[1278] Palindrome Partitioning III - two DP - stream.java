@@ -24,12 +24,10 @@ class Solution {
             }
         }
 
-        int[][] dp = new int[N+1][k+1];
-        for(int ii=0; ii<=N; ++ii){
-            for(int jj=0; jj<=k; ++jj){
-                dp[ii][jj] = Integer.MAX_VALUE/2;
-            }
-        }
+
+        int[][] dp = IntStream.range(0, N+1) //[0, 1, 2, ..., N]
+            .mapToObj(i -> IntStream.range(0, N+1).map(j -> Integer.MAX_VALUE/2).toArray())
+            .toArray(int[][]::new);
 
         dp[0][0] = 0;
 
