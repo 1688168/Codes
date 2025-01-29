@@ -1391,6 +1391,12 @@ Todo:
 - this is intervals
 - [1024]
 
+[[1335] - <span style="color:red">H</span> -Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DP IV`]
+
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
