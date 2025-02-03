@@ -163,7 +163,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/072.Edit-Distance) -
 [[Video]](https://www.youtube.com/watch?v=MLBFJpDxjTA) -
-[`DP`]
+[`DP`][`DP III`]
 
 [[0075] - <span style="color:yellow">M</span> - Sort Colors](https://leetcode.com/problems/sort-colors/) - 
 [[Python]]()
