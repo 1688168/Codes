@@ -717,6 +717,8 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://www.youtube.com/watch?v=PBvgA3sV5Zs) -
 [`DP`][`DP IV`][`Binary Search`]
 
+- same as [`1335`]
+
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/432.All-O-one-Data-Structure) -
@@ -1390,6 +1392,14 @@ Todo:
 
 - this is intervals
 - [1024]
+
+[[1335] - <span style="color:red">H</span> -Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=6T6iK5nFKpg&t=5s) -
+[`DP IV`]
+
+- same as [`0410`]
 
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
