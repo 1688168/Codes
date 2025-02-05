@@ -12,7 +12,7 @@ public:
         s1="#"+s1;
         s2="#"+s2;
         s3="#"+s3;
-        dp[0][0]=1;
+        dp[0][0]=1;//earlier we already checked if m+n=s3.size()
         //initialize DP (think about those that is not initialized in dp loop)
 
         for(int ii=1; ii<=m; ++ii){
