@@ -222,6 +222,13 @@
 [[Video]](https://www.youtube.com/watch?v=XaFwHqyYde0&t=62s) -
 [`DP`][`DP III`]
 
+[[0115] - <span style="color:red">H</span> - Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-Q6XfyMiYUc) -
+[`DP`][`DP III`]
+
+
 [[0121] - <span style="color:green">E</span> - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description) - 
 [[Python]]()
 [[CPP]]() -
