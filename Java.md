@@ -43,7 +43,7 @@ product.stream().filter(Product product -> product.getWeight() < 30)
 ```
 
 ```java
-//convert a list to map
+//convert a list to 
 Map<String, Long> lightProducts = products
 .stream()
 .filter(product -> product.getWeight() < 30)
@@ -73,9 +73,9 @@ import java.util.Optional;
 public class Example {
 
     public static void main(String[] args) {
-        Optional<String> optionalValue = Optional.of("Hello");
+        Optional<String> optionalValue = Optional.of("Hello");//how to assign value to optional
 
-        String result = optionalValue.orElse(null); 
+        String result = optionalValue.orElse(null);  //retrieve optional value if present otherwise return null
 
         System.out.println(result); // Output: Hello
 
@@ -141,7 +141,10 @@ optional.ifPresentOrElse(
 )
 
 ```
-
+> Java optional, return null if not present
+```java
+final var someVar =someOptional.orElse(~~null~~);
+```
 > Optional with functional programming: map, filter
 ```java
 // map
