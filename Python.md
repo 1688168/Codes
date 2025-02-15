@@ -151,3 +151,8 @@ git blame --since=1.week filename.py
 # how to remove indentation
 url?w=1
 ```
+
+> how to print python dictionary  
+```python
+print("received event: " + json.dumps(event))
+```

@@ -163,7 +163,7 @@
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/072.Edit-Distance) -
 [[Video]](https://www.youtube.com/watch?v=MLBFJpDxjTA) -
-[`DP`]
+[`DP`][`DP III`]
 
 [[0075] - <span style="color:yellow">M</span> - Sort Colors](https://leetcode.com/problems/sort-colors/) - 
 [[Python]]()
@@ -214,6 +214,20 @@
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/090.Subsets-II) -
 [[Video]](https://www.youtube.com/watch?v=Vn2v6ajA7U0) -
 [`Subsets`]
+
+
+[[0097] - <span style="color:yellow">M</span> - Interleaving String](https://leetcode.com/problems/interleaving-string/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=XaFwHqyYde0&t=62s) -
+[`DP`][`DP III`]
+
+[[0115] - <span style="color:red">H</span> - Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-Q6XfyMiYUc) -
+[`DP`][`DP III`]
+
 
 [[0121] - <span style="color:green">E</span> - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description) - 
 [[Python]]()
@@ -717,6 +731,8 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://www.youtube.com/watch?v=PBvgA3sV5Zs) -
 [`DP`][`DP IV`][`Binary Search`]
 
+- same as [`1335`]
+
 [[0432] - <span style="color:red">H</span> - All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/432.All-O-one-Data-Structure) -
@@ -995,6 +1011,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/772.Basic-Calculator-III) -
 [[Video]](https://www.youtube.com/watch?v=Tm_hHBhQgII) -
 [`String Manipulation`][`calculator`]
+
+[[0813] - <span style="color:red">H</span> - Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-3abblXaa1s) -
+[[Vieo]](https://www.youtube.com/watch?v=38iDzpWhIDQ) -
+[`DP`]
 
 [[0815] - <span style="color:red">H</span> - Bus Routes](https://leetcode.com/problems/bus-routes/description/) - 
 [[Python]]()
@@ -1355,7 +1378,9 @@ Todo:
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1278.Palindrome-Partitioning-III) -
 [[Video]](https://www.youtube.com/watch?v=0lhalhxmhmw) -
-[`DP`]
+[`DP`][`DP IV`][`DP V`]
+
+* involves two types of DP
 
 [[1289] - <span style="color:red">H</span> - Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/description/) - 
 [[Python]]()
@@ -1381,6 +1406,14 @@ Todo:
 
 - this is intervals
 - [1024]
+
+[[1335] - <span style="color:red">H</span> -Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=6T6iK5nFKpg&t=5s) -
+[`DP IV`]
+
+- same as [`0410`]
 
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()

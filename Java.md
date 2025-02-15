@@ -705,3 +705,21 @@ public class ProgramDemo {
     }
 }
 ```
+
+> java stream initialize two dimentional array
+```java
+int a = 4;               // Number of outer array elements
+int b = 2;               // Number of inner array elements
+
+int[][] board = IntStream
+    .range(0, a)                                               // iterate 0..3
+    .mapToObj(i -> IntStream.range(0, b)                       // for each iteratoe 0..1
+                            .map(j -> 1 + (i + (a + 1) * j))   // calculate the value
+                            .toArray())                        // compose the inner array
+    .toArray(int[][]::new); 
+
+// initialize two dimentional array with max Int
+  int[][] dp = IntStream.range(0, N+1)
+                              .mapToObj(ii->IntStream.range(0, k+1).map(jj -> Integer.MAX_VALUE).toArray())
+                              .toArray(int[][]::new);
+```

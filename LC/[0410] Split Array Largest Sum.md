@@ -4,6 +4,8 @@
 * minimize the largest subarray sum
   
 [`Analysis`]  
+=> binary search -> search by value
+val=[0, INT_MAX]
 
 [`DP`]
 * given an array

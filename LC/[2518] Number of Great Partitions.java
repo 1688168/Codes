@@ -9,14 +9,15 @@ class Solution {
 
         if(sum < 2*k) return 0;
 
-        //convert int array to Integer Array List
+        //java insert dummy in the beginning of nums
+        //convert int array to Integer Array List.  Java convert array to list of Integer
         List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
         //insert dummy in the beginning of nums
-        list.add(0, 0);
+        list.add(0, 0); //java insert dummy in the beginning of nums
 
-        //two dimential arrayList
+        //java two dimential arrayList
         List<List<Integer>> dp = new ArrayList<>();   
-        for(int ii=0; ii<=N; ++ii) dp.add(new ArrayList<Integer>(Collections.nCopies(k, 0)));
+        for(int ii=0; ii<=N; ++ii) dp.add(new ArrayList<Integer>(Collections.nCopies(k, 0)));//java initialized arraylist
 
         //initialize DP: set dp[0][0]=1
         dp.get(0).set(0, 1);

@@ -1,5 +1,15 @@
 # <p style="text-align: center"> <span style="color:Orange">DP Interval I</span> </p>
 
+<p>
+* Given an array nums, and partition into K -> optimize something regarding the intervals
+
+* dp[ii][kk]: 
+  * iith element
+  * KK interval (partition)
+  * Search starting index of last interval (jj)
+* return dp[N][K]
+</p>
+
 # [`0410`]  
 [`Problem Statements`]  
 * partition nums into k subarrays, find the min max subarray sum
@@ -25,4 +35,21 @@
 * looking for a min-value s.t. max subarray sum of partitions of nums is less than or equal to the min-value
 * guess a value and check if number of required partitions is less than k s.t. each partition sum is less than or equal to the guessed value
 
-  
+
+# [`0813`]  
+[`Problem Statements`] 
+* given nums and k
+* asking max avg subarry sum (from the k partitions)
+
+[`Analysis`]  
+* bruteforce (search by DFS/BFS): 100!*N
+* Greedy
+* DP    <----
+* N=100
+* K=100
+* dp[ii][kk]: the maximized sum of the average of k groups for A[:ii+1]
+* if asking need K partitions -> return dp[N][K]
+* if asking any partition in 1...k -> need to find max for all k
+* [xxxxx][jj xxx ii]
+   dp[ii-1][kk-1] + avg(nus[jj:ii+1])
+* dp[ii][jj] = max(dp[ii][jj], dp[jj-1][kk-1] + avg[jj:ii+1] for jj=1, 2, ..., ii)
