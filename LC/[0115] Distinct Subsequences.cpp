@@ -33,6 +33,7 @@ public:
                 // if(s[ii]==t[jj]) dp[ii][jj] += dp[ii-1][jj-1];
                 // dp[ii][jj] += dp[ii-1][jj];
                 if (s[ii]==t[jj])
+                    //leverage this: The test cases are generated so that the answer fits on a 32-bit signed integer.
                     dp[ii][jj] = min(LLONG_MAX/2, dp[ii-1][jj] + dp[ii-1][jj-1]);
                 else
                     dp[ii][jj] = dp[ii-1][jj];
