@@ -984,6 +984,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - If we decided NlogN as time complexity -> sort if you can.
 - Can you do this in Quick-select?
 
+[[0727] - <span style="color:red">H</span> - Minimum Window Subsequence]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.bilibili.com/video/BV18w411o7NA/?vd_source=c1f78303f3760ca1601e9654954004a6) -
+[`DP`][`DPIII`]
+
+
 [[0759] - <span style="color:red">H</span> - Employee Free Time](https://leetcode.com/problems/employee-free-time/description) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/759.Employee-Free-Time) -
