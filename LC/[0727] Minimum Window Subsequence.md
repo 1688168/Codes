@@ -9,12 +9,5 @@
   where next will take 26N, and we will do S*N look (S should be much smaller than M)
 
 
-```cpp
-
-
-```
-
-
-
 > DP III - two series counting/optimization
 * Time - M*N
