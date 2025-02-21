@@ -40,7 +40,7 @@ class Solution {
                     break;
                 }
             }
-            System.out.println(" out of loop: ed: " + ed);
+            //System.out.println(" out of loop: ed: " + ed);
             if(flag && (ed-st+1) < len) {//if we have a qualified substring and shorter
                 res=s1.substring(st, ed+1);
                 len=ed-st+1;
