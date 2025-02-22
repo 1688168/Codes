@@ -11,6 +11,7 @@ class Solution {
         */
         //we want a 2D DP initialized with Integer.MAX_VALUE;
         //var dp = new int[N1+1][N2+1];
+        //java: declare 2D array and initialize to Integer.MAX_VALUE
         var dp = IntStream.range(0, N1+1)
                           .mapToObj(ii -> IntStream.range(0, N2+1)
                                                    .map(jj -> Integer.MAX_VALUE/2).toArray()
