@@ -7,14 +7,9 @@
 * preprocess next[ii][ch]: look right from position i, the nearest index of ch
 * Time: S*N + (26*N)
   where next will take 26N, and we will do S*N look (S should be much smaller than M)
-
-
-```cpp
-
-
-```
-
-
-
+* building state-machine: 
+  * current state is built on top of previous state.
+  * considering next: next[ii][ch] = next[ii+1][ch] and consider if s1[ii+1]
+  * consider what's the known initial state and build next state from there.  the known initial state could be from s1[0] or s1[-1]
 > DP III - two series counting/optimization
 * Time - M*N
