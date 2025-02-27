@@ -547,3 +547,15 @@ public class Winner {
 }
 
 ```
+
+> calculate avg from a list of obj
+```java
+double average =
+    people.stream()
+    .mapToInt(p -> p.getAge()) //Integer stream vs stream of int
+    .filter(age -> age > 20)
+    .average() //only available in Integer stream, this actually returns optionalInt
+    .orElseThrow();
+
+//optionals of obj, optionalInt, optionalDouble, optionalLonger
+```
