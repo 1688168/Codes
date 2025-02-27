@@ -553,6 +553,7 @@ public class Winner {
 double average =
     people.stream()
     .mapToInt(p -> p.getAge()) //Integer stream vs stream of int
+    //.mapToInt(Person::getAge) //or use method reference
     .filter(age -> age > 20)
     .average() //only available in Integer stream, this actually returns optionalInt
     .orElseThrow();
