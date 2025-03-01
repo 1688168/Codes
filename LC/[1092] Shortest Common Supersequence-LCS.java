@@ -37,6 +37,13 @@ class Solution {
                 --ii;
                 --jj;
             }else{
+                /*
+                * dp[ii][jj] is the LCS of ss[:ii+1], tt[:jj+1]
+                * we are looking for Shortest-Common-Super-sequence
+                * if we know dp[ii][jj] == dp[ii-1][jj] i.e. ss[ii] is NOT part of LCS for sure (tt[jj] might or might not be). 
+                * since shortest common-subsequence need to have all chars from SS and TT, so we take SS[ii] 
+                * we do not take tt[jj] since tt[jj] could be in LCS and in that case, we just need to take 1 char count from both SS and TT (we want shortest common super-sequence)
+                */
                 ret = (dp[ii][jj]==dp[ii-1][jj]? ss.charAt(ii--):tt.charAt(jj--)) + ret;
             }
         }
