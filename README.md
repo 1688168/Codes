@@ -1263,6 +1263,7 @@ Todo:
 [`DP`][`classic`]
 
 - DP returning path
+- SCS: LCS(once) + those not in LCS
 
 [[1105] - <span style="color:yellow">M</span> - Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/description/) - 
 [[Python]]()
