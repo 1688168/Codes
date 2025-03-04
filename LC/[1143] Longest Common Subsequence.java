@@ -21,7 +21,6 @@ class Solution {
             }
         }
 
-
         return dp[N1][N2];
     }
 }

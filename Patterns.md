@@ -568,7 +568,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [1092]: \*Shortest Common Supersequences
   - How to trace back the optimal solution (display path)
 - [1143]: \*Longest Common Subsequences
-  - [0583]: \*delete to make the same
+  - [0583]: \*delete to make the same (two strings conversion)
   - [0072]: \*edit s1 into s2
 
 > > LCS/SCS Variation

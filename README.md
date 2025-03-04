@@ -864,7 +864,7 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/583.Delete-Operation-for-Two-Strings) -
 [[Video]](https://www.youtube.com/watch?v=O1K_T4ZqstM&t=8s) -
-[`DP`]
+[`DP`][`Two String Conversion`]
 
 [[0588] - <span style="color:red">H</span> - Design In-Memory File System
 ](https://leetcode.com/problems/design-in-memory-file-system/description/) - 
