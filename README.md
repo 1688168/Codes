@@ -974,6 +974,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`TopK`]
 
+[[0712] - <span style="color:yellow">M</span> - Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DP III`]
+
 [[0719] - <span style="color:red">H</span> - Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/719.Find-K-th-Smallest-Pair-Distance) -
