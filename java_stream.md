@@ -560,3 +560,13 @@ double average =
 
 //optionals of obj, optionalInt, optionalDouble, optionalLonger
 ```
+
+```java
+//how to handle optional
+List<Integer> ints = List.of(1, 1, 1, 1, 1);
+Optional<Integer> = reduce = ints.stream().reduce((i1, i2)-> i1+i2);
+
+reduce.get();
+Integer ss = reduce.orElseThrow;
+System.out.println("integer =" + sum );
+```
