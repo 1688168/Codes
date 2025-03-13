@@ -1325,6 +1325,14 @@ Todo:
 [[Video]]() -
 [`Hash`]
 
+[[1216] - <span style="color:green">E</span> - Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=TDNnLKoAQA8) -
+[`DPIII`]
+
+* cf [1312]
+
 [[1235] - <span style="color:red">H</span> - Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1235.Maximum-Profit-in-Job-Scheduling) -
