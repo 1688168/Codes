@@ -1270,6 +1270,7 @@ Todo:
 
 - DP returning path
 - SCS: LCS(once) + those not in LCS
+- cf [1312] variation/application
 
 [[1105] - <span style="color:yellow">M</span> - Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/description/) - 
 [[Python]]()
@@ -1289,6 +1290,7 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=CEnb7Ho7TYc) -
 [`DP`][`classic`]
 
+- cf [1216] variation
 - [Failed]: Amazon
 
 [[1151] - <span style="color:yellow">M</span> - Minimum Swaps to Group All 1s Together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/description) - 
@@ -1331,6 +1333,7 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=TDNnLKoAQA8) -
 [`DPIII`]
 
+* [1216] - variation of LCS[1143]
 * cf [1312]
 
 [[1235] - <span style="color:red">H</span> - Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/) - 
@@ -1418,6 +1421,15 @@ Todo:
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1293.Shortest-Path-in-a-Grid-with-Obstacles-Elimination) -
 [[Video]](https://youtu.be/2pLhH2eLaP8) -
 [`BFS`][`BFS Variation`]
+
+[[1312] - <span style="color:red">H</span> - Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=3bNrVcTMa8A) -
+[`DPIII`]
+
+- variation of [1092]
+
 
 [[1326] - <span style="color:red">H</span> - Minimum Number of Taps to Open to Water a Garden](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/description/) - 
 [[Python]]()

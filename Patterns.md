@@ -548,9 +548,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 
 
 ```
-
 > Type III: Two sequences
-
 ```yaml
 - Longest Common Subsequences
 - Shortest Common Supersequence
@@ -571,13 +569,13 @@ dp[ii][jj] = dp[ii-1][jj]+something
   - [0583]: \*delete to make the same (two strings conversion)
   - [0072]: \*edit s1 into s2
 
-> > LCS/SCS Variation
+> LCS/SCS Variation
 
 - [0583]: Delete Operation for two strings
 - [0712]: Minimum ASCII Delete Sum for Two Strings
 - [1035]: \*Uncrossed Lines (LCS)
-- [1216]: Valid Palindrome III
-- [1312]: Minimum Insertion Steps to Make a String Palindrome
+- [1216]: Valid Palindrome III -> LCS variation [1143]
+- [1312]: Minimum Insertion Steps to Make a String Palindrome -> ShortestSuperSubSequence variation [1092]
 
 > Type IV: Type I Intervals
 
