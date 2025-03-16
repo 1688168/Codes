@@ -1426,7 +1426,7 @@ Todo:
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=3bNrVcTMa8A) -
-[`DPIII`]
+[`DPIII`][`Interval DP`]
 
 - variation of [1092]
 

@@ -582,6 +582,7 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0410]: Split Array Largest Sum
 - [0813]: Largest Sum of Averages
 - [1278]: Palindrome Partitioning III
+- [1312]: min insert to Palindrome
 - [1335]: Minimum Difficulty of a Job Schedule
 
 > Type V: Type II Intervals
