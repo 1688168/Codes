@@ -141,6 +141,7 @@ try(Stream<String> lines = Files.lines(path);){
 ```
 
 > converting to int stream and apply int specific aggregations
+* java get value from optional
 ```java
 double average =
     people.stream()
