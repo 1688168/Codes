@@ -1,64 +1,43 @@
-###########
-# 20231225
-###########
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        """
-        - N: 10^5 -> NlogN
-        - presum
-        - all subarray: N(N^2)
-        - max subarray sum
-        dp[ii]: max subarray sum ending @ ii
-        -> max(dp)
+class Solution {
+    public int maxSubArray(int[] nums) {
+        //take dimension
+        int N = nums.length;
 
-        Timeseries I: curren state @ ii depends on prev state @ (ii-1)
-        dp[ii] = nums[ii] + dp[ii-1] where ii > 0 
-        """
-        N = len(nums)
-        dp = [-math.inf]*N
-        for ii in range(N):
-            if ii == 0:
-                dp[ii] = nums[ii]
-                continue
+        //insert dummy into nums
+        //java, insert dummy to beginning of int array via stream
+        nums = IntStream.concat(IntStream.of(0), IntStream.of(nums))
+                                .toArray();
+        
+        //declare dp
+        //java declare int array and initialize to 0
+        var dp = IntStream.range(0, N+1).map(ii -> Integer.MIN_VALUE/2).toArray();
+        
 
-            dp[ii] = nums[ii] + (dp[ii-1] if dp[ii-1] > 0 else 0)
+        //initialize the array
+        for(int ii=1; ii<=N; ++ii){
+            dp[ii] = Math.max(nums[ii], nums[ii]+dp[ii-1]);
+        }
 
-        return max(dp)
+        //java stream return max in in an array
+        return Arrays.stream(dp)
+                        .max()
+                        .orElseThrow(); 
 
+    }
+}
 
-###########
-# 20230919
-###########
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        N = len(nums)
-        dp = [0]*N
-        """
-        dp[ii]=max subarray sum ending @ ii
-        """
-        mx = -math.inf
-        for ii in range(N):
-            dp[ii] = max(nums[ii], nums[ii]+(dp[ii-1] if ii >= 1 else 0))
-            mx = max(mx, dp[ii])
-
-        return mx
-
-
-#####################
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        # Kadan's algorithm
-        # dp[ii]: max subarray sum ending @ ii
-        # dp[ii]=max(dp[ii-1]+dp[ii], dp[ii])
-
-        mxs = float('-inf')
-        dp = float('-inf')
-        for ii in range(len(nums)):
-            if ii == 0:
-                dp = nums[ii]
-            else:
-                dp = max(dp+nums[ii], nums[ii])
-
-            mxs = max(mxs, dp)
-
-        return mxs
+/*
+# Analysis: 
+* N=10^5
+* Largest subarray sum -> Kadane
+# Bruteforce:
+* all subarray: N^2+N -> 10^10
+# Greedy:
+# DP: build overall solution from repeating sub-problems
+* single array, current state can be derived from previous state
+*  base case: dp[0] = min(sum(nums[:1]), 0) * empty array is NOT a valid subarray
+* nums[:2] = max(nums[ii]+dp[ii-1], nums[ii], 0)
+* let dp[ii] be the max subarray sum for nums[:ii+1]
+      dp[ii] = max(nums[ii], nums[ii]+dp[ii-1], 0)
+* return max(dp)
+*/
