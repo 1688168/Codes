@@ -723,3 +723,21 @@ int[][] board = IntStream
                               .mapToObj(ii->IntStream.range(0, k+1).map(jj -> Integer.MAX_VALUE).toArray())
                               .toArray(int[][]::new);
 ```
+
+
+//Java read a CSV and process line by line
+```java
+Path path = Path.of("./someDir/file.csv")
+
+//this is stream of Object (T)
+try (Stream<String> lines = File.lines(path, StandardCharsets.ISO_8859_1);){
+    //do your thing
+    lines.skip(2)
+         .map(line -> lineToDensity.apply(line))
+         .max(Comparator.naturalOrder())
+         .orElseThrow();
+    ;//skip headers
+}catch (IOException e){
+    e.printStackTrace();
+}
+```
