@@ -820,6 +820,11 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]]() -
 [`Patterns`]
 
+[[0500] - <span style="color:green">E</span> - Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DPI`]
 
 [[0516] - <span style="color:red">H</span> - Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) - 
 [[Python]]()
