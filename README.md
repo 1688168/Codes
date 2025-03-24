@@ -240,7 +240,7 @@
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0123%5D%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/123.Best-Time-to-Buy-and-Sell-Stock-III) -
 [[Video]](https://www.youtube.com/watch?v=gsL3T9bI1RQ) -
-[`DP`]
+[`DPI`]
 
 [[0126] - <span style="color:red">H</span> - desc]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.py)
@@ -820,6 +820,11 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]]() -
 [`Patterns`]
 
+[[0509] - <span style="color:green">E</span> - Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DPI`]
 
 [[0516] - <span style="color:red">H</span> - Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) - 
 [[Python]]()
