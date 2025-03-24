@@ -571,3 +571,30 @@ reduce.get();
 Integer ss = reduce.orElseThrow;
 System.out.println("integer =" + sum );
 ```
+
+//java iterate through a list, filter result to another collection
+```java
+//This is BAD
+List<Person> pplFromNY = new ArrayList();
+people.stream().filter(p -> p.getCity().equals("NewYork"))
+      .forEach(p -> pplFromNY.add(p));
+
+//the correct pattern, use collector to convert stream into collector object
+List<Person> pplFromNY = new ArrayList();
+people.stream().filter(p -> p.getCity().equals("NewYork")).collect(Collectors.toList());
+
+//if you have custom collector
+List<Person> pplFromNY = new ArrayList();
+people.stream().filter(p -> p.getCity().equals("NewYork")).collect(Collectors.tCollection(MyCollection::new));
+
+```
+
+String names =
+  people.stream()
+  .filter(p -> p.getCity().equals("SFC"))
+  .map(p-> p.getName())
+  .collect(Collectors.joining(, )); //java stream concatenate result into a large string
+
+
+//convert List of String to array of string via java stream
+String[] arr = cities.stream().toArray(String[]::new);
