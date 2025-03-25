@@ -256,11 +256,12 @@ try (Stream<String> lines = Files.lines(path, StandardCharsets.ISO_8859_11);){ /
     e.printStackTrace();
 }
 
+//[java][collect to map][groupby]
 Map<String, List<City>> citiesPerState =
 cities.stream()
 .collect(Collectors.groupBy(city -> city.getState()));
 
-//count cities per state
+//count cities per state [java][count][groupby]
 Map<String, Long> numberOfCitiesPerState = 
 cities.stream()
 .collect(
@@ -598,3 +599,17 @@ String names =
 
 //convert List of String to array of string via java stream
 String[] arr = cities.stream().toArray(String[]::new);
+
+//[java][path][read file][process file line-by-line][read csv]
+```java
+Path path = Path.of("data/cities.csv);
+set<City> cities = null;
+
+try(Stream<String> lines = Files.Lines(path, StandardCharsets.ISO_8859_1);){
+    cities = line.skip(2);
+                 .map(lineToCity)
+                 .collect(Collectors.toSet())
+} catch (IException e){
+    e.printStackTrace();
+}
+```
