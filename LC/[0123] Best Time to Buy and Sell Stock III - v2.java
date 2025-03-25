@@ -1,19 +1,19 @@
-import java.util.Arrays;
-
 class Solution {
     public int maxProfit(int[] prices) {
-        int bought1 = Integer.MIN_VALUE;
-        int sold1 = 0;
-        int bought2 = Integer.MIN_VALUE;
-        int sold2 = 0;
+        int N = prices.length;
+        int b1 = Integer.MIN_VALUE;
+        int s1 = 0;//why zero. the initial state of best profit should always be 0
+        int b2 = Integer.MIN_VALUE;
+        int s2 = 0;//why zero. the initial state of best profit should always be 0
+        
+        for(int ii=0; ii<N; ++ii){
+            s2 = Math.max(s2, b2+prices[ii]);//please notice this is in reversed order to ensure prev value is not updated until no longer required
+            b2 = Math.max(b2, s1-prices[ii]);
+            s1 = Math.max(s1, b1+prices[ii]);
+            b1 = Math.max(b1, -prices[ii]);
 
-        for (int price : prices) {
-            bought1 = Math.max(bought1, -price);
-            sold1 = Math.max(sold1, price + bought1);
-            bought2 = Math.max(bought2, sold1 - price);
-            sold2 = Math.max(sold2, price + bought2);
         }
 
-        return sold2; // Maximum profit with at most two transactions
+        return s2;
     }
 }

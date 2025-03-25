@@ -3,8 +3,8 @@
 > ### <b><span style="color:green">Analysis</span></b>
 
 1. single array, N=10^5
-2. base case:
-   * initial states: [-inf, -inf, -inf, -inf] (since we are trying to find max profit)
+2. base case --- carefully define initial values
+   * initial states: [-inf, 0, -inf, 0] (since we are trying to find max profit)
 3. current states:
     * b1, s1, b2, s2
     * we can represent the states with 4 variables: b1, s1, b2, s2
