@@ -1289,6 +1289,13 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=bfzEK_mkmBk) -
 [`Sweep Line`][`Range Addition`][`Diff Array`]
 
+[[1137] - <span style="color:green">E</span> - N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DPI`]
+
+
 [[1143] - <span style="color:yellow">M</span> - Longest Common Subsequence]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1143%5D%20Longest%20Common%20Subsequence.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/1143.Longest-Common-Subsequence) -
