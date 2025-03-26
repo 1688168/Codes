@@ -9,7 +9,7 @@
 2. define the current state(s)
 3. identify what are the requried prevous state(s) to derive current state(s)
 4. for DP I, we do NOT need to record "ALL STATES", but just the require previous state(s)  -- (DP II, needs to record all states)
-5. think about ~~DFS~~
+5. think about DFS
 
 > # <b><span style="color:purple">Examples</span></b>
 
