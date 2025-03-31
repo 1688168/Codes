@@ -1004,7 +1004,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[0740] - <span style="color:yellow">M</span> - Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=w6wMphN_QVk) -
 [`DPI`]
 
 
