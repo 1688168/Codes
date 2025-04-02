@@ -9,14 +9,14 @@
 
 > ### <b><span style="color:green">House Robber II</span></b>
 * if we create a function to return house robber I
-* consider rob 1st
-  [R] N o o o [N]
-        ^^^^^
-        this part is house robber I
-* consier not rob 1st
-  [N] o o o o o o 
-      ^^^^^^^^^^^
-      this part is house robber I
+* consider rob 1st  
+  [R] N o o o [N]  
+        ^^^^^  
+        this part is house robber I  
+* consier not rob 1st  
+  [N] o o o o o o   
+      ^^^^^^^^^^^  
+      this part is house robber I  
 
 > ### <b><span style="color:green">Strategy</span></b>
 
