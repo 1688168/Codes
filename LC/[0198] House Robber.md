@@ -24,3 +24,4 @@
 2. in the driver class, return max of case I or II
 
 > ### <b><span style="color:green">House Robber II by interal DP</span></b>
+dp[ii][jj]: the max profit from nums[ii:jj+1]
