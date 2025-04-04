@@ -1,27 +1,14 @@
 class Solution {
-    private int hp(int st, int ed, int[] cost){
-         if(st==ed) return 0;//at the end
-         if(ed-st==1) return cost[st];//only 1 step
-
-         //starting two steps
-         int prev = cost[st];//one step
-         int prevprev=0;//no steps
-         int curr=0;
-         for(int ii=st+2; ii<=ed; ++ii){//starting from two stesp
-            curr = Math.min(prev+cost[ii-1], prevprev+cost[ii-2]);
-            prevprev=prev;
-            prev=curr;
-         }
-         return curr;
-
+    private int hp(int st, int N, int[] cost){
+        if(N<=st){//pay nothing to reach starting point
+            return cost[st];
+        }
+ 
+        int cc = N == cost.length? 0: cost[N];
+        return Math.min(hp(st, N-1, cost), hp(st, N-2, cost)) + cc;
     }
     public int minCostClimbingStairs(int[] cost) {
-        /*
-         * dp[ii]: min cost reaching ii
-         * dp[ii] = dp[ii-1] + dp[ii-2]
-         -> we need the state of prev 2 states
-         */
-        int N = cost.length;
-        return Math.min(hp(0, N, cost), hp(1, N, cost));//reducing the problem to always start from 0
+        int N = cost.length;//num of stairs
+        return Math.min(hp(0, N, cost), hp(1, N, cost));
     }
 }
