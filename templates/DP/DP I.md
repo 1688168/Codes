@@ -1,9 +1,13 @@
 # <center><b><span style="color:orange">DP I</span></b></center>
 
-> # <b><span style="color:purple">Type I definition</span></b>
+> # <b><span style="color:purple">Type I definition (no constrain)</span></b>
 1. Given an int/string array, optimize something 
 2. current state(s) (the optimized answer) can be derived from previous state(s)
 3. Or currents (optimal) state can be derived from previous states
+
+> # <b><span style="color:purple">Type I definition (with constrain)</span></b>
+* House robber -> you can make a decision on current state (pick/skip) based on previous state
+* partition the state into two pick/skip states whenver you need to make a decision
 
 > # <b><span style="color:purple">The Pattern</span></b>
 1. define the base case

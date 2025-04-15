@@ -622,4 +622,5 @@ var a = optional.ifpresent(lambda)
 var a = optional.ifPresnetOrElse(lambdaTrue, lambdaFalse);
 var a = Optional.ofNullable(functionMightReturnNull);
 var a = optional.map(Product::name).orElse("alternativeValue");
+optional.filter(aLambda).map(bLambda).orElse("alternative value");
 ```
