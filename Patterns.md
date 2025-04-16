@@ -492,7 +492,9 @@ dp[ii][jj] = dp[ii-1][jj]+something
 - [0487]
 - [1186]
 
-> Type II (Basic enhanced): Time Series 2
+> ---------------------------------------   
+> Type II (Basic enhanced): Time Series 2  
+> ---------------------------------------  
 
 ```yaml
 - O(N^2): two loops, ii, and jj < ii
