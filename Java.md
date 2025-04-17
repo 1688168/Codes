@@ -742,3 +742,7 @@ try (Stream<String> lines = File.lines(path, StandardCharsets.ISO_8859_1);){
 }
 ```
 
+> convert java object to json
+```
+new Gson().toJson(creditMemo)
+```
