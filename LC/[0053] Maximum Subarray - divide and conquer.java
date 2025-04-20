@@ -12,13 +12,13 @@ class Solution {
         //divice: partition nums from center
         int mm = st+(ed-st)/2;
 
-        //max subarray sum from center going left
+        //max subarray sum from center going left (including center)
         int max_mm_left = Integer.MIN_VALUE, acc = 0;
         for (int ii = mm; ii >= st; --ii) {
             max_mm_left = Math.max(max_mm_left, acc += nums[ii]);
         }
 
-        //max subarray sum from center going right
+        //max subarray sum from center going right (excluding center)
         int max_mm_right = Integer.MIN_VALUE;
         acc=0;
         for(int ii=mm+1; ii<=ed; ++ii){
@@ -33,7 +33,7 @@ class Solution {
         int rightMax=helper(nums, mm+1, ed);
         
         //[java:] find max out of int array.  [java:] how to find max from more than 2 elements, [java:] max
-        return IntStream.of(max_mm_left+max_mm_right, leftMax, rightMax)
+        return IntStream.of(max_mm_left+max_mm_right, leftMax, rightMax) //[java][stream][max][min]
                         .max()
                         .orElse(Integer.MIN_VALUE);
     }

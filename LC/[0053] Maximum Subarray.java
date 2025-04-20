@@ -1,43 +1,22 @@
-###########
-# 20240303
-###########
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int N = nums.length;
+        int mxs=Integer.MIN_VALUE;
+        int dp = 0;
 
-import numpy as np
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        """
-        * max subarray sum - Kadane
-        + dp[ii]: max subarray sum with index ending @ ii
-        + dp[ii]=max(nums[ii], dp[ii-1]+nums[ii])
-        """
-        N=len(nums)
-        dp=0
-        
-        ans=-int(1e9)
-        ans=-float('inf')
-        ans = -np.inf
-        for ii, nn in enumerate(nums):
-            dp=max(dp+nn, nn)
-            ans=max(ans, dp)
+        for(var x: nums){
+            dp = Math.max(dp+x, x);
+            mxs = Math.max(mxs, dp);
+        }
 
-        return ans
+        return mxs;
+    }
+}
 
+/*
+* optimize a value from a single array -> type I DP
+* -> max(sum(subarray))
+* N=10^5 -> NlogN
+* dp[ii]: max subarray sum for array ending at ii from nums
 
-        
-
-###########
-# 20230920
-###########
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        N = len(nums)
-        dp = -math.inf
-        """
-        dp[ii]=max subarray sum ending @ ii
-        """
-        mx = -math.inf
-        for ii in range(N):
-            dp = max(nums[ii], nums[ii]+dp)
-            mx = max(mx, dp)
-
-        return mx
+*/
