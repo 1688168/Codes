@@ -614,14 +614,3 @@ try(Stream<String> lines = Files.Lines(path, StandardCharsets.ISO_8859_1);){
 }
 ```
 
-> Optional
-```
-var a = optional.orElse("alternative value");
-var a = optional.orElseThrow(throw your exception);
-var a = optional.ifpresent(lambda)
-var a = optional.ifPresnetOrElse(lambdaTrue, lambdaFalse);
-var a = Optional.ofNullable(functionMightReturnNull);
-var a = optional.map(Product::name).orElse("alternativeValue");
-optional.filter(aLambda).map(bLambda).orElse("alternative value");
-final Optional<String> optionalString = anOptionalObj.map(oo -> oo.getMember());
-```
