@@ -14,13 +14,14 @@ public:
             }
         }
         
-        // for(int kk=0; kk<=n; ++kk) dp[0][0][kk] = 0;
-        // if (houses[1]!=0) //houses[0] is dummy
-        //     dp[1][1][houses[1]] = 0;//already painted (all others are invalid)
+        //this doesn't seem required, without this also works
+        for(int kk=0; kk<=n; ++kk) dp[0][0][kk] = 0;
 
-        if (houses[1]!=0) //houses[0] is dummy
+        //this is very tricky.  consider only 1 house, 1 neighborhood. the value is determined
+        //initialize dp when we only have 1 house and 1 neighborhood
+        if (houses[1]!=0) //when 1 house, 1 neighborhood and painted
         {
-            dp[1][1][houses[1]] = 0;//already painted (all others are invalid)
+            dp[1][1][houses[1]] = 0;//already painted 1st house (all other colors are invalid, stay as INT_MAX/2)
         }
         else
         {
