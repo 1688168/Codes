@@ -1,3 +1,5 @@
+//house robber strategy.
+
 class Solution {
     public int minCostII(int[][] costs) {
         int N = costs.length; //num of houses
