@@ -29,7 +29,7 @@ public:
                 dp[1][1][k] = cost[1][k-1];
         }
         
-        for(int ii=1; ii<=m; ++ii){//for each house (starting from 1, remember 0 is the dummy)
+        for(int ii=2; ii<=m; ++ii){//for each house (starting from 1, remember 0 is the dummy)
             //each house could be painted or not-painted, so we branch the condition here
             if(houses[ii]!=0){//the house is already painted -> no additional cost for current
                 for(int jj=1; jj<= target; ++jj){//also 1 indexed to match the dummy we insrted
