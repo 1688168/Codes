@@ -40,7 +40,7 @@ public:
             }
             else
             {                
-                for (int j=1; j<=target; j++)
+                for (int j=1; j<=target; j++) 
                 {
                     vector<pair<int,int>>temp;
                     for (int kk=1; kk<=n; kk++)
