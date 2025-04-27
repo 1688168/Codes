@@ -4,7 +4,7 @@ public:
     int minCost(vector<int>& houses, vector<vector<int>>& cost, int m, int n, int target) {
         //whenever current status is derived from previous stats, we need to insert dummy. for ii-1
         houses.insert(houses.begin(), 0);
-        cost.insert(cost.begin(), {{}});//c++, insert 2D vector dummy
+        cost.insert(cost.begin(), {0});//c++, insert 2D vector dummy
 
         for(int ii=0; ii<=m; ++ii){
             for(int jj=0; jj<=target; ++jj){

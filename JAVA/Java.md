@@ -759,3 +759,37 @@ var a = optional.map(Product::name).orElse("alternativeValue");
 optional.filter(aLambda).map(bLambda).orElse("alternative value");
 final Optional<String> optionalString = anOptionalObj.map(oo -> oo.getMember());
 ```
+
+
+> copy insert dummy to an array. [java][insert][array]
+```java
+import java.util.Arrays;
+
+public class InsertIntoArray {
+    public static void main(String[] args) {
+        int[] original = {1, 2, 4, 5};
+        int valueToInsert = 3;
+        int insertPosition = 2; // Insert at index 2
+
+        int[] newArray = new int[original.length + 1];
+
+        // Copy elements before the insertion point
+        System.arraycopy(original, 0, newArray, 0, insertPosition);
+
+        // Insert the new value
+        newArray[insertPosition] = valueToInsert;
+
+        // Copy the rest
+        System.arraycopy(original, insertPosition, newArray, insertPosition + 1, original.length - insertPosition);
+
+        System.out.println(Arrays.toString(newArray)); // [1, 2, 3, 4, 5]
+    }
+}
+```
+
+[java][insert][stream][array]
+```java
+        List<Integer> list = IntStream.of(nums).boxed().collect(Collectors.toCollection(ArrayList::new));
+        list.add(0, 0);
+        nums=list.stream().mapToInt(i -> i).toArray();//java convert list to int array
+```
