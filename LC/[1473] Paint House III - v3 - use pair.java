@@ -58,33 +58,33 @@ class Solution {
             }else{//the house is not painted 
                 for(int jj=1; jj<=target; ++jj){ 
                     //carry tmp as ii-1 min cost @ each color
-                    // Pair<Integer, Integer>[] tmp = new Pair[n+1];//color 1~n, 0 is dummy
-                    // for(int pkk=0; pkk<=n; ++pkk){
-                    //     tmp[pkk] = new Pair<Integer, Integer>(dp[ii-1][jj-1][pkk], pkk);
-                    // }
-                    // tmp[0] = new Pair<Integer, Integer>(Integer.MAX_VALUE/2, 0);
-                    // Arrays.sort(tmp, Comparator.comparingInt(p -> p.getKey()));
+                    Pair<Integer, Integer>[] tmp = new Pair[n+1];//color 1~n, 0 is dummy
+                    for(int pkk=0; pkk<=n; ++pkk){
+                        tmp[pkk] = new Pair<Integer, Integer>(dp[ii-1][jj-1][pkk], pkk);
+                    }
+                    tmp[0] = new Pair<Integer, Integer>(Integer.MAX_VALUE/2, 0);
+                    Arrays.sort(tmp, Comparator.comparingInt(p -> p.getKey()));
 
                     // for(int kkk=0; kkk<=n; ++kkk) System.out.println("kkk: " + tmp[kkk].getKey() + ":" + tmp[kkk].getValue());
                     //an array n color of array of 2 (cost, idx)
-                    int[][] tmp= new int[n+1][2];
-                    for(int pkk=0; pkk<=n; ++pkk){
-                        tmp[pkk][0] = dp[ii-1][jj-1][pkk];
-                        tmp[pkk][1] = pkk;
-                    }
+                    // int[][] tmp= new int[n+1][2];
+                    // for(int pkk=0; pkk<=n; ++pkk){
+                    //     tmp[pkk][0] = dp[ii-1][jj-1][pkk];
+                    //     tmp[pkk][1] = pkk;
+                    // }
 
-                    tmp[0][0] = Integer.MAX_VALUE/2;
-                    tmp[0][1] = 0;
-                    Arrays.sort(tmp, Comparator.comparingInt(p -> p[0]));
+                    // tmp[0][0] = Integer.MAX_VALUE/2;
+                    // tmp[0][1] = 0;
+                    // Arrays.sort(tmp, Comparator.comparingInt(p -> p[0]));
 
                     for(int kk=1; kk<=n; ++kk){
 
                         dp[ii][jj][kk] = dp[ii-1][jj][kk]+cost[ii][kk];//when ii and ii-1 same color
 
-                        if(kk == tmp[0][1]){//if same color, cannot, use 2nd min
-                            dp[ii][jj][kk] = Math.min(dp[ii][jj][kk], tmp[1][0]+cost[ii][kk]);
+                        if(kk == tmp[0].getValue()){//if same color, cannot, use 2nd min
+                            dp[ii][jj][kk] = Math.min(dp[ii][jj][kk], tmp[1].getKey()+cost[ii][kk]);
                         }else{//diff color, diff neighborhood
-                            dp[ii][jj][kk] = Math.min(dp[ii][jj][kk], tmp[0][0]+cost[ii][kk]);
+                            dp[ii][jj][kk] = Math.min(dp[ii][jj][kk], tmp[0].getKey()+cost[ii][kk]);
                         }
                         
                     }
