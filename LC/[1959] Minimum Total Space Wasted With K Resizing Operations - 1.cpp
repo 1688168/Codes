@@ -33,7 +33,7 @@ class Solution {
                         mx = max(mx, nums[ss]);
                         intervalSum += nums[ss];
     
-                        dp[ii][jj] = min(dp[ii][jj], dp[ss-1][jj-1]*mx*(ii-ss+1) - intervalSum);
+                        dp[ii][jj] = min(dp[ii][jj], dp[ss-1][jj-1]+mx*(ii-ss+1) - intervalSum);
                     }
     
                 }
