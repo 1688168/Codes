@@ -35,7 +35,7 @@ class Solution {
     
                         dp[ii][jj] = min(dp[ii][jj], dp[ss-1][jj-1]+mx*(ii-ss+1) - intervalSum);
                     }
-    
+
                 }
             }
     
