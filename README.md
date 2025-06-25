@@ -591,6 +591,13 @@ cache = OrderedDict()
 - graph with list (adjacency list) to maintain lexical order
 - how to reconstruct graph path with lexical order
 
+[[0338] - <span style="color:yellow">M</span> - House Robber III](https://leetcode.com/problems/house-robber-iii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=712UIJlJXSQ) -
+[`DP`]
+
+
 [[0341] - <span style="color:yellow">M</span> - Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/341.Flatten-Nested-List-Iterator) -
