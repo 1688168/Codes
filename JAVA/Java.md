@@ -793,3 +793,14 @@ public class InsertIntoArray {
         list.add(0, 0);
         nums=list.stream().mapToInt(i -> i).toArray();//java convert list to int array
 ```
+
+
+```java
+//java initialize 2D array by stream
+var dp = IntStream.range(0, N)
+                  .mapToObj(ii -> IntStream.range(0, N)
+                            .map(jj -> 0)
+                            .toArray()
+                  
+                  ).toArray(int[][]::new);
+```

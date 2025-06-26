@@ -12,7 +12,7 @@ class Solution {
                            ^^^^^^^^^^^^^^^^^^^^^^^.  ^^^^^^^^^^^^
                            rob ii                    no rob ii
         */
-        var dp = IntStream.range(0, N)
+        var dp = IntStream.range(0, N) //[java][2D][array][initialization][stream]
                           .mapToObj(ii -> IntStream.range(0, N)
                                           .map(jj -> 0)
                                           .toArray()
