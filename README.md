@@ -2147,7 +2147,7 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/results?search_query=wisdompeak+leetcode+2560) -
-[`Patterns`]
+[`BinarySearch+DP`]
 
 [[2563] -<span style="color:yellow">M</span> - Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B2563%5D%20Count-the-Number-of-Fair-Pairs.py)
