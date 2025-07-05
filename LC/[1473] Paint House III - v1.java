@@ -4,6 +4,7 @@ class Solution {
         //ii could be painted or not-painted
         //jj need to be @ target neighborhood
         //find min of last color
+        //[java][insert dummy to array]
         int[][][] dp = new int[m+1][target+1][n+1];
 
         //insert dummy for houses and cost representing 0 house, 0 neighborhood

@@ -2310,6 +2310,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=6r6S6kaDd8o) -
 [`DP V`]
 
+
+[[3429] - <span style="color:yellow">M</span> - Paint House IV](https://leetcode.com/problems/paint-house-iv/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Patterns`]
 ---
 
 [[] - <span style="color:red">H</span> - desc]() - 
