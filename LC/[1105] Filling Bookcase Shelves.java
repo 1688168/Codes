@@ -5,7 +5,7 @@ class Solution {
         int k = shelfWidth;
 
         //insert dummy
-        int[][] books2 = new int[N+1][2];
+        int[][] books2 = new int[N+1][2];//each ii is (thickness, height)
         for(int ii=0; ii<N; ++ii){
             books2[ii+1]=books[ii];
         }
