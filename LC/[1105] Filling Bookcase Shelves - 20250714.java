@@ -1,3 +1,11 @@
+/*
+ * 
+ * in this exercise, we did not setupl dummy in the beginning of the array
+ * in this case, we need to initialize those DPs where we might have array over bound when entering the loop
+ * The mistake I made in the initial take was didn't add thickness in the loop. 
+ */
+
+
 class Solution {
     public int minHeightShelves(int[][] books, int shelfWidth) {
         int N = books.length;
