@@ -1,3 +1,7 @@
+> [300 ]Longest increasing sub-sequence  
+> [368] Largest divisible subset -> nlogn sort -> Longest divisible sub-sequence
+
+
 * need to loop through previous state to determine current state
 [pattern]
 ```
@@ -10,4 +14,3 @@ for ii=
 ```
 
 [`1959`]
-* Current State 
