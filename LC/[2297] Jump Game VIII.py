@@ -38,14 +38,18 @@ class Solution:
 
         for ii, nn in enumerate(nums): # try all elements
             # constrain 1, jump higher use case:
+
+
+            # @ each ii, what are the  jjs that can jump equal-or-higher to reach ii?
+            #each new ii, all prior smaller or equal are evaluated until we hit a bigger one
             while stk_greater and nums[stk_greater[-1]] <= nn: #those jj who can jump higher is smaller or equal
                 dp[ii]=min(dp[ii], dp[stk_greater[-1]]+costs[ii])
                 stk_greater.pop()
             
             stk_greater.append(ii)
 
-
-            while stk_smaller_equal and nums[stk_smaller_equal[-1]] > nn: #you can jump higher when equal or smaller
+            # @ each ii, what are the jjs that can jump lower to readch ii
+            while stk_smaller_equal and nums[stk_smaller_equal[-1]] > nn: #you can jump lower when smaller than previous
                 dp[ii]=min(dp[ii], dp[stk_smaller_equal[-1]]+costs[ii])
                 stk_smaller_equal.pop()
             
