@@ -1462,6 +1462,12 @@ Todo:
 [[Video]](https://youtu.be/2pLhH2eLaP8) -
 [`BFS`][`BFS Variation`]
 
+[[1306] - <span style="color:yellow">M</span> - Jump Game III](https://leetcode.com/problems/jump-game-iii/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=Tt99KN19jtU) -
+[``]
+
 [[1312] - <span style="color:red">H</span> - Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/) - 
 [[Python]]()
 [[CPP]]() -
