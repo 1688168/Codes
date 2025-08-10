@@ -1488,6 +1488,13 @@ Todo:
 
 - same as [`0410`]
 
+[[Jump Game IV] - <span style="color:red">H</span> - Jump Game IV](https://leetcode.com/problems/jump-game-iv/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=SsAfFd9aN8I&t=2s) -
+[`Patterns`]
+
+
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/1352.Product-of-the-Last-K-Numbers) -
