@@ -35,10 +35,12 @@ public:
                         visited[next]=1;
                     }
                 }    
-                val2idx.erase(arr[curr_idx]);
+                val2idx.erase(arr[curr_idx]);//prune
             }
-            ++level;
-            if(visited[N-1]==1) return level;
+            ++level; 
+
+            //all indexes with this value can be pruned as they were all visited in this level -> avoid the N*N nested loop
+            if(visited[N-1]==1) return level; //if last idx is added to visited in curr_idx (it's actually the next level)
     
         }
 
