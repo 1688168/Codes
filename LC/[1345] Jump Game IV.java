@@ -1,60 +1,57 @@
-import java.util.*;
 
 class Solution {
     public int minJumps(int[] arr) {
-        int n = arr.length;
-        if (n == 1) return 0;
+        int N = arr.length;
+        if(N==1) return 0;
 
-        // value -> all indices having that value
-        Map<Integer, List<Integer>> val2idx = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            val2idx.computeIfAbsent(arr[i], k -> new ArrayList<>()).add(i);
-        }
+        //val2idx (cache given a val -> lookup all indexes with this value)
+        Map<Integer, List<Integer>> val2idx= new HashMap<>();
+        for(int ii=0; ii<N; ++ii)
+            val2idx.computeIfAbsent(arr[ii], kk -> new ArrayList<>()).add(ii); //[java][hashmap][computeIfAbsent][create if not existing]
+        
+        boolean[] visited = new boolean[N];
+        
+        //deque for queue
+        Deque<Integer> q = new ArrayDeque<>(); 
 
-        boolean[] visited = new boolean[n];
-        Deque<Integer> q = new ArrayDeque<>();
+        //root node
         q.offer(0);
         visited[0] = true;
+        int level=0;
 
-        int level = 0;
-        while (!q.isEmpty()) {
+        while(!q.isEmpty()){//[java][isempty][check q empty]
             int sz = q.size();
-            for (int k = 0; k < sz; k++) {
-                int curr = q.poll();
+            for(int zz=0; zz<sz; ++zz){//for each elements in this level
+                var curr = q.poll();//curr_idx
+                var prev=curr-1;
+                var nxt = curr+1;
 
-                // case I: curr + 1
-                if (curr + 1 < n && !visited[curr + 1]) {
-                    if (curr + 1 == n - 1) return level + 1;
-                    visited[curr + 1] = true;
-                    q.offer(curr + 1);
+                if(nxt < N && !visited[nxt]){
+                    visited[nxt]=true;
+                    q.offer(nxt);
+
                 }
-
-                // case II: curr - 1
-                if (curr - 1 >= 0 && !visited[curr - 1]) {
-                    visited[curr - 1] = true;
-                    q.offer(curr - 1);
+                
+                if(prev >= 0 && !visited[prev]){
+                    visited[prev]=true;
+                    q.offer(prev);
+          
                 }
-
-                // case III: all indices with the same value
-                int val = arr[curr];
-                List<Integer> same = val2idx.get(val);
-                if (same != null) {
-                    for (int next : same) {
-                        if (!visited[next]) {
-                            if (next == n - 1) return level + 1;
-                            visited[next] = true;
-                            q.offer(next);
+                
+                if(val2idx.containsKey(arr[curr])){
+                    for(var nn: val2idx.get(arr[curr])){
+                        if(!visited[nn]){
+                            q.add(nn);
+                            visited[nn]=true;
                         }
                     }
-                    // prune so we don't process this value again
-                    val2idx.remove(val);
+                    val2idx.remove(arr[curr]);
                 }
             }
-            level++;
-            if (visited[n - 1]) return level;
+            level+=1;
+            if(visited[N-1]) return level;
+          
         }
-
-        return level;
+        return -1;
     }
 }
- 
