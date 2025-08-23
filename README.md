@@ -1498,7 +1498,7 @@ Todo:
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=SsAfFd9aN8I&t=2s) -
-[`Patterns`]
+[`BFS`]
 
 
 [[1352] - <span style="color:yellow">M</span> - Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/) - 
