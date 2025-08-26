@@ -156,3 +156,9 @@ url?w=1
 ```python
 print("received event: " + json.dumps(event))
 ```
+
+
+> python print array, unpack and print common-seperated
+```python
+print(*array, sep=",")
+```
