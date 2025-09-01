@@ -20,7 +20,7 @@ class Solution {
         int level=0;
 
         while(!q.isEmpty()){//[java][isempty][check q empty]
-            int sz = q.size();
+            int sz = q.size();//BFS level by level traverse
             for(int zz=0; zz<sz; ++zz){//for each elements in this level
                 var curr = q.poll();//curr_idx
                 var prev=curr-1;
@@ -45,7 +45,7 @@ class Solution {
                             visited[nn]=true;
                         }
                     }
-                    val2idx.remove(arr[curr]);
+                    val2idx.remove(arr[curr]); //if the whole value is visited, no need to check again.
                 }
             }
             level+=1;
