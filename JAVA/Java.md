@@ -804,3 +804,20 @@ var dp = IntStream.range(0, N)
                   
                   ).toArray(int[][]::new);
 ```
+
+
+> java capture code run time. 
+```java
+long startTime = System.currentTimeMillis();
+        //recolorSingleThreaded(originalImage, resultImage);
+        int numberOfThreads = 1;
+        recolorMultithreaded(originalImage, resultImage, numberOfThreads);
+        long endTime = System.currentTimeMillis();
+
+        long duration = endTime - startTime;
+
+        File outputFile = new File(DESTINATION_FILE);
+        ImageIO.write(resultImage, "jpg", outputFile);
+
+        System.out.println(String.valueOf(duration));
+```
