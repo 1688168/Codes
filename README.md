@@ -1494,7 +1494,13 @@ Todo:
 
 - same as [`0410`]
 
-[[Jump Game IV] - <span style="color:red">H</span> - Jump Game IV](https://leetcode.com/problems/jump-game-iv/description/) - 
+[[1340] - <span style="color:red">H</span> - Jump Game V](https://leetcode.com/problems/jump-game-v/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=Q2flmQeMxpk) -
+[`Patterns`]
+
+[[1345] - <span style="color:red">H</span> - Jump Game IV](https://leetcode.com/problems/jump-game-iv/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=SsAfFd9aN8I&t=2s) -
