@@ -4,7 +4,6 @@ class Solution:
         * N=5*10^4 -> 5*10^4*(2*10) -> 10^6
         """
         N = len(arr)
-        if N==1: return 0
         # preprocess val2idx
         val2idx=defaultdict(list)
         for ii, nn in enumerate(arr):
@@ -20,8 +19,8 @@ class Solution:
         visited.add(0)
 
         while (sz:=len(qq)) > 0:
-            level+=1
-            for _ in range(sz): #for the level
+            if N-1 in visited: return level
+            for _ in range(sz): #for the level   
                 curr_idx = qq.popleft()
                 curr_val = arr[curr_idx]
                 prev_idx = curr_idx-1
@@ -46,8 +45,6 @@ class Solution:
                     
                     del val2idx[curr_val]
 
-                # check if reaching end of arr
-                if N-1 in visited: # we have reached the end
-                    return level
+            level+=1
 
         return -1 # if not reaching end
