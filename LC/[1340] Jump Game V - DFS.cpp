@@ -20,7 +20,7 @@ public:
         int ret = 1;
         for(int kk=1; kk<=D; ++kk){ //for each kk between (jj, ii)
             if(idx+kk >= arr.size()) break;//no need to try further
-            if(arr[idx+kk] >= arr[idx]) break;
+            if(arr[idx+kk] >= arr[idx]) break;//cannot have anything higher in between
             ret = max(dfs(idx+kk, arr, D)+1, ret);
         }
 
