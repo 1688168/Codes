@@ -914,6 +914,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 - Simulation (using heap)
 - O(N) solution for arrangement with stride:
 
+[[0624] - <span style="color:yellow">M</span> - Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=J0yYlj_oVTI) -
+[`Array`]
+
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Heap/632.Smallest-Range-Covering-Elements-from-K-Lists) -
