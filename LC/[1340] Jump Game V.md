@@ -5,7 +5,7 @@
 
 
 > # <b><span style="color:purple">DP Solution - NlogN</span></b>
-* Dynamic programming is trying to find a current state, and via a tranformation function, we can move to next state.
+* Dynamic programming is trying to find a current (initial) state, and via a tranformation function, we can move to next state.
 * The current state could be prev index (house robber) or one of the previous index (Longest increasing subsequence), or an interval.
 * in this problem, we can start from any index. (order doesn't matter -> sort)
 * after sorting, what's the initial state we should choose? lowest bar or highest bar?
