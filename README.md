@@ -1648,6 +1648,8 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=f4fEdD0IbEc) -
 [`DP`][`sliding window max`]
 
+* cf [0239]: sliding window maximum
+
 [[1705] - <span style="color:green">E</span> - Project Employees I](https://leetcode.com/problems/project-employees-i/description/) - 
 [[Python]]()
 [[CPP]]() -
