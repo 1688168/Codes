@@ -1642,6 +1642,12 @@ Todo:
 [[Video]](https://www.bilibili.com/video/BV1xS4y1M7s8/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`Tree`][`LCA`]
 
+[[1696] - <span style="color:yellow">M</span> - Jump Game VI](https://leetcode.com/problems/jump-game-vi/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=f4fEdD0IbEc) -
+[`DP`][`sliding window max`]
+
 [[1705] - <span style="color:green">E</span> - Project Employees I](https://leetcode.com/problems/project-employees-i/description/) - 
 [[Python]]()
 [[CPP]]() -
