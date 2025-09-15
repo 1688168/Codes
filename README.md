@@ -1769,6 +1769,12 @@ Todo:
 # defaultdict of defaultdict
 defaultdict(lambda: defaultdict(int))
 ```
+[[1871] - <span style="color:yellow">M</span> - Jump Game VII](https://leetcode.com/problems/jump-game-vii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-0WGG8Wkm6U) -
+[`Patterns`]
+
 
 [[1918] - <span style="color:yellow">M</span> - Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/description/) - 
 [[Python]]()
