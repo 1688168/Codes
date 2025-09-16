@@ -162,3 +162,8 @@ print("received event: " + json.dumps(event))
 ```python
 print(*array, sep=",")
 ```
+
+> how to print output as markdown
+```
+display(Markdown(answer))
+```
