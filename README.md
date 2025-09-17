@@ -1773,7 +1773,7 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=-0WGG8Wkm6U) -
-[`Patterns`]
+[`差分數組`][`Diff Array`]
 
 
 [[1918] - <span style="color:yellow">M</span> - Kth Smallest Subarray Sum](https://leetcode.com/problems/kth-smallest-subarray-sum/description/) - 

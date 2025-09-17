@@ -10,3 +10,7 @@
 
 > for [bruteforce - optimized solution](./[1871]%20Jump%20Game%20VII%20-%20bruteforce%20optimized.py), why we can avoid double evaluation visited index?
 ![](../rcs/1871-1.png)
+
+
+> Interval
+* presum
