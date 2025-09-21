@@ -273,7 +273,9 @@ class Solution:
   -
 
 # [`Diff Array`][`差分數組`]
-
+* regarding intervals
+  
+  
 - 2158*
 - 218
 - 798

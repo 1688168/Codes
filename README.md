@@ -156,7 +156,7 @@
 [[0056] - <span style="color:yellow">M</span> - Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0056%5D%20Merge%20Intervals.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/056.Merge-Intervals) -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=d4Yw8ruN5Qc) -
 [`Interval`]
 
 [[Minimum Path Sum] - <span style="color:yellow">M</span> - desc](https://leetcode.com/problems/minimum-path-sum/description/) - 
