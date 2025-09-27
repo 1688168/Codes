@@ -16,7 +16,7 @@ class Solution {
         }
 
         //sort timeStamp. be careful when we have overlapping start and end
-        Arrays.sort(events, (a, b) -> {
+        Arrays.sort(events, (a, b) -> {//[JAVA][ARRAY][LAMBDA]
             if (a[0] != b[0]) return Integer.compare(a[0], b[0]);
             return Integer.compare(b[1], a[1]);//need to update start first before end
         });
@@ -37,7 +37,7 @@ class Solution {
             }
             sum += delta;
         }
-        return ret.toArray(new int[ret.size()][]);
+        return ret.toArray(new int[ret.size()][]);//[JAVA][LIST][TOARRAY][2DARRAY]  
     }
 }
 
