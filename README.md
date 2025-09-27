@@ -1020,6 +1020,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.bilibili.com/video/BV18w411o7NA/?vd_source=c1f78303f3760ca1601e9654954004a6) -
 [`DP`][`DPIII`][`Finite state machine`]
 
+[[0732] - <span style="color:red">H</span> - My Calendar III](https://leetcode.com/problems/my-calendar-iii/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=tReqj-t0rq0) -
+[`DiffArray`]
+
+
 [[0740] - <span style="color:yellow">M</span> - Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/) - 
 [[Python]]()
 [[CPP]]() -
