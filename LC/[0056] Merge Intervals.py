@@ -1,4 +1,32 @@
 #######################
+# 20250927: use insert template
+#######################
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        res=[]
+
+        # sort invervals
+        #intervals.sort(key=lambda x: (x[0], x[1])) # no need to do this
+        intervals.sort()
+
+        # initial interval
+        st, ed = intervals[0]
+
+        for ns, ne in intervals[1:]:
+            if ns <= ed:
+                st=min(st, ns)
+                ed=max(ed, ne)
+                continue
+            res.append([st, ed])
+            st, ed = ns, ne
+        
+        # last interval
+        res.append([st, ed])
+        return res
+        
+
+
+#######################
 # 20231203: use insert template
 #######################
 class Solution:
