@@ -1,5 +1,5 @@
 class MyCalendarThree {
-    map<int,int> Map;
+    map<int,int> Map;//in cpp, Map is sorted
 public:
     MyCalendarThree() {
         

@@ -1024,7 +1024,7 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=tReqj-t0rq0) -
-[`DiffArray`]
+[`DiffArray`][`Segment Tree`]
 
 
 [[0740] - <span style="color:yellow">M</span> - Delete and Earn](https://leetcode.com/problems/delete-and-earn/description/) - 
