@@ -450,7 +450,7 @@ cache = OrderedDict()
 [[0253] - <span style="color:yellow">M</span> - Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.bilibili.com/video/BV1ZA4y1f7j7/) -
 [`Intervals`]
 
 [[0256] - <span style="color:yellow">M</span> - Paint House](https://leetcode.com/problems/paint-fence/description/) - 
