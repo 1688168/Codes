@@ -1712,6 +1712,13 @@ dp[ii][state]: min time required for max_time a worker takes for all workers to 
 
 * dp[ii][jj] = min(dp[ii][jj], max(dp[ii-1][state-subset], time[subset]))
 
+[1893] - <span style="color:green">E</span> - Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=G4UFD1VLFrU) -
+[`Diff Array`]
+
+
 [1986]
 - N tasks assign to 1 worker with constrain session_time
 => min number of session required to complete all tasks
