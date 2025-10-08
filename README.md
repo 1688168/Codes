@@ -1324,6 +1324,13 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=H5p6bUdk-e4) -
 [`DP`]
 
+[[1094] - <span style="color:yellow">M</span> - Car Pooling](https://leetcode.com/problems/car-pooling/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=M6h3ndYhjK0) -
+[`Diff Array`]
+
+
 [[1109] - <span style="color:yellow">M</span> - Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/1109.Corporate-Flight-Bookings) -
