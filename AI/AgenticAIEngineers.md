@@ -91,5 +91,23 @@ results = response.choices[0].message.content
 print(results)
 ```
 
+> # <b><span style="color:purple">Lab 3</span></b>
+
+* Resources
+  - PDF.pdf
+  - summary.txt
+
+* pdfReader: read the pdf
+* read the summary
+* define system prompt and provide context from pdf+summary.  So this will define the perspective of LLM for the overall conversation.   We, therefore, do not need to redefine the system role in each msg.
+
+> ### <b><span style="color:green">a query with system prompt</span></b>
+```python
+def chat(message, history):
+    messages = [{"role": "system", "content": system_prompt}] + history + [{"role": "user", "content": message}]
+    response = openai.chat.completions.create(model="gpt-4o-mini", messages=messages)
+    return response.choices[0].message.content
+```
+
 > # <b><span style="color:purple">---</span></b>
 > ### <b><span style="color:green">---</span></b>
