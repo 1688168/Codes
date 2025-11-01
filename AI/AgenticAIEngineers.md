@@ -268,5 +268,20 @@ with trace("Automated SDR"):
     result = await Runner.run(sales_manager, message)
 ```
 
+> # <b><span style="color:purple">OpenAI Async</span></b>
+> ### <b><span style="color:green">AsyncIO example</span></b>
+
+```python
+from dotenv import load_dotenv
+from openai import AsyncOpenAI. #<<<<< AsyncOpenAI
+from agents import Agent, Runner, trace, function_tool, OpenAIChatCompletionsModel, input_guardrail, GuardrailFunctionOutput
+from typing import Dict
+import sendgrid
+import os
+from sendgrid.helpers.mail import Mail, Email, To, Content
+from pydantic import BaseModel
+```
+
+
 > # <b><span style="color:purple">---</span></b>
 > ### <b><span style="color:green">---</span></b>
