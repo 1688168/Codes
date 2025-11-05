@@ -1609,6 +1609,13 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=n6fUMuVS-X8) -
 [`Greedy`]
 
+[[1589] - <span style="color:yellow">M</span> - Maximum Sum Obtained of Any Permutation]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=9BJkTC3iTGs&feature=youtu.be) -
+[`Sweepline`]
+
+
 [[1591] - <span style="color:red">H</span> - Strange Printer II](https://leetcode.com/problems/strange-printer-ii/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/1591.Strange-Printer-II) -
