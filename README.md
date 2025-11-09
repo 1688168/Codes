@@ -1854,6 +1854,14 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
+[[2015] - <span style="color:yellow">M</span> - Average Height of Buildings in Each Segment](Average Height of Buildings in Each Segment) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://youtu.be/HqXjPKoyyaU) -
+[[Video]](https://www.bilibili.com/video/BV1HT4y1z7Lz/) -
+[`SweepLine`]
+
+
 [[2040] - <span style="color:red">H</span> - Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Binary_Search/2040.Kth-Smallest-Product-of-Two-Sorted-Arrays) -
