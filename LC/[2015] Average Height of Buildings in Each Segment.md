@@ -1,35 +1,35 @@
-class Solution {
-public:
-    vector<vector<int>> averageHeightOfBuildings(vector<vector<int>>& buildings) {
-        map<int, pair<int, int>> Map;// pos -> {diffHeight, diffCounbt}
-        for(auto build: buildings){
-            int s = build[0], e=build[1], h=build[2];
-            Map[s].first += h;
-            Map[s].second += 1;
-            Map[e].first -= h;
-            Map[e].second -= 1;
-        }
+### Situation
 
-        int totalHeight=0, totalCount=0;
-        vector<pair<int, int>> seg;
-        for(auto& [pos, kv]: Map){
-            int diffHeight = kv.first, diffCount = kv.second;
-            totalHeight += diffHeight;
-            totalCount += diffCount;
-            int avg = (totalCount==0? 0:totalHeight/totalCount);
-            seg.push_back({pos, avg});
-        }
+##### Given
+* straight street
+* buildings = [[1,5,2],[3,10,4]] ->  [[starti, endi, heighti]] -> half closed
 
-        vector<vector<int>> rets;
-        for(int i=0; i< seg.size(); ++i){
-            if(seg[i].second == 0) continue;
-            int j = i;
-            while(j < seg.size() && seg[j].second==seg[i].second) ++j;
-            rets.push_back({seg[i].first, seg[j].first, seg[i].second});
-            i=j-1;
+##### Ask
+* min num of non-overlapping segments
+* street[j] = [leftj, rightj, avgj] -> in this segment, all buildings together have same avg height
+* avg is zero if no building
+* 
+### Analysis
+* N: 10^5 -> nlogn
 
-        }
+##### Bruteforce
+* for each buildings[ii] - N
+  * populate height: *N
+** N^2
+* calc avg +N
+* output segment +N
 
-        return rets;
-    }
-};
+##### Thinking NLogN
+* we are given intervals - sweepline, DP
+
+##### Sweepline
+* convert to events - N
+* count: number of buildings @ii: +N
+* heights: total heights of all buildings @ii: +N
+* calc avg height @ each ii: +N
+* output segment: +N
+-> 4N
+
+
+### implementation strategy
+
