@@ -7,19 +7,21 @@ class Solution {
         // Use a TreeMap to keep the keys (timestamps) sorted automatically.
         // The value is an array [diffCount, diffHeight].
         // We use 'long' to prevent overflow during accumulation.
-        Map<Integer, long[]> events = new TreeMap<>();
+        Map<Integer, long[]> events = new TreeMap<>();//java sorted map.
         
-        for (int[] building : buildings) {
+        for (int[] building : buildings) {//
             int st = building[0];
             int ed = building[1];
             int ht = building[2];
             
+            //starting event
             // Add height and count at the start position
-            long[] startVal = events.getOrDefault(st, new long[2]);
-            startVal[0] += 1;
-            startVal[1] += ht;
-            events.put(st, startVal);
+            long[] startVal = events.getOrDefault(st, new long[2]);//java map default value
+            startVal[0] += 1;//cnt
+            startVal[1] += ht;//measure
+            events.put(st, startVal);//add element to map. key=ts, value=[cnt, measure]
             
+            //ending event
             // Subtract height and count at the end position
             long[] endVal = events.getOrDefault(ed, new long[2]);
             endVal[0] -= 1;
@@ -34,7 +36,7 @@ class Solution {
         long currHt = 0;
         
         // Iterate through the sorted events (TreeMap handles sorting)
-        for (Map.Entry<Integer, long[]> entry : events.entrySet()) {
+        for (Map.Entry<Integer, long[]> entry : events.entrySet()) {//how to traverse map
             int ts = entry.getKey();
             long[] diff = entry.getValue();
             
@@ -71,7 +73,7 @@ class Solution {
             int ed = (int)segments.get(jj)[0];
             
             // Add the merged segment [start, end, avg]
-            res.add(Arrays.asList(st, ed, (int)avg));
+            res.add(Arrays.asList(st, ed, (int)avg));//how to add 3 elements as list to a list
             
             // Move the pointer to the next segment
             ii = jj;
