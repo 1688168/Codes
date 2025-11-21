@@ -1817,6 +1817,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]]() -
 [`Patterns`]
 
+[[1943] - <span style="color:yellow">M</span> - Describe the Painting](https://leetcode.com/problems/describe-the-painting/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=0rKWTNtqnNQ) -
+[`SweepLine`]
+
 [[1953] - <span style="color:yellow">M</span> - Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Priority_Queue/1953.Maximum-Number-of-Weeks-for-Which-You-Can-Work) -
