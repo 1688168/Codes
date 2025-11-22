@@ -22,9 +22,9 @@ class Solution {
                 start = pos;
             } else {
                 end = pos;
-                if (cnt != 0) { // avoid adding zero-color segment
-                    rets.add(Arrays.asList(start, end, cnt));
-                }
+
+                rets.add(Arrays.asList(start, end, cnt));
+
                 start = end;
             }
 

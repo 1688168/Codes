@@ -21,9 +21,8 @@ class Solution:
             if start == -1:
                 start = pos
             else:
-                end = pos
-                if cnt != 0:  # avoid zero-color segments
-                    rets.append([start, end, cnt])
+                end = pos              
+                rets.append([start, end, cnt])
                 start = end
 
             cnt += diff
