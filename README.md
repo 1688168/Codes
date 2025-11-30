@@ -1966,6 +1966,12 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=7rn5XlYBM2M) -
 [`Math`][`Binary Search`][`Smear Top Elements`][`Greedy`]
 
+[[2251] - <span style="color:red">H</span> - Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=7qdrIJvWEcs&feature=youtu.be) -
+[`SweepLine`]
+
 [[2254] - <span style="color:green">E</span> - Design Video Sharing Platform](https://leetcode.com/problems/design-video-sharing-platform/description) - 
 [[Python]]()
 [[CPP]]() -
