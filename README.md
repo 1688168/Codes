@@ -1966,6 +1966,13 @@ defaultdict(lambda: defaultdict(int))
 [[Video]](https://www.youtube.com/watch?v=7rn5XlYBM2M) -
 [`Math`][`Binary Search`][`Smear Top Elements`][`Greedy`]
 
+[[2237] - <span style="color:yellow">M</span> - Count Positions onj Street With Required Brightness](https://leetcode.com/problems/count-positions-on-street-with-required-brightness/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.bilibili.com/video/BV15Z4y1h7Nv/) -
+[`SweepLine`]
+
+
 [[2251] - <span style="color:red">H</span> - Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/) - 
 [[Python]]()
 [[CPP]]() -
