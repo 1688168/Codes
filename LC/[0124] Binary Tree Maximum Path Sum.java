@@ -1,39 +1,67 @@
+import java.lang.Math;
+
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
+ * This class structure is required for Java solutions.
  */
-class Solution {
-    int ret = INT_MIN;
-public:
-     int MaxDownPath(TreeNode * node){//starting from node downward only, the max-sum path
-            if(node==NULL) return 0;
-            int leftSum = MaxDownPath(node->left);
-            int rightSum = MaxDownPath(node->right);
-            //for each node we evaluate a path with respect to current node
-            int maxTurnSum = node->val;
-            if(leftSum > 0) maxTurnSum += leftSum;
-            if(rightSum > 0) maxTurnSum += rightSum;
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
 
-            ret = max(ret, maxTurnSum);//global max path sum
-            
-            //considering current node as the starting node of a path
-            if(leftSum<0 && rightSum < 0)//is there child branch > 0?
-                return node->val;//no child branch can add value, return self
-            else
-                return max(leftSum, rightSum) + node->val;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+class Solution {
+    // 1. Global variable to store the final maximum path sum found across the entire tree.
+    // Must be initialized to a very small number (Integer.MIN_VALUE) since nodes can have negative values.
+    private int maxPathSumGlobal = Integer.MIN_VALUE; //java min integer value
+
+    /**
+     * @brief Calculates the maximum path sum that STARTS at 'node' and goes DOWNWARD.
+     * It also updates the global maximum path sum (including "V" paths) found so far.
+     * @param node The current TreeNode.
+     * @return The maximum path sum that continues up to the parent.
+     */
+    private int maxDownPath(TreeNode node) {
+        // Base case: null node contributes a sum of 0 to the path.
+        if (node == null) {
+            return 0;
         }
 
-
-    int maxPathSum(TreeNode* root) {
-        MaxDownPath(root);
-         
-        return ret;
+        // Recursively find the max path sum that starts from the left/right child and goes downward.
+        // We only consider positive contributions from children. If left/right sum is negative, we take 0.
+        int leftSum = Math.max(0, maxDownPath(node.left));
+        int rightSum = Math.max(0, maxDownPath(node.right));
+        
+        // --- 1. Calculate the MAX-TURN Path (Path that starts and ends within the subtree rooted at 'node') ---
+        // The max path sum that uses this node as the peak (the 'V' shape).
+        // This path is node.val + leftSum + rightSum.
+        int maxTurnSum = node.val + leftSum + rightSum;
+        
+        // Update the global maximum path sum found so far.
+        this.maxPathSumGlobal = Math.max(this.maxPathSumGlobal, maxTurnSum);
+        
+        // --- 2. Calculate the MAX-DOWN Path (Path that continues UPWARD from 'node') ---
+        // The path sum that we return to the parent must be a straight line (node + max of one child).
+        // This calculation is simpler than your C++ logic due to the Math.max(0, ...) above.
+        return node.val + Math.max(leftSum, rightSum);
     }
-};
+
+
+    public int maxPathSum(TreeNode root) {
+        // Initialize the global result to the minimum possible integer value
+        this.maxPathSumGlobal = Integer.MIN_VALUE; 
+        
+        // Start the recursive traversal
+        maxDownPath(root);
+         
+        return this.maxPathSumGlobal;
+    }
+}
