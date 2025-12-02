@@ -248,6 +248,12 @@
 [[Video]](https://www.youtube.com/watch?v=gsL3T9bI1RQ) -
 [`DPI`]
 
+[[0124] - <span style="color:red">H</span> - Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=cuneDTWejTw) -
+[`Tree`]
+
 [[0126] - <span style="color:red">H</span> - desc]() - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0126%5D%20Word%20Ladder%20II.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/BFS/126.Word-Ladder-II) -
