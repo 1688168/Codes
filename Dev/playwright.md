@@ -11,7 +11,9 @@
 
 * pip install playwright (do this)
 * pip install pytest-playwright (alternative)
+* pip list. #listing what package installed in this python virtual environment
 * .venv/lib/sitepackages #checking package installed
 * playwright install
 
 * python -m http.server 3000 #bring up http servier where you have index.html
+* pytest # to run all test cases
