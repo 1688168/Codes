@@ -1,3 +1,7 @@
+/*
+* it is difficult to figure out the greedy heuristic directly
+*/
+
 class Solution {
 public:
     int minKBitFlips(vector<int>& nums, int k) {
@@ -7,8 +11,8 @@ public:
         int flips = 0; //accumulated flip (including involuntary flips)
         for(int ii=0; ii<N; ++ii){
             flips += events[ii];//accumulated flips at ii
-            if(nums[ii] + flips%2==1) continue;//already 1 -> noop
-            ++flips;
+            if((nums[ii] + flips%2)==1) continue;//already 1 -> noop
+            ++flips;//current bit is zero, need to flip
             if(ii+k-1 >= N) return -1; //ii+k-1 is the last bit in the interval
             events[ii+k] -= 1;//ii+k is the 1st bit after the interval
             ++count;//mandatory flip

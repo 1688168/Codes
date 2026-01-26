@@ -25,3 +25,5 @@
   * S: k depth where k is number of zeros
 
 * Heuristic: go from the end of array and identify those you must flip
+  * How to prove this would be the min flip algothrm?
+  * T: O(NK)
