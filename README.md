@@ -1663,6 +1663,12 @@ Todo:
 [[Video]](https://www.youtube.com/watch?v=HRe_Z9uQ-Oo) -
 [`Design`]
 
+[[1674] - <span style="color:yellow">M</span> - Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`sweep line`]
+
 [[1676] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree IV
 ](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1676%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20IV.py)
