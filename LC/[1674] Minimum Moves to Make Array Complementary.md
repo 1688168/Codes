@@ -20,3 +20,12 @@ ex:
 * greedy
 * dp
 * 
+
+
+
+## Follow up questions
+* time: max(O(N), O(C))
+* space: O(C)
+* what if C=10^9
+* diff is sparce, no need to create space for zeros (most are zero)
+* only need to traverse turning point
