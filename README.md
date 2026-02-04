@@ -1669,6 +1669,8 @@ Todo:
 [[Video]]() -
 [`sweep line`]
 
+* when you see constrains on around 10^5 -> you might need to traverse all N to achieve nlonn
+
 [[1676] - <span style="color:yellow">M</span> - Lowest Common Ancestor of a Binary Tree IV
 ](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/description) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1676%5D%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree%20IV.py)
