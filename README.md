@@ -1076,6 +1076,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=Tm_hHBhQgII) -
 [`String Manipulation`][`calculator`]
 
+[[0798] - <span style="color:red">H</span> - Smallest Rotation with Highest Score]() - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=xFlO0H1l2oQ) -
+[`Diff Array`]
+
+
 [[0813] - <span style="color:red">H</span> - Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -1666,7 +1673,7 @@ Todo:
 [[1674] - <span style="color:yellow">M</span> - Minimum Moves to Make Array Complementary](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=mRvmisDyNs4) -
 [`sweep line`]
 
 * when you see constrains on around 10^5 -> you might need to traverse all N to achieve nlonn
