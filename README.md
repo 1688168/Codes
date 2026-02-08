@@ -159,7 +159,7 @@
 [[Video]](https://www.youtube.com/watch?v=d4Yw8ruN5Qc) -
 [`Interval`]
 
-[[Minimum Path Sum] - <span style="color:yellow">M</span> - desc](https://leetcode.com/problems/minimum-path-sum/description/) - 
+[[0064] - <span style="color:yellow">M</span> - Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) - 
 [[Python]]()
 [[CPP]]() -
 [[Video]]() -
@@ -414,7 +414,8 @@ cache = OrderedDict()
 [[0218] - <span style="color:red">H</span> - The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]](https://youtu.be/cJCQKscEDpI) -
+[[Video - new]](https://www.youtube.com/watch?v=cJCQKscEDpI&t=1s) -
+[[Video]](https://www.youtube.com/watch?v=gW02s4sxJ0Q&t=4s) -
 [`Diff Array`]
 
 [[0224] - <span style="color:red">H</span> - Basic Calculator](https://leetcode.com/problems/basic-calculator/) - 
