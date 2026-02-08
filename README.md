@@ -411,6 +411,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=dMq9_EkfSEc) -
 [`Quick Select`]
 
+[[0218] - <span style="color:red">H</span> - The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://youtu.be/cJCQKscEDpI) -
+[`Diff Array`]
+
 [[0224] - <span style="color:red">H</span> - Basic Calculator](https://leetcode.com/problems/basic-calculator/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0224%5D%20Basic%20Calculator.md)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/224.Basic-Calculator) -
@@ -1932,6 +1938,13 @@ defaultdict(lambda: defaultdict(int))
 - monotonic one pass solution
 - [907]
 - [1856]
+
+[[2158] - <span style="color:red">H</span> - Amount of New Area Painted Each Day](https://leetcode.com/problems/amount-of-new-area-painted-each-day/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.bilibili.com/video/BV1h3411P7Nd/) -
+[`Diff Array`]
+
 
 [[2163] - <span style="color:red">H</span> - Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/) - 
 [[Python]]()
