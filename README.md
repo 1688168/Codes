@@ -414,8 +414,8 @@ cache = OrderedDict()
 [[0218] - <span style="color:red">H</span> - The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video - new]](https://www.youtube.com/watch?v=cJCQKscEDpI&t=1s) -
-[[Video]](https://www.youtube.com/watch?v=gW02s4sxJ0Q&t=4s) -
+[[Video - diff array - sweeping line]](https://www.youtube.com/watch?v=cJCQKscEDpI&t=1s) -
+[[Video - segment tree]](https://www.youtube.com/watch?v=gW02s4sxJ0Q&t=4s) -
 [`Diff Array`]
 
 [[0224] - <span style="color:red">H</span> - Basic Calculator](https://leetcode.com/problems/basic-calculator/) - 
