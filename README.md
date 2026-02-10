@@ -418,6 +418,8 @@ cache = OrderedDict()
 [[Video - segment tree]](https://www.youtube.com/watch?v=gW02s4sxJ0Q&t=4s) -
 [`Diff Array`]
 
+* cf [2158]
+
 [[0224] - <span style="color:red">H</span> - Basic Calculator](https://leetcode.com/problems/basic-calculator/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0224%5D%20Basic%20Calculator.md)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/224.Basic-Calculator) -
