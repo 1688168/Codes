@@ -22,7 +22,7 @@ class Solution:
 
         # Active heights: max-heap via negative values
         heap: List[int] = [0]  # 0 means ground level (height 0) --- given a height, sort
-        active = Counter({0: 1}) # count numf of heights at each ii
+        active = Counter({0: 1}) # count num of heights at each ii
 
         result: List[List[int]] = [] # define return var
         prev_max = 0
