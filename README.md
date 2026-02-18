@@ -1946,7 +1946,9 @@ defaultdict(lambda: defaultdict(int))
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.bilibili.com/video/BV1h3411P7Nd/) -
-[`Diff Array`]
+[`Diff Array`][`DSU`]
+
+* DSU: Disjoint Set Union
 
 
 [[2163] - <span style="color:red">H</span> - Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/) - 
