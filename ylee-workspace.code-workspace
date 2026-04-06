@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../KnowledgeBase"
+		},
+		{
+			"path": "../../../../Downloads/tmp"
 		}
 	],
 	"settings": {
@@ -19,6 +22,12 @@
 			"unordered_map": "cpp",
 			"limits": "cpp",
 			"algorithm": "cpp"
-		}
+		},
+		"favorites.resources": [
+			{
+				"filePath": "/Users/yeuchinglee/Documents/ylee/ylee_repo/AI/AI_bookmarks.md",
+				"group": "Default"
+			}
+		]
 	}
 }
