@@ -1,4 +1,32 @@
 #######################
+# 20260510: bruteforce
+#######################
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        N=len(intervals)
+        
+        intervals.sort() #nlogn
+
+        # process each block and output a new block when it has no overlapping with next block
+
+        res=[]
+        rs, re = intervals[0] # running start, running end
+        for ns, ne in intervals[1:]: # next start, next end
+            # check if running end is gt ns
+            if re >= ns:
+                #rs=min(rs, ns) #since we sorted intervals, ns definitely is <= cs
+                re=max(re, ne)
+            else:
+                res.append([rs, re])
+                rs, re=ns, ne
+
+        # don't forget about the last interval
+        res.append([rs, re])
+
+        return res
+
+
+#######################
 # 20250927: use insert template
 #######################
 class Solution:
