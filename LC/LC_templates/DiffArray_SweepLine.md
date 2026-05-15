@@ -104,7 +104,8 @@ Track how many are currently active.
 
 ---
 
-## Timeline processing
+## Timeline processing (gvein starting_event, ending_event directly.)
+* notice Intervals, blocks, buildings, we need to break the starting/Ending events ourselvous
 
 - arrivals/departures
 - entering/leaving
