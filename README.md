@@ -993,6 +993,11 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 idx2cnt = collections.defaultdict(lambda: 1)
 
 ```
+[[0684] - <span style="color:yellow">M</span> - Redundant Connection](https://leetcode.com/problems/redundant-connection/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=8u-sjzyHjDg) -
+[`Union Find`]
 
 [[0691] - <span style="color:red">H</span> - Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/description/) - 
 [[Python]]()
