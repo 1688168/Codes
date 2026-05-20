@@ -555,6 +555,14 @@ cache = OrderedDict()
 - review search in an array
 - DFS: pruning/eliminate duplication/memo
 
+[[0305] - <span style="color:red">H</span> - Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=UHbSLwVPcy8) -
+[`Union Find`]
+
+* cf [0200]
+
 [[0307] - <span style="color:yellow">M</span> - Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Segment_Tree/307.Range-Sum-Query-Mutable) -
