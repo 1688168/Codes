@@ -365,7 +365,9 @@ cache = OrderedDict()
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0200%5D%20Number%20of%20Islands.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/200.Number-of-Islands) -
 [[Video]](https://www.youtube.com/watch?v=prmHWUETpXw) -
-[`DFS`][`classic`]
+[`DFS`][`classic`][`Union Find`]
+
+* cf: [0305] - Number of Islands II (DFS VS DSU, Union/Find)
 
 [[0202] - <span style="color:green">E</span> - Happy Number](https://leetcode.com/problems/happy-number/description/) - 
 [[Python]]()
