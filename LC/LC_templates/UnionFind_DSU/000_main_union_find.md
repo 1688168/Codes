@@ -16,6 +16,10 @@
 
 ---
 
+## Two key concepts
+### Path compression: in Find.  
+### Union by Rank: add smaller tree below larger tree to reduce tree depth and reduce parent look up time
+
 ## 🧠 Mental Model (When to Use DSU)
 
 Ask yourself:
