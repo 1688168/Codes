@@ -1208,6 +1208,13 @@ idx2cnt = collections.defaultdict(lambda: 1)
 3. return not stk
 ```
 
+[[0947] - <span style="color:yellow">M</span> - Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=HAaik49m0q0) -
+[`Patterns`]
+
+
 [[0956] - <span style="color:red">H</span> - Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) - 
 [[Python]]()
 [[CPP]]() -
