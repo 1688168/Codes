@@ -17,12 +17,15 @@
 * protect the system from atypical client behavior
 * protect the system from failures and  performance degradation of its dependencies
 * detect failures as they occur
+* small downtime
+
 
 > 'SLO'
 * Service Level Objective (system goal)
 
 > 'SLA'
 * Service Level Agreement (with client)
+
 
 > Fault tolerance == high availability ?
 * Fault tolerance is the property that enables a system to continue operating properly in the event of one of more faults within some of its components.
@@ -35,9 +38,16 @@
 * airplane required fault tolerant: an engine is out, we still need to be able to fly safly until next step
 * a car just need to be high available. when getting flat tire, we just experience a short down-time to replace it with spare tire.
 * fault tolerance is with higher cost due to no down time requirements
+* close to zero downtime
 
 > Resilience
 * Systems that in the face of faults can provide an maintain an acceptable level of service are called resilience system.
+* ability to quickly recover from failure
+
+> Reliability
+* high availability + correctness + time
+* system always performs it's intended functions correctly and in time
+
 ## User/Customers
 ## Scale (Read and Write)
 ## Performance
