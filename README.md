@@ -1214,6 +1214,18 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=HAaik49m0q0) -
 [`Patterns`]
 
+> 'Similar questions for the 947 follow up'
+| LeetCode # | Problem | Similar idea |
+|---:|---|---|
+| 366 | Find Leaves of Binary Tree | Remove leaves / postorder |
+| 310 | Minimum Height Trees | Peel graph from outside inward |
+| 210 | Course Schedule II | Construct valid order |
+| 1110 | Delete Nodes And Return Forest | Postorder deletion |
+| 582 | Kill Process | Dependency/tree traversal |
+| 269 | Alien Dictionary | Build graph order from constraints |
+| 207 | Course Schedule | Detect dependency feasibility |
+
+
 
 [[0956] - <span style="color:red">H</span> - Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) - 
 [[Python]]()

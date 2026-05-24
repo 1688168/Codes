@@ -19,3 +19,14 @@
 ## complexity analysis
 * Union/Find (path compression+UninoBySize) -> N(Alpha(N^2))
 * N=10^4 -> alpha(10^8) -> okay
+
+## follow up questions
+| LeetCode # | Problem | Similar idea |
+|---:|---|---|
+| 366 | Find Leaves of Binary Tree | Remove leaves / postorder |
+| 310 | Minimum Height Trees | Peel graph from outside inward |
+| 210 | Course Schedule II | Construct valid order |
+| 1110 | Delete Nodes And Return Forest | Postorder deletion |
+| 582 | Kill Process | Dependency/tree traversal |
+| 269 | Alien Dictionary | Build graph order from constraints |
+| 207 | Course Schedule | Detect dependency feasibility |
