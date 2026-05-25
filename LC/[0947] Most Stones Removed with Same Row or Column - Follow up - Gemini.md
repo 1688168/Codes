@@ -18,3 +18,15 @@ To guarantee we do not sever connected components prematurely, we must treat the
 
 Yes, we can absolutely write code for this. To make it optimized for a senior-level interview, this version builds the graph in **$\mathcal{O}(N)$ time** using hash maps, rather than relying on an $\mathcal{O}(N^2)$ nested loop to find edges.
 
+* /Users/yeuchinglee/Documents/ylee/ylee_repo/Codes/LC/[0947] Most Stones Removed with Same Row or Column - Follow up - chatGPT.py
+  
+## follow up questions
+| LeetCode # | Problem | Similar idea |
+|---:|---|---|
+| 366 | Find Leaves of Binary Tree | Remove leaves / postorder |
+| 310 | Minimum Height Trees | Peel graph from outside inward |
+| 210 | Course Schedule II | Construct valid order |
+| 1110 | Delete Nodes And Return Forest | Postorder deletion |
+| 582 | Kill Process | Dependency/tree traversal |
+| 269 | Alien Dictionary | Build graph order from constraints |
+| 207 | Course Schedule | Detect dependency feasibility |
