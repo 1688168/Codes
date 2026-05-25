@@ -257,3 +257,33 @@ remove from the outside inward
 ```
 
 using postorder DFS.
+
+
+## Why We Can Pick Any Node as the DFS Root
+
+We can choose any node in the connected component as the DFS root because the root is simply the one stone we decide to keep at the end.
+
+The important property is not which node is the root, but rather:
+
+```text
+every non-root node has a DFS parent
+```
+
+Postorder DFS removes:
+
+```text
+children before parents
+```
+
+Therefore, when a node is removed, its DFS parent still exists, so the removal is always valid.
+
+A bridge node does not need to be the final remaining node. It only needs to stay alive until all nodes depending on it have already been removed. After a bridge node's children are removed, that bridge node is no longer acting as a bridge, because there is no remaining subtree depending on it.
+
+So regardless of which node is chosen as the root:
+
+- all descendants are removed first
+- bridge nodes are removed only after their dependent subtrees disappear
+- after their children are gone, bridge nodes are no longer bridges
+- exactly one node remains per connected component
+
+Thus, any node can serve as the DFS root, leading to many possible valid removal sequences.
