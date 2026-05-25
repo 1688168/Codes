@@ -29,14 +29,14 @@
 				"group": "Default"
 			},
 			{
-				"filePath": "/Users/yeuchinglee/Documents/ylee/ylee_repo/Codes/Patterns.md",
+				"filePath": "/Users/yeuchinglee/Documents/ylee/ylee_repo/Codes/README.md",
 				"group": "Default"
 			},
 			{
-				"filePath": "/Users/yeuchinglee/Documents/ylee/ylee_repo/Codes/README.md",
+				"filePath": "/Users/yeuchinglee/Documents/ylee/ylee_repo/Codes/Patterns.md",
 				"group": "Default"
 			}
 		],
-		"favorites.sortOrder": "DESC"
+		"favorites.sortOrder": "MANUAL"
 	}
 }

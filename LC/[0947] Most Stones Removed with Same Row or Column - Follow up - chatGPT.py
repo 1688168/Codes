@@ -15,10 +15,10 @@ class Solution:
         n = len(stones)
 
         # row_map maps each row number to the list of stone indices in that row.
-        row_map = defaultdict(list)
+        row_map = defaultdict(list) # row index to stones index
 
         # col_map maps each column number to the list of stone indices in that column.
-        col_map = defaultdict(list)
+        col_map = defaultdict(list) # col index to stones index
 
         # Build row_map and col_map.
         # We use stone index i as the graph node id.
@@ -27,7 +27,7 @@ class Solution:
             col_map[y].append(i)
 
         # graph[i] stores all stones connected to stone i.
-        graph = [[] for _ in range(n)]
+        graph = [[] for _ in range(n)] # Graph representation as a matrix (adjacency matrix)
 
         # Helper function:
         # Given all stones in the same row/column,
@@ -50,8 +50,8 @@ class Solution:
                 graph[other].append(first)
 
         # Connect stones that share the same row.
-        for indices in row_map.values():
-            connect_group(indices)
+        for indices in row_map.values(): # for the stone indexes in the list sharing same row
+            connect_group(indices) # connect all stones (index) that sharing same row
 
         # Connect stones that share the same column.
         for indices in col_map.values():
