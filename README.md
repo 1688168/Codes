@@ -614,6 +614,12 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=m9P1drvDjzY) -
 [`Divide and Conquer`]
 
+[[0329] - <span style="color:red">H</span> - Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=-0SdWxX3f20) -
+[`DFS`]
+
 [[0332] - <span style="color:red">H</span> - Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/DFS/332.Reconstruct-Itinerary) -
