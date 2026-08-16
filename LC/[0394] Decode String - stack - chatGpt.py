@@ -1,31 +1,22 @@
 class Solution:
     def decodeString(self, s: str) -> str:
-        stack = []
-        current_string = ""
-        current_number = 0
+        # curr_str+curr_num*[next] --- defined the basic pattern/mental model
+        # required data strucure
+        curr_str = ""
+        curr_num = 0
+        stack=[]
 
-        for char in s:
-            if char.isdigit():
-                # Handles multi-digit numbers such as 12[a]
-                current_number = current_number * 10 + int(char)
-
-            elif char == "[":
-                # Save the outer context
-                stack.append((current_string, current_number))
-
-                # Start decoding the bracket contents
-                current_string = ""
-                current_number = 0
-
-            elif char == "]":
-                previous_string, repeat_count = stack.pop()
-
-                current_string = (
-                    previous_string
-                    + current_string * repeat_count
-                )
-
-            else:
-                current_string += char
-
-        return current_string
+        for cc in s: #traversing each char
+            if cc.isdigit(): # accumulating curr_num
+                curr_num = curr_num*10+int(cc)
+            elif cc=="[": # push due to encountering a new structure
+                stack.append((curr_str, curr_num))
+                curr_str=""
+                curr_num=0
+            elif cc=="]": # pop
+                prev_str, prev_num = stack.pop()
+                curr_str = prev_str+prev_num*curr_str
+            else: #chars
+                curr_str += cc
+        
+        return curr_str
