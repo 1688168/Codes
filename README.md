@@ -768,7 +768,7 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=hDUj0W5Rtxs) -
-[``]
+[`DFS`]
 
 [[0402] - <span style="color:yellow">M</span> - Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/) - 
 [[Python]]()
