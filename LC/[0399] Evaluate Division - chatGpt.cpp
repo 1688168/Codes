@@ -24,7 +24,7 @@ public:
         if(A==B) return 1.0;
         for(int ii=0; ii<Map[A].size(); ++ii){
             string C = Map[A][ii].first;
-            if(B==C) return Map[A][ii].second;
+            //if(B==C) return Map[A][ii].second;
             if(visited.find(C)!=visited.end()) continue;
             visited.insert(C);
             double val1 = Map[A][ii].second;
