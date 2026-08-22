@@ -763,6 +763,13 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 
 - review basic calculators
 
+
+[[0399] - <span style="color:yellow">M</span> - Evaluate Division](https://leetcode.com/problems/evaluate-division/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.youtube.com/watch?v=hDUj0W5Rtxs) -
+[``]
+
 [[0402] - <span style="color:yellow">M</span> - Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/402.Remove-K-Digits) -
