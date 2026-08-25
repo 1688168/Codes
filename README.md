@@ -1084,13 +1084,17 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=w6wMphN_QVk) -
 [`DPI`]
 
-
 [[0746] - <span style="color:green">E</span> - Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=fjxhMLJjC3Y) -
 [`DPI`]
 
+[[0753] - <span style="color:red">H</span> - Cracking the Safe](https://leetcode.com/problems/cracking-the-safe/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DFS`]
 
 [[0759] - <span style="color:red">H</span> - Employee Free Time](https://leetcode.com/problems/employee-free-time/description) - 
 [[Python]]()
