@@ -843,12 +843,17 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://www.youtube.com/watch?v=R-U_pY0OBKI) -
 [`Patterns`]
 
-
 [[0487] - <span style="color:yellow">M</span> - Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/487.Max-Consecutive-Ones-II) -
 [[Video]](https://www.youtube.com/watch?v=D2ZSacsq_fw) -
 [`DP`]
+
+[[0489] - <span style="color:red">H</span> - Robot Room Cleaner](https://leetcode.com/problems/robot-room-cleaner/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]](https://www.bilibili.com/video/BV1nV411H7Eu/) -
+[`Tree`]
 
 [[0493] - <span style="color:red">H</span> - Reverse Pairs](https://leetcode.com/problems/reverse-pairs/description/) - 
 [[Python]]()
