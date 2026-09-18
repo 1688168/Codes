@@ -1865,6 +1865,14 @@ Todo:
 2. python
 3. Java
 
+[[1778] - <span style="color:yellow">M</span> - Shortest Path In A Hidden Grid](https://leetcode.com/problems/shortest-path-in-a-hidden-grid/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`BFS`]
+
+
+
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1840.Maximum-Building-Height) -
