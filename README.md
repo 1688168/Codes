@@ -855,6 +855,8 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://www.bilibili.com/video/BV1nV411H7Eu/) -
 [`Tree`]
 
+* cf 1778
+
 [[0493] - <span style="color:red">H</span> - Reverse Pairs](https://leetcode.com/problems/reverse-pairs/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Divide_Conquer/493.Reverse-Pairs) -
@@ -1871,8 +1873,8 @@ Todo:
 [[Video]]() -
 [`BFS`]
 
-
-
+* cf: 489
+  
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1840.Maximum-Building-Height) -
