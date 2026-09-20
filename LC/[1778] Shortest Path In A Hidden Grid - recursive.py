@@ -14,30 +14,31 @@ class Solution:
         target = None
 
         def dfs(r, c):
-            nonlocal target
+            nonlocal target # when you need to update nonlocal var
 
-            if master.isTarget():
+            if master.isTarget(): # first thing you do is check target
                 target = (r, c)
 
-            for direction, dr, dc, reverse in directions:
+            for direction, dr, dc, reverse in directions: # try all directions
                 nr, nc = r + dr, c + dc
 
-                if (nr, nc) in reachable:
+                if (nr, nc) in reachable: # visited
                     continue
-                if not master.canMove(direction):
+                if not master.canMove(direction): # a block
                     continue
 
-                reachable.add((nr, nc))
+                reachable.add((nr, nc)) # update visited
 
-                master.move(direction)
+                master.move(direction) # we actually move
                 dfs(nr, nc)
                 master.move(reverse)  # Backtrack physically.
 
-        dfs(0, 0)
+        dfs(0, 0) # we will first map the grids and locate the coordinate of target
 
-        if target is None:
+        if target is None: # not reachable
             return -1
 
+        # now implement BFS
         queue = deque([(0, 0, 0)])
         visited = {(0, 0)}
 
