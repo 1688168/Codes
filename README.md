@@ -301,6 +301,12 @@
 [[Video]](https://www.youtube.com/watch?v=mXPDJg_vx4c&t=194s) -
 [`Trie`]
 
+[[0144] - <span style="color:green">E</span> - Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DFS`]
+
 [[0146] - <span style="color:yellow">M</span> - LRU Cache](https://leetcode.com/problems/lru-cache/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0146%5D%20LRU%20Cache.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Design/146.LRU-Cache) -
