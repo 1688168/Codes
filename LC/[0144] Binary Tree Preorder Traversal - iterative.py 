@@ -4,11 +4,11 @@ class Solution:
             return []
 
         result = []
-        stack = [root]
+        stack = [root] #python stack is implemented by list
 
         while stack:
             node = stack.pop()
-            result.append(node.val)
+            result.append(node.val) # pre-order, always process current node
 
             # Push right first so left is popped first.
             if node.right:
