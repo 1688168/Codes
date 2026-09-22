@@ -1170,6 +1170,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - unique: ignore chars with duplicates
 - distinct: duplicate chars count as 1
 
+[[0841] - <span style="color:yellow">M</span> - Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DFS`][`BFS`]
+
 [[0843] - <span style="color:red">H</span> - Guess the Word](https://leetcode.com/problems/guess-the-word/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Others/843.Guess-the-Word) -
