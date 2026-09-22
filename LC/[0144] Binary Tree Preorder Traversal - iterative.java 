@@ -5,7 +5,7 @@ class Solution {
             return result;
         }
 
-        Deque<TreeNode> stack = new ArrayDeque<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();//java stack implementation: ArrayDeque
         stack.push(root);
 
         while (!stack.isEmpty()) {
