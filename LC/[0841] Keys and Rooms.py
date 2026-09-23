@@ -11,12 +11,13 @@ class Solution:
 
         visited.add(0)
         dfs(0)
+        return len(visited) == len(rooms)
 
         ## check which room is NOT invisited
-        for ii in range(len(rooms)):
-            if ii not in visited: return False
+        # for ii in range(len(rooms)):
+        #     if ii not in visited: return False
 
-        return True
+        # return True
 
 """
 # analysis
