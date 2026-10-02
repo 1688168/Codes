@@ -1,106 +1,126 @@
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Queue;
+import java.util.Set;
 
 class Solution {
-    private static class Frame {
-        int x, y;
-        int nextDirection;
-        char returnDirection;
+    private static final char[] DIRECTIONS = {'U', 'D', 'L', 'R'};
+    private static final char[] REVERSE_DIRECTIONS = {'D', 'U', 'R', 'L'};
+    private static final int[][] COORDINATE_CHANGES = {
+        {0, -1}, {0, 1}, {-1, 0}, {1, 0}
+    };
 
-        Frame(int x, int y, char returnDirection) {
+    // Stores the state of a suspended DFS call.
+    private static class Frame {
+        private final int x;
+        private final int y;
+        private final int returnDirectionIndex;
+        private int directionIndex;
+
+        private Frame(int x, int y, int returnDirectionIndex) {
             this.x = x;
             this.y = y;
-            this.returnDirection = returnDirection;
-            this.nextDirection = 0;
+            this.returnDirectionIndex = returnDirectionIndex;
         }
     }
 
-    // Pack two signed int coordinates into a unique long.
-    private long encode(int x, int y) {
-        return ((long) x << 32) | (y & 0xffffffffL);
+    private static String encode(int x, int y) {
+        return x + "#" + y;
+    }
+
+    private static int[] decode(String code) {
+        String[] parts = code.split("#");
+        return new int[] {
+            Integer.parseInt(parts[0]),
+            Integer.parseInt(parts[1])
+        };
     }
 
     public int findShortestPath(GridMaster master) {
-        char[] directions = {'U', 'D', 'L', 'R'};
-        char[] reverse = {'D', 'U', 'R', 'L'};
-        int[] dx = {0, 0, -1, 1};
-        int[] dy = {-1, 1, 0, 0};
-
         if (master.isTarget()) {
             return 0;
         }
 
-        long start = encode(0, 0);
-        Set<Long> reachable = new HashSet<>();
-        reachable.add(start);
-
-        Long target = null;
-
-        // Iterative DFS to map the reachable cells.
+        Set<String> reachable = new HashSet<>();
         Deque<Frame> stack = new ArrayDeque<>();
-        stack.push(new Frame(0, 0, '\0'));
+        String start = encode(0, 0);
+        String target = "";
 
+        reachable.add(start);
+        stack.push(new Frame(0, 0, -1));
+
+        // Map all reachable cells using iterative DFS.
         while (!stack.isEmpty()) {
             Frame frame = stack.peek();
 
-            if (frame.nextDirection == 4) {
-                stack.pop();
-                if (frame.returnDirection != '\0') {
-                    master.move(frame.returnDirection);
+            if (frame.directionIndex == DIRECTIONS.length) {
+                // Restore the master's position to the parent cell.
+                if (frame.returnDirectionIndex != -1) {
+                    master.move(
+                        REVERSE_DIRECTIONS[frame.returnDirectionIndex]
+                    );
                 }
+                stack.pop();
                 continue;
             }
 
-            int i = frame.nextDirection++;
-            int nx = frame.x + dx[i];
-            int ny = frame.y + dy[i];
-            long next = encode(nx, ny);
+            int directionIndex = frame.directionIndex++;
+            int nx = frame.x + COORDINATE_CHANGES[directionIndex][0];
+            int ny = frame.y + COORDINATE_CHANGES[directionIndex][1];
+            String neighborCode = encode(nx, ny);
 
-            if (reachable.contains(next)) {
+            if (reachable.contains(neighborCode)) {
                 continue;
             }
-            if (!master.canMove(directions[i])) {
+            if (!master.canMove(DIRECTIONS[directionIndex])) {
                 continue;
             }
 
-            master.move(directions[i]);
-            reachable.add(next);
-            stack.push(new Frame(nx, ny, reverse[i]));
+            reachable.add(neighborCode);
+            master.move(DIRECTIONS[directionIndex]);
 
             if (master.isTarget()) {
-                target = next;
+                target = neighborCode;
             }
+
+            stack.push(new Frame(nx, ny, directionIndex));
         }
 
-        if (target == null) {
+        if (target.isEmpty()) {
             return -1;
         }
 
-        // BFS to find the shortest distance.
-        // Removing a cell from reachable marks it visited.
-        Deque<Long> queue = new ArrayDeque<>();
+        // Find the shortest distance using BFS on the mapped cells.
+        Queue<String> queue = new ArrayDeque<>();
         queue.offer(start);
         reachable.remove(start);
-
         int distance = 0;
 
         while (!queue.isEmpty()) {
-            int size = queue.size();
+            int levelSize = queue.size();
 
-            for (int j = 0; j < size; j++) {
-                long current = queue.poll();
+            for (int i = 0; i < levelSize; i++) {
+                String code = queue.poll();
 
-                if (current == target.longValue()) {
+                if (code.equals(target)) {
                     return distance;
                 }
 
-                int x = (int) (current >> 32);
-                int y = (int) current;
+                int[] coordinates = decode(code);
 
-                for (int i = 0; i < 4; i++) {
-                    long next = encode(x + dx[i], y + dy[i]);
+                for (int directionIndex = 0;
+                     directionIndex < DIRECTIONS.length;
+                     directionIndex++) {
+                    int nx = coordinates[0]
+                        + COORDINATE_CHANGES[directionIndex][0];
+                    int ny = coordinates[1]
+                        + COORDINATE_CHANGES[directionIndex][1];
+                    String neighborCode = encode(nx, ny);
 
-                    if (reachable.remove(next)) {
-                        queue.offer(next);
+                    // Removing on enqueue prevents duplicate visits.
+                    if (reachable.remove(neighborCode)) {
+                        queue.offer(neighborCode);
                     }
                 }
             }
