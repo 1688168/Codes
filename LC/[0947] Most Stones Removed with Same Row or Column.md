@@ -1,20 +1,37 @@
 # 947
-## Problem Statement
-* max num of stones we can remove
 
-## rules
-* we can remove all stones (except 1) in any column or row
+# Problem Statement
+## Given
+* list of stone coordinates (2D plane)
+* rules to remove stones
 
-## Thoughts
-* given a group, we only need to keep one stone
--> this is a grouping question
--> DSU(Union/Find)
+## ask
+* max num of stones can be removed per the given rule
 
-## Mental model
+# Constraints analysis
+* N=1~1K
+* plane size = 10^4
+## edge cases consideration (partial credit)
+* if N=1 -> return 0
+
+## Mental model (union-find)
 * Consider each row and each col is a node
 * each time we place a stone we connect (union/group) the row and col
 * processing each stone, we will identify num of groups (connected row and col)
 * numOfStone-numOfGroups = numOfMaxStonesCanBeRemoved
+
+## Mental Model (DFS)
+* nodes sharing row or columns meaning they are connected in a graph
+* if we build the graph representation of the inputs. and post order removing leaves we will be able to know the orders of how to remove leaves and keep only the root
+
+> but how do you know where to start as the root?
+* this actually doesn't matter, we can start from any node. Try the below simple example. We can start from any node in the graph and apply post-order DFS.  The root node (doesn't matter which one you pick) will be the last node being processed and should NOT be removed
+          *
+          |
+          *
+        /.  \
+       *.    *
+
 
 ## complexity analysis
 * Union/Find (path compression+UninoBySize) -> N(Alpha(N^2))
