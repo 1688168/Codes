@@ -37,7 +37,20 @@
 * Union/Find (path compression+UninoBySize) -> N(Alpha(N^2))
 * N=10^4 -> alpha(10^8) -> okay
 
-## follow up questions
+
+# What did we learn from this problem and the take away
+## How is this relating to DFS?
+* for grouping, we think of UnionFind, but DFS can also mark all connected cells (Num of Islands)
+* from observation, we should notice for connected nodes, eventually one node (stone) will survive if we prune the leave nodes in the right order.  With this observation, we know num of remaining nodes is num of the independent groups.  Num of nodes we can remove is totalNumOfNodes-NumOfConnectedGroups
+
+## Concepts we practiced
+* How to do Union-Find in 2D grid. How to encode 2D grid cell coordinates 
+* What's the application of DFS -> count connected cells (num of Island variation)
+* How to prune leaf-nodes first? or how to record prune sequence -> post-order traversal
+* How to do DFS iteratively, recursively
+* How to build graph representation of connected nodes in O(N) time and avoid O(N^2) time to build the full representation of the graph
+
+# follow up questions
 | LeetCode # | Problem | Similar idea |
 |---:|---|---|
 | 366 | Find Leaves of Binary Tree | Remove leaves / postorder |
