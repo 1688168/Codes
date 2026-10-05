@@ -1271,6 +1271,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 
 
 
+[[0951] - <span style="color:yellow">M</span> - Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/description/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Tree`][`DFS`]
+
 [[0956] - <span style="color:red">H</span> - Tallest Billboard](https://leetcode.com/problems/tallest-billboard/description/) - 
 [[Python]]()
 [[CPP]]() -
