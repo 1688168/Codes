@@ -1789,7 +1789,7 @@ Todo:
 [[1697] - <span style="color:red">H</span> - Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://youtu.be/DbeabSziIAA) -
 [`Union Find`][`Sorting`]
 
 [[1705] - <span style="color:green">E</span> - Project Employees I](https://leetcode.com/problems/project-employees-i/description/) - 
