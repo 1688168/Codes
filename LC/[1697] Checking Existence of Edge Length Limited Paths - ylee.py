@@ -56,3 +56,4 @@ class Solution:
             ans[ii] = dsu.find(p)==dsu.find(q)
 
         return ans
+54

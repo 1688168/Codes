@@ -25,7 +25,6 @@ class Solution:
                 ll+=1
         
         return rr-ll+1
-        
 
 
 #######
