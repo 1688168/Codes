@@ -69,6 +69,12 @@
 [[Video]]() -
 [`Recursive`]
 
+[[0031] - <span style="color:yellow">M</span> - Next Permutation](https://leetcode.com/problems/next-permutation/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Two Pointers`]
+
 [[0032] - <span style="color:red">H</span> - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0032%5D%20Longest%20Valid%20Parentheses.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Stack/032.Longest-Valid-Parentheses) -
