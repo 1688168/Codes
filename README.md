@@ -72,7 +72,7 @@
 [[0031] - <span style="color:yellow">M</span> - Next Permutation](https://leetcode.com/problems/next-permutation/) - 
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://www.youtube.com/watch?v=G4uMQGuk-_k) -
 [`Two Pointers`]
 
 [[0032] - <span style="color:red">H</span> - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) - 
