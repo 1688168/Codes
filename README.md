@@ -73,7 +73,18 @@
 [[Python]]()
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=G4uMQGuk-_k) -
-[`Two Pointers`]
+[`Greedy`][`Lexicographical`]
+
+> [Lexicographical]
+* cf: [0386]
+* 1625
+* 2663
+* 556
+* 31
+* 1718
+* 1415
+* 440
+* 386
 
 [[0032] - <span style="color:red">H</span> - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0032%5D%20Longest%20Valid%20Parentheses.py)
@@ -766,6 +777,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[CPP]](https://github.com/wisdompeak/LeetCode/blob/master/Design/381.Insert-Delete-GetRandom-O1-Duplicates-allowed/381.Insert-Delete-GetRandom-O1-Duplicates-allowed.cpp) -
 [[Video]](https://www.youtube.com/watch?v=IqUJz-enhGA) -
 [`Design`]
+
+[[0386] - <span style="color:yellow">M</span> - Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`DFS`][`Trie`]
 
 [[0387] - <span style="color:green">E</span> - First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) - 
 [[Python]]()
