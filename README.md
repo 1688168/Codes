@@ -313,6 +313,12 @@
 - [1840]
 - [1846]
 
+[[0136] - <span style="color:green">E</span> - Single Number](https://leetcode.com/problems/single-number/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`BITwise Manipulation`]
+
 [[0139] - <span style="color:yellow">M</span> - Word Break](https://leetcode.com/problems/word-break/description/) -
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B0139%5D%20Word%20Break_trie.py)
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Trie/139.Word-Break) -
@@ -516,6 +522,12 @@ cache = OrderedDict()
 - N houses, cost of black is a, cost of white is b. cannot paint 3 houses with same color consequtively. what's the min cost to paint all houses?
 - [0265]
 
+
+[[0260] - <span style="color:yellow">M</span> - Single Number III](https://leetcode.com/problems/single-number-iii/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`BITwise Manipulation`]
 
 [[0265] - <span style="color:red">H</span> - Paint House II](https://leetcode.com/problems/paint-house-ii/description/) - 
 [[Python]]()
