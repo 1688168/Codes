@@ -116,6 +116,12 @@
 - [0084]
 - [2334]
 
+[[0043] - <span style="color:yellow">M</span> - Multiply Strings](https://leetcode.com/problems/multiply-strings/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Math`][`String Manipulation`][`Simulation`]
+
 [[0045] - <span style="color:yellow">M</span> - Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/045.Jump-Game-II) -

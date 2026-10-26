@@ -49,3 +49,55 @@ class Solution {
         return res;
     }
 }
+
+
+
+
+//----------------
+class Solution {
+    private List<int[]> twoSum(int[] nums, int target, int idx){
+        List<int[]> pairs = new ArrayList<>();
+
+        int ll = idx + 1;
+        int rr = nums.length -1;
+        while(ll < rr){
+            int a = nums[ll];
+            int b = nums[rr];
+
+            if(a+b == target){
+                pairs.add(new int[]{a, b});
+                ++ll;
+                --rr;
+                while(ll<rr && nums[ll]==nums[ll-1]) ++ll;
+                while(ll<rr && nums[rr]==nums[rr+1]) --rr;
+            }else if(a+b > target){
+                rr-=1;
+            }else{
+                ll+=1;
+            }
+
+
+        }
+
+        return pairs;
+    }
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums); //java sort int array. 
+        int N = nums.length;
+
+        List<List<Integer>> res = new ArrayList<>();
+
+        //try each num as the first of triplet
+        for(int ii=0; ii< N-2; ++ii){
+            if((ii > 0) && nums[ii]==nums[ii-1]) continue; //skip duplicates
+            if(nums[ii] > 0) break;
+
+            var pairs = twoSum(nums, -nums[ii], ii);
+            for(var pair: pairs){
+                res.add(Arrays.asList(nums[ii], pair[0], pair[1])); //how to instanciate Java List
+            }
+        }
+
+        return res;
+    }
+}
