@@ -5,15 +5,16 @@ class Solution:
         res_rev=[]
         for ii, nn in enumerate(num_rev):
             total = digit*int(nn)+carry
-            res.append(total%10)
+            res_rev.append(str(total%10))
             carry = total//10
         
-        if carry > 0: res.append(carry)
+        if carry > 0: res_rev.append(str(carry))
         return "".join(res_rev)
 
     def add_two_nums(self, num1_rev, num2_rev):
         N1=len(num1_rev)
         N2=len(num2_rev)
+
         ii=0
         jj=0
         carry=0
@@ -22,9 +23,29 @@ class Solution:
         while ii < N1 and jj < N2:
             n1=int(num1_rev[ii])
             n2=int(num2_rev[jj])
+            total=n1+n2+carry
+            res.append(str(total%10))
+            carry = total//10
+            ii+=1
+            jj+=1
 
-        if carry > 0: res.append(carry)
+        while ii < N1:
+            total = int(num1_rev[ii])+carry
+            res.append(str(total%10))
+            carry = total//10
+            ii+=1
         
+
+        while jj < N2:
+            total = int(num2_rev[jj])+carry
+            res.append(str(total%10))
+            carry = total//10
+            jj+=1
+        
+        if carry > 0:
+            res.append(str(carry))
+        
+        return "".join(res)
 
     def multiply(self, num1: str, num2: str) -> str:
         
@@ -41,12 +62,12 @@ class Solution:
             N1, N2 = N2, N1
         
         res="0"
-        # smaller num multiple larger num
+        # smaller num multiply larger num
         for scale, nn in enumerate(num2_rev):
             if nn=="0": continue
 
             product_rev = self.multiply_by_one_digit(num1_rev, int(nn))
-            product_rev += "0"*scale
-            res = self.add_two_nums(res[::-1], product_rev)
+            product_rev = "0" * scale + product_rev
+            res = self.add_two_nums(res, product_rev)
 
-        return res
+        return res[::-1]
