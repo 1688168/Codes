@@ -1,83 +1,94 @@
 class Solution {
+
+    private String multiplyByOneDigit(String numRev, int digit) {
+        int carry = 0;
+        StringBuilder resRev = new StringBuilder();
+
+        for (int i = 0; i < numRev.length(); i++) {
+            int number = numRev.charAt(i) - '0';
+            int total = digit * number + carry;
+            resRev.append(total % 10);
+            carry = total / 10;
+        }
+
+        if (carry > 0) {
+            resRev.append(carry);
+        }
+
+        return resRev.toString();
+    }
+
+    private String addTwoNums(String num1Rev, String num2Rev) {
+        int n1 = num1Rev.length();
+        int n2 = num2Rev.length();
+
+        int i = 0;
+        int j = 0;
+        int carry = 0;
+        StringBuilder res = new StringBuilder();
+
+        while (i < n1 && j < n2) {
+            int digit1 = num1Rev.charAt(i) - '0';
+            int digit2 = num2Rev.charAt(j) - '0';
+            int total = digit1 + digit2 + carry;
+
+            res.append(total % 10);
+            carry = total / 10;
+            i++;
+            j++;
+        }
+
+        while (i < n1) {
+            int total = (num1Rev.charAt(i) - '0') + carry;
+            res.append(total % 10);
+            carry = total / 10;
+            i++;
+        }
+
+        while (j < n2) {
+            int total = (num2Rev.charAt(j) - '0') + carry;
+            res.append(total % 10);
+            carry = total / 10;
+            j++;
+        }
+
+        if (carry > 0) {
+            res.append(carry);
+        }
+
+        return res.toString();
+    }
+
     public String multiply(String num1, String num2) {
         if (num1.equals("0") || num2.equals("0")) {
             return "0";
         }
 
-        // Use the shorter number as the multiplier.
-        if (num1.length() < num2.length()) {
-            String temp = num1;
-            num1 = num2;
-            num2 = temp;
+        String num1Rev = new StringBuilder(num1).reverse().toString();
+        String num2Rev = new StringBuilder(num2).reverse().toString();
+
+        if (num1Rev.length() < num2Rev.length()) {
+            String temp = num1Rev;
+            num1Rev = num2Rev;
+            num2Rev = temp;
         }
 
-        String reversedNum1 = new StringBuilder(num1).reverse().toString();
-        String reversedNum2 = new StringBuilder(num2).reverse().toString();
+        String res = "0";
+        StringBuilder zeros = new StringBuilder();
 
-        String result = "0";
-        StringBuilder shiftZeros = new StringBuilder();
+        // Multiply the larger number by each digit of the smaller number.
+        for (int scale = 0; scale < num2Rev.length(); scale++) {
+            char digit = num2Rev.charAt(scale);
 
-        for (int shift = 0; shift < reversedNum2.length(); shift++) {
-            char current = reversedNum2.charAt(shift);
-
-            if (current != '0') {
-                String partialProduct =
-                        multiplyByDigit(reversedNum1, current - '0');
-
-                // Leading zeros in reversed form apply the place-value shift.
-                String shiftedProduct = shiftZeros.toString() + partialProduct;
-                result = addReversed(result, shiftedProduct);
+            if (digit != '0') {
+                String productRev = multiplyByOneDigit(num1Rev, digit - '0');
+                productRev = zeros.toString() + productRev;
+                res = addTwoNums(res, productRev);
             }
 
-            shiftZeros.append('0');
+            zeros.append('0');
         }
 
-        String product = new StringBuilder(result).reverse().toString();
-
-        int start = 0;
-        while (start < product.length() - 1 && product.charAt(start) == '0') {
-            start++;
-        }
-
-        return product.substring(start);
-    }
-
-    private String multiplyByDigit(String reversedNum, int digit) {
-        int carry = 0;
-        StringBuilder digits = new StringBuilder();
-
-        for (int index = 0; index < reversedNum.length(); index++) {
-            int total = (reversedNum.charAt(index) - '0') * digit + carry;
-            digits.append(total % 10);
-            carry = total / 10;
-        }
-
-        if (carry != 0) {
-            digits.append(carry);
-        }
-
-        return digits.toString();
-    }
-
-    private String addReversed(String left, String right) {
-        int leftLength = left.length();
-        int rightLength = right.length();
-        int carry = 0;
-        StringBuilder digits = new StringBuilder();
-
-        for (int index = 0; index < Math.max(leftLength, rightLength); index++) {
-            int leftDigit = index < leftLength ? left.charAt(index) - '0' : 0;
-            int rightDigit = index < rightLength ? right.charAt(index) - '0' : 0;
-
-            int total = leftDigit + rightDigit + carry;
-            digits.append(total % 10);
-            carry = total / 10;
-        }
-
-        if (carry != 0) {
-            digits.append(carry);
-        }
-
-        return digits.toString();
+        return new StringBuilder(res).reverse().toString();
     }
 }
