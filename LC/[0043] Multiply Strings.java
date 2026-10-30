@@ -1,94 +1,78 @@
 class Solution {
+    private String multiplyByOneDigit(String num, int digit){
+        int carry=0;
+        StringBuilder res_rev = new StringBuilder();
+        for(int ii=0; ii<num.length(); ++ii){
+            int curr = num.charAt(ii) - '0';
+            int total = curr*digit+carry;
+            res_rev.append(total%10);
+            carry = total/10;
 
-    private String multiplyByOneDigit(String numRev, int digit) {
-        int carry = 0;
-        StringBuilder resRev = new StringBuilder();
-
-        for (int i = 0; i < numRev.length(); i++) {
-            int number = numRev.charAt(i) - '0';
-            int total = digit * number + carry;
-            resRev.append(total % 10);
-            carry = total / 10;
         }
-
-        if (carry > 0) {
-            resRev.append(carry);
-        }
-
-        return resRev.toString();
+        if(carry > 0) res_rev.append(carry);
+        
+        return res_rev.toString();
     }
 
-    private String addTwoNums(String num1Rev, String num2Rev) {
-        int n1 = num1Rev.length();
-        int n2 = num2Rev.length();
-
-        int i = 0;
-        int j = 0;
-        int carry = 0;
-        StringBuilder res = new StringBuilder();
-
-        while (i < n1 && j < n2) {
-            int digit1 = num1Rev.charAt(i) - '0';
-            int digit2 = num2Rev.charAt(j) - '0';
-            int total = digit1 + digit2 + carry;
-
-            res.append(total % 10);
-            carry = total / 10;
-            i++;
-            j++;
+    private String addTwoNum(String num1_rev, String num2_rev){
+        int ii=0;
+        int jj=0;
+        int carry=0;
+        StringBuilder res_rev = new StringBuilder();
+        while(ii<num1_rev.length() && jj < num2_rev.length()){
+            int d1 = num1_rev.charAt(ii) - '0';
+            int d2 = num2_rev.charAt(jj) - '0';
+            int total = d1+d2+carry;
+            res_rev.append(total%10);
+            carry = total/10;
+            ++ii;
+            ++jj;
         }
 
-        while (i < n1) {
-            int total = (num1Rev.charAt(i) - '0') + carry;
-            res.append(total % 10);
-            carry = total / 10;
-            i++;
+        while(ii < num1_rev.length()){
+            int total = num1_rev.charAt(ii) - '0' + carry;
+            res_rev.append(total%10);
+            carry = total/10;
+            ++ii;
         }
 
-        while (j < n2) {
-            int total = (num2Rev.charAt(j) - '0') + carry;
-            res.append(total % 10);
-            carry = total / 10;
-            j++;
+        while(jj < num2_rev.length()){
+            int total = num2_rev.charAt(jj) - '0' + carry;
+            res_rev.append(total%10);
+            carry = total/10;
+            ++jj;
         }
 
-        if (carry > 0) {
-            res.append(carry);
-        }
+        if(carry > 0) res_rev.append(carry);
 
-        return res.toString();
+        return res_rev.toString();
     }
 
     public String multiply(String num1, String num2) {
-        if (num1.equals("0") || num2.equals("0")) {
-            return "0";
+        if(num1.equals("0") || num2.equals("0")) return "0";
+        if(num1.length() < num2.length()){
+            String tmp=num1;
+            num1=num2;
+            num2=tmp;
         }
 
-        String num1Rev = new StringBuilder(num1).reverse().toString();
-        String num2Rev = new StringBuilder(num2).reverse().toString();
+        //reverse both num
+        String num1_rev = new StringBuilder(num1).reverse().toString();
+        String num2_rev = new StringBuilder(num2).reverse().toString();
 
-        if (num1Rev.length() < num2Rev.length()) {
-            String temp = num1Rev;
-            num1Rev = num2Rev;
-            num2Rev = temp;
-        }
-
-        String res = "0";
-        StringBuilder zeros = new StringBuilder();
-
-        // Multiply the larger number by each digit of the smaller number.
-        for (int scale = 0; scale < num2Rev.length(); scale++) {
-            char digit = num2Rev.charAt(scale);
-
-            if (digit != '0') {
-                String productRev = multiplyByOneDigit(num1Rev, digit - '0');
-                productRev = zeros.toString() + productRev;
-                res = addTwoNums(res, productRev);
+        //multiply num1_rev by num2_rev digit by digit
+        StringBuilder zero = new StringBuilder();
+        String res_rev="";
+        for(int ii=0; ii<num2_rev.length(); ++ii){
+            int digit = num2_rev.charAt(ii) - '0';
+            if(digit!=0){
+                String product_rev = multiplyByOneDigit(num1_rev, digit);
+                product_rev = zero.toString() + product_rev;
+                res_rev = addTwoNum(res_rev, product_rev);
             }
-
-            zeros.append('0');
+            zero.append('0');
         }
 
-        return new StringBuilder(res).reverse().toString();
+        return new StringBuilder(res_rev).reverse().toString();
     }
 }
