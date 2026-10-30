@@ -4,13 +4,13 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
         M=len(matrix)
-        N=len(matrix[0])
 
         ll, rr = 0, N-1
         while ll < rr:
             # we need to rotate 3 times for each layer
+            top, btm = ll, rr
             for ii in range(rr-ll):
-                top, btm = ll, rr
+
                 # save the top-left value
                 top_left=matrix[top][ll+ii]
 
