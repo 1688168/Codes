@@ -1,4 +1,25 @@
 #############
+# 20251030
+#############
+
+class Solution:
+    def canJump(self, nums: list[int]) -> bool:
+        canReach=False
+
+        maxReach=0
+        for ii in range(len(nums)):
+            if ii > maxReach: break
+            maxReach = max(maxReach, ii+nums[ii])
+ 
+            if maxReach >= len(nums)-1: 
+                return True
+
+        return canReach
+        
+
+
+
+#############
 # 20231216
 #############
         N=len(nums)
