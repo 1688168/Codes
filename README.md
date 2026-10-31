@@ -194,6 +194,12 @@
 [[Video]]() -
 [`DP I`]
 
+[[0066] - <span style="color:green">E</span> - Plus One](https://leetcode.com/problems/plus-one/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Array`][`Math`]
+
 [[0072] - <span style="color:yellow">M</span> - Edit Distance](https://leetcode.com/problems/edit-distance/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/072.Edit-Distance) -
