@@ -392,6 +392,18 @@ cache = OrderedDict()
 [[Video]](https://www.youtube.com/watch?v=e3s8LZc6Cdo) -
 [`Stack`]
 
+[[0158] - <span style="color:red">H</span> - Read N Characters Given read4 II - Call Multiple Times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Simulation`]
+
+[[0159] - <span style="color:yellow">M</span> - Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Sliding Window`][`Two Pointers`]
+
 [[0188] - <span style="color:red">H</span> - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) - 
 [[Python]]()
 [[CPP]]() -
