@@ -404,6 +404,12 @@ cache = OrderedDict()
 [[Video]]() -
 [`Sliding Window`][`Two Pointers`]
 
+[[0163] - <span style="color:green">E</span> - Missing Ranges](https://leetcode.com/problems/missing-ranges/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Array`]
+
 [[0188] - <span style="color:red">H</span> - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) - 
 [[Python]]()
 [[CPP]]() -
