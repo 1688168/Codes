@@ -1108,6 +1108,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 idx2cnt = collections.defaultdict(lambda: 1)
 
 ```
+[[0681] - <span style="color:yellow">M</span> - Next Closest Time](https://leetcode.com/problems/next-closest-time/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Simulation`]
+
 [[0684] - <span style="color:yellow">M</span> - Redundant Connection](https://leetcode.com/problems/redundant-connection/description/) - 
 [[Python]]()
 [[CPP]]() -
@@ -1215,6 +1221,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]](https://www.youtube.com/watch?v=xFlO0H1l2oQ) -
 [`Diff Array`]
 
+
+[[0809] - <span style="color:yellow">M</span> - Expressive Words](https://leetcode.com/problems/expressive-words/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Two Pointers`][`String Manipulation`]
 
 [[0813] - <span style="color:red">H</span> - Largest Sum of Averages](https://leetcode.com/problems/largest-sum-of-averages/description/) - 
 [[Python]]()
