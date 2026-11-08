@@ -1253,6 +1253,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 - unique: ignore chars with duplicates
 - distinct: duplicate chars count as 1
 
+[[0833] - <span style="color:yellow">M</span> - Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`String Manipulation`][`Sorting`]
+
 [[0841] - <span style="color:yellow">M</span> - Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) - 
 [[Python]]()
 [[CPP]]() -
