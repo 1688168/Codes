@@ -1272,6 +1272,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
 [`Design`][`Others`]
 
+[[0849] - <span style="color:yellow">M</span> - Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) - 
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Array`][`Two Pointers`]
+
 [[0871] - <span style="color:red">H</span> - Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/871.Minimum-Number-of-Refueling-Stops) -
