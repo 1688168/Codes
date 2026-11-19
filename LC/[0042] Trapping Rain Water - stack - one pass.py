@@ -1,4 +1,27 @@
 ##############
+# 20261119
+##############
+class Solution:
+    def trap(self, height: list[int]) -> int:
+        N=len(height)
+        stack=[]
+
+        ans=0
+        for ii, hh in enumerate(height):
+            while stack and hh >= height[stack[-1]]:
+                hh_base = height[stack[-1]]
+                stack.pop()
+                if stack:
+                    dist=ii-stack[-1]-1
+                    ans += (min(hh, height[stack[-1]])-hh_base)*dist
+
+            stack.append(ii)
+        
+        return ans
+
+
+        
+##############
 # 20231112
 ##############
 class Solution:
