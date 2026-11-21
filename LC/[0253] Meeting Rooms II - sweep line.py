@@ -1,5 +1,25 @@
 
 ############################
+# 20261121
+############################
+class Solution:
+    def minMeetingRooms(self, intervals: list[list[int]]) -> int:
+        events=[]
+        for (st, ed) in intervals:
+            events.append((st, 1))
+            events.append((ed, -1))
+        
+        events.sort(key=lambda x: (x[0], x[1]))
+    
+        max_acc = 0
+        acc=0
+        for event in events:
+            acc += event[1]
+            max_acc=max(max_acc, acc)
+        
+        return max_acc
+        
+############################
 # 20231039
 ############################
 
