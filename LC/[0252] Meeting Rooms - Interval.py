@@ -1,3 +1,18 @@
+###########################
+# 20261121
+###########################
+class Solution:
+    def canAttendMeetings(self, intervals: list[list[int]]) -> bool:
+        if len(intervals)==0: return True
+
+        intervals.sort()
+
+        st, ed = intervals[0]
+        for ns, ne in intervals[1:]:
+            if ns < ed and ne >= st: return False
+            st, ed = ns, ne
+        
+        return True
 
 ###########################
 # 20231210
