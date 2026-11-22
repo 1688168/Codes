@@ -966,7 +966,7 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[0502] - <span style="color:red">H</span> - IPO](https://leetcode.com/problems/ipo/) -
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://youtu.be/ivcS8qFfq6g) -
 [`Greedy`][`Heap`]
 
 [[0509] - <span style="color:green">E</span> - Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming) - 
