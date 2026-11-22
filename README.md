@@ -1284,6 +1284,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video]]() -
 [`Array`][`Two Pointers`]
 
+[[0857] - <span style="color:red">H</span> - Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
+
 [[0871] - <span style="color:red">H</span> - Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/871.Minimum-Number-of-Refueling-Stops) -
