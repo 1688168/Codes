@@ -969,6 +969,8 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]](https://youtu.be/ivcS8qFfq6g) -
 [`Greedy`][`Heap`]
 
+* cf: 0857
+
 [[0509] - <span style="color:green">E</span> - Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming) - 
 [[Python]]()
 [[CPP]]() -
@@ -1777,7 +1779,7 @@ Todo:
 [[1353] - <span style="color:yellow">M</span> - Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) -
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://youtu.be/9bJvSySPcZM) -
 [`Greedy`][`Heap`]
 
 [[1360] - <span style="color:green">E</span> - Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/description/) - 
