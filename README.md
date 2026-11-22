@@ -1272,6 +1272,12 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[Video 2]](https://www.youtube.com/watch?v=M-2RYdWa9gM "Edword")
 [`Design`][`Others`]
 
+[[0844] - <span style="color:green">E</span> - Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Stack`][`Two Pointers`]
+
 [[0849] - <span style="color:yellow">M</span> - Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) - 
 [[Python]]()
 [[CPP]]() -
