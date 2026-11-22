@@ -963,6 +963,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[Video]]() -
 [`Patterns`]
 
+[[0502] - <span style="color:red">H</span> - IPO](https://leetcode.com/problems/ipo/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
+
 [[0509] - <span style="color:green">E</span> - Fibonacci Number](https://leetcode.com/problems/fibonacci-number/description/?envType=study-plan-v2&envId=dynamic-programming) - 
 [[Python]]()
 [[CPP]]() -
@@ -1049,6 +1055,12 @@ int mx_sz = *(std::max_element(dp.begin(), dp.end()));
 [[CPP]]() -
 [[Video]](https://www.youtube.com/watch?v=J0yYlj_oVTI) -
 [`Array`]
+
+[[0630] - <span style="color:red">H</span> - Course Schedule III](https://leetcode.com/problems/course-schedule-iii/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
 
 [[0632] - <span style="color:red">H</span> - Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/) - 
 [[Python]]()
@@ -1287,8 +1299,20 @@ idx2cnt = collections.defaultdict(lambda: 1)
 [[0857] - <span style="color:red">H</span> - Minimum Cost to Hire K Workers](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/) -
 [[Python]]()
 [[CPP]]() -
-[[Video]]() -
+[[Video]](https://youtu.be/ZHFRB58hlQw) -
 [`Greedy`][`Heap`]
+
+> cf
+* 0630
+* 1851
+* 1834
+* 2542
+* 1383
+* 1353
+* 857
+* 502
+
+
 
 [[0871] - <span style="color:red">H</span> - Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/) - 
 [[Python]]()
@@ -1750,6 +1774,12 @@ Todo:
 
 - preprod, how to handle zero
 
+[[1353] - <span style="color:yellow">M</span> - Maximum Number of Events That Can Be Attended](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
+
 [[1360] - <span style="color:green">E</span> - Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1360%5D%20Number%20of%20Days%20Between%20Two%20Date.py)
 [[CPP]]() -
@@ -1770,6 +1800,12 @@ Todo:
 
 - application of "range addition"
 - [1109]
+
+[[1383] - <span style="color:red">H</span> - Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
 
 [[1473] - <span style="color:yellow">M</span> - Paint House III](https://leetcode.com/problems/paint-house-iii/description/) - 
 [[Python]]()
@@ -2006,6 +2042,12 @@ Todo:
 
 * cf: 489
   
+[[1834] - <span style="color:yellow">M</span> - Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Heap`]
+
 [[1840] - <span style="color:red">H</span> - Maximum Building Height](https://leetcode.com/problems/maximum-building-height/description/) - 
 [[Python]]()
 [[CPP]](https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1840.Maximum-Building-Height) -
@@ -2013,6 +2055,12 @@ Todo:
 [`Greedy`]
 
 - [135]
+
+[[1851] - <span style="color:red">H</span> - Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Sorting`][`Heap`]
 
 [[1857] - <span style="color:red">H</span> - Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/) - 
 [[Python]](https://github.com/1688168/Leetcode/blob/main/LC/%5B1857%5D%20Largest%20Color%20Value%20in%20a%20Directed%20Graph.md)
@@ -2482,6 +2530,12 @@ defaultdict(lambda: defaultdict(int))
 [[CPP]]() -
 [[Video]]() -
 [`Simulation`]
+
+[[2542] - <span style="color:yellow">M</span> - Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/) -
+[[Python]]()
+[[CPP]]() -
+[[Video]]() -
+[`Greedy`][`Heap`]
 
 [[2560] - <span style="color:yellow">M</span> - House Robber IV](https://leetcode.com/problems/house-robber-iv/description/) - 
 [[Python]]()
