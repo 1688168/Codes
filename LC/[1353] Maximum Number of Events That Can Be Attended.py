@@ -23,3 +23,27 @@ class Solution:
                 heappop(mnq)
 
         return cnt
+
+
+#############################
+class Solution:
+    def maxEvents(self, events: list[list[int]]) -> int:
+        events.sort()
+        N = len(events)
+        mnq=[]
+        jj=0
+        cnt=0
+        last_day = max([ed for _, ed in events])
+        for ii in range(1, last_day+1):
+            while jj < N and events[jj][0] <= ii:
+                heappush(mnq, events[jj][1])
+                jj+=1
+            
+            while mnq and mnq[0] < ii:
+                heappop(mnq)
+
+
+            if mnq:
+                cnt+=1
+                heappop(mnq)
+        return cnt

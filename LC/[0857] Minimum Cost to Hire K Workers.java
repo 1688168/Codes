@@ -39,50 +39,44 @@ class Solution {
     }
 }
 
+// ------------------------------
+// -------------- 20261124
+// ------------------------------
 
-//-------------- 20261124
 class Solution {
     public double mincostToHireWorkers(int[] quality, int[] wage, int k) {
-        //we want to first sort by rate
-        List<int[]> quality_wage = new ArrayList<>();
+        // zip the two array and sort by rate (wage/quality)
+        List<int[]> qw_list = new ArrayList<>();
         int N = quality.length;
+
         for(int ii=0; ii<N; ++ii){
-            quality_wage.add(new int[]{quality[ii], wage[ii]});
+            qw_list.add(new int[]{quality[ii], wage[ii]});
         }
 
-        int[][] quality_wage_sorted = quality_wage.stream().sorted(Comparator.comparingDouble(worker -> (double) worker[1] / worker[0])).toArray(int[][]::new);
+        //sort by rate and convert to array
+        int [][] qw_sorted = qw_list.stream().sorted(Comparator.comparingDouble(qw_pair -> qw_pair[1]*1.0/qw_pair[0])).toArray(int[][]::new);//check syntax::java sort arrayList and convert to array
 
-    //     int[][] quality_wage_sorted = quality_wage.toArray(new int[0][]);
-    //     Arrays.sort(quality_wage_sorted,
-    // Comparator.comparingDouble(worker -> (double) worker[1] / worker[0]));
-
-        //using each rate as threshold
-        PriorityQueue<Integer> mxq = new PriorityQueue<>(Comparator.reverseOrder());    
-        int acc_q = 0;
-        double min_money = Double.POSITIVE_INFINITY;//how to do max_double in java?
-
-        for(int ii=0; ii<N; ++ii){
-            int curr_q = quality_wage_sorted[ii][0];
-            int curr_w = quality_wage_sorted[ii][1];
-            double rate = curr_w*1.0/curr_q;
+        PriorityQueue<Integer> mxq = new PriorityQueue<>(Comparator.reverseOrder());//check syntax max priorityQueue
         
-            if (mxq.size() < k - 1) {
-                mxq.offer(curr_q);
-                acc_q += curr_q;
-            } else {
-                min_money = Math.min(min_money, (acc_q + curr_q) * rate);
+        // for each rate, select k workers with min quality and maintain/record acc_quality and min_amount
+        int acc_q = 0;
+        double mnm = Double.POSITIVE_INFINITY; //check syntax: Java max double value
+        for(int ii=0; ii<N; ++ii){
+            int curr_q = qw_sorted[ii][0];
+            int curr_w = qw_sorted[ii][1];
+            double curr_rate = (double)curr_w/curr_q;
 
-                mxq.offer(curr_q);
+            if(mxq.size() < k-1){
                 acc_q += curr_q;
-                acc_q -= mxq.poll();
+                mxq.offer(curr_q);
+            }else{
+                acc_q += curr_q;
+                mnm = Math.min(mnm, curr_rate*acc_q);
+                mxq.offer(curr_q);
+                int out_q = mxq.poll();
+                acc_q -= out_q;
             }
         }
-        return min_money;
+        return mnm;
     }
 }
-
-
-/*
-* this is using sort to see who qualifies given a threshold.
-* this then uses heap to select the next best candidate
- */
