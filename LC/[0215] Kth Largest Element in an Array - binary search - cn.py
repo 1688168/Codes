@@ -1,28 +1,27 @@
 ##################
-# 20261121 - chatGpt
+# 20261126
 ##################
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
-        def has_at_least_k(candidate: int) -> bool:
-            count = 0
-            for num in nums:
-                if num >= candidate:
-                    count += 1
-                    if count == k:
-                        return True
+    def findKthLargest(self, nums: list[int], k: int) -> int:
+        def count(mm):
+            cnt=0
+            for nn in nums:
+                if nn>=mm: cnt+=1
+                if cnt >= k: return True
             return False
-
-        left, right = min(nums), max(nums)
-
-        while left < right:
-            mid = (left + right + 1) // 2
-
-            if has_at_least_k(mid):
-                left = mid
+        
+        N=len(nums)
+        ll, rr = min(nums), max(nums)
+        ans=-1
+        while ll <= rr:
+            mm=ll+(rr-ll+1)//2
+            if count(mm):
+                ans=mm
+                ll=mm+1
             else:
-                right = mid - 1
-
-        return left
+                rr=mm-1
+        
+        return ans
 
 ##################
 # 20230930
