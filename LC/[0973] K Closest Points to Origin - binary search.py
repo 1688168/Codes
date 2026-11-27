@@ -1,3 +1,44 @@
+################
+# 20261126
+################
+class Solution:
+    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+        dist_points = [(pow(xx, 2)+pow(yy, 2), (xx, yy)) for (xx, yy) in points]
+        ll, rr = min(dist_points, key=lambda xx: xx[0])[0], max(dist_points, key=lambda xx: xx[0])[0]
+
+        def hasK(mm):
+            cnt=0
+            for dd, points in dist_points:
+                if dd <= mm:
+                    cnt+=1
+                    if cnt >= k: return True
+            return False
+
+        ans=rr
+        while ll<=rr:
+            mm=ll+(rr-ll)//2
+
+            if hasK(mm):
+                ans=mm
+                rr=mm-1
+            else:
+                ll=mm+1
+
+        res=[]
+        
+        for dd, point in dist_points:
+            if dd < ans:
+                res.append(point)
+        
+        if len(res) < k:
+            for dd, point in dist_points:
+                if dd == ans:
+                    res.append(point)
+                    if len(res)==k: break
+
+        return res
+
+###################################
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
 
